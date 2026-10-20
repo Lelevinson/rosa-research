@@ -1,130 +1,96 @@
-<!-- Header block for project --> <hr>
-<div align="center">
-<!--   <img width="292" alt="ROSA_logo_dark_bg@2x" src="https://github.com/user-attachments/assets/7b4a8e64-9a08-4180-806a-5076d3672c05"> -->
-<!--   <img width="213" alt="ROSA_sticker_color@2x" src="https://github.com/user-attachments/assets/5fa3a03e-5ef8-4942-84ac-95acf2f1777d"> -->
-<!--   <img width="426" alt="ROSA_sticker_color@2x" src="https://github.com/user-attachments/assets/98b0a0ed-6b14-420c-83af-9067ab2d2d22"> -->
-<!-- <img src="https://github.com/user-attachments/assets/d7175d5e-63d2-448c-b9d3-59ca0016ef7a"> -->
-<img width="2057" alt="image" src="https://github.com/user-attachments/assets/ddbd3281-79f0-4d29-b0cd-30a5188ad061">
+# ROSA Research
 
-  
-</div>
-<div align="center">
-  The ROS Agent (ROSA) is designed to interact with ROS-based<br>robotics systems using natural language queries. 🗣️🤖
-</div>
-<br>
-<div align="center">
+An experiment repository based on [NASA JPL ROSA](https://github.com/nasa-jpl/rosa),
+starting from version 1.0.10. Each teammate can clone this repository, set up a
+local environment, and develop their own ROSA experiments. Tracing and evaluation
+tools live in the separate `rosa-evaluation` project.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2410.06472-b31b1b.svg)](https://arxiv.org/abs/2410.06472)
-![ROS 1](https://img.shields.io/badge/ROS_1-Noetic-blue)
-![ROS 2](https://img.shields.io/badge/ROS_2-Humble|Iron|Jazzy-blue)
-![License](https://img.shields.io/pypi/l/jpl-rosa)
-[![SLIM](https://img.shields.io/badge/Best%20Practices%20from-SLIM-blue)](https://nasa-ammos.github.io/slim/)
+## Setup
 
-![Main Branch](https://img.shields.io/github/actions/workflow/status/nasa-jpl/rosa/ci.yml?branch=main&label=main)
-![Dev Branch](https://img.shields.io/github/actions/workflow/status/nasa-jpl/rosa/ci.yml?branch=dev&label=dev)
-![Publish Status](https://img.shields.io/github/actions/workflow/status/nasa-jpl/rosa/publish.yml?label=publish)
-![Version](https://img.shields.io/pypi/v/jpl-rosa)
-![Downloads](https://img.shields.io/pypi/dw/jpl-rosa)
+The local workflow uses Ubuntu 24.04, Python 3.12, ROS 2 Jazzy, uv, and Ollama.
+ROS 2 must be sourced in your shell. If Bash already sources it, no additional
+step is needed.
 
-</div>
-<!-- Header block for project -->
-
-> [!IMPORTANT]
-> 📚 **New to ROSA?** Check out our [Wiki](https://github.com/nasa-jpl/rosa/wiki) for documentation, guides and FAQs!
-
-
-ROSA is your AI-powered assistant for ROS1 and ROS2 systems. Built on the [Langchain](https://python.langchain.com/v0.2/docs/introduction/) framework, ROSA helps you interact with robots using natural language, making robotics development more accessible and efficient.
-
-#### ROSA Demo: NeBula-Spot in JPL's Mars Yard (click for YouTube)
-[![Spot YouTube Thumbnail](https://github.com/user-attachments/assets/19a99b5c-6103-4be4-8875-1810cf4558c5)](https://www.youtube.com/watch?v=mZTrSg7tEsA)
-
-
-## 🚀 Quick Start
-
-### Requirements
-- Python 3.9+
-- ROS Noetic or higher
-
-### Installation
 ```bash
-pip3 install jpl-rosa
+uv sync
 ```
 
-### Usage Examples
+The default dependency groups include Ollama support and tracing libraries.
+`uv.lock` records the package versions. Keep `.venv/` local; uv recreates it.
 
-```python
-from rosa import ROSA
+`.python-version` requests Python 3.12. The `requires-python` field in
+`pyproject.toml` declares the allowed Python range; it does not select one exact
+interpreter. An existing compatible `.venv` is reused by `uv sync`.
+For a first setup with ROS Jazzy, `uv sync --python /usr/bin/python3` explicitly
+selects Ubuntu's Python instead of another installed or uv-managed interpreter.
+You do not need to repeat that flag for ordinary syncs. `--locked` is optional:
+it prevents uv from updating the lockfile if the dependency declarations change.
 
-llm = get_your_llm_here()
-agent = ROSA(ros_version=1, llm=llm)
-agent.invoke("Show me a list of topics that have publishers but no subscribers")
+On a new checkout, copy `.env.example` to `.env` and set your Ollama endpoint and
+model. Keep an existing `.env` if you have already configured one. When Ollama
+runs on Windows, the endpoint may need the Windows host address visible from WSL.
+
+## Start experimenting
+
+Keep the ROSA implementation in `src/rosa/`. Add your own experiment scripts and
+run them with uv, replacing the example path below with your script's path:
+
+```bash
+uv run path/to/your_experiment.py
 ```
 
-For detailed information on configuring the LLM, please refer to our [Model Configuration Wiki page](https://github.com/nasa-jpl/rosa/wiki/Model-Configuration).
+For Ollama experiments, start Ollama and make the selected model available.
+Your script must read any settings it needs from the environment or `.env`;
+uv does not load `.env` automatically. No personal experiment script is included.
 
+For traced runs, obtain the separate `rosa-evaluation` project and keep it next
+to this checkout:
 
-## Adapting ROSA for Your Robot 🔧
+```text
+project/
+  rosa-research/
+  rosa-evaluation/
+```
 
-ROSA is designed to be easily adaptable to different robots and environments. You can create custom agents by either inheriting from the `ROSA` class or creating a new instance with custom parameters.
+From `rosa-evaluation`:
 
-For detailed information on creating custom agents, adding tools, and customizing prompts, please refer to our [Custom Agents Wiki page](https://github.com/nasa-jpl/rosa/wiki/Custom-Agents).
+```bash
+./tools/phoenix/run.sh start
+./run.sh research --mode controlled
+```
 
+The controlled run uses scripted model responses and does not require Ollama.
+Open http://localhost:6006 and select `rosa-local` to inspect its traces.
+Use `./run.sh research --mode live` for a live Ollama run. The evaluation README
+describes model configuration, validation cases, and trace inspection.
 
-## TurtleSim Demo 🐢
+`rosa-baseline/` is an optional sibling checkout containing the reference ROSA
+implementation for comparison with research changes. It is a separate local
+checkout and is not included in this repository or required to start experiments.
+The evaluation tools default to the research checkout. If you later create a
+baseline checkout with the matching uv setup, `./run.sh baseline` selects it.
+To validate both, use `./tools/phoenix/run.sh validate --variant research --variant baseline`
+from the evaluation repository. The research-only commands above do not need it.
 
-We have included a demo that uses ROSA to control the TurtleSim robot in simulation. To run the demo, you will need to have Docker installed on your machine. 🐳
+## Tests
 
-The following video shows ROSA reasoning about how to draw a 5-point star, then 
-executing the necessary commands to do so.
+```bash
+uv run python -m unittest discover -s tests -v
+```
 
-https://github.com/user-attachments/assets/77b97014-6d2e-4123-8d0b-ea0916d93a4e
+The retained upstream tests cover ROSA tools. ROS 1 tests are skipped when the
+ROS 2 environment is selected. These tests do not establish live model quality
+or robot task success.
 
-For detailed instructions on setting up and running the TurtleSim demo, please refer to our [TurtleSim Demo Guide](https://github.com/nasa-jpl/rosa/wiki/Guide:-TurtleSim-Demo) in the Wiki.
+## Source and attribution
 
+- `src/rosa/`: ROSA agent, prompts, and tools.
+- `tests/`: retained upstream tests, excluding the removed TurtleSim demo tests.
 
-## IsaacSim Extension (Coming Soon)
+The ROSA package retains its upstream `jpl-rosa` name and version. This repository
+is an experiment fork, with no package publishing workflow. The original ROS 1
+TurtleSim demo and its Docker setup have been removed.
 
-ROSA is coming to Nvidia IsaacSim! While you can already use ROSA with robots running in IsaacSim (using the ROS/ROS2 bridge), we are adding direct integration
-in the form of an IsaacSim extension. This will allow you not only to control your robots in IsaacSim, but control IsaacSim itself. Check out the video below to learn mroe.
-
-#### ROSA Demo: Nvidia IsaacSim Extension (click for YouTube)
-[![Carter YouTube Thumbnail Play](https://github.com/user-attachments/assets/a6948d5e-2726-4dd8-8dee-19dfb5188f1d)](https://www.youtube.com/watch?v=mm5525G_EfQ)
-
-## 📘 Learn More
-
-- [📕 Read the paper](https://arxiv.org/abs/2410.06472)
-- [🗺️ Roadmap](https://github.com/nasa-jpl/rosa/wiki/Feature-Roadmap)
-- [🏷️ Releases](https://github.com/nasa-jpl/rosa/releases)
-- [❓ FAQ](https://github.com/nasa-jpl/rosa/wiki/FAQ)
-
-
-## Changelog
-
-See our [CHANGELOG.md](CHANGELOG.md) for a history of our changes.  
-
-## Contributing
-
-Interested in contributing to our project? Please see our: [CONTRIBUTING.md](CONTRIBUTING.md)
-
-For guidance on how to interact with our team, please see our code of conduct located
-at: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
-For guidance on our governance approach, including decision-making process and our various roles, please see our
-governance model at: [GOVERNANCE.md](GOVERNANCE.md)
-
-## License
-
-See our: [LICENSE](LICENSE)
-
-## Support
-
-Key points of contact are:
-
-- [@RobRoyce](https://github.com/RobRoyce) ([email](mailto:01-laptop-voiced@icloud.com))
-
----
-
-<div align="center">
-  ROSA: Robot Operating System Agent 🤖<br>
-  Copyright (c) 2024. Jet Propulsion Laboratory. All rights reserved.
-</div>
+ROSA originates from NASA JPL. Existing source copyright notices and the
+[Apache 2.0 license](LICENSE) are preserved. Upstream documentation and release
+history remain available in the [original repository](https://github.com/nasa-jpl/rosa).

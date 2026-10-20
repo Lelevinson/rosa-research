@@ -6,3 +6,8 @@ dist/
 __pycache__/
 docs
 .DS_Store
+.venv/
+.env
+.env.*
+!.env.example
+*.py[cod]

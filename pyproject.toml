@@ -49,3 +49,22 @@ all = ["langchain-anthropic~=0.3.12", "langchain-ollama~=0.3.2"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+# Local experiment dependencies; upstream ROSA dependency declarations stay above.
+[dependency-groups]
+ollama = ["langchain-ollama==0.3.10", "ollama==0.6.3"]
+tracing = [
+    "openinference-instrumentation-langchain==0.1.79",
+    "openinference-instrumentation==0.1.71",
+    "openinference-semantic-conventions==0.1.41",
+    "opentelemetry-api==1.45.1",
+    "opentelemetry-sdk==1.45.1",
+    "opentelemetry-exporter-otlp-proto-http==1.45.1",
+]
+
+[tool.uv]
+default-groups = ["ollama", "tracing"]
+
+[tool.uv.dependency-groups]
+ollama = {requires-python = ">=3.12"}
+tracing = {requires-python = ">=3.12"}
