@@ -52,25 +52,22 @@ project/
   rosa-evaluation/
 ```
 
-From `rosa-evaluation`:
+From `rosa-evaluation/tools/phoenix/`:
 
 ```bash
-./tools/phoenix/run.sh start
-./run.sh research --mode controlled
+uv run phoenix-local start
+./trace-rosa.sh
 ```
 
-The controlled run uses scripted model responses and does not require Ollama.
-Open http://localhost:6006 and select `rosa-local` to inspect its traces.
-Use `./run.sh research --mode live` for a live Ollama run. The evaluation README
-describes model configuration, validation cases, and trace inspection.
+This runs the actual ROSA agent with Ollama and sends its model/tool traces to
+Phoenix. Ollama must be running and its endpoint/model configured. Open
+http://localhost:6006 and select `rosa-local`. The evaluation README covers setup,
+local settings, and trace inspection. Starting Phoenix alone does not instrument
+your own scripts; those scripts must enable tracing too.
 
-`rosa-baseline/` is an optional sibling checkout containing the reference ROSA
-implementation for comparison with research changes. It is a separate local
-checkout and is not included in this repository or required to start experiments.
-The evaluation tools default to the research checkout. If you later create a
-baseline checkout with the matching uv setup, `./run.sh baseline` selects it.
-To validate both, use `./tools/phoenix/run.sh validate --variant research --variant baseline`
-from the evaluation repository. The research-only commands above do not need it.
+`rosa-baseline/` is an optional separate reference checkout for your own
+comparisons. It is not bundled or required. To trace another ROSA checkout, set
+`[rosa].checkout` in the evaluation project's `tools/phoenix/config.local.toml`.
 
 ## Tests
 
