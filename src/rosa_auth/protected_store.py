@@ -68,7 +68,13 @@ try {
                 $temporary = Join-Path $storeDir ($storeName + '.' + [Guid]::NewGuid().ToString('N') + '.tmp')
                 try {
                     [IO.File]::WriteAllBytes($temporary, $encrypted)
-                    if ([IO.File]::Exists($storePath)) { [IO.File]::Replace($temporary, $storePath, $null) }
+                    if ([IO.File]::Exists($storePath)) {
+                        # PowerShell's binder turns the third $null into an empty
+                        # backup path. Reflection preserves a true CLR null, so
+                        # replacement stays atomic without a credential backup.
+                        $replace = [IO.File].GetMethod('Replace', [type[]]@([string], [string], [string]))
+                        $replace.Invoke($null, [object[]]@([string]$temporary, [string]$storePath, $null))
+                    }
                     else { [IO.File]::Move($temporary, $storePath) }
                 } finally { if ([IO.File]::Exists($temporary)) { [IO.File]::Delete($temporary) } }
                 [Console]::WriteLine('{"ok":true}')
@@ -162,7 +168,9 @@ class WindowsCredentialStore:
                     self._child.kill()
                     self._child.wait(3)
         for stream in (self._child.stdin, self._child.stdout):
-            if stream: stream.close()
+            if stream:
+                try: stream.close()
+                except OSError: pass  # Do not mask the original safe storage error.
 
     def __enter__(self): return self
     def __exit__(self, *args): self.close()

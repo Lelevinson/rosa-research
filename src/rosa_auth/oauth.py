@@ -195,12 +195,13 @@ class LoginServer(HTTPServer):
         connection.settimeout(self.request_timeout)
         return connection, address
 
-    def __init__(self, attempt, endpoint, port=1455, *, request_budget=3):
+    def __init__(self, attempt, endpoint, port=1455, *, request_budget=3, remember_authorization=False):
         self.attempt = attempt
         self.endpoint = endpoint
         if type(request_budget) is not int or not 1 <= request_budget <= 2000:
             raise ValueError('Request budget must be between 1 and 2000')
         self.request_budget = request_budget
+        self.remember_authorization = remember_authorization
         super().__init__(('127.0.0.1', port), LoginHandler)
         self.timeout = 1
         self.base_url = f'http://127.0.0.1:{self.server_port}'
@@ -231,13 +232,17 @@ class LoginHandler(BaseHTTPRequestHandler):
         parsed = urlsplit(self.path)
         if parsed.path == '/':
             url = escape(self.server.attempt.authorization_url(self.server.endpoint), quote=True)
+            cleanup = ('The refresh credential remains encrypted for future runs until explicit sign-out; '
+                'access and ID tokens are cleared from memory. New consent stays manual. '
+                if self.server.remember_authorization else
+                'Tokens stay in memory and the helper attempts session revocation when finished. ')
             self.reply(200, '<!doctype html><meta charset="utf-8"><title>ROSA Research sign-in</title>'
                 '<main style="font:18px system-ui;max-width:680px;margin:80px auto;line-height:1.6">'
                 '<h1>ROSA Research OAuth smoke test</h1>'
                 '<p>Sign in with your own ChatGPT account and review the requested plan-usage permission.</p>'
                 f'<p>This run will make at most {self.server.request_budget} AI requests using an available account model. '
-                'Only isolated simulation tools are exposed; no physical robot is connected. Tokens stay in memory and the helper attempts '
-                'session revocation when finished. No API-key billing fallback is configured.</p>'
+                'Only isolated simulation tools are exposed; no physical robot is connected. '
+                f'{cleanup}No API-key billing fallback is configured.</p>'
                 f'<p><a href="{url}" style="background:#111;color:white;padding:12px 20px;border-radius:8px;text-decoration:none">Continue with ChatGPT</a></p>'
                 '<p>After sign-in, return to the chat. No password or token should be pasted there.</p></main>')
         elif parsed.path == '/auth/callback':

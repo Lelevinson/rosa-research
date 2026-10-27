@@ -130,10 +130,12 @@ def remembered_session(*, request_budget=6, timeout=900, port=1455,
         else:
             attempt = Attempt(registration['host_id'], registration.get('client_id'))
             try:
-                server = LoginServer(attempt, discovery['authorization_endpoint'], port, request_budget=request_budget)
+                server = LoginServer(attempt, discovery['authorization_endpoint'], port,
+                    request_budget=request_budget, remember_authorization=True)
             except OSError:
                 if port == 0: raise
-                server = LoginServer(attempt, discovery['authorization_endpoint'], 0, request_budget=request_budget)
+                server = LoginServer(attempt, discovery['authorization_endpoint'], 0,
+                    request_budget=request_budget, remember_authorization=True)
             print(f'Continue with ChatGPT: {server.base_url}/', flush=True)
             print('Complete initial sign-in manually. Remembered authorization is enabled.', flush=True)
             deadline = time.monotonic() + timeout
