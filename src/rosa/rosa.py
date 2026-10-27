@@ -63,6 +63,7 @@ class ROSA:
         max_iterations (int): Maximum number of iterations for the agent executor. Defaults to 100.
         return_intermediate_steps (bool): Whether to return intermediate steps in the agent's execution. 
             Setting to True increases memory usage but provides detailed execution traces. Defaults to False.
+        load_default_tools (bool): Load built-in ROS/system tools. Set False for an explicit custom-only tool registry.
 
     Attributes:
         chat_history (list): A list of messages representing the chat history.
@@ -93,6 +94,7 @@ class ROSA:
         streaming: bool = True,
         max_iterations: int = 100,
         return_intermediate_steps: bool = False,
+        load_default_tools: bool = True,
     ):
         self.__chat_history = []
         self.__ros_version = ros_version
@@ -105,7 +107,8 @@ class ROSA:
         self.__max_iterations = max_iterations
         self.__return_intermediate_steps = return_intermediate_steps
         self.__tools = self._get_tools(
-            ros_version, packages=tool_packages, tools=tools, blacklist=self.__blacklist
+            ros_version, packages=tool_packages, tools=tools, blacklist=self.__blacklist,
+            load_default_tools=load_default_tools,
         )
         self.__prompts = self._get_prompts(prompts)
         self.__agent = self._get_agent()
@@ -121,6 +124,11 @@ class ROSA:
                 type(llm).__name__,
             )
             self.__show_token_usage = False
+
+    @property
+    def tool_names(self) -> tuple[str, ...]:
+        """Return the registered tool names without exposing a mutable registry."""
+        return tuple(tool.name for tool in self.__tools.get_tools())
 
     @property
     def chat_history(self):
@@ -281,9 +289,11 @@ class ROSA:
         packages: Optional[list],
         tools: Optional[list],
         blacklist: Optional[list],
+        load_default_tools: bool = True,
     ) -> ROSATools:
         """Create a ROSA tools object with the specified ROS version, tools, packages, and blacklist."""
-        rosa_tools = ROSATools(ros_version, blacklist=blacklist)
+        rosa_tools = ROSATools(ros_version, blacklist=blacklist,
+                               load_default_tools=load_default_tools)
         if tools:
             rosa_tools.add_tools(tools)
         if packages:
@@ -295,7 +305,7 @@ class ROSA:
     ) -> ChatPromptTemplate:
         """Create a chat prompt template from the system prompts and robot-specific prompts."""
         # Start with default system prompts
-        prompts = system_prompts
+        prompts = list(system_prompts)
 
         # Add robot-specific prompts if provided
         if robot_prompts:

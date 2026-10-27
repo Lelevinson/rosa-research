@@ -1798,7 +1798,7 @@ wheels = [
 name = "jpl-rosa"
 version = "1.0.10"
 source = { editable = "." }
-default-groups = ["ollama", "tracing"]
+default-groups = ["ollama", "siwc", "tracing"]
 dependencies = [
     { name = "azure-identity" },
     { name = "cffi", version = "2.0.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
@@ -1840,6 +1840,9 @@ ollama = [
     { name = "langchain-ollama", marker = "python_full_version >= '3.12'" },
     { name = "ollama", marker = "python_full_version >= '3.12'" },
 ]
+siwc = [
+    { name = "pyjwt", extra = ["crypto"], marker = "python_full_version >= '3.12'" },
+]
 tracing = [
     { name = "openinference-instrumentation", marker = "python_full_version >= '3.12'" },
     { name = "openinference-instrumentation-langchain", marker = "python_full_version >= '3.12'" },
@@ -1851,6 +1854,7 @@ tracing = [
 
 [package.group-requires-python]
 ollama = ">=3.12"
+siwc = ">=3.12"
 tracing = ">=3.12"
 
 [package.metadata]
@@ -1880,6 +1884,7 @@ ollama = [
     { name = "langchain-ollama", marker = "python_full_version >= '3.12'", specifier = "==0.3.10" },
     { name = "ollama", marker = "python_full_version >= '3.12'", specifier = "==0.6.3" },
 ]
+siwc = [{ name = "pyjwt", extras = ["crypto"], marker = "python_full_version >= '3.12'", specifier = "==2.15.1" }]
 tracing = [
     { name = "openinference-instrumentation", marker = "python_full_version >= '3.12'", specifier = "==0.1.71" },
     { name = "openinference-instrumentation-langchain", marker = "python_full_version >= '3.12'", specifier = "==0.1.79" },

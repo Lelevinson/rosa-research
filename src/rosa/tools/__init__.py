@@ -64,11 +64,17 @@ def inject_blacklist(default_blacklist: List[str]):
 
 class ROSATools:
     def __init__(
-        self, ros_version: Literal[1, 2], blacklist: Optional[List[str]] = None
+        self, ros_version: Literal[1, 2], blacklist: Optional[List[str]] = None,
+        load_default_tools: bool = True,
     ):
         self.__tools: list = []
         self.__ros_version = ros_version
         self.__blacklist = blacklist
+
+        if ros_version not in (1, 2):
+            raise ValueError("Invalid ROS version. Must be either 1 or 2.")
+        if not load_default_tools:
+            return
 
         # Add the default tools
         from . import calculation, log, system
