@@ -72,7 +72,124 @@ baseline checkout with the matching uv setup, `./run.sh baseline` selects it.
 To validate both, use `./tools/phoenix/run.sh validate --variant research --variant baseline`
 from the evaluation repository. The research-only commands above do not need it.
 
-## Tests
+## Prepared Windows/WSL services
+
+From Windows PowerShell, start the local inference and tracing services with:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\start-research.ps1
+```
+
+Add `-SmokeTest` to also run the live native-tool and custom-only ROSA readiness
+checks through the evaluation project.
+
+The sibling `rosa-evaluation` checkout is required. Ollama binds only to the
+Windows WSL virtual adapter; its endpoint is refreshed in the evaluation
+checkout's ignored `.env`. The helper uses a project-local Ollama 0.40.6 binary
+under the parent workspace's `.local/ollama-0.40.6` when present. The older
+installed 0.24.0 server cannot download the current Qwen3.5 manifests.
+Phoenix remains loopback-only at http://localhost:6006.
+
+Stop both project services with `scripts/stop-research.ps1`. Models and stored
+traces are retained. Each teammate needs their own local setup; these scripts
+do not manage ChatGPT credentials.
+
+On Martin's prepared machine, `.venv` links to a Linux-hosted environment under
+`~/.local/share/rosa-envs/` to avoid slow package imports through `/mnt/c`.
+Phoenix state uses `~/.local/share/rosa-state/` through ignored local config.
+Neither the environment links nor machine-specific config belongs in Git.
+
+### Custom-only tools for model smoke tests
+
+This branch adds `ROSA(..., load_default_tools=False)`, which constructs the
+registry from only explicitly supplied tools/packages and avoids importing the
+built-in ROS tool modules. Default behavior remains compatible with upstream.
+Check the immutable `agent.tool_names` against your expected allowlist before
+invocation. Custom tools themselves must be trusted; this option is not an OS
+sandbox. Results from this branch must be labeled as a modified ROSA fork.
+
+The isolation regression uses an offline scripted model and blocks network and
+subprocess access while executing a mock read. Run it with:
+
+```bash
+uv run --locked python -m unittest discover -s tests -p test_mock_isolation.py -v
+```
+
+The prepared evaluation `.env` sets `OLLAMA_USE_MMAP=true` for memory-mapped
+loading on this Windows host. Both readiness probes honor that setting; it
+avoids the observed warm-up crash with Ollama's default non-mapped loading.
+The model factory accepts `use_mmap=True` explicitly for equivalent settings
+outside those probes. Model weights and the inference server are unchanged.
+
+## Shared ROSA model interface
+
+`rosa_backends.create_model` selects either the existing `ChatOllama` model or
+the new `ChatSiwc` LangChain model. Both use the real ROSA executor and ordinary
+LangChain tools; the adapter does not implement a second planning loop.
+
+```python
+from rosa_backends import create_model, create_mock_agent
+
+# Local model, with the prepared machine's Ollama endpoint:
+llm = create_model("ollama", model="qwen3.5:9b", base_url=ollama_url)
+agent = create_mock_agent(llm, tools=allowed_tools, max_iterations=4)
+answer = agent.invoke(query)
+
+# For OAuth, use a validated memory-only session's SiwcBackend transport:
+llm = create_model("siwc", model=selected_catalog_slug, siwc_transport=transport)
+agent = create_mock_agent(llm, tools=allowed_tools, max_iterations=4)
+answer = agent.invoke(query)
+```
+
+`create_mock_agent` requires a nonempty, unique tool allowlist, disables built-in
+tool imports, checks the registered names, and disables accumulated chat history.
+Its tools still need to be trusted. `ChatSiwc` maps system instructions to the
+supported developer role, wraps the same function schemas in `rosa_tools`, and
+maps native calls/results to LangChain tool messages with matching call IDs.
+It rejects unknown tool names/namespaces and malformed arguments before dispatch.
+
+The OAuth wire stream is buffered until completion; this first adapter does not
+emit UI token deltas. Encrypted continuation items stay in a private, bounded
+64-message in-memory store, outside traced messages and serialized model fields.
+Missing native tool history fails closed. Call `llm.close()` when finished and
+revoke the owning OAuth session. Sessions are short and request-budgeted; automatic
+refresh is available in memory for bounded benchmark batches; persistent login
+is not implemented. The shared probe handles cleanup.
+
+For one-sign-in overnight batches, renewal preflight, checkpoint boundaries and
+failure handling, see [the OAuth inspection and usage guide](OAUTH_OVERNIGHT.md).
+
+Run the identical single/dependent mock cases from `rosa-evaluation`:
+
+```bash
+./run.sh research --probe-backends --backend ollama
+./run.sh research --probe-backends --backend siwc
+```
+
+OAuth requires browser consent and uses a current account-catalog model; pass
+`--model EXACT_SLUG` to choose explicitly. Each probe reports exact tool calls,
+schemas, source hashes, configuration and Phoenix trace ID. These checks establish
+integration, not stateful task success or model equivalence. Local Qwen uses its
+recorded deterministic settings; OAuth sampling overrides are unsupported.
+
+```bash
+uv run --locked python -m unittest discover -s tests -p test_shared_backends.py -v
+```
+
+## Retained upstream tests
+
+The `rosa_auth` package also provides a bounded, memory-only ChatGPT OAuth
+readiness transport. From the sibling evaluation checkout, run
+`./run.sh research --probe-siwc` and complete browser consent at the printed
+loopback link. This checks the native transport directly; use the shared probe
+above to exercise the new LangChain/ROSA adapter. Each run revokes its token session.
+The default uv groups include the locked JWT verification dependencies.
+
+Run its offline regressions without a browser or model request:
+
+```bash
+uv run --locked python -m unittest discover -s tests -p test_siwc.py -v
+```
 
 ```bash
 uv run python -m unittest discover -s tests -v

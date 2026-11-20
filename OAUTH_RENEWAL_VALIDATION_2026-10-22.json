@@ -1,0 +1,33 @@
+﻿{
+    "date":  "2026-10-22",
+    "milestone":  "oauth-renewal-hardening",
+    "baseline_oauth_tests":  23,
+    "final_oauth_tests":  36,
+    "shared_adapter_tests":  9,
+    "result":  "45_PASS",
+    "live_model_requests":  0,
+    "credentials":  "synthetic_only",
+    "credential_persistence":  "disabled",
+    "unattended_process_restart":  "not_implemented",
+    "frozen_runners_modified":  false,
+    "validation_environment":  "Ubuntu-24.04 /home/martin/.local/share/rosa-envs/research/bin/python",
+    "commands":  [
+                     "python -m unittest discover -s tests -p test_siwc*.py -v",
+                     "python -m unittest discover -s tests -p test_shared_backends.py -v"
+                 ],
+    "source_sha256":  {
+                          "src/rosa_auth/oauth.py":  "7f5095f1f115fb7b4294b11521c0a2aff228f22ebc3822aa3e9fde9d020ba3b8",
+                          "src/rosa_auth/session.py":  "6f4d05aba32098c8de9665ad15e50c23beceb7a9e43e09aad114ecfd2594e2ca",
+                          "src/rosa_auth/responses.py":  "91c5add074ea9986dc71f100904ddbc991890842b9033340a6687c694f1809c0",
+                          "src/rosa_auth/batch.py":  "9207d27448be41aeac60806925a7911e73e90e65a15d1ff0172c17f4670da0a9",
+                          "tests/test_siwc.py":  "ce313d2100ca32e8e886486916c5a62ba2c4e1f152c5b19e6dd9fd0fc0df33d4",
+                          "tests/test_siwc_overnight.py":  "ae90d05a1059a1a478044351551a79c994c9d493c41bb3bd59ffb770af128796",
+                          "tests/test_shared_backends.py":  "1a7d0301b78262ca2fa43719bf221e49b3f1da79ba3fa0bbeec6aa4b8029e041",
+                          "OAUTH_OVERNIGHT.md":  "1791813434688497a2743081f5676c597f8459fd774d37882e6b8bd787df3e4a"
+                      },
+    "archives_verified_sha256":  {
+                                     "stage4":  "44bae743969d473359e5e6dcead7c89226851286a45c2d439ddf8a091a63b76c",
+                                     "reliability_v1":  "2bd6963cd27e01df9e86df9a7f9fbd1d84dba03e52c3fb85d42d86ea717e51a5",
+                                     "reliability_review":  "9546d2bfb2dd371cbf694ba17b3b016728c9c6df90ece24606df0f0264c8117f"
+                                 }
+}
