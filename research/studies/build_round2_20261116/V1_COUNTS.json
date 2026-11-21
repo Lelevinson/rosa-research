@@ -1,0 +1,65 @@
+{
+ "triggers": 31,
+ "episodes_with_trigger": 22,
+ "per_task": {
+  "h4": 11,
+  "v2": 19,
+  "u3": 1
+ },
+ "per_model": {
+  "lfm3:1.7b": 5,
+  "qwen3.5:9b": 7,
+  "gpt-oss:20b": 7,
+  "bonsai-2:4b": 12
+ },
+ "per_tool": {
+  "ros2_param_get": 7,
+  "ros2_node_info": 18,
+  "ros2_topic_info": 1,
+  "ros2_param_list": 3,
+  "ros2_service_info": 2
+ },
+ "per_task_model": {
+  "h4|lfm3:1.7b": 1,
+  "v2|qwen3.5:9b": 3,
+  "v2|gpt-oss:20b": 6,
+  "h4|gpt-oss:20b": 1,
+  "h4|bonsai-2:4b": 5,
+  "v2|bonsai-2:4b": 6,
+  "u3|bonsai-2:4b": 1,
+  "v2|lfm3:1.7b": 4,
+  "h4|qwen3.5:9b": 4
+ },
+ "per_task_tool": {
+  "h4|ros2_param_get": 7,
+  "v2|ros2_node_info": 17,
+  "h4|ros2_topic_info": 1,
+  "h4|ros2_param_list": 3,
+  "u3|ros2_node_info": 1,
+  "v2|ros2_service_info": 2
+ },
+ "episodes_with_trigger_per_task": {
+  "h4": 8,
+  "v2": 13,
+  "u3": 1
+ },
+ "enriched_tasks": [
+  "h4",
+  "u3",
+  "v2"
+ ],
+ "ros2_topic_echo_triggers": 0,
+ "all_tasks": [
+  "e1h_abs_1",
+  "e1h_abs_2",
+  "e1h_amb_1",
+  "e1h_amb_2",
+  "e1h_chg_1",
+  "e1h_chg_2",
+  "h4",
+  "p3",
+  "u3",
+  "v2"
+ ],
+ "replay_protocol_sha": "4056dc029318c1740fe57d2b9fee37a084f1fbdc9a32b2722f559aa77184bfe7"
+}

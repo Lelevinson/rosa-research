@@ -1,0 +1,185 @@
+{
+  "recorded": 80,
+  "assigned": 80,
+  "complete": true,
+  "requests": 643,
+  "usage_records": 641,
+  "returned_thinking_responses": 94,
+  "compactions": 0,
+  "inline_thinking_responses": 0,
+  "scripted_changes": 15,
+  "successful_scripted_resets": 15,
+  "requests_without_usage": [
+    {
+      "run_id": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/007-u3-Forge-s1",
+      "requests": 13,
+      "usage_records": 12
+    },
+    {
+      "run_id": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/054-e1h_amb_1-Forge-s2",
+      "requests": 11,
+      "usage_records": 10
+    }
+  ],
+  "first_model_checks": {
+    "lfm3:1.7b": {
+      "kind": "first_response_transport_check",
+      "monotonic": 14042.003310484,
+      "tool_run_id": null,
+      "model": "lfm3:1.7b",
+      "env": "stage3",
+      "task": "v2",
+      "seed": 1,
+      "wire_think": false,
+      "think_matches_pilot": true,
+      "no_thinking_observed": true,
+      "historical_raw_thinking_available": false,
+      "http_status": 200,
+      "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/000-v2-Forge-s1/trace.jsonl"
+    },
+    "qwen3.5:9b": {
+      "kind": "first_response_transport_check",
+      "monotonic": 15012.409415031,
+      "tool_run_id": null,
+      "model": "qwen3.5:9b",
+      "env": "stage3",
+      "task": "p3",
+      "seed": 1,
+      "wire_think": false,
+      "think_matches_pilot": true,
+      "no_thinking_observed": true,
+      "historical_raw_thinking_available": false,
+      "http_status": 200,
+      "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/020-p3-Forge-s1/trace.jsonl"
+    },
+    "gpt-oss:20b": {
+      "kind": "first_response_transport_check",
+      "monotonic": 16041.872187186,
+      "tool_run_id": null,
+      "model": "gpt-oss:20b",
+      "env": "stage3",
+      "task": "u3",
+      "seed": 1,
+      "wire_think": false,
+      "think_matches_pilot": true,
+      "no_thinking_observed": false,
+      "historical_raw_thinking_available": false,
+      "http_status": 200,
+      "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/040-u3-Forge-s1/trace.jsonl"
+    },
+    "bonsai-2:4b": {
+      "kind": "first_response_transport_check",
+      "monotonic": 17594.913030353,
+      "tool_run_id": null,
+      "model": "bonsai-2:4b",
+      "env": "stage3",
+      "task": "h4",
+      "seed": 2,
+      "wire_think": false,
+      "think_matches_pilot": true,
+      "no_thinking_observed": true,
+      "historical_raw_thinking_available": false,
+      "http_status": 200,
+      "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/060-h4-Forge-s2/trace.jsonl"
+    }
+  },
+  "sessions": {
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 8,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 12,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 8,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 12,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 8,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h": {
+      "oracles": {
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 4,
+      "errors": [
+        {
+          "kind": "session_error",
+          "monotonic": 16988.019337635,
+          "tool_run_id": null,
+          "error": "RuntimeError('native guard rejection; inspect before continuing')"
+        }
+      ]
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 7,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 8,
+      "errors": []
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h": {
+      "oracles": {
+        "oracle-after": [],
+        "oracle-before": []
+      },
+      "cleanup_ok": true,
+      "context_checks": 12,
+      "errors": []
+    }
+  },
+  "issues": [
+    {
+      "run_id": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/052-e1h_amb_2-Forge-s1",
+      "kind": "guard_rejection"
+    }
+  ],
+  "unchanged_released_python_files": 52,
+  "model_attempt_starts": 80,
+  "file_tool_calls": [],
+  "thinking_on_smoke_rows_excluded": 2
+}

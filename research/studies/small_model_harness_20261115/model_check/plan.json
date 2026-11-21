@@ -1,0 +1,162 @@
+[
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "granite4.2:8b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "granite4.2:8b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "ministral-3:8b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "ministral-3:8b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "mimo-v2.6:9b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "qwen3.5:9b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "ornith-1.5:9b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "mimo-v2.6:9b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "nemotron-3-nano:4b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "ornith-1.5:9b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "bonsai-2:4b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "qwen3.5:9b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "bonsai-2:4b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "gemma4:e4b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "gpt-oss:20b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "gpt-oss:20b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "u3",
+  "arm": "A1",
+  "model": "gemma4:e4b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "nemotron-3-nano:4b",
+  "seed": 1,
+  "temperature": 0.7
+ }
+]

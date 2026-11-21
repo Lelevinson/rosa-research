@@ -1,0 +1,22 @@
+# Stage 0 report: where are model requests still wasted? (2026-11-12)
+
+Offline relabel of 58 preserved traces (327 requests). No inference, ROS run or algorithm test. Full tables: `STAGE0_TABLES.md`; method: `PROTOCOL_STAGE0.md`; per-request labels: `labeled_requests.csv`. Labels F (counts from raw traces), R (support judgments from earlier studies, not re-scored).
+
+## Results
+1. **The baseline default prompt still forbids batching in every arm (F).** A, B and C all contain "NEVER call multiple tools in parallel ... Do not batch." B and C add "use independent tool calls together," which contradicts it. So the earlier result "B and C used no fewer requests, `batch_reads` 0/12" does not measure the model's willingness to batch. Narration and coverage arms are deconflicted.
+2. **Excess over a dependency floor.** Floors are derived per task (3 to 4 requests, not a fixed 2). Supported-complete episodes, requests above floor: baseline Qwen A 29/28 (104%), B 36/32 (112%), C 23/28 (82%); deconflicted Qwen (narration + coverage) 10/35 (29%; narration alone 4/25, 16%); GPT-6 Luna 2/14 (14%). No episode falls below its floor. Deconflicted cells hold only 14 Qwen and 5 Luna episodes on 4 tasks.
+3. **Reasons (269 labeled requests).** JUDG 59, DEP 89, REC 19, RED 42, FIN 58, UNCLEAR 2, ORD 0. (DEP+RED)/labeled = 49% (62% without FIN). By arm: baseline 47–56%, deconflicted Qwen 23–67%, Luna 33–50%. Of the 131 DEP+RED requests, 111 are batchable, repeated, noise or failed-name (the other 20 DEP requests copy values from the immediately preceding result and could not be merged earlier): one `param_get` per node issued one at a time (52), exact or subset repeats (18), `param_list` although `use_sim_time` is in the task (14), `set_debugging` calls after all data were in hand (10), other serialised reads (12), and short-name node calls that failed although verbose topic info gave namespace and name (5; they caused 10 unplanned recovery requests).
+4. **Batching adoption (multi-call requests / (multi-call + missed single-call batchable)).** Baseline conflicted: A 0%, B 5%, C 6%. Deconflicted: Qwen 50–100%, Luna 50–100% (counts of 0 to 6 per cell). Qwen does batch when the prompt allows it; whether the batching is complete is untested at this sample size.
+5. **Agreement.** A blind relabel of 54 requests agrees 85% exactly (kappa 0.81), 91% on "avoidable (DEP/RED) or not". Disagreements are all DEP vs JUDG or UNCLEAR on mixed requests, so the DEP/JUDG boundary is the weakest part of the labels.
+6. **Reconciliation.** Raw traces reproduce the prior 264 native reads and 14 exact repeats. My count of failed-identity requests in the 227 baseline requests is 7, equal to the prior 7 (definitions may differ; not verified). The prior 3.1% ceiling covered one cause; labeling everything finds a much larger batchable and repeated share, mostly in the conflicted-prompt arms.
+
+## Decision rules (brief §5), applied
+- Strong model within 15% of floor: yes (14%, V 0%), but on 5 episodes and 2 tasks; "no call headroom" is supported only weakly.
+- Excess ≥25% in the best arm: the best baseline arm (C) is 82%, and pooled deconflicted Qwen 29%, so the observable signals before wasted calls are listed below. Proposing nothing.
+- Signals just before a wasted call: (a) a listing result with N items where the task asks one field for each (serialised param_get); (b) all required fields already acquired, then a housekeeping or repeat call; (c) an "Unable to find node 'x'" error after a short name taken from `Node name` output; (d) a parameter-name listing when the task names the parameter.
+
+## What the data cannot show
+Whether any policy can realise this headroom without losing support; the effect of a deconflicted prompt on the baseline tasks (never run); anything about plan-ahead or code mode (no such arms exist); held-out generalisation (all tasks are development evidence); floors are derived and a shorter valid route may exist. Confounds: three corpora differ in prompt, context length (65,536 / 4,096 / 16K), tasks and model.
+
+## Next decision for the user
+Most of the visible headroom sits in things ordinary controls already address (deconflicted prompt with batching, exact dedupe, full-name assembly). If you authorize Stage 1, I recommend a reduced first step: A0 only (deconflicted batching ReAct) on the 6 baseline tasks, Qwen, 2 repeats (about 12 episodes), to measure residual excess before any plan-ahead or code-mode arm. Stage 1 is not authorized and not frozen.

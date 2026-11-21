@@ -1,0 +1,93 @@
+"""Fairness test report tables (PROTOCOL.md sections 4, 5, 8). uv run python report_fair.py -> TABLES.md, results.json
+Comparison columns come from existing logs: S0 (s0_dev_20261116), A1 (pilot traces re-scored with scorer v2.0), fixed loop round 1 control (C1). Forge 55 and the pilot's fixed loop 70 are the owner's figures
+(forge_baseline_20261115/REPORT.md: Forge 55/80, historical C1 70/80)."""
+import json
+import re
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+STUDIES = HERE.parent
+sys.path.insert(0, str(STUDIES / "residual_failures_20261115"))
+import scorer_v2 as v2  # noqa: E402
+
+REPO = HERE.parents[2]
+MODELS = ["lfm3:1.7b", "qwen3.5:9b", "gpt-oss:20b", "bonsai-2:4b"]
+TASKS = {t["id"]: t for t in json.loads((STUDIES / "headroom_diagnostic_20261112/stage3_tasks.json").read_text())}
+TASKS.update({t["id"]: t for t in json.loads((STUDIES / "small_model_harness_20261115/e1h_tasks.json").read_text())})
+rows = lambda path: [json.loads(l) for l in Path(path).read_text().splitlines() if l.strip()]
+excluded = {r for g in json.loads((STUDIES / "small_model_harness_20261115/INFRA_EXCLUDED.json").read_text()).values() for r in g["run_ids"]}
+
+
+def kind_of(abort):
+    m = re.match(r"(ResponseError|\w+Error|validation error)", abort or "")
+    return (m.group(1) if m else abort[:40]) if abort else None
+
+
+def summarize(rs):
+    n, sup = len(rs), sum(r["supported_complete"] for r in rs)
+    aborts = [a for r in rs for a in [next((x for x in r.get("aborts", []) if x != "iteration limit"), None)] if a]
+    req = sum(r["llm_requests"] for r in rs)
+    tok = sum(r["input_tokens"] + r["output_tokens"] for r in rs)
+    return dict(episodes=n, supported=sup, abort_episodes=len(aborts), abort_kinds=dict(Counter(kind_of(a) for a in aborts)), iteration_limit=sum("iteration limit" in r.get("aborts", []) for r in rs),
+                requests=req, tokens=tok, requests_per_supported=(req / sup if sup else None), tool_errors_returned=sum(r.get("tool_errors_returned", 0) for r in rs))
+
+
+def rescored_pilot(arm):
+    out = []
+    for r in rows(STUDIES / "small_model_harness_20261115/RESULTS_LOG.jsonl"):
+        if r["arm"] == arm and r["run_id"] not in excluded and r.get("phase") != "smoke":
+            events = v2.s1.read_events(REPO / r["trace_path"])
+            scored = v2.score_events(TASKS[r["task"]], events)
+            out.append(dict(r, supported_complete=scored["supported_complete"]))
+    return out
+
+
+def main():
+    mine = [r for r in rows(HERE / "RESULTS_LOG.jsonl") if r.get("phase") == "full"]
+    excluded_mine = set()
+    if (HERE / "INFRA_EXCLUDED.json").exists():
+        excluded_mine = set(json.loads((HERE / "INFRA_EXCLUDED.json").read_text())["run_ids"])
+    mine = [r for r in mine if r["run_id"] not in excluded_mine]
+    sets = {"E0 (verbatim prompt + errors as text)": [r for r in mine if r["arm"] == "E0"], "E1 (A1 prompt + errors as text)": [r for r in mine if r["arm"] == "E1"],
+            "S0 stock, verbatim prompt": [r for r in rows(STUDIES / "s0_dev_20261116/RESULTS_LOG.jsonl") if r.get("phase") == "full"],
+            "A1 stock, deconflicted prompt (scorer v2.0 re-score)": rescored_pilot("A1"),
+            "fixed loop, round 1 control (C1)": [r for r in rows(STUDIES / "build_round1_20261115/RESULTS_LOG.jsonl") if r["phase"] == "full" and r["arm"] == "C1"]}
+    result = {name: dict(total=summarize(rs), per_model={m: summarize([r for r in rs if r["model"] == m]) for m in MODELS}) for name, rs in sets.items()}
+    # same-cell comparisons
+    cells = lambda rs: {(r["task"], r["model"], r["seed"]): r["supported_complete"] for r in rs}
+    pairs = {}
+    for a, b in (("E0 (verbatim prompt + errors as text)", "S0 stock, verbatim prompt"), ("E1 (A1 prompt + errors as text)", "A1 stock, deconflicted prompt (scorer v2.0 re-score)"),
+                 ("E1 (A1 prompt + errors as text)", "fixed loop, round 1 control (C1)"), ("E1 (A1 prompt + errors as text)", "E0 (verbatim prompt + errors as text)")):
+        ca, cb = cells(sets[a]), cells(sets[b])
+        common = sorted(set(ca) & set(cb))
+        pairs[f"{a} vs {b}"] = dict(cells=len(common), both=sum(ca[c] and cb[c] for c in common), only_first=sum(ca[c] and not cb[c] for c in common),
+                                    only_second=sum(cb[c] and not ca[c] for c in common), neither=sum(not ca[c] and not cb[c] for c in common))
+    result["same_cell"] = pairs
+    e1 = result["E1 (A1 prompt + errors as text)"]["total"]["supported"]
+    result["band"] = ("E1 >= 62: most of the gain is errors-as-text" if e1 >= 62 else "E1 52-61: errors-as-text is a large part; the other parts also matter" if e1 >= 52 else "E1 <= 51: the other parts carry most of the gain")
+    result["episodes_in_log"] = {a: len([r for r in mine if r["arm"] == a]) for a in ("E0", "E1")}
+    (HERE / "results.json").write_text(json.dumps(result, indent=1, default=str))
+    lines = ["# Fairness test tables (generated by report_fair.py)", "", f"Episodes: {result['episodes_in_log']}. Band reading (frozen): {result['band']} (E1 = {e1}/80).", "",
+             "## All four models", "| arm | supported/80 | abort episodes (kinds) | iteration-limit episodes | requests | tokens (in+out) | requests per supported | tool errors returned |", "|---|---:|---|---:|---:|---:|---:|---:|"]
+    for name in sets:
+        t = result[name]["total"]
+        lines.append(f"| {name} | {t['supported']}/{t['episodes']} | {t['abort_episodes']} {t['abort_kinds']} | {t['iteration_limit']} | {t['requests']} | {t['tokens']:,} | {t['requests_per_supported']:.1f} | {t['tool_errors_returned']} |")
+    lines += ["", "## Per model (supported/20, abort episodes, requests, tokens, requests per supported)", "| model | " + " | ".join(sets) + " |", "|---|" + "---|" * len(sets)]
+    for m in MODELS:
+        cells_text = []
+        for name in sets:
+            t = result[name]["per_model"][m]
+            rps = f"{t['requests_per_supported']:.1f}" if t["requests_per_supported"] else "n/a"
+            cells_text.append(f"{t['supported']}/{t['episodes']}, {t['abort_episodes']} ab., {t['requests']} req., {t['tokens']:,} tok., {rps}")
+        lines.append(f"| {m} | " + " | ".join(cells_text) + " |")
+    lines += ["", "## Same-cell comparisons (first only / second only / both / neither)"]
+    for k, v in pairs.items():
+        lines.append(f"- {k}: cells {v['cells']}, both {v['both']}, only first {v['only_first']}, only second {v['only_second']}, neither {v['neither']}")
+    (HERE / "TABLES.md").write_text("\n".join(lines) + "\n")
+    print("\n".join(lines))
+
+
+if __name__ == "__main__":
+    main()

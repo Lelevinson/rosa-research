@@ -1,0 +1,7 @@
+{
+  "ready": "FIXTURE_READY\n",
+  "returncode": 0,
+  "shutdown_seconds": 0.12806479599930753,
+  "stdout": "",
+  "stderr": "[WARN] [1794333372.274948546] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1794333372.274958143] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n"
+}

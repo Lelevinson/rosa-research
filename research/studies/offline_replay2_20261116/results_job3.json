@@ -1,0 +1,579 @@
+{
+ "calls_as_responses_units": {
+  "C1": {
+   "total": {
+    "episodes": 80,
+    "requests": 505,
+    "calls": 466,
+    "mean_calls_per_request": 0.9227722772277228,
+    "share_two_or_more": 0.061386138613861385,
+    "distribution": {
+     "0": 78,
+     "1": 396,
+     "2": 24,
+     "3+": 7
+    }
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": 184,
+     "calls": 173,
+     "mean_calls_per_request": 0.9402173913043478,
+     "share_two_or_more": 0.043478260869565216,
+     "distribution": {
+      "0": 19,
+      "1": 157,
+      "2": 8,
+      "3+": 0
+     }
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": 115,
+     "calls": 96,
+     "mean_calls_per_request": 0.8347826086956521,
+     "share_two_or_more": 0.0,
+     "distribution": {
+      "0": 19,
+      "1": 96,
+      "2": 0,
+      "3+": 0
+     }
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": 117,
+     "calls": 121,
+     "mean_calls_per_request": 1.0341880341880343,
+     "share_two_or_more": 0.1452991452991453,
+     "distribution": {
+      "0": 20,
+      "1": 80,
+      "2": 11,
+      "3+": 6
+     }
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": 89,
+     "calls": 76,
+     "mean_calls_per_request": 0.8539325842696629,
+     "share_two_or_more": 0.06741573033707865,
+     "distribution": {
+      "0": 20,
+      "1": 63,
+      "2": 5,
+      "3+": 1
+     }
+    }
+   },
+   "with_list_call": {
+    "episodes": 0
+   },
+   "without_list_call": {
+    "episodes": 80,
+    "requests": 505,
+    "calls": 466,
+    "mean_calls_per_request": 0.9227722772277228,
+    "share_two_or_more": 0.061386138613861385,
+    "distribution": {
+     "0": 78,
+     "1": 396,
+     "2": 24,
+     "3+": 7
+    }
+   }
+  },
+  "C1+LA": {
+   "total": {
+    "episodes": 80,
+    "requests": 432,
+    "calls": 401,
+    "mean_calls_per_request": 0.9282407407407407,
+    "share_two_or_more": 0.08333333333333333,
+    "distribution": {
+     "0": 78,
+     "1": 318,
+     "2": 27,
+     "3+": 9
+    }
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": 139,
+     "calls": 140,
+     "mean_calls_per_request": 1.0071942446043165,
+     "share_two_or_more": 0.11510791366906475,
+     "distribution": {
+      "0": 19,
+      "1": 104,
+      "2": 12,
+      "3+": 4
+     }
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": 86,
+     "calls": 68,
+     "mean_calls_per_request": 0.7906976744186046,
+     "share_two_or_more": 0.0,
+     "distribution": {
+      "0": 18,
+      "1": 68,
+      "2": 0,
+      "3+": 0
+     }
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": 116,
+     "calls": 115,
+     "mean_calls_per_request": 0.9913793103448276,
+     "share_two_or_more": 0.1206896551724138,
+     "distribution": {
+      "0": 20,
+      "1": 82,
+      "2": 11,
+      "3+": 3
+     }
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": 91,
+     "calls": 78,
+     "mean_calls_per_request": 0.8571428571428571,
+     "share_two_or_more": 0.06593406593406594,
+     "distribution": {
+      "0": 21,
+      "1": 64,
+      "2": 4,
+      "3+": 2
+     }
+    }
+   },
+   "with_list_call": {
+    "episodes": 4,
+    "requests": 33,
+    "calls": 34,
+    "mean_calls_per_request": 1.0303030303030303,
+    "share_two_or_more": 0.09090909090909091,
+    "distribution": {
+     "0": 4,
+     "1": 26,
+     "2": 2,
+     "3+": 1
+    }
+   },
+   "without_list_call": {
+    "episodes": 76,
+    "requests": 399,
+    "calls": 367,
+    "mean_calls_per_request": 0.9197994987468672,
+    "share_two_or_more": 0.08270676691729323,
+    "distribution": {
+     "0": 74,
+     "1": 292,
+     "2": 25,
+     "3+": 8
+    }
+   }
+  },
+  "C1+AG+LA": {
+   "total": {
+    "episodes": 80,
+    "requests": 466,
+    "calls": 419,
+    "mean_calls_per_request": 0.8991416309012875,
+    "share_two_or_more": 0.06437768240343347,
+    "distribution": {
+     "0": 88,
+     "1": 348,
+     "2": 21,
+     "3+": 9
+    }
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": 140,
+     "calls": 140,
+     "mean_calls_per_request": 1.0,
+     "share_two_or_more": 0.11428571428571428,
+     "distribution": {
+      "0": 20,
+      "1": 104,
+      "2": 12,
+      "3+": 4
+     }
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": 105,
+     "calls": 80,
+     "mean_calls_per_request": 0.7619047619047619,
+     "share_two_or_more": 0.0,
+     "distribution": {
+      "0": 25,
+      "1": 80,
+      "2": 0,
+      "3+": 0
+     }
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": 129,
+     "calls": 121,
+     "mean_calls_per_request": 0.937984496124031,
+     "share_two_or_more": 0.07751937984496124,
+     "distribution": {
+      "0": 23,
+      "1": 96,
+      "2": 7,
+      "3+": 3
+     }
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": 92,
+     "calls": 78,
+     "mean_calls_per_request": 0.8478260869565217,
+     "share_two_or_more": 0.043478260869565216,
+     "distribution": {
+      "0": 20,
+      "1": 68,
+      "2": 2,
+      "3+": 2
+     }
+    }
+   },
+   "with_list_call": {
+    "episodes": 5,
+    "requests": 29,
+    "calls": 29,
+    "mean_calls_per_request": 1.0,
+    "share_two_or_more": 0.10344827586206896,
+    "distribution": {
+     "0": 5,
+     "1": 21,
+     "2": 2,
+     "3+": 1
+    }
+   },
+   "without_list_call": {
+    "episodes": 75,
+    "requests": 437,
+    "calls": 390,
+    "mean_calls_per_request": 0.8924485125858124,
+    "share_two_or_more": 0.06178489702517163,
+    "distribution": {
+     "0": 83,
+     "1": 327,
+     "2": 19,
+     "3+": 8
+    }
+   }
+  }
+ },
+ "calls_one_per_list_item": {
+  "C1": {
+   "total": {
+    "episodes": 80,
+    "requests": 505,
+    "calls": 555,
+    "mean_calls_per_request": 1.099009900990099,
+    "share_two_or_more": 0.08712871287128712,
+    "distribution": {
+     "0": 78,
+     "1": 383,
+     "2": 25,
+     "3+": 19
+    }
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": 184,
+     "calls": 196,
+     "mean_calls_per_request": 1.065217391304348,
+     "share_two_or_more": 0.059782608695652176,
+     "distribution": {
+      "0": 19,
+      "1": 154,
+      "2": 7,
+      "3+": 4
+     }
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": 115,
+     "calls": 116,
+     "mean_calls_per_request": 1.008695652173913,
+     "share_two_or_more": 0.017391304347826087,
+     "distribution": {
+      "0": 19,
+      "1": 94,
+      "2": 0,
+      "3+": 2
+     }
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": 117,
+     "calls": 126,
+     "mean_calls_per_request": 1.0769230769230769,
+     "share_two_or_more": 0.17094017094017094,
+     "distribution": {
+      "0": 20,
+      "1": 77,
+      "2": 12,
+      "3+": 8
+     }
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": 89,
+     "calls": 117,
+     "mean_calls_per_request": 1.3146067415730338,
+     "share_two_or_more": 0.12359550561797752,
+     "distribution": {
+      "0": 20,
+      "1": 58,
+      "2": 6,
+      "3+": 5
+     }
+    }
+   },
+   "with_list_call": {
+    "episodes": 0
+   },
+   "without_list_call": {
+    "episodes": 80,
+    "requests": 505,
+    "calls": 555,
+    "mean_calls_per_request": 1.099009900990099,
+    "share_two_or_more": 0.08712871287128712,
+    "distribution": {
+     "0": 78,
+     "1": 383,
+     "2": 25,
+     "3+": 19
+    }
+   }
+  },
+  "C1+LA": {
+   "total": {
+    "episodes": 80,
+    "requests": 432,
+    "calls": 493,
+    "mean_calls_per_request": 1.1412037037037037,
+    "share_two_or_more": 0.12962962962962962,
+    "distribution": {
+     "0": 78,
+     "1": 298,
+     "2": 31,
+     "3+": 25
+    }
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": 139,
+     "calls": 144,
+     "mean_calls_per_request": 1.0359712230215827,
+     "share_two_or_more": 0.12949640287769784,
+     "distribution": {
+      "0": 19,
+      "1": 102,
+      "2": 12,
+      "3+": 6
+     }
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": 86,
+     "calls": 107,
+     "mean_calls_per_request": 1.244186046511628,
+     "share_two_or_more": 0.046511627906976744,
+     "distribution": {
+      "0": 18,
+      "1": 64,
+      "2": 1,
+      "3+": 3
+     }
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": 116,
+     "calls": 127,
+     "mean_calls_per_request": 1.0948275862068966,
+     "share_two_or_more": 0.1810344827586207,
+     "distribution": {
+      "0": 20,
+      "1": 75,
+      "2": 14,
+      "3+": 7
+     }
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": 91,
+     "calls": 115,
+     "mean_calls_per_request": 1.2637362637362637,
+     "share_two_or_more": 0.14285714285714285,
+     "distribution": {
+      "0": 21,
+      "1": 57,
+      "2": 4,
+      "3+": 9
+     }
+    }
+   },
+   "with_list_call": {
+    "episodes": 4,
+    "requests": 33,
+    "calls": 45,
+    "mean_calls_per_request": 1.3636363636363635,
+    "share_two_or_more": 0.2727272727272727,
+    "distribution": {
+     "0": 4,
+     "1": 20,
+     "2": 4,
+     "3+": 5
+    }
+   },
+   "without_list_call": {
+    "episodes": 76,
+    "requests": 399,
+    "calls": 448,
+    "mean_calls_per_request": 1.1228070175438596,
+    "share_two_or_more": 0.11779448621553884,
+    "distribution": {
+     "0": 74,
+     "1": 278,
+     "2": 27,
+     "3+": 20
+    }
+   }
+  },
+  "C1+AG+LA": {
+   "total": {
+    "episodes": 80,
+    "requests": 466,
+    "calls": 530,
+    "mean_calls_per_request": 1.1373390557939915,
+    "share_two_or_more": 0.10944206008583691,
+    "distribution": {
+     "0": 88,
+     "1": 327,
+     "2": 24,
+     "3+": 27
+    }
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": 140,
+     "calls": 144,
+     "mean_calls_per_request": 1.0285714285714285,
+     "share_two_or_more": 0.12857142857142856,
+     "distribution": {
+      "0": 20,
+      "1": 102,
+      "2": 12,
+      "3+": 6
+     }
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": 105,
+     "calls": 120,
+     "mean_calls_per_request": 1.1428571428571428,
+     "share_two_or_more": 0.0380952380952381,
+     "distribution": {
+      "0": 25,
+      "1": 76,
+      "2": 0,
+      "3+": 4
+     }
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": 129,
+     "calls": 150,
+     "mean_calls_per_request": 1.1627906976744187,
+     "share_two_or_more": 0.13178294573643412,
+     "distribution": {
+      "0": 23,
+      "1": 89,
+      "2": 9,
+      "3+": 8
+     }
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": 92,
+     "calls": 116,
+     "mean_calls_per_request": 1.2608695652173914,
+     "share_two_or_more": 0.13043478260869565,
+     "distribution": {
+      "0": 20,
+      "1": 60,
+      "2": 3,
+      "3+": 9
+     }
+    }
+   },
+   "with_list_call": {
+    "episodes": 5,
+    "requests": 29,
+    "calls": 41,
+    "mean_calls_per_request": 1.4137931034482758,
+    "share_two_or_more": 0.3103448275862069,
+    "distribution": {
+     "0": 5,
+     "1": 15,
+     "2": 3,
+     "3+": 6
+    }
+   },
+   "without_list_call": {
+    "episodes": 75,
+    "requests": 437,
+    "calls": 489,
+    "mean_calls_per_request": 1.1189931350114417,
+    "share_two_or_more": 0.09610983981693363,
+    "distribution": {
+     "0": 83,
+     "1": 312,
+     "2": 21,
+     "3+": 21
+    }
+   }
+  }
+ },
+ "question1": {
+  "pooled_difference": 0.005468463513017885,
+  "per_model_difference": {
+   "bonsai-2:4b": 0.06697685329996872,
+   "gpt-oss:20b": -0.044084934277047516,
+   "lfm3:1.7b": -0.042808723843206664,
+   "qwen3.5:9b": 0.0032102728731941976
+  },
+  "answer_yes": false
+ },
+ "question2": {
+  "control_requests": 505,
+  "list_arm_requests": 432,
+  "recorded_difference": 73,
+  "list_arm_calls": 401,
+  "control_calls": 466,
+  "expected_list_arm_requests_at_control_ratio": 434.5600858369099,
+  "counterfactual_difference": 70.43991416309012,
+  "share_recovered": 0.9649303310012346,
+  "expected_list_arm_requests_per_model_ratio": 432.9005198079755,
+  "share_recovered_per_model_ratio": 0.9876641122195136,
+  "explains": true
+ }
+}

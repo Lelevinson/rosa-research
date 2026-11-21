@@ -1,0 +1,56 @@
+{
+  "tasks": [
+    {
+      "id": "d1_recovery",
+      "application": "demo_nodes_cpp",
+      "request": "A stale operator note names /diag_demo/retired_source as the sender. First inspect that exact node once to test the note; if it is missing, recover using actual discovery. Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean).",
+      "provenance": "Historical baseline_diagnostic/protocol.json; development reuse, not held out; predeclared prefix requests one real absent-node check, not a simulated error or natural fault prevalence estimate"
+    },
+    {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers).",
+      "provenance": "Historical baseline_diagnostic/protocol.json; development reuse, not held out"
+    }
+  ],
+  "common_instruction": "For this read-only diagnostic, independent authorized reads with known arguments MAY be issued together in a single response. Use supported list arguments to group reads. Preserve dependencies: do not guess arguments from results not yet received. Writes must remain sequential and are not authorized in this diagnostic. Reuse still-valid observations within this request; preserve source identity and distinguish publishers/subscribers and observed/configured values. Acquire every requested field and give a complete supported final answer; report unavailable facts instead of guessing. You may retry a failed logical native command once; do not retry it indefinitely. An explicitly named stale identity may be inspected as requested, then use discovery to recover. Use only the advertised read tools.",
+  "arm_instructions": {
+    "B": "When you choose to call tools, issue the native tool calls without unnecessary natural-language preamble or narration. This instruction applies only to tool-call turns. When you answer the user, preserve all requested fields, source distinctions, uncertainty and correctness obligations; produce the complete final answer.",
+    "V": "When you choose to call tools, issue the native tool calls without unnecessary natural-language preamble or narration. This instruction applies only to tool-call turns. When you answer the user, preserve all requested fields, source distinctions, uncertainty and correctness obligations; produce the complete final answer. Before finishing, compare every requested fact and requested procedure with the observations actually obtained. Successful discovery of an entity or a field name is not evidence of its value. For each unsupported requested fact, acquire evidence using the advertised tools or explicitly report that it is unavailable; never substitute a customary default. Check that the final answer includes every requested field and that requested checks were performed. This is a fixed verification instruction; keep tool-action narration concise."
+  },
+  "providers": {
+    "openai": {
+      "model": "gpt-6-luna",
+      "auth": "existing ChatGPT-plan OAuth only; no API key",
+      "options": {
+        "parallel_tool_calls": true
+      },
+      "temperature": null,
+      "seed": null,
+      "context": "Provider-managed; no unsupported context/truncation override; record available catalog and every completion status"
+    },
+    "ollama": {
+      "model": "qwen3.5:9b",
+      "base_url": "http://172.30.80.1:11434",
+      "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+      "options": {
+        "think": false,
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_predict": 1600,
+          "num_ctx": 16384
+        }
+      }
+    }
+  },
+  "order_seed": 20261112,
+  "budgets": {
+    "model_iterations": 10,
+    "episode_seconds": 240,
+    "total_seconds": 2400,
+    "native_attempts": 64
+  },
+  "ros_domain": 175,
+  "status": "frozen before activation/inference"
+}

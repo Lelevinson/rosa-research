@@ -1,0 +1,74 @@
+[
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "S0",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "A1",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "C1",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "M0",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "C1+FN",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "C1+H2",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "C1+H1e",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "C1+H1n",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ },
+ {
+  "env": "stage3",
+  "task": "p3",
+  "arm": "C1+H7",
+  "model": "lfm3:1.7b",
+  "seed": 1,
+  "temperature": 0.7
+ }
+]

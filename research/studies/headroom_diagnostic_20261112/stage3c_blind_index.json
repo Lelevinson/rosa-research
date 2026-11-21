@@ -1,0 +1,77 @@
+[
+ {
+  "blind_id": "B01",
+  "episode": "00-v3-openai-r0",
+  "request": 2
+ },
+ {
+  "blind_id": "B02",
+  "episode": "13-v2-ollama-r0",
+  "request": 4
+ },
+ {
+  "blind_id": "B03",
+  "episode": "13-v2-ollama-r0",
+  "request": 5
+ },
+ {
+  "blind_id": "B04",
+  "episode": "21-h3-openai-r0",
+  "request": 2
+ },
+ {
+  "blind_id": "B05",
+  "episode": "22-u2-ollama-r0",
+  "request": 3
+ },
+ {
+  "blind_id": "B06",
+  "episode": "25-h2-ollama-r1",
+  "request": 3
+ },
+ {
+  "blind_id": "B07",
+  "episode": "29-u3-ollama-r1",
+  "request": 5
+ },
+ {
+  "blind_id": "B08",
+  "episode": "35-v4-ollama-r1",
+  "request": 4
+ },
+ {
+  "blind_id": "B09",
+  "episode": "37-v2-ollama-r1",
+  "request": 5
+ },
+ {
+  "blind_id": "B10",
+  "episode": "38-u2-ollama-r1",
+  "request": 3
+ },
+ {
+  "blind_id": "B11",
+  "episode": "38-u2-ollama-r1",
+  "request": 6
+ },
+ {
+  "blind_id": "B12",
+  "episode": "43-v3-openai-r1",
+  "request": 2
+ },
+ {
+  "blind_id": "B13",
+  "episode": "46-u4-ollama-r1",
+  "request": 5
+ },
+ {
+  "blind_id": "B14",
+  "episode": "46-u4-ollama-r1",
+  "request": 7
+ },
+ {
+  "blind_id": "B15",
+  "episode": "46-u4-ollama-r1",
+  "request": 12
+ }
+]

@@ -1,0 +1,501 @@
+{
+ "node_list_by_session": {
+  "build_round1_20261115/full_20261115T120449Z/lfm3_1.7b-e1h": {
+   "calls": 22,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_20261115T120449Z/lfm3_1.7b-stage3": {
+   "calls": 68,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_20261115T120449Z/qwen3.5_9b-e1h": {
+   "calls": 20,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_20261115T120449Z/qwen3.5_9b-stage3": {
+   "calls": 16,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_resume1_20261115T141427Z/bonsai-2_4b-e1h": {
+   "calls": 30,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_resume1_20261115T141427Z/bonsai-2_4b-stage3": {
+   "calls": 101,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_resume1_20261115T141427Z/gpt-oss_20b-e1h": {
+   "calls": 28,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/full_resume1_20261115T141427Z/gpt-oss_20b-stage3": {
+   "calls": 10,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round1_20261115/smoke_20261115T114457Z/qwen3.5_9b-e1h": {
+   "calls": 4,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round2_20261116/full_20261116T003046Z/lfm3_1.7b-e1h": {
+   "calls": 12,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round2_20261116/full_20261116T003046Z/lfm3_1.7b-stage3": {
+   "calls": 154,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round2_20261116/full_20261116T003046Z/qwen3.5_9b-stage3": {
+   "calls": 9,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round2_20261116/full_resume1_20261116T064619Z/qwen3.5_9b-stage3": {
+   "calls": 42,
+   "incomplete": 0,
+   "examples": []
+  },
+  "build_round2_20261116/smoke_20261116T000725Z/bonsai-2_4b-stage3": {
+   "calls": 9,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h": {
+   "calls": 9,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3": {
+   "calls": 17,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h": {
+   "calls": 1,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3": {
+   "calls": 4,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h": {
+   "calls": 8,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3": {
+   "calls": 11,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h": {
+   "calls": 12,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  },
+  "forge_baseline_20261115/smoke_20261115T084850Z-remaining1": {
+   "calls": 3,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/design_smoke_20261114T080333Z": {
+   "calls": 1,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/repeat_rate_20261114T100614Z/lfm3_1.7b": {
+   "calls": 35,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/repeat_rate_20261114T100614Z/ornith-1.5_9b": {
+   "calls": 8,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage1a_20261112T135750Z": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage1a_resume_20261112T140750Z": {
+   "calls": 16,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage1b_20261112T143327Z": {
+   "calls": 14,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage1b_n32_20261112T145458Z": {
+   "calls": 4,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage1c_20261112T211701Z": {
+   "calls": 11,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage3_20261112T225309Z": {
+   "calls": 36,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage3b_20261113T155721Z": {
+   "calls": 21,
+   "incomplete": 0,
+   "examples": []
+  },
+  "headroom_diagnostic_20261112/stage3d_20261114T005613Z": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/llama_check": {
+   "calls": 1,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_20261115T172434Z/bonsai-2_4b-stage3": {
+   "calls": 7,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_20261115T172434Z/gpt-oss_20b-e1h": {
+   "calls": 1,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_20261115T172434Z/lfm3_1.7b-e1h": {
+   "calls": 10,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_20261115T172434Z/lfm3_1.7b-stage3": {
+   "calls": 8,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_20261115T172434Z/qwen3.5_9b-e1h": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_20261115T172434Z/qwen3.5_9b-stage3": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_full_resume1_20261115T182929Z/bonsai-2_4b-e1h": {
+   "calls": 9,
+   "incomplete": 0,
+   "examples": []
+  },
+  "overnight_20261116/s0_smoke/qwen3.5_9b-e1h": {
+   "calls": 1,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot/lfm3_1.7b-e1h": {
+   "calls": 23,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot/lfm3_1.7b-stage3": {
+   "calls": 71,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot/qwen3.5_9b-e1h": {
+   "calls": 45,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot/qwen3.5_9b-stage3": {
+   "calls": 22,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h": {
+   "calls": 48,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3": {
+   "calls": 101,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h": {
+   "calls": 41,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3": {
+   "calls": 18,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_part3/bonsai-2_4b-e1h-resume1": {
+   "calls": 5,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_repair/lfm3_repair-e1h": {
+   "calls": 14,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/pilot_repair/lfm3_repair-stage3": {
+   "calls": 9,
+   "incomplete": 0,
+   "examples": []
+  },
+  "small_model_harness_20261115/stepA": {
+   "calls": 6,
+   "incomplete": 0,
+   "examples": []
+  }
+ },
+ "oracle_files_with_mismatch": [
+  {
+   "file": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/oracle-after/oracle.json",
+   "mismatches": [
+    "node not listed: /plant32/juniper",
+    "node not listed: /plant32/mantle",
+    "node not listed: /plant32/yonder"
+   ],
+   "when": "2026-11-14T00:42+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round1_20261115/full_20261115T120449Z/qwen3.5_9b-e1h/oracle-after/oracle.json",
+   "mismatches": [
+    "node not listed: /e1h/misc/marlin",
+    "node not listed: /e1h/misc/dahlia"
+   ],
+   "when": "2026-11-15T22:13+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round1_20261115/full_20261115T120031Z/lfm3_1.7b-stage3/oracle-before/oracle.json",
+   "mismatches": [
+    "topic /plant32/upland_t: publishers/subscribers differ"
+   ],
+   "when": "2026-11-15T20:02+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/overnight_20261116/s0_full_20261115T172434Z/bonsai-2_4b-stage3/oracle-after/oracle.json",
+   "mismatches": [
+    "node not listed: /plant32/jetty"
+   ],
+   "when": "2026-11-16T02:28+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_resume1_20261116T064619Z/qwen3.5_9b-stage3/oracle-after-048/oracle.json",
+   "mismatches": [
+    "node not listed: /plant32/lattice",
+    "node not listed: /plant32/beacon",
+    "node not listed: /plant32/juniper",
+    "node not listed: /plant32/yonder"
+   ],
+   "when": "2026-11-16T16:00+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/smoke_20261116T000725Z/bonsai-2_4b-stage3/oracle-after/oracle.json",
+   "mismatches": [
+    "node not listed: /plant32/juniper"
+   ],
+   "when": "2026-11-16T08:17+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_20261116T003046Z/qwen3.5_9b-stage3/oracle-after-012/oracle.json",
+   "mismatches": [
+    "node not listed: /plant32/beacon",
+    "node not listed: /plant32/dune",
+    "node not listed: /plant32/lumen"
+   ],
+   "when": "2026-11-16T10:12+08:00"
+  }
+ ],
+ "setup_events": [
+  {
+   "file": "research/_artifacts/runs/build_round1_20261115/full_20261115T120449Z/qwen3.5_9b-e1h/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError(\"oracle mismatch at after: ['node not listed: /e1h/misc/marlin', 'node not listed: /e1h/misc/dahlia']\")",
+   "file_mtime": "2026-11-15T22:13+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round1_20261115/full_20261115T120031Z/lfm3_1.7b-stage3/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError(\"oracle mismatch at before: ['topic /plant32/upland_t: publishers/subscribers differ']\")",
+   "file_mtime": "2026-11-15T20:02+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/small_model_harness_20261115/liveB_aborted_oracle_timeout/setup.jsonl",
+   "kind": "session_error",
+   "text": "TimeoutExpired(['ros2', 'param', 'get', '/plant32/lattice', 'setpoint'], 40)",
+   "file_mtime": "2026-11-15T00:40+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/overnight_20261116/s0_full_20261115T172434Z/bonsai-2_4b-stage3/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError(\"oracle mismatch at after: ['node not listed: /plant32/jetty']\")",
+   "file_mtime": "2026-11-16T02:28+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_resume1_20261116T064619Z/qwen3.5_9b-stage3/setup.jsonl",
+   "kind": "oracle_failure_logged",
+   "text": "['node not listed: /plant32/lumen', 'node not listed: /plant32/xenon']",
+   "file_mtime": "2026-11-16T16:00+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_resume1_20261116T064619Z/qwen3.5_9b-stage3/setup.jsonl",
+   "kind": "oracle_failure_logged",
+   "text": "['node not listed: /plant32/lattice', 'node not listed: /plant32/beacon', 'node not listed: /plant32/juniper', 'node not listed: /plant32/yonder']",
+   "file_mtime": "2026-11-16T16:00+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_resume1_20261116T064619Z/qwen3.5_9b-stage3/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError(\"oracle mismatch at after-048: ['node not listed: /plant32/lattice', 'node not listed: /plant32/beacon', 'node not listed: /plant32/juniper']\")",
+   "file_mtime": "2026-11-16T16:00+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/smoke_20261116T000725Z/bonsai-2_4b-stage3/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError(\"oracle mismatch at after: ['node not listed: /plant32/juniper']\")",
+   "file_mtime": "2026-11-16T08:17+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_20261116T003046Z/lfm3_1.7b-stage3/setup.jsonl",
+   "kind": "oracle_failure_logged",
+   "text": "['node not listed: /plant32/gantry', 'node not listed: /plant32/quill', 'node not listed: /plant32/zephyr', 'node not listed: /plant32/lumen', 'node not listed: /plant32/yonder']",
+   "file_mtime": "2026-11-16T09:42+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_20261116T003046Z/qwen3.5_9b-stage3/setup.jsonl",
+   "kind": "oracle_failure_logged",
+   "text": "['node not listed: /plant32/beacon', 'node not listed: /plant32/dune', 'node not listed: /plant32/lumen']",
+   "file_mtime": "2026-11-16T10:12+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/build_round2_20261116/full_20261116T003046Z/qwen3.5_9b-stage3/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError(\"oracle mismatch at after-012: ['node not listed: /plant32/beacon', 'node not listed: /plant32/dune', 'node not listed: /plant32/lumen']\")",
+   "file_mtime": "2026-11-16T10:12+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError('native guard rejection; inspect before continuing')",
+   "file_mtime": "2026-11-15T18:09+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/forge_baseline_20261115/smoke_20261115T084850Z-fixture-retry1/setup.jsonl",
+   "kind": "session_error",
+   "text": "ValueError(\"'research/_artifacts/runs/forge_baseline_20261115/smoke_20261115T084850Z-fixture-retry1/000-p3-Forge-s1' is not in the subpath of '/home/levinsonchen/project/rosa-research'\")",
+   "file_mtime": "2026-11-15T16:52+08:00"
+  },
+  {
+   "file": "research/_artifacts/runs/forge_baseline_20261115/smoke_20261115T084850Z/setup.jsonl",
+   "kind": "session_error",
+   "text": "RuntimeError('fixture readiness failed')",
+   "file_mtime": "2026-11-15T16:50+08:00"
+  }
+ ],
+ "round2_oracle_failures": [
+  {
+   "session": "qwen3.5_9b-stage3",
+   "label": "after-048",
+   "attempt": 1,
+   "mismatches": [
+    "node not listed: /plant32/lumen",
+    "node not listed: /plant32/xenon"
+   ],
+   "arms_since_last_oracle": [
+    "CONTROL",
+    "SWEEP"
+   ],
+   "episodes_in_session_so_far": 48,
+   "file": "research/_artifacts/runs/build_round2_20261116/full_resume1_20261116T064619Z/oracle_failures.jsonl",
+   "file_mtime": "2026-11-16T16:00+08:00"
+  },
+  {
+   "session": "qwen3.5_9b-stage3",
+   "label": "after-048",
+   "attempt": 2,
+   "mismatches": [
+    "node not listed: /plant32/lattice",
+    "node not listed: /plant32/beacon",
+    "node not listed: /plant32/juniper",
+    "node not listed: /plant32/yonder"
+   ],
+   "arms_since_last_oracle": [
+    "CONTROL",
+    "SWEEP"
+   ],
+   "episodes_in_session_so_far": 48,
+   "file": "research/_artifacts/runs/build_round2_20261116/full_resume1_20261116T064619Z/oracle_failures.jsonl",
+   "file_mtime": "2026-11-16T16:00+08:00"
+  },
+  {
+   "session": "lfm3_1.7b-stage3",
+   "label": "after",
+   "attempt": 1,
+   "mismatches": [
+    "node not listed: /plant32/gantry",
+    "node not listed: /plant32/quill",
+    "node not listed: /plant32/zephyr",
+    "node not listed: /plant32/lumen",
+    "node not listed: /plant32/yonder"
+   ],
+   "arms_since_last_oracle": [
+    "CONTROL",
+    "SWEEP"
+   ],
+   "episodes_in_session_so_far": 64,
+   "file": "research/_artifacts/runs/build_round2_20261116/full_20261116T003046Z/oracle_failures.jsonl",
+   "file_mtime": "2026-11-16T10:12+08:00"
+  },
+  {
+   "session": "qwen3.5_9b-stage3",
+   "label": "after-012",
+   "attempt": 1,
+   "mismatches": [
+    "node not listed: /plant32/beacon",
+    "node not listed: /plant32/dune",
+    "node not listed: /plant32/lumen"
+   ],
+   "arms_since_last_oracle": [
+    "CONTROL",
+    "SWEEP"
+   ],
+   "episodes_in_session_so_far": 12,
+   "file": "research/_artifacts/runs/build_round2_20261116/full_20261116T003046Z/oracle_failures.jsonl",
+   "file_mtime": "2026-11-16T10:12+08:00"
+  }
+ ]
+}

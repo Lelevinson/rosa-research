@@ -1,0 +1,236 @@
+{
+  "groups": {
+    "width/node/fixed4": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 0.8424029649995646,
+      "wall_median_seconds": 0.4212014824997823,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/node/aimd": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 1.4891778630008048,
+      "wall_median_seconds": 0.7445889315004024,
+      "policy_update_sum_seconds": 2.360199869144708e-05,
+      "failures": 0
+    },
+    "width/node/serial": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 2.751856167000369,
+      "wall_median_seconds": 1.3759280835001846,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/node/fixed2": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 1.5431503849995352,
+      "wall_median_seconds": 0.7715751924997676,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/topic/fixed2": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 1.4944096079998417,
+      "wall_median_seconds": 0.7472048039999208,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/topic/aimd": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 1.5563661369997135,
+      "wall_median_seconds": 0.7781830684998567,
+      "policy_update_sum_seconds": 2.1756000933237374e-05,
+      "failures": 0
+    },
+    "width/topic/fixed4": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 0.8959522249988368,
+      "wall_median_seconds": 0.4479761124994184,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/topic/serial": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 2.819817048999539,
+      "wall_median_seconds": 1.4099085244997696,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/service/fixed4": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 0.8396791939994728,
+      "wall_median_seconds": 0.4198395969997364,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/service/aimd": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 1.515194870000414,
+      "wall_median_seconds": 0.757597435000207,
+      "policy_update_sum_seconds": 1.991999670281075e-05,
+      "failures": 0
+    },
+    "width/service/fixed2": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 1.487355084000228,
+      "wall_median_seconds": 0.743677542000114,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "width/service/serial": {
+      "batches": 2,
+      "reads": 8,
+      "wall_sum_seconds": 2.8404089319992636,
+      "wall_median_seconds": 1.4202044659996318,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "error_duplicate/node/serial": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 1.0356767209996178,
+      "wall_median_seconds": 1.0356767209996178,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 1
+    },
+    "error_duplicate/node/fixed4": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 0.39669509299892525,
+      "wall_median_seconds": 0.39669509299892525,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 1
+    },
+    "error_duplicate/topic/serial": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 1.0593933290001587,
+      "wall_median_seconds": 1.0593933290001587,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 1
+    },
+    "error_duplicate/topic/fixed4": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 0.38971800500075915,
+      "wall_median_seconds": 0.38971800500075915,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 1
+    },
+    "error_duplicate/service/serial": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 1.0753356850000273,
+      "wall_median_seconds": 1.0753356850000273,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 1
+    },
+    "error_duplicate/service/fixed4": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 0.3912436020000314,
+      "wall_median_seconds": 0.3912436020000314,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 1
+    },
+    "transport/service/persistent": {
+      "batches": 8,
+      "reads": 32,
+      "wall_sum_seconds": 0.036736018997544306,
+      "wall_median_seconds": 0.004641340499802027,
+      "policy_update_sum_seconds": 0,
+      "failures": 0
+    },
+    "transport/service/serial": {
+      "batches": 8,
+      "reads": 32,
+      "wall_sum_seconds": 11.419331240995234,
+      "wall_median_seconds": 1.4233643874995323,
+      "policy_update_sum_seconds": 0.0,
+      "failures": 0
+    },
+    "persistent_error/service/persistent": {
+      "batches": 1,
+      "reads": 3,
+      "wall_sum_seconds": 0.0037034879987913882,
+      "wall_median_seconds": 0.0037034879987913882,
+      "policy_update_sum_seconds": 0,
+      "failures": 1
+    }
+  },
+  "runs": {
+    "native_v2": {
+      "setup_wait": {
+        "kind": "setup_wait",
+        "time": 13027.564496181,
+        "seconds": 1.6845191039992642
+      },
+      "fixture_cleanup": {
+        "kind": "fixture_cleanup",
+        "time": 13058.688069341,
+        "returncode": -9
+      },
+      "daemon_cleanup": {
+        "kind": "daemon_cleanup",
+        "time": 13059.046482634,
+        "stdout": "The daemon has been stopped\n",
+        "stderr": "",
+        "returncode": 0
+      },
+      "run_end": {
+        "kind": "run_end",
+        "time": 13059.046566611,
+        "wall_seconds": 34.067971299999044,
+        "children_user_cpu": 43.148647,
+        "children_system_cpu": 7.246853
+      }
+    },
+    "native_v3": {
+      "setup_wait": {
+        "kind": "setup_wait",
+        "time": 13105.309086813,
+        "seconds": 1.6426984499994433
+      },
+      "rmw": {
+        "kind": "rmw",
+        "time": 13105.865939601,
+        "identifier": "rmw_fastrtps_cpp"
+      },
+      "persistent_setup": {
+        "kind": "persistent_setup",
+        "time": 13105.868781413,
+        "seconds": 0.0027839070007757982
+      },
+      "fixture_cleanup": {
+        "kind": "fixture_cleanup",
+        "time": 13122.338565446,
+        "returncode": -9
+      },
+      "daemon_cleanup": {
+        "kind": "daemon_cleanup",
+        "time": 13122.70250427,
+        "stdout": "The daemon has been stopped\n",
+        "stderr": "",
+        "returncode": 0
+      },
+      "run_end": {
+        "kind": "run_end",
+        "time": 13122.702568098,
+        "wall_seconds": 19.677818682999714,
+        "children_user_cpu": 12.152603,
+        "children_system_cpu": 1.984588
+      }
+    }
+  }
+}

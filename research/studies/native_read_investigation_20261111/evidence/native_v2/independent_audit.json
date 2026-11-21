@@ -1,0 +1,222 @@
+{
+  "status": "PASS_COMPONENT_WITH_RETAINED_IMPORT_FAILURE",
+  "counts": {
+    "logical_reads": 118,
+    "cli_attempts": 118,
+    "expected_missing": 6
+  },
+  "batch_count": 30,
+  "overlap": [
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "fixed4",
+      "repeat": 0,
+      "peak_inflight": 4
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "aimd",
+      "repeat": 0,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "serial",
+      "repeat": 0,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "fixed2",
+      "repeat": 0,
+      "peak_inflight": 2
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "serial",
+      "repeat": 1,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "fixed4",
+      "repeat": 1,
+      "peak_inflight": 4
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "aimd",
+      "repeat": 1,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "width",
+      "family": "node",
+      "policy": "fixed2",
+      "repeat": 1,
+      "peak_inflight": 2
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "fixed2",
+      "repeat": 0,
+      "peak_inflight": 2
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "aimd",
+      "repeat": 0,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "fixed4",
+      "repeat": 0,
+      "peak_inflight": 4
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "serial",
+      "repeat": 0,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "aimd",
+      "repeat": 1,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "fixed2",
+      "repeat": 1,
+      "peak_inflight": 2
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "fixed4",
+      "repeat": 1,
+      "peak_inflight": 4
+    },
+    {
+      "phase": "width",
+      "family": "topic",
+      "policy": "serial",
+      "repeat": 1,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "fixed4",
+      "repeat": 0,
+      "peak_inflight": 4
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "aimd",
+      "repeat": 0,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "fixed2",
+      "repeat": 0,
+      "peak_inflight": 2
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 0,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "fixed4",
+      "repeat": 1,
+      "peak_inflight": 4
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 1,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "aimd",
+      "repeat": 1,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "width",
+      "family": "service",
+      "policy": "fixed2",
+      "repeat": 1,
+      "peak_inflight": 2
+    },
+    {
+      "phase": "error_duplicate",
+      "family": "node",
+      "policy": "serial",
+      "repeat": null,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "error_duplicate",
+      "family": "node",
+      "policy": "fixed4",
+      "repeat": null,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "error_duplicate",
+      "family": "topic",
+      "policy": "serial",
+      "repeat": null,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "error_duplicate",
+      "family": "topic",
+      "policy": "fixed4",
+      "repeat": null,
+      "peak_inflight": 3
+    },
+    {
+      "phase": "error_duplicate",
+      "family": "service",
+      "policy": "serial",
+      "repeat": null,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "error_duplicate",
+      "family": "service",
+      "policy": "fixed4",
+      "repeat": null,
+      "peak_inflight": 3
+    }
+  ],
+  "limits": "No natural-language intent, consistency, dynamic graph or held-out validity is certified."
+}

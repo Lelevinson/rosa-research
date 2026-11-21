@@ -1,0 +1,170 @@
+{
+  "completed": 80,
+  "assigned": 80,
+  "models": {
+    "lfm3:1.7b": {
+      "A1": {
+        "n": 20,
+        "supported": 15,
+        "requests": 135,
+        "input": 1028694,
+        "output": 61733,
+        "native": 129,
+        "error_episodes": 2,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "C1": {
+        "n": 20,
+        "supported": 17,
+        "requests": 105,
+        "input": 408791,
+        "output": 45905,
+        "native": 122,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "Forge": {
+        "n": 20,
+        "supported": 12,
+        "requests": 213,
+        "input": 689761,
+        "output": 46431,
+        "native": 244,
+        "error_episodes": 1,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 1,
+        "compactions": 0
+      }
+    },
+    "qwen3.5:9b": {
+      "A1": {
+        "n": 20,
+        "supported": 19,
+        "requests": 86,
+        "input": 554213,
+        "output": 9523,
+        "native": 120,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "C1": {
+        "n": 20,
+        "supported": 20,
+        "requests": 87,
+        "input": 242071,
+        "output": 9672,
+        "native": 120,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "Forge": {
+        "n": 20,
+        "supported": 18,
+        "requests": 102,
+        "input": 299469,
+        "output": 7725,
+        "native": 122,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      }
+    },
+    "gpt-oss:20b": {
+      "A1": {
+        "n": 20,
+        "supported": 7,
+        "requests": 54,
+        "input": 207182,
+        "output": 10631,
+        "native": 34,
+        "error_episodes": 11,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "C1": {
+        "n": 20,
+        "supported": 20,
+        "requests": 105,
+        "input": 203554,
+        "output": 20020,
+        "native": 116,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "Forge": {
+        "n": 20,
+        "supported": 17,
+        "requests": 133,
+        "input": 316953,
+        "output": 19720,
+        "native": 121,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      }
+    },
+    "bonsai-2:4b": {
+      "A1": {
+        "n": 20,
+        "supported": 6,
+        "requests": 197,
+        "input": 1391619,
+        "output": 17828,
+        "native": 191,
+        "error_episodes": 5,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "C1": {
+        "n": 20,
+        "supported": 13,
+        "requests": 189,
+        "input": 726761,
+        "output": 19728,
+        "native": 198,
+        "error_episodes": 0,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 0,
+        "compactions": 0
+      },
+      "Forge": {
+        "n": 20,
+        "supported": 8,
+        "requests": 195,
+        "input": 818481,
+        "output": 17149,
+        "native": 303,
+        "error_episodes": 1,
+        "worker_crashes": 0,
+        "timeouts": 0,
+        "iteration_limits": 1,
+        "compactions": 0
+      }
+    }
+  }
+}

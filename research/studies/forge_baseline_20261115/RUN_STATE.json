@@ -1,0 +1,22 @@
+{
+  "execution_session_id": 15348,
+  "run_root": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z",
+  "authorized_cells": 80,
+  "matched_ledger": "RESULTS_MATCHED.jsonl",
+  "smoke_ledger": "RESULTS_THINKING_ON_SMOKE.jsonl",
+  "finalization": "Wait for full run, audit all traces, finish 3-5 hand-read cases, regenerate report and comparison, update research state, sync Markdown once. No thinking ablation. No Forge-owned logic changes.",
+  "historical_wire_limitation": "Logical pilot traces exist; per-model false field reconstructed through unchanged factory and installed SDK. Historical raw thinking unavailable.",
+  "resume_root": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1",
+  "orchestration_pause_after_cells": 53,
+  "remaining_at_resume": 27,
+  "status": "complete",
+  "completed_cells": 80,
+  "completed_at_utc": "2026-11-15T10:48:18.367819+00:00",
+  "final_validation": "FINAL_VALIDATION.json",
+  "frozen_supported_complete": 55,
+  "fixture_schedule_missed": {
+    "A1": 2,
+    "C1": 0,
+    "Forge": 1
+  }
+}

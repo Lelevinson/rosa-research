@@ -1,0 +1,141 @@
+{
+  "27": {
+    "episodes": 64,
+    "arms": {
+      "graph_dynamic": {
+        "episodes": 16,
+        "native_complete": 10,
+        "factual_complete": 6,
+        "exact_scope": 7,
+        "strict_supported_answer": null,
+        "feasible": null,
+        "native_failed": 2,
+        "tool_validation_errors": 0
+      },
+      "graph_sequential": {
+        "episodes": 16,
+        "native_complete": 10,
+        "factual_complete": 6,
+        "exact_scope": 7,
+        "strict_supported_answer": null,
+        "feasible": null,
+        "native_failed": 2,
+        "tool_validation_errors": 0
+      },
+      "original_sync": {
+        "episodes": 16,
+        "native_complete": 14,
+        "factual_complete": 6,
+        "exact_scope": 4,
+        "strict_supported_answer": null,
+        "feasible": null,
+        "native_failed": 3,
+        "tool_validation_errors": 0
+      },
+      "prompted_async": {
+        "episodes": 16,
+        "native_complete": 12,
+        "factual_complete": 4,
+        "exact_scope": 5,
+        "strict_supported_answer": null,
+        "feasible": null,
+        "native_failed": 2,
+        "tool_validation_errors": 0
+      }
+    },
+    "calls": 260,
+    "prior_same_arguments": 11,
+    "allowed_false": 0,
+    "native_ok_false": 9,
+    "grounded_endpoint_calls": 184,
+    "endpoint_calls": 192
+  },
+  "28": {
+    "episodes": 84,
+    "arms": {
+      "no_coverage": {
+        "episodes": 12,
+        "native_complete": 9,
+        "factual_complete": 8,
+        "exact_scope": 9,
+        "strict_supported_answer": 12,
+        "feasible": 8,
+        "native_failed": 1,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 8
+      },
+      "no_gate": {
+        "episodes": 12,
+        "native_complete": 9,
+        "factual_complete": 8,
+        "exact_scope": 10,
+        "strict_supported_answer": 12,
+        "feasible": 8,
+        "native_failed": 1,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 8
+      },
+      "old_graph": {
+        "episodes": 12,
+        "native_complete": 9,
+        "factual_complete": 7,
+        "exact_scope": 7,
+        "strict_supported_answer": 12,
+        "feasible": 8,
+        "native_failed": 1,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 7
+      },
+      "original_sync": {
+        "episodes": 12,
+        "native_complete": 9,
+        "factual_complete": 8,
+        "exact_scope": 6,
+        "strict_supported_answer": 12,
+        "feasible": 8,
+        "native_failed": 4,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 8
+      },
+      "prompt_compiler": {
+        "episodes": 12,
+        "native_complete": 9,
+        "factual_complete": 8,
+        "exact_scope": 10,
+        "strict_supported_answer": 12,
+        "feasible": 8,
+        "native_failed": 1,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 8
+      },
+      "prompted_async": {
+        "episodes": 12,
+        "native_complete": 7,
+        "factual_complete": 3,
+        "exact_scope": 3,
+        "strict_supported_answer": 11,
+        "feasible": 8,
+        "native_failed": 1,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 3
+      },
+      "selective": {
+        "episodes": 12,
+        "native_complete": 8,
+        "factual_complete": 6,
+        "exact_scope": 7,
+        "strict_supported_answer": 11,
+        "feasible": 8,
+        "native_failed": 1,
+        "tool_validation_errors": 0,
+        "strict_supported_feasible": 6
+      }
+    },
+    "calls": 292,
+    "prior_same_arguments": 9,
+    "allowed_false": 0,
+    "native_ok_false": 10,
+    "grounded_endpoint_calls": 188,
+    "endpoint_calls": 208
+  }
+}

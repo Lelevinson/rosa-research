@@ -1,0 +1,34 @@
+{
+  "completed": 53,
+  "remaining": 27,
+  "unchanged_model_and_scoring_definitions": [
+    "episode",
+    "MatchedTransport",
+    "PilotOptionsClient",
+    "prompts",
+    "available_tools",
+    "traced_callable",
+    "append_result"
+  ],
+  "old_source_sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d",
+  "new_source_sha256": "0b32b755495dda5a2202a9d41ccebd5e087bb5096b6956b3eff6a4df69570820",
+  "original_protocol_prefix_bytes": 5962,
+  "original_protocol_prefix_sha256": "91632053ae54e2fb4a76cabd37977ba06fd4e3297db67f3f514e56586936fd0b",
+  "unchanged_frozen_inputs": [
+    "/home/levinsonchen/project/rosa-research/research/studies/forge_baseline_20261115/FULL_PLAN.json",
+    "/home/levinsonchen/project/rosa-research/research/studies/forge_baseline_20261115/PILOT_TRANSPORT.json",
+    "/home/levinsonchen/project/rosa-research/research/studies/small_model_harness_20261115/harness.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/small_model_harness_20261115/run_pilot.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/small_model_harness_20261115/e1h_fixture.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/small_model_harness_20261115/e1h_tasks.json",
+    "/home/levinsonchen/project/rosa-research/research/studies/small_model_harness_20261115/e1h_graph.json",
+    "/home/levinsonchen/project/rosa-research/research/studies/small_model_harness_20261115/e1h_node.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/headroom_diagnostic_20261112/stage3_fixture.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/headroom_diagnostic_20261112/stage3_node.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/residual_failures_20261115/scorer_v2.py",
+    "/home/levinsonchen/project/rosa-research/research/studies/headroom_diagnostic_20261112/stage3_tasks.json",
+    "/home/levinsonchen/project/rosa-research/research/studies/headroom_diagnostic_20261112/stage3_graph.json",
+    "/tmp/rosa-forge-env-20261115/lib/python3.12/site-packages/forge/core/runner.py",
+    "/tmp/rosa-forge-env-20261115/lib/python3.12/site-packages/forge/clients/ollama.py"
+  ]
+}

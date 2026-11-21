@@ -1,0 +1,73 @@
+{
+ "request1_input_NO_MENU_minus_FULL_by_model": {
+  "lfm3:1.7b": [
+   3338
+  ],
+  "qwen3.5:9b": [
+   3666
+  ],
+  "gpt-oss:20b": [
+   2029
+  ],
+  "bonsai-2:4b": [
+   3666
+  ]
+ },
+ "request1_input_NO_FINISH_minus_FULL_by_model": {
+  "lfm3:1.7b": [
+   -114
+  ],
+  "qwen3.5:9b": [
+   -125
+  ],
+  "gpt-oss:20b": [
+   -87
+  ],
+  "bonsai-2:4b": [
+   -125
+  ]
+ },
+ "missed_scripted_change": [
+  [
+   "FULL",
+   "e1h_chg_2",
+   "gpt-oss:20b"
+  ],
+  [
+   "NO_FINISH",
+   "e1h_chg_1",
+   "gpt-oss:20b"
+  ]
+ ],
+ "pairs_without_missed_hook_cells": {
+  "NO_SOFT_ERRORS": {
+   "cells": 39,
+   "full_only": 3,
+   "removal_only": 0,
+   "full_minus_removal": 3
+  },
+  "NO_PRECHECK": {
+   "cells": 39,
+   "full_only": 0,
+   "removal_only": 0,
+   "full_minus_removal": 0
+  },
+  "NO_MENU": {
+   "cells": 39,
+   "full_only": 7,
+   "removal_only": 0,
+   "full_minus_removal": 7
+  },
+  "NO_FINISH": {
+   "cells": 38,
+   "full_only": 7,
+   "removal_only": 0,
+   "full_minus_removal": 7
+  }
+ },
+ "FULL_error_observations_by_type": {
+  "not found (name that does not exist or wrong form)": 17,
+  "tool exception: regex pattern error (glob like *cedar* passed as pattern)": 5,
+  "argument validation (pre-check)": 1
+ }
+}

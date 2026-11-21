@@ -1,0 +1,315 @@
+{
+  "source_archive": "research/native_read_investigation_20261111/evidence/historical_archives/rosa-baseline-diagnostic-review-20261107.zip",
+  "source_sha256": "85b601b988288ad95cb46451909435c81407d29ae049a24e00e6146813b2b8d4",
+  "episodes": 36,
+  "model_turns": 227,
+  "units": "duration in nanoseconds; tokens from Ollama model_end metadata; words are whitespace-separated surface text, not tokens",
+  "totals": {
+    "output_tokens": 27132,
+    "input_tokens": 1585055,
+    "decode_ns": 2304560306999,
+    "prefill_ns": 222123638996,
+    "total_ns": 2541784840900,
+    "load_ns": 9481285400,
+    "visible_words": 9512,
+    "turns": 227
+  },
+  "by_model_response_type": {
+    "final": {
+      "output_tokens": 9498,
+      "input_tokens": 277686,
+      "decode_ns": 891898087999,
+      "prefill_ns": 28122938000,
+      "total_ns": 921196340500,
+      "load_ns": 177127400,
+      "visible_words": 3557,
+      "turns": 36,
+      "tool_calls": 0
+    },
+    "tool_only": {
+      "output_tokens": 833,
+      "input_tokens": 126773,
+      "decode_ns": 62855889000,
+      "prefill_ns": 9452400999,
+      "total_ns": 72830765900,
+      "load_ns": 80346300,
+      "visible_words": 0,
+      "turns": 17,
+      "tool_calls": 17
+    },
+    "tool_plus_text": {
+      "output_tokens": 16801,
+      "input_tokens": 1180596,
+      "decode_ns": 1349806330000,
+      "prefill_ns": 184548299997,
+      "total_ns": 1547757734500,
+      "load_ns": 9223811700,
+      "visible_words": 5955,
+      "turns": 174,
+      "tool_calls": 186
+    }
+  },
+  "by_baseline_arm": {
+    "A": {
+      "output_tokens": 8363,
+      "input_tokens": 524730,
+      "decode_ns": 693579563999,
+      "prefill_ns": 60103988999,
+      "total_ns": 755906064700,
+      "load_ns": 350591800,
+      "visible_words": 2863,
+      "turns": 76,
+      "tool_turns": 64,
+      "final_turns": 12
+    },
+    "B": {
+      "output_tokens": 9668,
+      "input_tokens": 556873,
+      "decode_ns": 822767626000,
+      "prefill_ns": 79977608998,
+      "total_ns": 913501898700,
+      "load_ns": 8793088600,
+      "visible_words": 3465,
+      "turns": 80,
+      "tool_turns": 68,
+      "final_turns": 12
+    },
+    "C": {
+      "output_tokens": 9101,
+      "input_tokens": 503452,
+      "decode_ns": 788213117000,
+      "prefill_ns": 82042040999,
+      "total_ns": 872376877500,
+      "load_ns": 337605000,
+      "visible_words": 3184,
+      "turns": 71,
+      "tool_turns": 59,
+      "final_turns": 12
+    }
+  },
+  "by_predecision_tool_status": {
+    "after_native_error": {
+      "output_tokens": 510,
+      "input_tokens": 47399,
+      "decode_ns": 39326108000,
+      "prefill_ns": 3865711000,
+      "total_ns": 43396417800,
+      "load_ns": 30782600,
+      "visible_words": 276,
+      "turns": 7,
+      "tool_turns": 7
+    },
+    "after_tool_result": {
+      "output_tokens": 24581,
+      "input_tokens": 1316070,
+      "decode_ns": 2120494562999,
+      "prefill_ns": 128304422996,
+      "total_ns": 2254330986900,
+      "load_ns": 877667600,
+      "visible_words": 8198,
+      "turns": 184,
+      "tool_turns": 148,
+      "final_turns": 36
+    },
+    "initial": {
+      "output_tokens": 2041,
+      "input_tokens": 221586,
+      "decode_ns": 144739636000,
+      "prefill_ns": 89953505000,
+      "total_ns": 244057436200,
+      "load_ns": 8572835200,
+      "visible_words": 1038,
+      "turns": 36,
+      "tool_turns": 36
+    }
+  },
+  "trace_index": [
+    {
+      "member": "evidence/primary-v1/00-x1-B-r0/trace.jsonl",
+      "turns": 5,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/01-t3-B-r0/trace.jsonl",
+      "turns": 4,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/02-t3-A-r0/trace.jsonl",
+      "turns": 3,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/03-x1-C-r0/trace.jsonl",
+      "turns": 5,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/04-t2-C-r0/trace.jsonl",
+      "turns": 6,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/05-t3-C-r0/trace.jsonl",
+      "turns": 3,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/06-t1-A-r0/trace.jsonl",
+      "turns": 6,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/07-d2-B-r0/trace.jsonl",
+      "turns": 7,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/08-x1-A-r0/trace.jsonl",
+      "turns": 9,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/09-d1-B-r0/trace.jsonl",
+      "turns": 6,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/10-t2-A-r0/trace.jsonl",
+      "turns": 6,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/11-t2-B-r0/trace.jsonl",
+      "turns": 9,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/12-d1-A-r0/trace.jsonl",
+      "turns": 6,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/13-d1-C-r0/trace.jsonl",
+      "turns": 8,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/14-t1-C-r0/trace.jsonl",
+      "turns": 7,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/15-t1-B-r0/trace.jsonl",
+      "turns": 9,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/16-d2-C-r0/trace.jsonl",
+      "turns": 6,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/17-d2-A-r0/trace.jsonl",
+      "turns": 5,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/18-d2-B-r1/trace.jsonl",
+      "turns": 5,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/19-d1-C-r1/trace.jsonl",
+      "turns": 8,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/20-d2-C-r1/trace.jsonl",
+      "turns": 7,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/21-t3-B-r1/trace.jsonl",
+      "turns": 4,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/22-d2-A-r1/trace.jsonl",
+      "turns": 8,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/23-x1-A-r1/trace.jsonl",
+      "turns": 9,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/24-d1-A-r1/trace.jsonl",
+      "turns": 6,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/25-t1-B-r1/trace.jsonl",
+      "turns": 9,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/26-t1-A-r1/trace.jsonl",
+      "turns": 9,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/27-t3-A-r1/trace.jsonl",
+      "turns": 3,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/28-t1-C-r1/trace.jsonl",
+      "turns": 6,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/29-x1-B-r1/trace.jsonl",
+      "turns": 5,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/30-t2-B-r1/trace.jsonl",
+      "turns": 8,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/31-t2-A-r1/trace.jsonl",
+      "turns": 6,
+      "arm": "A"
+    },
+    {
+      "member": "evidence/primary-v1/32-t3-C-r1/trace.jsonl",
+      "turns": 3,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/33-x1-C-r1/trace.jsonl",
+      "turns": 5,
+      "arm": "C"
+    },
+    {
+      "member": "evidence/primary-v1/34-d1-B-r1/trace.jsonl",
+      "turns": 9,
+      "arm": "B"
+    },
+    {
+      "member": "evidence/primary-v1/35-t2-C-r1/trace.jsonl",
+      "turns": 7,
+      "arm": "C"
+    }
+  ],
+  "limitations": [
+    "Baseline prompts contain the historical sequential-tool-call instruction; no fully activated deconflicted strong control was observed here.",
+    "Tool-call narration is not proved dispensable merely because content co-occurs with structured tool calls.",
+    "No model inference, semantic correctness scoring, or before/after intervention was executed by this script.",
+    "Provider token counts are not independently tokenized; prompt_eval_cached_count is absent in these events.",
+    "No hidden task contracts or semantic adapters are used by this analysis."
+  ]
+}

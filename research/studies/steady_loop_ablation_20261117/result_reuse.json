@@ -1,0 +1,76 @@
+{
+ "all": {
+  "results": 185,
+  "result_tokens": 35605.0,
+  "results_with_trimmable_resend": 103,
+  "trimmable_resend_tokens": 94919.0,
+  "trimmable_results_with_late_use": 66,
+  "trimmable_results_with_last_copy_use": 31,
+  "resend_tokens_of_results_without_late_use": 46341.66888888889,
+  "resend_tokens_of_results_without_last_copy_use": 63332.18888888889,
+  "episodes": 40,
+  "requests": 211,
+  "input_tokens": 721646
+ },
+ "per_model": {
+  "lfm3:1.7b": {
+   "results": 59,
+   "result_tokens": 8553.0,
+   "results_with_trimmable_resend": 37,
+   "trimmable_resend_tokens": 29943.0,
+   "trimmable_results_with_late_use": 21,
+   "trimmable_results_with_last_copy_use": 8,
+   "resend_tokens_of_results_without_late_use": 4174.668888888889,
+   "resend_tokens_of_results_without_last_copy_use": 10401.18888888889,
+   "episodes": 10,
+   "requests": 62,
+   "input_tokens": 269983
+  },
+  "qwen3.5:9b": {
+   "results": 33,
+   "result_tokens": 8931.0,
+   "results_with_trimmable_resend": 11,
+   "trimmable_resend_tokens": 1825.0,
+   "trimmable_results_with_late_use": 10,
+   "trimmable_results_with_last_copy_use": 3,
+   "resend_tokens_of_results_without_late_use": 42.0,
+   "resend_tokens_of_results_without_last_copy_use": 1729.0,
+   "episodes": 10,
+   "requests": 38,
+   "input_tokens": 101559
+  },
+  "gpt-oss:20b": {
+   "results": 37,
+   "result_tokens": 4958.0,
+   "results_with_trimmable_resend": 18,
+   "trimmable_resend_tokens": 1323.0,
+   "trimmable_results_with_late_use": 16,
+   "trimmable_results_with_last_copy_use": 9,
+   "resend_tokens_of_results_without_late_use": 0.0,
+   "resend_tokens_of_results_without_last_copy_use": 36.0,
+   "episodes": 10,
+   "requests": 47,
+   "input_tokens": 88386
+  },
+  "bonsai-2:4b": {
+   "results": 56,
+   "result_tokens": 13163.0,
+   "results_with_trimmable_resend": 37,
+   "trimmable_resend_tokens": 61828.0,
+   "trimmable_results_with_late_use": 19,
+   "trimmable_results_with_last_copy_use": 11,
+   "resend_tokens_of_results_without_late_use": 42125.0,
+   "resend_tokens_of_results_without_last_copy_use": 51166.0,
+   "episodes": 10,
+   "requests": 64,
+   "input_tokens": 261718
+  }
+ },
+ "use_ages_pairs": {
+  "1": 93,
+  "5": 40,
+  "3": 48,
+  "4": 18,
+  "2": 47
+ }
+}

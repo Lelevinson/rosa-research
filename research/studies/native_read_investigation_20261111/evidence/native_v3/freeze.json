@@ -1,0 +1,25 @@
+{
+  "files": {
+    "/home/levinsonchen/project/rosa-research/research/native_read_investigation_20261111/executor.py": "ac7c4144eccadc962aad913caaa91242e0e0952ec2f91072afb39b372840fa2e",
+    "/home/levinsonchen/project/rosa-research/research/native_read_investigation_20261111/audit.py": "c349bcf735acf6d2b20977a1f87c6aabf9d7d2f919464d331eaa2dc3e45ba9b7",
+    "/home/levinsonchen/project/rosa-research/research/native_read_investigation_20261111/fixture.py": "a891383b9ed2ec46d2d0f75ab5924f5ab2ca6b044c1cd78e0e78ccc9f5580984",
+    "/home/levinsonchen/project/rosa-research/research/native_read_investigation_20261111/run_native.py": "251ab80032c9f8a4c027fbbe3e7ef3b574dab6a53b0cd7d19d3982443d88ffcd",
+    "/home/levinsonchen/project/rosa-research/research/native_read_investigation_20261111/inventory.py": "1734e13d1fae91067ff53cbf812e0ee799dd0ab5f696a990c0a84fab314f4cd9",
+    "/home/levinsonchen/project/rosa-research/research/native_read_investigation_20261111/test_executor.py": "d5b2960df6555abd40affeeb802671be2c40d1aaa3005ba493750460aa8433ad",
+    "PROTOCOL.md": "2f736649c9e770617f2b1ea698fbb31c4cc23773d3a3fee08b4f8b429691cba0"
+  },
+  "seed": 1111,
+  "environment": {
+    "ROS_DOMAIN_ID": "173",
+    "ROS_DISTRO": "jazzy",
+    "RMW_IMPLEMENTATION": null,
+    "ROS_LOCALHOST_ONLY": "1"
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/levinsonchen/project/rosa-research/.venv/bin/python",
+  "packages": {
+    "langchain": "0.3.30",
+    "langchain-core": "0.3.86",
+    "rosa-llm": "0.1.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+ "all": {
+  "episodes_with_fixable": 177,
+  "pure_retry_requests": 122,
+  "mixed": 0,
+  "tokens": 239216
+ },
+ "full_type_menu": {
+  "episodes_with_fixable": 34,
+  "pure_retry_requests": 27,
+  "mixed": 0,
+  "tokens": 40861,
+  "share_of_requests": 0.008940397350993378,
+  "models": [
+   "gpt-oss:20b"
+  ]
+ }
+}

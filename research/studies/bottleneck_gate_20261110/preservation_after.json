@@ -1,0 +1,19 @@
+{
+  "checked_existing_files": 40,
+  "changed_or_missing": [],
+  "input_changes": [],
+  "head": "94af17866cb82f3ea3f09422ef5cbb99b14cc89c",
+  "branch": "research/clean-foundation-20261108",
+  "git_status": "?? research/\n",
+  "tracked_diff": "",
+  "staged_diff": "",
+  "jsonl_row_counts": {
+    "older_model_proposals.jsonl": 409,
+    "native_calls.jsonl": 401,
+    "calls.jsonl": 326,
+    "older_episodes.jsonl": 148,
+    "older_models.jsonl": 426,
+    "older_calls.jsonl": 552
+  },
+  "broken_report_links": []
+}

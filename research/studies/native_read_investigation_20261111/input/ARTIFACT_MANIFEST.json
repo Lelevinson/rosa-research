@@ -1,0 +1,41 @@
+{
+  "report_date": "2026-11-11",
+  "claim": "No user-local ROSA/ROS2 or LLM runs; four deterministic toy tests passed. Not an empirical optimization result.",
+  "files": [
+    {
+      "path": "CODEX_NEXT_STEP.md",
+      "bytes": 4344,
+      "sha256": "5bc69cd36096c98d91873b72270d243c029e2da4984987880540065d299442ef"
+    },
+    {
+      "path": "DECISION_LEDGER.md",
+      "bytes": 3263,
+      "sha256": "d7a39d73fdef7b3ab758f2afa4bddeccd97ef53d75307558d6e9ab765231505c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1096,
+      "sha256": "9ad2023c9d3ae0cc2ef67931565d3c97c15212938f626e9ba7bbcfadc7dd88a5"
+    },
+    {
+      "path": "ROSA_Independent_Algorithm_Research_Report_2026-11-11.md",
+      "bytes": 43896,
+      "sha256": "8495b3fd4a1e785917ffdf12b8b0b740ec1ed4a5aab7fdeca3d6d0e6c3acd0e6"
+    },
+    {
+      "path": "offline_decision_examples.py",
+      "bytes": 3518,
+      "sha256": "0a8503c690ca56b405730c519851220e7159bbe58ba9a9b32e087166d19e27ea"
+    },
+    {
+      "path": "offline_illustrations.json",
+      "bytes": 2146,
+      "sha256": "cbabe198e7cb61dc708c7c87e97efc92146baa3c0c8c747acb72a327ac256b67"
+    },
+    {
+      "path": "test_offline_decision_examples.py",
+      "bytes": 1574,
+      "sha256": "fff1cfd56b84df1901d969b5d397b1655f50a35fbbe2bb9092e5892199ac19e4"
+    }
+  ]
+}

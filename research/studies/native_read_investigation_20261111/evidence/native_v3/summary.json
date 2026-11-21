@@ -1,0 +1,23 @@
+{
+  "transport/service/persistent": {
+    "batches": 8,
+    "wall_seconds": 0.036736018997544306,
+    "logical_reads": 32,
+    "failures": 0,
+    "policy_seconds": 0.0
+  },
+  "transport/service/serial": {
+    "batches": 8,
+    "wall_seconds": 11.419331240995234,
+    "logical_reads": 32,
+    "failures": 0,
+    "policy_seconds": 0.0
+  },
+  "persistent_error/service/persistent": {
+    "batches": 1,
+    "wall_seconds": 0.0037034879987913882,
+    "logical_reads": 3,
+    "failures": 1,
+    "policy_seconds": 0.0
+  }
+}

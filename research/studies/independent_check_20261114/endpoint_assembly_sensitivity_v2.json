@@ -1,0 +1,704 @@
+[
+  {
+    "episode": "00-v3-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "01-h4-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "02-p2-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "03-h2-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil"
+    ]
+  },
+  {
+    "episode": "04-p4-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "05-u4-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "06-h2-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil"
+    ]
+  },
+  {
+    "episode": "07-v4-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "08-u3-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "09-p3-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "10-u3-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "11-v4-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "12-u2-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "13-v2-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "14-h4-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "15-p2-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "16-h3-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "17-v3-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "18-p4-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "19-u4-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": false,
+    "names_assembled": [
+      "/plant32/elm",
+      "/plant32/gantry",
+      "/plant32/mantle",
+      "/plant32/quill",
+      "/plant32/sable",
+      "/plant32/xenon",
+      "/plant32/yarrow",
+      "/plant32/yonder"
+    ]
+  },
+  {
+    "episode": "20-v2-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "21-h3-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "22-u2-ollama-r0",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "23-p3-openai-r0",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "24-u3-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "25-h2-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil"
+    ]
+  },
+  {
+    "episode": "26-v2-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "27-h4-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "28-v3-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "29-u3-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "30-p2-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "31-p2-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "32-v4-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "33-p3-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "34-h3-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "35-v4-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "36-p3-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "37-v2-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "38-u2-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "39-h2-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil"
+    ]
+  },
+  {
+    "episode": "40-u2-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "41-h4-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "42-u4-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "43-v3-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "44-h3-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "45-p4-openai-r1",
+    "arm": "A1",
+    "model": "openai",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "46-u4-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "47-p4-ollama-r1",
+    "arm": "A1",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "00-h3-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "01-v3-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "02-p3-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "03-p4-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": false,
+    "names_assembled": []
+  },
+  {
+    "episode": "04-u3-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "05-h2-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil"
+    ]
+  },
+  {
+    "episode": "06-v4-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "07-h4-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "08-v2-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": false,
+    "names_assembled": []
+  },
+  {
+    "episode": "09-p2-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "10-u2-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "11-u4-ollama-r0",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "12-u4-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "13-h2-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil"
+    ]
+  },
+  {
+    "episode": "14-u3-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/quill",
+      "/plant32/yarrow"
+    ]
+  },
+  {
+    "episode": "15-p2-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "16-h4-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "17-v4-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "18-v3-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "19-h3-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/anvil",
+      "/plant32/dune",
+      "/plant32/oasis",
+      "/plant32/zephyr"
+    ]
+  },
+  {
+    "episode": "20-v2-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": false,
+    "names_assembled": []
+  },
+  {
+    "episode": "21-p3-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 3,
+    "supported_complete": true,
+    "names_assembled": []
+  },
+  {
+    "episode": "22-p4-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 4,
+    "supported_complete": false,
+    "names_assembled": []
+  },
+  {
+    "episode": "23-u2-ollama-r1",
+    "arm": "A2",
+    "model": "ollama",
+    "depth": 2,
+    "supported_complete": true,
+    "names_assembled": [
+      "/plant32/yarrow"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+ "frozen_at": "2026-11-16T08:07:14+08:00",
+ "note": "Code hashes before the smoke run. PROTOCOL.md was hashed and frozen earlier (PROTOCOL.sha256) before any code of this round existed; git does not track research/ in this checkout (local exclude rule), so no commit was possible.",
+ "files": {
+  "PROTOCOL.md": "c8baaa3ad37585b9bcb35c08700a239f6a4995ac01b8b09226d4ae96115222cf",
+  "sweep_logic.py": "e280239fd1d5107d84b06f34f7c9496d6d2d1b4e7894854c3cb603272a775164",
+  "round2_harness.py": "ed4a2a7fce59f48892ce81bec44a2183e962a6193592e920e399cd0a8750804b",
+  "score_round2.py": "cec011f2e3a4c29804f8fb66c48b9c11addcf3a3b969b9537fe911301415defc",
+  "run_round2.py": "13224b1a2716408f88dfc54bf93eab2e8cfc19ce10406222f4feb6434bb56324",
+  "tests/test_round2.py": "fb9589c9cd478fd72ba34d716f4d4c1d0ba90c7fa0274f3dbde98c78c227e7d8",
+  "v1_counts.py": "7ee02132cf022de631e5913fd8267a8ba88df3b23e280bfb219050bef438ec5f"
+ },
+ "reused_unchanged": {
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "replay.py": "cf30cbf57378fccde04c4d7215cd182e371e1f7a64a03bcffb693f7de987acb1",
+  "episodes.py": "f564b82e49be2480b66be5bf634ef2f0801a9a9792003a90ba7fa1262d6c9064",
+  "answer_gate.py": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+  "harness.py": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "round1_harness.py": "ba3470238365cfe1fa04dbc82551688fdea95490115e172dc09592250773205a"
+ },
+ "amendment1": {
+  "run_round2.py": "c0bc8286e31e4599b9308c5b205564246d7ab9084c20474ea979d6e0d5667864",
+  "PROTOCOL.md": "8b59300ea97fd8d7d364ff4118ad87eafe156a60cadc0988439f8b8d3f269beb",
+  "analyze_round2.py": "a9ba4cf86e40e54655ba2d59104bfde4b3b76225a9bd958f71e618323606066d"
+ },
+ "amendment2": {
+  "run_round2.py": "fb4bea8bfdf0cc8e31da64f1fdc8189a291589540a104c2318b933eee2d834b8",
+  "analyze_round2.py": "6c3c13e79b88c1efae47cfb6c7158384645aba3a4a1a7e2207c222024c149111",
+  "PROTOCOL.md": "ae1f313e6e9342143e637f468a89b46d2a49b86091f90e16efe5140d995c9567",
+  "INFRA_EXCLUDED.json": "24227d6fa5fce8239bd4c3e09dd4fa047295139cadb582185362da2772490dcb"
+ },
+ "amendment4": {
+  "run_round2.py": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+  "analyze_round2.py": "6c3c13e79b88c1efae47cfb6c7158384645aba3a4a1a7e2207c222024c149111",
+  "PROTOCOL.md": "91ddce184e837e91bc93c14c3af2010c68c54530641e5768cbaafdf6538f408e",
+  "INFRA_EXCLUDED.json": "2f6867cc8d52a69a337f5017ab20750ab86c55b2562713d7c3cd55e5bc09df97",
+  "tests/test_round2.py": "23ad814af999212e31b27470a6a59de26e6da067ce7f6b7ce2705aa4a47906ec"
+ }
+}

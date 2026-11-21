@@ -1,0 +1,11 @@
+{
+  "test": "offline mock HTTP; no model or ROS",
+  "transport_changes": [
+    "options",
+    "think"
+  ],
+  "think": false,
+  "parsed_terminal_tool": "respond",
+  "inherited_send": true,
+  "planned_cells": 80
+}

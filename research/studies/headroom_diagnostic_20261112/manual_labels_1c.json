@@ -1,0 +1,22 @@
+{
+ "03-d1-A0-r0#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' used although the topic_info output gave Node name + Node namespace, so full names could be assembled mechanically"
+ },
+ "23-d1-A0-r1#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' used although the topic_info output gave Node name + Node namespace, so full names could be assembled mechanically"
+ },
+ "07-d2-A0-r0#3": {
+  "label": "JUDG",
+  "reason": "which node serves the arithmetic service / which services count as non-parameter is decided from the node_info observation"
+ },
+ "07-d2-A0-r0#4": {
+  "label": "JUDG",
+  "reason": "which node serves the arithmetic service / which services count as non-parameter is decided from the node_info observation"
+ },
+ "20-d2-A0-r1#5": {
+  "label": "JUDG",
+  "reason": "which node serves the arithmetic service / which services count as non-parameter is decided from the node_info observation"
+ }
+}

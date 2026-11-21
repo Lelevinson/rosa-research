@@ -1,0 +1,21 @@
+{
+ "frozen_utc": "2026-11-15T00:54:16+08:00",
+ "sha256": {
+  "e1h_tasks.json": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+  "e1h_graph.json": "425bd4938b3eba6acb9172d85cdf768d664901e86f06327cec86566597041ef1",
+  "e1h_build.py": "731ea04ff36ce6627077c8334e3b8b474b4489389f84fd199cb9cd88c4b8c4b0",
+  "e1h_node.py": "535ce650843c745575f13b2db5d1f14253d8bdc63f1099183f1de71ae5ab5fe1",
+  "e1h_fixture.py": "344da5db4081d7937bdb061328a9273760532614710ecabfd70809306ac1ef7d",
+  "pilot_score.py": "5d9de512a74b9e3ef39ab01bdce0c4724012327125c52ed53a06b95f205107da"
+ },
+ "floor_check": "research/_artifacts/runs/small_model_harness_20261115/e1h_floorcheck/floor_check.json",
+ "floors_verified": "6 of 6",
+ "revisions": [
+  {
+   "file": "e1h_fixture.py",
+   "old_sha256": "eec6903bbd3e583b3e6d582f7e1794107fb3fd8f45476234bc62a959696e2c14",
+   "new_sha256": "344da5db4081d7937bdb061328a9273760532614710ecabfd70809306ac1ef7d",
+   "reason": "EpisodeHook.start read recorder.rows[0] as episode_start; arms that log a handler event while being built (C1+H1e monitor) crashed all 12 lfm3 H1e E1h episodes before any model request. Hook now finds episode_start by kind. Tasks, graph, scorer and oracle unchanged."
+  }
+ ]
+}

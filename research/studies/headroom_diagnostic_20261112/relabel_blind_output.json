@@ -1,0 +1,218 @@
+{
+ "34-d1-B-r1#9": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "07-d2-B-r0#3": {
+  "label": "JUDG",
+  "reason": "Chose add_two_ints from node info as the arithmetic service."
+ },
+ "08-x1-A-r0#9": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "23-x1-A-r1#2": {
+  "label": "DEP",
+  "reason": "node_info over the four names just listed."
+ },
+ "05-ollama-d1_recovery-B#2": {
+  "label": "RED",
+  "reason": "Exact repeat of the successful topic_info from request 1."
+ },
+ "07-x1-C#2": {
+  "label": "UNCLEAR",
+  "reason": "node_info over listed nodes (DEP) plus choosing pose and chatter topics (JUDG); DEP vs JUDG."
+ },
+ "13-d1-C-r0#8": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "35-t2-C-r1#7": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "18-d2-B-r1#5": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "07-x1-C#4": {
+  "label": "DEP",
+  "reason": "param_get for the next listed node."
+ },
+ "26-t1-A-r1#7": {
+  "label": "DEP",
+  "reason": "param_get for the remaining background_b listed by param_list."
+ },
+ "30-t2-B-r1#6": {
+  "label": "REC",
+  "reason": "Retry with full node name after the node_info and param_list errors."
+ },
+ "00-x1-B-r0#4": {
+  "label": "JUDG",
+  "reason": "Selected pose and chatter topics from node info by task meaning."
+ },
+ "23-x1-A-r1#8": {
+  "label": "RED",
+  "reason": "set_debugging returns no task information."
+ },
+ "34-d1-B-r1#7": {
+  "label": "DEP",
+  "reason": "param_get for the listener node already discovered."
+ },
+ "26-t1-A-r1#2": {
+  "label": "JUDG",
+  "reason": "Picked the one node in the /diag_turtle namespace to inspect."
+ },
+ "19-d1-C-r1#3": {
+  "label": "REC",
+  "reason": "Discovery via node_list after node_info not-found errors."
+ },
+ "06-t1-A-r0#6": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "06-t1-A-r0#4": {
+  "label": "JUDG",
+  "reason": "Chose color_sensor echo as the source for RGB values."
+ },
+ "00-openai-x1-A#2": {
+  "label": "UNCLEAR",
+  "reason": "Per-node param_gets (DEP) plus choosing pose and chatter topic_info (JUDG); DEP vs JUDG."
+ },
+ "13-d1-C-r0#6": {
+  "label": "DEP",
+  "reason": "param_get for the listener node already discovered."
+ },
+ "03-x1-C-r0#2": {
+  "label": "DEP",
+  "reason": "node_info over the four names just listed."
+ },
+ "20-d2-C-r1#2": {
+  "label": "JUDG",
+  "reason": "Chose calculator as the likely arithmetic server."
+ },
+ "24-d1-A-r1#3": {
+  "label": "DEP",
+  "reason": "param_get with full node names from earlier result and task parameter name."
+ },
+ "00-t1-B#5": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "19-d1-C-r1#6": {
+  "label": "DEP",
+  "reason": "param_get for the listener node already discovered."
+ },
+ "22-d2-A-r1#4": {
+  "label": "DEP",
+  "reason": "param_get use_sim_time on calculator after param_list showed it."
+ },
+ "11-d1_recovery-B#5": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "14-t1-C-r0#3": {
+  "label": "JUDG",
+  "reason": "Chose pose topic from node info to query."
+ },
+ "00-x1-B-r0#5": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "08-t1-C#5": {
+  "label": "FIN",
+  "reason": "No tool call."
+ },
+ "28-t1-C-r1#3": {
+  "label": "JUDG",
+  "reason": "Chose color_sensor and pose topics from node info."
+ },
+ "22-d2-A-r1#6": {
+  "label": "RED",
+  "reason": "service_info for add_two_ints, a subset of the earlier successful result."
+ },
+ "04-t2-C-r0#4": {
+  "label": "DEP",
+  "reason": "param_get use_sim_time after param_list listed it."
+ },
+ "28-t1-C-r1#2": {
+  "label": "JUDG",
+  "reason": "Picked the one node in the /diag_turtle namespace to inspect."
+ },
+ "01-d1_recovery-A#3": {
+  "label": "DEP",
+  "reason": "param_gets for source and listener named in topic_info."
+ },
+ "04-openai-d1_recovery-B#2": {
+  "label": "DEP",
+  "reason": "param_get for source named in topic_info."
+ },
+ "00-t1-B#3": {
+  "label": "JUDG",
+  "reason": "Chose to list params to find the source of background RGB."
+ },
+ "29-x1-B-r1#3": {
+  "label": "DEP",
+  "reason": "param_get for each discovered node."
+ },
+ "00-x1-B-r0#3": {
+  "label": "DEP",
+  "reason": "param_get for each discovered node."
+ },
+ "11-t2-B-r0#2": {
+  "label": "JUDG",
+  "reason": "Interpreted task namespace as a node name; call failed."
+ },
+ "15-t1-B-r0#8": {
+  "label": "RED",
+  "reason": "set_debugging returns no task information."
+ },
+ "17-d2-A-r0#2": {
+  "label": "JUDG",
+  "reason": "Chose calculator as the likely arithmetic server."
+ },
+ "09-openai-x1-B#3": {
+  "label": "UNCLEAR",
+  "reason": "Per-node param_gets (DEP) plus choosing pose and chatter topic_info (JUDG); DEP vs JUDG."
+ },
+ "01-ollama-d1_recovery-A#5": {
+  "label": "RED",
+  "reason": "Exact repeat of an earlier successful topic_info."
+ },
+ "02-t3-A#2": {
+  "label": "JUDG",
+  "reason": "Picked the one node in the /diag_turtle namespace to inspect."
+ },
+ "01-t3-B-r0#3": {
+  "label": "RED",
+  "reason": "Exact repeat of an earlier successful node_info."
+ },
+ "11-t2-B-r0#3": {
+  "label": "REC",
+  "reason": "service_list as alternative discovery after node_info error."
+ },
+ "10-t2-A-r0#4": {
+  "label": "DEP",
+  "reason": "param_get use_sim_time after param_list listed it."
+ },
+ "07-d2-B-r0#5": {
+  "label": "DEP",
+  "reason": "param_get use_sim_time after param_list listed it."
+ },
+ "16-d2-C-r0#3": {
+  "label": "RED",
+  "reason": "Lists parameters though task already names use_sim_time."
+ },
+ "09-d1-B-r0#4": {
+  "label": "DEP",
+  "reason": "param_get for the listener node already discovered."
+ },
+ "20-d2-C-r1#3": {
+  "label": "RED",
+  "reason": "Lists parameters though task already names use_sim_time."
+ },
+ "07-ollama-d1_recovery-V#4": {
+  "label": "FIN",
+  "reason": "No tool call."
+ }
+}

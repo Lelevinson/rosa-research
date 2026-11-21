@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/home/levinsonchen/project/rosa-research-previous-20261108/research/menu_retrieval/protocol.json",
+    "bytes": 6231,
+    "sha256": "2bba5511f685abca0b87aa9e3b39858c317aa8ff05e94e0d30d765453278bc3b"
+  },
+  {
+    "path": "/home/levinsonchen/project/rosa-research-previous-20261108/research/menu_retrieval/audit.py",
+    "bytes": 12465,
+    "sha256": "6de772a3138032a7eebbfc3f8bffd3046c02e2ff0063f04f0f70a873f7581048"
+  },
+  {
+    "path": "/home/levinsonchen/project/rosa-research-previous-20261108/research/menu_retrieval/run_study.py",
+    "bytes": 14724,
+    "sha256": "dabab0fdd450ee3a83b0f6dd2392c9103f2b9974273f110b408ef33b9b88f0c1"
+  },
+  {
+    "path": "/home/levinsonchen/project/rosa-research-previous-20261108/research/menu_retrieval/menu_policy.py",
+    "bytes": 3313,
+    "sha256": "6265cb94c3fdf610a884c75c675a7b89dce7ad298e39dcdf2d2b6f6a8b69dd9f"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "scope": "offline SDK mock, no model inference",
+  "wire_think": false,
+  "mock_raw_thinking": "mock thinking payload",
+  "langchain_additional_kwargs": {},
+  "langchain_content": "offline fixture",
+  "usage": {
+    "input_tokens": 1,
+    "output_tokens": 7,
+    "total_tokens": 8
+  },
+  "conclusion": "Absence of reasoning_content in reasoning=False historical traces cannot establish absence of raw thinking."
+}

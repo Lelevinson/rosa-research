@@ -1,0 +1,23 @@
+{
+  "groups": {
+    "diagnostic_primary": {
+      "native_completions": 264,
+      "exact_repeats": 14,
+      "overlapping_exact_repeats": 0,
+      "native_duration_sum_seconds": 254.95207373300946,
+      "event_span_sum_seconds": 2805.8734366750086,
+      "native_duration_fraction": 0.09086371124248943
+    },
+    "codeact_all": {
+      "native_completions": 137,
+      "exact_repeats": 24,
+      "overlapping_exact_repeats": 0,
+      "native_duration_sum_seconds": 169.5530011220066,
+      "event_span_sum_seconds": 1303.488110493005,
+      "native_duration_fraction": 0.1300763695173854
+    }
+  },
+  "overlap_witnesses": [],
+  "decision": "In-flight singleflight coalescing lacks activation in this sample. Sequential repeats are not cache-authorized.",
+  "limits": "Timing intervals reconstructed from recorded completion monotonic minus recorded seconds. No deduplication across permissions/snapshots is authorized."
+}

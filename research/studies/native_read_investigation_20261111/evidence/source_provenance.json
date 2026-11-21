@@ -1,0 +1,104 @@
+[
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/src/rosa/tools/ros2.py",
+    "snapshot": "evidence/source_snapshot/00_ros2.py",
+    "sha256": "7f3769bc9711274fae844993f9bee7c5024e41ec2c28790db86f422fd8146e22",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/src/rosa/rosa.py",
+    "snapshot": "evidence/source_snapshot/01_rosa.py",
+    "sha256": "21c35b1bdb14f6c8f6fd2f449943de7f1ba177fdce51ba0a6344b5ec9991e66b",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/src/rosa/prompts.py",
+    "snapshot": "evidence/source_snapshot/02_prompts.py",
+    "sha256": "a2e43cc849bc8438ca05ba3b2d0ed5b9630219f2959b84d26921f8e4abee2e17",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/src/rosa/tools/__init__.py",
+    "snapshot": "evidence/source_snapshot/03___init__.py",
+    "sha256": "765162cb19bacc7b88f7a2940ceefe7a4b41bd3254071624ea18c3579074a630",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/pyproject.toml",
+    "snapshot": "evidence/source_snapshot/04_pyproject.toml",
+    "sha256": "101d7701ca3bb93c3f60e6570e2bc6afce7aa68d2c526d3220bcacf9383537fa",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/uv.lock",
+    "snapshot": "evidence/source_snapshot/05_uv.lock",
+    "sha256": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/AGENTS.md",
+    "snapshot": "evidence/source_snapshot/06_AGENTS.md",
+    "sha256": "427fd235056b727f5e0cbc93ae7826a693020eab4fbbdfd5fddbd07676dd3608",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research/research/ROSA_RESEARCH_CONTEXT.md",
+    "snapshot": "evidence/source_snapshot/07_ROSA_RESEARCH_CONTEXT.md",
+    "sha256": "624cd6508d3236db58a238e33056ca777d79032dd395bd140ebeb2f66b557ba5",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research-archive/research/internal/round24_experimental_results.md",
+    "snapshot": "evidence/source_snapshot/08_round24_experimental_results.md",
+    "sha256": "f0f6bbd54301b7484d2a83bc7292e3f3dc310153421a8aa9acc455c01d3008d8",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research-archive/research/internal/round24_method_specification.md",
+    "snapshot": "evidence/source_snapshot/09_round24_method_specification.md",
+    "sha256": "122cf06753dfadc5c76c0e4c5c5aa0035f9556bfdb8061ad0910fefc81014fc9",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/home/levinsonchen/project/rosa-research-archive/src/rosa/concurrent_acquisition.py",
+    "snapshot": "evidence/source_snapshot/10_concurrent_acquisition.py",
+    "sha256": "540ed38fa41843096079d07199f816f8895f83c28e413f1695ad08e9c402d1d6",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/node/strategy.py",
+    "snapshot": "evidence/source_snapshot/11_strategy.py",
+    "sha256": "9cbfa822621197c8b5b5498ba5059510eb7a80d7ee2623f644e88d6668228b05",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/node/direct.py",
+    "snapshot": "evidence/source_snapshot/12_direct.py",
+    "sha256": "b2bbd1dcb1d27457be07c947369aed320d1e62650bc26b7117f798a21c266e53",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/opt/ros/jazzy/lib/python3.12/site-packages/ros2node/verb/info.py",
+    "snapshot": "evidence/source_snapshot/13_info.py",
+    "sha256": "d8e432dd528772c0d720e52ad46f807ec5e0e008665c621d0c690d73f84ced59",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/opt/ros/jazzy/lib/python3.12/site-packages/ros2topic/verb/info.py",
+    "snapshot": "evidence/source_snapshot/14_info.py",
+    "sha256": "e422eb7ef182e86c1897b62c357fd39c96ae048fa882594685387d079a1acbaf",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/opt/ros/jazzy/lib/python3.12/site-packages/ros2service/verb/type.py",
+    "snapshot": "evidence/source_snapshot/15_type.py",
+    "sha256": "03dc540c9262b3d2516ce9abd45464815635bf98497ff6a82219b6632522d762",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  },
+  {
+    "origin": "/opt/ros/jazzy/lib/python3.12/site-packages/ros2service/api/__init__.py",
+    "snapshot": "evidence/source_snapshot/16___init__.py",
+    "sha256": "cd4eafc2375340b1f7312544dc8c41afbe86fc4e51b02c77f3fc4abaea865b50",
+    "timing": "postexecution snapshot, not pre-execution dependency closure"
+  }
+]

@@ -1,0 +1,5 @@
+{
+ "run_round1.py": "0d64d0a9811c6ca4405a4baebbe50bdb12a6f572ea72dda05a3979768e6e8a55",
+ "_at": "2026-11-15T22:14:27+0800",
+ "_note": "adds optional session filter to run(); no change to episode behaviour, plans, arms or scoring. All other FREEZE.json hashes unchanged."
+}

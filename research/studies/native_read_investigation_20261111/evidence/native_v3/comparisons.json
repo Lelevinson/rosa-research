@@ -1,0 +1,58 @@
+[
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 0,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 1,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 2,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 3,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 4,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 5,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 6,
+    "equal_complete": true
+  },
+  {
+    "phase": "transport",
+    "family": "service",
+    "policy": "persistent",
+    "repeat": 7,
+    "equal_complete": true
+  }
+]

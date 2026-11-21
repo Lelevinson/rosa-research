@@ -1,0 +1,2232 @@
+{
+  "roots": [
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z",
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1"
+  ],
+  "files": {
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/freeze.json": {
+      "bytes": 13676,
+      "sha256": "3d4101dd966c64f23835fb24c4aba5e47b9d23818d45362d324ecb31f7bc00e9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/048-e1h_chg_1-Forge-s1/answer.json": {
+      "bytes": 196,
+      "sha256": "52d80ed9aa52574a059c9d9e3bff0d411310aa1d762a9e6c7502b7e54048ddae"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/048-e1h_chg_1-Forge-s1/score.json": {
+      "bytes": 919,
+      "sha256": "fe8fdf446c2f52040c8334447d0b0b8ddc8340505f0b3594dfbf571d5fecab30"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/048-e1h_chg_1-Forge-s1/trace.jsonl": {
+      "bytes": 215630,
+      "sha256": "5b8cb45d76c1f180f7f262390790d506fc59e9d9d1d0e90c7a7855ee1d71ea3d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/048-e1h_chg_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/049-e1h_chg_2-Forge-s2/answer.json": {
+      "bytes": 202,
+      "sha256": "68b3dbe04cecc768bc0c7541882380f88a9b0255eb1f3763c7e7192c09201d18"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/049-e1h_chg_2-Forge-s2/score.json": {
+      "bytes": 921,
+      "sha256": "42e627971aacc1d741ce8c843bd2c524cc64b9e85fc1f84d69658dd115a85534"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/049-e1h_chg_2-Forge-s2/trace.jsonl": {
+      "bytes": 170236,
+      "sha256": "3fd92dbf0d4df2be7870404e1578fbdefe8016be60bcc33238941664f3e794ea"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/049-e1h_chg_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/050-e1h_chg_1-Forge-s2/answer.json": {
+      "bytes": 201,
+      "sha256": "d2d88f398cb20acb6b0710ccf79f0e0130071b6383b5473f08c84bed619ceaa1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/050-e1h_chg_1-Forge-s2/score.json": {
+      "bytes": 998,
+      "sha256": "5548fdec4bc0eaeb09ec323a23cd4ef26ec21a6ab2498be033a80e814abfbff2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/050-e1h_chg_1-Forge-s2/trace.jsonl": {
+      "bytes": 168677,
+      "sha256": "beaa99b20ce94d75e36dcaead3eb9a5acc198f610422696b8e6bb0bfb27afb8e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/050-e1h_chg_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/051-e1h_abs_2-Forge-s2/answer.json": {
+      "bytes": 181,
+      "sha256": "5341b6f412f2d434d8c5b5713766b3028f28a47e3052dfdc958503b8c9c855f7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/051-e1h_abs_2-Forge-s2/score.json": {
+      "bytes": 898,
+      "sha256": "e41f3d1234917fd71471f3d097e0c07ee45f5e77ecd0906c9833b3e40900cac5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/051-e1h_abs_2-Forge-s2/trace.jsonl": {
+      "bytes": 83515,
+      "sha256": "c6124b3f9f3e287e32626903d95ff13c381ecc224cb969d86d7bf876d5a77a77"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/051-e1h_abs_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/052-e1h_amb_2-Forge-s1/answer.json": {
+      "bytes": 180,
+      "sha256": "0ef3df93ece267ca6fe8e87660158e6b6cc9f2b64bcf58254d7c530d09ddc583"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/052-e1h_amb_2-Forge-s1/score.json": {
+      "bytes": 899,
+      "sha256": "6b52470b88ea8c1b3199058010010f3e80141197564ecf49973e03cde20cdc7b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/052-e1h_amb_2-Forge-s1/trace.jsonl": {
+      "bytes": 276294,
+      "sha256": "0b25af686a8cf42ba14fc87f164db66f6b2a11617398eff0d476c9b5341e3a47"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/052-e1h_amb_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/active-context-gpt-oss_20b.json": {
+      "bytes": 586,
+      "sha256": "8a7700d2a4facc91a7dc4db282aa4ea3aa942c69bfc45d7f3b88069cb1903620"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/freeze.json": {
+      "bytes": 4888,
+      "sha256": "9a2a50f6f6bfffaa5c0931d79cd27d8427b49424a23399142aacbcc92c3a4365"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-00.log": {
+      "bytes": 1457,
+      "sha256": "acf44bf9fb143c69b65ef045214ee6ca983d9481a6ff35667287747c1f3e5c7b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-01.log": {
+      "bytes": 1457,
+      "sha256": "01265179e676c712f22366d49f3749d318f0ae2305b13c767d77a95cd0be3bde"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-02.log": {
+      "bytes": 1457,
+      "sha256": "5d60486432b44c92fa882a5cd8be56553c0606718d85b9bf156a77fbdfb102cb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-03.log": {
+      "bytes": 1457,
+      "sha256": "59486d0a9027e7d45a634bab491caa1301909774602008cb1edf41df08d04b7a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-04.log": {
+      "bytes": 1457,
+      "sha256": "33059fd9c0e1cbe139ceb56757065309aeca845ba95fe1cf3147eabc4167c576"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-05.log": {
+      "bytes": 1457,
+      "sha256": "baad246076214a4542c4e3e2c2b0d511dc89ab066de4a12dc740d731d8c76394"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-06.log": {
+      "bytes": 1457,
+      "sha256": "4f70aef5c59f283df25cdc70be4a9204274da3ce82c20bebf518a25ae74b3357"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-07.log": {
+      "bytes": 1457,
+      "sha256": "585eb08e3ec3efc3d4251fc4f822b82e8e248a03f921a9d51f89cee4c73a97be"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-08.log": {
+      "bytes": 1622,
+      "sha256": "bff88e97105014a9edc5709b82cb6d1d893fc8e53fc56d17b68f1c15ee974ead"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-09.log": {
+      "bytes": 1457,
+      "sha256": "76907ad0570fba0aa72f1a946aa52570860d201f19086df23e35ed84ab4e82de"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-10.log": {
+      "bytes": 1457,
+      "sha256": "033f3693cc5465b39d834ec9e9da5ce808900cc0f1090a08c472e93748285711"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-11.log": {
+      "bytes": 1457,
+      "sha256": "95ed3128ae2fe922e6429f8ffca769d21ad08a561e7b6bbd0fcd34c4b08ccfeb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-12.log": {
+      "bytes": 1457,
+      "sha256": "0c987541fece235a0504ef10616f75982373c2f4112313e87c930b5b991f31b7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/fx-fixture-13.log": {
+      "bytes": 1457,
+      "sha256": "4cb5d957da1edfbb7bdad6f158547654d9bcc42d3b50e866b2965b16136ed192"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/oracle-before/oracle.json": {
+      "bytes": 1600,
+      "sha256": "1ecbbb4267716d77564cb0157b85c32bef0f590a84e4b4732d43a48a03ea5605"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/plan.json": {
+      "bytes": 1418,
+      "sha256": "8b2bbdad15903384ea880da21d73331f5e0142a6508f206d1473fb776be2fa5d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/setup.jsonl": {
+      "bytes": 10079,
+      "sha256": "762d28bf8bf21d17498e029ed9ea352b053081c589779b623d4f3c78ff2e0d91"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/040-u3-Forge-s1/answer.json": {
+      "bytes": 236,
+      "sha256": "d535539d10169773069bf28c7f2d7064338fdf318d3ba00b88d45cfe3888cff3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/040-u3-Forge-s1/score.json": {
+      "bytes": 947,
+      "sha256": "0e91e5ec0dfc401f9f5cd66767e4ff25253d0b0a48907a9b2ada30662066cbc6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/040-u3-Forge-s1/trace.jsonl": {
+      "bytes": 304072,
+      "sha256": "fcd991b6d069077795eb82384c28562995edeaa4624315f76fe3759d895bfd09"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/040-u3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/041-v2-Forge-s1/answer.json": {
+      "bytes": 194,
+      "sha256": "f68bb547fbc1cc844b98d027a8b020375af43078c75c977fb5a4fc66a24eaf04"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/041-v2-Forge-s1/score.json": {
+      "bytes": 906,
+      "sha256": "5368b2cea11902ae5f368bdd9a18b2f6bedb0bf3567521126a5160e8b6f55e47"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/041-v2-Forge-s1/trace.jsonl": {
+      "bytes": 2044364,
+      "sha256": "5eea563cd021bc348055de885c85472249363a52fe77f65243944a228a4e4a18"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/041-v2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/042-p3-Forge-s2/answer.json": {
+      "bytes": 211,
+      "sha256": "015931a56e9277dc3d528dcf57780ddf12ac11bc6478fb032e65f2e8a9c015a2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/042-p3-Forge-s2/score.json": {
+      "bytes": 922,
+      "sha256": "075d8219151a3ba08862ab53d85aa96dd140b8bc12c00d813bc2341aa2878517"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/042-p3-Forge-s2/trace.jsonl": {
+      "bytes": 172756,
+      "sha256": "5fcafa19633408f6680317fe457368e98ed11fa250fda47dc66bced7c6049d47"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/042-p3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/043-u3-Forge-s2/answer.json": {
+      "bytes": 236,
+      "sha256": "a27f9a17f9a2af21b397ddab65395070fc7718775dd9ae4abe18c6875259993b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/043-u3-Forge-s2/score.json": {
+      "bytes": 947,
+      "sha256": "82ff18c29a5d46d9963d3e411ef7d02d6a3ef5213f2f6430d965169e93e2cf3e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/043-u3-Forge-s2/trace.jsonl": {
+      "bytes": 288932,
+      "sha256": "b1d3c3ee26cda7c58a39955f24edb972e42a883f7289d80baba38a45719cbe3d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/043-u3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/044-h4-Forge-s1/answer.json": {
+      "bytes": 377,
+      "sha256": "42159170127c3a78129d5345137eab7c85503744c0c1b60212ad3f0743f5d108"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/044-h4-Forge-s1/score.json": {
+      "bytes": 1134,
+      "sha256": "fdacd6356ad64b492d9ec9f876b8dc8bead195f0fc463652adb818f1ab79127d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/044-h4-Forge-s1/trace.jsonl": {
+      "bytes": 612967,
+      "sha256": "00155e4e58f3bd4fad304fa91fb8a37aa7adfe439f8a0c0262bb32e2e210835d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/044-h4-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/045-h4-Forge-s2/answer.json": {
+      "bytes": 378,
+      "sha256": "3e92457af129c77072c4f875a916e9da6beb6a62a4b4370c1ec8768eed0c1985"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/045-h4-Forge-s2/score.json": {
+      "bytes": 1102,
+      "sha256": "25c285643b3f5a99661962640ea98469dc804e73c353bb8f13e569d56034420e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/045-h4-Forge-s2/trace.jsonl": {
+      "bytes": 840639,
+      "sha256": "69a8c8d96f655c24778f949d3dc7996bd6f545422540391e023b11cb4865a5bc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/045-h4-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/046-v2-Forge-s2/answer.json": {
+      "bytes": 194,
+      "sha256": "e76b1d185a634216fc27c4482f04e691d2a6b390c03158265ccdf092a1eae482"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/046-v2-Forge-s2/score.json": {
+      "bytes": 904,
+      "sha256": "ae9140f8ef5912d74ab29fd1d6ab0259f654d4bc6ab9fa61f6e1757ae5c44b3e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/046-v2-Forge-s2/trace.jsonl": {
+      "bytes": 386370,
+      "sha256": "066630030b98c8b89bc20d9f59be80277075f2ec0b997f38e8a11757b33c53ee"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/046-v2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/047-p3-Forge-s1/answer.json": {
+      "bytes": 211,
+      "sha256": "1d7c44c03f07588cf926b21c5ac9691f1420bc12924d5768bf50e3370399caf7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/047-p3-Forge-s1/score.json": {
+      "bytes": 922,
+      "sha256": "239d53f2a96d6efc3cab7696df0c23b02af644823ab3e79fe3cd2a0b13ee3c60"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/047-p3-Forge-s1/trace.jsonl": {
+      "bytes": 173927,
+      "sha256": "f42c55d6e36d1e3a2e0a67fd43324fcd4d560c26ecb370b35596e5a6e5f66f84"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/047-p3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/active-context-gpt-oss_20b.json": {
+      "bytes": 586,
+      "sha256": "781d07d0704a4601767b0cc0fe712dfd992014bbc8456ae333f5bf643aab55ae"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/freeze.json": {
+      "bytes": 4328,
+      "sha256": "699ce52067729d20e6873f5e1235fc2a55538103c3954225346a8383913fc85d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-00.log": {
+      "bytes": 1463,
+      "sha256": "9b937c5a44203291bc7f0c187bb906238d22140357d7c60125397e2ece9f52dc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-01.log": {
+      "bytes": 1463,
+      "sha256": "53c7e85890851bdb559f31184c3b1cfc25009e8dd5c740bdcc55895f506ac489"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-02.log": {
+      "bytes": 1463,
+      "sha256": "f31acd5794fbf1d2de133945605d9972f1354de417b922719403e3a00573322f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-03.log": {
+      "bytes": 1628,
+      "sha256": "014086b295012a1e2f860efaf200315fb33f0fd1cd1a28e68447ac1262eb38d7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-04.log": {
+      "bytes": 1463,
+      "sha256": "4a9273b740d84a61fbe667f3099e19ab517571e42159e649e401123e5a123cf5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-05.log": {
+      "bytes": 1463,
+      "sha256": "166a0a535ee56f9d46cfc38713c9ba400ccbacf00de433d2eca0eb179a92eb7e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-06.log": {
+      "bytes": 1463,
+      "sha256": "ff7fdb12d942eb07a8510fc69f87b28a6ba927519f0e9dab308dc673baf36126"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-07.log": {
+      "bytes": 1463,
+      "sha256": "a1e0f07e6105d33ed730da40991c6cdd4d20840442493a06a2f9b4f52549a1e0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-08.log": {
+      "bytes": 1463,
+      "sha256": "6d425d87fbe1e4903dce512b0be3156e5d4e03b6d852942d86bcb4932117fb31"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-09.log": {
+      "bytes": 1463,
+      "sha256": "67e1e548c1161e5d525127f21dd9280797c8d57111753919a1f88536ff191854"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-10.log": {
+      "bytes": 1463,
+      "sha256": "e58bdecd16b3eaa5ec979864d5143b19cc517dd2092b8f41dd5d50bd3a57cc97"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-11.log": {
+      "bytes": 1463,
+      "sha256": "a14fe5d239761a7d9d9483ed08e73e0bc57aa0aec592e77d414870ab898b5f7a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-12.log": {
+      "bytes": 1463,
+      "sha256": "4e14fca9cf4acb19f8789b64a3a01ef9ee823deda8085ca4bb4bfdeb2a9ba157"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-13.log": {
+      "bytes": 1463,
+      "sha256": "ed4f0cdc54ff3a6f4f201384ba82c72c374bf084384e43e205e2882219617c8b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-14.log": {
+      "bytes": 1463,
+      "sha256": "b1a984b48c77c89cd7dded24f5a128ac74bb3d7f5b09295f01e3d87e97218263"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-15.log": {
+      "bytes": 1463,
+      "sha256": "ab4d7ed5a5dd8c7e19049a57f205be3e541990d343e54fcf06d5c3c0b333a09b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-16.log": {
+      "bytes": 1463,
+      "sha256": "3287b0ebbc3b49f34299ea66a8c7d98966be1b702b9758f5c7e1442291cc1c5d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-17.log": {
+      "bytes": 1463,
+      "sha256": "1535b96117062f472b6c733c35d4f8b99d9b92113a04085b3fb85a3e14d53a7d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/fx-fixture-18.log": {
+      "bytes": 1463,
+      "sha256": "b7d8328251a03b3dc146732d226e7c607a41bacf6622bdc8020dbcc475610189"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/oracle-after/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/oracle-before/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/plan.json": {
+      "bytes": 914,
+      "sha256": "72bd001de5baf1b6b639d9eca86407a74ef20a6912640f9790298443a359b454"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-stage3/setup.jsonl": {
+      "bytes": 14131,
+      "sha256": "0170fa6ed1a70e217c1d0f6d636320951b079a6eb2eebdd75e75edc9f961019b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/008-e1h_chg_1-Forge-s1/answer.json": {
+      "bytes": 211,
+      "sha256": "2c82437cae392d2e6bea4325bbc2d8672227122586c271bdee8e62e89e3221ec"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/008-e1h_chg_1-Forge-s1/score.json": {
+      "bytes": 913,
+      "sha256": "c51ae9ea2d928ba012cb22df0ba75845a5e57e98bf4263c2f82ff7a56770edfb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/008-e1h_chg_1-Forge-s1/trace.jsonl": {
+      "bytes": 131318,
+      "sha256": "86bff180068ad774280e9d99d827ca24183a2b33f68064439826d64f6a839caf"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/008-e1h_chg_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/009-e1h_amb_1-Forge-s1/answer.json": {
+      "bytes": 192,
+      "sha256": "e0f518e264395df5d45ff040b595ffe4233fdefacdd25ea0e5b733dc01ea5827"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/009-e1h_amb_1-Forge-s1/score.json": {
+      "bytes": 895,
+      "sha256": "fc849749b3abf23da73862058658206cdd0b38139a72e4899b8b99ef619c30fa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/009-e1h_amb_1-Forge-s1/trace.jsonl": {
+      "bytes": 530581,
+      "sha256": "bcf3f8ea68a5f70ca353428b494720587948227196ef76a1627a42d3c3dd04b9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/009-e1h_amb_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/010-e1h_amb_2-Forge-s1/answer.json": {
+      "bytes": 190,
+      "sha256": "4ba44260227a66749e9c001fe2077fbd0d02ec96bbc243a9f499f22c8dbe773b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/010-e1h_amb_2-Forge-s1/score.json": {
+      "bytes": 892,
+      "sha256": "ba5916c7737ba7db427d52885c43fff10df06c94a9029b1f334e49aef2691082"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/010-e1h_amb_2-Forge-s1/trace.jsonl": {
+      "bytes": 382569,
+      "sha256": "d7b92e88c3720b8845f796b6071ec08a46a53ec3561085b83e9a76349bb9bd48"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/010-e1h_amb_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/011-e1h_chg_1-Forge-s2/answer.json": {
+      "bytes": 199,
+      "sha256": "f62be769aceacad60b89e811708c54e9775c659746d8496384ac738487290d15"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/011-e1h_chg_1-Forge-s2/score.json": {
+      "bytes": 913,
+      "sha256": "4f748680aa9c0821fbfceb13dcbd3b0a836ae6ad1416b96781f5c5c9862a95d8"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/011-e1h_chg_1-Forge-s2/trace.jsonl": {
+      "bytes": 128021,
+      "sha256": "a0c2b39ab7ad5915149575857867ff82c204e59b0b85b5475bfa036ef226b84b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/011-e1h_chg_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/012-e1h_chg_2-Forge-s2/answer.json": {
+      "bytes": 217,
+      "sha256": "9efafcf59d94126d3edfeedc40b9dee57dd538860f77f3cc33f6ee4a377fc6d7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/012-e1h_chg_2-Forge-s2/score.json": {
+      "bytes": 919,
+      "sha256": "0619acfef7327c820e1f60acd05ddca5bb5d55bad81bb6e7159351256413f8cd"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/012-e1h_chg_2-Forge-s2/trace.jsonl": {
+      "bytes": 650038,
+      "sha256": "f3a0a86b3d5fdb584d2a7aa17026a2e91ba144f23456542328068656a6e0c7e2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/012-e1h_chg_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/013-e1h_abs_1-Forge-s2/answer.json": {
+      "bytes": 216,
+      "sha256": "db174b64ff44a1b372d140c6a20905b5ff76554af715f26ebaa010bd6f271070"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/013-e1h_abs_1-Forge-s2/score.json": {
+      "bytes": 1032,
+      "sha256": "6d7f2759586bc816e9109b4454e6ed2b55aa8bc21383ce35881ccc4da82567b0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/013-e1h_abs_1-Forge-s2/trace.jsonl": {
+      "bytes": 260727,
+      "sha256": "5c75e9dbac8a6b80db382cdd280ff7e1547e6cb7d8ac6c0852976ea2888ddbdf"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/013-e1h_abs_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/014-e1h_amb_1-Forge-s2/answer.json": {
+      "bytes": 308,
+      "sha256": "bc7983bd093be1380d2dad578ac529b82a73eec28b51e0e562f8f6659035ea6f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/014-e1h_amb_1-Forge-s2/score.json": {
+      "bytes": 1047,
+      "sha256": "d8616aa7ac5e0583182a6c3d0fb2ab894fb998f2dbbd7c8f40e9a2e7c51a9b37"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/014-e1h_amb_1-Forge-s2/trace.jsonl": {
+      "bytes": 2426471,
+      "sha256": "38ed04abc11302ca31e041a72b6eddd51c45462a9fc32feba41890b3c17c7007"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/014-e1h_amb_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/015-e1h_abs_1-Forge-s1/answer.json": {
+      "bytes": 202,
+      "sha256": "de684a4d22eac14f014686199d048fb80c3937ee6f569cbfa7a64618b7701ec1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/015-e1h_abs_1-Forge-s1/score.json": {
+      "bytes": 1032,
+      "sha256": "b2084a2e1804c41c75e0abb691f1f31dac61f9db4c42d0f1080920bc85dec192"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/015-e1h_abs_1-Forge-s1/trace.jsonl": {
+      "bytes": 414311,
+      "sha256": "cf2b827c11e15686dc4c23220ee1410f5bc32fc8217291048110025744726b79"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/015-e1h_abs_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/016-e1h_abs_2-Forge-s1/answer.json": {
+      "bytes": 212,
+      "sha256": "71941d936283f225eb0b92316ea4f4b9c4c6dea1bb2ec0b7369275a7d141393d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/016-e1h_abs_2-Forge-s1/score.json": {
+      "bytes": 1029,
+      "sha256": "9eac38ba4eff731f82014f1b635d43359ddf1579682dfd9f48c6496534e09594"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/016-e1h_abs_2-Forge-s1/trace.jsonl": {
+      "bytes": 464524,
+      "sha256": "e59c75d6bb04931eb488e764baeaedc429ff26b7877f217b41701744aacd384e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/016-e1h_abs_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/017-e1h_abs_2-Forge-s2/answer.json": {
+      "bytes": 214,
+      "sha256": "f0d2dca84c469fb3948f1bf6dfc8f9e3924afb8e1b3142491f1300faa1668490"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/017-e1h_abs_2-Forge-s2/score.json": {
+      "bytes": 1027,
+      "sha256": "7d22a990ff8eef7963eaeb9d08c947f7941452055c7b13ca4074ff7307b48f5a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/017-e1h_abs_2-Forge-s2/trace.jsonl": {
+      "bytes": 316119,
+      "sha256": "50db2e6e16533b604975427c0891922ba11ce5d76aaaf164b5c6c2d87258d87f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/017-e1h_abs_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/018-e1h_amb_2-Forge-s2/answer.json": {
+      "bytes": 190,
+      "sha256": "d3ad4369502fb91a08a94cdcd13d9236c97c8af2fa3d09f91a1c2afffbc74e8f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/018-e1h_amb_2-Forge-s2/score.json": {
+      "bytes": 894,
+      "sha256": "152dc372bbca8fecf610b15bf456d050f078b7c58b0762f83cdd2b7687e31117"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/018-e1h_amb_2-Forge-s2/trace.jsonl": {
+      "bytes": 608415,
+      "sha256": "9dd71c00f2e17ec474d6dc3b68302c8c0f36a4138aa441050c67778a32fb580a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/018-e1h_amb_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/019-e1h_chg_2-Forge-s1/answer.json": {
+      "bytes": 205,
+      "sha256": "19a2ea57b70567b680b58a12cf81fff163867216e0e68d926487763bd59f5a49"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/019-e1h_chg_2-Forge-s1/score.json": {
+      "bytes": 916,
+      "sha256": "effdbc48e0f304b081408aa448b500cf70fb6f6b03e22cec0add65830a33fc46"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/019-e1h_chg_2-Forge-s1/trace.jsonl": {
+      "bytes": 187878,
+      "sha256": "a980471ed6309560fdcfcb93cbde5fbb2f1c97206a5a003b3be0d57731bcfde9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/019-e1h_chg_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/active-context-lfm3_1.7b.json": {
+      "bytes": 575,
+      "sha256": "326c05a1e084fc7bc9557021fdca3c417a3f29802a306cb85144c8da5160b446"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/freeze.json": {
+      "bytes": 4864,
+      "sha256": "09e6f34e27712d48afe94c9d3a7c8c25a316e1554a02a3536b2885b95bbb924d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-00.log": {
+      "bytes": 1457,
+      "sha256": "2379686cedb12357f7cb3c4e1d5cab7e5ddb2427847394c54c91ae08a2c4f255"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-01.log": {
+      "bytes": 1457,
+      "sha256": "b61f31577632a5eb7b06fcfae78618b17940e7122895b897b2064d676a7d74bd"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-02.log": {
+      "bytes": 1457,
+      "sha256": "b2e66bdb3435ca0f6e3935c8447e7ff060237cbc14423ac8d7a9e689e13e5627"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-03.log": {
+      "bytes": 1457,
+      "sha256": "60f8501f4aaa6f6ebdb13e4aa3d0ebd7b99a8026bd73cc8e23bcbe10d59935f4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-04.log": {
+      "bytes": 1457,
+      "sha256": "b7b43bfb05c741222488b77f5dce21d04bbc261cc1bec871113d6f1ba08ede11"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-05.log": {
+      "bytes": 1457,
+      "sha256": "10bbc9f2dfc41ab316eafab19e8451adee7e7f7d8a4c26560d84c8def8632d9f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-06.log": {
+      "bytes": 1457,
+      "sha256": "52b15058d520e126f18f7e2e56dd6cb861446dca825dab415bc1ea82d9c9176b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-07.log": {
+      "bytes": 1457,
+      "sha256": "98e9ce76416b2f02f255ca223df6b9f526d12c7154d032fbd8de51336e8360e1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-08.log": {
+      "bytes": 1457,
+      "sha256": "1a731deb16e8114391d700d9072be3d08fa00b0a0322ecd73be2c674f3c67c53"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-09.log": {
+      "bytes": 1457,
+      "sha256": "79829737445cb5e6ba0ef236d7354dbcf6e36323e5e64981b6bf447c02d30f23"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-10.log": {
+      "bytes": 1457,
+      "sha256": "c1b9072323372b68ed30041a3c40f95863cc2540199913c17d9b4616355a28e3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-11.log": {
+      "bytes": 1457,
+      "sha256": "4d96de3d4875b9f0041c948f732a96d37c1ee6716977e04948fad8e31721bd6e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-12.log": {
+      "bytes": 1457,
+      "sha256": "7bfd8dd103c51e509ff6f3a3ae7b0d997f71004d47680498c49055155a24c0c0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/fx-fixture-13.log": {
+      "bytes": 1457,
+      "sha256": "bfaba93718bb9e8136e266829210f2f0fa8252714079c9f5e889a42eef6a905f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/oracle-after/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/oracle-before/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/plan.json": {
+      "bytes": 1394,
+      "sha256": "48aa764555d18533208fc5c24af03774e3643cf392056c3922898c85d0328d70"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/setup.jsonl": {
+      "bytes": 13489,
+      "sha256": "c1a14f5f8f6fa435a303b66aa28574d3ac9a743daf6e7fc7a95bcd1e35011636"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/000-v2-Forge-s1/answer.json": {
+      "bytes": 204,
+      "sha256": "9a076d801f88d208331df46ca146652460880185c7f8ec735743df3bf552dfd7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/000-v2-Forge-s1/score.json": {
+      "bytes": 899,
+      "sha256": "a3df84d3ab437f547bb998ba1f03238c6d47579819b8fae7a532337fc6334cfb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/000-v2-Forge-s1/trace.jsonl": {
+      "bytes": 965029,
+      "sha256": "2f73ba899fb925ed4d64ae6ea643b88babe11eb529d9c5cf716c3254f7475307"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/000-v2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/001-u3-Forge-s2/answer.json": {
+      "bytes": 251,
+      "sha256": "9352ae8adc77155ae5707568ef83999c1a5be9b6b42d9397551bbd777683e718"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/001-u3-Forge-s2/score.json": {
+      "bytes": 943,
+      "sha256": "5d4d2ea6912f6e473ff009ef8d6849dec10d56566bdd138b747eca3f390903b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/001-u3-Forge-s2/trace.jsonl": {
+      "bytes": 1579656,
+      "sha256": "8d2066f948e38faa529846fc3b185f61ea216b2ef1ff1e524d50ac3aa585964c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/001-u3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/002-h4-Forge-s1/answer.json": {
+      "bytes": 571,
+      "sha256": "5c81c634be31a0317ef97de112f83acfc0a1e341dd1325fe04526b9429da83c3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/002-h4-Forge-s1/score.json": {
+      "bytes": 1288,
+      "sha256": "96682a20126dc634d22c50ebe26c95535b69f6d95af6cb25d4eb12cc4b0c9793"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/002-h4-Forge-s1/trace.jsonl": {
+      "bytes": 636222,
+      "sha256": "f977e9913decaabe92bef226b28c49a0068ef1fe2acdc282b6ac921304306615"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/002-h4-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/003-p3-Forge-s1/answer.json": {
+      "bytes": 213,
+      "sha256": "8fc7df44a655978a023e6c8a03fa8ec2c169b15751cdcab3892446c855630bef"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/003-p3-Forge-s1/score.json": {
+      "bytes": 1180,
+      "sha256": "f62d8170d00cc40622492ed5ba3f13c3bb5bcc013906307eee6c84a6e626d553"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/003-p3-Forge-s1/trace.jsonl": {
+      "bytes": 382647,
+      "sha256": "540de3166467270d9d9c4edf7bbbb4e1c0c048b146eacb7106174205b28c721e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/003-p3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/004-h4-Forge-s2/answer.json": {
+      "bytes": 442,
+      "sha256": "306b27a3593902de59ebd0a239cc237f4d3f4afade409ef90cc2fa7959f9442d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/004-h4-Forge-s2/score.json": {
+      "bytes": 1127,
+      "sha256": "dc01a62d6ec2bf366bf205815f976782cb04493fbf716abbfbd9a406dc31162d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/004-h4-Forge-s2/trace.jsonl": {
+      "bytes": 498810,
+      "sha256": "f9fe17e929530f4386352fa956d3fc71da746f50bb56751e5631a7dac0f79ed4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/004-h4-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/005-p3-Forge-s2/answer.json": {
+      "bytes": 214,
+      "sha256": "96ab539dc0fb8efef584663d5341216ff641f1b4d36f351d941add4d041ac080"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/005-p3-Forge-s2/score.json": {
+      "bytes": 918,
+      "sha256": "fe0c9be2d57142548690265e1d1fc836eedfde60dbb5702d61d2d43da9506479"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/005-p3-Forge-s2/trace.jsonl": {
+      "bytes": 324592,
+      "sha256": "5574fbc5fd942ba772f4135d74c7181148b4d154c725257a7f3e708653e80d54"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/005-p3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/006-v2-Forge-s2/answer.json": {
+      "bytes": 195,
+      "sha256": "eade61766d26dce222990138f2ac04b165e48da4f872c4113c5cfce351f85c60"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/006-v2-Forge-s2/score.json": {
+      "bytes": 899,
+      "sha256": "320ea06f3e2c7e7762dc673d8f4bfbce4230b86657810f50299a1c09bdda0381"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/006-v2-Forge-s2/trace.jsonl": {
+      "bytes": 652986,
+      "sha256": "dac48d48537c36ba3298ad4e3defa610d2edb4af1dbf147ac59b7a5ca25c4800"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/006-v2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/007-u3-Forge-s1/answer.json": {
+      "bytes": 221,
+      "sha256": "f8e72ee57da977c6204a06d507b2d8dca1cee46b98b8ceb601676757bc429a9a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/007-u3-Forge-s1/score.json": {
+      "bytes": 1024,
+      "sha256": "152f6e84ecf0b61c471f7f713037a0cb1849dbec4b5178d253aafba04291f19b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/007-u3-Forge-s1/trace.jsonl": {
+      "bytes": 677537,
+      "sha256": "b871dfc1485c0906c683a738cb0e38ce6445f1ae2914416107ee67aedef009a0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/007-u3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/active-context-lfm3_1.7b.json": {
+      "bytes": 575,
+      "sha256": "31915268bea153a6fa1f297c543032975f055472466ca4ca393963083c68c8c2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/freeze.json": {
+      "bytes": 4312,
+      "sha256": "fa1861aa17aa574b7a964fa640421cef5f29931bcf0499503bb78608253869ed"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-00.log": {
+      "bytes": 1463,
+      "sha256": "4fff9387de1046d382688c6d02d889a61e1ff8ad08c5c836972135618af64e68"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-01.log": {
+      "bytes": 1463,
+      "sha256": "b7b0de116ca4c918a7013dc6c61f929abe9a009e4f50022ec438fafff59451a2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-02.log": {
+      "bytes": 1463,
+      "sha256": "7c846e3689008cea3635bab7346c3239aa29daaceca616e7a502e7f3229792bc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-03.log": {
+      "bytes": 1463,
+      "sha256": "3be1a1760e847838e7faf0db08ddf80e339fa30d93d3e12d09674fbb5d33f70f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-04.log": {
+      "bytes": 1463,
+      "sha256": "8cffb3ff1903ee460e89ad7c60a703f373c58e271f5de12ceebb9125b94924c9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-05.log": {
+      "bytes": 1463,
+      "sha256": "5fac059d7827a3cfa78b6b3a2e505c95158701c69d6567c661a3c7bc00a67b8d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-06.log": {
+      "bytes": 1463,
+      "sha256": "fbbfe717bcfa6476fc6b1d6214e392a0f7c512a910d267cea30fa5f97198b109"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-07.log": {
+      "bytes": 1463,
+      "sha256": "7ecaf04fea17360572d036edc925ee7f5260595d7c8fec93f8bee7533130e9da"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-08.log": {
+      "bytes": 1463,
+      "sha256": "34a1d417d082022975b851b804ec6a5cb05cf2f84a1da1696c462365caf87052"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-09.log": {
+      "bytes": 1463,
+      "sha256": "cf58dbbc54b7f552376ded71d8b94862955552f1b5ae6a5183878974c99e2945"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-10.log": {
+      "bytes": 1463,
+      "sha256": "d507f34b4bd820eba917d4fcd9a98e461055e1127b1ee2a1dc7181ea9ce58cd5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-11.log": {
+      "bytes": 1463,
+      "sha256": "c5cc97d67734e7b5d44033729886cfa69342e1e81322b95af7a165401e5890d6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-12.log": {
+      "bytes": 1463,
+      "sha256": "fa1c063edf82a153de6119028f8c4ecaec863ceb133fd47d21ef68be10179960"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-13.log": {
+      "bytes": 1463,
+      "sha256": "05e9f7f37dceaf16e2c5bb8793d8f3a74ab50fdf9dbc036c6ad03d139d91e196"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-14.log": {
+      "bytes": 1463,
+      "sha256": "bf62b9047b120196a015c6abc13d11ff1ecd0c86e3d5cae1b97b58c5f1a38280"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-15.log": {
+      "bytes": 1463,
+      "sha256": "38a25916d31ed4666699a3f78e5f7d7409ad6430b1db86441c88ad2be3c39680"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-16.log": {
+      "bytes": 1463,
+      "sha256": "c9499a3c86df84a06e947409bde2529331c78d6b3f8dca28859f11ef1320ffd7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-17.log": {
+      "bytes": 1463,
+      "sha256": "1781613c624a1f3b740cbc83cf98f9625d2316dd3bf3c74e994563ea24e3bc8f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/fx-fixture-18.log": {
+      "bytes": 1463,
+      "sha256": "277701865c2efa0282953e7437866161b7563953e61176941cb2ffd29fe25326"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/oracle-after/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/oracle-before/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/plan.json": {
+      "bytes": 898,
+      "sha256": "5e75f128754ba8754585a351db2e07001b9dcbb7f0ce74006b09a7f1447926e3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/setup.jsonl": {
+      "bytes": 14087,
+      "sha256": "a43ef8613ea4dc5707915eeedd7d56e5dd4c5b819711b1767ddb431fbd71155f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/plan.json": {
+      "bytes": 9254,
+      "sha256": "d3cad7a45b17576305e1425f06a9b2b1e056c8396bf7634db2c9be2ec79f0a43"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/028-e1h_chg_1-Forge-s1/answer.json": {
+      "bytes": 200,
+      "sha256": "cdb372e6180c7d3f2b840edd61ef6ce98055f43078dbe4a31b7dabbbdb44dc7a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/028-e1h_chg_1-Forge-s1/score.json": {
+      "bytes": 916,
+      "sha256": "94c4bad50028616d48070da78fa5ed828a3ab1729dc6f6f37d656b02f192ed67"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/028-e1h_chg_1-Forge-s1/trace.jsonl": {
+      "bytes": 168139,
+      "sha256": "8be106480389335e9f92231f2b94a37fb6810fb7fe5aa52e806dc56da0c0afae"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/028-e1h_chg_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/029-e1h_abs_2-Forge-s1/answer.json": {
+      "bytes": 183,
+      "sha256": "45e71beddf0fff809c743da19767c0f33cda0d0657aa27d501bf2c53464f4deb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/029-e1h_abs_2-Forge-s1/score.json": {
+      "bytes": 895,
+      "sha256": "a5f192a5d748da52e227b058fef81a94d01755892d9e645dbdc9524319b92e62"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/029-e1h_abs_2-Forge-s1/trace.jsonl": {
+      "bytes": 84970,
+      "sha256": "dae7b4f6bdd67e6d508a6eb5612714b392f9bdc6d4c10d041506c918a0e212b5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/029-e1h_abs_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/030-e1h_chg_1-Forge-s2/answer.json": {
+      "bytes": 200,
+      "sha256": "4ecbc61b5216d18ff6f213f8c5d4679a392f6acad31841b052562e15ade40bdc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/030-e1h_chg_1-Forge-s2/score.json": {
+      "bytes": 916,
+      "sha256": "052fd2000593746facc2360b4394e5ad6f4f1d8bde6386f68ffca221b830f1ea"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/030-e1h_chg_1-Forge-s2/trace.jsonl": {
+      "bytes": 128049,
+      "sha256": "a2ecafd090a01107f2f9cb770a10a537586992f6f62d0f92606c6d0d9fbb54d5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/030-e1h_chg_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/031-e1h_abs_1-Forge-s1/answer.json": {
+      "bytes": 181,
+      "sha256": "d56154d44f1c4fec268c5384062ea4810a73fc89f5aec6170954f8f9240e9c99"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/031-e1h_abs_1-Forge-s1/score.json": {
+      "bytes": 898,
+      "sha256": "b18291ed2a7e6ba28ebc17b1156ed967d86c9afd8feec5f1de1e2213fac57814"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/031-e1h_abs_1-Forge-s1/trace.jsonl": {
+      "bytes": 574915,
+      "sha256": "24a0406c4042fcac2c2961ccb3ea298eaaf1c70094ff8886676a214b7f2bd12b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/031-e1h_abs_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/032-e1h_amb_2-Forge-s2/answer.json": {
+      "bytes": 182,
+      "sha256": "c6afbfe808658273c148f3dfccf1ebb1b11f67d096095f864b1cbabc367689e6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/032-e1h_amb_2-Forge-s2/score.json": {
+      "bytes": 895,
+      "sha256": "3db7c4c1342a655f35a91547b824c25cbcecc0544a8eb333b270257d7a1f0650"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/032-e1h_amb_2-Forge-s2/trace.jsonl": {
+      "bytes": 173548,
+      "sha256": "a612f74c967e591ec871f658aaa7d59a92140ea2ca249a33d57ebfa9afec2642"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/032-e1h_amb_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/033-e1h_chg_2-Forge-s1/answer.json": {
+      "bytes": 206,
+      "sha256": "238120a99708f8afe469c4e95c394aebaf648e4a1bd15ddf9435760ab5cec8c7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/033-e1h_chg_2-Forge-s1/score.json": {
+      "bytes": 918,
+      "sha256": "3e7c52e3b0fd530f9ef3a5dc608777cab0cdda499c2a085e2061a671c02f24e5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/033-e1h_chg_2-Forge-s1/trace.jsonl": {
+      "bytes": 128251,
+      "sha256": "faf3f2c06f8f14409e2ee51b560e3fb6c996970f9af987beb17bc4fce5072ae8"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/033-e1h_chg_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/034-e1h_chg_2-Forge-s2/answer.json": {
+      "bytes": 206,
+      "sha256": "0965ef4cb9b75a79f5e9d945568abb153d31e7aeb41eedc7517f33c08bc684ab"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/034-e1h_chg_2-Forge-s2/score.json": {
+      "bytes": 918,
+      "sha256": "a8f315e9eb1ef95bed92f74861afed4347c425ca42c58764d70b4005378307fc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/034-e1h_chg_2-Forge-s2/trace.jsonl": {
+      "bytes": 128780,
+      "sha256": "74e8de7dc0b9e61a9daeb4ae12b443da075f61f3951f415188dec47838b335c8"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/034-e1h_chg_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/035-e1h_amb_2-Forge-s1/answer.json": {
+      "bytes": 182,
+      "sha256": "781da0ba83cc6d5d5576fcd51d631889d340db2cded439b4600c1277606b7340"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/035-e1h_amb_2-Forge-s1/score.json": {
+      "bytes": 895,
+      "sha256": "6f6fb8d777c28b313eb233e8eb88fde896d0ec44d878bfa2e958c85394982caa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/035-e1h_amb_2-Forge-s1/trace.jsonl": {
+      "bytes": 428999,
+      "sha256": "34b3bb21d77cc5cd48ece45554d97721b77e0b72aaaf0bbdf32e0fd295b93cab"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/035-e1h_amb_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/036-e1h_amb_1-Forge-s1/answer.json": {
+      "bytes": 176,
+      "sha256": "58462bbe557b8003fd6b5c59b8feed1d936c1e58a46e4a48d76f8df3b380d672"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/036-e1h_amb_1-Forge-s1/score.json": {
+      "bytes": 873,
+      "sha256": "1c5f34d39b34ce75432b16ad4e8a5b8a8891f0a4061ef847ce53597f1f22a87c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/036-e1h_amb_1-Forge-s1/trace.jsonl": {
+      "bytes": 282812,
+      "sha256": "496c90408e222d07257121984080e35efe1ea75a34d71a7e90fe08e97386f9c7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/036-e1h_amb_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/037-e1h_abs_1-Forge-s2/answer.json": {
+      "bytes": 184,
+      "sha256": "a0c02910432a54fda4c4c1942a25dc6a2320e8ad9c2f2a6d5e9f741c8484f050"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/037-e1h_abs_1-Forge-s2/score.json": {
+      "bytes": 896,
+      "sha256": "e04126dbc999b6e67d624e452b4f7eee7f90a20b30f31f62992b01e2e17c7feb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/037-e1h_abs_1-Forge-s2/trace.jsonl": {
+      "bytes": 82376,
+      "sha256": "7491cd70b6e27feed8168b99b376b93fdea216943bb4f6465178dcc53c2c164e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/037-e1h_abs_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/038-e1h_abs_2-Forge-s2/answer.json": {
+      "bytes": 183,
+      "sha256": "2a9cfd46f8beba5381ac315a9d9693d6bd7b0f9a45823bd1b2fffe5e675c066a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/038-e1h_abs_2-Forge-s2/score.json": {
+      "bytes": 896,
+      "sha256": "0f5505416de696e4ae23c9a2a991dd0e8c2150168de5a6d03258c4b2ddcec0e0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/038-e1h_abs_2-Forge-s2/trace.jsonl": {
+      "bytes": 209344,
+      "sha256": "347bb04365e06d5a5b7600ee8dafd7e1a3879f101c5097db3c2937ebac503ce1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/038-e1h_abs_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/039-e1h_amb_1-Forge-s2/answer.json": {
+      "bytes": 184,
+      "sha256": "ce0a01cc3529ebc475ccf5f15c8d46f6f0997b1f34ce44fdfdd1f27eddbeb244"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/039-e1h_amb_1-Forge-s2/score.json": {
+      "bytes": 896,
+      "sha256": "e965a71009281ce2b2bcc571d545039ba8f9a9079c322140821ed8276c752960"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/039-e1h_amb_1-Forge-s2/trace.jsonl": {
+      "bytes": 168864,
+      "sha256": "466cb5b3872b7f6f1c8685cf33a66c110cf6a16c724aeaaa3badc73052088460"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/039-e1h_amb_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/active-context-qwen3.5_9b.json": {
+      "bytes": 581,
+      "sha256": "8fb8286520b9c2051c94915d7f5ac2cc264127336a90f5d2734913255edcb002"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/freeze.json": {
+      "bytes": 4876,
+      "sha256": "520b84c11d62f2b242b4ed605b9e11663d1b17695a92ff8bde9ee8a3076f4e99"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-00.log": {
+      "bytes": 1457,
+      "sha256": "59a0dda333c0859403d0f9740dd0d6356a26d1fde50bad2f4793d61e4b664ad1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-01.log": {
+      "bytes": 1457,
+      "sha256": "400731e02cfbbc2ab07a4b93ddbd0d84f7fbfc3452734a296aaa6a79b77cdcbd"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-02.log": {
+      "bytes": 1622,
+      "sha256": "2bf0e2cfc38c7c56d14580a500e86200e967076f4477c2eef980eaa569ab61aa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-03.log": {
+      "bytes": 1457,
+      "sha256": "0e7b526b44895067e2806d89d9c726e7abd445e7be0223e991ebed0d537c42c4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-04.log": {
+      "bytes": 1457,
+      "sha256": "a2d25c18a3c534103fc1b0596348cfda7ed0bdc14815abd846d31270b4132ec9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-05.log": {
+      "bytes": 1457,
+      "sha256": "cb93491411ec2af150b72f5fa48ecb8b3ff592a58f27b34257a17fb504217597"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-06.log": {
+      "bytes": 1457,
+      "sha256": "c34595a4560fd858bfee0ae7ce8b9a2b4189f00ae14eb2271809f2f3c7ebf8af"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-07.log": {
+      "bytes": 1457,
+      "sha256": "65b3bdc38ad95c7586b9cd6ae3f2ce321107ee4dd66e227ada0bdddce4e25b8a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-08.log": {
+      "bytes": 1457,
+      "sha256": "3a47d053708fc5c19e9af8fbe85bfe13b1939454c3453d4a8938d514439f1022"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-09.log": {
+      "bytes": 1457,
+      "sha256": "472c9543ae5c778fbc1a9f1e410eed9340e433db3eee607dae230b0a98deb87a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-10.log": {
+      "bytes": 1457,
+      "sha256": "f955f6de6172ed15c312804e10b1fe144d2d194b9a26f32203771be41ae1358f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-11.log": {
+      "bytes": 1457,
+      "sha256": "f0169e3cbb883adce23ded57180587b74d80a48dffa9fa639886e4d9f60b2909"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-12.log": {
+      "bytes": 1457,
+      "sha256": "96b6fbef52703dd18e8652a48f110d18b019fb6bba99eebcd1ba570ff2f52fd4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/fx-fixture-13.log": {
+      "bytes": 1457,
+      "sha256": "cb6bc6b2575cac6a2aa994d98e298d788eabeb299209ce0bb05ece929becc234"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/oracle-after/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/oracle-before/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/plan.json": {
+      "bytes": 1406,
+      "sha256": "f6dd28b5ff11346ed2ce87006164fd3b0a2cc928a6403488f22a0d338a2ce992"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/setup.jsonl": {
+      "bytes": 13577,
+      "sha256": "ddf532ebb4ca406f14e4ad2780a2b0520c7e925c804c778f528e9496124f408e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/020-p3-Forge-s1/answer.json": {
+      "bytes": 227,
+      "sha256": "87f437360721338f91e36214c0af0c09ae7a1e22a1675ce0a754faa82e8f7689"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/020-p3-Forge-s1/score.json": {
+      "bytes": 920,
+      "sha256": "e7bed9b0b9d458fa6e8e7ae25ec5fa69e66aed0c69d8ddd1f5b2355c3c54a6a5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/020-p3-Forge-s1/trace.jsonl": {
+      "bytes": 212472,
+      "sha256": "f58d26b1f0cae83269f08e2efd70b54a47e924293da93dcc033ce929593a93f1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/020-p3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/021-v2-Forge-s2/answer.json": {
+      "bytes": 196,
+      "sha256": "c94f72805721b9c48126af28f56d2d085023461ae32fe83091342614ca474eb6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/021-v2-Forge-s2/score.json": {
+      "bytes": 900,
+      "sha256": "a9099f7cf8cab6da60ed45270ee91b9de9ec9344a0ffd866a1fe46c703678718"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/021-v2-Forge-s2/trace.jsonl": {
+      "bytes": 276008,
+      "sha256": "44e89fc93bd6f347e48a1af4564dcd0c4ac62a06283f92cd8f6536cd963143d7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/021-v2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/022-p3-Forge-s2/answer.json": {
+      "bytes": 215,
+      "sha256": "2d3aa8be93fc7ac6cc59c9c47de311a8742eda66046be93012694216c43ad8af"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/022-p3-Forge-s2/score.json": {
+      "bytes": 919,
+      "sha256": "2180ec01105e720af6f69cb8d2d3f3d293001ab084764b68c53aabddde4a49e5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/022-p3-Forge-s2/trace.jsonl": {
+      "bytes": 168923,
+      "sha256": "2330728f7682fc362533d0856479f28884c1284b5f44d093c1b175a0fc64c0e0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/022-p3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/023-v2-Forge-s1/answer.json": {
+      "bytes": 196,
+      "sha256": "b62024ecffea85d56ba48aa3ac6ee179dcc1f05c6f32ec9fe713046a6ee851be"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/023-v2-Forge-s1/score.json": {
+      "bytes": 953,
+      "sha256": "f57386acf34664d90390feeb3069dfa122d4709341cf73606e61358e7809b95f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/023-v2-Forge-s1/trace.jsonl": {
+      "bytes": 125673,
+      "sha256": "7dc7b1ad8642f6b35758465fb40ea555625e73da7ddb52666bb55f17674802df"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/023-v2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/024-h4-Forge-s1/answer.json": {
+      "bytes": 391,
+      "sha256": "287a464e42a441db79b7afe489fb70d914dc3cf832bc35e28cb52b08f20dc703"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/024-h4-Forge-s1/score.json": {
+      "bytes": 1130,
+      "sha256": "5206559e79e3831a61215ab02242f7550c75be8c6cfc840cb32ea7b655423cab"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/024-h4-Forge-s1/trace.jsonl": {
+      "bytes": 524656,
+      "sha256": "777d469afbdad6a741a3c95982bebb044fc7f772353dee34f6f190954d141288"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/024-h4-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/025-h4-Forge-s2/answer.json": {
+      "bytes": 443,
+      "sha256": "4a6e4f9f517c5bbd9908030b349967e18fb5ecec1bcc3a2ce147fbc59ef8fbaa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/025-h4-Forge-s2/score.json": {
+      "bytes": 1129,
+      "sha256": "99b39ba5cf42e197ec82740780fdb176c66498fb769d408d39f9da6763c12419"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/025-h4-Forge-s2/trace.jsonl": {
+      "bytes": 362510,
+      "sha256": "f7f8ebf5f893365603c0b76dc0b92dec69182b2af00f01b161c07399630fd48e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/025-h4-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/026-u3-Forge-s2/answer.json": {
+      "bytes": 240,
+      "sha256": "f499533f6978741432fe75b3dc80327893b9fc50c91d344da233dad02e1d44ff"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/026-u3-Forge-s2/score.json": {
+      "bytes": 943,
+      "sha256": "ea4cd218c37e13e2c917e2c204f5324a0a768b0aa6c1a349234ae196c129b534"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/026-u3-Forge-s2/trace.jsonl": {
+      "bytes": 401937,
+      "sha256": "b1d887246ef262b87b597f2409b875c57c3374dc2335675a3dd6bcc53372b4a5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/026-u3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/027-u3-Forge-s1/answer.json": {
+      "bytes": 240,
+      "sha256": "4b3effaccf0674b3de398926ddb902c48fe2d3e637d80d5d77e1b56f5d175f02"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/027-u3-Forge-s1/score.json": {
+      "bytes": 943,
+      "sha256": "a82628d67cd657cd8e61cad23855d0518560c21d8a48cf37603bbdd882326cd0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/027-u3-Forge-s1/trace.jsonl": {
+      "bytes": 283180,
+      "sha256": "ca128ebdbb501d51b827fdbb7836b62a9c1129c24f01894e88ebfe70b908d617"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/027-u3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/active-context-qwen3.5_9b.json": {
+      "bytes": 581,
+      "sha256": "a3e28a7105b2b330aee7231b63aee7064c724456c666df7695b176b250d1468b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/freeze.json": {
+      "bytes": 4320,
+      "sha256": "95f057bd64698e0a3314eafa5ca359ca13bc70447051c85db823fe7748a1000f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-00.log": {
+      "bytes": 1463,
+      "sha256": "1d4140f4c420ff79cc7787d32670f3a977830e79431ca9004bb8af6dcfec3c6e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-01.log": {
+      "bytes": 1463,
+      "sha256": "bd5c4f3322d841c5b6c5bf7e11ed1e0cefee784fd149aa8eb6e894250724ffdb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-02.log": {
+      "bytes": 1463,
+      "sha256": "82f572c44976612720aae3f969aaa89ae4279a08918f58ddb761893ab7260265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-03.log": {
+      "bytes": 1463,
+      "sha256": "52684a0dce5a6f9d5b136c684139a61da58ca83baf714a6185fd0981288ec283"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-04.log": {
+      "bytes": 1463,
+      "sha256": "58fb30c8a515cb27f680194a1ddf6e3ad83f64f21012cf809aadbb6b5de5b729"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-05.log": {
+      "bytes": 1463,
+      "sha256": "b45221e5b9f96a0f5e3340ba0ec87095a1d995255b2a74832c32fdbe98075d95"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-06.log": {
+      "bytes": 1463,
+      "sha256": "ae774b199dec8e39d71448852fb369cbd0c30e3c45834143fee42e4981df2d68"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-07.log": {
+      "bytes": 1463,
+      "sha256": "7cbabc6558899890c6514179e24810c9253a1d447087f234fe03d16ada852eca"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-08.log": {
+      "bytes": 1463,
+      "sha256": "f51c9b82edd9bacea9c4f0b54923187c37f2e1daaef71579e11046c9d402f2af"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-09.log": {
+      "bytes": 1463,
+      "sha256": "7fa3a3c7e4518d3d960d8e9749903696d237151df6fb538a47fbc97223810c44"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-10.log": {
+      "bytes": 1463,
+      "sha256": "c6d8f71c9f73974c6f4239d9bbe8abea84d9ecdf68fa8a67d63126508ae3d133"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-11.log": {
+      "bytes": 1463,
+      "sha256": "b6e6e2b33ee964894b3e96761cf0096e53b113dc53fb1d42f8da9f961c0aa3a4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-12.log": {
+      "bytes": 1463,
+      "sha256": "2dc4a2bf6dda0fc764b2064b410a79054ced6ed846f5a84162502c49481d57d4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-13.log": {
+      "bytes": 1463,
+      "sha256": "874c3955c583e6f4cd6d6a367f6714ee8792ce2a4d92ddc0adec60a02ef6927f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-14.log": {
+      "bytes": 1463,
+      "sha256": "9a6c1b7a8bcb716868eb5ce8da4be9a12ff09291efabf34361cc4de480bfa9fb"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-15.log": {
+      "bytes": 1463,
+      "sha256": "cc8fdd376dcad0e8ec048d8e9b3507f5a061bb950a24c1c0d68098fb8d91e7f9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-16.log": {
+      "bytes": 1463,
+      "sha256": "4181f6f3fd07a9ac99085d2349b47279873c06ad921b2fea4713198eb235d144"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-17.log": {
+      "bytes": 1463,
+      "sha256": "6551413a3e0c6f5755d8ab05c0406534dcb6e2044b4d7da2fe244d32e3fcd74e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/fx-fixture-18.log": {
+      "bytes": 1463,
+      "sha256": "a7c1e684ead949f43de51b4f55f170b36369d01739002f46e39bbe6b97268b02"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/oracle-after/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/oracle-before/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/plan.json": {
+      "bytes": 906,
+      "sha256": "6b37d6fb7db4448da587b03ab10a3a56c193ac60232b17695d6c79bc98312ebf"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-stage3/setup.jsonl": {
+      "bytes": 14769,
+      "sha256": "bdca9c272be4c1bce22ed7b01c838eaa9b097be80943cbbd826a42e7b71cfff5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/run_full.py": {
+      "bytes": 17474,
+      "sha256": "bde150e5d64187023764abad26510a192614b73929a770697fce12c449c4a47d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/068-e1h_amb_1-Forge-s2/answer.json": {
+      "bytes": 185,
+      "sha256": "786e027fac04b65a7d58cff77abee5100a5a47472904b277e9b3f5ed5100deb6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/068-e1h_amb_1-Forge-s2/score.json": {
+      "bytes": 916,
+      "sha256": "42222bade57aea9309e0449eb4c33b5266226b01f521063ed1dd137b0f70fd13"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/068-e1h_amb_1-Forge-s2/trace.jsonl": {
+      "bytes": 215500,
+      "sha256": "29ced8e00029300e50046cd54a6aa18dbb8be09ef1d1fc7f6e397630ee38c976"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/068-e1h_amb_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/069-e1h_abs_1-Forge-s2/answer.json": {
+      "bytes": 204,
+      "sha256": "1e726e26f383f662afbf38d72544561768a501f3844940e598326baf1ba1bb93"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/069-e1h_abs_1-Forge-s2/score.json": {
+      "bytes": 1054,
+      "sha256": "d3aefcc2aae1af8915c03066a07e1008efa6c80c10f24563457ea03d565c0116"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/069-e1h_abs_1-Forge-s2/trace.jsonl": {
+      "bytes": 217274,
+      "sha256": "f096b0eae3dbe9ce3ffa5a30090eeb8e719882bfbf7c8cef961f7059d41ba9ba"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/069-e1h_abs_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/070-e1h_abs_1-Forge-s1/answer.json": {
+      "bytes": 204,
+      "sha256": "7f283d732672c52853a3d76ab953f14ddc884af821a3670d587feba57fb2cc88"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/070-e1h_abs_1-Forge-s1/score.json": {
+      "bytes": 1054,
+      "sha256": "01e6f71ee4385560a4d65180762beb1e0f63abec15cefc20df69a370bac321c7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/070-e1h_abs_1-Forge-s1/trace.jsonl": {
+      "bytes": 217841,
+      "sha256": "6384ae22d77b5130550347f028bf939a458fa10098790ecc4479294fb359c958"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/070-e1h_abs_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/071-e1h_amb_1-Forge-s1/answer.json": {
+      "bytes": 185,
+      "sha256": "5eef2b77f03663e8c3c4ade02a18e626e0e8a7de88d8d444a698fa6d26e9ba1b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/071-e1h_amb_1-Forge-s1/score.json": {
+      "bytes": 916,
+      "sha256": "f6f26e6b565524a0e5e7a1dadcac9bf6870373efe6494e40018cc46cef91d5fd"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/071-e1h_amb_1-Forge-s1/trace.jsonl": {
+      "bytes": 219228,
+      "sha256": "7ea27158bcf73ede34023665c0f3c64aa22d81559c4c804759bb3f08cf891476"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/071-e1h_amb_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/072-e1h_abs_2-Forge-s1/answer.json": {
+      "bytes": 202,
+      "sha256": "d14a2cdb3ff1ab0bd2cf9a67315118d8c15ee3fc94ffc75517b2d5352360916f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/072-e1h_abs_2-Forge-s1/score.json": {
+      "bytes": 1049,
+      "sha256": "02f0ec077ff3ee34a431c8124d5026ab79bd0d88e5e8cefbb5a82e259ea7359d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/072-e1h_abs_2-Forge-s1/trace.jsonl": {
+      "bytes": 217606,
+      "sha256": "ceec319b1fe8f836bd77931d629d837012f6cdc9a8ce07d248d02dd9059292df"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/072-e1h_abs_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/073-e1h_chg_1-Forge-s2/answer.json": {
+      "bytes": 201,
+      "sha256": "9d1918dc5aa9916075f1a0df15f59d15a0171f90ef2b9e3fd4a8c949462f74fe"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/073-e1h_chg_1-Forge-s2/score.json": {
+      "bytes": 935,
+      "sha256": "b11b7731e12824d5d5e45cba7421e368d3c60bcd23df940523b45769cc930f3c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/073-e1h_chg_1-Forge-s2/trace.jsonl": {
+      "bytes": 128051,
+      "sha256": "8dcc5749eb82f0d417ecd620282b6d9b9632781561a1c9ab91ec969033834977"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/073-e1h_chg_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/074-e1h_amb_2-Forge-s1/answer.json": {
+      "bytes": 183,
+      "sha256": "8bd1fec3acd06c01c471be9c47baf3081c219e3ad29cbe8ce0b851ca7e098526"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/074-e1h_amb_2-Forge-s1/score.json": {
+      "bytes": 914,
+      "sha256": "5780ee5e720c43d51633927badbe61f9c6050e94e73fced6aaa43d52b7feda84"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/074-e1h_amb_2-Forge-s1/trace.jsonl": {
+      "bytes": 238387,
+      "sha256": "69e7b591075dc4bec8f23b59b4d7d8fcbce49a9d1afdf3c0f80bc85ef55d00c5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/074-e1h_amb_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/075-e1h_chg_2-Forge-s1/answer.json": {
+      "bytes": 217,
+      "sha256": "1eaf960f85f1e281b3b746a505d1a7ec2f3cb8b0185887bd8d7b083c9a677471"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/075-e1h_chg_2-Forge-s1/score.json": {
+      "bytes": 1017,
+      "sha256": "2c958092992d555de84d35c62dd08bf8682405adf231e275e9435fc56b69c85a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/075-e1h_chg_2-Forge-s1/trace.jsonl": {
+      "bytes": 458388,
+      "sha256": "b4ced280813920e9c9239e324fe1093165f6930d9b017c71f56cdc4afd92bdc3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/075-e1h_chg_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/076-e1h_abs_2-Forge-s2/answer.json": {
+      "bytes": 202,
+      "sha256": "d4bb2e733234ec981ecc520fe6156c4b7e739df9458bb01e335bc93bd0955c24"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/076-e1h_abs_2-Forge-s2/score.json": {
+      "bytes": 1049,
+      "sha256": "2f4349d494809aedecad67d8f26dbd68336910de12424b1597c85c690283dfe6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/076-e1h_abs_2-Forge-s2/trace.jsonl": {
+      "bytes": 217009,
+      "sha256": "1b4563a304da349bc6a2ae9a9de7e6a5233ba236e3de29276fb95164649e1327"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/076-e1h_abs_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/077-e1h_chg_1-Forge-s1/answer.json": {
+      "bytes": 201,
+      "sha256": "d225cb10a6ff818686387c5edc6f77958d9d9be5944331f8c438534a1be1d027"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/077-e1h_chg_1-Forge-s1/score.json": {
+      "bytes": 935,
+      "sha256": "8ce5262f761701f9bbf7fac099edeb13ab1661c562225fe8906c657b968dc497"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/077-e1h_chg_1-Forge-s1/trace.jsonl": {
+      "bytes": 128054,
+      "sha256": "67e2522dae8c3bc98d75669bbbe7e9cd0737193def80ca2b00c6d55e805ec636"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/077-e1h_chg_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/078-e1h_chg_2-Forge-s2/answer.json": {
+      "bytes": 287,
+      "sha256": "c9e66c6c07e74816afd9030dac628998cb5c20f76cba09d36966f2f7493e859a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/078-e1h_chg_2-Forge-s2/score.json": {
+      "bytes": 1137,
+      "sha256": "8de8a214ab524357592b88a7510931515db84f1ed9d13360c9a5defd814b9b02"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/078-e1h_chg_2-Forge-s2/trace.jsonl": {
+      "bytes": 2133971,
+      "sha256": "97beccfc41b15089fe99921b6f06aeacee36b66fdd09ca4fe661e6dcae6c30c9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/078-e1h_chg_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/079-e1h_amb_2-Forge-s2/answer.json": {
+      "bytes": 183,
+      "sha256": "08f88549e8397cb89cc49578bdfb3871afd2bea2c8cc12564221ade4dd3f9c88"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/079-e1h_amb_2-Forge-s2/score.json": {
+      "bytes": 913,
+      "sha256": "c7cdbabf357cb4408bcdb6c14a72c821b6f4f314cba8958fdd9a4900e6404d52"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/079-e1h_amb_2-Forge-s2/trace.jsonl": {
+      "bytes": 136391,
+      "sha256": "313f378a421b4b4dcdcd9f4892a2226c544fc9a536727fc8f8601ca5bb75d3ff"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/079-e1h_amb_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/active-context-bonsai-2_4b.json": {
+      "bytes": 581,
+      "sha256": "72a913146ab71e978a9387ce4e76cd7e3aa8ce14a8520b4d6bc12d8c4368140e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/freeze.json": {
+      "bytes": 4888,
+      "sha256": "bf67dff4eb3782396666e024b0875226959c184eea8a24a93336010c3a726c16"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-00.log": {
+      "bytes": 1457,
+      "sha256": "9e2e0e59fbac66a41bde921d0b244ba191498203dca5d588d1db30c01f466cc7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-01.log": {
+      "bytes": 1457,
+      "sha256": "6ca329ddbd9ba9a75e9dffcc24ca5ca9748add32591ac18d6e1b0567bfea4c3b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-02.log": {
+      "bytes": 1457,
+      "sha256": "7c67e110e7684347df5b7953a58dad7c7d683d6906e2670ff74aedef2553aafa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-03.log": {
+      "bytes": 1457,
+      "sha256": "121fbf6a441b9586b1ae9fc45dc5a8c7a1a861eb9efa327408a871859732c72f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-04.log": {
+      "bytes": 1457,
+      "sha256": "d0ed0e2c118de7e44fa0c105854cda99832b7dfe63d372b71da9a34cbef88703"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-05.log": {
+      "bytes": 1457,
+      "sha256": "7ccf49233db415302fd9b34c98453a65fd063686fbc746919caa1fc4764d103d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-06.log": {
+      "bytes": 1457,
+      "sha256": "69c4b47a132e4ed5fefcf8b2dd8944e0820efd650111d6dfe4f933a879e4099f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-07.log": {
+      "bytes": 1457,
+      "sha256": "f58436fc08eba133412dd7adace8bc4b50c2b55974606b79401a52f71a8cee74"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-08.log": {
+      "bytes": 1457,
+      "sha256": "d27ab63ce3c41e362d3ac01e5f61d87f1cf4003400b812d97831da6214d129b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-09.log": {
+      "bytes": 1457,
+      "sha256": "b7c35c08a0226ed9054fd427647bccc32e27c9f861e42a57b2f1c1a532e7ef0d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-10.log": {
+      "bytes": 1457,
+      "sha256": "d8be4a2267ab1f1e6b5d71ae328025606bc52872c9347905f3280e1f055817a1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-11.log": {
+      "bytes": 1457,
+      "sha256": "7e6705cc5d39214ca52bacacadbc371acb3337404450c7f8c09c6121cd5bb88c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-12.log": {
+      "bytes": 1457,
+      "sha256": "4331852fc2084b99f93b08f4878b8d3f64a99cea0ab463575eaa87e75354aa07"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/fx-fixture-13.log": {
+      "bytes": 1457,
+      "sha256": "66b4177f84e18f38ae60bc42a10326da8cfc81b36e6335e28f66e5c17753f0d5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/oracle-after/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/oracle-before/oracle.json": {
+      "bytes": 1600,
+      "sha256": "1ecbbb4267716d77564cb0157b85c32bef0f590a84e4b4732d43a48a03ea5605"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/plan.json": {
+      "bytes": 1418,
+      "sha256": "49f34de0c91ac31ca29c773fde0bb7ac30562fc0dab5e04ab3188b3826781377"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/run_full.py": {
+      "bytes": 18423,
+      "sha256": "0b32b755495dda5a2202a9d41ccebd5e087bb5096b6956b3eff6a4df69570820"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/setup.jsonl": {
+      "bytes": 14255,
+      "sha256": "065cd00347f4ceeb11f1be0bb1654f7a6f874f388dee56af892ed77c29461a79"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/060-h4-Forge-s2/answer.json": {
+      "bytes": 446,
+      "sha256": "a342f38bebf54552b8e96212ce2eba273d0774afb7b51330842e85a18afe7f92"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/060-h4-Forge-s2/score.json": {
+      "bytes": 1506,
+      "sha256": "eb7246372506cbf326ef9c550f39371e2a2382804a061ff59702c60964947c11"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/060-h4-Forge-s2/trace.jsonl": {
+      "bytes": 474733,
+      "sha256": "5fbd59b71d60276bedc9a44785111eb8d41132e99975f50ae1d3e16b625252d3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/060-h4-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/061-u3-Forge-s2/answer.json": {
+      "bytes": 256,
+      "sha256": "ac4d79d785c20bb0ea6e243e889a16b168467fa1a9c158d4aa763a7b9a66634b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/061-u3-Forge-s2/score.json": {
+      "bytes": 1031,
+      "sha256": "a17ccf468e80b60ad2b45f09130852ccba0e52ac028d1356ed966ee4d7d3978b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/061-u3-Forge-s2/trace.jsonl": {
+      "bytes": 3553171,
+      "sha256": "a90f109836c2767a3be0dc999bfd8790849fa898c291ac726e96d221a6f8f351"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/061-u3-Forge-s2.worker.log": {
+      "bytes": 13,
+      "sha256": "ba214b00539c125616f63043be2bfe1f502e5336a83104aea83853f91f23cb25"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/062-v2-Forge-s1/answer.json": {
+      "bytes": 183,
+      "sha256": "33b8733b7e57d7fa5002580cdae87754c3d96d7bce2514b9a3514530cbbedc72"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/062-v2-Forge-s1/score.json": {
+      "bytes": 1073,
+      "sha256": "5feceb2258985389743a94445f0ac6846aa4cc316f06b2bfc8a50e73a7dd07f8"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/062-v2-Forge-s1/trace.jsonl": {
+      "bytes": 707803,
+      "sha256": "f9fede2df49fee09dd01203aaa7dd2101ae1d1253b699cc5bf5e20c8e697473e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/062-v2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/063-h4-Forge-s1/answer.json": {
+      "bytes": 369,
+      "sha256": "778492b1af2f1fcff2a98a24641d24f1449b29f593db9d0556b3ba023eae32bf"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/063-h4-Forge-s1/score.json": {
+      "bytes": 1329,
+      "sha256": "c438ff214ede02a4b948e2f8d7ff42af7e5019726de830ab7d734e3ef707e4d9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/063-h4-Forge-s1/trace.jsonl": {
+      "bytes": 1499885,
+      "sha256": "f44ed0dff25f6b2585d4cea76e438f66eddc537a33be1b51293b49ee5932398f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/063-h4-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/064-p3-Forge-s1/answer.json": {
+      "bytes": 216,
+      "sha256": "11f237650b920b2fc4d8ce0e14e9dc033a880966b19a92bdbab3e5a09a1b7f40"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/064-p3-Forge-s1/score.json": {
+      "bytes": 938,
+      "sha256": "eff7b3d86b949a2486023981f00acf36b626976fac3b8adab7569f2a4df7a4b2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/064-p3-Forge-s1/trace.jsonl": {
+      "bytes": 168931,
+      "sha256": "9883ebbfd5f15f38e1ae833d75d4cf50470e4402dfdbfac56159efd6fdf8f8aa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/064-p3-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/065-p3-Forge-s2/answer.json": {
+      "bytes": 216,
+      "sha256": "2468625ebbdff59f02d0ced5f07dad1f021c4a72f5e0044fb1483bcb565481c5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/065-p3-Forge-s2/score.json": {
+      "bytes": 1025,
+      "sha256": "a4fe150ee96166435233fcabf0657fe9bd5647381100c3f791347ff7bba95e16"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/065-p3-Forge-s2/trace.jsonl": {
+      "bytes": 132072,
+      "sha256": "cd3da71e2e61b65e4a0c88efcff194f3ce89995e016e41de330847277b5fba82"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/065-p3-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/066-u3-Forge-s1/answer.json": {
+      "bytes": 241,
+      "sha256": "e9c11756af288d321a59005e39c97d1a3d897f979628162970014b9cf3df43a7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/066-u3-Forge-s1/score.json": {
+      "bytes": 964,
+      "sha256": "8393f8d1708de8e6bab4a7c58ba2cee17ce88bbf1ef01b26b1a19eeb3eeb09ae"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/066-u3-Forge-s1/trace.jsonl": {
+      "bytes": 386053,
+      "sha256": "1c7c0c8292127fbb7ff2cadd1dcbbc659830216e09d8b231d471468b46549cfc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/066-u3-Forge-s1.worker.log": {
+      "bytes": 13,
+      "sha256": "ba214b00539c125616f63043be2bfe1f502e5336a83104aea83853f91f23cb25"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/067-v2-Forge-s2/answer.json": {
+      "bytes": 203,
+      "sha256": "30386ef3228a6a276cc185e84983600b650fd9c93a2a058ccee7e604212c24a8"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/067-v2-Forge-s2/score.json": {
+      "bytes": 987,
+      "sha256": "43f0b8cf5b6f68596cc85828c52372e7b20c6eed27a7cb61f4f59ab5d1b26ea7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/067-v2-Forge-s2/trace.jsonl": {
+      "bytes": 1005358,
+      "sha256": "d33e26e63e2ca809b609c36e09ae33f0f1d07cc68081c887d118a6cbb1723e23"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/067-v2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/active-context-bonsai-2_4b.json": {
+      "bytes": 581,
+      "sha256": "d0ca62b1331a1753d29a5c31902f1584890410cf83c44c1228d3316b7b87b7e2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/freeze.json": {
+      "bytes": 4328,
+      "sha256": "322329e014f85499acf7b00644c5dd5ff505891262797c7def8fbd4fcf6bddfe"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-00.log": {
+      "bytes": 1463,
+      "sha256": "4579e9ddb1bdc267c141ca5cf5fae3e5e4c91e9e2e695ff50c04c924643fe9e5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-01.log": {
+      "bytes": 1463,
+      "sha256": "85f29fafb99cfc4930be0cfb24f0a51178531cccede4da3a6c3625d201d39c9f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-02.log": {
+      "bytes": 1463,
+      "sha256": "3b277cbb64f1ec87f0a7f6f97b788574e0f6115e20a75e335661033ab1d0b540"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-03.log": {
+      "bytes": 1463,
+      "sha256": "41b78efb749ec24e28323ff03b27c535365066355d88a93694f628ed1a72772a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-04.log": {
+      "bytes": 1463,
+      "sha256": "1840873e49d9a681f36fc8873d0a408e622ceab4f78754deaf57c92841768655"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-05.log": {
+      "bytes": 1709,
+      "sha256": "1adcaea151b4bd9f767d30f7b43d276b2608d0f3d8ebb6ed0a0f0026e4dc7ff7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-06.log": {
+      "bytes": 1707,
+      "sha256": "0db75a35f4278c94e3b4b2de6cf2cb0d2388eee7f8c3d34ac1f8179c5ad32c78"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-07.log": {
+      "bytes": 1707,
+      "sha256": "8d6fb1c24d856be2aec40076c76b4b33aef363e1f6630950c72e13f59b02b353"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-08.log": {
+      "bytes": 1709,
+      "sha256": "86bec74f7c5923912df4de97505ebe207646b4a2f15f0febaed9179407440699"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-09.log": {
+      "bytes": 1463,
+      "sha256": "e032685a4bbf988f15ff9115862cd46b6a3cd7dbf6f5e26c794f0ec76df9db71"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-10.log": {
+      "bytes": 1463,
+      "sha256": "16619110345f3334c81e088b59484657d0490762fe4c0da3a785ba5031fed8ef"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-11.log": {
+      "bytes": 1463,
+      "sha256": "8fbe7613120932fa84ef431c6fc7af6362d4efd54d303b11966fd05735c9b415"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-12.log": {
+      "bytes": 1463,
+      "sha256": "f2a1beb085c363a97ac156daf0377f34c6982531ae7e89b78b27456d74a0cc47"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-13.log": {
+      "bytes": 1463,
+      "sha256": "3fb2174f436a42030f4a90207fccccd2e410e2eacb9fe1c7a179f41960837e1d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-14.log": {
+      "bytes": 1463,
+      "sha256": "f422bd8f2a0c91f592faff68f4d093324afc97402f8a5461d88a17d2d672602b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-15.log": {
+      "bytes": 1463,
+      "sha256": "a5722e21a02870b1d641acae0b5c7a5bab0ed3f16c63a391cdd658bf21a7071f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-16.log": {
+      "bytes": 1463,
+      "sha256": "409e2664ce27658ee512bc0947c03e6b2f67b1d88c285156e6950b1962102cd0"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-17.log": {
+      "bytes": 1463,
+      "sha256": "fe75d4d785a6b196792f319a3e5f1d5e652b7eea09a4015ecf39b3ca86035663"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/fx-fixture-18.log": {
+      "bytes": 1463,
+      "sha256": "c98dc23c6a61211d13a9393f83a36f89d02fce23a3a5da3d15676ee3ded7a1cf"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/oracle-after/oracle.json": {
+      "bytes": 5748,
+      "sha256": "06b699fb5759c281470272e01db57abd76173b820f42deab718c8e1357abef2b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/oracle-before/oracle.json": {
+      "bytes": 5748,
+      "sha256": "d6ff0472a887053b525f6cac645a239c9dd3ca3911e56af8d14ad7d54b13c8ee"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/plan.json": {
+      "bytes": 914,
+      "sha256": "c1c5967d4596cc710138832f854496c4d668f41a9859b74b5dd967cb21bbbdc4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/run_full.py": {
+      "bytes": 18423,
+      "sha256": "0b32b755495dda5a2202a9d41ccebd5e087bb5096b6956b3eff6a4df69570820"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-stage3/setup.jsonl": {
+      "bytes": 13428,
+      "sha256": "63649f97a34e9e1401f5b15157db3723b7f591faf0166f28f5a8398b8938d30a"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/freeze.json": {
+      "bytes": 13676,
+      "sha256": "055eeade8f3eff14d93da2a0ddabbc86aef3d52e6954f31e110518969acc2436"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/053-e1h_amb_1-Forge-s1/answer.json": {
+      "bytes": 182,
+      "sha256": "92fccd33b7c2b15c88ab32f36823f15112f37b34f9c999710c2705e4c933c886"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/053-e1h_amb_1-Forge-s1/score.json": {
+      "bytes": 915,
+      "sha256": "49d7b9f32c59b533b82be4433416859b706cecc0c4f550107e2d8b239c741ec9"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/053-e1h_amb_1-Forge-s1/trace.jsonl": {
+      "bytes": 214255,
+      "sha256": "cf5e4cb82ac10d3a79e07892113ba3a5d2dcbf149037269cc89dc3e3ea542669"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/053-e1h_amb_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/054-e1h_amb_1-Forge-s2/answer.json": {
+      "bytes": 182,
+      "sha256": "7373fe84be4d81824766eebbe9ccda8a111bd28b8fddd9bbe0fc928b13b24c97"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/054-e1h_amb_1-Forge-s2/score.json": {
+      "bytes": 917,
+      "sha256": "e610ffef835a75da41a96f6c5cfe1996cdbf4255eaec18bcaee39988dc4ebd23"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/054-e1h_amb_1-Forge-s2/trace.jsonl": {
+      "bytes": 488817,
+      "sha256": "2d3805796b1fba6eda69c2482f104e0835a197d2cdbaf9315ff5933859bc20d7"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/054-e1h_amb_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/055-e1h_abs_1-Forge-s1/answer.json": {
+      "bytes": 182,
+      "sha256": "cc375186d578a388945942c8c95786f8a101c9c69a5c5b8ea30e6ea9b06c560c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/055-e1h_abs_1-Forge-s1/score.json": {
+      "bytes": 915,
+      "sha256": "b6049c325beb9cf893189b94801feba74eda00be8d7aab35e3aac191f66ee9d3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/055-e1h_abs_1-Forge-s1/trace.jsonl": {
+      "bytes": 83325,
+      "sha256": "9ae31aae2545d489fb7655fd7e4c04ad410f4552c40ec3efa137786228511238"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/055-e1h_abs_1-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/056-e1h_abs_1-Forge-s2/answer.json": {
+      "bytes": 199,
+      "sha256": "81221ef07b5e7e6450b234425c06c6a3774a54a3a92abb1b3d920e334c887d75"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/056-e1h_abs_1-Forge-s2/score.json": {
+      "bytes": 1053,
+      "sha256": "0485b87ff2212830b8bc54bbeee159b8bbf7d80a8aaea0580d68c81de034b227"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/056-e1h_abs_1-Forge-s2/trace.jsonl": {
+      "bytes": 170657,
+      "sha256": "3b9653575a04041e18992d35c1b795ae0e7031f61c66c096860300e6ccfed58c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/056-e1h_abs_1-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/057-e1h_chg_2-Forge-s1/answer.json": {
+      "bytes": 202,
+      "sha256": "cc4963ecb9e0aad015759f6467eafd21c1b618df30c60d4abb8e139395b48ed4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/057-e1h_chg_2-Forge-s1/score.json": {
+      "bytes": 937,
+      "sha256": "aea0d169a6ba7c26f4c75f2d6aafb38d480212a2495f209b119bdb455b3354ae"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/057-e1h_chg_2-Forge-s1/trace.jsonl": {
+      "bytes": 174682,
+      "sha256": "a651f818f5711a34160d4256a350551dc0a6096d31bf0116eea0592e62206b03"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/057-e1h_chg_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/058-e1h_abs_2-Forge-s1/answer.json": {
+      "bytes": 184,
+      "sha256": "b9c691b19d2fda012420126ddcf2ed90fdc3b7b7c049769dde3a55b5d4f1dad6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/058-e1h_abs_2-Forge-s1/score.json": {
+      "bytes": 914,
+      "sha256": "b468e4e53baee5dc6827bd6305aefd50852826be0ef6a1b7884d5db59eb298fd"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/058-e1h_abs_2-Forge-s1/trace.jsonl": {
+      "bytes": 87161,
+      "sha256": "2b5d297075153da80d29616f42b29338647b12b3ac8d8fbf94ae951d4c52395e"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/058-e1h_abs_2-Forge-s1.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/059-e1h_amb_2-Forge-s2/answer.json": {
+      "bytes": 180,
+      "sha256": "de0b5263bb40103092b15f5d693229343d0dce525dfdb77d2710e05d2761c107"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/059-e1h_amb_2-Forge-s2/score.json": {
+      "bytes": 913,
+      "sha256": "6fdf12de91025d793566e509f1cf3e1762b9b6bf35d90a99e0b05ba44b2ca516"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/059-e1h_amb_2-Forge-s2/trace.jsonl": {
+      "bytes": 221905,
+      "sha256": "65901df94576e52be7bfbf9fcbe9dcc7b2a693a8f242585bd89232ed53b91b9d"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/059-e1h_amb_2-Forge-s2.worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/active-context-gpt-oss_20b.json": {
+      "bytes": 586,
+      "sha256": "9811ff71002199e6d47c93b41a70865ef62faccb8cdaf6d3e20d6b017c8467b5"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/freeze.json": {
+      "bytes": 4228,
+      "sha256": "4f333d32bbec234d2b474653a8fc01fca6b8d788d338768d1deca7b586f6cf80"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-00.log": {
+      "bytes": 1457,
+      "sha256": "2d79abca4c6fe7739c3fde6a467ddfd5022f6b7ea447414f23027ccb50b503b1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-01.log": {
+      "bytes": 1457,
+      "sha256": "a85f0ac59d5680bda34f9ed4a8dbae82bd76b849381f62fc1d197c87de993db6"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-02.log": {
+      "bytes": 1457,
+      "sha256": "f1ed1535c4d067742829e0bba99603fe4eb3c3b404fc53b05cf4487470a1220c"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-03.log": {
+      "bytes": 1457,
+      "sha256": "7972c2cacfb893e85487654266795622fe615e1242c1cf33d7a31d248779d0a2"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-04.log": {
+      "bytes": 1457,
+      "sha256": "5a54d4c267b0b71a45a5207d2aebbe5f21532594a70aab52b56a6822231636dd"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-05.log": {
+      "bytes": 1457,
+      "sha256": "2d1e24c03f30a16fdde1694a227935daf32aeb8ef5162f3cddb02fd45ef3dbf4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-06.log": {
+      "bytes": 1457,
+      "sha256": "5be0db7633e0fc50b615c2b10536cd6081a0ffa0da7943a7391cc99f7e520fcc"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-07.log": {
+      "bytes": 1457,
+      "sha256": "bd98bc38fd20f9e78a256d876018912f3adafb1e57d71cba21e71594003e3c20"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-08.log": {
+      "bytes": 1457,
+      "sha256": "f7a28dbd91e8fedba2efd271d42a45079c51caabdd3fca1bd58517a61a84e8d1"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-09.log": {
+      "bytes": 1457,
+      "sha256": "cd2d57d90841078d928880b421d87ed48f21453a5709e0cecc362ca0de7fd938"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-10.log": {
+      "bytes": 1457,
+      "sha256": "06989a36c26614d56d2d6057413bf7c87ca4130a41553d73169c596100d43f50"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-11.log": {
+      "bytes": 1457,
+      "sha256": "e31c604b75017296b37e6ac625cf2f9ea7ecfad9431971cfa8a2c140e0617eaa"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-12.log": {
+      "bytes": 1457,
+      "sha256": "bd3143017db062b122d7f9bc15c250d821bdbbf9bdd8f46a2fc948f7c1f2823b"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/fx-fixture-13.log": {
+      "bytes": 1457,
+      "sha256": "e319ada3e21a17715e2ecf754064be54a68551f3c750e254ecd007012c6b2b24"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/oracle-after/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/oracle-before/oracle.json": {
+      "bytes": 1600,
+      "sha256": "3994b504ef811ca3b45ba1734b4f436569adf7f01f3767c8ec6c65db4b020cb3"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/plan.json": {
+      "bytes": 828,
+      "sha256": "390a7e01bc7e08364746a728730f21956a82dff9e41af0888bbdb983923aecd8"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/run_full.py": {
+      "bytes": 18423,
+      "sha256": "0b32b755495dda5a2202a9d41ccebd5e087bb5096b6956b3eff6a4df69570820"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/setup.jsonl": {
+      "bytes": 10894,
+      "sha256": "145b8c2910a09502969aff5f5f41081df77cb9e99a65c08a73b84d56b69de19f"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/plan.json": {
+      "bytes": 9254,
+      "sha256": "d3cad7a45b17576305e1425f06a9b2b1e056c8396bf7634db2c9be2ec79f0a43"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/prompt.diff": {
+      "bytes": 413,
+      "sha256": "65a1021ec1bdb9c2d3eab2d7c70a434bec7fe7993292fdec5fdba623886f48b4"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/prompts.json": {
+      "bytes": 4766,
+      "sha256": "431800a8c67990b702262f6b8ce875f43f9c509986868f6d44c96e7d7e2b6265"
+    },
+    "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/run_full.py": {
+      "bytes": 18423,
+      "sha256": "0b32b755495dda5a2202a9d41ccebd5e087bb5096b6956b3eff6a4df69570820"
+    }
+  }
+}

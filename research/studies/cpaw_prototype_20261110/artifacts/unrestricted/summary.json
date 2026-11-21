@@ -1,0 +1,258 @@
+{
+  "binary": {
+    "cold": {
+      "calibration_episodes_per_instance": 0,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "cold_or_model_mismatch": 22
+      },
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.6666666666666665,
+      "native_work": 3.6666666666666665,
+      "objective": 4.95,
+      "objective_incl_measured_compute": 4.9500037764792,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 1.5105916797134947e-05,
+      "sim_elapsed_s": 1.8333333333333333,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "exact_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.9166666666666665,
+      "objective": 4.958333333333333,
+      "objective_incl_measured_compute": 4.958676544687515,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 0.0013728454167297361,
+      "sim_elapsed_s": 2.9166666666666665,
+      "sound": 12,
+      "waves": 2.9166666666666665
+    },
+    "exact_wave": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.9166666666666665,
+      "objective": 4.141666666666667,
+      "objective_incl_measured_compute": 4.142210007270797,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 0.002173362416518406,
+      "sim_elapsed_s": 1.75,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "fixed2": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.6666666666666665,
+      "native_work": 3.6666666666666665,
+      "objective": 4.95,
+      "objective_incl_measured_compute": 4.950001422833331,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 5.6913333234357806e-06,
+      "sim_elapsed_s": 1.8333333333333333,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "fixed_nominal": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.9166666666666665,
+      "objective": 4.141666666666667,
+      "objective_incl_measured_compute": 4.143970008229224,
+      "preparation_s": 0.009210499500037864,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 2.8667501889382643e-06,
+      "sim_elapsed_s": 1.75,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "fixed_robust": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.1666666666666665,
+      "native_work": 3.1666666666666665,
+      "objective": 4.1000000000000005,
+      "objective_incl_measured_compute": 4.106678143312551,
+      "preparation_s": 0.02669728958350485,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 1.528366669845127e-05,
+      "sim_elapsed_s": 1.3333333333333333,
+      "sound": 12,
+      "waves": 1.3333333333333333
+    },
+    "full": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 4,
+      "native_work": 4.0,
+      "objective": 4.7,
+      "objective_incl_measured_compute": 4.700007865541704,
+      "preparation_s": 0.0,
+      "probes_attempted": 4,
+      "scheduler_s": 3.1462166816709214e-05,
+      "sim_elapsed_s": 1.0,
+      "sound": 12,
+      "waves": 1
+    },
+    "greedy": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.3333333333333335,
+      "native_work": 3.3333333333333335,
+      "objective": 4.5,
+      "objective_incl_measured_compute": 4.500102316291627,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.3333333333333335,
+      "scheduler_s": 0.00040926516650567163,
+      "sim_elapsed_s": 1.6666666666666667,
+      "sound": 12,
+      "waves": 1.6666666666666667
+    },
+    "initial": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 12
+      },
+      "initial_wave_differs_from_fixed_robust": 2,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 0.0,
+      "native_operations": 3.1666666666666665,
+      "native_work": 3.1666666666666665,
+      "objective": 4.1000000000000005,
+      "objective_incl_measured_compute": 4.111399298291679,
+      "preparation_s": 0.02669728958350485,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 0.018899903583208772,
+      "sim_elapsed_s": 1.3333333333333333,
+      "sound": 12,
+      "waves": 1.3333333333333333
+    },
+    "revised_guarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 15
+      },
+      "initial_wave_differs_from_fixed_robust": 2,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.024999999999999984,
+      "native_operations": 3.0833333333333335,
+      "native_work": 3.0833333333333335,
+      "objective": 4.075,
+      "objective_incl_measured_compute": 4.086013417083348,
+      "preparation_s": 0.02669728958350485,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.017356378749885455,
+      "sim_elapsed_s": 1.4166666666666667,
+      "sound": 12,
+      "waves": 1.4166666666666667
+    },
+    "revised_unguarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 15
+      },
+      "initial_wave_differs_from_fixed_robust": 2,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.024999999999999984,
+      "native_operations": 3.0833333333333335,
+      "native_work": 3.0833333333333335,
+      "objective": 4.075,
+      "objective_incl_measured_compute": 4.08605913320841,
+      "preparation_s": 0.02669728958350485,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.017539243250136376,
+      "sim_elapsed_s": 1.4166666666666667,
+      "sound": 12,
+      "waves": 1.4166666666666667
+    },
+    "robust_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.9166666666666665,
+      "objective": 4.958333333333333,
+      "objective_incl_measured_compute": 4.960865271437456,
+      "preparation_s": 0.010121983333116683,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 5.769083372797468e-06,
+      "sim_elapsed_s": 2.9166666666666665,
+      "sound": 12,
+      "waves": 2.9166666666666665
+    }
+  }
+}

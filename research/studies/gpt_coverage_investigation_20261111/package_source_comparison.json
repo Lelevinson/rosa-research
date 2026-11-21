@@ -1,0 +1,18 @@
+{
+  "installed_vs_checkout": {
+    "cli.py": true,
+    "provenance.py": true,
+    "errors.py": true,
+    "__main__.py": true,
+    "langchain.py": true,
+    "storage.py": true,
+    "http.py": true,
+    "types.py": true,
+    "client.py": true,
+    "auth.py": true,
+    "__init__.py": true,
+    "providers.py": true,
+    "config.py": true
+  },
+  "limits": "Source equality only; sibling README dirty work left untouched; no credentials or settings copied."
+}

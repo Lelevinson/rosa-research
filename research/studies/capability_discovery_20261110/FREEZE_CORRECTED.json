@@ -1,0 +1,15 @@
+{
+  "event": "implementation-defect correction; regression rerun, not new heldout",
+  "utc": "2026-11-10T02:50:45.203418+00:00",
+  "branch": "research/capability-discovery-20261110",
+  "base_head": "94af17866cb82f3ea3f09422ef5cbb99b14cc89c",
+  "protected_remote_martin": "b13df0f03677754f42383dee95424cded862b117",
+  "files": {
+    "discovery.py": "bf0c4b2b1165d51740d933df866e4d15cbbbc95276f1575e4320c4c01f8e6f98",
+    "fixtures_development.py": "55411c22ca987b758f78a2ede65eff6e30477d7dbb97c694989d9476ec2176f4",
+    "fixtures_extension.py": "cc6279c3c33dae03d88eb2fd970c1fbaf917e2d45a7cb5266223e1295b893815",
+    "test_discovery.py": "2eaaa253e3b046c758ab3346772cfa6f48b79bcfdb528d73a64aa97d65c4b280",
+    "PROTOCOL.md": "b5e55c88832c4ab0fb8eb6e9806aad718f46dd1bee573ad7920334b8ff3c4b4e",
+    "run_study.py": "38607d0e1b7d5508d8ac602c351714839a1c03db8dda8e67063f98046af61688"
+  }
+}

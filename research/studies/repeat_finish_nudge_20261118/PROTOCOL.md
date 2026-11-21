@@ -1,0 +1,55 @@
+# Repeat-finish nudge: live development protocol (frozen before any code exists)
+
+Dated 2026-11-18, Asia/Taipei. Development evidence only (synthetic fixtures, four small models, authored dev tasks); not a held-out result, not causal beyond these cells, not a novelty claim. Scorer v2.0 unchanged (`c6b02716...`). Held-out custodian files are not opened. Authorisation: the owner's evening prompt of 2026-11-18 ("Claude Code" section): write and hash the protocol first, smoke first, then `nohup`; report before anything else; GPU idle afterwards. Not a method component: the owner's decision is that action-state switch and renderer are not core; this test is a candidate only.
+
+## 0. Preflight record (AGENTS.md; ROSA_RESEARCH_CONTEXT 12.2 / 14.2)
+1. **Observed opportunity and evidence.** `write_tail_repeat_20261118` (offline, 1,832 saved episodes, not independent): 159 episodes with >= 2 identical successful repeats; first repeat `facts_present` in 82 (51 unsupported or no answer), `facts_not_yet` in 77. Requests after the first repeat: 965 (facts_present) and 1,601 (facts_not_yet). The scorer's "present" is a text-presence test, not proof the model read it; 24 of lfm3's 25 facts_present repeat episodes end unsupported because the answer was wrong although the fact was in a result, so a finish nudge may be useless there. Opportunity is a request budget, not an answer-quality gain.
+2. **Candidate vs control action difference.** Control (`FULL`): the model sees the repeated result as is. Candidate (`NUDGE`): the same result plus one fixed sentence that points to finishing. The difference is observable on any episode where the trigger fires: the next model request can be `final_answer` instead of a further call. No LLM call, no hiding, no rewriting.
+3. **Closest prior mechanisms.** (a) Stall hint v2 (`stall_hint_v2_20261118`): pointed to the NEXT entity, failed its frozen offline bar (B2 44.4% < 50%); this nudge points to FINISHING and contains no entity. (b) Round 1's bare-text finish nudge (`decisions/2026-11-17-finish-gate-check.md`): no support gain demonstrated on its gate-only firing cases. (c) The stock "Repeated call" text of the old harness did not stop loops (`stall_hint_v2` report). (d) Stock ROSA has no loop breaker. The incremental claim here is only "a repeat-conditioned finish pointer changes later requests"; it is a simple heuristic, not a novel contribution without evidence.
+4. **Fair evaluation and costs.** Two arms differ in exactly one thing (the appended line on a fired result); prompts, tool schemas and descriptions are byte-identical (hash checked). Detection runs in both arms and is logged in both (`identical_repeat` events), so event-level counts use the same code on both. Cost: 160 live episodes (about 1.5-2.5 hours, based on the 144-episode render study, which ran about as long).
+5. **Smallest decision-changing next action and stop rule.** If class A: the nudge is "eligible for consideration" and the next step would be a second seed set or a stock-executor version (not authorised here). If class B or C: drop the finish-nudge family for this week. The study ends after one full run; no re-run, no rule change after the first live request.
+**Status of the idea: not yet justified as a method component.** Known risks: (i) the fire count may be too small for any effect to be seen (see section 6, power); (ii) scripted-change tasks (`e1h_chg_*`) may legitimately poll an unchanged state before the scripted change, so a nudge there may cause a premature answer.
+
+## 1. Trigger and action (frozen)
+- **Successful call:** the arm's `execute` returned a result without raising, and `harness.failed_items(tool, arguments, output)` is empty (no per-item error entry). Harness messages, blocked or unavailable tools and exceptions are never successful calls. `final_answer` is not a domain call and never counts.
+- **Identical repeat:** a successful call whose tool name, arguments (canonical JSON, sorted keys) AND result (canonical JSON of the raw result as returned by the tool, before any nudge line) equal those of an earlier successful call in the same episode. The same definition is used in both arms for logging.
+- **Fire (NUDGE only):** on each identical repeat, at most 2 fires per episode. A third and later repeats are logged but not nudged.
+- **Action:** the normal result plus the fixed line `Note: this call repeated an earlier call and returned the same result. If you already have what the task asks for, call final_answer now; otherwise try a different call.` For a string result the line is appended after a newline; for a dict result a key `note` is added at the end (the dict keys of the original result are unchanged). Nothing is hidden or rewritten, no LLM call.
+- Recorder events in both arms: `identical_repeat` (request index, tool, arguments, fired flag, repeat number); in NUDGE additionally the line itself in the `tool_end` output.
+
+## 2. Arms
+| arm | what the model sees |
+|---|---|
+| `FULL` | pilot arm C1 unchanged (12 menu tools + `final_answer`, errors as tool messages, strict pre-check, one finish retry, observation-only guard), plus silent logging of identical repeats |
+| `NUDGE` | `FULL` plus the action of section 1 |
+
+## 3. Design
+- **Tasks (10):** the development tasks of the ablation: stage 3 `u3`, `p3`, `h4`, `v2`; e1h `e1h_amb_1`, `e1h_amb_2`, `e1h_abs_1`, `e1h_abs_2`, `e1h_chg_1`, `e1h_chg_2`. **Strata:** `CHG` = `e1h_chg_1`, `e1h_chg_2` (scripted change: risk stratum, reported separately); `NONCHG` = the other 8.
+- **Models (4):** `lfm3:1.7b`, `qwen3.5:9b`, `gpt-oss:20b`, `bonsai-2:4b` (digests in `FREEZE.json`). **Seeds** 1 and 2. **Episodes:** 10 x 4 x 2 x 2 = **160** (80 per arm).
+- **Scheduling:** one fixture session per (model, environment) (stage3, e1h): 8 sessions; both arms and both seeds of a session shuffled together, master seed 20261124. Settings: temperature 0.7, think false, num_ctx 65536, num_predict 4096, 40 iterations, 90 s HTTP and 900 s episode timeouts, round-2 oracle with the 5 s retry (amendment 4).
+- Known validity defect carried unchanged: the `e1h_chg_*` scripted-change hook misses when a node name is written without the leading slash; those cells stay in the denominators.
+- **Smoke:** `qwen3.5:9b`, tasks `u3` and `e1h_chg_1`, seed 1, both arms = 4 episodes (not in totals). Clean means: every episode has an `episode_end` and no worker error or oracle failure, none over 900 s; the prompts and offered schemas of the two arms are identical; FULL traces contain no nudge line; every NUDGE fire equals the fixed line exactly; the detection recomputed from the trace equals the logged `identical_repeat` events; Ollama loaded only the expected model and it is unloaded afterwards. A smoke where no fire occurs is allowed but is reported: the fire path is then exercised by the unit tests only. An anomaly stops the study; no full run.
+- Stop and report if Ollama becomes unreachable, three consecutive episodes fail for infrastructure reasons, or another job takes the GPU. Infrastructure-failed cells (no request made) are listed and reported with and without; none is dropped or re-run under a changed rule.
+
+## 4. Measurements (frozen; applied by `analyze_nudge.py`, written and hashed before the full run)
+Per arm, per model, per stratum and overall:
+- **E (event level, the primary):** for each episode, `R` = model requests after the request that issued the first identical repeat (`total requests - request index of the first repeat`; 0 if no repeat). Report episodes with a first repeat, sum of `R`, sum of `R` per 100 episodes, and the per-model sums. This uses the pre-fire part of the trajectory only to locate the first repeat; the nudge acts after it.
+- **S:** supported-complete (scorer v2.0).
+- **Tokens** (input + output), **requests**, **cap endings** (episode ended at the 40-iteration cap, read from `episode_end.answer`), no-answer endings, tool calls.
+- **Fires:** fired episodes, fires per episode, and for each fired episode (in NUDGE) and each first-repeat episode (in FULL) the class `facts_present` / `facts_not_yet` (as defined in `write_tail_repeat_20261118/PROTOCOL.md` item 3: `support_missing` over the calls of requests strictly before the first repeat is empty), with supported / unsupported / no-answer counts and `R`.
+- **After the first fire:** for NUDGE, whether the next request called `final_answer` (and whether it was accepted and supported); the same quantity for FULL at its first identical repeat, as the control rate.
+- **CHG early answers:** in the CHG stratum, episodes with a first repeat whose next request calls `final_answer` and whose episode is unsupported; listed per arm, with trace paths.
+
+## 5. Reading rule (frozen before any episode runs)
+Conventions chosen from dev noise (about 15.8% of cells flip between two runs of the same loop; +-4 supported cells of 40 is noise). Not significance tests.
+- **Event bar (M):** pooled over all 160 episodes, the sum of `R` per 100 episodes in `NUDGE` is at least 30% lower than in `FULL`, **and** the sum of `R` in `NUDGE` is at least 30% lower than in `FULL` in at least 2 of the 4 models, counting only models whose `FULL` sum of `R` is at least 20 requests (a model below 20 is "not evaluable" and cannot count either way).
+- **Harm flags (any one):** supported in `NUDGE` lower than in `FULL` by more than 3 cells of 80; or the number of CHG early answers (section 4) larger in `NUDGE` than in `FULL`.
+- **Classes:** A = M met and no harm flag: "eligible for consideration; no claim about answer quality beyond the harm check". B = M not met and no harm flag: "no evidence of an event-level effect in these cells". C = a harm flag, M not met: reported, not adopted. D = M met with a harm flag: both reported.
+- Tokens, cap endings and the facts split are reported with their denominators and are not part of the class.
+- Every statement is limited to these 10 tasks, 4 models, 2 seeds and these fixtures. No change to the line, the trigger, the arms, the scorer or a scenario after the first live request.
+
+## 6. Power note (stated before the run)
+The offline population had 159 of 1,832 episodes (8.7%) with two or more identical repeats; the trigger (identical result too) fires in a subset of the episodes with at least one repeat. A 160-episode run may therefore produce on the order of 10-25 fired episodes per arm, concentrated in bonsai and lfm3. Event-level sums of `R` are dominated by a few long episodes; with that denominator a 30% drop can arise from one or two trajectories. The harm bars have no power for effects below about 4 cells. Class B would mean "not seen in these cells", not "no effect".
+
+## 7. Outputs
+`PROTOCOL.md`, `PROTOCOL.sha256`, `nudge_arm.py`, `run_nudge.py`, `tests/`, `smoke_check.py`, `FREEZE.json`, `RESULTS_LOG.jsonl`, `analyze_nudge.py` (hashed before the full run), `results.json`, `REPORT.md`. Raw runs under `research/_artifacts/runs/repeat_finish_nudge_20261118/`. Preserve negative results. A protocol defect found after results is reported in the report, not patched.

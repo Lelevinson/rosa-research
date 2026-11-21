@@ -1,0 +1,527 @@
+{
+  "codeact/continuation": {
+    "episodes": 9,
+    "model_starts": 38,
+    "model_ends": 38,
+    "proposals": 33,
+    "native_ends_or_errors": 40,
+    "native_nonzero_or_exception": 2,
+    "exact_repeated_commands": 9,
+    "repeated_same_stdout": 9,
+    "empty_success_stdout": 0,
+    "schema_errors": 0,
+    "usage": {
+      "input_tokens": 246355,
+      "output_tokens": 2920,
+      "total_tokens": 249275
+    },
+    "program_attempts": 1,
+    "program_output_samples": [
+      {
+        "kind": "tool_end",
+        "monotonic": 426.377215664,
+        "tool_run_id": null,
+        "output": {
+          "complete": true,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_demo"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_demo/calculator",
+                  "/paper_demo/listener",
+                  "/paper_demo/source"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_demo/calculator",
+                "param_name": "start_type_description_service"
+              },
+              "result": {
+                "start_type_description_service": "Boolean value is: True\n"
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_demo/listener",
+                "param_name": "start_type_description_service"
+              },
+              "result": {
+                "start_type_description_service": "Boolean value is: True\n"
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_demo/source",
+                "param_name": "start_type_description_service"
+              },
+              "result": {
+                "start_type_description_service": "Boolean value is: True\n"
+              }
+            }
+          ]
+        },
+        "run_id": "01a1b9a5-28f5-7470-bb66-3478ff7ac8bc",
+        "_line": 31
+      }
+    ],
+    "bad_json_lines": 0,
+    "frozen_judgments": {}
+  },
+  "codeact/development": {
+    "episodes": 6,
+    "model_starts": 21,
+    "model_ends": 21,
+    "proposals": 17,
+    "native_ends_or_errors": 22,
+    "native_nonzero_or_exception": 0,
+    "exact_repeated_commands": 1,
+    "repeated_same_stdout": 1,
+    "empty_success_stdout": 0,
+    "schema_errors": 1,
+    "usage": {
+      "input_tokens": 144560,
+      "output_tokens": 1436,
+      "total_tokens": 145996
+    },
+    "program_attempts": 4,
+    "program_output_samples": [
+      {
+        "kind": "tool_end",
+        "monotonic": 18362.399545731,
+        "tool_run_id": null,
+        "output": {
+          "complete": true,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_turtle"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_turtle/palette"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_turtle/palette",
+                "param_name": "use_sim_time"
+              },
+              "result": {
+                "use_sim_time": "Boolean value is: False\n"
+              }
+            }
+          ]
+        },
+        "run_id": "01a1b5d6-8cb1-7175-bfd8-aa3d6fbaf9b0",
+        "_line": 19
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18383.807248609,
+        "tool_run_id": null,
+        "output": {
+          "complete": true,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_demo"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_demo/calculator",
+                  "/paper_demo/listener",
+                  "/paper_demo/source"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_demo/calculator",
+                "param_name": "use_sim_time"
+              },
+              "result": {
+                "use_sim_time": "Boolean value is: False\n"
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_demo/listener",
+                "param_name": "use_sim_time"
+              },
+              "result": {
+                "use_sim_time": "Boolean value is: False\n"
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_demo/source",
+                "param_name": "use_sim_time"
+              },
+              "result": {
+                "use_sim_time": "Boolean value is: False\n"
+              }
+            }
+          ]
+        },
+        "run_id": "01a1b5d6-cc54-760d-ac07-c51eac42b2af",
+        "_line": 31
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18090.096323459,
+        "tool_run_id": null,
+        "output": {
+          "complete": true,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_turtle"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_turtle/palette"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_param_get",
+              "args": {
+                "node_name": "/paper_turtle/palette",
+                "param_name": "use_sim_time"
+              },
+              "result": {
+                "use_sim_time": "Boolean value is: False\n"
+              }
+            }
+          ]
+        },
+        "run_id": "01a1b5d2-6149-72b0-bdf2-fd5a671f6e31",
+        "_line": 19
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18104.26249076,
+        "tool_run_id": "01a1b5d2-a64e-70e5-a160-36d3c2e57a26",
+        "output": {
+          "complete": false,
+          "observations": [],
+          "error": "Unsupported Python syntax",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5d2-a64e-70e5-a160-36d3c2e57a26",
+        "_line": 7
+      }
+    ],
+    "bad_json_lines": 0,
+    "frozen_judgments": {}
+  },
+  "codeact/evaluation": {
+    "episodes": 15,
+    "model_starts": 78,
+    "model_ends": 77,
+    "proposals": 67,
+    "native_ends_or_errors": 75,
+    "native_nonzero_or_exception": 1,
+    "exact_repeated_commands": 14,
+    "repeated_same_stdout": 13,
+    "empty_success_stdout": 0,
+    "schema_errors": 0,
+    "usage": {
+      "input_tokens": 534601,
+      "output_tokens": 6993,
+      "total_tokens": 541594
+    },
+    "program_attempts": 8,
+    "program_output_samples": [
+      {
+        "kind": "tool_end",
+        "monotonic": 18515.053556705,
+        "tool_run_id": "01a1b5d8-eaf4-7734-bd1d-e971f5ec9105",
+        "output": {
+          "complete": false,
+          "observations": [],
+          "error": "Unsupported Python syntax",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5d8-eaf4-7734-bd1d-e971f5ec9105",
+        "_line": 7
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18633.427966101,
+        "tool_run_id": "01a1b5da-b95b-76a4-ad95-26f3b06e5dc1",
+        "output": {
+          "complete": false,
+          "observations": [],
+          "error": "Unsupported Python syntax",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5da-b95b-76a4-ad95-26f3b06e5dc1",
+        "_line": 7
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18761.690709654,
+        "tool_run_id": null,
+        "output": {
+          "complete": false,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_demo"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_demo/calculator",
+                  "/paper_demo/listener",
+                  "/paper_demo/source"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_node_info",
+              "args": {
+                "nodes": [
+                  "/paper_demo/calculator"
+                ]
+              },
+              "result": {
+                "/paper_demo/calculator": "/paper_demo/calculator\n  Subscribers:\n    /parameter_events: rcl_interfaces/msg/ParameterEvent\n  Publishers:\n    /parameter_events: rcl_interfaces/msg/ParameterEvent\n    /rosout: rcl_interfaces/msg/Log\n  Service Servers:\n    /paper_demo/add_two_ints: example_interfaces/srv/AddTwoInts\n    /paper_demo/calculator/describe_parameters: rcl_interfaces/srv/DescribeParameters\n    /paper_demo/calculator/get_parameter_types: rcl_interfaces/srv/GetParameterTypes\n    /paper_demo/calculator/get_parameters: rcl_interfaces/srv/GetParameters\n    /paper_demo/calculator/get_type_description: type_description_interfaces/srv/GetTypeDescription\n    /paper_demo/calculator/list_parameters: rcl_interfaces/srv/ListParameters\n    /paper_demo/calculator/set_parameters: rcl_interfaces/srv/SetParameters\n    /paper_demo/calculator/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically\n  Service Clients:\n\n  Action Servers:\n\n  Action Clients:\n\n"
+              }
+            },
+            {
+              "tool": "ros2_param_list",
+              "args": {
+                "node_name": "/paper_demo/calculator"
+              },
+              "result": {
+                "/paper_demo/calculator": [
+                  "  one_shot",
+                  "  qos_overrides./parameter_events.publisher.depth",
+                  "  qos_overrides./parameter_events.publisher.durability",
+                  "  qos_overrides./parameter_events.publisher.history",
+                  "  qos_overrides./parameter_events.publisher.reliability",
+                  "  start_type_description_service",
+                  "  use_sim_time"
+                ]
+              }
+            }
+          ],
+          "error": "Only append on a local list is allowed",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5dc-9f34-7291-a878-50ad0a9f3d3d",
+        "_line": 25
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18773.518901156,
+        "tool_run_id": null,
+        "output": {
+          "complete": false,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_demo"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_demo/calculator",
+                  "/paper_demo/listener",
+                  "/paper_demo/source"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_param_list",
+              "args": {
+                "node_name": "/paper_demo/calculator"
+              },
+              "result": {
+                "/paper_demo/calculator": [
+                  "  one_shot",
+                  "  qos_overrides./parameter_events.publisher.depth",
+                  "  qos_overrides./parameter_events.publisher.durability",
+                  "  qos_overrides./parameter_events.publisher.history",
+                  "  qos_overrides./parameter_events.publisher.reliability",
+                  "  start_type_description_service",
+                  "  use_sim_time"
+                ]
+              }
+            }
+          ],
+          "error": "Only append on a local list is allowed",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5dc-d0b7-70ec-b5b4-9cb41059e13e",
+        "_line": 42
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18782.678323323,
+        "tool_run_id": "01a1b5dd-005d-7534-9af8-d3126ba9d375",
+        "output": {
+          "complete": false,
+          "observations": [],
+          "error": "Unsupported Python syntax",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5dd-005d-7534-9af8-d3126ba9d375",
+        "_line": 47
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 18794.708735381,
+        "tool_run_id": null,
+        "output": {
+          "complete": false,
+          "observations": [
+            {
+              "tool": "ros2_node_list",
+              "args": {
+                "pattern": "paper_demo"
+              },
+              "result": {
+                "nodes": [
+                  "/paper_demo/calculator",
+                  "/paper_demo/listener",
+                  "/paper_demo/source"
+                ]
+              }
+            },
+            {
+              "tool": "ros2_param_list",
+              "args": {
+                "node_name": "/paper_demo/calculator"
+              },
+              "result": {
+                "/paper_demo/calculator": [
+                  "  one_shot",
+                  "  qos_overrides./parameter_events.publisher.depth",
+                  "  qos_overrides./parameter_events.publisher.durability",
+                  "  qos_overrides./parameter_events.publisher.history",
+                  "  qos_overrides./parameter_events.publisher.reliability",
+                  "  start_type_description_service",
+                  "  use_sim_time"
+                ]
+              }
+            }
+          ],
+          "error": "Only append on a local list is allowed",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5dd-2049-703e-b0bd-f8b1683f340c",
+        "_line": 64
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 19130.38222071,
+        "tool_run_id": "01a1b5e2-4e95-70d9-992f-5c1b577f82fd",
+        "output": {
+          "complete": false,
+          "observations": [],
+          "error": "Unsupported Python syntax",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5e2-4e95-70d9-992f-5c1b577f82fd",
+        "_line": 7
+      },
+      {
+        "kind": "tool_end",
+        "monotonic": 19242.758355026,
+        "tool_run_id": "01a1b5e4-058d-7638-a7a6-dba39bf18ced",
+        "output": {
+          "complete": false,
+          "observations": [],
+          "error": "Unsupported Python syntax",
+          "fallback": "Use ordinary tools to resolve missing evidence. Do not guess."
+        },
+        "run_id": "01a1b5e4-058d-7638-a7a6-dba39bf18ced",
+        "_line": 7
+      }
+    ],
+    "bad_json_lines": 0,
+    "frozen_judgments": {}
+  },
+  "diagnostic/oracle": {
+    "episodes": 7,
+    "model_starts": 0,
+    "model_ends": 0,
+    "proposals": 0,
+    "native_ends_or_errors": 0,
+    "native_nonzero_or_exception": 0,
+    "exact_repeated_commands": 0,
+    "repeated_same_stdout": 0,
+    "empty_success_stdout": 0,
+    "schema_errors": 0,
+    "usage": {},
+    "program_attempts": 0,
+    "program_output_samples": [],
+    "bad_json_lines": 0,
+    "frozen_judgments": {}
+  },
+  "diagnostic/primary": {
+    "episodes": 36,
+    "model_starts": 227,
+    "model_ends": 227,
+    "proposals": 203,
+    "native_ends_or_errors": 264,
+    "native_nonzero_or_exception": 10,
+    "exact_repeated_commands": 14,
+    "repeated_same_stdout": 14,
+    "empty_success_stdout": 0,
+    "schema_errors": 0,
+    "usage": {
+      "input_tokens": 1585055,
+      "output_tokens": 27132,
+      "total_tokens": 1612187
+    },
+    "program_attempts": 0,
+    "program_output_samples": [],
+    "bad_json_lines": 0,
+    "frozen_judgments": {
+      "True": 28,
+      "False": 8
+    }
+  },
+  "diagnostic/replay": {
+    "episodes": 8,
+    "model_starts": 12,
+    "model_ends": 12,
+    "proposals": 6,
+    "native_ends_or_errors": 0,
+    "native_nonzero_or_exception": 0,
+    "exact_repeated_commands": 0,
+    "repeated_same_stdout": 0,
+    "empty_success_stdout": 0,
+    "schema_errors": 0,
+    "usage": {
+      "input_tokens": 93532,
+      "output_tokens": 2073,
+      "total_tokens": 95605
+    },
+    "program_attempts": 0,
+    "program_output_samples": [],
+    "bad_json_lines": 0,
+    "frozen_judgments": {}
+  }
+}

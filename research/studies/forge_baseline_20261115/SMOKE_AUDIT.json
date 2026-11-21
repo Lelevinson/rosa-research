@@ -1,0 +1,23 @@
+{
+  "scope": "both completed smoke attempts",
+  "unchanged_driver_definitions": [
+    "PilotOptionsClient",
+    "episode",
+    "prompts",
+    "available_tools",
+    "traced_callable"
+  ],
+  "actual_request_options_verified": 14,
+  "request_changes_only_options": true,
+  "exact_system_messages_verified": true,
+  "returned_thinking_messages": 14,
+  "think_wire_field_present": false,
+  "source_sha256": {
+    "research/_artifacts/runs/forge_baseline_20261115/smoke_20261115T084850Z-fixture-retry1/run_smoke.py": "777e69f20f792d7e31dadacfe2eb241c7f54efc83ac70444dce05c1fa9b34d5c",
+    "research/_artifacts/runs/forge_baseline_20261115/smoke_20261115T084850Z-remaining1/run_smoke.py": "6fbd156d9a010c2797b266b2eb7e800d2e89bf7c17588063d29d94b682075bd4",
+    "research/studies/forge_baseline_20261115/run_smoke.py": "6fbd156d9a010c2797b266b2eb7e800d2e89bf7c17588063d29d94b682075bd4",
+    "research/studies/forge_baseline_20261115/PROTOCOL_SMOKE.md": "0dab2c1dc970a5f91c8f75fc3d324176efdbf602aba8bd2e47536ce4135f3bc7"
+  },
+  "write_commands_reached": [],
+  "attempts": 2
+}

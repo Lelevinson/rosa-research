@@ -1,0 +1,182 @@
+{
+ "extra_35_tools_characters": 10681,
+ "per_model": {
+  "bonsai-2:4b": {
+   "extra_tokens": 3666,
+   "tokens_per_char": 0.3432262896732516,
+   "tokens_per_char_fit": 0.27344890510948905
+  },
+  "gpt-oss:20b": {
+   "extra_tokens": 2029,
+   "tokens_per_char": 0.18996348656492837,
+   "tokens_per_char_fit": 0.15155109489051094
+  },
+  "lfm3:1.7b": {
+   "extra_tokens": 3338,
+   "tokens_per_char": 0.31251755453609215,
+   "tokens_per_char_fit": 0.21407510564733
+  },
+  "qwen3.5:9b": {
+   "extra_tokens": 3666,
+   "tokens_per_char": 0.3432262896732516,
+   "tokens_per_char_fit": 0.27344890510948905
+  }
+ },
+ "tools": {
+  "read_log": {
+   "name_args": 443,
+   "description": 420,
+   "total": 863,
+   "est_tokens": {
+    "bonsai-2:4b": "236-296",
+    "gpt-oss:20b": "131-164",
+    "lfm3:1.7b": "185-270",
+    "qwen3.5:9b": "236-296"
+   }
+  },
+  "ros2_doctor": {
+   "name_args": 75,
+   "description": 43,
+   "total": 118,
+   "est_tokens": {
+    "bonsai-2:4b": "32-41",
+    "gpt-oss:20b": "18-22",
+    "lfm3:1.7b": "25-37",
+    "qwen3.5:9b": "32-41"
+   }
+  },
+  "ros2_node_info": {
+   "name_args": 156,
+   "description": 80,
+   "total": 236,
+   "est_tokens": {
+    "bonsai-2:4b": "65-81",
+    "gpt-oss:20b": "36-45",
+    "lfm3:1.7b": "51-74",
+    "qwen3.5:9b": "65-81"
+   }
+  },
+  "ros2_node_list": {
+   "name_args": 264,
+   "description": 122,
+   "total": 386,
+   "est_tokens": {
+    "bonsai-2:4b": "106-132",
+    "gpt-oss:20b": "58-73",
+    "lfm3:1.7b": "83-121",
+    "qwen3.5:9b": "106-132"
+   }
+  },
+  "ros2_param_get": {
+   "name_args": 184,
+   "description": 137,
+   "total": 321,
+   "est_tokens": {
+    "bonsai-2:4b": "88-110",
+    "gpt-oss:20b": "49-61",
+    "lfm3:1.7b": "69-100",
+    "qwen3.5:9b": "88-110"
+   }
+  },
+  "ros2_param_list": {
+   "name_args": 315,
+   "description": 233,
+   "total": 548,
+   "est_tokens": {
+    "bonsai-2:4b": "150-188",
+    "gpt-oss:20b": "83-104",
+    "lfm3:1.7b": "117-171",
+    "qwen3.5:9b": "150-188"
+   }
+  },
+  "ros2_service_info": {
+   "name_args": 165,
+   "description": 85,
+   "total": 250,
+   "est_tokens": {
+    "bonsai-2:4b": "68-86",
+    "gpt-oss:20b": "38-47",
+    "lfm3:1.7b": "54-78",
+    "qwen3.5:9b": "68-86"
+   }
+  },
+  "ros2_service_list": {
+   "name_args": 267,
+   "description": 106,
+   "total": 373,
+   "est_tokens": {
+    "bonsai-2:4b": "102-128",
+    "gpt-oss:20b": "57-71",
+    "lfm3:1.7b": "80-117",
+    "qwen3.5:9b": "102-128"
+   }
+  },
+  "ros2_topic_echo": {
+   "name_args": 321,
+   "description": 529,
+   "total": 850,
+   "est_tokens": {
+    "bonsai-2:4b": "232-292",
+    "gpt-oss:20b": "129-161",
+    "lfm3:1.7b": "182-266",
+    "qwen3.5:9b": "232-292"
+   }
+  },
+  "ros2_topic_info": {
+   "name_args": 159,
+   "description": 83,
+   "total": 242,
+   "est_tokens": {
+    "bonsai-2:4b": "66-83",
+    "gpt-oss:20b": "37-46",
+    "lfm3:1.7b": "52-76",
+    "qwen3.5:9b": "66-83"
+   }
+  },
+  "ros2_topic_list": {
+   "name_args": 265,
+   "description": 102,
+   "total": 367,
+   "est_tokens": {
+    "bonsai-2:4b": "100-126",
+    "gpt-oss:20b": "56-70",
+    "lfm3:1.7b": "79-115",
+    "qwen3.5:9b": "100-126"
+   }
+  },
+  "roslog_list": {
+   "name_args": 232,
+   "description": 116,
+   "total": 348,
+   "est_tokens": {
+    "bonsai-2:4b": "95-119",
+    "gpt-oss:20b": "53-66",
+    "lfm3:1.7b": "74-109",
+    "qwen3.5:9b": "95-119"
+   }
+  },
+  "final_answer": {
+   "name_args": 243,
+   "description": 61,
+   "total": 304,
+   "est_tokens": {
+    "bonsai-2:4b": "83-104",
+    "gpt-oss:20b": "46-58",
+    "lfm3:1.7b": "65-95",
+    "qwen3.5:9b": "83-104"
+   }
+  }
+ },
+ "all13": {
+  "name_args": 3089,
+  "description": 2117,
+  "total": 5206,
+  "est_tokens": {
+   "bonsai-2:4b": "1424-1787",
+   "gpt-oss:20b": "789-989",
+   "lfm3:1.7b": "1114-1627",
+   "qwen3.5:9b": "1424-1787"
+  }
+ },
+ "table": "| tool | name+arguments chars | description chars | total chars | est. tokens as a range fit-to-total to 35-tool ratio (lfm3 / qwen3.5 / gpt-oss / bonsai) | description share |\n|---|---:|---:|---:|---|---:|\n| read_log | 443 | 420 | 863 | 185-270 / 236-296 / 131-164 / 236-296 | 49% |\n| ros2_doctor | 75 | 43 | 118 | 25-37 / 32-41 / 18-22 / 32-41 | 36% |\n| ros2_node_info | 156 | 80 | 236 | 51-74 / 65-81 / 36-45 / 65-81 | 34% |\n| ros2_node_list | 264 | 122 | 386 | 83-121 / 106-132 / 58-73 / 106-132 | 32% |\n| ros2_param_get | 184 | 137 | 321 | 69-100 / 88-110 / 49-61 / 88-110 | 43% |\n| ros2_param_list | 315 | 233 | 548 | 117-171 / 150-188 / 83-104 / 150-188 | 43% |\n| ros2_service_info | 165 | 85 | 250 | 54-78 / 68-86 / 38-47 / 68-86 | 34% |\n| ros2_service_list | 267 | 106 | 373 | 80-117 / 102-128 / 57-71 / 102-128 | 28% |\n| ros2_topic_echo | 321 | 529 | 850 | 182-266 / 232-292 / 129-161 / 232-292 | 62% |\n| ros2_topic_info | 159 | 83 | 242 | 52-76 / 66-83 / 37-46 / 66-83 | 34% |\n| ros2_topic_list | 265 | 102 | 367 | 79-115 / 100-126 / 56-70 / 100-126 | 28% |\n| roslog_list | 232 | 116 | 348 | 74-109 / 95-119 / 53-66 / 95-119 | 33% |\n| final_answer | 243 | 61 | 304 | 65-95 / 83-104 / 46-58 / 83-104 | 20% |\n| **all 13** | 3089 | 2117 | 5206 | 1114-1627 / 1424-1787 / 789-989 / 1424-1787 | 41% |"
+}

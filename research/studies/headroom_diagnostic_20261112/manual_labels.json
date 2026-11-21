@@ -1,0 +1,70 @@
+{
+ "06-t1-A-r0#4": {
+  "label": "JUDG",
+  "reason": "reads the colour-sensor topic instead of the configured background parameters: a model interpretation (wrong source), not a mechanical step"
+ },
+ "14-t1-C-r0#4": {
+  "label": "JUDG",
+  "reason": "reads the colour-sensor topic instead of the configured background parameters: a model interpretation (wrong source), not a mechanical step"
+ },
+ "14-t1-C-r0#5": {
+  "label": "JUDG",
+  "reason": "reads the colour-sensor topic instead of the configured background parameters: a model interpretation (wrong source), not a mechanical step"
+ },
+ "28-t1-C-r1#4": {
+  "label": "JUDG",
+  "reason": "reads the colour-sensor topic instead of the configured background parameters: a model interpretation (wrong source), not a mechanical step"
+ },
+ "11-t2-B-r0#2": {
+  "label": "UNCLEAR",
+  "reason": "own call failed: the namespace /diag_turtle was used as a node name. Unique-prefix repair could be mechanical but the model also misread scope; ambiguous, not forced"
+ },
+ "30-t2-B-r1#2": {
+  "label": "UNCLEAR",
+  "reason": "own call failed: the namespace /diag_turtle was used as a node name. Unique-prefix repair could be mechanical but the model also misread scope; ambiguous, not forced"
+ },
+ "11-t2-B-r0#8": {
+  "label": "RED",
+  "reason": "node_list(pattern) is a subset of the unfiltered node_list obtained at request 1"
+ },
+ "13-d1-C-r0#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' were used although the topic_info output gave Node name + Node namespace, so the full names could be assembled mechanically"
+ },
+ "19-d1-C-r1#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' were used although the topic_info output gave Node name + Node namespace, so the full names could be assembled mechanically"
+ },
+ "34-d1-B-r1#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' were used although the topic_info output gave Node name + Node namespace, so the full names could be assembled mechanically"
+ },
+ "06-d1_recovery-C#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' were used although the topic_info output gave Node name + Node namespace, so the full names could be assembled mechanically"
+ },
+ "11-d1_recovery-B#2": {
+  "label": "DEP",
+  "reason": "own call failed: short names 'source'/'listener' were used although the topic_info output gave Node name + Node namespace, so the full names could be assembled mechanically"
+ },
+ "01-ollama-d1_recovery-A#3": {
+  "label": "DEP",
+  "reason": "node_info over endpoint names that topic_info already gave; the earlier missing-node error is the task's designed check, not a failure of this call"
+ },
+ "07-ollama-d1_recovery-V#2": {
+  "label": "DEP",
+  "reason": "node_info over endpoint names that topic_info already gave; the earlier missing-node error is the task's designed check, not a failure of this call"
+ },
+ "05-ollama-d1_recovery-B#4": {
+  "label": "DEP",
+  "reason": "node_info over endpoint names that topic_info already gave; the earlier missing-node error is the task's designed check, not a failure of this call"
+ },
+ "04-openai-d1_recovery-B#2": {
+  "label": "DEP",
+  "reason": "param_get over endpoint names assembled from the topic_info issued in request 1; the missing-node result is the designed check"
+ },
+ "05-ollama-d1_recovery-B#3": {
+  "label": "REC",
+  "reason": "rediscovery (node_list) after the missing-node result of the designed check"
+ }
+}

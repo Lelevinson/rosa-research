@@ -1,0 +1,16 @@
+# ROSA research decision ledger — 2026-11-11
+
+**Goal unchanged:** meaningful framework-level algorithmic or incremental contribution improving LLM-agent tool-calling efficiency; correctness and complete source-supported answers first, no hand-authored application semantic maps, no elaborate LLM plans assumed, deadline December 2.
+
+| Mechanism | Before critique | Hostile control / disconfirming evidence | Current status | What would reverse this status? |
+|---|---|---|---|---|
+| Model-generated execution DAG / code | Save LLM decisions after discovery | ReWOO/LLMCompiler/CodeAct; complete fixed helpers; 0 `$ref` adoption and 1/9 CodeAct complete | Rejected as main route, not globally impossible | Clear valid adoption + strong-helper advantage in preserved/current model without handmaps |
+| Graph pair minimum cover / semantic capability map | Fewer discovery calls | Old R24/graph reports, six inspected requests with zero mixed cases, 47 tools without semantic contracts, cross-app coverage failures | Not prioritized | Actual workload with grounded pair sets and exact-view parity, then beat component/greedy/fixed controls |
+| CPAW robust adaptive probing | Adaptive read scheduling | Synthetic candidate cost 4.008656 > best fixed3.943446, 0/47 eligible strict contracts | Archived negative prototype | Trusted generic read contracts and significantly improved strong-control evidence, not just synthetic retuning |
+| Static multi-entity CLI read parallelism | Lower serial wall time | Existing fixed concurrency and persistent native client | Ordinary systems optimization | Real source-level gains even if no novelty; could become shared strong control |
+| Native-Read Width Admission | Choose k after model has bound literal names | Static best k, generic adaptive limiter, workload incidence not established | **Conditional research hypothesis only** | Sufficient eligible reads + useful variable-load benefit and correctness relative to adaptive control |
+| Cold-start CLI-vs-`rclpy` online switching | Avoid setup on short lifetimes | Classical ski rental, shared persistent client can dominate | Secondary conditional option, not prioritized | Demonstrated cold per-task session lifecycle, stable c/p/S estimates, exact typed response/error parity |
+| FQN validation and safe subprocess args | Address real wrong-namespace native failures | Ordinary FQN helper + `shell=False` remedy | Baseline infrastructure | No originality claim regardless of success |
+| Generic semantic answer coverage gate | Prevent omissions | Requires field/source semantics not present in default tool metadata | Independent scorer requirement, not automatic algorithm | Verified no-oracle generic obligation representation and clear marginal advantage over strong prompt/scorer |
+
+**Evidence-new vs prior:** Newly directly inspected accessible remote source of list wrappers' serial CLI subprocess loops (already recognized in historic clean audit), plus *offline mathematical counterexamples*, **not** new ROSA data. No fabricated novelty or experimental result. Critical missing measurement: eligible original list-call occurrence/width and native latency, plus local code/branch parity. Exactly one narrow next decision is prescribed in `CODEX_NEXT_STEP.md`.

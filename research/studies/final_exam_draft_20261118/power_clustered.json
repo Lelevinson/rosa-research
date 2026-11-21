@@ -1,0 +1,49 @@
+{
+ "source": "fairness E1 vs pilot C1 (fixed loop), same 10 dev tasks, 4 models, 2 seeds",
+ "cells": 80,
+ "tasks": 10,
+ "cells_per_task": 8,
+ "supported": {
+  "M": 65,
+  "E1": 65,
+  "pooled_difference_points": 0,
+  "sd_between_tasks_of_task_mean_diff": 0.1118,
+  "sigma_within": 0.433,
+  "sigma_between": 0.0
+ },
+ "detectable_supported_difference_points": {
+  "76 tasks x 12 cells per task": 4.0,
+  "76 tasks x 8 cells per task": 4.9,
+  "76 tasks x 4 cells per task": 7.0,
+  "110 tasks x 12 cells per task": 3.3,
+  "24 tasks x 12 cells per task": 7.1,
+  "10 tasks x 12 cells per task": 11.1,
+  "10 tasks x 8 cells per task": 13.6
+ },
+ "cost": {
+  "tokens_ratio_M_over_E1": 0.396,
+  "requests_ratio": 0.822,
+  "bootstrap_95_over_tasks_tokens_ratio": [
+   0.339,
+   0.519
+  ],
+  "sd_of_task_log_ratio": 0.346,
+  "detectable_tokens_ratio_76_tasks": [
+   0.895,
+   1.118
+  ],
+  "per_task_ratio": {
+   "e1h_abs_1": 0.215,
+   "e1h_abs_2": 0.45,
+   "e1h_amb_1": 0.553,
+   "e1h_amb_2": 0.33,
+   "e1h_chg_1": 0.346,
+   "e1h_chg_2": 0.82,
+   "h4": 0.385,
+   "p3": 0.348,
+   "u3": 0.512,
+   "v2": 0.326
+  }
+ },
+ "note": "Dev analogue only. The held-out tasks' between-task spread is unknown; 10 tasks give a very rough estimate of it. Normal approximation; cluster bootstrap on 10 tasks is illustrative, not a CI to quote."
+}

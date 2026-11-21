@@ -1,0 +1,252 @@
+{
+ "NO_SOFT_ERRORS": [
+  {
+   "task": "e1h_abs_1",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/000-e1h_abs_1-NO_SOFT_ERRORS-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/000-e1h_abs_1-NO_SOFT_ERRORS-gpt-oss_20b-s1"
+  },
+  {
+   "task": "e1h_abs_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/005-e1h_abs_2-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/001-e1h_abs_2-NO_SOFT_ERRORS-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/005-e1h_abs_2-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/001-e1h_abs_2-NO_SOFT_ERRORS-gpt-oss_20b-s1"
+  },
+  {
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": false,
+   "removal_supported": true,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/004-e1h_chg_2-NO_SOFT_ERRORS-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/004-e1h_chg_2-NO_SOFT_ERRORS-gpt-oss_20b-s1"
+  },
+  {
+   "task": "v2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-stage3/018-v2-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-stage3/002-v2-NO_SOFT_ERRORS-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-stage3/018-v2-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-stage3/002-v2-NO_SOFT_ERRORS-gpt-oss_20b-s1"
+  }
+ ],
+ "NO_PRECHECK": [
+  {
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": false,
+   "removal_supported": true,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/022-e1h_chg_2-NO_PRECHECK-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/022-e1h_chg_2-NO_PRECHECK-gpt-oss_20b-s1"
+  }
+ ],
+ "NO_MENU": [
+  {
+   "task": "e1h_abs_1",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-e1h/027-e1h_abs_1-FULL-bonsai-2_4b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-e1h/005-e1h_abs_1-NO_MENU-bonsai-2_4b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/bonsai-2_4b-e1h/027-e1h_abs_1-FULL-bonsai-2_4b-s1",
+   "removal_run_id": "full_20261117T104600Z/bonsai-2_4b-e1h/005-e1h_abs_1-NO_MENU-bonsai-2_4b-s1"
+  },
+  {
+   "task": "e1h_abs_1",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/008-e1h_abs_1-NO_MENU-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/008-e1h_abs_1-NO_MENU-gpt-oss_20b-s1"
+  },
+  {
+   "task": "e1h_chg_1",
+   "model": "lfm3:1.7b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-e1h/009-e1h_chg_1-FULL-lfm3_1.7b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-e1h/007-e1h_chg_1-NO_MENU-lfm3_1.7b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/lfm3_1.7b-e1h/009-e1h_chg_1-FULL-lfm3_1.7b-s1",
+   "removal_run_id": "full_20261117T104600Z/lfm3_1.7b-e1h/007-e1h_chg_1-NO_MENU-lfm3_1.7b-s1"
+  },
+  {
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-e1h/010-e1h_chg_2-FULL-bonsai-2_4b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-e1h/019-e1h_chg_2-NO_MENU-bonsai-2_4b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/bonsai-2_4b-e1h/010-e1h_chg_2-FULL-bonsai-2_4b-s1",
+   "removal_run_id": "full_20261117T104600Z/bonsai-2_4b-e1h/019-e1h_chg_2-NO_MENU-bonsai-2_4b-s1"
+  },
+  {
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": false,
+   "removal_supported": true,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/014-e1h_chg_2-NO_MENU-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/014-e1h_chg_2-NO_MENU-gpt-oss_20b-s1"
+  },
+  {
+   "task": "h4",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-stage3/008-h4-FULL-bonsai-2_4b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-stage3/009-h4-NO_MENU-bonsai-2_4b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/bonsai-2_4b-stage3/008-h4-FULL-bonsai-2_4b-s1",
+   "removal_run_id": "full_20261117T104600Z/bonsai-2_4b-stage3/009-h4-NO_MENU-bonsai-2_4b-s1"
+  },
+  {
+   "task": "h4",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-stage3/010-h4-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-stage3/019-h4-NO_MENU-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-stage3/010-h4-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-stage3/019-h4-NO_MENU-gpt-oss_20b-s1"
+  },
+  {
+   "task": "p3",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-stage3/018-p3-FULL-bonsai-2_4b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-stage3/002-p3-NO_MENU-bonsai-2_4b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/bonsai-2_4b-stage3/018-p3-FULL-bonsai-2_4b-s1",
+   "removal_run_id": "full_20261117T104600Z/bonsai-2_4b-stage3/002-p3-NO_MENU-bonsai-2_4b-s1"
+  }
+ ],
+ "NO_FINISH": [
+  {
+   "task": "e1h_abs_1",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/024-e1h_abs_1-NO_FINISH-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/024-e1h_abs_1-NO_FINISH-gpt-oss_20b-s1"
+  },
+  {
+   "task": "e1h_abs_1",
+   "model": "lfm3:1.7b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-e1h/024-e1h_abs_1-FULL-lfm3_1.7b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-e1h/018-e1h_abs_1-NO_FINISH-lfm3_1.7b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/lfm3_1.7b-e1h/024-e1h_abs_1-FULL-lfm3_1.7b-s1",
+   "removal_run_id": "full_20261117T104600Z/lfm3_1.7b-e1h/018-e1h_abs_1-NO_FINISH-lfm3_1.7b-s1"
+  },
+  {
+   "task": "e1h_abs_2",
+   "model": "lfm3:1.7b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-e1h/012-e1h_abs_2-FULL-lfm3_1.7b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-e1h/015-e1h_abs_2-NO_FINISH-lfm3_1.7b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/lfm3_1.7b-e1h/012-e1h_abs_2-FULL-lfm3_1.7b-s1",
+   "removal_run_id": "full_20261117T104600Z/lfm3_1.7b-e1h/015-e1h_abs_2-NO_FINISH-lfm3_1.7b-s1"
+  },
+  {
+   "task": "e1h_chg_1",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/029-e1h_chg_1-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/028-e1h_chg_1-NO_FINISH-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/029-e1h_chg_1-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/028-e1h_chg_1-NO_FINISH-gpt-oss_20b-s1"
+  },
+  {
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-e1h/010-e1h_chg_2-FULL-bonsai-2_4b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-e1h/014-e1h_chg_2-NO_FINISH-bonsai-2_4b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/bonsai-2_4b-e1h/010-e1h_chg_2-FULL-bonsai-2_4b-s1",
+   "removal_run_id": "full_20261117T104600Z/bonsai-2_4b-e1h/014-e1h_chg_2-NO_FINISH-bonsai-2_4b-s1"
+  },
+  {
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "full_supported": false,
+   "removal_supported": true,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/021-e1h_chg_2-NO_FINISH-gpt-oss_20b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1",
+   "removal_run_id": "full_20261117T104600Z/gpt-oss_20b-e1h/021-e1h_chg_2-NO_FINISH-gpt-oss_20b-s1"
+  },
+  {
+   "task": "p3",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-stage3/018-p3-FULL-bonsai-2_4b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/bonsai-2_4b-stage3/019-p3-NO_FINISH-bonsai-2_4b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/bonsai-2_4b-stage3/018-p3-FULL-bonsai-2_4b-s1",
+   "removal_run_id": "full_20261117T104600Z/bonsai-2_4b-stage3/019-p3-NO_FINISH-bonsai-2_4b-s1"
+  },
+  {
+   "task": "p3",
+   "model": "lfm3:1.7b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-stage3/007-p3-FULL-lfm3_1.7b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/lfm3_1.7b-stage3/010-p3-NO_FINISH-lfm3_1.7b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/lfm3_1.7b-stage3/007-p3-FULL-lfm3_1.7b-s1",
+   "removal_run_id": "full_20261117T104600Z/lfm3_1.7b-stage3/010-p3-NO_FINISH-lfm3_1.7b-s1"
+  },
+  {
+   "task": "v2",
+   "model": "qwen3.5:9b",
+   "seed": 1,
+   "full_supported": true,
+   "removal_supported": false,
+   "full_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/qwen3.5_9b-stage3/001-v2-FULL-qwen3.5_9b-s1/trace.jsonl",
+   "removal_trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/qwen3.5_9b-stage3/012-v2-NO_FINISH-qwen3.5_9b-s1/trace.jsonl",
+   "full_run_id": "full_20261117T104600Z/qwen3.5_9b-stage3/001-v2-FULL-qwen3.5_9b-s1",
+   "removal_run_id": "full_20261117T104600Z/qwen3.5_9b-stage3/012-v2-NO_FINISH-qwen3.5_9b-s1"
+  }
+ ]
+}

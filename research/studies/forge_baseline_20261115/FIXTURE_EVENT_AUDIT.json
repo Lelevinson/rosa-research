@@ -1,0 +1,1840 @@
+[
+  {
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 13,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 26,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      22
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/001-e1h_chg_2-A1-lfm3_1.7b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 16,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      11
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/023-e1h_chg_1-A1-lfm3_1.7b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 16,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      15
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/036-e1h_chg_2-A1-lfm3_1.7b-s2/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 30,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      11
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/053-e1h_chg_1-A1-lfm3_1.7b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 19,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 28,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      27
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/061-e1h_chg_2-C1-lfm3_1.7b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      16
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/065-e1h_chg_1-C1-lfm3_1.7b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      16
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/072-e1h_chg_1-C1-lfm3_1.7b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 19,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 34,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      30
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/079-e1h_chg_2-C1-lfm3_1.7b-s2/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 26,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      10
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/000-e1h_chg_2-A1-qwen3.5_9b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      16
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/003-e1h_chg_1-C1-qwen3.5_9b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 18,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      14
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/019-e1h_chg_1-A1-qwen3.5_9b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 18,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      14
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/029-e1h_chg_2-A1-qwen3.5_9b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      16
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/032-e1h_chg_1-C1-qwen3.5_9b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 23,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      12
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/044-e1h_chg_2-C1-qwen3.5_9b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      16
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/053-e1h_chg_2-C1-qwen3.5_9b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 18,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      14
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/058-e1h_chg_1-A1-qwen3.5_9b-s2/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      10
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/002-e1h_chg_1-A1-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 23,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      12
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/016-e1h_chg_2-C1-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      10
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/030-e1h_chg_2-A1-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 23,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      12
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/032-e1h_chg_2-C1-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 23,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      12
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/043-e1h_chg_1-C1-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      10
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/051-e1h_chg_1-A1-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 23,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      12
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/056-e1h_chg_1-C1-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": false,
+    "status": "missed_trigger_on_valid_relative_read",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 19,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      }
+    ],
+    "change_lines": [],
+    "reset_ok": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/079-e1h_chg_2-A1-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": false,
+    "status": "missed_trigger_on_valid_relative_read",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 17,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      }
+    ],
+    "change_lines": [],
+    "reset_ok": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/022-e1h_chg_1-A1-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 51,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      19
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/041-e1h_chg_2-C1-bonsai-2_4b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 20,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      12
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/043-e1h_chg_1-C1-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": false,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 18,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      11
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/049-e1h_chg_1-A1-bonsai-2_4b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 42,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      23
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/055-e1h_chg_2-A1-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 23,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      15
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/056-e1h_chg_1-C1-bonsai-2_4b-s1/trace.jsonl"
+  },
+  {
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": false,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 7,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      }
+    ],
+    "change_lines": [
+      17
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/072-e1h_chg_2-A1-bonsai-2_4b-s1/trace.jsonl"
+  },
+  {
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": false,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 8,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      }
+    ],
+    "change_lines": [
+      48
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part3/bonsai-2_4b-e1h-resume1/001-e1h_chg_2-C1-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      15
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/008-e1h_chg_1-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      15
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/011-e1h_chg_1-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 83,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 94,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      },
+      {
+        "line": 117,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      93
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/012-e1h_chg_2-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "lfm3:1.7b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      19
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-e1h/019-e1h_chg_2-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 29,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      14
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/028-e1h_chg_1-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      15
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/030-e1h_chg_1-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      15
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/033-e1h_chg_2-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "qwen3.5:9b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      19
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/qwen3.5_9b-e1h/034-e1h_chg_2-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 29,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      19
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/048-e1h_chg_1-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 29,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      14
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/049-e1h_chg_2-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": false,
+    "status": "missed_trigger_on_valid_relative_read",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 28,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      }
+    ],
+    "change_lines": [],
+    "reset_ok": [],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/gpt-oss_20b-e1h/050-e1h_chg_1-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "gpt-oss:20b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 29,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      14
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/057-e1h_chg_2-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_1",
+    "seed": 2,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      19
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/073-e1h_chg_1-Forge-s2/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_2",
+    "seed": 1,
+    "frozen_supported_complete": false,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      },
+      {
+        "line": 88,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: run\n"
+      }
+    ],
+    "change_lines": [
+      42
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/075-e1h_chg_2-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_1",
+    "seed": 1,
+    "frozen_supported_complete": true,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 30\n"
+      },
+      {
+        "line": 25,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/quasar",
+          "level"
+        ],
+        "stdout": "Integer value is: 45\n"
+      }
+    ],
+    "change_lines": [
+      19
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/077-e1h_chg_1-Forge-s1/trace.jsonl"
+  },
+  {
+    "arm": "Forge",
+    "model": "bonsai-2:4b",
+    "task": "e1h_chg_2",
+    "seed": 2,
+    "frozen_supported_complete": false,
+    "status": "trigger_fired",
+    "reads": [
+      {
+        "line": 10,
+        "command": [
+          "ros2",
+          "param",
+          "get",
+          "/e1h/willow",
+          "mode"
+        ],
+        "stdout": "String value is: idle\n"
+      }
+    ],
+    "change_lines": [
+      33
+    ],
+    "reset_ok": [
+      true
+    ],
+    "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/bonsai-2_4b-e1h/078-e1h_chg_2-Forge-s2/trace.jsonl"
+  }
+]

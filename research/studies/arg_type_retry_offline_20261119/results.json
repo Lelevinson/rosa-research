@@ -1,0 +1,381 @@
+{
+ "protocol_sha256": "e379aa7edb8b5f033441bbc387bca9f17588c46204f278ac0008dfc36c4c4e1f",
+ "overall": {
+  "episodes": 1832,
+  "requests": 12640,
+  "events": 380,
+  "episodes_with_event": 249,
+  "fixable_events": 182,
+  "episodes_with_fixable": 177,
+  "write_tool_events": 57,
+  "saved_max_requests": 21,
+  "mixed_retry_requests": 0,
+  "tokens_saved_max": 64087,
+  "by_kind": {
+   "K3": 158,
+   "K2": 17,
+   "K4": 7
+  },
+  "by_tool": {
+   "final_answer": 44,
+   "ros2_node_info": 27,
+   "ros2_service_call": 49,
+   "submit_plan": 29,
+   "ros2_param_get": 4,
+   "ros2_topic_info": 23,
+   "ros2_node_list": 122,
+   "ros2_topic_list": 31,
+   "supertool": 6,
+   "ros2_service_list": 27,
+   "ros2_param_set": 8,
+   "read_log": 10
+  },
+  "fixable_by_tool": {
+   "ros2_node_list": 119,
+   "ros2_topic_list": 28,
+   "ros2_service_list": 27,
+   "ros2_topic_info": 1,
+   "read_log": 7
+  },
+  "consequence": {
+   "precheck_rejected": 260,
+   "no_result": 36,
+   "error_text_returned": 84
+  },
+  "fixable_consequence": {
+   "precheck_rejected": 134,
+   "no_result": 26,
+   "error_text_returned": 22
+  },
+  "not_convertible_reasons": {
+   "expected required field, received missing": 170,
+   "expected string, received object": 53,
+   "expected object, received string": 38,
+   "expected array, received string": 6,
+   "expected string, received array": 5,
+   "expected string or null, received array": 4,
+   "expected string, received null": 3,
+   "expected string or null, received string": 3,
+   "expected integer or null, received string": 3,
+   "expected string or null, received object": 2
+  },
+  "fixable_ended_episode": 0
+ },
+ "full_type_menu": {
+  "episodes": 416,
+  "requests": 3020,
+  "events": 41,
+  "episodes_with_event": 39,
+  "fixable_events": 34,
+  "episodes_with_fixable": 34,
+  "write_tool_events": 0,
+  "saved_max_requests": 3,
+  "mixed_retry_requests": 0,
+  "tokens_saved_max": 4452,
+  "by_kind": {
+   "K3": 30,
+   "K2": 4
+  },
+  "by_tool": {
+   "ros2_topic_list": 6,
+   "ros2_node_list": 21,
+   "final_answer": 1,
+   "ros2_service_list": 8,
+   "ros2_topic_info": 3,
+   "ros2_param_get": 2
+  },
+  "fixable_by_tool": {
+   "ros2_topic_list": 5,
+   "ros2_node_list": 21,
+   "ros2_service_list": 8
+  },
+  "consequence": {
+   "precheck_rejected": 41
+  },
+  "fixable_consequence": {
+   "precheck_rejected": 34
+  },
+  "not_convertible_reasons": {
+   "expected required field, received missing": 3,
+   "expected array, received string": 2,
+   "expected string or null, received object": 1,
+   "expected object, received string": 1
+  },
+  "fixable_ended_episode": 0
+ },
+ "by_group": {
+  "menu": {
+   "episodes": 1512,
+   "requests": 10448,
+   "events": 265,
+   "episodes_with_event": 187,
+   "fixable_events": 138,
+   "episodes_with_fixable": 133,
+   "write_tool_events": 0,
+   "saved_max_requests": 7,
+   "mixed_retry_requests": 0,
+   "tokens_saved_max": 10678,
+   "by_kind": {
+    "K3": 119,
+    "K2": 12,
+    "K4": 7
+   },
+   "by_tool": {
+    "final_answer": 44,
+    "ros2_node_info": 20,
+    "submit_plan": 29,
+    "ros2_param_get": 4,
+    "ros2_topic_info": 20,
+    "ros2_node_list": 86,
+    "ros2_topic_list": 23,
+    "supertool": 6,
+    "ros2_service_list": 23,
+    "read_log": 10
+   },
+   "fixable_by_tool": {
+    "ros2_node_list": 86,
+    "ros2_topic_list": 21,
+    "ros2_service_list": 23,
+    "ros2_topic_info": 1,
+    "read_log": 7
+   },
+   "consequence": {
+    "precheck_rejected": 260,
+    "error_text_returned": 5
+   },
+   "fixable_consequence": {
+    "precheck_rejected": 134,
+    "error_text_returned": 4
+   },
+   "not_convertible_reasons": {
+    "expected required field, received missing": 160,
+    "expected object, received string": 38,
+    "expected array, received string": 6,
+    "expected string, received array": 4,
+    "expected string or null, received string": 3,
+    "expected integer or null, received string": 3,
+    "expected string or null, received object": 2
+   },
+   "fixable_ended_episode": 0
+  },
+  "stock": {
+   "episodes": 320,
+   "requests": 2192,
+   "events": 115,
+   "episodes_with_event": 62,
+   "fixable_events": 44,
+   "episodes_with_fixable": 44,
+   "write_tool_events": 57,
+   "saved_max_requests": 14,
+   "mixed_retry_requests": 0,
+   "tokens_saved_max": 53409,
+   "by_kind": {
+    "K3": 39,
+    "K2": 5
+   },
+   "by_tool": {
+    "ros2_service_call": 49,
+    "ros2_node_list": 36,
+    "ros2_topic_list": 8,
+    "ros2_topic_info": 3,
+    "ros2_service_list": 4,
+    "ros2_param_set": 8,
+    "ros2_node_info": 7
+   },
+   "fixable_by_tool": {
+    "ros2_node_list": 33,
+    "ros2_topic_list": 7,
+    "ros2_service_list": 4
+   },
+   "consequence": {
+    "no_result": 36,
+    "error_text_returned": 79
+   },
+   "fixable_consequence": {
+    "no_result": 26,
+    "error_text_returned": 18
+   },
+   "not_convertible_reasons": {
+    "expected string, received object": 53,
+    "expected required field, received missing": 10,
+    "expected string or null, received array": 4,
+    "expected string, received null": 3,
+    "expected string, received array": 1
+   },
+   "fixable_ended_episode": 0
+  }
+ },
+ "by_model": {
+  "bonsai-2:4b": {
+   "episodes": 458,
+   "requests": 4808,
+   "events": 101,
+   "episodes_with_event": 20,
+   "fixable_events": 7,
+   "episodes_with_fixable": 2,
+   "write_tool_events": 53,
+   "saved_max_requests": 0,
+   "mixed_retry_requests": 0,
+   "tokens_saved_max": 0,
+   "by_kind": {
+    "K4": 7
+   },
+   "by_tool": {
+    "supertool": 4,
+    "ros2_param_get": 1,
+    "ros2_service_call": 45,
+    "ros2_param_set": 8,
+    "final_answer": 29,
+    "ros2_topic_info": 4,
+    "read_log": 10
+   },
+   "fixable_by_tool": {
+    "read_log": 7
+   },
+   "consequence": {
+    "precheck_rejected": 48,
+    "no_result": 6,
+    "error_text_returned": 47
+   },
+   "fixable_consequence": {
+    "precheck_rejected": 7
+   },
+   "not_convertible_reasons": {
+    "expected string, received object": 49,
+    "expected object, received string": 29,
+    "expected string, received array": 5,
+    "expected array, received string": 4,
+    "expected string, received null": 3,
+    "expected string or null, received string": 3,
+    "expected integer or null, received string": 3,
+    "expected required field, received missing": 1
+   },
+   "fixable_ended_episode": 0
+  },
+  "gpt-oss:20b": {
+   "episodes": 458,
+   "requests": 2390,
+   "events": 245,
+   "episodes_with_event": 201,
+   "fixable_events": 175,
+   "episodes_with_fixable": 175,
+   "write_tool_events": 0,
+   "saved_max_requests": 21,
+   "mixed_retry_requests": 0,
+   "tokens_saved_max": 64087,
+   "by_kind": {
+    "K3": 158,
+    "K2": 17
+   },
+   "by_tool": {
+    "submit_plan": 28,
+    "ros2_node_list": 122,
+    "ros2_topic_list": 29,
+    "supertool": 2,
+    "ros2_topic_info": 18,
+    "ros2_service_list": 27,
+    "ros2_node_info": 16,
+    "ros2_param_get": 2,
+    "final_answer": 1
+   },
+   "fixable_by_tool": {
+    "ros2_node_list": 119,
+    "ros2_topic_list": 28,
+    "ros2_service_list": 27,
+    "ros2_topic_info": 1
+   },
+   "consequence": {
+    "precheck_rejected": 182,
+    "no_result": 28,
+    "error_text_returned": 35
+   },
+   "fixable_consequence": {
+    "precheck_rejected": 127,
+    "no_result": 26,
+    "error_text_returned": 22
+   },
+   "not_convertible_reasons": {
+    "expected required field, received missing": 151,
+    "expected string or null, received array": 4
+   },
+   "fixable_ended_episode": 0
+  },
+  "lfm3:1.7b": {
+   "episodes": 458,
+   "requests": 3128,
+   "events": 22,
+   "episodes_with_event": 19,
+   "fixable_events": 0,
+   "episodes_with_fixable": 0,
+   "write_tool_events": 1,
+   "saved_max_requests": 0,
+   "mixed_retry_requests": 0,
+   "tokens_saved_max": 0,
+   "by_kind": {},
+   "by_tool": {
+    "final_answer": 8,
+    "ros2_node_info": 8,
+    "ros2_service_call": 1,
+    "submit_plan": 1,
+    "ros2_param_get": 1,
+    "ros2_topic_info": 1,
+    "ros2_topic_list": 2
+   },
+   "fixable_by_tool": {},
+   "consequence": {
+    "precheck_rejected": 21,
+    "no_result": 1
+   },
+   "fixable_consequence": {},
+   "not_convertible_reasons": {
+    "expected required field, received missing": 10,
+    "expected object, received string": 8,
+    "expected array, received string": 2,
+    "expected string or null, received object": 2,
+    "expected string, received object": 1
+   },
+   "fixable_ended_episode": 0
+  },
+  "qwen3.5:9b": {
+   "episodes": 458,
+   "requests": 2314,
+   "events": 12,
+   "episodes_with_event": 9,
+   "fixable_events": 0,
+   "episodes_with_fixable": 0,
+   "write_tool_events": 3,
+   "saved_max_requests": 0,
+   "mixed_retry_requests": 0,
+   "tokens_saved_max": 0,
+   "by_kind": {},
+   "by_tool": {
+    "final_answer": 6,
+    "ros2_node_info": 3,
+    "ros2_service_call": 3
+   },
+   "fixable_by_tool": {},
+   "consequence": {
+    "precheck_rejected": 9,
+    "error_text_returned": 2,
+    "no_result": 1
+   },
+   "fixable_consequence": {},
+   "not_convertible_reasons": {
+    "expected required field, received missing": 8,
+    "expected string, received object": 3,
+    "expected object, received string": 1
+   },
+   "fixable_ended_episode": 0
+  }
+ },
+ "bar": {
+  "not_sparse": false,
+  "saved_share": 0.0009933774834437086,
+  "episodes_with_fixable": 34,
+  "models": [
+   "gpt-oss:20b"
+  ],
+  "top_tool_share": 0.6176470588235294,
+  "verdict": "sparse: executor-level fix for every arm, no live test"
+ }
+}

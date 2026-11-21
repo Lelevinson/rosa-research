@@ -1,0 +1,14 @@
+{
+ "scorer": "scorer-v2.0",
+ "frozen": "2026-11-15",
+ "sha256": {
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "scorer_v2_selftest.py": "02bbdf475a06456e344b39b0b675ead44391c53c141360bea6795ec35eb53591",
+  "slash_check.json": "1509a5aeda5027292f9f2cab11c2a65257038106ef2527430a853f27de3603ac",
+  "baseline_audit.py (vendored, unchanged)": "7a0808afa816b85f56b0e2f8ab2d22c35e30c9c7f5926425c81ce0afef9513a9",
+  "score_stage1.py (unchanged)": "462b34cdfedcb842d668d9a43ecaccc7a23ca4746fb24aa2796ee60b636aeb5e",
+  "stage3_tasks.json": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+  "e1h_tasks.json": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+  "pilot_score.py (scorer v1, kept)": "5d9de512a74b9e3ef39ab01bdce0c4724012327125c52ed53a06b95f205107da"
+ }
+}

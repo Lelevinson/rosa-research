@@ -1,0 +1,3 @@
+# Argument authorization correction, frozen before regression run
+
+Security review identified that read-only and general authorization do not establish authorization of the particular argument binding. Require a trusted registration callback to approve each probe's arguments, fail closed if unavailable, and revalidate before each dispatch. The synthetic callback checks its fixture's generic index argument; it does not select targets or interpret results. Rerun the identical frozen families, seeds, costs, arms and metrics. Preserve all pre-correction results and source snapshots. This correction is a safety contract change, not an algorithmic improvement or a new held-out experiment.

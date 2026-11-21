@@ -1,0 +1,16 @@
+[
+  {
+    "archive": "rosa-baseline-diagnostic-review-20261107.zip",
+    "verified_members": 332,
+    "mismatches": [],
+    "crc_bad_member": null,
+    "sha256": "85b601b988288ad95cb46451909435c81407d29ae049a24e00e6146813b2b8d4"
+  },
+  {
+    "archive": "rosa-paper-pilot-review-20261108.zip",
+    "verified_members": 466,
+    "mismatches": [],
+    "crc_bad_member": null,
+    "sha256": "c64a7c67c3d6973a7c1ef5339eb033ea98d69b20ebc7f5f11f2ad64933826fea"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "checked": 254,
+  "unchanged": 253,
+  "intentional_changes": {
+    "research/ROSA_RESEARCH_CONTEXT.md": {
+      "before": "3de0ae7dd016d99819035be04c172e921ab10ddfc27f1e42166a9c9c80423f46",
+      "after": "7da3bc6458ede0025da4c9cfa3e1ed7dcb66e93acf3da877679f0c4e82568999"
+    }
+  },
+  "canonical_old_byte_prefix_preserved": true,
+  "head": "94af17866cb82f3ea3f09422ef5cbb99b14cc89c",
+  "git_status": "## research/capability-discovery-20261110\n?? AGENTS.md\n?? research/\n"
+}

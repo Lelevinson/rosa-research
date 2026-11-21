@@ -1,0 +1,76 @@
+{
+  "status": "frozen",
+  "model": {
+    "name": "qwen3.5:9b",
+    "base_url": "http://172.30.80.1:11434",
+    "temperature": 0,
+    "seed": 42,
+    "reasoning": false,
+    "num_predict": 1600,
+    "timeout_seconds": 90
+  },
+  "environment": {
+    "ROS_DOMAIN_ID": "91",
+    "ROS_LOCALHOST_ONLY": "1"
+  },
+  "development": [
+    {
+      "id": "dev_t",
+      "request": "Discover each node in /paper_turtle and report its full name and the current configured use_sim_time value. Return JSON with a nodes array of objects containing name and use_sim_time."
+    },
+    {
+      "id": "dev_d",
+      "request": "Discover every node in /paper_demo and report each full node name and the configured use_sim_time value. Return JSON with a nodes array of objects containing name and use_sim_time."
+    }
+  ],
+  "heldout": [
+    {
+      "id": "t1",
+      "request": "In /paper_turtle, discover the turtlesim node. Report its full node name and its configured background_r, background_g, background_b values in that order. Return JSON {\"node\": string, \"rgb\": [red, green, blue]}."
+    },
+    {
+      "id": "t2",
+      "request": "In /paper_turtle, discover the turtlesim node. Report its full node name, configured use_sim_time, and every parameter name currently exposed by that node. Return JSON {\"node\": string, \"use_sim_time\": boolean, \"parameters\": [string]}."
+    },
+    {
+      "id": "t3",
+      "request": "Find the pose topic in /paper_turtle and report its full topic name, message type, publisher count, and subscriber count. Return JSON {\"topic\": string, \"type\": string, \"publishers\": integer, \"subscribers\": integer}."
+    },
+    {
+      "id": "t4",
+      "request": "Discover the turtlesim node in /paper_turtle. Report its full name and the full service names and service types of the clear and reset services. Do not invoke services. Return JSON {\"node\": string, \"services\": [{\"name\": string, \"type\": string}]}."
+    },
+    {
+      "id": "d1",
+      "request": "Discover every node in /paper_demo. For each, report the full node name and configured start_type_description_service parameter value. Return JSON {\"nodes\": [{\"name\": string, \"value\": boolean}]}."
+    },
+    {
+      "id": "d2",
+      "request": "Discover every node in /paper_demo. For each node report its full name and all of its currently exposed parameter names. Return JSON {\"nodes\": [{\"name\": string, \"parameters\": [string]}]}."
+    },
+    {
+      "id": "d3",
+      "request": "Find the chatter topic in /paper_demo and report its full topic name, message type, publisher count, and subscriber count. Return JSON {\"topic\": string, \"type\": string, \"publishers\": integer, \"subscribers\": integer}."
+    },
+    {
+      "id": "d4",
+      "request": "In /paper_demo discover the node that serves the add_two_ints service. Report the node name, full service name and service type. Do not invoke the service. Return JSON {\"node\": string, \"service\": string, \"type\": string}."
+    }
+  ],
+  "frozen_at_utc": "2026-11-07T11:49:04.492876+00:00",
+  "arms": {
+    "A": "Original ROSA full registry plus common read-only guard",
+    "B": "A plus strong guidance and independent batch_reads",
+    "C": "B plus bounded run_read_program and program-use instruction"
+  },
+  "budgets": {
+    "iterations": 10,
+    "episode_seconds": 240,
+    "order_seed": 20261107,
+    "repeats": 1,
+    "primary_episodes": 24
+  },
+  "development_gate": "Model-authored result-dependent native continuation, observed before heldout",
+  "primary_criterion": "Exact requested fields independently supported; inspect full answer for unsupported claims",
+  "positive_gate": "No B-supported task lost; >=6 mutually supported; >=2 dependent programs across both applications; >=10% fewer model calls and input tokens; no increase in native operations or worker wall time on mutually supported pairs"
+}

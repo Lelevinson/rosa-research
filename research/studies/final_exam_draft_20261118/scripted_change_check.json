@@ -1,0 +1,233 @@
+{
+ "episodes": 328,
+ "by_system": {
+  "ablation/FULL": {
+   "fired": 7,
+   "read_but_not_fired": 1
+  },
+  "ablation/NO_FINISH": {
+   "fired": 7,
+   "read_but_not_fired": 1
+  },
+  "ablation/NO_MENU": {
+   "fired": 8
+  },
+  "ablation/NO_PRECHECK": {
+   "fired": 8
+  },
+  "ablation/NO_SOFT_ERRORS": {
+   "fired": 8
+  },
+  "compaction/COMPACT": {
+   "fired": 8
+  },
+  "compaction/FULL": {
+   "fired": 8
+  },
+  "fairness/E0": {
+   "fired": 15,
+   "read_but_not_fired": 1
+  },
+  "fairness/E1": {
+   "fired": 16
+  },
+  "pilot/A1": {
+   "fired": 14,
+   "read_but_not_fired": 2
+  },
+  "pilot/C1": {
+   "fired": 16
+  },
+  "pilot/C1+FN": {
+   "fired": 15,
+   "read_but_not_fired": 1
+  },
+  "pilot/C1+H1e": {
+   "fired": 16
+  },
+  "pilot/C1+H1n": {
+   "fired": 16
+  },
+  "pilot/C1+H2": {
+   "fired": 16
+  },
+  "pilot/C1+H7": {
+   "fired": 9,
+   "never_read": 4,
+   "read_but_not_fired": 3
+  },
+  "pilot/M0": {
+   "fired": 16
+  },
+  "round1/C1": {
+   "fired": 14,
+   "read_but_not_fired": 2
+  },
+  "round1/C1+AG": {
+   "fired": 16
+  },
+  "round1/C1+AG+LA": {
+   "fired": 16
+  },
+  "round1/C1+LA": {
+   "fired": 15,
+   "read_but_not_fired": 1
+  },
+  "round2/CONTROL": {
+   "fired": 15,
+   "read_but_not_fired": 1
+  },
+  "round2/SWEEP": {
+   "fired": 16
+  },
+  "s0/S0": {
+   "fired": 12,
+   "never_read": 3,
+   "read_but_not_fired": 1
+  }
+ },
+ "overall": {
+  "fired": 307,
+  "never_read": 7,
+  "read_but_not_fired": 14
+ },
+ "exact_command_seen_but_hook_not_fired": 0,
+ "read_but_not_fired_by_model": {
+  "gpt-oss:20b": 8,
+  "bonsai-2:4b": 6
+ },
+ "read_but_not_fired_first_args_sample": [
+  {
+   "system": "pilot/A1",
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 2,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/079-e1h_chg_2-A1-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+   "system": "pilot/C1+FN",
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 2,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/084-e1h_chg_2-C1+FN-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+   "system": "pilot/A1",
+   "task": "e1h_chg_1",
+   "model": "bonsai-2:4b",
+   "seed": 2,
+   "first_read_args": {
+    "node_name": "e1h/quasar",
+    "param_name": "level"
+   },
+   "trace": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/022-e1h_chg_1-A1-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+   "system": "pilot/C1+H7",
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "seed": 2,
+   "first_read_args": {
+    "param": "mode",
+    "namespace": "/e1h/willow"
+   },
+   "trace": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/026-e1h_chg_2-C1+H7-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+   "system": "pilot/C1+H7",
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "seed": 1,
+   "first_read_args": {
+    "name": "/e1h/willow/mode"
+   },
+   "trace": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/047-e1h_chg_2-C1+H7-bonsai-2_4b-s1/trace.jsonl"
+  },
+  {
+   "system": "pilot/C1+H7",
+   "task": "e1h_chg_1",
+   "model": "bonsai-2:4b",
+   "seed": 2,
+   "first_read_args": {
+    "param_name": "level",
+    "namespace": "/e1h/quasar"
+   },
+   "trace": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/070-e1h_chg_1-C1+H7-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+   "system": "round1/C1+LA",
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/build_round1_20261115/full_resume1_20261115T141427Z/gpt-oss_20b-e1h/002-e1h_chg_2-C1+LA-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+   "system": "round1/C1",
+   "task": "e1h_chg_1",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "first_read_args": {
+    "node_name": "e1h/quasar",
+    "param_name": "level"
+   },
+   "trace": "research/_artifacts/runs/build_round1_20261115/full_resume1_20261115T141427Z/gpt-oss_20b-e1h/016-e1h_chg_1-C1-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+   "system": "round1/C1",
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/build_round1_20261115/full_resume1_20261115T141427Z/gpt-oss_20b-e1h/030-e1h_chg_2-C1-gpt-oss_20b-s1/trace.jsonl"
+  },
+  {
+   "system": "round2/CONTROL",
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 2,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/build_round2_20261116/full_resume2_20261116T132848Z/gpt-oss_20b-e1h/019-e1h_chg_2-CONTROL-gpt-oss_20b-s2/trace.jsonl"
+  },
+  {
+   "system": "fairness/E0",
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "seed": 2,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/fairness_errors_as_text_20261117/full_20261117T071127Z/bonsai-2_4b-e1h/023-e1h_chg_2-E0-bonsai-2_4b-s2/trace.jsonl"
+  },
+  {
+   "system": "ablation/FULL",
+   "task": "e1h_chg_2",
+   "model": "gpt-oss:20b",
+   "seed": 1,
+   "first_read_args": {
+    "node_name": "e1h/willow",
+    "param_name": "mode"
+   },
+   "trace": "research/_artifacts/runs/steady_loop_ablation_20261117/full_20261117T104600Z/gpt-oss_20b-e1h/023-e1h_chg_2-FULL-gpt-oss_20b-s1/trace.jsonl"
+  }
+ ],
+ "note": "Systems whose runner has no EpisodeHook (for example Forge, if present) cannot show `scripted_change` events; they are listed as logged and must be checked separately."
+}

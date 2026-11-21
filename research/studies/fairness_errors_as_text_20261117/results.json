@@ -1,0 +1,386 @@
+{
+ "E0 (verbatim prompt + errors as text)": {
+  "total": {
+   "episodes": 80,
+   "supported": 60,
+   "abort_episodes": 2,
+   "abort_kinds": {
+    "ResponseError": 2
+   },
+   "iteration_limit": 0,
+   "requests": 649,
+   "tokens": 4924429,
+   "requests_per_supported": 10.816666666666666,
+   "tool_errors_returned": 66
+  },
+  "per_model": {
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 13,
+    "abort_episodes": 1,
+    "abort_kinds": {
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 132,
+    "tokens": 1069568,
+    "requests_per_supported": 10.153846153846153,
+    "tool_errors_returned": 3
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 18,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 122,
+    "tokens": 888507,
+    "requests_per_supported": 6.777777777777778,
+    "tool_errors_returned": 2
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 18,
+    "abort_episodes": 1,
+    "abort_kinds": {
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 149,
+    "tokens": 839770,
+    "requests_per_supported": 8.277777777777779,
+    "tool_errors_returned": 14
+   },
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 11,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 246,
+    "tokens": 2126584,
+    "requests_per_supported": 22.363636363636363,
+    "tool_errors_returned": 47
+   }
+  }
+ },
+ "E1 (A1 prompt + errors as text)": {
+  "total": {
+   "episodes": 80,
+   "supported": 65,
+   "abort_episodes": 1,
+   "abort_kinds": {
+    "ResponseError": 1
+   },
+   "iteration_limit": 0,
+   "requests": 591,
+   "tokens": 4230199,
+   "requests_per_supported": 9.092307692307692,
+   "tool_errors_returned": 26
+  },
+  "per_model": {
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 15,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 125,
+    "tokens": 1082462,
+    "requests_per_supported": 8.333333333333334,
+    "tool_errors_returned": 3
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 20,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 109,
+    "tokens": 790052,
+    "requests_per_supported": 5.45,
+    "tool_errors_returned": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 18,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 124,
+    "tokens": 558877,
+    "requests_per_supported": 6.888888888888889,
+    "tool_errors_returned": 18
+   },
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 12,
+    "abort_episodes": 1,
+    "abort_kinds": {
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 233,
+    "tokens": 1798808,
+    "requests_per_supported": 19.416666666666668,
+    "tool_errors_returned": 5
+   }
+  }
+ },
+ "S0 stock, verbatim prompt": {
+  "total": {
+   "episodes": 80,
+   "supported": 40,
+   "abort_episodes": 24,
+   "abort_kinds": {
+    "ResponseError": 3,
+    "1 validation error for ros2_service_call": 3,
+    "1 validation error for ros2_topic_list\nb": 2,
+    "1 validation error for ros2_node_list\nbl": 14,
+    "1 validation error for ros2_service_list": 1,
+    "1 validation error for ros2_param_set\npa": 1
+   },
+   "iteration_limit": 0,
+   "requests": 480,
+   "tokens": 3742310,
+   "requests_per_supported": 12.0,
+   "tool_errors_returned": 0
+  },
+  "per_model": {
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 13,
+    "abort_episodes": 1,
+    "abort_kinds": {
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 152,
+    "tokens": 1280320,
+    "requests_per_supported": 11.692307692307692,
+    "tool_errors_returned": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 16,
+    "abort_episodes": 1,
+    "abort_kinds": {
+     "1 validation error for ros2_service_call": 1
+    },
+    "iteration_limit": 0,
+    "requests": 120,
+    "tokens": 851698,
+    "requests_per_supported": 7.5,
+    "tool_errors_returned": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 2,
+    "abort_episodes": 18,
+    "abort_kinds": {
+     "1 validation error for ros2_topic_list\nb": 2,
+     "1 validation error for ros2_node_list\nbl": 14,
+     "1 validation error for ros2_service_list": 1,
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 28,
+    "tokens": 114512,
+    "requests_per_supported": 14.0,
+    "tool_errors_returned": 0
+   },
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 9,
+    "abort_episodes": 4,
+    "abort_kinds": {
+     "1 validation error for ros2_service_call": 2,
+     "1 validation error for ros2_param_set\npa": 1,
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 180,
+    "tokens": 1495780,
+    "requests_per_supported": 20.0,
+    "tool_errors_returned": 0
+   }
+  }
+ },
+ "A1 stock, deconflicted prompt (scorer v2.0 re-score)": {
+  "total": {
+   "episodes": 80,
+   "supported": 47,
+   "abort_episodes": 18,
+   "abort_kinds": {
+    "error('multiple repeat at position 2')": 3,
+    "1 validation error for ros2_service_call": 3,
+    "1 validation error for ros2_node_list\nbl": 5,
+    "1 validation error for ros2_topic_list\nb": 2,
+    "1 validation error for ros2_topic_info\nt": 2,
+    "1 validation error for ros2_service_list": 2,
+    "1 validation error for ros2_param_set\npa": 1
+   },
+   "iteration_limit": 0,
+   "requests": 472,
+   "tokens": 3281423,
+   "requests_per_supported": 10.042553191489361,
+   "tool_errors_returned": 0
+  },
+  "per_model": {
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 15,
+    "abort_episodes": 2,
+    "abort_kinds": {
+     "error('multiple repeat at position 2')": 1,
+     "1 validation error for ros2_service_call": 1
+    },
+    "iteration_limit": 0,
+    "requests": 135,
+    "tokens": 1090427,
+    "requests_per_supported": 9.0,
+    "tool_errors_returned": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 19,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 86,
+    "tokens": 563736,
+    "requests_per_supported": 4.526315789473684,
+    "tool_errors_returned": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 7,
+    "abort_episodes": 11,
+    "abort_kinds": {
+     "1 validation error for ros2_node_list\nbl": 5,
+     "1 validation error for ros2_topic_list\nb": 2,
+     "1 validation error for ros2_topic_info\nt": 2,
+     "1 validation error for ros2_service_list": 2
+    },
+    "iteration_limit": 0,
+    "requests": 54,
+    "tokens": 217813,
+    "requests_per_supported": 7.714285714285714,
+    "tool_errors_returned": 0
+   },
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 6,
+    "abort_episodes": 5,
+    "abort_kinds": {
+     "error('multiple repeat at position 2')": 2,
+     "1 validation error for ros2_service_call": 2,
+     "1 validation error for ros2_param_set\npa": 1
+    },
+    "iteration_limit": 0,
+    "requests": 197,
+    "tokens": 1409447,
+    "requests_per_supported": 32.833333333333336,
+    "tool_errors_returned": 0
+   }
+  }
+ },
+ "fixed loop, round 1 control (C1)": {
+  "total": {
+   "episodes": 80,
+   "supported": 67,
+   "abort_episodes": 1,
+   "abort_kinds": {
+    "ResponseError": 1
+   },
+   "iteration_limit": 0,
+   "requests": 506,
+   "tokens": 1995814,
+   "requests_per_supported": 7.552238805970149,
+   "tool_errors_returned": 0
+  },
+  "per_model": {
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 16,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 117,
+    "tokens": 639889,
+    "requests_per_supported": 7.3125,
+    "tool_errors_returned": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 20,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 89,
+    "tokens": 265853,
+    "requests_per_supported": 4.45,
+    "tool_errors_returned": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 16,
+    "abort_episodes": 1,
+    "abort_kinds": {
+     "ResponseError": 1
+    },
+    "iteration_limit": 0,
+    "requests": 116,
+    "tokens": 293363,
+    "requests_per_supported": 7.25,
+    "tool_errors_returned": 0
+   },
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 15,
+    "abort_episodes": 0,
+    "abort_kinds": {},
+    "iteration_limit": 0,
+    "requests": 184,
+    "tokens": 796709,
+    "requests_per_supported": 12.266666666666667,
+    "tool_errors_returned": 0
+   }
+  }
+ },
+ "same_cell": {
+  "E0 (verbatim prompt + errors as text) vs S0 stock, verbatim prompt": {
+   "cells": 80,
+   "both": 36,
+   "only_first": 24,
+   "only_second": 4,
+   "neither": 16
+  },
+  "E1 (A1 prompt + errors as text) vs A1 stock, deconflicted prompt (scorer v2.0 re-score)": {
+   "cells": 80,
+   "both": 47,
+   "only_first": 18,
+   "only_second": 0,
+   "neither": 15
+  },
+  "E1 (A1 prompt + errors as text) vs fixed loop, round 1 control (C1)": {
+   "cells": 80,
+   "both": 59,
+   "only_first": 6,
+   "only_second": 8,
+   "neither": 7
+  },
+  "E1 (A1 prompt + errors as text) vs E0 (verbatim prompt + errors as text)": {
+   "cells": 80,
+   "both": 55,
+   "only_first": 10,
+   "only_second": 5,
+   "neither": 10
+  }
+ },
+ "band": "E1 >= 62: most of the gain is errors-as-text",
+ "episodes_in_log": {
+  "E0": 80,
+  "E1": 80
+ }
+}

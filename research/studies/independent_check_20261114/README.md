@@ -1,0 +1,12 @@
+# Independent check — 2026-11-14
+
+**Part 1 complete; Part 2 blocked and not frozen.** No models or APIs were run. All work is new material in this initially absent study folder. Existing studies, baselines, source, instructions, mirrors and Git history remain untouched. This folder is ignored by the current repository rules; no files were staged or committed.
+
+- [Independent recount](RECOUNT_REPORT.md): 72 raw episodes, independent implementation, full literal support results and endpoint-assembly sensitivity. Headline historical totals reproduce only with the documented assembly interpretation. Strict duplicate counts differ from broader redundancy labels. The initial prohibited design-input read is disclosed; the audit is not blind.
+- **Held-out preparation blocker (record held by the custodian)**: 16 draft tasks, 22 new stock-rclpy nodes, real ROSA read tools, all intended routes executed, and an actual two-stage counterexample to a purported five-stage minimum. No valid frozen protocol was issued. Final separate-session direct oracles and domain-218 cleanup passed. Failed attempts, incomplete after-oracles and all task revisions are preserved.
+
+Source flow: `recount.py:main()` -> `recount()` -> per-episode and aggregate JSON; `endpoint_sensitivity.py` separately assembles namespace/name pairs. For preparation, `fixture_builder.py:build_graph()`/`create_nodes()` build the seeded fixture; `tasks_and_plans.py:make_tasks()` declares truth and `verify_task()` runs handwritten public-input-only routes via `verify_floors.py:main()`. `check_floor_shortcut.py:main()` implements only the model-free minimum-stage countercheck; `report_preparation.py:main()` writes the blocked draft report after validating its saved evidence.
+
+Part 1 deliberately uses the supplied historical task floors, as requested; Part 2's floor counterexample does not silently alter any earlier study or historical denominator. It raises a separate measurement-contract issue. A feasible route depth and a minimum number of observation stages are different quantities when ordinary controls can enumerate and batch extra native reads. Resolving that distinction is necessary before a scientifically valid held-out freeze; it is not permission to design a method, weaken a control or run final evaluation.
+
+No mirror sync was run because the explicit new-files-only/mirror-unchanged scope overrides the routine sync instruction. No shared context clone fetch, update, commit, push or merge occurred. Work stopped at the invalid-floor gate, not token exhaustion.

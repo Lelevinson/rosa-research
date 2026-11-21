@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "counts": {
+    "logical_reads": 68,
+    "cli_attempts": 33,
+    "expected_missing": 1
+  },
+  "batch_count": 17,
+  "overlap": [
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 0,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 0,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 1,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 1,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 2,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 2,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 3,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 3,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 4,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 4,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 5,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 5,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 6,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 6,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": 7,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "transport",
+      "family": "service",
+      "policy": "serial",
+      "repeat": 7,
+      "peak_inflight": 1
+    },
+    {
+      "phase": "persistent_error",
+      "family": "service",
+      "policy": "persistent",
+      "repeat": null,
+      "peak_inflight": 1
+    }
+  ],
+  "limits": "No natural-language intent, consistency, dynamic graph or held-out validity is certified."
+}

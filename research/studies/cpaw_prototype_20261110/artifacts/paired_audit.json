@@ -1,0 +1,2294 @@
+{
+  "binary": {
+    "initial_vs_exact_wave": {
+      "common_states": 19,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0
+          ],
+          "seed": 106,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "T"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": 0.01492752970837737,
+      "paired": 12,
+      "wins": 2
+    },
+    "initial_vs_fixed_nominal": {
+      "common_states": 19,
+      "different_waves": 5,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0
+          ],
+          "seed": 106,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "T"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": 0.030535217062455915,
+      "paired": 12,
+      "wins": 3
+    },
+    "initial_vs_fixed_robust": {
+      "common_states": 19,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0
+          ],
+          "seed": 106,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "T"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.14303835885417193,
+      "paired": 12,
+      "wins": 3
+    },
+    "initial_vs_greedy": {
+      "common_states": 19,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 107,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.14137304600002307,
+      "paired": 12,
+      "wins": 3
+    },
+    "revised_guarded_vs_exact_wave": {
+      "common_states": 20,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            3
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 111,
+          "state": [
+            "T",
+            "-",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.1623812316042396,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_nominal": {
+      "common_states": 21,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 108,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 111,
+          "state": [
+            "T",
+            "-",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.17798891895831814,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_robust": {
+      "common_states": 21,
+      "different_waves": 0,
+      "examples": [],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.004415343041690297,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_greedy": {
+      "common_states": 19,
+      "different_waves": 4,
+      "examples": [
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 106,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "T"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 107,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": 0.006080655895839171,
+      "paired": 12,
+      "wins": 2
+    },
+    "revised_unguarded_vs_exact_wave": {
+      "common_states": 20,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 111,
+          "state": [
+            "T",
+            "-",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.0905109104375273,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_fixed_nominal": {
+      "common_states": 20,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 108,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": 0.10611859779160586,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_unguarded_vs_fixed_robust": {
+      "common_states": 20,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.06745497812502199,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_unguarded_vs_greedy": {
+      "common_states": 19,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 106,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "T"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 107,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": -0.06578966527087311,
+      "paired": 12,
+      "wins": 2
+    }
+  },
+  "bulk": {
+    "initial_vs_exact_wave": {
+      "common_states": 26,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.01251088324995179,
+      "paired": 12,
+      "wins": 1
+    },
+    "initial_vs_fixed_nominal": {
+      "common_states": 24,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.01425333049991869,
+      "paired": 12,
+      "wins": 1
+    },
+    "initial_vs_fixed_robust": {
+      "common_states": 23,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 106,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.004842671666684506,
+      "paired": 12,
+      "wins": 0
+    },
+    "initial_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 7,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            1,
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.0371511096041209,
+      "paired": 12,
+      "wins": 3
+    },
+    "revised_guarded_vs_exact_wave": {
+      "common_states": 26,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.01286869116664698,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_guarded_vs_fixed_nominal": {
+      "common_states": 24,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.014611138416613878,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_guarded_vs_fixed_robust": {
+      "common_states": 23,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 106,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.004484863749989317,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 7,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            1,
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.03750891752081609,
+      "paired": 12,
+      "wins": 3
+    },
+    "revised_unguarded_vs_exact_wave": {
+      "common_states": 26,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.012795834729129929,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_unguarded_vs_fixed_nominal": {
+      "common_states": 24,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.014538281979096826,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_unguarded_vs_fixed_robust": {
+      "common_states": 23,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            3
+          ],
+          "seed": 106,
+          "state": [
+            "F",
+            "F",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.004557720187506368,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 7,
+      "examples": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            1,
+            3
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.037436061083299034,
+      "paired": 12,
+      "wins": 3
+    }
+  },
+  "correlated": {
+    "initial_vs_exact_wave": {
+      "common_states": 19,
+      "different_waves": 5,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            1
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.4456509774583114,
+      "paired": 12,
+      "wins": 0
+    },
+    "initial_vs_fixed_nominal": {
+      "common_states": 19,
+      "different_waves": 5,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            1
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.4440252455833874,
+      "paired": 12,
+      "wins": 0
+    },
+    "initial_vs_fixed_robust": {
+      "common_states": 19,
+      "different_waves": 4,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            1
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            2
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.42229940329167986,
+      "paired": 12,
+      "wins": 0
+    },
+    "initial_vs_greedy": {
+      "common_states": 17,
+      "different_waves": 6,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            1,
+            3
+          ],
+          "seed": 103,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": -0.17770748695831806,
+      "paired": 12,
+      "wins": 2
+    },
+    "revised_guarded_vs_exact_wave": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.06591736206249073,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_nominal": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.06429163018756674,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_robust": {
+      "common_states": 18,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 110,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.04256578789585922,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 10,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 6,
+      "mean_cost_delta_including_compute": -0.5574411023541387,
+      "paired": 12,
+      "wins": 6
+    },
+    "revised_unguarded_vs_exact_wave": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.06591469237498204,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_fixed_nominal": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.06428896050005806,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_fixed_robust": {
+      "common_states": 18,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 110,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.042563118208350535,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 10,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            3
+          ],
+          "control": [
+            0,
+            1
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 6,
+      "mean_cost_delta_including_compute": -0.5574437720416474,
+      "paired": 12,
+      "wins": 6
+    }
+  },
+  "misspecified": {
+    "initial_vs_exact_wave": {
+      "common_states": 23,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            1
+          ],
+          "seed": 103,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": 0.11793309985412555,
+      "paired": 12,
+      "wins": 1
+    },
+    "initial_vs_fixed_nominal": {
+      "common_states": 23,
+      "different_waves": 10,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 5,
+      "mean_cost_delta_including_compute": -0.17937360052085763,
+      "paired": 12,
+      "wins": 7
+    },
+    "initial_vs_fixed_robust": {
+      "common_states": 23,
+      "different_waves": 10,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 4,
+      "mean_cost_delta_including_compute": -0.3530087720208275,
+      "paired": 12,
+      "wins": 8
+    },
+    "initial_vs_greedy": {
+      "common_states": 22,
+      "different_waves": 4,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 107,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 8,
+      "mean_cost_delta_including_compute": -0.3225473494583329,
+      "paired": 12,
+      "wins": 4
+    },
+    "revised_guarded_vs_exact_wave": {
+      "common_states": 24,
+      "different_waves": 0,
+      "examples": [],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.010304914166567869,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_nominal": {
+      "common_states": 24,
+      "different_waves": 9,
+      "examples": [
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            3
+          ],
+          "seed": 101,
+          "state": [
+            "F",
+            "-",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 5,
+      "mean_cost_delta_including_compute": -0.2870017862084153,
+      "paired": 12,
+      "wins": 7
+    },
+    "revised_guarded_vs_fixed_robust": {
+      "common_states": 24,
+      "different_waves": 9,
+      "examples": [
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            3
+          ],
+          "seed": 101,
+          "state": [
+            "F",
+            "-",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 4,
+      "mean_cost_delta_including_compute": -0.46063695770838514,
+      "paired": 12,
+      "wins": 8
+    },
+    "revised_guarded_vs_greedy": {
+      "common_states": 23,
+      "different_waves": 4,
+      "examples": [
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 103,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 107,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 8,
+      "mean_cost_delta_including_compute": -0.43017553514589063,
+      "paired": 12,
+      "wins": 4
+    },
+    "revised_unguarded_vs_exact_wave": {
+      "common_states": 24,
+      "different_waves": 0,
+      "examples": [],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.010246733354165372,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_fixed_nominal": {
+      "common_states": 24,
+      "different_waves": 9,
+      "examples": [
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            3
+          ],
+          "seed": 101,
+          "state": [
+            "F",
+            "-",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 5,
+      "mean_cost_delta_including_compute": -0.2870599670208178,
+      "paired": 12,
+      "wins": 7
+    },
+    "revised_unguarded_vs_fixed_robust": {
+      "common_states": 24,
+      "different_waves": 9,
+      "examples": [
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            3
+          ],
+          "seed": 101,
+          "state": [
+            "F",
+            "-",
+            "F",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 102,
+          "state": [
+            "-",
+            "F",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 4,
+      "mean_cost_delta_including_compute": -0.46069513852078764,
+      "paired": 12,
+      "wins": 8
+    },
+    "revised_unguarded_vs_greedy": {
+      "common_states": 23,
+      "different_waves": 4,
+      "examples": [
+        {
+          "candidate": [
+            1
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 103,
+          "state": [
+            "F",
+            "-",
+            "-",
+            "F"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 107,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 8,
+      "mean_cost_delta_including_compute": -0.43023371595829313,
+      "paired": 12,
+      "wins": 4
+    }
+  },
+  "unknown": {
+    "initial_vs_exact_wave": {
+      "common_states": 17,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 108,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": 0.023904527895774685,
+      "paired": 12,
+      "wins": 1
+    },
+    "initial_vs_fixed_nominal": {
+      "common_states": 18,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": 0.012126762541725658,
+      "paired": 12,
+      "wins": 1
+    },
+    "initial_vs_fixed_robust": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "T",
+            "-",
+            "-",
+            "U"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.16065522466665094,
+      "paired": 12,
+      "wins": 3
+    },
+    "initial_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "T",
+            "-",
+            "-",
+            "U"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            2
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 105,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 9,
+      "mean_cost_delta_including_compute": -0.18034387606255156,
+      "paired": 12,
+      "wins": 3
+    },
+    "revised_guarded_vs_exact_wave": {
+      "common_states": 17,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 108,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "candidate": [
+            3
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.1326599933333136,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_nominal": {
+      "common_states": 18,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            3
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.12088222797926458,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_guarded_vs_fixed_robust": {
+      "common_states": 19,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "T",
+            "-",
+            "-",
+            "U"
+          ]
+        }
+      ],
+      "losses": 11,
+      "mean_cost_delta_including_compute": -0.05189975922911202,
+      "paired": 12,
+      "wins": 1
+    },
+    "revised_guarded_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 3,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "T",
+            "-",
+            "-",
+            "U"
+          ]
+        },
+        {
+          "candidate": [
+            3
+          ],
+          "control": [
+            0,
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": -0.07158841062501264,
+      "paired": 12,
+      "wins": 2
+    },
+    "revised_unguarded_vs_exact_wave": {
+      "common_states": 17,
+      "different_waves": 1,
+      "examples": [
+        {
+          "candidate": [
+            1,
+            2
+          ],
+          "control": [
+            2,
+            3
+          ],
+          "seed": 108,
+          "state": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.059487428020791766,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_fixed_nominal": {
+      "common_states": 18,
+      "different_waves": 0,
+      "examples": [],
+      "losses": 12,
+      "mean_cost_delta_including_compute": 0.04770966266674274,
+      "paired": 12,
+      "wins": 0
+    },
+    "revised_unguarded_vs_fixed_robust": {
+      "common_states": 18,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "T",
+            "-",
+            "-",
+            "U"
+          ]
+        },
+        {
+          "candidate": [
+            0,
+            3
+          ],
+          "control": [
+            3
+          ],
+          "seed": 109,
+          "state": [
+            "-",
+            "T",
+            "F",
+            "-"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": -0.12507232454163386,
+      "paired": 12,
+      "wins": 2
+    },
+    "revised_unguarded_vs_greedy": {
+      "common_states": 18,
+      "different_waves": 2,
+      "examples": [
+        {
+          "candidate": [
+            2
+          ],
+          "control": [
+            1,
+            2
+          ],
+          "seed": 101,
+          "state": [
+            "T",
+            "-",
+            "-",
+            "U"
+          ]
+        },
+        {
+          "candidate": [
+            0
+          ],
+          "control": [
+            0,
+            2
+          ],
+          "seed": 112,
+          "state": [
+            "-",
+            "T",
+            "-",
+            "F"
+          ]
+        }
+      ],
+      "losses": 10,
+      "mean_cost_delta_including_compute": -0.14476097593753448,
+      "paired": 12,
+      "wins": 2
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# MODEL_CHECK_LLAMA (Step A repeat for llama3.1:8b), 2026-11-16 overnight job 2
+
+Same check as [MODEL_CHECK.md](MODEL_CHECK.md): stock executor with the deconflicted prompt (arm A1), Stage 3 tasks p3 and u3, one episode each, seed 1, temperature 0.7, num_ctx 65536 (verified from `/api/ps`: 65536), num_predict 4096, 40-iteration cap, think field as the pilot sent (pilot SDK `reasoning=False`), ROS domain 220, `run_pilot.py session` unchanged. Run folder: `research/_artifacts/runs/overnight_20261116/llama_check/` (not tracked; oracle before and after matched, cleanup ok, no write command reached ROS). `/api/show`: llama 8.0B Q4_K_M, context 131072, capabilities `completion, tools`. Scoring: scorer v2.0 via the round-1 adapter.
+
+| task | requests (floor 4) | tool calls | result | what happened |
+|---|---:|---:|---|---|
+| p3 | 2 | 3 | unsupported | Real tool calls through the harness. Read `/plant32/quartz` `next_node` (request 1), then passed the literal string `next_node` as the *node name* in two parallel calls (`node_name: "next_node"`), got errors, and answered in prose that the node was not found; no JSON object. |
+| u3 | 2 | 1 | unsupported | One valid call (`ros2_node_list`, pattern `^/plant32/quarry_t$`, returned no nodes); the next response wrote a tool call as plain text (`{"name": "ros2_topic_list", "parameters": ...}`) instead of issuing it, which ended the episode with no answer object. |
+
+**Verdict (harness only):** llama3.1:8b **runs through the harness with tool calls** (structured calls were issued and executed in both episodes, no abort, no write tool, valid context, clean session). It did **not** produce a supported answer in either episode (0 of 2); both episodes stopped after 2 requests: one by answering in prose after a misread argument, one by emitting a pseudo tool call as text. Two episodes say nothing about rates; the pattern (text instead of a call, a placeholder value used as an argument) is a taxonomy row 14 / argument-binding type of failure. Not added to the pilot models; usable as a candidate model for a later harness run.

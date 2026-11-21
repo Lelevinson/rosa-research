@@ -1,0 +1,6155 @@
+[
+  {
+    "episode": "00-v3-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/00-v3-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "v3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          16,
+          59
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "gain",
+          27
+        ],
+        "lines": [
+          70
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "error": null,
+    "end_line": 74,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "01-h4-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/01-h4-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "h4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          9,
+          23,
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          9,
+          45
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          9,
+          49
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          9,
+          53
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/zephyr",
+          "gain",
+          74
+        ],
+        "lines": [
+          60
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/dune",
+          "gain",
+          65
+        ],
+        "lines": [
+          64
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/oasis",
+          "gain",
+          89
+        ],
+        "lines": [
+          68
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "error": null,
+    "end_line": 72,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "02-p2-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/02-p2-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "p2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 20,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "03-h2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/03-h2-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "h2",
+    "depth": 2,
+    "requests": 5,
+    "floor": 3,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Int32"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/String"
+        ],
+        "lines": [
+          8,
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Float32"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "error": null,
+    "end_line": 29,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 23,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/anvil"
+          ]
+        }
+      }
+    ],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "node",
+          "info",
+          "anvil"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "04-p4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/04-p4-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "p4",
+    "depth": 4,
+    "requests": 5,
+    "floor": 5,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/lattice",
+          "next_node",
+          "/plant32/quartz"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          26
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 29,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "05-u4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/05-u4-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "u4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          26,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quill",
+          "gain",
+          59
+        ],
+        "lines": [
+          38
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "06-h2-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/06-h2-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "h2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Int32"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/String"
+        ],
+        "lines": [
+          9,
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Float32"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "error": null,
+    "end_line": 20,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "07-v4-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/07-v4-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "v4",
+    "depth": 4,
+    "requests": 6,
+    "floor": 5,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          16,
+          59
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "peer",
+          "/plant32/lumen"
+        ],
+        "lines": [
+          66
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/lumen",
+          "gain",
+          18
+        ],
+        "lines": [
+          73
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "error": null,
+    "end_line": 77,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "08-u3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/08-u3-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "u3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "09-p3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/09-p3-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "p3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "10-u3-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/10-u3-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "u3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          9,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          56,
+          63
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          9,
+          56
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "error": null,
+    "end_line": 67,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "11-v4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/11-v4-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "v4",
+    "depth": 4,
+    "requests": 8,
+    "floor": 5,
+    "excess": 3,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "peer",
+          "/plant32/lumen"
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/lumen",
+          "gain",
+          18
+        ],
+        "lines": [
+          68
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "error": null,
+    "end_line": 71,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "12-u2-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/12-u2-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "u2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/yarrow",
+          "gain",
+          50
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "expected_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "error": null,
+    "end_line": 20,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "13-v2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/13-v2-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "v2",
+    "depth": 2,
+    "requests": 6,
+    "floor": 3,
+    "excess": 3,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_srvs/srv/Trigger"
+        ],
+        "lines": [
+          8,
+          56,
+          62,
+          68
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "error": null,
+    "end_line": 71,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 59,
+        "name": "ros2_service_info",
+        "args": {
+          "services": [
+            "/plant32/cedar_reset"
+          ]
+        }
+      },
+      {
+        "request": 5,
+        "line": 65,
+        "name": "ros2_service_info",
+        "args": {
+          "services": [
+            "/plant32/cedar_reset"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "14-h4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/14-h4-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "h4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/zephyr",
+          "gain",
+          74
+        ],
+        "lines": [
+          44,
+          58
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/dune",
+          "gain",
+          65
+        ],
+        "lines": [
+          48
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/oasis",
+          "gain",
+          89
+        ],
+        "lines": [
+          52
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "error": null,
+    "end_line": 61,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 55,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/zephyr",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "15-p2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/15-p2-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "p2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 17,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "16-h3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/16-h3-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "h3",
+    "depth": 3,
+    "requests": 6,
+    "floor": 4,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          26,
+          36
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          26,
+          36
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          26,
+          36
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "error": null,
+    "end_line": 39,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "node",
+          "info",
+          "anvil"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "17-v3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/17-v3-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "v3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "gain",
+          27
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "error": null,
+    "end_line": 65,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "18-p4-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/18-p4-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "p4",
+    "depth": 4,
+    "requests": 5,
+    "floor": 5,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/lattice",
+          "next_node",
+          "/plant32/quartz"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          23
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 34,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "19-u4-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/19-u4-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "u4",
+    "depth": 4,
+    "requests": 12,
+    "floor": 5,
+    "excess": 7,
+    "exact": false,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          16,
+          23,
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quill",
+          "gain",
+          59
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 28
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "error": null,
+    "end_line": 83,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "20-v2-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/20-v2-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "v2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          16,
+          79
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_srvs/srv/Trigger"
+        ],
+        "lines": [
+          9,
+          43,
+          79
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "error": null,
+    "end_line": 99,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "21-h3-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/21-h3-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "h3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          9,
+          23
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          23,
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          23,
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "error": null,
+    "end_line": 42,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "22-u2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/22-u2-ollama-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "u2",
+    "depth": 2,
+    "requests": 7,
+    "floor": 3,
+    "excess": 4,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/yarrow",
+          "gain",
+          50
+        ],
+        "lines": [
+          26,
+          32,
+          38
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "expected_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 5,
+        "line": 29,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 6,
+        "line": 35,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "param",
+          "get",
+          "yarrow",
+          "gain"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "23-p3-openai-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/23-p3-openai-r0/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "p3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          23
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 27,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "24-u3-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/24-u3-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "u3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          16,
+          23
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "error": null,
+    "end_line": 27,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "25-h2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/25-h2-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "h2",
+    "depth": 2,
+    "requests": 5,
+    "floor": 3,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Int32"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/String"
+        ],
+        "lines": [
+          8,
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Float32"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "error": null,
+    "end_line": 29,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 23,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/anvil"
+          ]
+        }
+      }
+    ],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "node",
+          "info",
+          "anvil"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "26-v2-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/26-v2-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "v2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          16,
+          79
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_srvs/srv/Trigger"
+        ],
+        "lines": [
+          9,
+          43,
+          79
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "error": null,
+    "end_line": 99,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "27-h4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/27-h4-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "h4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/zephyr",
+          "gain",
+          74
+        ],
+        "lines": [
+          44,
+          58
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/dune",
+          "gain",
+          65
+        ],
+        "lines": [
+          48
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/oasis",
+          "gain",
+          89
+        ],
+        "lines": [
+          52
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "error": null,
+    "end_line": 61,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 55,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/zephyr",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "28-v3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/28-v3-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "v3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "gain",
+          27
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "error": null,
+    "end_line": 65,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "29-u3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/29-u3-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "u3",
+    "depth": 3,
+    "requests": 7,
+    "floor": 4,
+    "excess": 3,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          20,
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          20,
+          26,
+          32,
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          32
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 35,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/yarrow"
+          ]
+        }
+      }
+    ],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "node",
+          "info",
+          "yarrow"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "30-p2-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/30-p2-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "p2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 20,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "31-p2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/31-p2-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "p2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 17,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "32-v4-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/32-v4-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "v4",
+    "depth": 4,
+    "requests": 6,
+    "floor": 5,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          16,
+          59
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "peer",
+          "/plant32/lumen"
+        ],
+        "lines": [
+          70
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/lumen",
+          "gain",
+          18
+        ],
+        "lines": [
+          77
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "error": null,
+    "end_line": 81,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "33-p3-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/33-p3-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "p3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          23
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 27,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "34-h3-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/34-h3-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "h3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          16,
+          27
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          16,
+          27
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          16,
+          27
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "error": null,
+    "end_line": 31,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "35-v4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/35-v4-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "v4",
+    "depth": 4,
+    "requests": 8,
+    "floor": 5,
+    "excess": 3,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "peer",
+          "/plant32/lumen"
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/lumen",
+          "gain",
+          18
+        ],
+        "lines": [
+          68
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "error": null,
+    "end_line": 71,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "36-p3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/36-p3-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "p3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "37-v2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/37-v2-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "v2",
+    "depth": 2,
+    "requests": 6,
+    "floor": 3,
+    "excess": 3,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_srvs/srv/Trigger"
+        ],
+        "lines": [
+          8,
+          56,
+          62,
+          68
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "error": null,
+    "end_line": 71,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 59,
+        "name": "ros2_service_info",
+        "args": {
+          "services": [
+            "/plant32/cedar_reset"
+          ]
+        }
+      },
+      {
+        "request": 5,
+        "line": 65,
+        "name": "ros2_service_info",
+        "args": {
+          "services": [
+            "/plant32/cedar_reset"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "38-u2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/38-u2-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "u2",
+    "depth": 2,
+    "requests": 7,
+    "floor": 3,
+    "excess": 4,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/yarrow",
+          "gain",
+          50
+        ],
+        "lines": [
+          26,
+          32,
+          38
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "expected_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 5,
+        "line": 29,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 6,
+        "line": 35,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "param",
+          "get",
+          "yarrow",
+          "gain"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "39-h2-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/39-h2-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "h2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Int32"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/String"
+        ],
+        "lines": [
+          9,
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Float32"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "error": null,
+    "end_line": 20,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "40-u2-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/40-u2-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "u2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/yarrow",
+          "gain",
+          50
+        ],
+        "lines": [
+          23
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "expected_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "error": null,
+    "end_line": 27,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "41-h4-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/41-h4-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "h4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          9,
+          23
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          23,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          9,
+          53
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          9,
+          57
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          9,
+          61
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/zephyr",
+          "gain",
+          74
+        ],
+        "lines": [
+          68
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/dune",
+          "gain",
+          65
+        ],
+        "lines": [
+          72
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/oasis",
+          "gain",
+          89
+        ],
+        "lines": [
+          76
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "error": null,
+    "end_line": 80,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": [
+      {
+        "line": 37,
+        "native_failure": [
+          "ros2",
+          "param",
+          "list",
+          "/plant32/courier"
+        ]
+      },
+      {
+        "line": 41,
+        "native_failure": [
+          "ros2",
+          "param",
+          "list",
+          "/plant32/fjord"
+        ]
+      },
+      {
+        "line": 45,
+        "native_failure": [
+          "ros2",
+          "param",
+          "list",
+          "/plant32/prism"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "42-u4-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/42-u4-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "u4",
+    "depth": 4,
+    "requests": 6,
+    "floor": 5,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          16,
+          23
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quill",
+          "gain",
+          59
+        ],
+        "lines": [
+          37
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "43-v3-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/43-v3-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "v3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          16,
+          59
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "gain",
+          27
+        ],
+        "lines": [
+          66
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "error": null,
+    "end_line": 70,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "44-h3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/44-h3-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "h3",
+    "depth": 3,
+    "requests": 6,
+    "floor": 4,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          26,
+          36
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          26,
+          36
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          26,
+          36
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "error": null,
+    "end_line": 39,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": [
+      {
+        "line": 13,
+        "native_failure": [
+          "ros2",
+          "node",
+          "info",
+          "anvil"
+        ]
+      }
+    ]
+  },
+  {
+    "episode": "45-p4-openai-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/45-p4-openai-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "openai",
+    "task": "p4",
+    "depth": 4,
+    "requests": 5,
+    "floor": 5,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/lattice",
+          "next_node",
+          "/plant32/quartz"
+        ],
+        "lines": [
+          9
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          16
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          23
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 34,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "46-u4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/46-u4-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "u4",
+    "depth": 4,
+    "requests": 13,
+    "floor": 5,
+    "excess": 8,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          26,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quill",
+          "gain",
+          59
+        ],
+        "lines": [
+          38,
+          50,
+          68
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "error": null,
+    "end_line": 77,
+    "duplicate_requests": 5,
+    "duplicate_evidence": [
+      {
+        "request": 8,
+        "line": 47,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/quill",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 9,
+        "line": 53,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 10,
+        "line": 59,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 11,
+        "line": 65,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/quill",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 12,
+        "line": 71,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "47-p4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3b_20261113T155721Z/47-p4-ollama-r1/trace.jsonl",
+    "arm": "A1",
+    "model": "ollama",
+    "task": "p4",
+    "depth": 4,
+    "requests": 5,
+    "floor": 5,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/lattice",
+          "next_node",
+          "/plant32/quartz"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          26
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 29,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "00-h3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/00-h3-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "h3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          24,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          24,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          24,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "error": null,
+    "end_line": 37,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 27,
+        "name": "ros2_topic_info",
+        "args": {
+          "topics": [
+            "/plant32/courier_t",
+            "/plant32/fjord_t",
+            "/plant32/prism_t"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "01-v3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/01-v3-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "v3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "gain",
+          27
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "error": null,
+    "end_line": 65,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "02-p3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/02-p3-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "p3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "03-p4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/03-p4-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "p4",
+    "depth": 4,
+    "requests": 5,
+    "floor": 5,
+    "excess": 0,
+    "exact": false,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/lattice",
+          "next_node",
+          "/plant32/quartz"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          18
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          28
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 694
+    },
+    "expected_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 35,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/beacon",
+          "param_name": "setpoint"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "04-u3-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/04-u3-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "u3",
+    "depth": 3,
+    "requests": 6,
+    "floor": 4,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "error": null,
+    "end_line": 35,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 23,
+        "name": "ros2_topic_info",
+        "args": {
+          "topics": [
+            "/plant32/quarry_t"
+          ]
+        }
+      },
+      {
+        "request": 5,
+        "line": 29,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/yarrow"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "05-h2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/05-h2-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "h2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Int32"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/String"
+        ],
+        "lines": [
+          8,
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Float32"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 3,
+        "line": 17,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/anvil"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "06-v4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/06-v4-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "v4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "peer",
+          "/plant32/lumen"
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/lumen",
+          "gain",
+          18
+        ],
+        "lines": [
+          68,
+          74
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "error": null,
+    "end_line": 77,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 71,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/lumen",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "07-h4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/07-h4-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "h4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/zephyr",
+          "gain",
+          74
+        ],
+        "lines": [
+          44,
+          58
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/dune",
+          "gain",
+          65
+        ],
+        "lines": [
+          48,
+          62
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/oasis",
+          "gain",
+          89
+        ],
+        "lines": [
+          52,
+          66
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "error": null,
+    "end_line": 69,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 55,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/zephyr",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 6,
+        "line": 59,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/dune",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 6,
+        "line": 63,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/oasis",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "08-v2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/08-v2-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "v2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": false,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_srvs/srv/Trigger"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": null,
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "error": "1 validation error for ros2_service_call\nrequest\n  Input should be a valid string [type=string_type, input_value={}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type",
+    "end_line": 19,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "09-p2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/09-p2-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "p2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 17,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "10-u2-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/10-u2-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "u2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/yarrow",
+          "gain",
+          50
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "expected_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 3,
+        "line": 17,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "11-u4-ollama-r0",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/11-u4-ollama-r0/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "u4",
+    "depth": 4,
+    "requests": 10,
+    "floor": 5,
+    "excess": 5,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          26,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quill",
+          "gain",
+          59
+        ],
+        "lines": [
+          38,
+          50,
+          56
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "error": null,
+    "end_line": 59,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 8,
+        "line": 47,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/quill",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 9,
+        "line": 53,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/quill",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "12-u4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/12-u4-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "u4",
+    "depth": 4,
+    "requests": 10,
+    "floor": 5,
+    "excess": 5,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20,
+          26
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [
+          26,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quill",
+          "gain",
+          59
+        ],
+        "lines": [
+          38,
+          50,
+          56
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill",
+      "upstream_gain": 59
+    },
+    "error": null,
+    "end_line": 59,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 8,
+        "line": 47,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/quill",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 9,
+        "line": 53,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/quill",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "13-h2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/13-h2-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "h2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Int32"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/String"
+        ],
+        "lines": [
+          8,
+          14,
+          20
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_msgs/msg/Float32"
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "inputs": {
+        "/plant32/courier_t": "std_msgs/msg/String",
+        "/plant32/fjord_t": "std_msgs/msg/Int32",
+        "/plant32/prism_t": "std_msgs/msg/Float32"
+      }
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 3,
+        "line": 17,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/anvil"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "14-u3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/14-u3-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "u3",
+    "depth": 3,
+    "requests": 6,
+    "floor": 4,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [
+          14,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/harbor_t"
+        ],
+        "lines": [
+          14,
+          20,
+          32
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/quill"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "expected_answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "error": null,
+    "end_line": 35,
+    "duplicate_requests": 2,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 23,
+        "name": "ros2_topic_info",
+        "args": {
+          "topics": [
+            "/plant32/quarry_t"
+          ]
+        }
+      },
+      {
+        "request": 5,
+        "line": 29,
+        "name": "ros2_node_info",
+        "args": {
+          "nodes": [
+            "/plant32/yarrow"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "15-p2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/15-p2-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "p2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "next_node": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 17,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "16-h4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/16-h4-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "h4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          24
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [
+          30
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [
+          38
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/zephyr",
+          "gain",
+          74
+        ],
+        "lines": [
+          44,
+          58
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/dune",
+          "gain",
+          65
+        ],
+        "lines": [
+          48,
+          62
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/oasis",
+          "gain",
+          89
+        ],
+        "lines": [
+          52,
+          66
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "error": null,
+    "end_line": 69,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 55,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/zephyr",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 6,
+        "line": 59,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/dune",
+          "param_name": "gain"
+        }
+      },
+      {
+        "request": 6,
+        "line": 63,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/oasis",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "17-v4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/17-v4-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "v4",
+    "depth": 4,
+    "requests": 7,
+    "floor": 5,
+    "excess": 2,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "peer",
+          "/plant32/lumen"
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/lumen",
+          "gain",
+          18
+        ],
+        "lines": [
+          68,
+          74
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "peer": "/plant32/lumen",
+      "peer_gain": 18
+    },
+    "error": null,
+    "end_line": 77,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 6,
+        "line": 71,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/lumen",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "18-v3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/18-v3-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "v3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14,
+          56
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/wharf",
+          "gain",
+          27
+        ],
+        "lines": [
+          62
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "gain": 27
+    },
+    "error": null,
+    "end_line": 65,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "19-h3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/19-h3-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "h3",
+    "depth": 3,
+    "requests": 5,
+    "floor": 4,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/anvil"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/courier_t"
+        ],
+        "lines": [
+          14,
+          24,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/fjord_t"
+        ],
+        "lines": [
+          14,
+          24,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/prism_t"
+        ],
+        "lines": [
+          14,
+          24,
+          34
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/zephyr"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/dune"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "text",
+          "/plant32/oasis"
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "expected_answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "error": null,
+    "end_line": 37,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 27,
+        "name": "ros2_topic_info",
+        "args": {
+          "topics": [
+            "/plant32/courier_t",
+            "/plant32/fjord_t",
+            "/plant32/prism_t"
+          ]
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "20-v2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/20-v2-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "v2",
+    "depth": 2,
+    "requests": 3,
+    "floor": 3,
+    "excess": 0,
+    "exact": false,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/wharf"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "text",
+          "std_srvs/srv/Trigger"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": null,
+    "expected_answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "error": "1 validation error for ros2_service_call\nrequest\n  Input should be a valid string [type=string_type, input_value={}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type",
+    "end_line": 19,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "21-p3-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/21-p3-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "p3",
+    "depth": 3,
+    "requests": 4,
+    "floor": 4,
+    "excess": 0,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          14
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": true,
+    "parsed_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "expected_answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 0,
+    "duplicate_evidence": [],
+    "native_failures": []
+  },
+  {
+    "episode": "22-p4-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/22-p4-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "p4",
+    "depth": 4,
+    "requests": 5,
+    "floor": 5,
+    "excess": 0,
+    "exact": false,
+    "support": [
+      {
+        "requirement": [
+          "param",
+          "/plant32/lattice",
+          "next_node",
+          "/plant32/quartz"
+        ],
+        "lines": [
+          8
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/quartz",
+          "next_node",
+          "/plant32/beacon"
+        ],
+        "lines": [
+          18
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/beacon",
+          "next_node",
+          "/plant32/juniper"
+        ],
+        "lines": [
+          28
+        ],
+        "holds": true
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/juniper",
+          "setpoint",
+          873
+        ],
+        "lines": [],
+        "holds": false
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 694
+    },
+    "expected_answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "third": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "error": null,
+    "end_line": 41,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 4,
+        "line": 35,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/beacon",
+          "param_name": "setpoint"
+        }
+      }
+    ],
+    "native_failures": []
+  },
+  {
+    "episode": "23-u2-ollama-r1",
+    "trace": "research/_artifacts/runs/headroom_diagnostic_20261112/stage3d_20261114T005613Z/23-u2-ollama-r1/trace.jsonl",
+    "arm": "A2",
+    "model": "ollama",
+    "task": "u2",
+    "depth": 2,
+    "requests": 4,
+    "floor": 3,
+    "excess": 1,
+    "exact": true,
+    "support": [
+      {
+        "requirement": [
+          "text",
+          "/plant32/yarrow"
+        ],
+        "lines": [],
+        "holds": false
+      },
+      {
+        "requirement": [
+          "param",
+          "/plant32/yarrow",
+          "gain",
+          50
+        ],
+        "lines": [
+          14,
+          20
+        ],
+        "holds": true
+      }
+    ],
+    "supported_complete": false,
+    "parsed_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "expected_answer": {
+      "node": "/plant32/yarrow",
+      "gain": 50
+    },
+    "error": null,
+    "end_line": 23,
+    "duplicate_requests": 1,
+    "duplicate_evidence": [
+      {
+        "request": 3,
+        "line": 17,
+        "name": "ros2_param_get",
+        "args": {
+          "node_name": "/plant32/yarrow",
+          "param_name": "gain"
+        }
+      }
+    ],
+    "native_failures": []
+  }
+]

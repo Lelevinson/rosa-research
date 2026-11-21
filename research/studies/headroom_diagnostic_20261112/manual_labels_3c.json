@@ -1,0 +1,602 @@
+{
+ "00-v3-openai-r0:R2": {
+  "episode": "00-v3-openai-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1 with service_info",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "01-h4-openai-r0:R2": {
+  "episode": "01-h4-openai-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "topic name is in the task text; could join R1 with node_list",
+  "sentence": "Issue every call whose arguments you already know in the same response."
+ },
+ "01-h4-openai-r0:R5": {
+  "episode": "01-h4-openai-r0",
+  "request": 5,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "param_list on publishers found in R4's result, optional step (parameter name is in the task); depends on preceding result",
+  "sentence": null
+ },
+ "07-v4-openai-r0:R2": {
+  "episode": "07-v4-openai-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "20-v2-openai-r0:R2": {
+  "episode": "20-v2-openai-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "21-h3-openai-r0:R2": {
+  "episode": "21-h3-openai-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "topic name is in the task text; could join R1",
+  "sentence": "Issue every call whose arguments you already know in the same response."
+ },
+ "26-v2-openai-r1:R2": {
+  "episode": "26-v2-openai-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "32-v4-openai-r1:R2": {
+  "episode": "32-v4-openai-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "40-u2-openai-r1:R2": {
+  "episode": "40-u2-openai-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "topic name is in the task text; could join R1 with node_list",
+  "sentence": "Issue every call whose arguments you already know in the same response."
+ },
+ "41-h4-openai-r1:R2": {
+  "episode": "41-h4-openai-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "topic name is in the task text; could join R1",
+  "sentence": "Issue every call whose arguments you already know in the same response."
+ },
+ "41-h4-openai-r1:R5": {
+  "episode": "41-h4-openai-r1",
+  "request": 5,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "param_list retry after guessed names failed in R4; the real names arrived in R4's own topic_info result; optional step; depends on preceding result",
+  "sentence": null
+ },
+ "42-u4-openai-r1:R4": {
+  "episode": "42-u4-openai-r1",
+  "request": 4,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "param_list on a node found in R3's result, optional step; depends on preceding result",
+  "sentence": null
+ },
+ "43-v3-openai-r1:R2": {
+  "episode": "43-v3-openai-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "03-h2-ollama-r0:R3": {
+  "episode": "03-h2-ollama-r0",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "corrected call after short-name failure; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "03-h2-ollama-r0:R4": {
+  "episode": "03-h2-ollama-r0",
+  "request": 4,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R3",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "05-u4-ollama-r0:R4": {
+  "episode": "05-u4-ollama-r0",
+  "request": 4,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "node_info on the upstream node, optional step; name first appears in R3's result",
+  "sentence": null
+ },
+ "05-u4-ollama-r0:R5": {
+  "episode": "05-u4-ollama-r0",
+  "request": 5,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "param_list on a node known from R3's result; could join R4",
+  "sentence": "Issue every call whose arguments you already know in the same response."
+ },
+ "11-v4-ollama-r0:R2": {
+  "episode": "11-v4-ollama-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "11-v4-ollama-r0:R4": {
+  "episode": "11-v4-ollama-r0",
+  "request": 4,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "names known from R2; second node_info batch could join R3",
+  "sentence": "When you must inspect many known entities, request them all in one response."
+ },
+ "11-v4-ollama-r0:R5": {
+  "episode": "11-v4-ollama-r0",
+  "request": 5,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "names known from R2; third node_info batch could join R3",
+  "sentence": "When you must inspect many known entities, request them all in one response."
+ },
+ "13-v2-ollama-r0:R2": {
+  "episode": "13-v2-ollama-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "13-v2-ollama-r0:R4": {
+  "episode": "13-v2-ollama-r0",
+  "request": 4,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R1 service_info",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "13-v2-ollama-r0:R5": {
+  "episode": "13-v2-ollama-r0",
+  "request": 5,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "14-h4-ollama-r0:R4": {
+  "episode": "14-h4-ollama-r0",
+  "request": 4,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "param_list on publishers found in R3's result, optional step; depends on preceding result",
+  "sentence": null
+ },
+ "14-h4-ollama-r0:R6": {
+  "episode": "14-h4-ollama-r0",
+  "request": 6,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an R5 param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "16-h3-ollama-r0:R3": {
+  "episode": "16-h3-ollama-r0",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list after short-name failure; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "16-h3-ollama-r0:R4": {
+  "episode": "16-h3-ollama-r0",
+  "request": 4,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "re-issue of the failed call with the full name; same failure chain",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "17-v3-ollama-r0:R2": {
+  "episode": "17-v3-ollama-r0",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "22-u2-ollama-r0:R3": {
+  "episode": "22-u2-ollama-r0",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list after 'Node not found' for a short name; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "22-u2-ollama-r0:R4": {
+  "episode": "22-u2-ollama-r0",
+  "request": 4,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "re-issue of the failed call with the full name; same failure chain",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "22-u2-ollama-r0:R5": {
+  "episode": "22-u2-ollama-r0",
+  "request": 5,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R4",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "22-u2-ollama-r0:R6": {
+  "episode": "22-u2-ollama-r0",
+  "request": 6,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "25-h2-ollama-r1:R3": {
+  "episode": "25-h2-ollama-r1",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "corrected call after short-name failure; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "25-h2-ollama-r1:R4": {
+  "episode": "25-h2-ollama-r1",
+  "request": 4,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R3",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "27-h4-ollama-r1:R4": {
+  "episode": "27-h4-ollama-r1",
+  "request": 4,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "param_list on publishers found in R3's result, optional step; depends on preceding result",
+  "sentence": null
+ },
+ "27-h4-ollama-r1:R6": {
+  "episode": "27-h4-ollama-r1",
+  "request": 6,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an R5 param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "28-v3-ollama-r1:R2": {
+  "episode": "28-v3-ollama-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "29-u3-ollama-r1:R3": {
+  "episode": "29-u3-ollama-r1",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "corrected call after short-name failure; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "29-u3-ollama-r1:R5": {
+  "episode": "29-u3-ollama-r1",
+  "request": 5,
+  "cat": "P3",
+  "of": "O",
+  "sat": true,
+  "p4_unneeded": false,
+  "note": "after R4 every requested field (publisher, input topic, upstream) is already held; P3 by the 'requirements satisfied' clause",
+  "sentence": "Stop and answer as soon as every requested field has a value from a tool result."
+ },
+ "29-u3-ollama-r1:R6": {
+  "episode": "29-u3-ollama-r1",
+  "request": 6,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R3 node_info",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "35-v4-ollama-r1:R2": {
+  "episode": "35-v4-ollama-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "35-v4-ollama-r1:R4": {
+  "episode": "35-v4-ollama-r1",
+  "request": 4,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "names known from R2; second node_info batch could join R3",
+  "sentence": "When you must inspect many known entities, request them all in one response."
+ },
+ "35-v4-ollama-r1:R5": {
+  "episode": "35-v4-ollama-r1",
+  "request": 5,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "names known from R2; third node_info batch could join R3",
+  "sentence": "When you must inspect many known entities, request them all in one response."
+ },
+ "37-v2-ollama-r1:R2": {
+  "episode": "37-v2-ollama-r1",
+  "request": 2,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list takes no arguments; could join R1",
+  "sentence": "Make lookups that need no arguments in the same response as your first lookup."
+ },
+ "37-v2-ollama-r1:R4": {
+  "episode": "37-v2-ollama-r1",
+  "request": 4,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R1 service_info",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "37-v2-ollama-r1:R5": {
+  "episode": "37-v2-ollama-r1",
+  "request": 5,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "38-u2-ollama-r1:R3": {
+  "episode": "38-u2-ollama-r1",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list after 'Node not found' for a short name; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "38-u2-ollama-r1:R4": {
+  "episode": "38-u2-ollama-r1",
+  "request": 4,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "re-issue of the failed call with the full name; same failure chain",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "38-u2-ollama-r1:R5": {
+  "episode": "38-u2-ollama-r1",
+  "request": 5,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of R4",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "38-u2-ollama-r1:R6": {
+  "episode": "38-u2-ollama-r1",
+  "request": 6,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "44-h3-ollama-r1:R3": {
+  "episode": "44-h3-ollama-r1",
+  "request": 3,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "node_list after short-name failure; namespace was in R1's result",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "44-h3-ollama-r1:R4": {
+  "episode": "44-h3-ollama-r1",
+  "request": 4,
+  "cat": "P1",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "re-issue of the failed call with the full name; same failure chain",
+  "sentence": "Build full node names as namespace plus name from earlier results; never pass a bare name."
+ },
+ "46-u4-ollama-r1:R4": {
+  "episode": "46-u4-ollama-r1",
+  "request": 4,
+  "cat": "P4",
+  "of": null,
+  "sat": false,
+  "p4_unneeded": true,
+  "note": "node_info on the upstream node, optional step; name first appears in R3's result",
+  "sentence": null
+ },
+ "46-u4-ollama-r1:R5": {
+  "episode": "46-u4-ollama-r1",
+  "request": 5,
+  "cat": "P2",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "param_list on a node known from R3's result; could join R4",
+  "sentence": "Issue every call whose arguments you already know in the same response."
+ },
+ "46-u4-ollama-r1:R7": {
+  "episode": "46-u4-ollama-r1",
+  "request": 7,
+  "cat": "P3",
+  "of": "O",
+  "sat": true,
+  "p4_unneeded": false,
+  "note": "after R6 every requested field incl. upstream_gain is held; yarrow's gain is not requested; P3 by the 'requirements satisfied' clause",
+  "sentence": "Stop and answer as soon as every requested field has a value from a tool result."
+ },
+ "46-u4-ollama-r1:R8": {
+  "episode": "46-u4-ollama-r1",
+  "request": 8,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an earlier param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "46-u4-ollama-r1:R9": {
+  "episode": "46-u4-ollama-r1",
+  "request": 9,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an earlier param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "46-u4-ollama-r1:R10": {
+  "episode": "46-u4-ollama-r1",
+  "request": 10,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an earlier param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "46-u4-ollama-r1:R11": {
+  "episode": "46-u4-ollama-r1",
+  "request": 11,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an earlier param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ },
+ "46-u4-ollama-r1:R12": {
+  "episode": "46-u4-ollama-r1",
+  "request": 12,
+  "cat": "P3",
+  "of": "O",
+  "sat": false,
+  "p4_unneeded": false,
+  "note": "exact repeat of an earlier param_get",
+  "sentence": "Do not repeat a call whose successful result is already in the conversation."
+ }
+}

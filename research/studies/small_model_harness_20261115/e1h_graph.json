@@ -1,0 +1,186 @@
+{
+ "namespace": "/e1h",
+ "seed": 20261115,
+ "nodes": [
+  {
+   "key": "n00",
+   "name": "sorrel",
+   "namespace": "/e1h/basalt",
+   "fqn": "/e1h/basalt/sorrel",
+   "params": {
+    "mode": "fast",
+    "limit": 891
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n01",
+   "name": "sorrel",
+   "namespace": "/e1h/cobalt",
+   "fqn": "/e1h/cobalt/sorrel",
+   "params": {
+    "mode": "slow",
+    "limit": 241
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n02",
+   "name": "zircon",
+   "namespace": "/e1h/basalt",
+   "fqn": "/e1h/basalt/zircon",
+   "params": {
+    "gain": 56
+   },
+   "pubs": [
+    {
+     "name": "/e1h/cinder_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n03",
+   "name": "zircon",
+   "namespace": "/e1h/cobalt",
+   "fqn": "/e1h/cobalt/zircon",
+   "params": {
+    "gain": 90
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/e1h/cinder_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n04",
+   "name": "mistral",
+   "namespace": "/e1h/ember",
+   "fqn": "/e1h/ember/mistral",
+   "params": {
+    "limit": 279
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n05",
+   "name": "pewter",
+   "namespace": "/e1h/alder",
+   "fqn": "/e1h/alder/pewter",
+   "params": {
+    "rate": 657
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n06",
+   "name": "quasar",
+   "namespace": "/e1h",
+   "fqn": "/e1h/quasar",
+   "params": {
+    "level": 30
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n07",
+   "name": "umber",
+   "namespace": "/e1h",
+   "fqn": "/e1h/umber",
+   "params": {
+    "setpoint": 144
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n08",
+   "name": "willow",
+   "namespace": "/e1h",
+   "fqn": "/e1h/willow",
+   "params": {
+    "mode": "idle"
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n09",
+   "name": "thistle",
+   "namespace": "/e1h",
+   "fqn": "/e1h/thistle",
+   "params": {
+    "flow": 725
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n10",
+   "name": "saffron",
+   "namespace": "/e1h/misc",
+   "fqn": "/e1h/misc/saffron",
+   "params": {
+    "gain": 64
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n11",
+   "name": "orchid",
+   "namespace": "/e1h/misc",
+   "fqn": "/e1h/misc/orchid",
+   "params": {
+    "gain": 11
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n12",
+   "name": "marlin",
+   "namespace": "/e1h/misc",
+   "fqn": "/e1h/misc/marlin",
+   "params": {
+    "gain": 56
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n13",
+   "name": "dahlia",
+   "namespace": "/e1h/misc",
+   "fqn": "/e1h/misc/dahlia",
+   "params": {
+    "gain": 81
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  }
+ ]
+}

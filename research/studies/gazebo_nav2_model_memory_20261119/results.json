@@ -1,0 +1,306 @@
+{
+ "started": "2026-11-19T10:58:31+0800",
+ "gpu_total_mib": 8188,
+ "nproc": 12,
+ "baseline": {
+  "gpu_used_mib": 0,
+  "ram_used_mib": 2951,
+  "ram_total_mib": 15612,
+  "load1": 0.5546875
+ },
+ "models": {
+  "lfm3:1.7b": {
+   "A_loaded": {
+    "size_mib": 1573,
+    "size_vram_mib": 1573,
+    "context_length": 65536,
+    "gpu_used_mib": 2461,
+    "ram_used_mib": 2940,
+    "ram_total_mib": 15612,
+    "load1": 0.51025390625
+   },
+   "A_inference_no_stack": {
+    "prompt_tokens": 5647,
+    "new_tokens": 200,
+    "tokens_per_second": 152.7,
+    "prompt_tokens_per_second": 22335.1,
+    "seconds": 1.4,
+    "peak_gpu_used_mib": 2465
+   },
+   "A_first_call_including_load": {
+    "prompt_tokens": 5647,
+    "new_tokens": 163,
+    "tokens_per_second": 153.1,
+    "prompt_tokens_per_second": 7381.5,
+    "seconds": 4.2
+   },
+   "B_stack_start": {
+    "returncode": 0,
+    "seconds": 2.4,
+    "tail": [
+     "Started supervisor 32792; log /tmp/rosa-tb3-nav2-owned/supervisor.log; marker 20d9d35d5d104186837d00d1cd074983"
+    ]
+   },
+   "B_with_stack": {
+    "gpu_used_mib": 2596,
+    "ram_used_mib": 3330,
+    "ram_total_mib": 15612,
+    "load1": 5.12158203125
+   },
+   "C_inference_with_stack": {
+    "prompt_tokens": 5647,
+    "new_tokens": 200,
+    "tokens_per_second": 143.8,
+    "prompt_tokens_per_second": 10834.2,
+    "seconds": 1.8,
+    "peak_gpu_used_mib": 2596
+   },
+   "C_navigation": {
+    "returncode": 0,
+    "seconds": 11.1,
+    "tail": [
+     "last odometry 0.26 0.001",
+     "NAVIGATION PASS",
+     "[WARN] [1795057188.211124788] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.",
+     "[WARN] [1795057188.211145605] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored."
+    ]
+   },
+   "C_navigation_passed": true,
+   "D_stack_stop": {
+    "returncode": 0,
+    "seconds": 10.3,
+    "tail": [
+     "STOP PASS remaining []"
+    ]
+   },
+   "D_after": {
+    "gpu_used_mib": 0,
+    "ram_used_mib": 2944,
+    "ram_total_mib": 15612,
+    "load1": 4.26708984375,
+    "still_loaded": []
+   },
+   "failures": []
+  },
+  "bonsai-2:4b": {
+   "A_loaded": {
+    "size_mib": 3609,
+    "size_vram_mib": 3609,
+    "context_length": 65536,
+    "gpu_used_mib": 4087,
+    "ram_used_mib": 2929,
+    "ram_total_mib": 15612,
+    "load1": 3.92529296875
+   },
+   "A_inference_no_stack": {
+    "prompt_tokens": 5318,
+    "new_tokens": 57,
+    "tokens_per_second": 106.7,
+    "prompt_tokens_per_second": 140945.1,
+    "seconds": 0.5,
+    "peak_gpu_used_mib": 4087
+   },
+   "A_first_call_including_load": {
+    "prompt_tokens": 5318,
+    "new_tokens": 57,
+    "tokens_per_second": 104.7,
+    "prompt_tokens_per_second": 3357.2,
+    "seconds": 5.4
+   },
+   "B_stack_start": {
+    "returncode": 0,
+    "seconds": 1.2,
+    "tail": [
+     "Started supervisor 33535; log /tmp/rosa-tb3-nav2-owned/supervisor.log; marker a1691bfa57dc4bba872153c4650ea591"
+    ]
+   },
+   "B_with_stack": {
+    "gpu_used_mib": 4217,
+    "ram_used_mib": 3314,
+    "ram_total_mib": 15612,
+    "load1": 4.13623046875
+   },
+   "C_inference_with_stack": {
+    "prompt_tokens": 5318,
+    "new_tokens": 57,
+    "tokens_per_second": 88.2,
+    "prompt_tokens_per_second": 15446.8,
+    "seconds": 0.9,
+    "peak_gpu_used_mib": 4217
+   },
+   "C_navigation": {
+    "returncode": 0,
+    "seconds": 11.3,
+    "tail": [
+     "last odometry 0.258 0.002",
+     "NAVIGATION PASS",
+     "[WARN] [1795057290.433001908] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.",
+     "[WARN] [1795057290.433030462] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored."
+    ]
+   },
+   "C_navigation_passed": true,
+   "D_stack_stop": {
+    "returncode": 0,
+    "seconds": 13.0,
+    "tail": [
+     "STOP PASS remaining []"
+    ]
+   },
+   "D_after": {
+    "gpu_used_mib": 0,
+    "ram_used_mib": 2967,
+    "ram_total_mib": 15612,
+    "load1": 3.26513671875,
+    "still_loaded": []
+   },
+   "failures": []
+  },
+  "qwen3.5:9b": {
+   "A_loaded": {
+    "size_mib": 8340,
+    "size_vram_mib": 5375,
+    "context_length": 65536,
+    "gpu_used_mib": 6383,
+    "ram_used_mib": 2915,
+    "ram_total_mib": 15612,
+    "load1": 2.541015625
+   },
+   "A_inference_no_stack": {
+    "prompt_tokens": 5318,
+    "new_tokens": 53,
+    "tokens_per_second": 12.1,
+    "prompt_tokens_per_second": 28204.6,
+    "seconds": 7.5,
+    "peak_gpu_used_mib": 6383
+   },
+   "A_first_call_including_load": {
+    "prompt_tokens": 5318,
+    "new_tokens": 53,
+    "tokens_per_second": 14.8,
+    "prompt_tokens_per_second": 1212.4,
+    "seconds": 14.8
+   },
+   "B_stack_start": {
+    "returncode": 0,
+    "seconds": 1.3,
+    "tail": [
+     "Started supervisor 34329; log /tmp/rosa-tb3-nav2-owned/supervisor.log; marker f77ab630d6ea49e19bc73461f03e0054"
+    ]
+   },
+   "B_with_stack": {
+    "gpu_used_mib": 6512,
+    "ram_used_mib": 3317,
+    "ram_total_mib": 15612,
+    "load1": 4.24658203125
+   },
+   "C_inference_with_stack": {
+    "prompt_tokens": 5318,
+    "new_tokens": 53,
+    "tokens_per_second": 9.3,
+    "prompt_tokens_per_second": 8112.8,
+    "seconds": 9.1,
+    "peak_gpu_used_mib": 6512
+   },
+   "C_navigation": {
+    "returncode": 0,
+    "seconds": 12.4,
+    "tail": [
+     "last odometry 0.279 0.001",
+     "NAVIGATION PASS",
+     "[WARN] [1795057412.136642967] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.",
+     "[WARN] [1795057412.136683520] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored."
+    ]
+   },
+   "C_navigation_passed": true,
+   "D_stack_stop": {
+    "returncode": 0,
+    "seconds": 10.1,
+    "tail": [
+     "STOP PASS remaining []"
+    ]
+   },
+   "D_after": {
+    "gpu_used_mib": 0,
+    "ram_used_mib": 2966,
+    "ram_total_mib": 15612,
+    "load1": 3.71923828125,
+    "still_loaded": []
+   },
+   "failures": []
+  },
+  "gpt-oss:20b": {
+   "A_loaded": {
+    "size_mib": 13536,
+    "size_vram_mib": 4524,
+    "context_length": 65536,
+    "gpu_used_mib": 6185,
+    "ram_used_mib": 2873,
+    "ram_total_mib": 15612,
+    "load1": 2.44921875
+   },
+   "A_inference_no_stack": {
+    "prompt_tokens": 5368,
+    "new_tokens": 200,
+    "tokens_per_second": 24.3,
+    "prompt_tokens_per_second": 114480.7,
+    "seconds": 7.5,
+    "peak_gpu_used_mib": 6185
+   },
+   "A_first_call_including_load": {
+    "prompt_tokens": 5368,
+    "new_tokens": 200,
+    "tokens_per_second": 25.5,
+    "prompt_tokens_per_second": 835.2,
+    "seconds": 30.5
+   },
+   "B_stack_start": {
+    "returncode": 0,
+    "seconds": 1.2,
+    "tail": [
+     "Started supervisor 35244; log /tmp/rosa-tb3-nav2-owned/supervisor.log; marker 2547d4be8f1c42188974884930fecc3e"
+    ]
+   },
+   "B_with_stack": {
+    "gpu_used_mib": 6316,
+    "ram_used_mib": 3307,
+    "ram_total_mib": 15612,
+    "load1": 5.17236328125
+   },
+   "C_inference_with_stack": {
+    "prompt_tokens": 5368,
+    "new_tokens": 200,
+    "tokens_per_second": 16.2,
+    "prompt_tokens_per_second": 18832.0,
+    "seconds": 15.1,
+    "peak_gpu_used_mib": 6316
+   },
+   "C_navigation": {
+    "returncode": 0,
+    "seconds": 8.7,
+    "tail": [
+     "last odometry 0.259 0.001",
+     "NAVIGATION PASS",
+     "[WARN] [1795057544.070780656] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.",
+     "[WARN] [1795057544.070832909] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored."
+    ]
+   },
+   "C_navigation_passed": true,
+   "D_stack_stop": {
+    "returncode": 0,
+    "seconds": 10.3,
+    "tail": [
+     "STOP PASS remaining []"
+    ]
+   },
+   "D_after": {
+    "gpu_used_mib": 0,
+    "ram_used_mib": 3077,
+    "ram_total_mib": 15612,
+    "load1": 4.94189453125,
+    "still_loaded": []
+   },
+   "failures": []
+  }
+ },
+ "finished": "2026-11-19T11:06:14+0800"
+}

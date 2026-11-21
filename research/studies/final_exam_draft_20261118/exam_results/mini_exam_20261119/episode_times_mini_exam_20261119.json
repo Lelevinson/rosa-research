@@ -1,0 +1,37 @@
+{
+ "run": "mini_exam_20261119",
+ "machines": [
+  "all"
+ ],
+ "by_system_model": {
+  "E1|lfm3:1.7b": {
+   "n": 2,
+   "median_s": 29.2,
+   "mean_s": 29.2,
+   "max_s": 32.6,
+   "total_s": 58.5
+  },
+  "E1|qwen3.5:9b": {
+   "n": 2,
+   "median_s": 54.6,
+   "mean_s": 54.6,
+   "max_s": 99.0,
+   "total_s": 109.1
+  },
+  "M|lfm3:1.7b": {
+   "n": 2,
+   "median_s": 22.8,
+   "mean_s": 22.8,
+   "max_s": 40.5,
+   "total_s": 45.6
+  },
+  "M|qwen3.5:9b": {
+   "n": 2,
+   "median_s": 33.4,
+   "mean_s": 33.4,
+   "max_s": 47.9,
+   "total_s": 66.9
+  }
+ },
+ "total_minutes": 4.7
+}

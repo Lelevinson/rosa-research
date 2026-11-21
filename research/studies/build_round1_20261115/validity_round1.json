@@ -1,0 +1,41 @@
+{
+ "flagged_episodes": {
+  "gpt-oss_20b-stage3/000-h4-C1+LA-gpt-oss_20b-s2": [
+   "backend_crash"
+  ],
+  "gpt-oss_20b-stage3/001-h4-C1-gpt-oss_20b-s1": [
+   "backend_crash"
+  ],
+  "gpt-oss_20b-e1h/002-e1h_chg_2-C1+LA-gpt-oss_20b-s1": [
+   "missed_hook"
+  ],
+  "gpt-oss_20b-e1h/016-e1h_chg_1-C1-gpt-oss_20b-s1": [
+   "missed_hook"
+  ],
+  "gpt-oss_20b-e1h/030-e1h_chg_2-C1-gpt-oss_20b-s1": [
+   "missed_hook"
+  ]
+ },
+ "flagged_cells": [
+  [
+   "gpt-oss:20b",
+   "e1h_chg_1",
+   1
+  ],
+  [
+   "gpt-oss:20b",
+   "e1h_chg_2",
+   1
+  ],
+  [
+   "gpt-oss:20b",
+   "h4",
+   1
+  ],
+  [
+   "gpt-oss:20b",
+   "h4",
+   2
+  ]
+ ]
+}

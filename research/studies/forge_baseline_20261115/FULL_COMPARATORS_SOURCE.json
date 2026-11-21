@@ -1,0 +1,4732 @@
+[
+  {
+    "run_id": "lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 12,
+    "input_tokens": 114921,
+    "output_tokens": 8388,
+    "native_ops": 12,
+    "wall_seconds": 62.79,
+    "aborts": [
+      "error('multiple repeat at position 2')"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      2,
+      7
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "957241535f294c28eea2ed5b72976662e1fec7b7f97f6c2206c00334f84cad19"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/004-p3-A1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "setpoint": 873
+    },
+    "llm_requests": 5,
+    "input_tokens": 28089,
+    "output_tokens": 959,
+    "native_ops": 4,
+    "wall_seconds": 18.0,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/004-p3-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "d7b9249ca581adfb330ecc7acf4f431fa02f06cb6b2dde106d4403919ee25634"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/012-p3-C1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "setpoint": 873
+    },
+    "llm_requests": 5,
+    "input_tokens": 9836,
+    "output_tokens": 2224,
+    "native_ops": 4,
+    "wall_seconds": 23.21,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/012-p3-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "d65994456cf0f6dab81380742087ee70f73a6fa3333941809879faeba66e802d"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/001-e1h_chg_2-A1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "run"
+    },
+    "llm_requests": 5,
+    "input_tokens": 30344,
+    "output_tokens": 1658,
+    "native_ops": 4,
+    "wall_seconds": 22.86,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 22
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 30
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/001-e1h_chg_2-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "96aae6b2eb2b6e57101a4e0369b881ee6ceb384ae34548f9b53786f5028d8514"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/002-e1h_amb_1-A1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/sorrel",
+      "limit": 891
+    },
+    "llm_requests": 14,
+    "input_tokens": 101491,
+    "output_tokens": 3859,
+    "native_ops": 13,
+    "wall_seconds": 42.8,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/002-e1h_amb_1-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "13f13555301a423a4138b7927fe59ef4f615c8b61e8ae8b919c837a9c72ecc76"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/005-e1h_amb_2-C1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 6,
+    "input_tokens": 20457,
+    "output_tokens": 2281,
+    "native_ops": 5,
+    "wall_seconds": 23.46,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/005-e1h_amb_2-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "cf4bd2237dd4780ac4d901f5e96cf7cb8a8b3f62a7842f2dcc3369fbf4fcc9e6"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/008-e1h_abs_2-A1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 9901,
+    "output_tokens": 108,
+    "native_ops": 1,
+    "wall_seconds": 3.27,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/008-e1h_abs_2-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "1890a347b2bff995464b979a9a6d6b8c282c27a0c8c827707e1be1816027930d"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/010-e1h_abs_1-C1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 3523,
+    "output_tokens": 271,
+    "native_ops": 1,
+    "wall_seconds": 4.12,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/010-e1h_abs_1-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "3e0ec1c41439740ea3a30d63efbd68dcdd9101ec36df0dc690d1617f4b16c35d"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/013-e1h_amb_2-A1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/zircon",
+      "gain": 56
+    },
+    "llm_requests": 6,
+    "input_tokens": 36720,
+    "output_tokens": 2409,
+    "native_ops": 7,
+    "wall_seconds": 24.91,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/013-e1h_amb_2-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "d414853defbb6cd698850b20b1f33773db45376bc510f5fc2be2aabf4e956abc"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/019-e1h_abs_1-A1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/e1h/ember/mistral",
+      "running": true,
+      "limit": 279
+    },
+    "llm_requests": 6,
+    "input_tokens": 34608,
+    "output_tokens": 2785,
+    "native_ops": 5,
+    "wall_seconds": 23.96,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/019-e1h_abs_1-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "7feb706a3a01b0094492e551fdd1c7cc0d42f746806f61e743849f86aaa3debc"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/021-e1h_abs_2-A1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 10290,
+    "output_tokens": 677,
+    "native_ops": 1,
+    "wall_seconds": 6.63,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/021-e1h_abs_2-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "566f43608d94f7f815a9f54ad3b833ba4d28bfab37c3d1fd3305eed8f36e29f3"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/023-e1h_chg_1-A1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 4,
+    "input_tokens": 24286,
+    "output_tokens": 1661,
+    "native_ops": 5,
+    "wall_seconds": 27.37,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 11
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 32
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/023-e1h_chg_1-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "0e61fbf966dde2d60662c3f9a18b481f74e36ef7b47506abbf0ee67a4a03d1c5"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/032-e1h_abs_2-C1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 3542,
+    "output_tokens": 379,
+    "native_ops": 1,
+    "wall_seconds": 4.67,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/032-e1h_abs_2-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "2e2afe1ae338cca8e3950164be0ca81adc943cd91edf35dc0833e7f61ced975a"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/035-e1h_amb_2-C1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 4,
+    "input_tokens": 9419,
+    "output_tokens": 1143,
+    "native_ops": 3,
+    "wall_seconds": 12.64,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/035-e1h_amb_2-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "0fca8c62720b7c2a6e6a49081badc649b04c4d2e52b98249d6887ecb615b8480"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/036-e1h_chg_2-A1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "run"
+    },
+    "llm_requests": 4,
+    "input_tokens": 22477,
+    "output_tokens": 995,
+    "native_ops": 5,
+    "wall_seconds": 18.9,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 15
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 32
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/036-e1h_chg_2-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "ae001eee8633100b7e1312cfe2bd751bb007f725b668a0e85c18446a824f3934"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/041-e1h_abs_1-C1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 3526,
+    "output_tokens": 234,
+    "native_ops": 1,
+    "wall_seconds": 3.87,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/041-e1h_abs_1-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "ac26a7dcf324a28d29284d8d586fc8d089ceefb8a4e87aa02b1f9dc8a25c05e4"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/045-e1h_amb_1-A1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/sorrel",
+      "limit": 891
+    },
+    "llm_requests": 7,
+    "input_tokens": 40536,
+    "output_tokens": 1372,
+    "native_ops": 6,
+    "wall_seconds": 22.06,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/045-e1h_amb_1-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "21d51448ee6b25fde446946cc7c1d69fd1df58e8a3fdd37d352024cc70caa4b0"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/053-e1h_chg_1-A1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 5,
+    "input_tokens": 27940,
+    "output_tokens": 1257,
+    "native_ops": 5,
+    "wall_seconds": 27.72,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 11
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 34
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/053-e1h_chg_1-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "76a7d6b148c1b707a379370ec4dc7e2226d466680d9bab7ceae7107d25645af1"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/054-e1h_amb_2-A1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/zircon",
+      "gain": 56
+    },
+    "llm_requests": 5,
+    "input_tokens": 29752,
+    "output_tokens": 1528,
+    "native_ops": 4,
+    "wall_seconds": 16.2,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/054-e1h_amb_2-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "9b4c13bf1fcfec6cfde54277df91dae4fd5a43db267907c254c50aa47b7f4df1"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/061-e1h_chg_2-C1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 3,
+    "input_tokens": 5991,
+    "output_tokens": 721,
+    "native_ops": 5,
+    "wall_seconds": 21.96,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 27
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 36
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/061-e1h_chg_2-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "ab4ff34025cccabb93a22feb4d5ec2e96a13b986d21be5cd324122e814ca2980"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/065-e1h_chg_1-C1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 3,
+    "input_tokens": 5499,
+    "output_tokens": 274,
+    "native_ops": 3,
+    "wall_seconds": 14.24,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 16
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 25
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/065-e1h_chg_1-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "e8f00d8822f9277e1ce1899fd0044368d738dc829a7c29fd72223145f2211448"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/067-e1h_abs_1-A1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 3,
+    "input_tokens": 14970,
+    "output_tokens": 171,
+    "native_ops": 2,
+    "wall_seconds": 3.92,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/067-e1h_abs_1-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "afda68e67ee78150d44cd3314c9df754fb7d25d5dec7c41ec32d436d3487e3f7"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/071-e1h_amb_1-C1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 5,
+    "input_tokens": 14111,
+    "output_tokens": 1655,
+    "native_ops": 9,
+    "wall_seconds": 28.32,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/071-e1h_amb_1-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "3a124ddff67b68a792ba0a0ad73829c8badd01d2a06cfaa6e7408ab5b75b1186"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/072-e1h_chg_1-C1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 3,
+    "input_tokens": 5744,
+    "output_tokens": 467,
+    "native_ops": 3,
+    "wall_seconds": 14.94,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 16
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 28
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/072-e1h_chg_1-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "bdd8b560d6a2debe370561a0d6072b87d8bd9e10e86d2f1ce9c9cad94bf9a37b"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/077-e1h_abs_2-C1-lfm3_1.7b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 3453,
+    "output_tokens": 233,
+    "native_ops": 1,
+    "wall_seconds": 3.97,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/077-e1h_abs_2-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "bced00dc0a427eb074b57d359c9a09f346bd8ca4844d4501c2190846c5e284bf"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/079-e1h_chg_2-C1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 5,
+    "input_tokens": 16524,
+    "output_tokens": 2268,
+    "native_ops": 5,
+    "wall_seconds": 31.47,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 30
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 42
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/079-e1h_chg_2-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "15ed43befec075b6f9b42a639ae7cfa3be2881b9bf0122fee72c5bcab1c6a857"
+  },
+  {
+    "run_id": "lfm3_1.7b-e1h/087-e1h_amb_1-C1-lfm3_1.7b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 8,
+    "input_tokens": 23723,
+    "output_tokens": 1322,
+    "native_ops": 8,
+    "wall_seconds": 25.76,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/087-e1h_amb_1-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "7522a98ea25fb1766a403c9dc67736f78cf8ed34c18d32acd15fc3151a0bc768"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/017-v2-C1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "/plant32/cedar_reset": "std_srvs/srv/Trigger\n"
+    },
+    "llm_requests": 3,
+    "input_tokens": 8037,
+    "output_tokens": 4362,
+    "native_ops": 2,
+    "wall_seconds": 30.07,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/017-v2-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "bf6b41ce29be6c6a77006052c99b7c13805990bc7ae2d928c805f34f90226df2"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/020-v2-A1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 14,
+    "input_tokens": 211108,
+    "output_tokens": 17775,
+    "native_ops": 13,
+    "wall_seconds": 130.86,
+    "aborts": [
+      "1 validation error for ros2_service_call\nrequest\n  Input should be a valid string [type=string_type, input_value={}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      2,
+      7
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/020-v2-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "7082fc1d93402667cbbfc141511885cd2ef20c58bda19d3e829740a12c8cb3c1"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/026-h4-A1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "llm_requests": 11,
+    "input_tokens": 81367,
+    "output_tokens": 3540,
+    "native_ops": 12,
+    "wall_seconds": 36.68,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/026-h4-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "a8fd9f8895a7d1f932e0204d5697f001b2d1c598d28dd96d2659eca30f2fb37a"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/029-u3-A1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 8,
+    "input_tokens": 50800,
+    "output_tokens": 2573,
+    "native_ops": 7,
+    "wall_seconds": 21.81,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/029-u3-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "85288f4fb81f4c9b51810eff80c03145aac63695bde6ccfa1dfa0eaa7cbea762"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/031-h4-C1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 7,
+    "input_tokens": 30962,
+    "output_tokens": 4220,
+    "native_ops": 12,
+    "wall_seconds": 40.94,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/031-h4-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "2d8eb8ba52f0b146345f91bee3709fd52196b31cafbb7c963e820d389f322d04"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/034-v2-C1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 17,
+    "input_tokens": 144687,
+    "output_tokens": 12325,
+    "native_ops": 33,
+    "wall_seconds": 97.9,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "tool_exception",
+        "tool": "ros2_node_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 106
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/034-v2-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "309152e9a253998410734017fe935fd11c7e392516e251c23d81540ae838f3e5"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/035-p3-C1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 9242,
+    "output_tokens": 1640,
+    "native_ops": 3,
+    "wall_seconds": 19.0,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/035-p3-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "b421377962d2a71df0235e6806e225f0d40a539968326d38e07dcdb23ffba8f8"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/040-u3-A1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 9,
+    "input_tokens": 67677,
+    "output_tokens": 3876,
+    "native_ops": 8,
+    "wall_seconds": 30.32,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/040-u3-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "6585eccc9161f440b62de182e2b0e4743661ebbc9c0ddccc5173f5b467818e68"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/043-u3-C1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 7,
+    "input_tokens": 22259,
+    "output_tokens": 2850,
+    "native_ops": 6,
+    "wall_seconds": 22.56,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/043-u3-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "1b234f5fff3fa48b8ce6215a1b6a6b2019d9238a8c980efc450433d944b1e5a8"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/045-u3-C1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 8,
+    "input_tokens": 31791,
+    "output_tokens": 2134,
+    "native_ops": 7,
+    "wall_seconds": 18.5,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/045-u3-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "c8f3fedc85b686aaf067e48fec332bfc4c0f29077febad9ec98ee5986a04bcbb"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/046-h4-A1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "llm_requests": 8,
+    "input_tokens": 64170,
+    "output_tokens": 5761,
+    "native_ops": 11,
+    "wall_seconds": 49.96,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/046-h4-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "4e6bd5d60cb4056140e34c926fcd5df15728cf096a31cd7a4b8d3555db72c3b1"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/048-h4-C1-lfm3_1.7b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 9,
+    "input_tokens": 36465,
+    "output_tokens": 4902,
+    "native_ops": 10,
+    "wall_seconds": 38.49,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/048-h4-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "cf8648ba3087639f733b563b876e0c50c4b30d484f084bcc9b2790ffe6d80b84"
+  },
+  {
+    "run_id": "lfm3_1.7b-stage3/052-p3-A1-lfm3_1.7b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "setpoint": 694
+    },
+    "llm_requests": 5,
+    "input_tokens": 27247,
+    "output_tokens": 381,
+    "native_ops": 4,
+    "wall_seconds": 10.69,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      10,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/052-p3-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "71b65a35028250fb6d2bed33b02a6457094434d4115ef30e7caf12202482c98b"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/000-e1h_chg_2-A1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "run"
+    },
+    "llm_requests": 5,
+    "input_tokens": 29504,
+    "output_tokens": 432,
+    "native_ops": 4,
+    "wall_seconds": 51.49,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 10
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 30
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/000-e1h_chg_2-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "6a0093a20b68734b6fb562302f9aacb54eb59389630b6cb774311802970da5a1"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/001-e1h_abs_1-A1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 11157,
+    "output_tokens": 48,
+    "native_ops": 1,
+    "wall_seconds": 6.53,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/001-e1h_abs_1-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "6ff3716f688aaf2d422bb478a2206cf67ce7a9699a9c65061c82c9b1e4d43028"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/001-p3-C1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 9020,
+    "output_tokens": 386,
+    "native_ops": 3,
+    "wall_seconds": 34.51,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/001-p3-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "12ea9959663a5e0e2c394675ad7a9d421dc8dce628d1c8e2d873aecdd142e6c2"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/003-p3-A1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 23238,
+    "output_tokens": 432,
+    "native_ops": 3,
+    "wall_seconds": 47.44,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/003-p3-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "b490a54897f1b44395bc2ef28a2bbdf3206f078878eb43c63f788f96b653a7dc"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/008-u3-C1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 5,
+    "input_tokens": 13954,
+    "output_tokens": 605,
+    "native_ops": 4,
+    "wall_seconds": 46.6,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/008-u3-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "71d80e9745e1301da4eeba70aac7703d05d5b89ce41e517fde14dfaea36e4c40"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/009-h4-C1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 8,
+    "input_tokens": 27477,
+    "output_tokens": 1161,
+    "native_ops": 13,
+    "wall_seconds": 102.99,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/009-h4-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "a9a4e0d4a4c27a0bb281a811cffe97d583b65172be033d268a1704b6fb5fc7e3"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/018-h4-C1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 8,
+    "input_tokens": 27618,
+    "output_tokens": 1194,
+    "native_ops": 13,
+    "wall_seconds": 104.85,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/018-h4-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "0d7d172611614ff6c5885ec2ddebccd9f53302917b4eea18d1b3d6e493a46a90"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/021-v2-C1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 5,
+    "input_tokens": 22010,
+    "output_tokens": 568,
+    "native_ops": 22,
+    "wall_seconds": 58.62,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/021-v2-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "efe68ea23d43c6e685617ae4b11a35c261567fec662b88a485e98700988ce388"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/023-u3-C1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 4,
+    "input_tokens": 10403,
+    "output_tokens": 426,
+    "native_ops": 3,
+    "wall_seconds": 32.15,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/023-u3-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "ab7385985d5cfcd6d7aa9c7bd70216f1c0a9f648bf4d97c92fbd3000f7510623"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/026-v2-A1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 4,
+    "input_tokens": 27561,
+    "output_tokens": 522,
+    "native_ops": 21,
+    "wall_seconds": 61.77,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/026-v2-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "20f3752fd7bcb9f08f43d79dec670e7eaeaa82daf831dec2dd46bef8899aeb5d"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/029-v2-A1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 7,
+    "input_tokens": 64921,
+    "output_tokens": 846,
+    "native_ops": 23,
+    "wall_seconds": 96.11,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/029-v2-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "c606f7ae89942d4e3e896c65e4b7eecfa28422bb81b1f0a4627c08020b4147cf"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/032-u3-A1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 5,
+    "input_tokens": 31154,
+    "output_tokens": 509,
+    "native_ops": 4,
+    "wall_seconds": 46.19,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/032-u3-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "34d1cc259863a3e3f4fc623d98e24dc0d8cd299dea8a82a492d18b72bd33a9f2"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/035-h4-A1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "llm_requests": 5,
+    "input_tokens": 33737,
+    "output_tokens": 846,
+    "native_ops": 8,
+    "wall_seconds": 85.19,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/035-h4-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "6d5d297e2b1400ff0f58c3a10d83b490e3614eea59f8e34f1fd311b3f7639d4b"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/037-u3-A1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 9,
+    "input_tokens": 60485,
+    "output_tokens": 770,
+    "native_ops": 7,
+    "wall_seconds": 70.61,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/037-u3-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "d5f3b8b2da104ad2f0ad9f2c19a099f999abb8e02f979c1237b7706f854c914a"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/038-p3-A1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 694
+    },
+    "llm_requests": 3,
+    "input_tokens": 17085,
+    "output_tokens": 170,
+    "native_ops": 3,
+    "wall_seconds": 23.57,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      10,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/038-p3-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "58c12713647c758fd06adbcd2205ee9bd5154cc3c49b585cbaf4f584ea8bb094"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/041-p3-C1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 8715,
+    "output_tokens": 314,
+    "native_ops": 3,
+    "wall_seconds": 32.0,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/041-p3-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "84402978b17ba00d837914513865bba5620fc520475eecdb5eedbbf43eb52f04"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/052-v2-C1-qwen3.5_9b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 5,
+    "input_tokens": 18217,
+    "output_tokens": 566,
+    "native_ops": 21,
+    "wall_seconds": 57.41,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/052-v2-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "f67ed4ae9accfeac996eced6a58e73c3af5c7afa3211079d6ae46f781e86cac0"
+  },
+  {
+    "run_id": "qwen3.5_9b-stage3/055-h4-A1-qwen3.5_9b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      },
+      "gains": {
+        "/plant32/zephyr": 74,
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89
+      }
+    },
+    "llm_requests": 7,
+    "input_tokens": 51059,
+    "output_tokens": 1337,
+    "native_ops": 14,
+    "wall_seconds": 156.01,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/055-h4-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "474d05ae74744804d1c3eb8e9e5ac5f9a391a4e13af5bfaccc2f0ecdea21479f"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/003-e1h_chg_1-C1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 3,
+    "input_tokens": 6690,
+    "output_tokens": 379,
+    "native_ops": 3,
+    "wall_seconds": 38.91,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 16
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 28
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/003-e1h_chg_1-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "e2633046f70dd3d0b2c925dab91f374624931242db03318632de3571490ee42c"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/010-e1h_abs_2-C1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 4,
+    "input_tokens": 8982,
+    "output_tokens": 420,
+    "native_ops": 3,
+    "wall_seconds": 31.51,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/010-e1h_abs_2-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "1cdd9e3f599c8b3198a9d56e032918c66594c7eb5ccc337caf866f7999eef855"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/013-e1h_amb_1-C1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 5,
+    "input_tokens": 12059,
+    "output_tokens": 602,
+    "native_ops": 6,
+    "wall_seconds": 57.38,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/013-e1h_amb_1-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "d74c62ece1ad4660dfd4e1c42eac745ace5a37d6c8b0a4f458a6507acbe116d3"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/019-e1h_chg_1-A1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 3,
+    "input_tokens": 17093,
+    "output_tokens": 291,
+    "native_ops": 3,
+    "wall_seconds": 35.71,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 14
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 22
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/019-e1h_chg_1-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "479d2cd583f4bcb45997f180863c3c79149d8dd72b8b973d7f026b4f9a0c6f0e"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/026-e1h_abs_1-C1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 4108,
+    "output_tokens": 162,
+    "native_ops": 1,
+    "wall_seconds": 12.85,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/026-e1h_abs_1-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "25510a9bc57447614af55b998cb1d40c9d9eefa4538149e4d03642b208309ea5"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/029-e1h_chg_2-A1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "run"
+    },
+    "llm_requests": 3,
+    "input_tokens": 17260,
+    "output_tokens": 338,
+    "native_ops": 3,
+    "wall_seconds": 35.81,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 14
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 22
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/029-e1h_chg_2-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "b68396d4e1ab6d78b80961c4c7f0b7b171e4cda13b6a74edeb0206c13fb73dc2"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/031-e1h_amb_1-C1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 8,
+    "input_tokens": 22530,
+    "output_tokens": 793,
+    "native_ops": 8,
+    "wall_seconds": 72.61,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/031-e1h_amb_1-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "a7e249fd55ac2a88eab780ac86265aebe297d339a330934996df11ebe2820d00"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/032-e1h_chg_1-C1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 3,
+    "input_tokens": 6689,
+    "output_tokens": 395,
+    "native_ops": 3,
+    "wall_seconds": 39.37,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 16
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 28
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/032-e1h_chg_1-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "8bfcbca08fb7f2acb8687f741d89527eeac76a87f5c9c664947a81557bc2333c"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/038-e1h_abs_2-A1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 11198,
+    "output_tokens": 118,
+    "native_ops": 1,
+    "wall_seconds": 11.65,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/038-e1h_abs_2-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "886e38bc4eb959a8843a884de3f9fe36c201b34783aeb493b910246229e82c25"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/041-e1h_amb_2-A1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/zircon",
+      "gain": 56
+    },
+    "llm_requests": 4,
+    "input_tokens": 23837,
+    "output_tokens": 450,
+    "native_ops": 3,
+    "wall_seconds": 41.18,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/041-e1h_amb_2-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "86f9ea676c9ade0ad128ca54a0ffc5764d932d9bd06dfbfb2ce9441b05c3522a"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/044-e1h_chg_2-C1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 4,
+    "input_tokens": 8956,
+    "output_tokens": 438,
+    "native_ops": 3,
+    "wall_seconds": 39.27,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 12
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 31
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/044-e1h_chg_2-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "0c627e1bfb3f582d9dbc51c02978ec7ff657564021462d4726e727bf30ed44a6"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/051-e1h_abs_2-A1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 11162,
+    "output_tokens": 93,
+    "native_ops": 1,
+    "wall_seconds": 9.54,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/051-e1h_abs_2-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "891a127e70a2d7ec8d4d935a5452d5bdab5e2baa60ca79d6fe348390365d0239"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/053-e1h_chg_2-C1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 3,
+    "input_tokens": 6617,
+    "output_tokens": 308,
+    "native_ops": 3,
+    "wall_seconds": 30.46,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 16
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 28
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/053-e1h_chg_2-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "4b42c1603766b7a49e57c1ff61fda507b01ecae503018f0521fefe7043302a02"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/054-e1h_amb_2-C1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 4,
+    "input_tokens": 9937,
+    "output_tokens": 385,
+    "native_ops": 3,
+    "wall_seconds": 32.87,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/054-e1h_amb_2-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "7589c2c2ee84986f1dcddac64bb3e15034389669c4439049a3ee881bf4cfc5af"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/057-e1h_amb_1-A1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/sorrel",
+      "limit": 891
+    },
+    "llm_requests": 5,
+    "input_tokens": 29397,
+    "output_tokens": 583,
+    "native_ops": 6,
+    "wall_seconds": 65.1,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/057-e1h_amb_1-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "fcd5fe59d9ef8d6a47d30fa78580eab91c6ff53119a3769698fc22da9fc2c789"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/058-e1h_chg_1-A1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 3,
+    "input_tokens": 17256,
+    "output_tokens": 364,
+    "native_ops": 3,
+    "wall_seconds": 42.03,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 14
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 22
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/058-e1h_chg_1-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "e5200167fed01d482af0096e3d7ed8c802a6f028d31f377304f23eeb7a7e3042"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/060-e1h_abs_1-C1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 4075,
+    "output_tokens": 100,
+    "native_ops": 1,
+    "wall_seconds": 10.29,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/060-e1h_abs_1-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "329238a1408d2f36b92fd6873961142c2dbd77a5ba045ad067fd140b58259506"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/067-e1h_abs_2-C1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 4080,
+    "output_tokens": 99,
+    "native_ops": 1,
+    "wall_seconds": 9.34,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/067-e1h_abs_2-C1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "c6b8565867bce6b0cb9bb72ce883f4edaa0f271cdca68b16aca4159329570331"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/074-e1h_amb_2-A1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/zircon",
+      "gain": 56
+    },
+    "llm_requests": 5,
+    "input_tokens": 30248,
+    "output_tokens": 502,
+    "native_ops": 4,
+    "wall_seconds": 47.9,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/074-e1h_amb_2-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "4b747cdc33990908c4c088b3f3cd2624a3e4b2611bf781bc571430fdbbeea5ff"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/076-e1h_abs_1-A1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 11193,
+    "output_tokens": 118,
+    "native_ops": 1,
+    "wall_seconds": 12.0,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/076-e1h_abs_1-A1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "0767d8a02e7f53ae0c86686744ec2318d4b4695c3d239864dd9cd2c588042dbe"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/083-e1h_amb_1-A1-qwen3.5_9b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "qwen3.5:9b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/sorrel",
+      "limit": 891
+    },
+    "llm_requests": 6,
+    "input_tokens": 35668,
+    "output_tokens": 754,
+    "native_ops": 7,
+    "wall_seconds": 80.74,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/083-e1h_amb_1-A1-qwen3.5_9b-s1/trace.jsonl",
+    "trace_hash": "5092a01ec4cb020ed07020b6d563836e29384144d86957b718efc6c60b096b76"
+  },
+  {
+    "run_id": "qwen3.5_9b-e1h/086-e1h_amb_2-C1-qwen3.5_9b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "qwen3.5:9b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 4,
+    "input_tokens": 9934,
+    "output_tokens": 371,
+    "native_ops": 3,
+    "wall_seconds": 29.3,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/086-e1h_amb_2-C1-qwen3.5_9b-s2/trace.jsonl",
+    "trace_hash": "4ecb9f1a0537432b389de435c5ff04ad3baa49d41ad8eb02211953c11a602832"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/002-e1h_chg_1-A1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 4,
+    "input_tokens": 13684,
+    "output_tokens": 1202,
+    "native_ops": 3,
+    "wall_seconds": 60.51,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 10
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 24
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/002-e1h_chg_1-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "bf46fa1b868ace6d9db3e1f9274da816e508f4fa342c473cfa05ba1a8853eae5"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/005-e1h_abs_1-A1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 6790,
+    "output_tokens": 835,
+    "native_ops": 1,
+    "wall_seconds": 35.0,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/005-e1h_abs_1-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "f29e54a9a15bdf9b791e1142525a588eb208ee85bb0f248f1cf21fbed0b7f014"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/009-e1h_abs_2-A1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3312,
+    "output_tokens": 105,
+    "native_ops": 0,
+    "wall_seconds": 6.83,
+    "aborts": [
+      "1 validation error for ros2_node_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/009-e1h_abs_2-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "b6525ce5338f3a522300d6f3ff3375e6205b627225ed25e80cff1c0c4c4cc0ef"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/011-e1h_amb_2-C1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 6,
+    "input_tokens": 10209,
+    "output_tokens": 969,
+    "native_ops": 4,
+    "wall_seconds": 42.87,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_topic_list",
+        "args": {
+          "pattern": "^/e1h/cinder_t$",
+          "blacklist": ""
+        },
+        "message": "Invalid arguments for ros2_topic_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/011-e1h_amb_2-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "564a232c91ddbe0e017960228393680c5d240fab572e8f314b41c64f791998c0"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/016-e1h_chg_2-C1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 4,
+    "input_tokens": 5916,
+    "output_tokens": 982,
+    "native_ops": 3,
+    "wall_seconds": 54.62,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 12
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 31
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/016-e1h_chg_2-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "ae9cd0de40715b773b2765c4eda04c91f22e3dd98ee7003e8a9505de7075d470"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/017-e1h_abs_1-C1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "answer": {
+        "node": "/ember/mistral",
+        "running": false
+      }
+    },
+    "llm_requests": 3,
+    "input_tokens": 4301,
+    "output_tokens": 235,
+    "native_ops": 1,
+    "wall_seconds": 13.95,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_node_list",
+        "args": {
+          "pattern": "^/ember/mistral$",
+          "blacklist": "^$"
+        },
+        "message": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"^$\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/017-e1h_abs_1-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "d54e7792f30360921c0206c43d9e49aa0564937aee8fe1e90dbe8093a1092590"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/030-e1h_chg_2-A1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "run"
+    },
+    "llm_requests": 4,
+    "input_tokens": 13684,
+    "output_tokens": 869,
+    "native_ops": 3,
+    "wall_seconds": 54.03,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 10
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 24
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/030-e1h_chg_2-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "35b1eaaa0fa47d7074a5998ee5cc70b201b3df7cea8f46aa9b1f1942546403fd"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/031-e1h_amb_2-C1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 6,
+    "input_tokens": 9832,
+    "output_tokens": 900,
+    "native_ops": 4,
+    "wall_seconds": 47.25,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_node_list",
+        "args": {
+          "pattern": "zircon",
+          "blacklist": ""
+        },
+        "message": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/031-e1h_amb_2-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "76b07204f48fcbb467bb822dce10ce49f6344605de8176ad7b5fdbce6007bb9e"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/032-e1h_chg_2-C1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 4,
+    "input_tokens": 5916,
+    "output_tokens": 660,
+    "native_ops": 3,
+    "wall_seconds": 42.98,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 12
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 31
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/032-e1h_chg_2-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "3c03ed9dfbfcb6ac9bad8de8ad725c64d64e6db56636f3cb15291dcc0fa1fdb2"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/033-e1h_amb_1-A1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3296,
+    "output_tokens": 245,
+    "native_ops": 0,
+    "wall_seconds": 13.55,
+    "aborts": [
+      "1 validation error for ros2_node_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/033-e1h_amb_1-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "ceaf86a6a19a6b7b34e695d349e891fd402e2b3a1a249bfec4026c399986451a"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/041-e1h_amb_2-A1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/zircon",
+      "gain": 56
+    },
+    "llm_requests": 3,
+    "input_tokens": 10833,
+    "output_tokens": 1048,
+    "native_ops": 2,
+    "wall_seconds": 48.84,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/041-e1h_amb_2-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "9a25c361a33899fa033bf5ebc5125f0dc98e9380ad95697492547a6675525b87"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/042-e1h_abs_2-C1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 2912,
+    "output_tokens": 468,
+    "native_ops": 1,
+    "wall_seconds": 21.32,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/042-e1h_abs_2-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "29eeabf855ed395dbb18595ddf9d2c90949e04340eebaa584ab1eb6093a28302"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/043-e1h_chg_1-C1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 4,
+    "input_tokens": 5916,
+    "output_tokens": 842,
+    "native_ops": 3,
+    "wall_seconds": 46.23,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 12
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 31
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/043-e1h_chg_1-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "b6fa3838709e9cbd39952d11b64d0ca32b66e6be2911a2f7f2f5cd8460fcb246"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/049-e1h_amb_1-C1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 6,
+    "input_tokens": 9047,
+    "output_tokens": 833,
+    "native_ops": 4,
+    "wall_seconds": 43.37,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_node_list",
+        "args": {
+          "pattern": "sorrel",
+          "blacklist": ""
+        },
+        "message": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/049-e1h_amb_1-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "8f05f3a34b2daafe9a1015679285fde551ced30aa0b6c3172f5eeb1f463173dd"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/051-e1h_chg_1-A1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 45
+    },
+    "llm_requests": 4,
+    "input_tokens": 13684,
+    "output_tokens": 425,
+    "native_ops": 3,
+    "wall_seconds": 29.48,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 10
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 24
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/051-e1h_chg_1-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "afa09eedca153976b71ecfa683a6f04f3810f3b8c9db8e8ee56b8eba6febf58c"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/053-e1h_abs_1-C1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 3,
+    "input_tokens": 4290,
+    "output_tokens": 574,
+    "native_ops": 1,
+    "wall_seconds": 25.63,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_node_list",
+        "args": {
+          "pattern": "^/ember/mistral$",
+          "blacklist": ""
+        },
+        "message": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/053-e1h_abs_1-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "e49e0878474787286d90506ea0321d10ebdeadc42ab60688227a9f452c9f6bcb"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/056-e1h_chg_1-C1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 4,
+    "input_tokens": 5916,
+    "output_tokens": 382,
+    "native_ops": 3,
+    "wall_seconds": 30.48,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 12
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 31
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/056-e1h_chg_1-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "9cf9f6d7e6dd357c1aa311ca9a21ad1df847dcbfb2bbda4eafc5f2379a9fad7c"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/057-e1h_amb_2-A1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3307,
+    "output_tokens": 114,
+    "native_ops": 0,
+    "wall_seconds": 6.93,
+    "aborts": [
+      "1 validation error for ros2_topic_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='None', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/057-e1h_amb_2-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "e17a6233df7779d6c9ab213802149126d13fcef66d190f9587fc95407f57f98a"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/069-e1h_abs_1-A1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3310,
+    "output_tokens": 72,
+    "native_ops": 0,
+    "wall_seconds": 5.23,
+    "aborts": [
+      "1 validation error for ros2_node_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/069-e1h_abs_1-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "632e49573a999a233364acea9ef282b368b909ea5ff2bad8fe18ccb8d6e54870"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/072-e1h_abs_2-C1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "answer": {
+        "node": "/alder/pewter",
+        "running": false
+      }
+    },
+    "llm_requests": 3,
+    "input_tokens": 4308,
+    "output_tokens": 449,
+    "native_ops": 1,
+    "wall_seconds": 21.53,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_node_list",
+        "args": {
+          "blacklist": "",
+          "pattern": "/alder/pewter"
+        },
+        "message": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/072-e1h_abs_2-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "a46abecac44905f42af8d61516869f344db18d2a04bdb98f915ad2dc3c0cd603"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/076-e1h_amb_1-A1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3296,
+    "output_tokens": 495,
+    "native_ops": 0,
+    "wall_seconds": 22.42,
+    "aborts": [
+      "1 validation error for ros2_node_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/076-e1h_amb_1-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "cbadbbd3ca7e11cc49365f9cf2101eb987a80dae53acb35e2e6baa86e866608a"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/077-e1h_amb_1-C1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 4,
+    "input_tokens": 5777,
+    "output_tokens": 824,
+    "native_ops": 3,
+    "wall_seconds": 41.02,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/077-e1h_amb_1-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "a1ad95456849736e4a5aa0a85cb943c6bf57c7cb4c1e494cf511c2f0964d82e4"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/079-e1h_chg_2-A1-gpt-oss_20b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "idle"
+    },
+    "llm_requests": 4,
+    "input_tokens": 13678,
+    "output_tokens": 552,
+    "native_ops": 3,
+    "wall_seconds": 31.84,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      10,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/079-e1h_chg_2-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "d2dcc0c32e139ba641e847c89cffad99b7c864245ad4a6141a9f069636037537"
+  },
+  {
+    "run_id": "gpt-oss_20b-e1h/082-e1h_abs_2-A1-gpt-oss_20b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3312,
+    "output_tokens": 314,
+    "native_ops": 0,
+    "wall_seconds": 15.16,
+    "aborts": [
+      "1 validation error for ros2_node_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/082-e1h_abs_2-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "d1a80960af1d2fd3f13793abba98229de3ad8d5d0c261db6aade20d5001a3910"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/003-p3-C1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "answer": {
+        "first": "/plant32/beacon",
+        "second": "/plant32/juniper",
+        "setpoint": 873
+      }
+    },
+    "llm_requests": 4,
+    "input_tokens": 6012,
+    "output_tokens": 803,
+    "native_ops": 3,
+    "wall_seconds": 42.57,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/003-p3-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "b7d1285ed2bdedcadbeaa9f75bd6c86b984b4eace0f19e763fe68d6764fdf30d"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/008-v2-C1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 5,
+    "input_tokens": 11942,
+    "output_tokens": 1098,
+    "native_ops": 22,
+    "wall_seconds": 61.11,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/008-v2-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "7f9654b52db524a5d13ea3b73f98cf95617166b9639041512075be2656721fa8"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/010-u3-A1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3342,
+    "output_tokens": 114,
+    "native_ops": 0,
+    "wall_seconds": 11.09,
+    "aborts": [
+      "1 validation error for ros2_topic_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='false', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/010-u3-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "46c18cd0473f3717534a91634a5f55d86c1d3dea0c3fa1e64760aad53013fd13"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/012-v2-C1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "answer": {
+        "node": "/plant32/wharf",
+        "type": "std_srvs/srv/Trigger"
+      }
+    },
+    "llm_requests": 9,
+    "input_tokens": 22738,
+    "output_tokens": 2395,
+    "native_ops": 26,
+    "wall_seconds": 112.74,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/012-v2-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "a5b7fc57d15d02a60d68ec58327249befea50491cda2613ff9da20a4c6ac9fed"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/015-h4-A1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3354,
+    "output_tokens": 348,
+    "native_ops": 0,
+    "wall_seconds": 18.66,
+    "aborts": [
+      "1 validation error for ros2_topic_info\ntopics\n  Field required [type=missing, input_value={'topic': '/plant32/reef_t'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/015-h4-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "4add814e5d498fae05dce9eaa53560160cd38833391863f1ea0468fb4be20067"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/024-u3-C1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 4,
+    "input_tokens": 7289,
+    "output_tokens": 1098,
+    "native_ops": 3,
+    "wall_seconds": 46.88,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/024-u3-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "ff3b8a813f1665f26e5fc73cf59ac98479cd6dba88909a3e0e47bcdf3352d1f0"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/031-h4-A1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 14,
+    "input_tokens": 70816,
+    "output_tokens": 2246,
+    "native_ops": 13,
+    "wall_seconds": 114.46,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      10,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/031-h4-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "a2c25e6d4233529dde9b4cb6803fd24030ec1c05a1868bae9bdcc9b75692941c"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/038-h4-C1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 10,
+    "input_tokens": 26076,
+    "output_tokens": 2856,
+    "native_ops": 9,
+    "wall_seconds": 127.69,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      11
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/038-h4-C1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "a9baf6566f5366c3a97e7425e2db45ffb971527afbc1895dc5bfda1dd32ef514"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/039-p3-A1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 13774,
+    "output_tokens": 299,
+    "native_ops": 3,
+    "wall_seconds": 20.56,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      11
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/039-p3-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "9542a44718892a22c5ba2f56c81da23cd93c915f8e3e8687420fe8fb97254548"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/041-u3-A1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3342,
+    "output_tokens": 506,
+    "native_ops": 0,
+    "wall_seconds": 22.37,
+    "aborts": [
+      "1 validation error for ros2_topic_info\ntopics\n  Field required [type=missing, input_value={'topic': '/plant32/quarry_t'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/041-u3-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "4ad693afaaaf5dfb79affc8c34c491061b8376eb25429992fbaed508b00910b7"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/043-v2-A1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3294,
+    "output_tokens": 230,
+    "native_ops": 0,
+    "wall_seconds": 11.39,
+    "aborts": [
+      "1 validation error for ros2_service_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/043-v2-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "3e268cb76f99275b4aea731929216be3ecb1cb13243725381bd58946f8280e3c"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/044-p3-A1-gpt-oss_20b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 13780,
+    "output_tokens": 478,
+    "native_ops": 3,
+    "wall_seconds": 30.03,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/044-p3-A1-gpt-oss_20b-s1/trace.jsonl",
+    "trace_hash": "5af47c6412e566269e038a9bb4cedd520bce63db3bc7a0263fc16936d14ce4e9"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/047-p3-C1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 6012,
+    "output_tokens": 559,
+    "native_ops": 3,
+    "wall_seconds": 32.34,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/047-p3-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "8486bd558365fce4389a25f182b997d204b012aa88ed294d1e28580c54aa093c"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/051-u3-C1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 6,
+    "input_tokens": 11622,
+    "output_tokens": 1178,
+    "native_ops": 5,
+    "wall_seconds": 50.79,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/051-u3-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "b2f552dd2c7675f3809a79a2897fad2013c72dea74998bdfcc5ff29638b1d5e6"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/054-h4-C1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 14,
+    "input_tokens": 37523,
+    "output_tokens": 1915,
+    "native_ops": 14,
+    "wall_seconds": 96.5,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "validation_error",
+        "tool": "ros2_topic_list",
+        "args": {
+          "pattern": "^/plant32/reef_t$",
+          "blacklist": ""
+        },
+        "message": "Invalid arguments for ros2_topic_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again.",
+        "line": 7
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/054-h4-C1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "892a1d53d35371dce4329cc7723860e08015eea6c05729d602f5ad56076cf41e"
+  },
+  {
+    "run_id": "gpt-oss_20b-stage3/055-v2-A1-gpt-oss_20b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "gpt-oss:20b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 3294,
+    "output_tokens": 134,
+    "native_ops": 0,
+    "wall_seconds": 7.23,
+    "aborts": [
+      "1 validation error for ros2_service_list\nblacklist\n  Input should be a valid list [type=list_type, input_value='none', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-stage3/055-v2-A1-gpt-oss_20b-s2/trace.jsonl",
+    "trace_hash": "05e39a773d9e4d616161e0c2025bfdc045577728e991132d3c20a2734684ac16"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/000-e1h_abs_1-C1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 4075,
+    "output_tokens": 88,
+    "native_ops": 1,
+    "wall_seconds": 3.72,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/000-e1h_abs_1-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "1f56c3f68aa311fada168357a840ddb86e55d654d0521ef3045f935ea7961a17"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/001-e1h_abs_1-A1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/e1h/ember/mistral",
+      "running": true,
+      "limit": 279
+    },
+    "llm_requests": 12,
+    "input_tokens": 74523,
+    "output_tokens": 766,
+    "native_ops": 11,
+    "wall_seconds": 19.95,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      8,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/001-e1h_abs_1-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "1582e691e214d37fe572042bccb6c08dab74b51192dd5aae2cbdd2bdc528c7da"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/015-e1h_amb_1-C1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 5,
+    "input_tokens": 12005,
+    "output_tokens": 585,
+    "native_ops": 6,
+    "wall_seconds": 18.26,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/015-e1h_amb_1-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "1fd4ea649b3a0880800d5a6f2424b1a700174505205ed7a79428847b736610c4"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/016-e1h_abs_1-C1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/ember/mistral",
+      "running": false
+    },
+    "llm_requests": 3,
+    "input_tokens": 6397,
+    "output_tokens": 92,
+    "native_ops": 2,
+    "wall_seconds": 3.72,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/016-e1h_abs_1-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "054608bb564bbdd25f3e6850947f1ef046b85aa6ef440a3c4432c11bf99e9c28"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/022-e1h_chg_1-A1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "first_level": 30,
+      "pump_setpoint": 144,
+      "final_level": 30
+    },
+    "llm_requests": 5,
+    "input_tokens": 29622,
+    "output_tokens": 457,
+    "native_ops": 3,
+    "wall_seconds": 13.7,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      5,
+      6,
+      10,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/022-e1h_chg_1-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "98f840645be077b1f5db76f2b9f7bb5f8faed703e6f41ca4e50789fce7d17e9c"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/031-e1h_amb_2-C1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "gain": 90,
+      "node": "/e1h/cobalt/zircon"
+    },
+    "llm_requests": 4,
+    "input_tokens": 10620,
+    "output_tokens": 290,
+    "native_ops": 6,
+    "wall_seconds": 9.68,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      10,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/031-e1h_amb_2-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "6c35e5c247eca41e0cc58b588dbc32dc57331b6b820a945338bf61672cf176b9"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/041-e1h_chg_2-C1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_mode": "run",
+      "first_mode": "idle",
+      "meter_flow": 725
+    },
+    "llm_requests": 8,
+    "input_tokens": 20273,
+    "output_tokens": 657,
+    "native_ops": 7,
+    "wall_seconds": 21.11,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 19
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 59
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/041-e1h_chg_2-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "61ab03a38de5ca62a8519a90bf18a79079d91700994ff31d97cf6e6e09a21b2e"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/043-e1h_chg_1-C1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 3,
+    "input_tokens": 6443,
+    "output_tokens": 192,
+    "native_ops": 3,
+    "wall_seconds": 15.9,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 12
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 28
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/043-e1h_chg_1-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "030fcecc214d2ec04ccf3eb80d396313594eb11cf8e54d37576cc26213bcf5b2"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/044-e1h_abs_2-C1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/e1h/alder/pewter",
+      "rate": 657,
+      "running": true
+    },
+    "llm_requests": 5,
+    "input_tokens": 11361,
+    "output_tokens": 209,
+    "native_ops": 4,
+    "wall_seconds": 10.03,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/044-e1h_abs_2-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "9978f64f1ff385b24ffe2fe73b2195313a01ab25c78108d96167fdc7aadb71b9"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/049-e1h_chg_1-A1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 4,
+    "input_tokens": 23194,
+    "output_tokens": 498,
+    "native_ops": 3,
+    "wall_seconds": 17.55,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 11
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 26
+      }
+    ],
+    "failure_rows": [
+      1,
+      5,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/049-e1h_chg_1-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "a121121b539142c7aaea41a10d318986a9c9bed044868a1591906042e9297f65"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/050-e1h_amb_2-C1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gain": 56,
+      "node": "/e1h/basalt/zircon"
+    },
+    "llm_requests": 5,
+    "input_tokens": 12182,
+    "output_tokens": 515,
+    "native_ops": 4,
+    "wall_seconds": 13.19,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/050-e1h_amb_2-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "a0661f2850b228c81496b0e515ad79571831fbb3d0157b6133da40fc787796ba"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/051-e1h_abs_2-C1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 4078,
+    "output_tokens": 90,
+    "native_ops": 1,
+    "wall_seconds": 3.62,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      11
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/051-e1h_abs_2-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "94c8b95479417804150a904708928e2ede1a8a3f1c04a17f68d97eb653b1a5bb"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/055-e1h_chg_2-A1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first_mode": "idle",
+      "meter_flow": 725,
+      "final_mode": "run"
+    },
+    "llm_requests": 7,
+    "input_tokens": 41389,
+    "output_tokens": 582,
+    "native_ops": 7,
+    "wall_seconds": 20.51,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 23
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 46
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/055-e1h_chg_2-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "bff486b5cc579ef5ec27e1a14e27cc809d385b4640510f4d59ae31b3fde6d07d"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/056-e1h_chg_1-C1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_1",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "final_level": 45,
+      "first_level": 30,
+      "pump_setpoint": 144
+    },
+    "llm_requests": 4,
+    "input_tokens": 8858,
+    "output_tokens": 356,
+    "native_ops": 3,
+    "wall_seconds": 14.69,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/quasar",
+        "param": "level",
+        "new_value": 45,
+        "line": 15
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/quasar",
+        "param": "level",
+        "value": 30,
+        "line": 31
+      }
+    ],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/056-e1h_chg_1-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "89aef90cfc8e7656b7671420581ea097edbc5b3836bb5ee152e3cca37df4cc2a"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/058-e1h_amb_2-A1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/e1h/cobalt/zircon",
+      "gain": 90
+    },
+    "llm_requests": 5,
+    "input_tokens": 28443,
+    "output_tokens": 206,
+    "native_ops": 4,
+    "wall_seconds": 8.83,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      10,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/058-e1h_amb_2-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "d0740ee6a1ed4ec131d11cfccb2599609b5710d7a581191fd1e1f81234f9dce6"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/062-e1h_amb_2-A1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/zircon",
+      "gain": 56
+    },
+    "llm_requests": 5,
+    "input_tokens": 30245,
+    "output_tokens": 405,
+    "native_ops": 4,
+    "wall_seconds": 12.44,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/062-e1h_amb_2-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "f44734a0a74995aacbbb46db2a0ef5bdb0e817008b4663877baa819aea492adf"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/064-e1h_abs_1-A1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_1",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/e1h/ember/mistral",
+      "running": true,
+      "limit": 279
+    },
+    "llm_requests": 7,
+    "input_tokens": 41602,
+    "output_tokens": 412,
+    "native_ops": 6,
+    "wall_seconds": 15.09,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/064-e1h_abs_1-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "65371f4b88d03b1b317fc6188247e50e69569f6528f2312fbaff66bcf8ac5596"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/069-e1h_amb_1-C1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "limit": 891,
+      "node": "/e1h/basalt/sorrel"
+    },
+    "llm_requests": 5,
+    "input_tokens": 11042,
+    "output_tokens": 302,
+    "native_ops": 6,
+    "wall_seconds": 18.2,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/069-e1h_amb_1-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "639d1c7a62490aee31fac2380f38109d0f3d50520bfc4dbbde36f9ff2929d4fd"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/071-e1h_amb_1-A1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/sorrel",
+      "limit": 891
+    },
+    "llm_requests": 5,
+    "input_tokens": 29151,
+    "output_tokens": 310,
+    "native_ops": 6,
+    "wall_seconds": 20.11,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/071-e1h_amb_1-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "a9f1e34feecd9b7b9874ccdefd42dc35c39f02bc15e5458dd7b75b0fd3ee22f3"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/072-e1h_chg_2-A1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 8,
+    "input_tokens": 47127,
+    "output_tokens": 646,
+    "native_ops": 13,
+    "wall_seconds": 35.89,
+    "aborts": [
+      "error('multiple repeat at position 2')"
+    ],
+    "handler_fires": [
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 17
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 64
+      }
+    ],
+    "failure_rows": [
+      1,
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/072-e1h_chg_2-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "059b67d9b1713e6260d84b20c9c58bf2e262ec957e3f6f2ab249e8e2662af576"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h/073-e1h_amb_1-A1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_amb_1",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/e1h/basalt/sorrel",
+      "limit": 891
+    },
+    "llm_requests": 5,
+    "input_tokens": 29636,
+    "output_tokens": 519,
+    "native_ops": 6,
+    "wall_seconds": 21.71,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/073-e1h_amb_1-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "45058a3580046dd224a617bca0cfbddaaa99e9133c046a30b0f862121bab23b9"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/003-u3-C1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "llm_requests": 10,
+    "input_tokens": 29484,
+    "output_tokens": 453,
+    "native_ops": 9,
+    "wall_seconds": 11.44,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/003-u3-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "224ed719dbe3f67903cc80702a9056921c3d8a50adc362a62e45bcefea34588a"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/007-p3-C1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 8681,
+    "output_tokens": 201,
+    "native_ops": 3,
+    "wall_seconds": 12.39,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/007-p3-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "40a529d9545cd438d8f22951cb6c9ec6541d1fec870815634fe0057a511e61e5"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/012-v2-A1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 27,
+    "input_tokens": 270806,
+    "output_tokens": 5549,
+    "native_ops": 26,
+    "wall_seconds": 77.67,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      2,
+      8,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/012-v2-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "289bb42d430832248b54509dad030d43970f1b109f0cf7f3dcacbe77af38b515"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/017-u3-A1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 7,
+    "input_tokens": 44948,
+    "output_tokens": 783,
+    "native_ops": 6,
+    "wall_seconds": 12.94,
+    "aborts": [
+      "1 validation error for ros2_service_call\nrequest\n  Input should be a valid string [type=string_type, input_value={'topic': '/plant32/quarry_t'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      7
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/017-u3-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "5ea3b9fbe1d6148d712bd898d135b60b1bdbaf2bbc074754777b41099cf39197"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/020-p3-C1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 9121,
+    "output_tokens": 457,
+    "native_ops": 3,
+    "wall_seconds": 15.05,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/020-p3-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "5ff1970cf461f68f5d78549f07ce684450e84b4edc632863684ab80845272a5c"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/021-u3-A1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 6,
+    "input_tokens": 38023,
+    "output_tokens": 669,
+    "native_ops": 5,
+    "wall_seconds": 11.49,
+    "aborts": [
+      "1 validation error for ros2_service_call\nrequest\n  Input should be a valid string [type=string_type, input_value={'publisher': '/plant32/y...ream': '/plant32/quill'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/021-u3-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "28bde19865359e09b4ea9e4061cdc11e310ee7a19c7e7480d97b2ca50c7490e9"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/022-v2-C1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/plant32/cedar",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 17,
+    "input_tokens": 121939,
+    "output_tokens": 4042,
+    "native_ops": 15,
+    "wall_seconds": 53.78,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "tool_exception",
+        "tool": "ros2_node_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 44
+      },
+      {
+        "event": "tool_exception",
+        "tool": "ros2_node_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 66
+      },
+      {
+        "event": "tool_exception",
+        "tool": "ros2_node_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 107
+      }
+    ],
+    "failure_rows": [
+      1,
+      2,
+      8,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/022-v2-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "eb373604104f532781dcb436631ae2937f6fe5abcb62edf9ba4fd0bf8ec6c1cf"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/026-p3-A1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "first": "/plant32/beacon",
+      "second": "/plant32/juniper",
+      "setpoint": 873
+    },
+    "llm_requests": 4,
+    "input_tokens": 23158,
+    "output_tokens": 373,
+    "native_ops": 3,
+    "wall_seconds": 12.69,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/026-p3-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "18a0d043c0314ad5a922b10ce223de29f39da907a0ad9e1160466fa337a01d55"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/028-h4-C1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "gains": {
+        "dune": 65,
+        "oasis": 89,
+        "zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "zephyr",
+        "/plant32/fjord_t": "dune",
+        "/plant32/prism_t": "oasis"
+      }
+    },
+    "llm_requests": 14,
+    "input_tokens": 70247,
+    "output_tokens": 2400,
+    "native_ops": 15,
+    "wall_seconds": 47.16,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      13
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/028-h4-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "6cacd1a44811bb7a2eacc8abc0c23edbf105a2632ec64a6c1b86838b58d49ae1"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/034-v2-A1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 40,
+    "input_tokens": 268352,
+    "output_tokens": 1334,
+    "native_ops": 40,
+    "wall_seconds": 34.83,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      8,
+      10,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/034-v2-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "1f98e37c02290e41454215d61b9ff4bcb3edb4455020eb1fd73b9615dd17a6a2"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/035-v2-C1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "v2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/plant32/wharf",
+      "type": "std_srvs/srv/Trigger"
+    },
+    "llm_requests": 31,
+    "input_tokens": 145196,
+    "output_tokens": 1106,
+    "native_ops": 30,
+    "wall_seconds": 28.02,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/035-v2-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "ae6a1a89c99f2b1d4d2d8db857382a274059634c4c441289068e379f060fc3a5"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/039-h4-A1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 40,
+    "input_tokens": 314429,
+    "output_tokens": 3628,
+    "native_ops": 39,
+    "wall_seconds": 60.43,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      1,
+      10,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/039-h4-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "1ac912837d795d8b6110e53242a97ca27055e13b693b87a690c4a9de477d66a9"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/041-u3-C1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "u3",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 12,
+    "input_tokens": 69378,
+    "output_tokens": 5739,
+    "native_ops": 23,
+    "wall_seconds": 73.06,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/041-u3-C1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "a5a7e8c563c619b731a4c59a4551dd438abb45ec1b0731eacdbb5a480aae5f41"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/045-h4-A1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 1,
+    "input_tokens": 5589,
+    "output_tokens": 83,
+    "native_ops": 1,
+    "wall_seconds": 3.57,
+    "aborts": [
+      "error('multiple repeat at position 2')"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7,
+      10
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/045-h4-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "b9c0ae96d3154e94831958469dea875df9678a345c329e604cb9d2cd978ea890"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/047-h4-C1-bonsai-2_4b-s2",
+    "env": "stage3",
+    "task": "h4",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "gains": {
+        "/plant32/dune": 65,
+        "/plant32/oasis": 89,
+        "/plant32/zephyr": 74
+      },
+      "node": "/plant32/anvil",
+      "publishers": {
+        "/plant32/courier_t": "/plant32/zephyr",
+        "/plant32/fjord_t": "/plant32/dune",
+        "/plant32/prism_t": "/plant32/oasis"
+      }
+    },
+    "llm_requests": 11,
+    "input_tokens": 40964,
+    "output_tokens": 669,
+    "native_ops": 16,
+    "wall_seconds": 23.86,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/047-h4-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "93ed526b11a0bd638a7482b8c83da53d6c3d7d669807e56a51dd3136d47f8db4"
+  },
+  {
+    "run_id": "bonsai-2_4b-stage3/048-p3-A1-bonsai-2_4b-s1",
+    "env": "stage3",
+    "task": "p3",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 4,
+    "input_tokens": 23282,
+    "output_tokens": 424,
+    "native_ops": 5,
+    "wall_seconds": 18.5,
+    "aborts": [
+      "1 validation error for ros2_param_set\nparam_value\n  Input should be a valid string [type=string_type, input_value=['/plant32/beacon', '/plant32/juniper'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type"
+    ],
+    "handler_fires": [],
+    "failure_rows": [
+      7
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/048-p3-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "67e3b85684a63e97eb7e7327fd08e5e424eb9a1e809d985e4c917710a986ecdb"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h-resume1/001-e1h_chg_2-C1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_chg_2",
+    "arm": "C1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": null,
+    "llm_requests": 40,
+    "input_tokens": 124417,
+    "output_tokens": 1285,
+    "native_ops": 41,
+    "wall_seconds": 34.99,
+    "aborts": [],
+    "handler_fires": [
+      {
+        "event": "tool_exception",
+        "tool": "ros2_topic_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 41
+      },
+      {
+        "event": "scripted_change",
+        "node": "/e1h/willow",
+        "param": "mode",
+        "new_value": "run",
+        "line": 48
+      },
+      {
+        "event": "tool_exception",
+        "tool": "ros2_topic_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 99
+      },
+      {
+        "event": "tool_exception",
+        "tool": "ros2_topic_list",
+        "error": "error: multiple repeat at position 2",
+        "line": 121
+      },
+      {
+        "event": "scripted_reset",
+        "ok": true,
+        "node": "/e1h/willow",
+        "param": "mode",
+        "value": "idle",
+        "line": 291
+      }
+    ],
+    "failure_rows": [
+      1,
+      8,
+      10,
+      12
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part3/bonsai-2_4b-e1h-resume1/001-e1h_chg_2-C1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "87b74665373d57db0053f2a87f5b53a8a0704311e9d72f444ac8655b437d26cf"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h-resume1/002-e1h_abs_2-A1-bonsai-2_4b-s2",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 2,
+    "temperature": 0.7,
+    "supported_complete": true,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 3,
+    "input_tokens": 16940,
+    "output_tokens": 109,
+    "native_ops": 2,
+    "wall_seconds": 5.78,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part3/bonsai-2_4b-e1h-resume1/002-e1h_abs_2-A1-bonsai-2_4b-s2/trace.jsonl",
+    "trace_hash": "694e96c5660bbf9a97ab58b5ac62351a6ff35f6dede0da6e88eaad3bfde74c13"
+  },
+  {
+    "run_id": "bonsai-2_4b-e1h-resume1/007-e1h_abs_2-A1-bonsai-2_4b-s1",
+    "env": "e1h",
+    "task": "e1h_abs_2",
+    "arm": "A1",
+    "model": "bonsai-2:4b",
+    "seed": 1,
+    "temperature": 0.7,
+    "supported_complete": false,
+    "answer": {
+      "node": "/alder/pewter",
+      "running": false
+    },
+    "llm_requests": 2,
+    "input_tokens": 11160,
+    "output_tokens": 75,
+    "native_ops": 1,
+    "wall_seconds": 3.07,
+    "aborts": [],
+    "handler_fires": [],
+    "failure_rows": [
+      2,
+      11
+    ],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part3/bonsai-2_4b-e1h-resume1/007-e1h_abs_2-A1-bonsai-2_4b-s1/trace.jsonl",
+    "trace_hash": "d18a4ce5e4125c130f86d8bfbb27e5dd9b62cbda6ac9dcfba746fd20531627f4"
+  }
+]

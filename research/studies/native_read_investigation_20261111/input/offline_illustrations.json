@@ -1,0 +1,95 @@
+{
+  "warning": "SYNTHETIC illustrative units. No ROS/LLM calls or measured speeds.",
+  "transport": {
+    "assumed_cli_per_read": 100,
+    "assumed_persistent_setup": 450,
+    "assumed_persistent_per_read": 25
+  },
+  "episode_examples": [
+    {
+      "eligible_reads": 2,
+      "switch_after_rented_reads": 6,
+      "always_cli": 200,
+      "always_persistent_cold": 500,
+      "online_rent_then_buy": 200,
+      "offline_oracle": 200
+    },
+    {
+      "eligible_reads": 6,
+      "switch_after_rented_reads": 6,
+      "always_cli": 600,
+      "always_persistent_cold": 600,
+      "online_rent_then_buy": 600,
+      "offline_oracle": 600
+    },
+    {
+      "eligible_reads": 7,
+      "switch_after_rented_reads": 6,
+      "always_cli": 700,
+      "always_persistent_cold": 625,
+      "online_rent_then_buy": 1075,
+      "offline_oracle": 625
+    },
+    {
+      "eligible_reads": 20,
+      "switch_after_rented_reads": 6,
+      "always_cli": 2000,
+      "always_persistent_cold": 950,
+      "online_rent_then_buy": 1400,
+      "offline_oracle": 950
+    }
+  ],
+  "mixed_episode_lengths": {
+    "10 episodes": 2,
+    "3 episodes": 20
+  },
+  "cold_per_episode_totals": {
+    "always_cli": 8000,
+    "always_persistent_cold": 7850,
+    "online_rent_then_buy": 6200,
+    "offline_oracle": 4850
+  },
+  "always_persistent_if_shared_across_all_episodes": 2450,
+  "concurrency_examples": [
+    {
+      "regime": "no_contention",
+      "width": 1,
+      "makespan_ms": 640.0
+    },
+    {
+      "regime": "no_contention",
+      "width": 2,
+      "makespan_ms": 320.0
+    },
+    {
+      "regime": "no_contention",
+      "width": 4,
+      "makespan_ms": 160.0
+    },
+    {
+      "regime": "no_contention",
+      "width": 8,
+      "makespan_ms": 336.0
+    },
+    {
+      "regime": "contention_after_2",
+      "width": 1,
+      "makespan_ms": 640.0
+    },
+    {
+      "regime": "contention_after_2",
+      "width": 2,
+      "makespan_ms": 320.0
+    },
+    {
+      "regime": "contention_after_2",
+      "width": 4,
+      "makespan_ms": 416.0
+    },
+    {
+      "regime": "contention_after_2",
+      "width": 8,
+      "makespan_ms": 464.00000000000006
+    }
+  ]
+}

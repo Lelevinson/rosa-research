@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "All 72 final-answer sidecars match their raw episode-end answer and error.",
+    "All 76 original input hashes remain unchanged."
+  ],
+  "episodes": 72,
+  "python": "3.12.3",
+  "packages": {
+    "jpl-rosa": "1.0.10",
+    "rclpy": "7.1.12",
+    "langchain-core": "0.3.86"
+  },
+  "head": "b12b1bd606229f8cbcb1b32681850bf164f84d77",
+  "branch": "research/capability-discovery-20261110",
+  "git_status": "",
+  "new_folder_ignored": true
+}

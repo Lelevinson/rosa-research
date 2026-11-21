@@ -1,0 +1,2482 @@
+[
+ {
+  "run_id": "lfm3_1.7b-stage3/012-p3-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 5,
+  "supported": false,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1872,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 20636.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1872,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 22419.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1872,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 20636.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/005-e1h_amb_2-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 6,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2703,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 16839.5
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 6727,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 10147.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4394,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11240.0
+  },
+  "nonfinal_requests": 5
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/010-e1h_abs_1-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2217.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2527.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2217.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/032-e1h_abs_2-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1693,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2215.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1693,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2525.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1693,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2215.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/035-e1h_amb_2-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 10034.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 10964.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 3550,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 4267.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/041-e1h_abs_1-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2217.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2527.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1691,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2217.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/061-e1h_chg_2-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1726,
+   "added_tokens": 8437.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 6711.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/065-e1h_chg_1-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 12655.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/071-e1h_amb_1-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 3955,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7770.5
+  },
+  "B": {
+   "removable": 3,
+   "saved_tokens": 7004,
+   "added_tokens": 8437.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 1433.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 3955,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7770.5
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/072-e1h_chg_1-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 12655.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/077-e1h_abs_2-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1693,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2215.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1693,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2525.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1693,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2215.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/079-e1h_chg_2-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 19542.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1726,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 15148.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 19542.5
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "lfm3_1.7b-e1h/087-e1h_amb_1-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 8,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 3818,
+   "added_tokens": 23451.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 19633.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 9857,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 7017.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 3818,
+   "added_tokens": 23451.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 19633.0
+  },
+  "nonfinal_requests": 7
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/017-v2-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 3,
+  "supported": false,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 4713,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 914.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 4713,
+   "added_tokens": 6072.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 1359.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4713,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 914.0
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/031-h4-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 7,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 6703,
+   "added_tokens": 28135.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 21432.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 6703,
+   "added_tokens": 30363.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 23660.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 4,
+   "saved_tokens": 12326,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 4555.0
+  },
+  "nonfinal_requests": 6
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/034-v2-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 17,
+  "supported": true,
+  "A": {
+   "removable": 14,
+   "saved_tokens": 102449,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -85568.0
+  },
+  "B": {
+   "removable": 14,
+   "saved_tokens": 102449,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -84230.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 14,
+   "saved_tokens": 102449,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -85568.0
+  },
+  "nonfinal_requests": 16
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/035-p3-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 4,
+  "supported": false,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/043-u3-C1-lfm3_1.7b-s2",
+  "model": "lfm3:1.7b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 7,
+  "supported": true,
+  "A": {
+   "removable": 4,
+   "saved_tokens": 10882,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 5999.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 10882,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 7336.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 6,
+   "saved_tokens": 17104,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -11477.0
+  },
+  "nonfinal_requests": 6
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/045-u3-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 8,
+  "supported": true,
+  "A": {
+   "removable": 5,
+   "saved_tokens": 18136,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -1255.0
+  },
+  "B": {
+   "removable": 5,
+   "saved_tokens": 18136,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 82.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 7,
+   "saved_tokens": 25885,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -20258.0
+  },
+  "nonfinal_requests": 7
+ },
+ {
+  "run_id": "lfm3_1.7b-stage3/048-h4-C1-lfm3_1.7b-s1",
+  "model": "lfm3:1.7b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 9,
+  "supported": true,
+  "A": {
+   "removable": 3,
+   "saved_tokens": 7931,
+   "added_tokens": 33762.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 25831.0
+  },
+  "B": {
+   "removable": 3,
+   "saved_tokens": 7931,
+   "added_tokens": 36436.5,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 28505.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 5,
+   "saved_tokens": 13188,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 9320.0
+  },
+  "nonfinal_requests": 8
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/001-p3-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/008-u3-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 5609,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 11272.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 5609,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 12609.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 4,
+   "saved_tokens": 10338,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -4711.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/009-h4-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 8,
+  "supported": true,
+  "A": {
+   "removable": 3,
+   "saved_tokens": 7640,
+   "added_tokens": 28135.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 20495.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 12236,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 12055.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 5,
+   "saved_tokens": 12791,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 4090.0
+  },
+  "nonfinal_requests": 7
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/018-h4-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 8,
+  "supported": true,
+  "A": {
+   "removable": 3,
+   "saved_tokens": 7721,
+   "added_tokens": 28135.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 20414.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 12338,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 11953.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 5,
+   "saved_tokens": 12863,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 4018.0
+  },
+  "nonfinal_requests": 7
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/021-v2-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 4,
+   "saved_tokens": 13471,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -7844.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 13471,
+   "added_tokens": 6072.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -7398.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 4,
+   "saved_tokens": 13471,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -7844.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/023-u3-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2355,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 14526.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 2355,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 15863.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 3,
+   "saved_tokens": 7124,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -1497.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/041-p3-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "qwen3.5_9b-stage3/052-v2-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 4,
+   "saved_tokens": 11106,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -5479.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 11106,
+   "added_tokens": 6072.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -5033.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 4,
+   "saved_tokens": 11106,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -5479.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/003-e1h_chg_1-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 12655.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/010-e1h_abs_2-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 3,
+   "saved_tokens": 6429,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": -2520.5
+  },
+  "B": {
+   "removable": 3,
+   "saved_tokens": 6429,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": -2210.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 3,
+   "saved_tokens": 6429,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": -2520.5
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/013-e1h_amb_1-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1987,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13647.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 4199,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 8456.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1987,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13647.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/026-e1h_abs_1-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1906.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2216.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1906.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/031-e1h_amb_1-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 8,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 4112,
+   "added_tokens": 23451.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 19339.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 9757,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 7117.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4112,
+   "added_tokens": 23451.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 19339.0
+  },
+  "nonfinal_requests": 7
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/032-e1h_chg_1-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 12655.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/044-e1h_chg_2-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 16874.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/053-e1h_chg_2-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 12655.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/054-e1h_amb_2-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 9726.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 10656.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4218,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 3599.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/060-e1h_abs_1-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1906.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2216.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1906.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/067-e1h_abs_2-C1-qwen3.5_9b-s1",
+  "model": "qwen3.5:9b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2003,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1905.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 2003,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2215.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 2003,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1905.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "qwen3.5_9b-e1h/086-e1h_amb_2-C1-qwen3.5_9b-s2",
+  "model": "qwen3.5:9b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 9726.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 10656.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4218,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 3599.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/011-e1h_amb_2-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 6,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 2931,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 12703.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 2931,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 13943.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 3,
+   "saved_tokens": 4598,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7127.5
+  },
+  "nonfinal_requests": 5
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/016-e1h_chg_2-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 16874.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/017-e1h_abs_1-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 3,
+  "supported": false,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1443,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 6374.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1443,
+   "added_tokens": 8437.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 6994.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1443,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 6374.0
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/031-e1h_amb_2-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 6,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 2923,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 12711.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 2923,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 13951.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 3,
+   "saved_tokens": 4467,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7258.5
+  },
+  "nonfinal_requests": 5
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/032-e1h_chg_2-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 16874.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/042-e1h_abs_2-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1370,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2538.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1370,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2848.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1370,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 2538.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/043-e1h_chg_1-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 16874.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/049-e1h_amb_1-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 6,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1420,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 18122.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1420,
+   "added_tokens": 21092.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 19672.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1420,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 18122.5
+  },
+  "nonfinal_requests": 5
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/053-e1h_abs_1-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1438,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 6379.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1438,
+   "added_tokens": 8437.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 6999.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1438,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 6379.0
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/056-e1h_chg_1-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 16874.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/072-e1h_abs_2-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 3,
+  "supported": false,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1440,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 6377.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1440,
+   "added_tokens": 8437.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 6997.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1440,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 6377.0
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "gpt-oss_20b-e1h/077-e1h_amb_1-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1354,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 10371.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1354,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 11301.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1354,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 10371.5
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/003-p3-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 4,
+  "supported": false,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/008-v2-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 4,
+   "saved_tokens": 5842,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -215.0
+  },
+  "B": {
+   "removable": 4,
+   "saved_tokens": 5842,
+   "added_tokens": 6072.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 230.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 4,
+   "saved_tokens": 5842,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -215.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/012-v2-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 9,
+  "supported": false,
+  "A": {
+   "removable": 8,
+   "saved_tokens": 15166,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -9539.0
+  },
+  "B": {
+   "removable": 8,
+   "saved_tokens": 15166,
+   "added_tokens": 6072.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -9093.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 8,
+   "saved_tokens": 15166,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -9539.0
+  },
+  "nonfinal_requests": 8
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/024-u3-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1645,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 15236.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1645,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 16573.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 3,
+   "saved_tokens": 4958,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 669.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/038-h4-C1-gpt-oss_20b-s1",
+  "model": "gpt-oss:20b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 10,
+  "supported": false,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1643,
+   "added_tokens": 50643.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 49000.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1643,
+   "added_tokens": 54654.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 53011.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 5,
+   "saved_tokens": 10124,
+   "added_tokens": 28135.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 18011.0
+  },
+  "nonfinal_requests": 9
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/047-p3-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/051-u3-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 6,
+  "supported": true,
+  "A": {
+   "removable": 3,
+   "saved_tokens": 4964,
+   "added_tokens": 16881.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 11917.0
+  },
+  "B": {
+   "removable": 3,
+   "saved_tokens": 4964,
+   "added_tokens": 18218.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 13254.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 5,
+   "saved_tokens": 8953,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -3326.0
+  },
+  "nonfinal_requests": 5
+ },
+ {
+  "run_id": "gpt-oss_20b-stage3/054-h4-C1-gpt-oss_20b-s2",
+  "model": "gpt-oss:20b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 14,
+  "supported": true,
+  "A": {
+   "removable": 5,
+   "saved_tokens": 9517,
+   "added_tokens": 50643.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 41126.0
+  },
+  "B": {
+   "removable": 5,
+   "saved_tokens": 9517,
+   "added_tokens": 54654.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 45137.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 7,
+   "saved_tokens": 13519,
+   "added_tokens": 39389.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 25870.0
+  },
+  "nonfinal_requests": 13
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/000-e1h_abs_1-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1906.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2216.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 2002,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1906.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/015-e1h_amb_1-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1987,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13647.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 4191,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 8464.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1987,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13647.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/016-e1h_abs_1-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "e1h_abs_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 4164,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": -255.5
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 4164,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 54.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4164,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": -255.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/031-e1h_amb_2-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 4,
+  "supported": false,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 9726.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 10656.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4116,
+   "added_tokens": 7817.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 3701.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/041-e1h_chg_2-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 8,
+  "supported": true,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 4867,
+   "added_tokens": 23451.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 18584.0
+  },
+  "B": {
+   "removable": 3,
+   "saved_tokens": 7512,
+   "added_tokens": 21092.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 13580.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4867,
+   "added_tokens": 23451.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 18584.0
+  },
+  "nonfinal_requests": 7
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/043-e1h_chg_1-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 3,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 12655.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 11725.5
+  },
+  "nonfinal_requests": 2
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/044-e1h_abs_2-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 5,
+  "supported": false,
+  "A": {
+   "removable": 2,
+   "saved_tokens": 4066,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7659.5
+  },
+  "B": {
+   "removable": 3,
+   "saved_tokens": 6421,
+   "added_tokens": 8437.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2016.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4066,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7659.5
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/050-e1h_amb_2-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_amb_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13635.0
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 1999,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 14875.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 2,
+   "saved_tokens": 4252,
+   "added_tokens": 11725.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 7473.5
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/051-e1h_abs_2-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_abs_2",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 2,
+  "supported": false,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 2003,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1905.5
+  },
+  "B": {
+   "removable": 1,
+   "saved_tokens": 2003,
+   "added_tokens": 4218.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 2215.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 2003,
+   "added_tokens": 3908.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 1905.5
+  },
+  "nonfinal_requests": 1
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/056-e1h_chg_1-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_chg_1",
+  "env": "e1h",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 16874.0,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 16874.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 15634.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h/069-e1h_amb_1-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "e1h_amb_1",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 5,
+  "supported": true,
+  "A": {
+   "removable": 1,
+   "saved_tokens": 1987,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13647.0
+  },
+  "B": {
+   "removable": 2,
+   "saved_tokens": 4043,
+   "added_tokens": 12655.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": 8612.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 1,
+   "saved_tokens": 1987,
+   "added_tokens": 15634.0,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": 13647.0
+  },
+  "nonfinal_requests": 4
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/003-u3-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 10,
+  "supported": true,
+  "A": {
+   "removable": 6,
+   "saved_tokens": 15925,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 6583.0
+  },
+  "B": {
+   "removable": 6,
+   "saved_tokens": 15925,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 8366.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 9,
+   "saved_tokens": 25221,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -19594.0
+  },
+  "nonfinal_requests": 9
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/007-p3-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/020-p3-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "p3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 4,
+  "supported": true,
+  "A": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "B": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 24291.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 24291.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 0,
+   "saved_tokens": 0,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 22508.0
+  },
+  "nonfinal_requests": 3
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/022-v2-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 17,
+  "supported": false,
+  "A": {
+   "removable": 12,
+   "saved_tokens": 78530,
+   "added_tokens": 28135.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -50395.0
+  },
+  "B": {
+   "removable": 12,
+   "saved_tokens": 78530,
+   "added_tokens": 30363.75,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -48166.25
+  },
+  "A_topicinfo_derivable": {
+   "removable": 12,
+   "saved_tokens": 78530,
+   "added_tokens": 28135.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -50395.0
+  },
+  "nonfinal_requests": 16
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/028-h4-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 14,
+  "supported": false,
+  "A": {
+   "removable": 3,
+   "saved_tokens": 7590,
+   "added_tokens": 61897.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 54307.0
+  },
+  "B": {
+   "removable": 6,
+   "saved_tokens": 26086,
+   "added_tokens": 48582.0,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 22496.0
+  },
+  "A_topicinfo_derivable": {
+   "removable": 5,
+   "saved_tokens": 14171,
+   "added_tokens": 50643.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 36472.0
+  },
+  "nonfinal_requests": 13
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/035-v2-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "v2",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 31,
+  "supported": true,
+  "A": {
+   "removable": 24,
+   "saved_tokens": 116733,
+   "added_tokens": 39389.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -77344.0
+  },
+  "B": {
+   "removable": 24,
+   "saved_tokens": 116733,
+   "added_tokens": 42509.25,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -74223.75
+  },
+  "A_topicinfo_derivable": {
+   "removable": 24,
+   "saved_tokens": 116733,
+   "added_tokens": 39389.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -77344.0
+  },
+  "nonfinal_requests": 30
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/041-u3-C1-bonsai-2_4b-s1",
+  "model": "bonsai-2:4b",
+  "task": "u3",
+  "env": "stage3",
+  "seed": 1,
+  "requests": 12,
+  "supported": false,
+  "A": {
+   "removable": 10,
+   "saved_tokens": 50069,
+   "added_tokens": 11254.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -38815.0
+  },
+  "B": {
+   "removable": 10,
+   "saved_tokens": 50069,
+   "added_tokens": 12145.5,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": -37923.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 11,
+   "saved_tokens": 59280,
+   "added_tokens": 5627.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": -53653.0
+  },
+  "nonfinal_requests": 11
+ },
+ {
+  "run_id": "bonsai-2_4b-stage3/047-h4-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "h4",
+  "env": "stage3",
+  "seed": 2,
+  "requests": 11,
+  "supported": true,
+  "A": {
+   "removable": 5,
+   "saved_tokens": 16666,
+   "added_tokens": 33762.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 17096.0
+  },
+  "B": {
+   "removable": 5,
+   "saved_tokens": 16666,
+   "added_tokens": 36436.5,
+   "snapshot_tokens": 6072.75,
+   "net_tokens": 19770.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 7,
+   "saved_tokens": 21942,
+   "added_tokens": 22508.0,
+   "snapshot_tokens": 5627.0,
+   "net_tokens": 566.0
+  },
+  "nonfinal_requests": 10
+ },
+ {
+  "run_id": "bonsai-2_4b-e1h-resume1/001-e1h_chg_2-C1-bonsai-2_4b-s2",
+  "model": "bonsai-2:4b",
+  "task": "e1h_chg_2",
+  "env": "e1h",
+  "seed": 2,
+  "requests": 40,
+  "supported": false,
+  "A": {
+   "removable": 35,
+   "saved_tokens": 111935,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": -92392.5
+  },
+  "B": {
+   "removable": 35,
+   "saved_tokens": 111935,
+   "added_tokens": 21092.5,
+   "snapshot_tokens": 4218.5,
+   "net_tokens": -90842.5
+  },
+  "A_topicinfo_derivable": {
+   "removable": 35,
+   "saved_tokens": 111935,
+   "added_tokens": 19542.5,
+   "snapshot_tokens": 3908.5,
+   "net_tokens": -92392.5
+  },
+  "nonfinal_requests": 40
+ }
+]

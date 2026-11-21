@@ -1,0 +1,684 @@
+{
+  "description": "No invocations. Eligibility requires an independently supplied trusted sidecar; ROSATools provides none.",
+  "count": 47,
+  "eligible": 0,
+  "informative_output_schemas": 0,
+  "families": {
+    "calculation": {
+      "tools": 30,
+      "eligible": 0
+    },
+    "log": {
+      "tools": 1,
+      "eligible": 0
+    },
+    "ros2": {
+      "tools": 13,
+      "eligible": 0
+    },
+    "system": {
+      "tools": 3,
+      "eligible": 0
+    }
+  },
+  "tools": [
+    {
+      "name": "acos",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "acos_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "add",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "add_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "add_all",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "add_all_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "asin",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "asin_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "atan",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "atan_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "atan2",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "atan2_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "calculate_line_angle_and_distance",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "calculate_line_angle_and_distance_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "cosh",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "cosh_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "cosine",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "cosine_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "count_lines",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "count_lines_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "count_list",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "count_list_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "count_words",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "count_words_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "degrees_to_radians",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "degrees_to_radians_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "distance_between_points",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "distance_between_points_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "divide",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "divide_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "exponentiate",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "exponentiate_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "mean",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "mean_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "median",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "median_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "mode",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "mode_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "modulo",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "modulo_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "multiply",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "multiply_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "multiply_all",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "multiply_all_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "radians_to_degrees",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "radians_to_degrees_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "sine",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "sine_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "sinh",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "sinh_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "sqrt",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "sqrt_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "subtract",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "subtract_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "tangent",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "tangent_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "tanh",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "tanh_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "variance",
+      "family": "calculation",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "variance_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "read_log",
+      "family": "log",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "read_log_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "set_debugging",
+      "family": "system",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "set_debugging_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "set_verbosity",
+      "family": "system",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "set_verbosity_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "wait",
+      "family": "system",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "wait_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_doctor",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_doctor_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_node_info",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_node_info_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_node_list",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_node_list_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_param_get",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_param_get_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_param_list",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_param_list_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_param_set",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_param_set_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_service_call",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_service_call_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_service_info",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_service_info_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_service_list",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_service_list_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_topic_echo",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_topic_echo_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_topic_info",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_topic_info_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "ros2_topic_list",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "ros2_topic_list_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    },
+    {
+      "name": "roslog_list",
+      "family": "ros2",
+      "class": "StructuredTool",
+      "metadata": {},
+      "output_schema": {
+        "title": "roslog_list_output"
+      },
+      "informative_output_schema": false,
+      "trusted_tri_state_registration": false,
+      "trusted_read_only_authorization": false,
+      "trusted_argument_authorizer": false,
+      "eligible": false
+    }
+  ]
+}

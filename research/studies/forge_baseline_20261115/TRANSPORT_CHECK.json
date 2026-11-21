@@ -1,0 +1,16 @@
+{
+  "test": "mock HTTP, no model inference or ROS",
+  "changed_request_fields": [
+    "options"
+  ],
+  "identical_parsed_output": true,
+  "inherited_send": true,
+  "options": {
+    "temperature": 0.7,
+    "num_ctx": 65536,
+    "num_predict": 4096,
+    "seed": 1
+  },
+  "tools": 12,
+  "system_message_count": 8
+}

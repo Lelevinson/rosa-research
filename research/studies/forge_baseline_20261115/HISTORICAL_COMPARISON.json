@@ -1,0 +1,104 @@
+[
+  {
+    "task": "p3",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "llm_requests": 5,
+    "input_tokens": 28089,
+    "output_tokens": 959,
+    "native_ops": 4,
+    "aborts": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/004-p3-A1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "d7b9249ca581adfb330ecc7acf4f431fa02f06cb6b2dde106d4403919ee25634",
+    "exact": false,
+    "issues": [
+      "/first: '/plant32/quartz' != '/plant32/beacon'",
+      "/second: '/plant32/beacon' != '/plant32/juniper'"
+    ],
+    "support_missing": [],
+    "supported_complete": false,
+    "scorer": "scorer-v2.0",
+    "answer_object": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "setpoint": 873
+    },
+    "answer_source": "free_text"
+  },
+  {
+    "task": "p3",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 1,
+    "llm_requests": 5,
+    "input_tokens": 9836,
+    "output_tokens": 2224,
+    "native_ops": 4,
+    "aborts": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/012-p3-C1-lfm3_1.7b-s1/trace.jsonl",
+    "trace_hash": "d65994456cf0f6dab81380742087ee70f73a6fa3333941809879faeba66e802d",
+    "exact": false,
+    "issues": [
+      "/first: '/plant32/quartz' != '/plant32/beacon'",
+      "/second: '/plant32/beacon' != '/plant32/juniper'"
+    ],
+    "support_missing": [],
+    "supported_complete": false,
+    "scorer": "scorer-v2.0",
+    "answer_object": {
+      "first": "/plant32/quartz",
+      "second": "/plant32/beacon",
+      "setpoint": 873
+    },
+    "answer_source": "free_text"
+  },
+  {
+    "task": "u3",
+    "arm": "A1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "llm_requests": 8,
+    "input_tokens": 50800,
+    "output_tokens": 2573,
+    "native_ops": 7,
+    "aborts": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/029-u3-A1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "85288f4fb81f4c9b51810eff80c03145aac63695bde6ccfa1dfa0eaa7cbea762",
+    "exact": true,
+    "issues": [],
+    "support_missing": [],
+    "supported_complete": true,
+    "scorer": "scorer-v2.0",
+    "answer_object": {
+      "publisher": "/plant32/yarrow",
+      "input_topic": "/plant32/harbor_t",
+      "upstream": "/plant32/quill"
+    },
+    "answer_source": "free_text"
+  },
+  {
+    "task": "u3",
+    "arm": "C1",
+    "model": "lfm3:1.7b",
+    "seed": 2,
+    "llm_requests": 7,
+    "input_tokens": 22259,
+    "output_tokens": 2850,
+    "native_ops": 6,
+    "aborts": [],
+    "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/043-u3-C1-lfm3_1.7b-s2/trace.jsonl",
+    "trace_hash": "1b234f5fff3fa48b8ce6215a1b6a6b2019d9238a8c980efc450433d944b1e5a8",
+    "exact": true,
+    "issues": [],
+    "support_missing": [],
+    "supported_complete": true,
+    "scorer": "scorer-v2.0",
+    "answer_object": {
+      "input_topic": "/plant32/harbor_t",
+      "publisher": "/plant32/yarrow",
+      "upstream": "/plant32/quill"
+    },
+    "answer_source": "final_answer"
+  }
+]

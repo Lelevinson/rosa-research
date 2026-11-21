@@ -1,0 +1,630 @@
+{
+ "full_only_cells": [
+  {
+   "cell": 2,
+   "task": "p3",
+   "model": "lfm3:1.7b",
+   "FULL": "correct",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "other \u2014 wrong assignment of the observed chain positions to answer fields"
+  },
+  {
+   "cell": 3,
+   "task": "p3",
+   "model": "bonsai-2:4b",
+   "FULL": "correct",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "read chain not finished"
+  },
+  {
+   "cell": 6,
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "FULL": "correct",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "tool or backend error"
+  },
+  {
+   "cell": 9,
+   "task": "e1h_abs_1",
+   "model": "gpt-oss:20b",
+   "FULL": "correct",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "wrong entity chosen"
+  },
+  {
+   "cell": 10,
+   "task": "e1h_abs_2",
+   "model": "lfm3:1.7b",
+   "FULL": "correct",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "wrong entity chosen"
+  },
+  {
+   "cell": 12,
+   "task": "v2",
+   "model": "qwen3.5:9b",
+   "FULL": "uncertain",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "name not resolved or guessed"
+  },
+  {
+   "cell": 14,
+   "task": "e1h_abs_1",
+   "model": "lfm3:1.7b",
+   "FULL": "correct",
+   "NO_FINISH": "wrong",
+   "NO_FINISH_cause": "wrong entity chosen"
+  }
+ ],
+ "full_only_counts": {
+  "FULL": {
+   "correct": 6,
+   "uncertain": 1
+  },
+  "NO_FINISH": {
+   "wrong": 7
+  }
+ },
+ "format_only_episodes": [
+  {
+   "cell": 7,
+   "task": "u3",
+   "model": "bonsai-2:4b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex_correct": "correct"
+  },
+  {
+   "cell": 11,
+   "task": "e1h_amb_1",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex_correct": "correct"
+  },
+  {
+   "cell": 11,
+   "task": "e1h_amb_1",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex_correct": "correct"
+  },
+  {
+   "cell": 13,
+   "task": "h4",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex_correct": "correct"
+  }
+ ],
+ "agreement_table": {
+  "correct": {
+   "scorer supported": 14
+  },
+  "cannot tell": {
+   "scorer supported": 7
+  },
+  "incorrect": {
+   "scorer unsupported": 7
+  }
+ },
+ "agreement": {
+  "episodes": 28,
+  "codex_decided": 21,
+  "agree": 21,
+  "disagree": []
+ },
+ "uncertain_episodes": [
+  {
+   "cell": 1,
+   "arm": "NO_FINISH",
+   "kind": "both_supported",
+   "scorer_supported": true
+  },
+  {
+   "cell": 4,
+   "arm": "NO_FINISH",
+   "kind": "both_supported",
+   "scorer_supported": true
+  },
+  {
+   "cell": 5,
+   "arm": "NO_FINISH",
+   "kind": "both_supported",
+   "scorer_supported": true
+  },
+  {
+   "cell": 5,
+   "arm": "FULL",
+   "kind": "both_supported",
+   "scorer_supported": true
+  },
+  {
+   "cell": 8,
+   "arm": "NO_FINISH",
+   "kind": "both_supported",
+   "scorer_supported": true
+  },
+  {
+   "cell": 8,
+   "arm": "FULL",
+   "kind": "both_supported",
+   "scorer_supported": true
+  },
+  {
+   "cell": 12,
+   "arm": "FULL",
+   "kind": "FULL_only",
+   "scorer_supported": true
+  }
+ ],
+ "verdict_by_arm_all_28": {
+  "FULL": {
+   "correct": 10,
+   "uncertain": 3,
+   "format-only": 1
+  },
+  "NO_FINISH": {
+   "uncertain": 4,
+   "wrong": 7,
+   "format-only": 3
+  }
+ },
+ "rows": [
+  {
+   "cell": 1,
+   "task": "u3",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 1,
+   "task": "u3",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "cannot tell",
+    "complete": "cannot tell",
+    "stopped_early": "cannot tell",
+    "cause": "other \u2014 packet truncation prevents verification"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 2,
+   "task": "p3",
+   "model": "lfm3:1.7b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 2,
+   "task": "p3",
+   "model": "lfm3:1.7b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "other \u2014 wrong assignment of the observed chain positions to answer fields"
+   },
+   "codex_verdict": "wrong"
+  },
+  {
+   "cell": 3,
+   "task": "p3",
+   "model": "bonsai-2:4b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 3,
+   "task": "p3",
+   "model": "bonsai-2:4b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "no",
+    "stopped_early": "yes",
+    "cause": "read chain not finished"
+   },
+   "codex_verdict": "wrong"
+  },
+  {
+   "cell": 4,
+   "task": "e1h_chg_2",
+   "model": "lfm3:1.7b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 4,
+   "task": "e1h_chg_2",
+   "model": "lfm3:1.7b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "no",
+    "complete": "no",
+    "stopped_early": "yes",
+    "cause": "read chain not finished"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 5,
+   "task": "h4",
+   "model": "qwen3.5:9b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "cannot tell",
+    "complete": "cannot tell",
+    "stopped_early": "cannot tell",
+    "cause": "other \u2014 packet truncation prevents verification"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 5,
+   "task": "h4",
+   "model": "qwen3.5:9b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "cannot tell",
+    "complete": "cannot tell",
+    "stopped_early": "cannot tell",
+    "cause": "other \u2014 packet truncation prevents verification"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 6,
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "tool or backend error"
+   },
+   "codex_verdict": "wrong"
+  },
+  {
+   "cell": 6,
+   "task": "e1h_chg_2",
+   "model": "bonsai-2:4b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 7,
+   "task": "u3",
+   "model": "bonsai-2:4b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 7,
+   "task": "u3",
+   "model": "bonsai-2:4b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "yes",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "answer format"
+   },
+   "codex_verdict": "format-only"
+  },
+  {
+   "cell": 8,
+   "task": "h4",
+   "model": "bonsai-2:4b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "cannot tell",
+    "complete": "cannot tell",
+    "stopped_early": "cannot tell",
+    "cause": "other \u2014 packet truncation prevents verification"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 8,
+   "task": "h4",
+   "model": "bonsai-2:4b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "cannot tell",
+    "complete": "cannot tell",
+    "stopped_early": "cannot tell",
+    "cause": "other \u2014 packet truncation prevents verification"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 9,
+   "task": "e1h_abs_1",
+   "model": "gpt-oss:20b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 9,
+   "task": "e1h_abs_1",
+   "model": "gpt-oss:20b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "wrong entity chosen"
+   },
+   "codex_verdict": "wrong"
+  },
+  {
+   "cell": 10,
+   "task": "e1h_abs_2",
+   "model": "lfm3:1.7b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "wrong entity chosen"
+   },
+   "codex_verdict": "wrong"
+  },
+  {
+   "cell": 10,
+   "task": "e1h_abs_2",
+   "model": "lfm3:1.7b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 11,
+   "task": "e1h_amb_1",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "yes",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "answer format"
+   },
+   "codex_verdict": "format-only"
+  },
+  {
+   "cell": 11,
+   "task": "e1h_amb_1",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "yes",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "answer format"
+   },
+   "codex_verdict": "format-only"
+  },
+  {
+   "cell": 12,
+   "task": "v2",
+   "model": "qwen3.5:9b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "cannot tell",
+    "format_only": "cannot tell",
+    "complete": "cannot tell",
+    "stopped_early": "cannot tell",
+    "cause": "other \u2014 packet truncation prevents provider verification"
+   },
+   "codex_verdict": "uncertain"
+  },
+  {
+   "cell": 12,
+   "task": "v2",
+   "model": "qwen3.5:9b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "no",
+    "stopped_early": "yes",
+    "cause": "name not resolved or guessed"
+   },
+   "codex_verdict": "wrong"
+  },
+  {
+   "cell": 13,
+   "task": "h4",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "NO_FINISH",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "yes",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "answer format"
+   },
+   "codex_verdict": "format-only"
+  },
+  {
+   "cell": 13,
+   "task": "h4",
+   "model": "gpt-oss:20b",
+   "kind": "both_supported",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 14,
+   "task": "e1h_abs_1",
+   "model": "lfm3:1.7b",
+   "kind": "FULL_only",
+   "arm": "FULL",
+   "scorer_supported": true,
+   "codex": {
+    "correct": "correct",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": ""
+   },
+   "codex_verdict": "correct"
+  },
+  {
+   "cell": 14,
+   "task": "e1h_abs_1",
+   "model": "lfm3:1.7b",
+   "kind": "FULL_only",
+   "arm": "NO_FINISH",
+   "scorer_supported": false,
+   "codex": {
+    "correct": "incorrect",
+    "format_only": "no",
+    "complete": "yes",
+    "stopped_early": "no",
+    "cause": "wrong entity chosen"
+   },
+   "codex_verdict": "wrong"
+  }
+ ]
+}

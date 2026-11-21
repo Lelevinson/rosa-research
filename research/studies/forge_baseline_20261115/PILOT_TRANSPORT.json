@@ -1,0 +1,1206 @@
+{
+  "lfm3:1.7b": {
+    "think": false,
+    "reconstructed_sdk_request": {
+      "model": "lfm3:1.7b",
+      "stream": true,
+      "options": {
+        "num_ctx": 65536,
+        "num_predict": 4096,
+        "temperature": 0.7,
+        "seed": 1
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Your are ROSA (Robot Operating System Agent), an AI agent that can use ROS tools to answer questions about robotics systems. You have a subset of the ROS tools available to you, and you can use them to interact with the robotic system you are integrated with. Your responses should be grounded in real-time information whenever possible using the tools available to you."
+        },
+        {
+          "role": "system",
+          "content": "Use the task text and earlier tool results to decide which tool to call next; list entities only when you do not already know their names."
+        },
+        {
+          "role": "system",
+          "content": "Independent tool calls whose arguments are already known may be made together in one response."
+        },
+        {
+          "role": "system",
+          "content": "You may use rosparams to store information between interactions. However, if you are using rosparams to store your own memory, you must use the /rosa namespace to avoid conflicts with other ROS nodes. e.g. to store a value in the 'foo' parameter, use the key '/rosa/foo'."
+        },
+        {
+          "role": "system",
+          "content": "When providing a directory/path to a tool, you must always look for the correct path using your tools. When reading files, you must make sure that the file size is not too large to read. This is especially important when reading multiple files. A file is too large to read completely if its size is greater than 32KB. Avoid specifying a line range unless the user has requested it or the file is too large to read."
+        },
+        {
+          "role": "system",
+          "content": "You must use your math tools to perform calculations, especially for angles, distances, coordinates, and geometric computations. Failing to do this may result in incorrect commands or system failures. You must never perform calculations manually in your reasoning - always use the provided calculation tools to ensure accuracy. This is critical for robotics operations where precision matters."
+        },
+        {
+          "role": "system",
+          "content": "When you see <ROSA_INSTRUCTIONS> tags, you must follow the instructions inside of them. These instructions are instructions for how to use ROS tools to complete a task. You must follow these instructions IN ALL CASES. "
+        },
+        {
+          "role": "system",
+          "content": "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
+        },
+        {
+          "role": "user",
+          "content": "Node /plant32/quartz has a string parameter next_node that names the node it hands off to and an integer parameter setpoint, and so does every node in the chain. Read next_node of /plant32/quartz, then read next_node of the node it names, then read the setpoint of the node named by that second read. Return JSON with keys first (the node named by /plant32/quartz), second (the node named by first) and setpoint (integer, the setpoint of second)."
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "read_log",
+            "description": "Read a log file and return the log lines that match the level filter and line range.\n\n:param log_file_directory: The directory containing the log file to read (use your tools to get it)\n:param log_filename: The path to the log file to read\n:param level_filter: Only show log lines that contain this level (e.g. \"ERROR\", \"INFO\", \"DEBUG\", etc.)\n:param num_lines: The number of most recent lines to return from the log file",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "log_file_directory",
+                "log_filename"
+              ],
+              "properties": {
+                "log_file_directory": {
+                  "type": "string"
+                },
+                "log_filename": {
+                  "type": "string"
+                },
+                "level_filter": {},
+                "num_lines": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_doctor",
+            "description": "Check ROS setup and other potential issues.",
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_info",
+            "description": "Get information about a ROS2 node.\n\n:param node_name: The name of the ROS2 node.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "nodes"
+              ],
+              "properties": {
+                "nodes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_list",
+            "description": "Get a list of ROS2 nodes running on the system.\n\n:param pattern: A regular expression pattern to filter the list of nodes.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_get",
+            "description": "Get the value of a parameter for a ROS2 node.\n\n:param node_name: The name of the ROS2 node.\n:param param_name: The name of the parameter.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "node_name",
+                "param_name"
+              ],
+              "properties": {
+                "node_name": {
+                  "type": "string"
+                },
+                "param_name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_list",
+            "description": "Get a list of parameters for a ROS2 node.\n\n:param node_name: An optional ROS2 node name to get parameters for. If not provided, all parameters are listed.\n:param pattern: A regular expression pattern to filter the list of parameters.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "node_name": {},
+                "pattern": {
+                  "type": "string"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_info",
+            "description": "Get information about a ROS2 service.\n\n:param services: a list of ROS2 service names.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "services"
+              ],
+              "properties": {
+                "services": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_list",
+            "description": "Get a list of ROS2 services.\n\n:param pattern: A regular expression pattern to filter the list of services.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_echo",
+            "description": "Echoes the contents of a specific ROS2 topic.\n\n:param topic: The name of the ROS topic to echo.\n:param count: The number of messages to echo. Valid range is 1-10.\n:param return_echoes: If True, return the messages as a list with the response.\n:param delay: Time to wait between each message in seconds.\n:param timeout: Max time to wait for a message before timing out.\n\n:note: Do not set return_echoes to True if the number of messages is large.\n       This will cause the response to be too large and may cause the tool to fail.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topic"
+              ],
+              "properties": {
+                "topic": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "return_echoes": {
+                  "type": "boolean"
+                },
+                "delay": {
+                  "type": "number"
+                },
+                "timeout": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_info",
+            "description": "Get information about a ROS2 topic.\n\n:param topic_name: The name of the ROS2 topic.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topics"
+              ],
+              "properties": {
+                "topics": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_list",
+            "description": "Get a list of ROS2 topics.\n\n:param pattern: A regular expression pattern to filter the list of topics.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "roslog_list",
+            "description": "Returns a list of ROS log files.\n\n:param min_size: The minimum size of the log file in bytes to include in the list.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "min_size": {
+                  "type": "integer"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "final_answer",
+            "description": "Submit the final answer as a JSON object. This ends the task.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "answer"
+              ],
+              "properties": {
+                "answer": {
+                  "type": "object",
+                  "description": "The final answer as a JSON object with the keys the task asks for."
+                }
+              }
+            }
+          }
+        }
+      ],
+      "think": false
+    },
+    "historical_trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/012-p3-C1-lfm3_1.7b-s1/trace.jsonl",
+    "historical_trace_hash": "d65994456cf0f6dab81380742087ee70f73a6fa3333941809879faeba66e802d",
+    "evidence": "logical historical trace plus current unchanged pilot factory and installed SDK; not a historical raw HTTP capture"
+  },
+  "qwen3.5:9b": {
+    "think": false,
+    "reconstructed_sdk_request": {
+      "model": "qwen3.5:9b",
+      "stream": true,
+      "options": {
+        "num_ctx": 65536,
+        "num_predict": 4096,
+        "temperature": 0.7,
+        "seed": 2
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Your are ROSA (Robot Operating System Agent), an AI agent that can use ROS tools to answer questions about robotics systems. You have a subset of the ROS tools available to you, and you can use them to interact with the robotic system you are integrated with. Your responses should be grounded in real-time information whenever possible using the tools available to you."
+        },
+        {
+          "role": "system",
+          "content": "Use the task text and earlier tool results to decide which tool to call next; list entities only when you do not already know their names."
+        },
+        {
+          "role": "system",
+          "content": "Independent tool calls whose arguments are already known may be made together in one response."
+        },
+        {
+          "role": "system",
+          "content": "You may use rosparams to store information between interactions. However, if you are using rosparams to store your own memory, you must use the /rosa namespace to avoid conflicts with other ROS nodes. e.g. to store a value in the 'foo' parameter, use the key '/rosa/foo'."
+        },
+        {
+          "role": "system",
+          "content": "When providing a directory/path to a tool, you must always look for the correct path using your tools. When reading files, you must make sure that the file size is not too large to read. This is especially important when reading multiple files. A file is too large to read completely if its size is greater than 32KB. Avoid specifying a line range unless the user has requested it or the file is too large to read."
+        },
+        {
+          "role": "system",
+          "content": "You must use your math tools to perform calculations, especially for angles, distances, coordinates, and geometric computations. Failing to do this may result in incorrect commands or system failures. You must never perform calculations manually in your reasoning - always use the provided calculation tools to ensure accuracy. This is critical for robotics operations where precision matters."
+        },
+        {
+          "role": "system",
+          "content": "When you see <ROSA_INSTRUCTIONS> tags, you must follow the instructions inside of them. These instructions are instructions for how to use ROS tools to complete a task. You must follow these instructions IN ALL CASES. "
+        },
+        {
+          "role": "system",
+          "content": "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
+        },
+        {
+          "role": "user",
+          "content": "Node /plant32/quartz has a string parameter next_node that names the node it hands off to and an integer parameter setpoint, and so does every node in the chain. Read next_node of /plant32/quartz, then read next_node of the node it names, then read the setpoint of the node named by that second read. Return JSON with keys first (the node named by /plant32/quartz), second (the node named by first) and setpoint (integer, the setpoint of second)."
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "read_log",
+            "description": "Read a log file and return the log lines that match the level filter and line range.\n\n:param log_file_directory: The directory containing the log file to read (use your tools to get it)\n:param log_filename: The path to the log file to read\n:param level_filter: Only show log lines that contain this level (e.g. \"ERROR\", \"INFO\", \"DEBUG\", etc.)\n:param num_lines: The number of most recent lines to return from the log file",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "log_file_directory",
+                "log_filename"
+              ],
+              "properties": {
+                "log_file_directory": {
+                  "type": "string"
+                },
+                "log_filename": {
+                  "type": "string"
+                },
+                "level_filter": {},
+                "num_lines": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_doctor",
+            "description": "Check ROS setup and other potential issues.",
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_info",
+            "description": "Get information about a ROS2 node.\n\n:param node_name: The name of the ROS2 node.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "nodes"
+              ],
+              "properties": {
+                "nodes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_list",
+            "description": "Get a list of ROS2 nodes running on the system.\n\n:param pattern: A regular expression pattern to filter the list of nodes.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_get",
+            "description": "Get the value of a parameter for a ROS2 node.\n\n:param node_name: The name of the ROS2 node.\n:param param_name: The name of the parameter.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "node_name",
+                "param_name"
+              ],
+              "properties": {
+                "node_name": {
+                  "type": "string"
+                },
+                "param_name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_list",
+            "description": "Get a list of parameters for a ROS2 node.\n\n:param node_name: An optional ROS2 node name to get parameters for. If not provided, all parameters are listed.\n:param pattern: A regular expression pattern to filter the list of parameters.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "node_name": {},
+                "pattern": {
+                  "type": "string"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_info",
+            "description": "Get information about a ROS2 service.\n\n:param services: a list of ROS2 service names.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "services"
+              ],
+              "properties": {
+                "services": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_list",
+            "description": "Get a list of ROS2 services.\n\n:param pattern: A regular expression pattern to filter the list of services.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_echo",
+            "description": "Echoes the contents of a specific ROS2 topic.\n\n:param topic: The name of the ROS topic to echo.\n:param count: The number of messages to echo. Valid range is 1-10.\n:param return_echoes: If True, return the messages as a list with the response.\n:param delay: Time to wait between each message in seconds.\n:param timeout: Max time to wait for a message before timing out.\n\n:note: Do not set return_echoes to True if the number of messages is large.\n       This will cause the response to be too large and may cause the tool to fail.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topic"
+              ],
+              "properties": {
+                "topic": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "return_echoes": {
+                  "type": "boolean"
+                },
+                "delay": {
+                  "type": "number"
+                },
+                "timeout": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_info",
+            "description": "Get information about a ROS2 topic.\n\n:param topic_name: The name of the ROS2 topic.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topics"
+              ],
+              "properties": {
+                "topics": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_list",
+            "description": "Get a list of ROS2 topics.\n\n:param pattern: A regular expression pattern to filter the list of topics.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "roslog_list",
+            "description": "Returns a list of ROS log files.\n\n:param min_size: The minimum size of the log file in bytes to include in the list.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "min_size": {
+                  "type": "integer"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "final_answer",
+            "description": "Submit the final answer as a JSON object. This ends the task.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "answer"
+              ],
+              "properties": {
+                "answer": {
+                  "type": "object",
+                  "description": "The final answer as a JSON object with the keys the task asks for."
+                }
+              }
+            }
+          }
+        }
+      ],
+      "think": false
+    },
+    "historical_trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/001-p3-C1-qwen3.5_9b-s2/trace.jsonl",
+    "historical_trace_hash": "12ea9959663a5e0e2c394675ad7a9d421dc8dce628d1c8e2d873aecdd142e6c2",
+    "evidence": "logical historical trace plus current unchanged pilot factory and installed SDK; not a historical raw HTTP capture"
+  },
+  "gpt-oss:20b": {
+    "think": false,
+    "reconstructed_sdk_request": {
+      "model": "gpt-oss:20b",
+      "stream": true,
+      "options": {
+        "num_ctx": 65536,
+        "num_predict": 4096,
+        "temperature": 0.7,
+        "seed": 1
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Your are ROSA (Robot Operating System Agent), an AI agent that can use ROS tools to answer questions about robotics systems. You have a subset of the ROS tools available to you, and you can use them to interact with the robotic system you are integrated with. Your responses should be grounded in real-time information whenever possible using the tools available to you."
+        },
+        {
+          "role": "system",
+          "content": "Use the task text and earlier tool results to decide which tool to call next; list entities only when you do not already know their names."
+        },
+        {
+          "role": "system",
+          "content": "Independent tool calls whose arguments are already known may be made together in one response."
+        },
+        {
+          "role": "system",
+          "content": "You may use rosparams to store information between interactions. However, if you are using rosparams to store your own memory, you must use the /rosa namespace to avoid conflicts with other ROS nodes. e.g. to store a value in the 'foo' parameter, use the key '/rosa/foo'."
+        },
+        {
+          "role": "system",
+          "content": "When providing a directory/path to a tool, you must always look for the correct path using your tools. When reading files, you must make sure that the file size is not too large to read. This is especially important when reading multiple files. A file is too large to read completely if its size is greater than 32KB. Avoid specifying a line range unless the user has requested it or the file is too large to read."
+        },
+        {
+          "role": "system",
+          "content": "You must use your math tools to perform calculations, especially for angles, distances, coordinates, and geometric computations. Failing to do this may result in incorrect commands or system failures. You must never perform calculations manually in your reasoning - always use the provided calculation tools to ensure accuracy. This is critical for robotics operations where precision matters."
+        },
+        {
+          "role": "system",
+          "content": "When you see <ROSA_INSTRUCTIONS> tags, you must follow the instructions inside of them. These instructions are instructions for how to use ROS tools to complete a task. You must follow these instructions IN ALL CASES. "
+        },
+        {
+          "role": "system",
+          "content": "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
+        },
+        {
+          "role": "user",
+          "content": "Two nodes named 'zircon' are running, in different namespaces. Topic /e1h/cinder_t is published by exactly one of them. Return JSON with keys node (the full name of the one that publishes that topic) and gain (its integer parameter gain)."
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "read_log",
+            "description": "Read a log file and return the log lines that match the level filter and line range.\n\n:param log_file_directory: The directory containing the log file to read (use your tools to get it)\n:param log_filename: The path to the log file to read\n:param level_filter: Only show log lines that contain this level (e.g. \"ERROR\", \"INFO\", \"DEBUG\", etc.)\n:param num_lines: The number of most recent lines to return from the log file",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "log_file_directory",
+                "log_filename"
+              ],
+              "properties": {
+                "log_file_directory": {
+                  "type": "string"
+                },
+                "log_filename": {
+                  "type": "string"
+                },
+                "level_filter": {},
+                "num_lines": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_doctor",
+            "description": "Check ROS setup and other potential issues.",
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_info",
+            "description": "Get information about a ROS2 node.\n\n:param node_name: The name of the ROS2 node.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "nodes"
+              ],
+              "properties": {
+                "nodes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_list",
+            "description": "Get a list of ROS2 nodes running on the system.\n\n:param pattern: A regular expression pattern to filter the list of nodes.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_get",
+            "description": "Get the value of a parameter for a ROS2 node.\n\n:param node_name: The name of the ROS2 node.\n:param param_name: The name of the parameter.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "node_name",
+                "param_name"
+              ],
+              "properties": {
+                "node_name": {
+                  "type": "string"
+                },
+                "param_name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_list",
+            "description": "Get a list of parameters for a ROS2 node.\n\n:param node_name: An optional ROS2 node name to get parameters for. If not provided, all parameters are listed.\n:param pattern: A regular expression pattern to filter the list of parameters.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "node_name": {},
+                "pattern": {
+                  "type": "string"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_info",
+            "description": "Get information about a ROS2 service.\n\n:param services: a list of ROS2 service names.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "services"
+              ],
+              "properties": {
+                "services": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_list",
+            "description": "Get a list of ROS2 services.\n\n:param pattern: A regular expression pattern to filter the list of services.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_echo",
+            "description": "Echoes the contents of a specific ROS2 topic.\n\n:param topic: The name of the ROS topic to echo.\n:param count: The number of messages to echo. Valid range is 1-10.\n:param return_echoes: If True, return the messages as a list with the response.\n:param delay: Time to wait between each message in seconds.\n:param timeout: Max time to wait for a message before timing out.\n\n:note: Do not set return_echoes to True if the number of messages is large.\n       This will cause the response to be too large and may cause the tool to fail.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topic"
+              ],
+              "properties": {
+                "topic": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "return_echoes": {
+                  "type": "boolean"
+                },
+                "delay": {
+                  "type": "number"
+                },
+                "timeout": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_info",
+            "description": "Get information about a ROS2 topic.\n\n:param topic_name: The name of the ROS2 topic.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topics"
+              ],
+              "properties": {
+                "topics": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_list",
+            "description": "Get a list of ROS2 topics.\n\n:param pattern: A regular expression pattern to filter the list of topics.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "roslog_list",
+            "description": "Returns a list of ROS log files.\n\n:param min_size: The minimum size of the log file in bytes to include in the list.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "min_size": {
+                  "type": "integer"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "final_answer",
+            "description": "Submit the final answer as a JSON object. This ends the task.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "answer"
+              ],
+              "properties": {
+                "answer": {
+                  "type": "object",
+                  "description": "The final answer as a JSON object with the keys the task asks for."
+                }
+              }
+            }
+          }
+        }
+      ],
+      "think": false
+    },
+    "historical_trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/011-e1h_amb_2-C1-gpt-oss_20b-s1/trace.jsonl",
+    "historical_trace_hash": "564a232c91ddbe0e017960228393680c5d240fab572e8f314b41c64f791998c0",
+    "evidence": "logical historical trace plus current unchanged pilot factory and installed SDK; not a historical raw HTTP capture"
+  },
+  "bonsai-2:4b": {
+    "think": false,
+    "reconstructed_sdk_request": {
+      "model": "bonsai-2:4b",
+      "stream": true,
+      "options": {
+        "num_ctx": 65536,
+        "num_predict": 4096,
+        "temperature": 0.7,
+        "seed": 1
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Your are ROSA (Robot Operating System Agent), an AI agent that can use ROS tools to answer questions about robotics systems. You have a subset of the ROS tools available to you, and you can use them to interact with the robotic system you are integrated with. Your responses should be grounded in real-time information whenever possible using the tools available to you."
+        },
+        {
+          "role": "system",
+          "content": "Use the task text and earlier tool results to decide which tool to call next; list entities only when you do not already know their names."
+        },
+        {
+          "role": "system",
+          "content": "Independent tool calls whose arguments are already known may be made together in one response."
+        },
+        {
+          "role": "system",
+          "content": "You may use rosparams to store information between interactions. However, if you are using rosparams to store your own memory, you must use the /rosa namespace to avoid conflicts with other ROS nodes. e.g. to store a value in the 'foo' parameter, use the key '/rosa/foo'."
+        },
+        {
+          "role": "system",
+          "content": "When providing a directory/path to a tool, you must always look for the correct path using your tools. When reading files, you must make sure that the file size is not too large to read. This is especially important when reading multiple files. A file is too large to read completely if its size is greater than 32KB. Avoid specifying a line range unless the user has requested it or the file is too large to read."
+        },
+        {
+          "role": "system",
+          "content": "You must use your math tools to perform calculations, especially for angles, distances, coordinates, and geometric computations. Failing to do this may result in incorrect commands or system failures. You must never perform calculations manually in your reasoning - always use the provided calculation tools to ensure accuracy. This is critical for robotics operations where precision matters."
+        },
+        {
+          "role": "system",
+          "content": "When you see <ROSA_INSTRUCTIONS> tags, you must follow the instructions inside of them. These instructions are instructions for how to use ROS tools to complete a task. You must follow these instructions IN ALL CASES. "
+        },
+        {
+          "role": "system",
+          "content": "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
+        },
+        {
+          "role": "user",
+          "content": "Is the node /ember/mistral running? If it is, return JSON with keys node, running (true) and limit (its integer parameter limit). If it is not running, return JSON with keys node (the name you checked, exactly as given) and running (false)."
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "read_log",
+            "description": "Read a log file and return the log lines that match the level filter and line range.\n\n:param log_file_directory: The directory containing the log file to read (use your tools to get it)\n:param log_filename: The path to the log file to read\n:param level_filter: Only show log lines that contain this level (e.g. \"ERROR\", \"INFO\", \"DEBUG\", etc.)\n:param num_lines: The number of most recent lines to return from the log file",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "log_file_directory",
+                "log_filename"
+              ],
+              "properties": {
+                "log_file_directory": {
+                  "type": "string"
+                },
+                "log_filename": {
+                  "type": "string"
+                },
+                "level_filter": {},
+                "num_lines": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_doctor",
+            "description": "Check ROS setup and other potential issues.",
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_info",
+            "description": "Get information about a ROS2 node.\n\n:param node_name: The name of the ROS2 node.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "nodes"
+              ],
+              "properties": {
+                "nodes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_node_list",
+            "description": "Get a list of ROS2 nodes running on the system.\n\n:param pattern: A regular expression pattern to filter the list of nodes.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_get",
+            "description": "Get the value of a parameter for a ROS2 node.\n\n:param node_name: The name of the ROS2 node.\n:param param_name: The name of the parameter.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "node_name",
+                "param_name"
+              ],
+              "properties": {
+                "node_name": {
+                  "type": "string"
+                },
+                "param_name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_param_list",
+            "description": "Get a list of parameters for a ROS2 node.\n\n:param node_name: An optional ROS2 node name to get parameters for. If not provided, all parameters are listed.\n:param pattern: A regular expression pattern to filter the list of parameters.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "node_name": {},
+                "pattern": {
+                  "type": "string"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_info",
+            "description": "Get information about a ROS2 service.\n\n:param services: a list of ROS2 service names.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "services"
+              ],
+              "properties": {
+                "services": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_service_list",
+            "description": "Get a list of ROS2 services.\n\n:param pattern: A regular expression pattern to filter the list of services.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_echo",
+            "description": "Echoes the contents of a specific ROS2 topic.\n\n:param topic: The name of the ROS topic to echo.\n:param count: The number of messages to echo. Valid range is 1-10.\n:param return_echoes: If True, return the messages as a list with the response.\n:param delay: Time to wait between each message in seconds.\n:param timeout: Max time to wait for a message before timing out.\n\n:note: Do not set return_echoes to True if the number of messages is large.\n       This will cause the response to be too large and may cause the tool to fail.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topic"
+              ],
+              "properties": {
+                "topic": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "return_echoes": {
+                  "type": "boolean"
+                },
+                "delay": {
+                  "type": "number"
+                },
+                "timeout": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_info",
+            "description": "Get information about a ROS2 topic.\n\n:param topic_name: The name of the ROS2 topic.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "topics"
+              ],
+              "properties": {
+                "topics": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "ros2_topic_list",
+            "description": "Get a list of ROS2 topics.\n\n:param pattern: A regular expression pattern to filter the list of topics.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {},
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "roslog_list",
+            "description": "Returns a list of ROS log files.\n\n:param min_size: The minimum size of the log file in bytes to include in the list.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "min_size": {
+                  "type": "integer"
+                },
+                "blacklist": {}
+              }
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "final_answer",
+            "description": "Submit the final answer as a JSON object. This ends the task.",
+            "parameters": {
+              "type": "object",
+              "required": [
+                "answer"
+              ],
+              "properties": {
+                "answer": {
+                  "type": "object",
+                  "description": "The final answer as a JSON object with the keys the task asks for."
+                }
+              }
+            }
+          }
+        }
+      ],
+      "think": false
+    },
+    "historical_trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/000-e1h_abs_1-C1-bonsai-2_4b-s1/trace.jsonl",
+    "historical_trace_hash": "1f56c3f68aa311fada168357a840ddb86e55d654d0521ef3045f935ea7961a17",
+    "evidence": "logical historical trace plus current unchanged pilot factory and installed SDK; not a historical raw HTTP capture"
+  }
+}

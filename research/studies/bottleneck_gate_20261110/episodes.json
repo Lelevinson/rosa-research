@@ -1,0 +1,3448 @@
+[
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/00-13-d1-C-r0-ordinary_evidence_check-r1/trace.jsonl",
+    "episode": "00-13-d1-C-r0-ordinary_evidence_check-r1",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 16209,
+      "output_tokens": 395,
+      "total_tokens": 16604
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "13-d1-C-r0",
+        "decision_model_end_line": 44
+      },
+      "variant": "ordinary_evidence_check",
+      "repeat": 1,
+      "answer": "Based on all the information I've gathered, here is the JSON response with the requested fields:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\n**Summary of findings:**\n- **Topic**: `/diag_demo/chatter`\n- **Message Type**: `std_msgs/msg/String`\n- **Publisher Count**: 1\n- **Subscriber Count**: 1\n- **Endpoints**:\n  - Publisher: `/diag_demo/source` (use_sim_time: false)\n  - Subscriber: `/diag_demo/listener` (use_sim_time: false)\n\nThe topic has a single publisher (`/diag_demo/source`) and a single subscriber (`/diag_demo/listener`), both with `use_sim_time` set to false.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/01-04-t2-C-r0-unchanged_context-r0/trace.jsonl",
+    "episode": "01-04-t2-C-r0-unchanged_context-r0",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 1,
+    "model_ends": 1,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 7217,
+      "output_tokens": 182,
+      "total_tokens": 7399
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "04-t2-C-r0",
+        "decision_model_end_line": 28
+      },
+      "variant": "unchanged_context",
+      "repeat": 0,
+      "answer": "Now I have all the information needed. Let me compile the JSON response with the node name, services (clear and reset), and use_sim_time value.\n\nBased on my inspection of `/diag_turtle/palette`:\n\n- **Node**: `/diag_turtle/palette`\n- **Services**: \n  - `/diag_turtle/clear`: `std_srvs/srv/Empty`\n  - `/diag_turtle/reset`: `std_srvs/srv/Empty`\n- **use_sim_time**: `False`\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/02-13-d1-C-r0-unchanged_context-r0/trace.jsonl",
+    "episode": "02-13-d1-C-r0-unchanged_context-r0",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 16056,
+      "output_tokens": 358,
+      "total_tokens": 16414
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "13-d1-C-r0",
+        "decision_model_end_line": 44
+      },
+      "variant": "unchanged_context",
+      "repeat": 0,
+      "answer": "Based on all the tool responses, I now have complete information. Let me compile the JSON response:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\nThis JSON contains all the requested information:\n- **topic**: `/diag_demo/chatter`\n- **type**: `std_msgs/msg/String`\n- **publishers**: 1 (integer count)\n- **subscribers**: 1 (integer count)\n- **endpoints**: List of two objects, one for the publisher node (`/diag_demo/source`) and one for the subscriber node (`/diag_demo/listener`), each with their respective role and use_sim_time boolean value",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/03-13-d1-C-r0-ordinary_evidence_check-r0/trace.jsonl",
+    "episode": "03-13-d1-C-r0-ordinary_evidence_check-r0",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 16209,
+      "output_tokens": 383,
+      "total_tokens": 16592
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "13-d1-C-r0",
+        "decision_model_end_line": 44
+      },
+      "variant": "ordinary_evidence_check",
+      "repeat": 0,
+      "answer": "Based on all the information I've gathered, here is the JSON response with the requested fields:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\n**Summary of findings:**\n- **Topic**: `/diag_demo/chatter`\n- **Message Type**: `std_msgs/msg/String`\n- **Publisher Count**: 1\n- **Subscriber Count**: 1\n- **Endpoints**:\n  - Publisher: `/diag_demo/source` (use_sim_time: false)\n  - Subscriber: `/diag_demo/listener` (use_sim_time: false)\n\nBoth nodes are in the `/diag_demo` namespace and both have `use_sim_time` set to `false`.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/04-04-t2-C-r0-ordinary_evidence_check-r0/trace.jsonl",
+    "episode": "04-04-t2-C-r0-ordinary_evidence_check-r0",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 1,
+    "model_ends": 1,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 7284,
+      "output_tokens": 108,
+      "total_tokens": 7392
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "04-t2-C-r0",
+        "decision_model_end_line": 28
+      },
+      "variant": "ordinary_evidence_check",
+      "repeat": 0,
+      "answer": null,
+      "error": "RuntimeError('Unmatched recorded-response request: [\"set_debugging\", {\"enable_debug_messages\": false}]')"
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/05-04-t2-C-r0-unchanged_context-r1/trace.jsonl",
+    "episode": "05-04-t2-C-r0-unchanged_context-r1",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 1,
+    "model_ends": 1,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 7217,
+      "output_tokens": 181,
+      "total_tokens": 7398
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "04-t2-C-r0",
+        "decision_model_end_line": 28
+      },
+      "variant": "unchanged_context",
+      "repeat": 1,
+      "answer": "I have all the information needed. Let me compile the JSON response with the node name, services (clear and reset), and use_sim_time value.\n\nBased on my inspection of `/diag_turtle/palette`:\n\n- **Node**: `/diag_turtle/palette`\n- **Services**: \n  - `/diag_turtle/clear`: `std_srvs/srv/Empty`\n  - `/diag_turtle/reset`: `std_srvs/srv/Empty`\n- **use_sim_time**: `False`\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/06-04-t2-C-r0-ordinary_evidence_check-r1/trace.jsonl",
+    "episode": "06-04-t2-C-r0-ordinary_evidence_check-r1",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 1,
+    "model_ends": 1,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 7284,
+      "output_tokens": 108,
+      "total_tokens": 7392
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "04-t2-C-r0",
+        "decision_model_end_line": 28
+      },
+      "variant": "ordinary_evidence_check",
+      "repeat": 1,
+      "answer": null,
+      "error": "RuntimeError('Unmatched recorded-response request: [\"set_debugging\", {\"enable_debug_messages\": false}]')"
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "replay",
+    "member": "evidence/diagnostic-replay-v1/07-13-d1-C-r0-unchanged_context-r1/trace.jsonl",
+    "episode": "07-13-d1-C-r0-unchanged_context-r1",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 16056,
+      "output_tokens": 358,
+      "total_tokens": 16414
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "context": {
+        "episode": "13-d1-C-r0",
+        "decision_model_end_line": 44
+      },
+      "variant": "unchanged_context",
+      "repeat": 1,
+      "answer": "Based on all the tool responses, I now have complete information. Let me compile the JSON response:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\nThis JSON contains all the requested information:\n- **topic**: `/diag_demo/chatter`\n- **type**: `std_msgs/msg/String`\n- **publishers**: 1 (integer count)\n- **subscribers**: 1 (integer count)\n- **endpoints**: List of two objects, one for the publisher node (`/diag_demo/source`) and one for the subscriber node (`/diag_demo/listener`), each with their respective role and use_sim_time boolean value",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/00-x1-B-r0/trace.jsonl",
+    "episode": "00-x1-B-r0",
+    "task": {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers)."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 35973,
+      "output_tokens": 743,
+      "total_tokens": 36716
+    },
+    "frozen_judgment": {
+      "episode": "00-x1-B-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "x1",
+      "arm": "B",
+      "repeat": 0,
+      "answer": "Perfect! I now have all the information needed. Let me compile the JSON response with the clocks and topics data:\n\n**Clocks (use_sim_time for each node):**\n- `/diag_demo/calculator`: False\n- `/diag_demo/listener`: False\n- `/diag_demo/source`: False\n- `/diag_turtle/palette`: False\n\n**Topics:**\n1. `/diag_demo/chatter`: Type: std_msgs/msg/String, Publishers: 1\n2. `/diag_turtle/turtle1/pose`: Type: turtlesim/msg/Pose, Publishers: 1\n\nNow I'll format this as JSON:\n\n```json\n{\n  \"clocks\": {\n    \"/diag_demo/calculator\": false,\n    \"/diag_demo/listener\": false,\n    \"/diag_demo/source\": false,\n    \"/diag_turtle/palette\": false\n  },\n  \"topics\": {\n    \"/diag_demo/chatter\": {\n      \"type\": \"std_msgs/msg/String\",\n      \"publishers\": 1\n    },\n    \"/diag_turtle/turtle1/pose\": {\n      \"type\": \"turtlesim/msg/Pose\",\n      \"publishers\": 1\n    }\n  }\n}\n```\n\nThis is the complete JSON response with all requested fields.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/01-t3-B-r0/trace.jsonl",
+    "episode": "01-t3-B-r0",
+    "task": {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 26610,
+      "output_tokens": 761,
+      "total_tokens": 27371
+    },
+    "frozen_judgment": {
+      "episode": "01-t3-B-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "B",
+      "repeat": 0,
+      "answer": "Based on the node information I've gathered, here's the JSON response with the required structure:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"publishers\": {\n    \"/diag_turtle/turtle1/color_sensor\": \"turtlesim/msg/Color\",\n    \"/diag_turtle/turtle1/pose\": \"turtlesim/msg/Pose\"\n  },\n  \"subscribers\": {\n    \"/diag_turtle/turtle1/cmd_vel\": \"geometry_msgs/msg/Twist\"\n  }\n}\n```\n\n**Summary of findings:**\n\n- **Node**: `/diag_turtle/palette`\n\n- **Publishers** (excluding /rosout and /parameter_events):\n  - `/diag_turtle/turtle1/color_sensor`: `turtlesim/msg/Color`\n  - `/diag_turtle/turtle1/pose`: `turtlesim/msg/Pose`\n\n- **Subscribers** (excluding /rosout and /parameter_events):\n  - `/diag_turtle/turtle1/cmd_vel`: `geometry_msgs/msg/Twist`\n\nThe topics `/rosout` and `/parameter_events` have been excluded from both lists as requested. The node publishes color sensor data and pose information, while it subscribes to velocity commands for the turtle.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/02-t3-A-r0/trace.jsonl",
+    "episode": "02-t3-A-r0",
+    "task": {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 18733,
+      "output_tokens": 443,
+      "total_tokens": 19176
+    },
+    "frozen_judgment": {
+      "episode": "02-t3-A-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "A",
+      "repeat": 0,
+      "answer": "Perfect! I have the node information. Now let me extract the application topics (excluding /rosout and /parameter_events) and organize them properly.\n\nFrom the node info, I can see:\n\n**Publishers:**\n- `/diag_turtle/turtle1/color_sensor`: `turtlesim/msg/Color`\n- `/diag_turtle/turtle1/pose`: `turtlesim/msg/Pose`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDED)\n- `/rosout`: `rcl_interfaces/msg/Log` (EXCLUDED)\n\n**Subscribers:**\n- `/diag_turtle/turtle1/cmd_vel`: `geometry_msgs/msg/Twist`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDED)\n\nNow I need to create the JSON response with only application topics, excluding /rosout and /parameter_events:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"publishers\": {\n    \"/diag_turtle/turtle1/color_sensor\": \"turtlesim/msg/Color\",\n    \"/diag_turtle/turtle1/pose\": \"turtlesim/msg/Pose\"\n  },\n  \"subscribers\": {\n    \"/diag_turtle/turtle1/cmd_vel\": \"geometry_msgs/msg/Twist\"\n  }\n}\n```\n\nLet me verify this is correct by double-checking the node info output. The publishers and subscribers are clearly listed, and I've excluded /rosout and /parameter_events as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/03-x1-C-r0/trace.jsonl",
+    "episode": "03-x1-C-r0",
+    "task": {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers)."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 37094,
+      "output_tokens": 890,
+      "total_tokens": 37984
+    },
+    "frozen_judgment": {
+      "episode": "03-x1-C-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "x1",
+      "arm": "C",
+      "repeat": 0,
+      "answer": "Now I have all the information needed. Let me compile the JSON response:\n\n**Clocks (use_sim_time for each node):**\n- /diag_demo/calculator: False\n- /diag_demo/listener: False\n- /diag_demo/source: False\n- /diag_turtle/palette: False\n\n**Topics:**\n1. /diag_demo/chatter: Type: std_msgs/msg/String, Publishers: 1\n2. /diag_turtle/turtle1/pose: Type: turtlesim/msg/Pose, Publishers: 1\n\nLet me format this as JSON:\n\n```json\n{\n  \"clocks\": {\n    \"/diag_demo/calculator\": false,\n    \"/diag_demo/listener\": false,\n    \"/diag_demo/source\": false,\n    \"/diag_turtle/palette\": false\n  },\n  \"topics\": {\n    \"/diag_demo/chatter\": {\n      \"type\": \"std_msgs/msg/String\",\n      \"publishers\": 1\n    },\n    \"/diag_turtle/turtle1/pose\": {\n      \"type\": \"turtlesim/msg/Pose\",\n      \"publishers\": 1\n    }\n  }\n}\n```\n\nI have successfully gathered all the requested information:\n\n**Clock Configuration:**\n- All four nodes in both namespaces have `use_sim_time` set to `false`\n\n**Topics Information:**\n1. **/diag_demo/chatter**: \n   - Type: std_msgs/msg/String\n   - Publisher count: 1 (from node /diag_demo/source)\n\n2. **/diag_turtle/turtle1/pose**:\n   - Type: turtlesim/msg/Pose  \n   - Publisher count: 1 (from node /diag_turtle/palette)\n\nThe JSON response is ready with the keys `clocks` and `topics` as requested, containing full node names mapped to boolean values for clocks, and each topic name mapped to an object with type and publishers fields.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/04-t2-C-r0/trace.jsonl",
+    "episode": "04-t2-C-r0",
+    "task": {
+      "id": "t2",
+      "application": "turtlesim",
+      "request": "Before clearing a simulated drawing, inspect /diag_turtle without changing it. Discover the running node, identify its clear and reset services with their full names and service types, and read whether that node uses simulated time. Return JSON with keys node, services (object mapping each of the two full service names to its type), use_sim_time (boolean). Do not call either service."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 41425,
+      "output_tokens": 601,
+      "total_tokens": 42026
+    },
+    "frozen_judgment": {
+      "episode": "04-t2-C-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "C",
+      "repeat": 0,
+      "answer": "I now have all the information needed. Let me compile the JSON response:\n\n- **node**: `/diag_turtle/palette`\n- **services**: \n  - `/diag_turtle/clear`: `std_srvs/srv/Empty`\n  - `/diag_turtle/reset`: `std_srvs/srv/Empty`\n- **use_sim_time**: `false` (from the parameter read showing \"Boolean value is: False\")\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/05-t3-C-r0/trace.jsonl",
+    "episode": "05-t3-C-r0",
+    "task": {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 19733,
+      "output_tokens": 482,
+      "total_tokens": 20215
+    },
+    "frozen_judgment": {
+      "episode": "05-t3-C-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "C",
+      "repeat": 0,
+      "answer": "I have the node information. Now I need to extract the publishers and subscribers, excluding /rosout and /parameter_events as requested. Let me parse this information carefully:\n\n**Publishers:**\n- `/diag_turtle/turtle1/color_sensor`: `turtlesim/msg/Color`\n- `/diag_turtle/turtle1/pose`: `turtlesim/msg/Pose`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDE)\n- `/rosout`: `rcl_interfaces/msg/Log` (EXCLUDE)\n\n**Subscribers:**\n- `/diag_turtle/turtle1/cmd_vel`: `geometry_msgs/msg/Twist`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDE)\n\nNow I need to format this as JSON with the required structure. The user wants:\n- node: the node name\n- publishers: object mapping topic names to message types\n- subscribers: object mapping topic names to message types\n\nExcluding /rosout and /parameter_events from both lists.\n\nLet me construct the JSON response:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"publishers\": {\n    \"/diag_turtle/turtle1/color_sensor\": \"turtlesim/msg/Color\",\n    \"/diag_turtle/turtle1/pose\": \"turtlesim/msg/Pose\"\n  },\n  \"subscribers\": {\n    \"/diag_turtle/turtle1/cmd_vel\": \"geometry_msgs/msg/Twist\"\n  }\n}\n```\n\nThis excludes both /rosout and /parameter_events from the output as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/06-t1-A-r0/trace.jsonl",
+    "episode": "06-t1-A-r0",
+    "task": {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers)."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 40661,
+      "output_tokens": 660,
+      "total_tokens": 41321
+    },
+    "frozen_judgment": {
+      "episode": "06-t1-A-r0",
+      "strict_correct": false,
+      "failure_layer": "source_interpretation_and_missing_requested_acquisition",
+      "reason": "sensor_rgb_substituted_for_configured_background",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "A",
+      "repeat": 0,
+      "answer": "Based on my investigation of the ROS system, here is the information about the drawing display in /diag_turtle:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"rgb\": [255, 255, 255],\n  \"pose\": {\n    \"topic\": \"/diag_turtle/turtle1/pose\",\n    \"type\": \"turtlesim/msg/Pose\",\n    \"publishers\": 1\n  }\n}\n```\n\n**Summary:**\n- **Node**: `/diag_turtle/palette` - This is the running node that publishes both color and pose information\n- **RGB values**: [255, 255, 255] - The current background color is white (all channels at maximum)\n- **Pose topic**: \n  - Full name: `/diag_turtle/turtle1/pose`\n  - Message type: `turtlesim/msg/Pose`\n  - Publisher count: 1",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/07-d2-B-r0/trace.jsonl",
+    "episode": "07-d2-B-r0",
+    "task": {
+      "id": "d2",
+      "application": "demo_nodes_cpp",
+      "request": "I want to connect a client to the arithmetic server in /diag_demo. Discover which node provides the application arithmetic service, report its full node name and all its non-parameter service names and types, and read its use_sim_time value. Do not invoke any service. Return JSON with keys node, services (object mapping full service names to types), use_sim_time (boolean). Exclude the standard parameter-management services."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 7,
+    "model_ends": 7,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 48457,
+      "output_tokens": 617,
+      "total_tokens": 49074
+    },
+    "frozen_judgment": {
+      "episode": "07-d2-B-r0",
+      "strict_correct": false,
+      "failure_layer": "answer_interpretation_and_incomplete_rendering",
+      "reason": "type_description_omitted_and_misclassified",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "application_only_requested_fields_correct": true,
+      "alternative_interpretation_does_not_erase_prose_defects": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "B",
+      "repeat": 0,
+      "answer": "Based on my discovery, here are the results for the arithmetic server in /diag_demo:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\"\n  },\n  \"use_sim_time\": false\n}\n```\n\n**Summary:**\n- **Node**: `/diag_demo/calculator` provides the arithmetic service\n- **Services**: Only one non-parameter-management service: `/diag_demo/add_two_ints` (type: `example_interfaces/srv/AddTwoInts`)\n- **use_sim_time**: `false`",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/08-x1-A-r0/trace.jsonl",
+    "episode": "08-x1-A-r0",
+    "task": {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers)."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 69524,
+      "output_tokens": 820,
+      "total_tokens": 70344
+    },
+    "frozen_judgment": {
+      "episode": "08-x1-A-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "x1",
+      "arm": "A",
+      "repeat": 0,
+      "answer": "```json\n{\n  \"clocks\": {\n    \"/diag_demo/calculator\": false,\n    \"/diag_demo/listener\": false,\n    \"/diag_demo/source\": false,\n    \"/diag_turtle/palette\": false\n  },\n  \"topics\": {\n    \"/diag_demo/chatter\": {\n      \"type\": \"std_msgs/msg/String\",\n      \"publishers\": 1\n    },\n    \"/diag_turtle/turtle1/pose\": {\n      \"type\": \"turtlesim/msg/Pose\",\n      \"publishers\": 1\n    }\n  }\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/09-d1-B-r0/trace.jsonl",
+    "episode": "09-d1-B-r0",
+    "task": {
+      "id": "d1",
+      "application": "demo_nodes_cpp",
+      "request": "Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean)."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 42395,
+      "output_tokens": 702,
+      "total_tokens": 43097
+    },
+    "frozen_judgment": {
+      "episode": "09-d1-B-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "B",
+      "repeat": 0,
+      "answer": "Based on my tool calls, I have gathered all the required information. Let me compile the JSON response:\n\n**Topic Information:**\n- Topic: `/diag_demo/chatter`\n- Type: `std_msgs/msg/String`\n- Publisher count: 1\n- Subscriber count: 1\n\n**Endpoints:**\n1. **Publisher endpoint:**\n   - Node: `/diag_demo/source`\n   - Role: publisher\n   - use_sim_time: False\n\n2. **Subscriber endpoint:**\n   - Node: `/diag_demo/listener`\n   - Role: subscriber\n   - use_sim_time: False\n\nHere's the complete JSON response:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\n**Summary:**\n- The topic `/diag_demo/chatter` is of type `std_msgs/msg/String`\n- There is 1 publisher node: `/diag_demo/source` with use_sim_time = False\n- There is 1 subscriber node: `/diag_demo/listener` with use_sim_time = False",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/10-t2-A-r0/trace.jsonl",
+    "episode": "10-t2-A-r0",
+    "task": {
+      "id": "t2",
+      "application": "turtlesim",
+      "request": "Before clearing a simulated drawing, inspect /diag_turtle without changing it. Discover the running node, identify its clear and reset services with their full names and service types, and read whether that node uses simulated time. Return JSON with keys node, services (object mapping each of the two full service names to its type), use_sim_time (boolean). Do not call either service."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 39535,
+      "output_tokens": 630,
+      "total_tokens": 40165
+    },
+    "frozen_judgment": {
+      "episode": "10-t2-A-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "A",
+      "repeat": 0,
+      "answer": "Based on my inspection of the `/diag_turtle` namespace, here is the information you requested:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nI have identified:\n- **Node**: `/diag_turtle/palette`\n- **Clear service**: `/diag_turtle/clear` with type `std_srvs/srv/Empty`\n- **Reset service**: `/diag_turtle/reset` with type `std_srvs/srv/Empty`\n- **use_sim_time**: false (the node does not use simulated time)\n\nI did not call either of the services as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/11-t2-B-r0/trace.jsonl",
+    "episode": "11-t2-B-r0",
+    "task": {
+      "id": "t2",
+      "application": "turtlesim",
+      "request": "Before clearing a simulated drawing, inspect /diag_turtle without changing it. Discover the running node, identify its clear and reset services with their full names and service types, and read whether that node uses simulated time. Return JSON with keys node, services (object mapping each of the two full service names to its type), use_sim_time (boolean). Do not call either service."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 62777,
+      "output_tokens": 1171,
+      "total_tokens": 63948
+    },
+    "frozen_judgment": {
+      "episode": "11-t2-B-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "recovered_execution_errors": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "B",
+      "repeat": 0,
+      "answer": "The only node matching /diag_turtle is /diag_turtle/palette. So the node name should be \"/diag_turtle/palette\" as that's what's actually running.\n\nNow I have all the information:\n- **node**: \"/diag_turtle/palette\"\n- **services**: \n  - \"/diag_turtle/clear\": \"std_srvs/srv/Empty\"\n  - \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n- **use_sim_time**: false\n\nLet me provide the final JSON response:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/12-d1-A-r0/trace.jsonl",
+    "episode": "12-d1-A-r0",
+    "task": {
+      "id": "d1",
+      "application": "demo_nodes_cpp",
+      "request": "Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean)."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 41746,
+      "output_tokens": 643,
+      "total_tokens": 42389
+    },
+    "frozen_judgment": {
+      "episode": "12-d1-A-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "A",
+      "repeat": 0,
+      "answer": "Based on the information gathered, I can now provide the JSON response with all the required details:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\n**Summary of findings:**\n\n- **Topic**: `/diag_demo/chatter`\n- **Message Type**: `std_msgs/msg/String`\n- **Publisher Count**: 1\n- **Subscriber Count**: 1\n- **Endpoints**:\n  - Publisher: `/diag_demo/source` with use_sim_time = false\n  - Subscriber: `/diag_demo/listener` with use_sim_time = false\n\nThe topic has a single publisher (`/diag_demo/source`) and a single subscriber (`/diag_demo/listener`), both operating in real-time mode (use_sim_time = false).",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/13-d1-C-r0/trace.jsonl",
+    "episode": "13-d1-C-r0",
+    "task": {
+      "id": "d1",
+      "application": "demo_nodes_cpp",
+      "request": "Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean)."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 58459,
+      "output_tokens": 719,
+      "total_tokens": 59178
+    },
+    "frozen_judgment": {
+      "episode": "13-d1-C-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "recovered_execution_errors": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "C",
+      "repeat": 0,
+      "answer": "Based on my tool calls, I have gathered all the required information. Let me compile the JSON response:\n\n**Topic:** `/diag_demo/chatter`\n**Type:** `std_msgs/msg/String`\n**Publishers count:** 1\n**Subscribers count:** 1\n**Endpoints:**\n- Publisher node: `/diag_demo/source` with use_sim_time: False\n- Subscriber node: `/diag_demo/listener` with use_sim_time: False\n\nHere's the JSON response:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/14-t1-C-r0/trace.jsonl",
+    "episode": "14-t1-C-r0",
+    "task": {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers)."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 7,
+    "model_ends": 7,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 50067,
+      "output_tokens": 606,
+      "total_tokens": 50673
+    },
+    "frozen_judgment": {
+      "episode": "14-t1-C-r0",
+      "strict_correct": false,
+      "failure_layer": "source_interpretation_and_missing_requested_acquisition",
+      "reason": "sensor_rgb_substituted_for_configured_background",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "C",
+      "repeat": 0,
+      "answer": "```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"rgb\": [255, 255, 255],\n  \"pose\": {\n    \"topic\": \"/diag_turtle/turtle1/pose\",\n    \"type\": \"turtlesim/msg/Pose\",\n    \"publishers\": 1\n  }\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/15-t1-B-r0/trace.jsonl",
+    "episode": "15-t1-B-r0",
+    "task": {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers)."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 62186,
+      "output_tokens": 762,
+      "total_tokens": 62948
+    },
+    "frozen_judgment": {
+      "episode": "15-t1-B-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "B",
+      "repeat": 0,
+      "answer": "Based on my discovery, here is the JSON object with all the requested information:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"rgb\": [37, 83, 129],\n  \"pose\": {\n    \"topic\": \"/diag_turtle/turtle1/pose\",\n    \"type\": \"turtlesim/msg/Pose\",\n    \"publishers\": 1\n  }\n}\n```\n\n**Summary of findings:**\n- **Node**: `/diag_turtle/palette` - This is the running node for the simulated drawing display\n- **RGB values**: Red=37, Green=83, Blue=129 (background color configuration)\n- **Pose topic**: `/diag_turtle/turtle1/pose` with type `turtlesim/msg/Pose` and 1 publisher",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/16-d2-C-r0/trace.jsonl",
+    "episode": "16-d2-C-r0",
+    "task": {
+      "id": "d2",
+      "application": "demo_nodes_cpp",
+      "request": "I want to connect a client to the arithmetic server in /diag_demo. Discover which node provides the application arithmetic service, report its full node name and all its non-parameter service names and types, and read its use_sim_time value. Do not invoke any service. Return JSON with keys node, services (object mapping full service names to types), use_sim_time (boolean). Exclude the standard parameter-management services."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 41030,
+      "output_tokens": 1346,
+      "total_tokens": 42376
+    },
+    "frozen_judgment": {
+      "episode": "16-d2-C-r0",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "application_only_requested_fields_correct": true,
+      "alternative_interpretation_does_not_erase_prose_defects": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "C",
+      "repeat": 0,
+      "answer": "Now I have all the information needed. Let me identify which services to include:\n\n1. `/diag_demo/add_two_ints` - This is the arithmetic service (not a parameter management service)\n2. `/diag_demo/calculator/describe_parameters` - Parameter management service (exclude)\n3. `/diag_demo/calculator/get_parameter_types` - Parameter management service (exclude)\n4. `/diag_demo/calculator/get_parameters` - Parameter management service (exclude)\n5. `/diag_demo/calculator/get_type_description` - This is a type description service, not strictly parameter management but let me check if it should be excluded\n6. `/diag_demo/calculator/list_parameters` - Parameter management service (exclude)\n7. `/diag_demo/calculator/set_parameters` - Parameter management service (exclude)\n8. `/diag_demo/calculator/set_parameters_atomically` - Parameter management service (exclude)\n\nThe user said to exclude \"standard parameter-management services\". The standard parameter management services are:\n- describe_parameters\n- get_parameter_types\n- get_parameters\n- list_parameters\n- set_parameters\n- set_parameters_atomically\n\nThe `/diag_demo/add_two_ints` is the arithmetic service and should be included.\n\nFor `/diag_demo/calculator/get_type_description`, this is a type description service, not a parameter management service, so it should be included.\n\nLet me compile the final JSON response:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\",\n    \"/diag_demo/calculator/get_type_description\": \"type_description_interfaces/srv/GetTypeDescription\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nWait, let me double-check the use_sim_time value. The response was \"Boolean value is: False\" which means it's a boolean False.\n\nLet me provide the final answer:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\",\n    \"/diag_demo/calculator/get_type_description\": \"type_description_interfaces/srv/GetTypeDescription\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nActually, I need to reconsider. The user asked for \"all its non-parameter service names and types\". Let me think about what constitutes a \"parameter service\":\n\nStandard parameter management services in ROS2 are:\n- describe_parameters\n- get_parameter_types  \n- get_parameters\n- list_parameters\n- set_parameters\n- set_parameters_atomically\n\nThe `/diag_demo/calculator/get_type_description` is not a parameter management service - it's a type description service. So it should be included.\n\nThe `/diag_demo/add_two_ints` is clearly an arithmetic service and should be included.\n\nSo my answer above is correct. Let me finalize:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\",\n    \"/diag_demo/calculator/get_type_description\": \"type_description_interfaces/srv/GetTypeDescription\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/17-d2-A-r0/trace.jsonl",
+    "episode": "17-d2-A-r0",
+    "task": {
+      "id": "d2",
+      "application": "demo_nodes_cpp",
+      "request": "I want to connect a client to the arithmetic server in /diag_demo. Discover which node provides the application arithmetic service, report its full node name and all its non-parameter service names and types, and read its use_sim_time value. Do not invoke any service. Return JSON with keys node, services (object mapping full service names to types), use_sim_time (boolean). Exclude the standard parameter-management services."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 31792,
+      "output_tokens": 777,
+      "total_tokens": 32569
+    },
+    "frozen_judgment": {
+      "episode": "17-d2-A-r0",
+      "strict_correct": false,
+      "failure_layer": "answer_interpretation_and_incomplete_rendering",
+      "reason": "application_only_interpretation_omits_literal_nonparameter_service",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "application_only_requested_fields_correct": true,
+      "alternative_interpretation_does_not_erase_prose_defects": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "A",
+      "repeat": 0,
+      "answer": "Now I have all the information needed. Let me compile the results:\n\n- Node: `/diag_demo/calculator`\n- Services (excluding parameter-management services): The arithmetic service is `/diag_demo/add_two_ints` with type `example_interfaces/srv/AddTwoInts`. The other services are standard parameter management services which should be excluded.\n- use_sim_time: False\n\nLet me format this as JSON:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nWait, I need to reconsider. The user asked for \"all its non-parameter service names and types\". Looking at the node info again:\n\nService Servers listed:\n- `/diag_demo/add_two_ints: example_interfaces/srv/AddTwoInts` - This is the arithmetic service\n- `/diag_demo/calculator/describe_parameters: rcl_interfaces/srv/DescribeParameters` - Parameter management\n- `/diag_demo/calculator/get_parameter_types: rcl_interfaces/srv/GetParameterTypes` - Parameter management\n- `/diag_demo/calculator/get_parameters: rcl_interfaces/srv/GetParameters` - Parameter management\n- `/diag_demo/calculator/get_type_description: type_description_interfaces/srv/GetTypeDescription` - This might be considered parameter-related\n- `/diag_demo/calculator/list_parameters: rcl_interfaces/srv/ListParameters` - Parameter management\n- `/diag_demo/calculator/set_parameters: rcl_interfaces/srv/SetParameters` - Parameter management\n- `/diag_demo/calculator/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically` - Parameter management\n\nThe user said to exclude \"standard parameter-management services\". The arithmetic service is clearly `/diag_demo/add_two_ints`. The `get_type_description` service might be borderline, but it's not really a parameter management service in the same way. However, since the user specifically asked for \"non-parameter service names\", I should include only the arithmetic service which is the actual application service.\n\nLet me provide the JSON response:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/18-d2-B-r1/trace.jsonl",
+    "episode": "18-d2-B-r1",
+    "task": {
+      "id": "d2",
+      "application": "demo_nodes_cpp",
+      "request": "I want to connect a client to the arithmetic server in /diag_demo. Discover which node provides the application arithmetic service, report its full node name and all its non-parameter service names and types, and read its use_sim_time value. Do not invoke any service. Return JSON with keys node, services (object mapping full service names to types), use_sim_time (boolean). Exclude the standard parameter-management services."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 34020,
+      "output_tokens": 702,
+      "total_tokens": 34722
+    },
+    "frozen_judgment": {
+      "episode": "18-d2-B-r1",
+      "strict_correct": false,
+      "failure_layer": "answer_interpretation_and_incomplete_rendering",
+      "reason": "type_description_omitted_with_contradictory_service_classification",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "application_only_requested_fields_correct": true,
+      "alternative_interpretation_does_not_erase_prose_defects": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "B",
+      "repeat": 1,
+      "answer": "Now I have all the information needed. Let me compile the results:\n\n- Node: `/diag_demo/calculator`\n- Services (excluding parameter-management services): The arithmetic service is `/diag_demo/add_two_ints` with type `example_interfaces/srv/AddTwoInts`\n- use_sim_time: False\n\nHowever, I need to clarify what constitutes \"non-parameter service names\". Looking at the node info, the calculator node has:\n1. `/diag_demo/add_two_ints` - This is the arithmetic service (not a parameter management service)\n2. `/diag_demo/calculator/describe_parameters` - Parameter management service\n3. `/diag_demo/calculator/get_parameter_types` - Parameter management service\n4. `/diag_demo/calculator/get_parameters` - Parameter management service\n5. `/diag_demo/calculator/get_type_description` - This is a type description service, not parameter management\n6. `/diag_demo/calculator/list_parameters` - Parameter management service\n7. `/diag_demo/calculator/set_parameters` - Parameter management service\n8. `/diag_demo/calculator/set_parameters_atomically` - Parameter management service\n\nThe standard parameter-management services are typically: describe_parameters, get_parameter_types, get_parameters, get_type_description, list_parameters, set_parameters, set_parameters_atomically.\n\nSo the only non-parameter service is `/diag_demo/add_two_ints`.\n\nLet me provide the JSON response:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/19-d1-C-r1/trace.jsonl",
+    "episode": "19-d1-C-r1",
+    "task": {
+      "id": "d1",
+      "application": "demo_nodes_cpp",
+      "request": "Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean)."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 58459,
+      "output_tokens": 719,
+      "total_tokens": 59178
+    },
+    "frozen_judgment": {
+      "episode": "19-d1-C-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "recovered_execution_errors": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "C",
+      "repeat": 1,
+      "answer": "Based on my tool calls, I have gathered all the required information. Let me compile the JSON response:\n\n**Topic:** `/diag_demo/chatter`\n**Type:** `std_msgs/msg/String`\n**Publishers count:** 1\n**Subscribers count:** 1\n**Endpoints:**\n- Publisher node: `/diag_demo/source` with use_sim_time: False\n- Subscriber node: `/diag_demo/listener` with use_sim_time: False\n\nHere's the JSON response:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/20-d2-C-r1/trace.jsonl",
+    "episode": "20-d2-C-r1",
+    "task": {
+      "id": "d2",
+      "application": "demo_nodes_cpp",
+      "request": "I want to connect a client to the arithmetic server in /diag_demo. Discover which node provides the application arithmetic service, report its full node name and all its non-parameter service names and types, and read its use_sim_time value. Do not invoke any service. Return JSON with keys node, services (object mapping full service names to types), use_sim_time (boolean). Exclude the standard parameter-management services."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 7,
+    "model_ends": 7,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 48684,
+      "output_tokens": 958,
+      "total_tokens": 49642
+    },
+    "frozen_judgment": {
+      "episode": "20-d2-C-r1",
+      "strict_correct": false,
+      "failure_layer": "answer_interpretation_and_incomplete_rendering",
+      "reason": "type_description_omitted_and_false_all_others_parameter_claim",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "application_only_requested_fields_correct": true,
+      "alternative_interpretation_does_not_erase_prose_defects": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "C",
+      "repeat": 1,
+      "answer": "Based on my discovery, here are the results:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\"\n  },\n  \"use_sim_time\": false\n}\n```\n\n**Summary:**\n- **Node**: `/diag_demo/calculator` provides the arithmetic service\n- **Non-parameter services**: Only `/diag_demo/add_two_ints` (the actual arithmetic service) - all other services are parameter management services which were excluded as requested\n- **use_sim_time**: `false`",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/21-t3-B-r1/trace.jsonl",
+    "episode": "21-t3-B-r1",
+    "task": {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 26610,
+      "output_tokens": 761,
+      "total_tokens": 27371
+    },
+    "frozen_judgment": {
+      "episode": "21-t3-B-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "B",
+      "repeat": 1,
+      "answer": "Based on the node information I've gathered, here's the JSON response with the required structure:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"publishers\": {\n    \"/diag_turtle/turtle1/color_sensor\": \"turtlesim/msg/Color\",\n    \"/diag_turtle/turtle1/pose\": \"turtlesim/msg/Pose\"\n  },\n  \"subscribers\": {\n    \"/diag_turtle/turtle1/cmd_vel\": \"geometry_msgs/msg/Twist\"\n  }\n}\n```\n\n**Summary of findings:**\n\n- **Node**: `/diag_turtle/palette`\n\n- **Publishers** (excluding /rosout and /parameter_events):\n  - `/diag_turtle/turtle1/color_sensor`: `turtlesim/msg/Color`\n  - `/diag_turtle/turtle1/pose`: `turtlesim/msg/Pose`\n\n- **Subscribers** (excluding /rosout and /parameter_events):\n  - `/diag_turtle/turtle1/cmd_vel`: `geometry_msgs/msg/Twist`\n\nThe topics `/rosout` and `/parameter_events` have been excluded from both lists as requested. The node publishes color sensor data and pose information, while it subscribes to velocity commands for the turtle.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/22-d2-A-r1/trace.jsonl",
+    "episode": "22-d2-A-r1",
+    "task": {
+      "id": "d2",
+      "application": "demo_nodes_cpp",
+      "request": "I want to connect a client to the arithmetic server in /diag_demo. Discover which node provides the application arithmetic service, report its full node name and all its non-parameter service names and types, and read its use_sim_time value. Do not invoke any service. Return JSON with keys node, services (object mapping full service names to types), use_sim_time (boolean). Exclude the standard parameter-management services."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 54260,
+      "output_tokens": 1158,
+      "total_tokens": 55418
+    },
+    "frozen_judgment": {
+      "episode": "22-d2-A-r1",
+      "strict_correct": false,
+      "failure_layer": "answer_interpretation_and_incomplete_rendering",
+      "reason": "type_description_omitted_and_explicitly_misclassified",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "application_only_requested_fields_correct": true,
+      "alternative_interpretation_does_not_erase_prose_defects": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "A",
+      "repeat": 1,
+      "answer": "Based on my investigation, here is the information about the arithmetic server in /diag_demo:\n\n```json\n{\n  \"node\": \"/diag_demo/calculator\",\n  \"services\": {\n    \"/diag_demo/add_two_ints\": \"example_interfaces/srv/AddTwoInts\"\n  },\n  \"use_sim_time\": false\n}\n```\n\n**Summary:**\n- **Node**: `/diag_demo/calculator` provides the arithmetic service\n- **Non-parameter services**: Only `/diag_demo/add_two_ints` (the arithmetic service that adds two integers)\n- **Excluded parameter-management services**: describe_parameters, get_parameter_types, get_parameters, get_type_description, list_parameters, set_parameters, set_parameters_atomically\n- **use_sim_time**: false",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/23-x1-A-r1/trace.jsonl",
+    "episode": "23-x1-A-r1",
+    "task": {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers)."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 66557,
+      "output_tokens": 943,
+      "total_tokens": 67500
+    },
+    "frozen_judgment": {
+      "episode": "23-x1-A-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "x1",
+      "arm": "A",
+      "repeat": 1,
+      "answer": "Based on my investigation, here's the JSON response with the clock configuration and topic information:\n\n```json\n{\n  \"clocks\": {\n    \"/diag_demo/calculator\": false,\n    \"/diag_demo/listener\": false,\n    \"/diag_demo/source\": false,\n    \"/diag_turtle/palette\": false\n  },\n  \"topics\": {\n    \"/diag_demo/chatter\": {\n      \"type\": \"std_msgs/msg/String\",\n      \"publishers\": 1\n    },\n    \"/diag_turtle/turtle1/pose\": {\n      \"type\": \"turtlesim/msg/Pose\",\n      \"publishers\": 1\n    }\n  }\n}\n```\n\n**Summary:**\n- All 4 nodes in the /diag_demo and /diag_turtle namespaces have `use_sim_time` set to **false**\n- The `/diag_demo/chatter` topic uses `std_msgs/msg/String` type with 1 publisher (from the source node)\n- The `/diag_turtle/turtle1/pose` topic uses `turtlesim/msg/Pose` type with 1 publisher (from the palette node)\n\nThis information should help you decide whether to combine /diag_turtle and /diag_demo - currently they're both using real time (not sim time), which is consistent.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/24-d1-A-r1/trace.jsonl",
+    "episode": "24-d1-A-r1",
+    "task": {
+      "id": "d1",
+      "application": "demo_nodes_cpp",
+      "request": "Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean)."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 41746,
+      "output_tokens": 597,
+      "total_tokens": 42343
+    },
+    "frozen_judgment": {
+      "episode": "24-d1-A-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "A",
+      "repeat": 1,
+      "answer": "Based on the information gathered, here is the JSON response with all the required details:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\n**Summary:**\n- **Topic**: /diag_demo/chatter\n- **Type**: std_msgs/msg/String\n- **Publisher count**: 1\n- **Subscriber count**: 1\n- **Endpoints**:\n  - Publisher: /diag_demo/source (use_sim_time: false)\n  - Subscriber: /diag_demo/listener (use_sim_time: false)",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/25-t1-B-r1/trace.jsonl",
+    "episode": "25-t1-B-r1",
+    "task": {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers)."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 62428,
+      "output_tokens": 772,
+      "total_tokens": 63200
+    },
+    "frozen_judgment": {
+      "episode": "25-t1-B-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "B",
+      "repeat": 1,
+      "answer": "Based on my discovery, here is the JSON object with all the requested information:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"rgb\": [37, 83, 129],\n  \"pose\": {\n    \"topic\": \"/diag_turtle/turtle1/pose\",\n    \"type\": \"turtlesim/msg/Pose\",\n    \"publishers\": 1\n  }\n}\n```\n\n**Summary of findings:**\n- **Node**: `/diag_turtle/palette` - This is the running node for the simulated drawing display\n- **RGB values**: Red=37, Green=83, Blue=129 (background color configuration)\n- **Pose topic**: `/diag_turtle/turtle1/pose` with type `turtlesim/msg/Pose` and 1 publisher",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/26-t1-A-r1/trace.jsonl",
+    "episode": "26-t1-A-r1",
+    "task": {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers)."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 61908,
+      "output_tokens": 619,
+      "total_tokens": 62527
+    },
+    "frozen_judgment": {
+      "episode": "26-t1-A-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "A",
+      "repeat": 1,
+      "answer": "```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"rgb\": [37, 83, 129],\n  \"pose\": {\n    \"topic\": \"/diag_turtle/turtle1/pose\",\n    \"type\": \"turtlesim/msg/Pose\",\n    \"publishers\": 1\n  }\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/27-t3-A-r1/trace.jsonl",
+    "episode": "27-t3-A-r1",
+    "task": {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 18733,
+      "output_tokens": 443,
+      "total_tokens": 19176
+    },
+    "frozen_judgment": {
+      "episode": "27-t3-A-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "A",
+      "repeat": 1,
+      "answer": "Perfect! I have the node information. Now let me extract the application topics (excluding /rosout and /parameter_events) and organize them properly.\n\nFrom the node info, I can see:\n\n**Publishers:**\n- `/diag_turtle/turtle1/color_sensor`: `turtlesim/msg/Color`\n- `/diag_turtle/turtle1/pose`: `turtlesim/msg/Pose`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDED)\n- `/rosout`: `rcl_interfaces/msg/Log` (EXCLUDED)\n\n**Subscribers:**\n- `/diag_turtle/turtle1/cmd_vel`: `geometry_msgs/msg/Twist`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDED)\n\nNow I need to create the JSON response with only application topics, excluding /rosout and /parameter_events:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"publishers\": {\n    \"/diag_turtle/turtle1/color_sensor\": \"turtlesim/msg/Color\",\n    \"/diag_turtle/turtle1/pose\": \"turtlesim/msg/Pose\"\n  },\n  \"subscribers\": {\n    \"/diag_turtle/turtle1/cmd_vel\": \"geometry_msgs/msg/Twist\"\n  }\n}\n```\n\nLet me verify this is correct by double-checking the node info output. The publishers and subscribers are clearly listed, and I've excluded /rosout and /parameter_events as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/28-t1-C-r1/trace.jsonl",
+    "episode": "28-t1-C-r1",
+    "task": {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers)."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 42568,
+      "output_tokens": 645,
+      "total_tokens": 43213
+    },
+    "frozen_judgment": {
+      "episode": "28-t1-C-r1",
+      "strict_correct": false,
+      "failure_layer": "source_interpretation_and_missing_requested_acquisition",
+      "reason": "sensor_rgb_substituted_for_configured_background",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "C",
+      "repeat": 1,
+      "answer": "Based on my discovery, here is the JSON object with all requested information:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"rgb\": [255, 255, 255],\n  \"pose\": {\n    \"topic\": \"/diag_turtle/turtle1/pose\",\n    \"type\": \"turtlesim/msg/Pose\",\n    \"publishers\": 1\n  }\n}\n```\n\n**Summary of discovery:**\n- **Node**: `/diag_turtle/palette` - This is the running node in the /diag_turtle namespace\n- **RGB values**: [255, 255, 255] - The color sensor shows red=255, green=255, blue=255 (white)\n- **Pose topic**: `/diag_turtle/turtle1/pose` with type `turtlesim/msg/Pose` and 1 publisher",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/29-x1-B-r1/trace.jsonl",
+    "episode": "29-x1-B-r1",
+    "task": {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers)."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 35973,
+      "output_tokens": 743,
+      "total_tokens": 36716
+    },
+    "frozen_judgment": {
+      "episode": "29-x1-B-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "x1",
+      "arm": "B",
+      "repeat": 1,
+      "answer": "Perfect! I now have all the information needed. Let me compile the JSON response with the clocks and topics data:\n\n**Clocks (use_sim_time for each node):**\n- `/diag_demo/calculator`: False\n- `/diag_demo/listener`: False\n- `/diag_demo/source`: False\n- `/diag_turtle/palette`: False\n\n**Topics:**\n1. `/diag_demo/chatter`: Type: std_msgs/msg/String, Publishers: 1\n2. `/diag_turtle/turtle1/pose`: Type: turtlesim/msg/Pose, Publishers: 1\n\nNow I'll format this as JSON:\n\n```json\n{\n  \"clocks\": {\n    \"/diag_demo/calculator\": false,\n    \"/diag_demo/listener\": false,\n    \"/diag_demo/source\": false,\n    \"/diag_turtle/palette\": false\n  },\n  \"topics\": {\n    \"/diag_demo/chatter\": {\n      \"type\": \"std_msgs/msg/String\",\n      \"publishers\": 1\n    },\n    \"/diag_turtle/turtle1/pose\": {\n      \"type\": \"turtlesim/msg/Pose\",\n      \"publishers\": 1\n    }\n  }\n}\n```\n\nThis is the complete JSON response with all requested fields.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/30-t2-B-r1/trace.jsonl",
+    "episode": "30-t2-B-r1",
+    "task": {
+      "id": "t2",
+      "application": "turtlesim",
+      "request": "Before clearing a simulated drawing, inspect /diag_turtle without changing it. Discover the running node, identify its clear and reset services with their full names and service types, and read whether that node uses simulated time. Return JSON with keys node, services (object mapping each of the two full service names to its type), use_sim_time (boolean). Do not call either service."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 54681,
+      "output_tokens": 1087,
+      "total_tokens": 55768
+    },
+    "frozen_judgment": {
+      "episode": "30-t2-B-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "recovered_execution_errors": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "B",
+      "repeat": 1,
+      "answer": "I now have all the information needed:\n\n1. **Node**: /diag_turtle/palette (this is the actual node name that provides the /diag_turtle services)\n2. **Services**:\n   - /diag_turtle/clear: std_srvs/srv/Empty\n   - /diag_turtle/reset: std_srvs/srv/Empty\n3. **use_sim_time**: False\n\nLet me compile this into the requested JSON format:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nWait, I need to reconsider the node name. The user asked about \"/diag_turtle\" but the actual running node is \"/diag_turtle/palette\". Let me check if there's a way to get info about just \"/diag_turtle\" or if that's not a valid node name. Looking at the service list, services are prefixed with \"/diag_turtle/\" but the node itself is \"/diag_turtle/palette\".\n\nThe user asked to inspect \"/diag_turtle\" - this appears to be a namespace prefix rather than a specific node name. The actual running node that provides these services is \"/diag_turtle/palette\". I should report the actual node name as discovered.\n\nLet me provide the final answer:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/31-t2-A-r1/trace.jsonl",
+    "episode": "31-t2-A-r1",
+    "task": {
+      "id": "t2",
+      "application": "turtlesim",
+      "request": "Before clearing a simulated drawing, inspect /diag_turtle without changing it. Discover the running node, identify its clear and reset services with their full names and service types, and read whether that node uses simulated time. Return JSON with keys node, services (object mapping each of the two full service names to its type), use_sim_time (boolean). Do not call either service."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 39535,
+      "output_tokens": 630,
+      "total_tokens": 40165
+    },
+    "frozen_judgment": {
+      "episode": "31-t2-A-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "A",
+      "repeat": 1,
+      "answer": "Based on my inspection of the `/diag_turtle` namespace, here is the information you requested:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nI have identified:\n- **Node**: `/diag_turtle/palette`\n- **Clear service**: `/diag_turtle/clear` with type `std_srvs/srv/Empty`\n- **Reset service**: `/diag_turtle/reset` with type `std_srvs/srv/Empty`\n- **use_sim_time**: false (the node does not use simulated time)\n\nI did not call either of the services as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/32-t3-C-r1/trace.jsonl",
+    "episode": "32-t3-C-r1",
+    "task": {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 19733,
+      "output_tokens": 482,
+      "total_tokens": 20215
+    },
+    "frozen_judgment": {
+      "episode": "32-t3-C-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "all_requested_fields_supported",
+      "pure_json": false,
+      "oracle_stability_required": true
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "C",
+      "repeat": 1,
+      "answer": "I have the node information. Now I need to extract the publishers and subscribers, excluding /rosout and /parameter_events as requested. Let me parse this information carefully:\n\n**Publishers:**\n- `/diag_turtle/turtle1/color_sensor`: `turtlesim/msg/Color`\n- `/diag_turtle/turtle1/pose`: `turtlesim/msg/Pose`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDE)\n- `/rosout`: `rcl_interfaces/msg/Log` (EXCLUDE)\n\n**Subscribers:**\n- `/diag_turtle/turtle1/cmd_vel`: `geometry_msgs/msg/Twist`\n- `/parameter_events`: `rcl_interfaces/msg/ParameterEvent` (EXCLUDE)\n\nNow I need to format this as JSON with the required structure. The user wants:\n- node: the node name\n- publishers: object mapping topic names to message types\n- subscribers: object mapping topic names to message types\n\nExcluding /rosout and /parameter_events from both lists.\n\nLet me construct the JSON response:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"publishers\": {\n    \"/diag_turtle/turtle1/color_sensor\": \"turtlesim/msg/Color\",\n    \"/diag_turtle/turtle1/pose\": \"turtlesim/msg/Pose\"\n  },\n  \"subscribers\": {\n    \"/diag_turtle/turtle1/cmd_vel\": \"geometry_msgs/msg/Twist\"\n  }\n}\n```\n\nThis excludes both /rosout and /parameter_events from the output as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/33-x1-C-r1/trace.jsonl",
+    "episode": "33-x1-C-r1",
+    "task": {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers)."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 37094,
+      "output_tokens": 890,
+      "total_tokens": 37984
+    },
+    "frozen_judgment": {
+      "episode": "33-x1-C-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "requested_fields_and_contextual_prose_supported_by_native_tool_responses",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "reviewer": "primary final review; secondary reviewer reported requested-field passes before its session ended"
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "x1",
+      "arm": "C",
+      "repeat": 1,
+      "answer": "Now I have all the information needed. Let me compile the JSON response:\n\n**Clocks (use_sim_time for each node):**\n- /diag_demo/calculator: False\n- /diag_demo/listener: False\n- /diag_demo/source: False\n- /diag_turtle/palette: False\n\n**Topics:**\n1. /diag_demo/chatter: Type: std_msgs/msg/String, Publishers: 1\n2. /diag_turtle/turtle1/pose: Type: turtlesim/msg/Pose, Publishers: 1\n\nLet me format this as JSON:\n\n```json\n{\n  \"clocks\": {\n    \"/diag_demo/calculator\": false,\n    \"/diag_demo/listener\": false,\n    \"/diag_demo/source\": false,\n    \"/diag_turtle/palette\": false\n  },\n  \"topics\": {\n    \"/diag_demo/chatter\": {\n      \"type\": \"std_msgs/msg/String\",\n      \"publishers\": 1\n    },\n    \"/diag_turtle/turtle1/pose\": {\n      \"type\": \"turtlesim/msg/Pose\",\n      \"publishers\": 1\n    }\n  }\n}\n```\n\nI have successfully gathered all the requested information:\n\n**Clock Configuration:**\n- All four nodes in both namespaces have `use_sim_time` set to `false`\n\n**Topics Information:**\n1. **/diag_demo/chatter**: \n   - Type: std_msgs/msg/String\n   - Publisher count: 1 (from node /diag_demo/source)\n\n2. **/diag_turtle/turtle1/pose**:\n   - Type: turtlesim/msg/Pose  \n   - Publisher count: 1 (from node /diag_turtle/palette)\n\nThe JSON response is ready with the keys `clocks` and `topics` as requested, containing full node names mapped to boolean values for clocks, and each topic name mapped to an object with type and publishers fields.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/34-d1-B-r1/trace.jsonl",
+    "episode": "34-d1-B-r1",
+    "task": {
+      "id": "d1",
+      "application": "demo_nodes_cpp",
+      "request": "Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean)."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 9,
+    "model_ends": 9,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 64763,
+      "output_tokens": 847,
+      "total_tokens": 65610
+    },
+    "frozen_judgment": {
+      "episode": "34-d1-B-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "requested_fields_and_contextual_prose_supported_by_native_tool_responses",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "reviewer": "primary final review; secondary reviewer reported requested-field passes before its session ended"
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "B",
+      "repeat": 1,
+      "answer": "Based on all the information I've gathered, here's the JSON response with the requested fields:\n\n```json\n{\n  \"topic\": \"/diag_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1,\n  \"endpoints\": [\n    {\n      \"node\": \"/diag_demo/source\",\n      \"role\": \"publisher\",\n      \"use_sim_time\": false\n    },\n    {\n      \"node\": \"/diag_demo/listener\",\n      \"role\": \"subscriber\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```\n\n**Summary of findings:**\n- **Topic**: `/diag_demo/chatter`\n- **Message Type**: `std_msgs/msg/String`\n- **Publisher Count**: 1\n- **Subscriber Count**: 1\n- **Endpoints**:\n  - Publisher: `/diag_demo/source` with `use_sim_time: false`\n  - Subscriber: `/diag_demo/listener` with `use_sim_time: false`\n\nThe topic has a single publisher (`/diag_demo/source`) and a single subscriber (`/diag_demo/listener`), both using standard time (not simulation time).",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "primary",
+    "member": "evidence/primary-v1/35-t2-C-r1/trace.jsonl",
+    "episode": "35-t2-C-r1",
+    "task": {
+      "id": "t2",
+      "application": "turtlesim",
+      "request": "Before clearing a simulated drawing, inspect /diag_turtle without changing it. Discover the running node, identify its clear and reset services with their full names and service types, and read whether that node uses simulated time. Return JSON with keys node, services (object mapping each of the two full service names to its type), use_sim_time (boolean). Do not call either service."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 7,
+    "model_ends": 7,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 49106,
+      "output_tokens": 763,
+      "total_tokens": 49869
+    },
+    "frozen_judgment": {
+      "episode": "35-t2-C-r1",
+      "strict_correct": true,
+      "failure_layer": "none",
+      "reason": "requested_fields_and_contextual_prose_supported_by_native_tool_responses",
+      "pure_json": false,
+      "oracle_stability_required": true,
+      "reviewer": "primary final review; secondary reviewer reported requested-field passes before its session ended",
+      "prose_scope_ambiguity": "No services were called is supported for clear/reset as requested; infrastructure parameter-service calls under ros2 param get are not absent. No all-backend-service claim is accepted."
+    },
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "C",
+      "repeat": 1,
+      "answer": "Based on my inspection of the `/diag_turtle` node, here is the JSON response:\n\n```json\n{\n  \"node\": \"/diag_turtle/palette\",\n  \"services\": {\n    \"/diag_turtle/clear\": \"std_srvs/srv/Empty\",\n    \"/diag_turtle/reset\": \"std_srvs/srv/Empty\"\n  },\n  \"use_sim_time\": false\n}\n```\n\nI have successfully:\n1. Discovered the running node: `/diag_turtle/palette`\n2. Identified its clear and reset services with full names and types:\n   - `/diag_turtle/clear`: std_srvs/srv/Empty\n   - `/diag_turtle/reset`: std_srvs/srv/Empty\n3. Read the use_sim_time parameter which is set to false\n\nNo services were called during this inspection, as requested.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/after-06/trace.jsonl",
+    "episode": "after-06",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/after-12/trace.jsonl",
+    "episode": "after-12",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/after-18/trace.jsonl",
+    "episode": "after-18",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/after-24/trace.jsonl",
+    "episode": "after-24",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/after-30/trace.jsonl",
+    "episode": "after-30",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/after-36/trace.jsonl",
+    "episode": "after-36",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "diagnostic",
+    "group": "oracle",
+    "member": "evidence/primary-v1/oracle/before/trace.jsonl",
+    "episode": "before",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 0,
+    "model_ends": 0,
+    "episode_end": false,
+    "usage": {},
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log"
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/00-t3-A/trace.jsonl",
+    "episode": "00-t3-A",
+    "task": {
+      "id": "t3",
+      "request": "Find the pose topic in /paper_turtle and report its full topic name, message type, publisher count, and subscriber count. Return JSON {\"topic\": string, \"type\": string, \"publishers\": integer, \"subscribers\": integer}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 18494,
+      "output_tokens": 207,
+      "total_tokens": 18701
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "t3",
+      "arm": "A",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/00-t3-A",
+      "attempted": true,
+      "worker_wall_seconds": 29.642285740000005,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "topic": "/paper_turtle/turtle1/pose",
+        "type": "turtlesim/msg/Pose",
+        "publishers": 1,
+        "subscribers": 0
+      },
+      "field_exact": true,
+      "strict_json": false,
+      "model_calls": 3,
+      "input_tokens": 18494,
+      "output_tokens": 207,
+      "tool_dispatches": 2,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 27.878308476,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "A",
+      "answer": "Perfect! I have all the information needed. Let me format it as JSON:\n\n```json\n{\n  \"topic\": \"/paper_turtle/turtle1/pose\",\n  \"type\": \"turtlesim/msg/Pose\",\n  \"publishers\": 1,\n  \"subscribers\": 0\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/01-t3-B/trace.jsonl",
+    "episode": "01-t3-B",
+    "task": {
+      "id": "t3",
+      "request": "Find the pose topic in /paper_turtle and report its full topic name, message type, publisher count, and subscriber count. Return JSON {\"topic\": string, \"type\": string, \"publishers\": integer, \"subscribers\": integer}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 25605,
+      "output_tokens": 143,
+      "total_tokens": 25748
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "t3",
+      "arm": "B",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/01-t3-B",
+      "attempted": true,
+      "worker_wall_seconds": 18.66439930200002,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "topic": "/paper_turtle/turtle1/pose",
+        "type": "turtlesim/msg/Pose",
+        "publishers": 1,
+        "subscribers": 0
+      },
+      "field_exact": true,
+      "strict_json": true,
+      "model_calls": 4,
+      "input_tokens": 25605,
+      "output_tokens": 143,
+      "tool_dispatches": 3,
+      "ros_operations": 3,
+      "native_failures": 1,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 16.800083717999996,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "B",
+      "answer": "{\"topic\": \"/paper_turtle/turtle1/pose\", \"type\": \"turtlesim/msg/Pose\", \"publishers\": 1, \"subscribers\": 0}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/02-t4-A/trace.jsonl",
+    "episode": "02-t4-A",
+    "task": {
+      "id": "t4",
+      "request": "Discover the turtlesim node in /paper_turtle. Report its full name and the full service names and service types of the clear and reset services. Do not invoke services. Return JSON {\"node\": string, \"services\": [{\"name\": string, \"type\": string}]}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 32434,
+      "output_tokens": 553,
+      "total_tokens": 32987
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "t4",
+      "arm": "A",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/02-t4-A",
+      "attempted": true,
+      "worker_wall_seconds": 52.460476210000024,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "node": "/paper_turtle/palette",
+        "services": [
+          {
+            "name": "/paper_turtle/clear",
+            "type": "std_srvs/srv/Empty"
+          },
+          {
+            "name": "/paper_turtle/reset",
+            "type": "std_srvs/srv/Empty"
+          }
+        ]
+      },
+      "field_exact": true,
+      "strict_json": false,
+      "model_calls": 5,
+      "input_tokens": 32434,
+      "output_tokens": 553,
+      "tool_dispatches": 4,
+      "ros_operations": 6,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 50.7330546,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t4",
+      "arm": "A",
+      "answer": "Based on my discovery, here is the information about the turtlesim node in /paper_turtle:\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"services\": [\n    {\n      \"name\": \"/paper_turtle/clear\",\n      \"type\": \"std_srvs/srv/Empty\"\n    },\n    {\n      \"name\": \"/paper_turtle/reset\",\n      \"type\": \"std_srvs/srv/Empty\"\n    }\n  ]\n}\n```\n\nThe full node name is `/paper_turtle/palette`, and both the clear and reset services are of type `std_srvs/srv/Empty`.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/03-t2-B/trace.jsonl",
+    "episode": "03-t2-B",
+    "task": {
+      "id": "t2",
+      "request": "In /paper_turtle, discover the turtlesim node. Report its full node name, configured use_sim_time, and every parameter name currently exposed by that node. Return JSON {\"node\": string, \"use_sim_time\": boolean, \"parameters\": [string]}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 40372,
+      "output_tokens": 594,
+      "total_tokens": 40966
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "t2",
+      "arm": "B",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/03-t2-B",
+      "attempted": true,
+      "worker_wall_seconds": 61.43359065699997,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "node": "/paper_turtle/palette",
+        "use_sim_time": false,
+        "parameters": [
+          "background_b",
+          "background_g",
+          "background_r",
+          "holonomic",
+          "qos_overrides./parameter_events.publisher.depth",
+          "qos_overrides./parameter_events.publisher.durability",
+          "qos_overrides./parameter_events.publisher.history",
+          "qos_overrides./parameter_events.publisher.reliability",
+          "start_type_description_service",
+          "use_sim_time"
+        ]
+      },
+      "field_exact": true,
+      "strict_json": false,
+      "model_calls": 6,
+      "input_tokens": 40372,
+      "output_tokens": 594,
+      "tool_dispatches": 5,
+      "ros_operations": 5,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 59.60639743799999,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "B",
+      "answer": "Based on my discovery, the node in /paper_turtle is `/paper_turtle/palette` (not a standard turtlesim node). Here's the requested information:\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"use_sim_time\": false,\n  \"parameters\": [\n    \"background_b\",\n    \"background_g\",\n    \"background_r\",\n    \"holonomic\",\n    \"qos_overrides./parameter_events.publisher.depth\",\n    \"qos_overrides./parameter_events.publisher.durability\",\n    \"qos_overrides./parameter_events.publisher.history\",\n    \"qos_overrides./parameter_events.publisher.reliability\",\n    \"start_type_description_service\",\n    \"use_sim_time\"\n  ]\n}\n```\n\nNote: The node is named `/paper_turtle/palette` rather than a standard `turtlesim` node. This appears to be a custom implementation with turtlesim-like functionality (it has spawn, set_pen, teleport services, etc.).",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/04-t1-B/trace.jsonl",
+    "episode": "04-t1-B",
+    "task": {
+      "id": "t1",
+      "request": "In /paper_turtle, discover the turtlesim node. Report its full node name and its configured background_r, background_g, background_b values in that order. Return JSON {\"node\": string, \"rgb\": [red, green, blue]}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 32110,
+      "output_tokens": 278,
+      "total_tokens": 32388
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "t1",
+      "arm": "B",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/04-t1-B",
+      "attempted": true,
+      "worker_wall_seconds": 25.03451001899998,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "node": null,
+        "rgb": null
+      },
+      "field_exact": false,
+      "strict_json": false,
+      "model_calls": 5,
+      "input_tokens": 32110,
+      "output_tokens": 278,
+      "tool_dispatches": 4,
+      "ros_operations": 4,
+      "native_failures": 1,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 23.014422335000006,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "B",
+      "answer": "The node list consistently shows only `/paper_turtle/palette` in the paper_turtle namespace. There is no `/paper_turtle/turtlesim` node available. The turtlesim node does not exist in this system.\n\n{\"node\": null, \"rgb\": null}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/05-d1-C/trace.jsonl",
+    "episode": "05-d1-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 13490,
+      "output_tokens": 137,
+      "total_tokens": 13627
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "d1",
+      "arm": "C",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/05-d1-C",
+      "attempted": true,
+      "worker_wall_seconds": 26.23205912200001,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "nodes": [
+          {
+            "name": "/paper_demo/calculator",
+            "value": true
+          },
+          {
+            "name": "/paper_demo/listener",
+            "value": true
+          },
+          {
+            "name": "/paper_demo/source",
+            "value": true
+          }
+        ]
+      },
+      "field_exact": true,
+      "strict_json": false,
+      "model_calls": 2,
+      "input_tokens": 13490,
+      "output_tokens": 137,
+      "tool_dispatches": 5,
+      "ros_operations": 4,
+      "native_failures": 0,
+      "program_executions": 1,
+      "program_iterations": 3,
+      "algorithm_seconds": 0.002248398000006091,
+      "wall_seconds": 24.47719711800005,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "C",
+      "answer": "```json\n{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"value\": true}, {\"name\": \"/paper_demo/listener\", \"value\": true}, {\"name\": \"/paper_demo/source\", \"value\": true}]}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/06-d1-A/trace.jsonl",
+    "episode": "06-d1-A",
+    "task": {
+      "id": "d1",
+      "request": "Discover every node in /paper_demo. For each, report the full node name and configured start_type_description_service parameter value. Return JSON {\"nodes\": [{\"name\": string, \"value\": boolean}]}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 24718,
+      "output_tokens": 411,
+      "total_tokens": 25129
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "d1",
+      "arm": "A",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/06-d1-A",
+      "attempted": true,
+      "worker_wall_seconds": 56.365056831000004,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "nodes": [
+          {
+            "name": "/paper_demo/calculator",
+            "value": true
+          },
+          {
+            "name": "/paper_demo/listener",
+            "value": true
+          },
+          {
+            "name": "/paper_demo/source",
+            "value": true
+          }
+        ]
+      },
+      "field_exact": true,
+      "strict_json": false,
+      "model_calls": 4,
+      "input_tokens": 24718,
+      "output_tokens": 411,
+      "tool_dispatches": 7,
+      "ros_operations": 7,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 54.65233764599998,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "A",
+      "answer": "```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_demo/calculator\",\n      \"value\": true\n    },\n    {\n      \"name\": \"/paper_demo/listener\",\n      \"value\": true\n    },\n    {\n      \"name\": \"/paper_demo/source\",\n      \"value\": true\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/07-d4-A/trace.jsonl",
+    "episode": "07-d4-A",
+    "task": {
+      "id": "d4",
+      "request": "In /paper_demo discover the node that serves the add_two_ints service. Report the node name, full service name and service type. Do not invoke the service. Return JSON {\"node\": string, \"service\": string, \"type\": string}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 40468,
+      "output_tokens": 417,
+      "total_tokens": 40885
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "d4",
+      "arm": "A",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/07-d4-A",
+      "attempted": true,
+      "worker_wall_seconds": 38.720562788999985,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "node": "/paper_demo/calculator",
+        "service": "/paper_demo/add_two_ints",
+        "type": "example_interfaces/srv/AddTwoInts"
+      },
+      "field_exact": true,
+      "strict_json": true,
+      "model_calls": 6,
+      "input_tokens": 40468,
+      "output_tokens": 417,
+      "tool_dispatches": 5,
+      "ros_operations": 7,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 37.01348334599999,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d4",
+      "arm": "A",
+      "answer": "{\"node\": \"/paper_demo/calculator\", \"service\": \"/paper_demo/add_two_ints\", \"type\": \"example_interfaces/srv/AddTwoInts\"}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "continuation",
+    "member": "research/_artifacts/paper-pilot-continuation-20261108/08-d3-A/trace.jsonl",
+    "episode": "08-d3-A",
+    "task": {
+      "id": "d3",
+      "request": "Find the chatter topic in /paper_demo and report its full topic name, message type, publisher count, and subscriber count. Return JSON {\"topic\": string, \"type\": string, \"publishers\": integer, \"subscribers\": integer}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 18664,
+      "output_tokens": 180,
+      "total_tokens": 18844
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "task": "d3",
+      "arm": "A",
+      "path": "research/_artifacts/paper-pilot-continuation-20261108/08-d3-A",
+      "attempted": true,
+      "worker_wall_seconds": 16.558416168000008,
+      "complete_trace": true,
+      "oracle_stable": true,
+      "json": {
+        "topic": "/paper_demo/chatter",
+        "type": "std_msgs/msg/String",
+        "publishers": 1,
+        "subscribers": 1
+      },
+      "field_exact": true,
+      "strict_json": false,
+      "model_calls": 3,
+      "input_tokens": 18664,
+      "output_tokens": 180,
+      "tool_dispatches": 2,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "wall_seconds": 14.800938425999902,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/continuation-audit.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d3",
+      "arm": "A",
+      "answer": "Perfect! I have all the information needed. Let me format it as JSON:\n\n```json\n{\n  \"topic\": \"/paper_demo/chatter\",\n  \"type\": \"std_msgs/msg/String\",\n  \"publishers\": 1,\n  \"subscribers\": 1\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "development",
+    "member": "research/_artifacts/paper-pilot-development-discovery-20261107/00-dev_t-C/trace.jsonl",
+    "episode": "00-dev_t-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 13379,
+      "output_tokens": 136,
+      "total_tokens": 13515
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "dev_t",
+      "arm": "C",
+      "answer": "```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_turtle/palette\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "development",
+    "member": "research/_artifacts/paper-pilot-development-discovery-20261107/01-dev_d-C/trace.jsonl",
+    "episode": "01-dev_d-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 13479,
+      "output_tokens": 148,
+      "total_tokens": 13627
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "dev_d",
+      "arm": "C",
+      "answer": "```json\n{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"use_sim_time\": false}, {\"name\": \"/paper_demo/listener\", \"use_sim_time\": false}, {\"name\": \"/paper_demo/source\", \"use_sim_time\": false}]}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "development",
+    "member": "research/_artifacts/paper-pilot-development-instructed-20261107/00-dev_t-C/trace.jsonl",
+    "episode": "00-dev_t-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 2,
+    "model_ends": 2,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 13295,
+      "output_tokens": 112,
+      "total_tokens": 13407
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "dev_t",
+      "arm": "C",
+      "answer": "```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_turtle/palette\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "development",
+    "member": "research/_artifacts/paper-pilot-development-instructed-20261107/01-dev_d-C/trace.jsonl",
+    "episode": "01-dev_d-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 26987,
+      "output_tokens": 356,
+      "total_tokens": 27343
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "dev_d",
+      "arm": "C",
+      "answer": "```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_demo/calculator\",\n      \"use_sim_time\": false\n    },\n    {\n      \"name\": \"/paper_demo/listener\",\n      \"use_sim_time\": false\n    },\n    {\n      \"name\": \"/paper_demo/source\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "development",
+    "member": "research/_artifacts/paper-pilot-development-retry-20261107/00-dev_t-C/trace.jsonl",
+    "episode": "00-dev_t-C",
+    "task": {
+      "id": "dev_t",
+      "request": "Discover each node in /paper_turtle and report its full name and the current configured use_sim_time value. Return JSON with a nodes array of objects containing name and use_sim_time."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 5,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 34701,
+      "output_tokens": 263,
+      "total_tokens": 34964
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "dev_t",
+      "arm": "C",
+      "answer": "```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_turtle/palette\",\n      \"use_sim_time\": false\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "development",
+    "member": "research/_artifacts/paper-pilot-development-retry-20261107/01-dev_d-C/trace.jsonl",
+    "episode": "01-dev_d-C",
+    "task": {
+      "id": "dev_d",
+      "request": "Discover every node in /paper_demo and report each full node name and the configured use_sim_time value. Return JSON with a nodes array of objects containing name and use_sim_time."
+    },
+    "arm": "C",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 42719,
+      "output_tokens": 421,
+      "total_tokens": 43140
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": null,
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "dev_d",
+      "arm": "C",
+      "answer": "```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_demo/calculator\",\n      \"use_sim_time\": false\n    },\n    {\n      \"name\": \"/paper_demo/listener\",\n      \"use_sim_time\": false\n    },\n    {\n      \"name\": \"/paper_demo/source\",\n      \"use_sim_time\": null\n    }\n  ]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/00-d3-C/trace.jsonl",
+    "episode": "00-d3-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 28148,
+      "output_tokens": 406,
+      "total_tokens": 28554
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 0,
+      "task": "d3",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 41.18388016500103,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"topic\": \"/paper_demo/chatter\", \"type\": \"std_msgs/msg/String\", \"publishers\": 1, \"subscribers\": 1}",
+      "json": {
+        "topic": "/paper_demo/chatter",
+        "type": "std_msgs/msg/String",
+        "publishers": 1,
+        "subscribers": 1
+      },
+      "field_exact_before_only": true,
+      "model_calls": 4,
+      "model_responses": 4,
+      "usage_records_missing": 0,
+      "input_tokens": 28148,
+      "output_tokens": 406,
+      "tool_dispatches": 3,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 1,
+      "program_iterations": 0,
+      "algorithm_seconds": 0.0017085460021917243,
+      "executor_seconds": 39.241979577000166,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d3",
+      "arm": "C",
+      "answer": "{\"topic\": \"/paper_demo/chatter\", \"type\": \"std_msgs/msg/String\", \"publishers\": 1, \"subscribers\": 1}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/01-d4-B/trace.jsonl",
+    "episode": "01-d4-B",
+    "task": {
+      "id": "d4",
+      "request": "In /paper_demo discover the node that serves the add_two_ints service. Report the node name, full service name and service type. Do not invoke the service. Return JSON {\"node\": string, \"service\": string, \"type\": string}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 19498,
+      "output_tokens": 88,
+      "total_tokens": 19586
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 1,
+      "task": "d4",
+      "arm": "B",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 15.518739920000371,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"node\": \"/paper_demo/calculator\", \"service\": \"/paper_demo/add_two_ints\", \"type\": \"example_interfaces/srv/AddTwoInts\"}",
+      "json": {
+        "node": "/paper_demo/calculator",
+        "service": "/paper_demo/add_two_ints",
+        "type": "example_interfaces/srv/AddTwoInts"
+      },
+      "field_exact_before_only": true,
+      "model_calls": 3,
+      "model_responses": 3,
+      "usage_records_missing": 0,
+      "input_tokens": 19498,
+      "output_tokens": 88,
+      "tool_dispatches": 2,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 13.5923371400022,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d4",
+      "arm": "B",
+      "answer": "{\"node\": \"/paper_demo/calculator\", \"service\": \"/paper_demo/add_two_ints\", \"type\": \"example_interfaces/srv/AddTwoInts\"}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/02-d2-B/trace.jsonl",
+    "episode": "02-d2-B",
+    "task": {
+      "id": "d2",
+      "request": "Discover every node in /paper_demo. For each node report its full name and all of its currently exposed parameter names. Return JSON {\"nodes\": [{\"name\": string, \"parameters\": [string]}]}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 27147,
+      "output_tokens": 438,
+      "total_tokens": 27585
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 2,
+      "task": "d2",
+      "arm": "B",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 51.87038263699651,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "```json\n{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"parameters\": [\"one_shot\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/listener\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/source\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}]}\n```",
+      "json": {
+        "nodes": [
+          {
+            "name": "/paper_demo/calculator",
+            "parameters": [
+              "one_shot",
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          },
+          {
+            "name": "/paper_demo/listener",
+            "parameters": [
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          },
+          {
+            "name": "/paper_demo/source",
+            "parameters": [
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          }
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 4,
+      "model_responses": 4,
+      "usage_records_missing": 0,
+      "input_tokens": 27147,
+      "output_tokens": 438,
+      "tool_dispatches": 8,
+      "ros_operations": 7,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 49.944532310000795,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "B",
+      "answer": "```json\n{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"parameters\": [\"one_shot\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/listener\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/source\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}]}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/03-t2-C/trace.jsonl",
+    "episode": "03-t2-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 60439,
+      "output_tokens": 1146,
+      "total_tokens": 61585
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 3,
+      "task": "t2",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 128.0702169340002,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "The parameter names from the tool response include leading spaces. Let me provide the JSON with cleaned parameter names (removing the leading spaces):\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"use_sim_time\": false,\n  \"parameters\": [\n    \"background_b\",\n    \"background_g\",\n    \"background_r\",\n    \"holonomic\",\n    \"qos_overrides./parameter_events.publisher.depth\",\n    \"qos_overrides./parameter_events.publisher.durability\",\n    \"qos_overrides./parameter_events.publisher.history\",\n    \"qos_overrides./parameter_events.publisher.reliability\",\n    \"start_type_description_service\",\n    \"use_sim_time\"\n  ]\n}\n```\n\n**Answer:**\n```json\n{\"node\": \"/paper_turtle/palette\", \"use_sim_time\": false, \"parameters\": [\"background_b\", \"background_g\", \"background_r\", \"holonomic\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}\n```",
+      "json": {
+        "node": "/paper_turtle/palette",
+        "use_sim_time": false,
+        "parameters": [
+          "background_b",
+          "background_g",
+          "background_r",
+          "holonomic",
+          "qos_overrides./parameter_events.publisher.depth",
+          "qos_overrides./parameter_events.publisher.durability",
+          "qos_overrides./parameter_events.publisher.history",
+          "qos_overrides./parameter_events.publisher.reliability",
+          "start_type_description_service",
+          "use_sim_time"
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 8,
+      "model_responses": 8,
+      "usage_records_missing": 0,
+      "input_tokens": 60439,
+      "output_tokens": 1146,
+      "tool_dispatches": 7,
+      "ros_operations": 6,
+      "native_failures": 0,
+      "program_executions": 1,
+      "program_iterations": 0,
+      "algorithm_seconds": 0.0014043059964023996,
+      "executor_seconds": 126.11970880999797,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "C",
+      "answer": "The parameter names from the tool response include leading spaces. Let me provide the JSON with cleaned parameter names (removing the leading spaces):\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"use_sim_time\": false,\n  \"parameters\": [\n    \"background_b\",\n    \"background_g\",\n    \"background_r\",\n    \"holonomic\",\n    \"qos_overrides./parameter_events.publisher.depth\",\n    \"qos_overrides./parameter_events.publisher.durability\",\n    \"qos_overrides./parameter_events.publisher.history\",\n    \"qos_overrides./parameter_events.publisher.reliability\",\n    \"start_type_description_service\",\n    \"use_sim_time\"\n  ]\n}\n```\n\n**Answer:**\n```json\n{\"node\": \"/paper_turtle/palette\", \"use_sim_time\": false, \"parameters\": [\"background_b\", \"background_g\", \"background_r\", \"holonomic\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/04-t4-B/trace.jsonl",
+    "episode": "04-t4-B",
+    "task": {
+      "id": "t4",
+      "request": "Discover the turtlesim node in /paper_turtle. Report its full name and the full service names and service types of the clear and reset services. Do not invoke services. Return JSON {\"node\": string, \"services\": [{\"name\": string, \"type\": string}]}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 26185,
+      "output_tokens": 153,
+      "total_tokens": 26338
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 4,
+      "task": "t4",
+      "arm": "B",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 22.094062623000355,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"node\": \"/paper_turtle/palette\", \"services\": [{\"name\": \"/paper_turtle/clear\", \"type\": \"std_srvs/srv/Empty\"}, {\"name\": \"/paper_turtle/reset\", \"type\": \"std_srvs/srv/Empty\"}]}",
+      "json": {
+        "node": "/paper_turtle/palette",
+        "services": [
+          {
+            "name": "/paper_turtle/clear",
+            "type": "std_srvs/srv/Empty"
+          },
+          {
+            "name": "/paper_turtle/reset",
+            "type": "std_srvs/srv/Empty"
+          }
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 4,
+      "model_responses": 4,
+      "usage_records_missing": 0,
+      "input_tokens": 26185,
+      "output_tokens": 153,
+      "tool_dispatches": 3,
+      "ros_operations": 4,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 20.097548852998443,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t4",
+      "arm": "B",
+      "answer": "{\"node\": \"/paper_turtle/palette\", \"services\": [{\"name\": \"/paper_turtle/clear\", \"type\": \"std_srvs/srv/Empty\"}, {\"name\": \"/paper_turtle/reset\", \"type\": \"std_srvs/srv/Empty\"}]}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/05-d2-C/trace.jsonl",
+    "episode": "05-d2-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 7,
+    "model_ends": 7,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 52894,
+      "output_tokens": 741,
+      "total_tokens": 53635
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 5,
+      "task": "d2",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 95.8416539610007,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"parameters\": [\"one_shot\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/listener\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/source\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}]}",
+      "json": {
+        "nodes": [
+          {
+            "name": "/paper_demo/calculator",
+            "parameters": [
+              "one_shot",
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          },
+          {
+            "name": "/paper_demo/listener",
+            "parameters": [
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          },
+          {
+            "name": "/paper_demo/source",
+            "parameters": [
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          }
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 7,
+      "model_responses": 7,
+      "usage_records_missing": 0,
+      "input_tokens": 52894,
+      "output_tokens": 741,
+      "tool_dispatches": 15,
+      "ros_operations": 11,
+      "native_failures": 0,
+      "program_executions": 4,
+      "program_iterations": 3,
+      "algorithm_seconds": 0.00344002800193266,
+      "executor_seconds": 93.88079023600221,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "C",
+      "answer": "{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"parameters\": [\"one_shot\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/listener\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}, {\"name\": \"/paper_demo/source\", \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]}]}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/06-t1-A/trace.jsonl",
+    "episode": "06-t1-A",
+    "task": {
+      "id": "t1",
+      "request": "In /paper_turtle, discover the turtlesim node. Report its full node name and its configured background_r, background_g, background_b values in that order. Return JSON {\"node\": string, \"rgb\": [red, green, blue]}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 51426,
+      "output_tokens": 605,
+      "total_tokens": 52031
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 6,
+      "task": "t1",
+      "arm": "A",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 69.54026297000019,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "The node `/paper_turtle/palette` is indeed a turtlesim-related node (it has turtlesim services and publishes to turtlesim topics). This appears to be the \"turtlesim\" node in the /paper_turtle namespace.\n\nHere's the requested information:\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"rgb\": [37, 83, 129]\n}\n```",
+      "json": {
+        "node": "/paper_turtle/palette",
+        "rgb": [
+          37,
+          83,
+          129
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 8,
+      "model_responses": 8,
+      "usage_records_missing": 0,
+      "input_tokens": 51426,
+      "output_tokens": 605,
+      "tool_dispatches": 7,
+      "ros_operations": 7,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 67.5813130380011,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "A",
+      "answer": "The node `/paper_turtle/palette` is indeed a turtlesim-related node (it has turtlesim services and publishes to turtlesim topics). This appears to be the \"turtlesim\" node in the /paper_turtle namespace.\n\nHere's the requested information:\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"rgb\": [37, 83, 129]\n}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/07-d2-A/trace.jsonl",
+    "episode": "07-d2-A",
+    "task": {
+      "id": "d2",
+      "request": "Discover every node in /paper_demo. For each node report its full name and all of its currently exposed parameter names. Return JSON {\"nodes\": [{\"name\": string, \"parameters\": [string]}]}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 6,
+    "model_ends": 6,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 40172,
+      "output_tokens": 587,
+      "total_tokens": 40759
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 7,
+      "task": "d2",
+      "arm": "A",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 68.73388142399926,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "Now I have all the information needed. Let me format this as JSON with the node names and their parameter lists:\n\n```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_demo/calculator\",\n      \"parameters\": [\"one_shot\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]\n    },\n    {\n      \"name\": \"/paper_demo/listener\",\n      \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]\n    },\n    {\n      \"name\": \"/paper_demo/source\",\n      \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]\n    }\n  ]\n}\n```\n\nThe JSON output shows all three nodes in the /paper_demo namespace with their exposed parameters. The calculator node has an additional \"one_shot\" parameter that the other two nodes don't have.",
+      "json": {
+        "nodes": [
+          {
+            "name": "/paper_demo/calculator",
+            "parameters": [
+              "one_shot",
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          },
+          {
+            "name": "/paper_demo/listener",
+            "parameters": [
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          },
+          {
+            "name": "/paper_demo/source",
+            "parameters": [
+              "qos_overrides./parameter_events.publisher.depth",
+              "qos_overrides./parameter_events.publisher.durability",
+              "qos_overrides./parameter_events.publisher.history",
+              "qos_overrides./parameter_events.publisher.reliability",
+              "start_type_description_service",
+              "use_sim_time"
+            ]
+          }
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 6,
+      "model_responses": 6,
+      "usage_records_missing": 0,
+      "input_tokens": 40172,
+      "output_tokens": 587,
+      "tool_dispatches": 5,
+      "ros_operations": 7,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 66.70888858100079,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d2",
+      "arm": "A",
+      "answer": "Now I have all the information needed. Let me format this as JSON with the node names and their parameter lists:\n\n```json\n{\n  \"nodes\": [\n    {\n      \"name\": \"/paper_demo/calculator\",\n      \"parameters\": [\"one_shot\", \"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]\n    },\n    {\n      \"name\": \"/paper_demo/listener\",\n      \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]\n    },\n    {\n      \"name\": \"/paper_demo/source\",\n      \"parameters\": [\"qos_overrides./parameter_events.publisher.depth\", \"qos_overrides./parameter_events.publisher.durability\", \"qos_overrides./parameter_events.publisher.history\", \"qos_overrides./parameter_events.publisher.reliability\", \"start_type_description_service\", \"use_sim_time\"]\n    }\n  ]\n}\n```\n\nThe JSON output shows all three nodes in the /paper_demo namespace with their exposed parameters. The calculator node has an additional \"one_shot\" parameter that the other two nodes don't have.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/08-t2-A/trace.jsonl",
+    "episode": "08-t2-A",
+    "task": {
+      "id": "t2",
+      "request": "In /paper_turtle, discover the turtlesim node. Report its full node name, configured use_sim_time, and every parameter name currently exposed by that node. Return JSON {\"node\": string, \"use_sim_time\": boolean, \"parameters\": [string]}."
+    },
+    "arm": "A",
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 53759,
+      "output_tokens": 923,
+      "total_tokens": 54682
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 8,
+      "task": "t2",
+      "arm": "A",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 101.37085948700042,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "Based on my investigation of the `/paper_turtle` namespace, I found that there is no separate `turtlesim` node. Instead, there is a `/paper_turtle/palette` node which serves as the turtlesim interface (it has all the standard turtlesim services like spawn, kill, set_pen, teleport, etc.).\n\nHere's the requested information:\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"use_sim_time\": false,\n  \"parameters\": [\n    \"background_b\",\n    \"background_g\",\n    \"background_r\",\n    \"holonomic\",\n    \"qos_overrides./parameter_events.publisher.depth\",\n    \"qos_overrides./parameter_events.publisher.durability\",\n    \"qos_overrides./parameter_events.publisher.history\",\n    \"qos_overrides./parameter_events.publisher.reliability\",\n    \"start_type_description_service\",\n    \"use_sim_time\"\n  ]\n}\n```\n\n**Note**: The node name is `/paper_turtle/palette` (not `turtlesim`), and the `use_sim_time` parameter is set to `false`.",
+      "json": {
+        "node": "/paper_turtle/palette",
+        "use_sim_time": false,
+        "parameters": [
+          "background_b",
+          "background_g",
+          "background_r",
+          "holonomic",
+          "qos_overrides./parameter_events.publisher.depth",
+          "qos_overrides./parameter_events.publisher.durability",
+          "qos_overrides./parameter_events.publisher.history",
+          "qos_overrides./parameter_events.publisher.reliability",
+          "start_type_description_service",
+          "use_sim_time"
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 8,
+      "model_responses": 8,
+      "usage_records_missing": 0,
+      "input_tokens": 53759,
+      "output_tokens": 923,
+      "tool_dispatches": 7,
+      "ros_operations": 7,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 99.33385044700117,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t2",
+      "arm": "A",
+      "answer": "Based on my investigation of the `/paper_turtle` namespace, I found that there is no separate `turtlesim` node. Instead, there is a `/paper_turtle/palette` node which serves as the turtlesim interface (it has all the standard turtlesim services like spawn, kill, set_pen, teleport, etc.).\n\nHere's the requested information:\n\n```json\n{\n  \"node\": \"/paper_turtle/palette\",\n  \"use_sim_time\": false,\n  \"parameters\": [\n    \"background_b\",\n    \"background_g\",\n    \"background_r\",\n    \"holonomic\",\n    \"qos_overrides./parameter_events.publisher.depth\",\n    \"qos_overrides./parameter_events.publisher.durability\",\n    \"qos_overrides./parameter_events.publisher.history\",\n    \"qos_overrides./parameter_events.publisher.reliability\",\n    \"start_type_description_service\",\n    \"use_sim_time\"\n  ]\n}\n```\n\n**Note**: The node name is `/paper_turtle/palette` (not `turtlesim`), and the `use_sim_time` parameter is set to `false`.",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/09-t1-C/trace.jsonl",
+    "episode": "09-t1-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 8,
+    "model_ends": 8,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 60151,
+      "output_tokens": 730,
+      "total_tokens": 60881
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 9,
+      "task": "t1",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 86.00335866800015,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"node\": \"/paper_turtle/palette\", \"rgb\": [37, 83, 129]}",
+      "json": {
+        "node": "/paper_turtle/palette",
+        "rgb": [
+          37,
+          83,
+          129
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 8,
+      "model_responses": 8,
+      "usage_records_missing": 0,
+      "input_tokens": 60151,
+      "output_tokens": 730,
+      "tool_dispatches": 7,
+      "ros_operations": 6,
+      "native_failures": 0,
+      "program_executions": 1,
+      "program_iterations": 0,
+      "algorithm_seconds": 0.0019365139996807557,
+      "executor_seconds": 83.97021716900053,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t1",
+      "arm": "C",
+      "answer": "{\"node\": \"/paper_turtle/palette\", \"rgb\": [37, 83, 129]}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/10-d1-B/trace.jsonl",
+    "episode": "10-d1-B",
+    "task": {
+      "id": "d1",
+      "request": "Discover every node in /paper_demo. For each, report the full node name and configured start_type_description_service parameter value. Return JSON {\"nodes\": [{\"name\": string, \"value\": boolean}]}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 19095,
+      "output_tokens": 208,
+      "total_tokens": 19303
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 10,
+      "task": "d1",
+      "arm": "B",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 35.140296371999284,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "```json\n{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"value\": true}, {\"name\": \"/paper_demo/listener\", \"value\": true}, {\"name\": \"/paper_demo/source\", \"value\": true}]}\n```",
+      "json": {
+        "nodes": [
+          {
+            "name": "/paper_demo/calculator",
+            "value": true
+          },
+          {
+            "name": "/paper_demo/listener",
+            "value": true
+          },
+          {
+            "name": "/paper_demo/source",
+            "value": true
+          }
+        ]
+      },
+      "field_exact_before_only": true,
+      "model_calls": 3,
+      "model_responses": 3,
+      "usage_records_missing": 0,
+      "input_tokens": 19095,
+      "output_tokens": 208,
+      "tool_dispatches": 5,
+      "ros_operations": 4,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 33.0973890009991,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d1",
+      "arm": "B",
+      "answer": "```json\n{\"nodes\": [{\"name\": \"/paper_demo/calculator\", \"value\": true}, {\"name\": \"/paper_demo/listener\", \"value\": true}, {\"name\": \"/paper_demo/source\", \"value\": true}]}\n```",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/11-d4-C/trace.jsonl",
+    "episode": "11-d4-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 20587,
+      "output_tokens": 88,
+      "total_tokens": 20675
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 11,
+      "task": "d4",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 16.622711747997528,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"node\": \"/paper_demo/calculator\", \"service\": \"/paper_demo/add_two_ints\", \"type\": \"example_interfaces/srv/AddTwoInts\"}",
+      "json": {
+        "node": "/paper_demo/calculator",
+        "service": "/paper_demo/add_two_ints",
+        "type": "example_interfaces/srv/AddTwoInts"
+      },
+      "field_exact_before_only": true,
+      "model_calls": 3,
+      "model_responses": 3,
+      "usage_records_missing": 0,
+      "input_tokens": 20587,
+      "output_tokens": 88,
+      "tool_dispatches": 2,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0.0011122360010631382,
+      "executor_seconds": 14.593184516001202,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d4",
+      "arm": "C",
+      "answer": "{\"node\": \"/paper_demo/calculator\", \"service\": \"/paper_demo/add_two_ints\", \"type\": \"example_interfaces/srv/AddTwoInts\"}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/12-t3-C/trace.jsonl",
+    "episode": "12-t3-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 4,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 27824,
+      "output_tokens": 369,
+      "total_tokens": 28193
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 12,
+      "task": "t3",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 38.32123335999859,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"topic\": \"/paper_turtle/turtle1/pose\", \"type\": \"turtlesim/msg/Pose\", \"publishers\": 1, \"subscribers\": 0}",
+      "json": {
+        "topic": "/paper_turtle/turtle1/pose",
+        "type": "turtlesim/msg/Pose",
+        "publishers": 1,
+        "subscribers": 0
+      },
+      "field_exact_before_only": true,
+      "model_calls": 4,
+      "model_responses": 4,
+      "usage_records_missing": 0,
+      "input_tokens": 27824,
+      "output_tokens": 369,
+      "tool_dispatches": 3,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 1,
+      "program_iterations": 0,
+      "algorithm_seconds": 0.0015274610013875645,
+      "executor_seconds": 36.24271640100051,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t3",
+      "arm": "C",
+      "answer": "{\"topic\": \"/paper_turtle/turtle1/pose\", \"type\": \"turtlesim/msg/Pose\", \"publishers\": 1, \"subscribers\": 0}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/13-d3-B/trace.jsonl",
+    "episode": "13-d3-B",
+    "task": {
+      "id": "d3",
+      "request": "Find the chatter topic in /paper_demo and report its full topic name, message type, publisher count, and subscriber count. Return JSON {\"topic\": string, \"type\": string, \"publishers\": integer, \"subscribers\": integer}."
+    },
+    "arm": "B",
+    "bad_json_lines": [],
+    "model_starts": 3,
+    "model_ends": 3,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 19304,
+      "output_tokens": 99,
+      "total_tokens": 19403
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 13,
+      "task": "d3",
+      "arm": "B",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": 17.27774309400047,
+      "complete_episode_record": true,
+      "error": null,
+      "answer": "{\"topic\": \"/paper_demo/chatter\", \"type\": \"std_msgs/msg/String\", \"publishers\": 1, \"subscribers\": 1}",
+      "json": {
+        "topic": "/paper_demo/chatter",
+        "type": "std_msgs/msg/String",
+        "publishers": 1,
+        "subscribers": 1
+      },
+      "field_exact_before_only": true,
+      "model_calls": 3,
+      "model_responses": 3,
+      "usage_records_missing": 0,
+      "input_tokens": 19304,
+      "output_tokens": 99,
+      "tool_dispatches": 2,
+      "ros_operations": 2,
+      "native_failures": 0,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0,
+      "executor_seconds": 15.238952048999636,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "d3",
+      "arm": "B",
+      "answer": "{\"topic\": \"/paper_demo/chatter\", \"type\": \"std_msgs/msg/String\", \"publishers\": 1, \"subscribers\": 1}",
+      "error": null
+    }
+  },
+  {
+    "corpus": "codeact",
+    "group": "evaluation",
+    "member": "research/_artifacts/paper-pilot-evaluation-20261107/14-t4-C/trace.jsonl",
+    "episode": "14-t4-C",
+    "task": null,
+    "arm": null,
+    "bad_json_lines": [],
+    "model_starts": 5,
+    "model_ends": 4,
+    "episode_end": true,
+    "usage": {
+      "input_tokens": 27972,
+      "output_tokens": 412,
+      "total_tokens": 28384
+    },
+    "frozen_judgment": null,
+    "archived_automatic_score": {
+      "index": 14,
+      "task": "t4",
+      "arm": "C",
+      "attempted": true,
+      "independent_post_snapshot": false,
+      "supported_bracketed": null,
+      "worker_wall_seconds": null,
+      "complete_episode_record": true,
+      "error": "RemoteProtocolError('peer closed connection without sending complete message body (incomplete chunked read)')",
+      "answer": null,
+      "json": null,
+      "field_exact_before_only": false,
+      "model_calls": 5,
+      "model_responses": 4,
+      "usage_records_missing": 0,
+      "input_tokens": 27972,
+      "output_tokens": 412,
+      "tool_dispatches": 4,
+      "ros_operations": 6,
+      "native_failures": 1,
+      "program_executions": 0,
+      "program_iterations": 0,
+      "algorithm_seconds": 0.0011558070000319276,
+      "executor_seconds": 54.46884429200145,
+      "score_member": "research/_artifacts/paper-pilot-analysis-20261108/original-before-only.json"
+    },
+    "freshness": "unknown: no continuous graph/incarnation log",
+    "answer": {
+      "task": "t4",
+      "arm": "C",
+      "answer": null,
+      "error": "RemoteProtocolError('peer closed connection without sending complete message body (incomplete chunked read)')"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "A1": {
+    "requests": 472,
+    "usage_records": 472,
+    "requests_without_usage": 0,
+    "affected_traces": []
+  },
+  "C1": {
+    "requests": 486,
+    "usage_records": 486,
+    "requests_without_usage": 0,
+    "affected_traces": []
+  },
+  "Forge": {
+    "requests": 643,
+    "usage_records": 641,
+    "requests_without_usage": 2,
+    "affected_traces": [
+      {
+        "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z/lfm3_1.7b-stage3/007-u3-Forge-s1/trace.jsonl",
+        "requests": 13,
+        "usage_records": 12
+      },
+      {
+        "trace_path": "research/_artifacts/runs/forge_baseline_20261115/full_20261115T091338Z-resume1/gpt-oss_20b-e1h/054-e1h_amb_1-Forge-s2/trace.jsonl",
+        "requests": 11,
+        "usage_records": 10
+      }
+    ]
+  }
+}

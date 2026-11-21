@@ -1,0 +1,51 @@
+{
+ "infrastructure_failures": {
+  "reason": "EpisodeHook crash before any model request (see PILOT_LOG 2026-11-15); excluded from analysis, kept in RESULTS_LOG.jsonl",
+  "run_ids": [
+   "lfm3_1.7b-e1h/015-e1h_chg_1-C1+H1e-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/025-e1h_chg_2-C1+H1e-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/040-e1h_chg_2-C1+H1e-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/043-e1h_amb_2-C1+H1e-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/051-e1h_abs_2-C1+H1e-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/052-e1h_abs_2-C1+H1e-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/055-e1h_amb_2-C1+H1e-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/056-e1h_chg_1-C1+H1e-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/060-e1h_amb_1-C1+H1e-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/064-e1h_abs_1-C1+H1e-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/073-e1h_amb_1-C1+H1e-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/084-e1h_abs_1-C1+H1e-lfm3_1.7b-s2"
+  ]
+ },
+ "superseded_protocol": {
+  "reason": "C1+H7 version 1: the model was not told the valid tool names while only submit_plan was offered (prompt hash 99f4eb91380e...). Revised the same day; these episodes are reported separately and the cells are rerun with the revised arm.",
+  "run_ids": [
+   "lfm3_1.7b-e1h/004-e1h_abs_2-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/006-e1h_amb_2-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/007-e1h_amb_1-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/012-e1h_abs_1-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/022-e1h_abs_1-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/028-e1h_chg_1-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/039-e1h_chg_2-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/042-e1h_amb_1-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/050-e1h_abs_2-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-e1h/080-e1h_chg_2-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/081-e1h_amb_2-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-e1h/082-e1h_chg_1-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-stage3/002-p3-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-stage3/005-h4-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-stage3/008-v2-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-stage3/028-v2-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-stage3/036-p3-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-stage3/037-h4-C1+H7-lfm3_1.7b-s2",
+   "lfm3_1.7b-stage3/042-u3-C1+H7-lfm3_1.7b-s1",
+   "lfm3_1.7b-stage3/055-u3-C1+H7-lfm3_1.7b-s2"
+  ]
+ },
+ "interrupted": {
+  "reason": "Stopped by the owner's pause request on 2026-11-15 ~09:34 +08 (episodes killed or never finished); never counted as results; cells are rerun on resume",
+  "run_ids": [
+   "bonsai-2_4b-e1h/079-e1h_amb_1-C1+H7-bonsai-2_4b-s2",
+   "bonsai-2_4b-e1h/081-e1h_chg_2-C1-bonsai-2_4b-s2"
+  ]
+ }
+}

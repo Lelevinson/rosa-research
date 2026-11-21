@@ -1,0 +1,1401 @@
+{
+ "summary": {
+  "episodes": 80,
+  "supported": 70,
+  "false_rejections": [],
+  "supported_bare_text_finish": 5,
+  "failed": 10,
+  "caught": [
+   {
+    "model": "lfm3:1.7b",
+    "task": "v2",
+    "seed": 2,
+    "supported": false,
+    "used_final_answer": false,
+    "answer": {
+     "/plant32/cedar_reset": "std_srvs/srv/Trigger\n"
+    },
+    "reject": true,
+    "problems": [
+     {
+      "rule": "missing_keys",
+      "missing": [
+       "node",
+       "type"
+      ],
+      "hint": "The task asks for the keys ['node', 'type']; your answer lacks ['node', 'type']."
+     }
+    ],
+    "numbers_unseen": []
+   },
+   {
+    "model": "bonsai-2:4b",
+    "task": "v2",
+    "seed": 1,
+    "supported": false,
+    "used_final_answer": true,
+    "answer": {
+     "node": "/plant32/cedar",
+     "type": "std_srvs/srv/Trigger"
+    },
+    "reject": true,
+    "problems": [
+     {
+      "path": "node",
+      "value": "/plant32/cedar",
+      "kind": "value",
+      "rule": "never_seen",
+      "hint": "'/plant32/cedar': this name never appeared in a tool result or the task; look it up or check spelling."
+     }
+    ],
+    "numbers_unseen": []
+   },
+   {
+    "model": "bonsai-2:4b",
+    "task": "h4",
+    "seed": 1,
+    "supported": false,
+    "used_final_answer": true,
+    "answer": {
+     "gains": {
+      "dune": 65,
+      "oasis": 89,
+      "zephyr": 74
+     },
+     "node": "/plant32/anvil",
+     "publishers": {
+      "/plant32/courier_t": "zephyr",
+      "/plant32/fjord_t": "dune",
+      "/plant32/prism_t": "oasis"
+     }
+    },
+    "reject": true,
+    "problems": [
+     {
+      "path": "gains.dune",
+      "value": "dune",
+      "kind": "key",
+      "rule": "unique_suffix_bare",
+      "hint": "'dune' is not a full name; did you mean '/plant32/dune'?"
+     },
+     {
+      "path": "gains.oasis",
+      "value": "oasis",
+      "kind": "key",
+      "rule": "unique_suffix_bare",
+      "hint": "'oasis' is not a full name; did you mean '/plant32/oasis'?"
+     },
+     {
+      "path": "gains.zephyr",
+      "value": "zephyr",
+      "kind": "key",
+      "rule": "unique_suffix_bare",
+      "hint": "'zephyr' is not a full name; did you mean '/plant32/zephyr'?"
+     },
+     {
+      "path": "publishers./plant32/courier_t",
+      "value": "zephyr",
+      "kind": "value",
+      "rule": "unique_suffix_bare",
+      "hint": "'zephyr' is not a full name; did you mean '/plant32/zephyr'?"
+     },
+     {
+      "path": "publishers./plant32/fjord_t",
+      "value": "dune",
+      "kind": "value",
+      "rule": "unique_suffix_bare",
+      "hint": "'dune' is not a full name; did you mean '/plant32/dune'?"
+     },
+     {
+      "path": "publishers./plant32/prism_t",
+      "value": "oasis",
+      "kind": "value",
+      "rule": "unique_suffix_bare",
+      "hint": "'oasis' is not a full name; did you mean '/plant32/oasis'?"
+     }
+    ],
+    "numbers_unseen": []
+   }
+  ],
+  "numbers_unseen_in_supported": [],
+  "numbers_unseen_in_failed": []
+ },
+ "rows": [
+  {
+   "model": "lfm3:1.7b",
+   "task": "v2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/plant32/wharf",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "u3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "h4",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "p3",
+   "seed": 1,
+   "supported": false,
+   "used_final_answer": false,
+   "answer": {
+    "first": "/plant32/quartz",
+    "second": "/plant32/beacon",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "h4",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "p3",
+   "seed": 2,
+   "supported": false,
+   "used_final_answer": true,
+   "answer": {
+    "first": "/plant32/quartz",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "v2",
+   "seed": 2,
+   "supported": false,
+   "used_final_answer": false,
+   "answer": {
+    "/plant32/cedar_reset": "std_srvs/srv/Trigger\n"
+   },
+   "reject": true,
+   "problems": [
+    {
+     "rule": "missing_keys",
+     "missing": [
+      "node",
+      "type"
+     ],
+     "hint": "The task asks for the keys ['node', 'type']; your answer lacks ['node', 'type']."
+    }
+   ],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "u3",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_chg_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": false,
+   "answer": {
+    "first_level": 30,
+    "pump_setpoint": 144,
+    "final_level": 45
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_amb_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_amb_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_chg_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_chg_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_abs_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_amb_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_abs_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_abs_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_abs_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_amb_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "lfm3:1.7b",
+   "task": "e1h_chg_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "p3",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "first": "/plant32/beacon",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "v2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/plant32/wharf",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "p3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "first": "/plant32/beacon",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "v2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/plant32/wharf",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "h4",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "h4",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "u3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "u3",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_chg_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_abs_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_chg_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_abs_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_amb_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_chg_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_chg_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_amb_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_amb_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_abs_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_abs_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "qwen3.5:9b",
+   "task": "e1h_amb_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "u3",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "v2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/plant32/wharf",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "p3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "first": "/plant32/beacon",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "u3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "h4",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "h4",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "v2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": false,
+   "answer": {
+    "node": "/plant32/wharf",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "p3",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": false,
+   "answer": {
+    "first": "/plant32/beacon",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_chg_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_chg_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_chg_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_abs_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": false,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_amb_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_amb_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_amb_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_abs_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_abs_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": false,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_chg_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_abs_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "gpt-oss:20b",
+   "task": "e1h_amb_2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "h4",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "/plant32/dune": 65,
+     "/plant32/oasis": 89,
+     "/plant32/zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "/plant32/zephyr",
+     "/plant32/fjord_t": "/plant32/dune",
+     "/plant32/prism_t": "/plant32/oasis"
+    }
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "u3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "input_topic": "/plant32/harbor_t",
+    "publisher": "/plant32/yarrow",
+    "upstream": "/plant32/quill"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "seed": 1,
+   "supported": false,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/plant32/cedar",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": true,
+   "problems": [
+    {
+     "path": "node",
+     "value": "/plant32/cedar",
+     "kind": "value",
+     "rule": "never_seen",
+     "hint": "'/plant32/cedar': this name never appeared in a tool result or the task; look it up or check spelling."
+    }
+   ],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "h4",
+   "seed": 1,
+   "supported": false,
+   "used_final_answer": true,
+   "answer": {
+    "gains": {
+     "dune": 65,
+     "oasis": 89,
+     "zephyr": 74
+    },
+    "node": "/plant32/anvil",
+    "publishers": {
+     "/plant32/courier_t": "zephyr",
+     "/plant32/fjord_t": "dune",
+     "/plant32/prism_t": "oasis"
+    }
+   },
+   "reject": true,
+   "problems": [
+    {
+     "path": "gains.dune",
+     "value": "dune",
+     "kind": "key",
+     "rule": "unique_suffix_bare",
+     "hint": "'dune' is not a full name; did you mean '/plant32/dune'?"
+    },
+    {
+     "path": "gains.oasis",
+     "value": "oasis",
+     "kind": "key",
+     "rule": "unique_suffix_bare",
+     "hint": "'oasis' is not a full name; did you mean '/plant32/oasis'?"
+    },
+    {
+     "path": "gains.zephyr",
+     "value": "zephyr",
+     "kind": "key",
+     "rule": "unique_suffix_bare",
+     "hint": "'zephyr' is not a full name; did you mean '/plant32/zephyr'?"
+    },
+    {
+     "path": "publishers./plant32/courier_t",
+     "value": "zephyr",
+     "kind": "value",
+     "rule": "unique_suffix_bare",
+     "hint": "'zephyr' is not a full name; did you mean '/plant32/zephyr'?"
+    },
+    {
+     "path": "publishers./plant32/fjord_t",
+     "value": "dune",
+     "kind": "value",
+     "rule": "unique_suffix_bare",
+     "hint": "'dune' is not a full name; did you mean '/plant32/dune'?"
+    },
+    {
+     "path": "publishers./plant32/prism_t",
+     "value": "oasis",
+     "kind": "value",
+     "rule": "unique_suffix_bare",
+     "hint": "'oasis' is not a full name; did you mean '/plant32/oasis'?"
+    }
+   ],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "p3",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "first": "/plant32/beacon",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "p3",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "first": "/plant32/beacon",
+    "second": "/plant32/juniper",
+    "setpoint": 873
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "u3",
+   "seed": 1,
+   "supported": false,
+   "used_final_answer": false,
+   "answer": null,
+   "reject": false,
+   "problems": null,
+   "numbers_unseen": null
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/plant32/wharf",
+    "type": "std_srvs/srv/Trigger"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_amb_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_abs_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_abs_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/ember/mistral",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_amb_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "limit": 891,
+    "node": "/e1h/basalt/sorrel"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_abs_2",
+   "seed": 1,
+   "supported": false,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/alder/pewter",
+    "running": false
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_chg_1",
+   "seed": 2,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_amb_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 56,
+    "node": "/e1h/basalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_chg_2",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_mode": "run",
+    "first_mode": "idle",
+    "meter_flow": 725
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_abs_2",
+   "seed": 2,
+   "supported": false,
+   "used_final_answer": true,
+   "answer": {
+    "node": "/e1h/alder/pewter",
+    "rate": 657,
+    "running": true
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_chg_1",
+   "seed": 1,
+   "supported": true,
+   "used_final_answer": true,
+   "answer": {
+    "final_level": 45,
+    "first_level": 30,
+    "pump_setpoint": 144
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_chg_2",
+   "seed": 2,
+   "supported": false,
+   "used_final_answer": false,
+   "answer": null,
+   "reject": false,
+   "problems": null,
+   "numbers_unseen": null
+  },
+  {
+   "model": "bonsai-2:4b",
+   "task": "e1h_amb_2",
+   "seed": 2,
+   "supported": false,
+   "used_final_answer": true,
+   "answer": {
+    "gain": 90,
+    "node": "/e1h/cobalt/zircon"
+   },
+   "reject": false,
+   "problems": [],
+   "numbers_unseen": []
+  }
+ ]
+}

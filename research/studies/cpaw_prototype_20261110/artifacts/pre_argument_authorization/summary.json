@@ -1,0 +1,1282 @@
+{
+  "binary": {
+    "cold": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "cold_or_model_mismatch": 21
+      },
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.96,
+      "objective": 4.5616666666666665,
+      "objective_incl_measured_compute": 4.567663950312521,
+      "preparation_s": 0.023982479583310123,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 6.655000106547959e-06,
+      "sim_elapsed_s": 1.5066666666666666,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "exact_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7408333333333332,
+      "objective": 5.263125,
+      "objective_incl_measured_compute": 5.263458165937472,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 0.0013326637498873122,
+      "sim_elapsed_s": 2.1558333333333333,
+      "sound": 12,
+      "waves": 2.8333333333333335
+    },
+    "exact_wave": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3,
+      "native_work": 2.881666666666667,
+      "objective": 4.409375,
+      "objective_incl_measured_compute": 4.409858687874994,
+      "preparation_s": 0.0,
+      "probes_attempted": 3,
+      "scheduler_s": 0.0019347514999784228,
+      "sim_elapsed_s": 1.4441666666666666,
+      "sound": 12,
+      "waves": 1.6666666666666667
+    },
+    "fixed2": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.6666666666666665,
+      "native_work": 3.6275,
+      "objective": 5.344791666666667,
+      "objective_incl_measured_compute": 5.344792820604156,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 4.615749958247761e-06,
+      "sim_elapsed_s": 1.7358333333333333,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "fixed_nominal": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.7925,
+      "objective": 4.392083333333333,
+      "objective_incl_measured_compute": 4.394107511145844,
+      "preparation_s": 0.008093898083264625,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 2.8131667780447365e-06,
+      "sim_elapsed_s": 1.4983333333333333,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "fixed_robust": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.96,
+      "objective": 4.5616666666666665,
+      "objective_incl_measured_compute": 4.567662933979135,
+      "preparation_s": 0.023982479583310123,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 2.58966656474513e-06,
+      "sim_elapsed_s": 1.5066666666666666,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "full": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.6666666666666665,
+      "native_work": 3.6275,
+      "objective": 5.344791666666667,
+      "objective_incl_measured_compute": 5.344798703187522,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 2.8146083423052914e-05,
+      "sim_elapsed_s": 1.7358333333333333,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "greedy": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.1666666666666665,
+      "native_work": 3.0941666666666667,
+      "objective": 4.566041666666667,
+      "objective_incl_measured_compute": 4.5661464933958,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 0.000419306916531544,
+      "sim_elapsed_s": 1.4541666666666666,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "initial": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 16
+      },
+      "initial_wave_differs_from_fixed_robust": 1,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.14791666666666656,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.941666666666667,
+      "objective": 4.41375,
+      "objective_incl_measured_compute": 4.424519496520803,
+      "preparation_s": 0.023982479583310123,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.01909550649990403,
+      "sim_elapsed_s": 1.455,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "revised_guarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 21
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 0.0,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.96,
+      "objective": 4.5616666666666665,
+      "objective_incl_measured_compute": 4.572141364354119,
+      "preparation_s": 0.023982479583310123,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.017916311166497206,
+      "sim_elapsed_s": 1.5066666666666666,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "revised_unguarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 19
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.07187499999999991,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.96,
+      "objective": 4.489791666666667,
+      "objective_incl_measured_compute": 4.500189222770791,
+      "preparation_s": 0.023982479583310123,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.01760774483318528,
+      "sim_elapsed_s": 1.4525000000000001,
+      "sound": 12,
+      "waves": 1.6666666666666667
+    },
+    "robust_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.7925,
+      "objective": 5.391666666666667,
+      "objective_incl_measured_compute": 5.3942203823749875,
+      "preparation_s": 0.01021077758332467,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 4.085249959947153e-06,
+      "sim_elapsed_s": 2.23,
+      "sound": 12,
+      "waves": 2.9166666666666665
+    }
+  },
+  "bulk": {
+    "cold": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "cold_or_model_mismatch": 26
+      },
+      "marginal_interval_coverage": 12,
+      "native_operations": 4.083333333333333,
+      "native_work": 1.725,
+      "objective": 3.605,
+      "objective_incl_measured_compute": 3.6110795581041852,
+      "preparation_s": 0.024310819083363338,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 7.413333378281095e-06,
+      "sim_elapsed_s": 1.4533333333333334,
+      "sound": 12,
+      "waves": 2.1666666666666665
+    },
+    "exact_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7408333333333332,
+      "objective": 5.263125,
+      "objective_incl_measured_compute": 5.263472867916768,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 0.0013914716670721343,
+      "sim_elapsed_s": 2.1558333333333333,
+      "sound": 12,
+      "waves": 2.8333333333333335
+    },
+    "exact_wave": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 4.25,
+      "native_work": 1.6925000000000001,
+      "objective": 3.628125,
+      "objective_incl_measured_compute": 3.628608057479168,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.25,
+      "scheduler_s": 0.001932229916671228,
+      "sim_elapsed_s": 1.4425,
+      "sound": 12,
+      "waves": 2.25
+    },
+    "fixed2": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 4.666666666666667,
+      "native_work": 2.154166666666667,
+      "objective": 3.7670833333333333,
+      "objective_incl_measured_compute": 3.767084412812519,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 4.317916742972254e-06,
+      "sim_elapsed_s": 1.3183333333333334,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "fixed_nominal": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 4.25,
+      "native_work": 1.6925000000000001,
+      "objective": 3.628125,
+      "objective_incl_measured_compute": 3.6302200005208913,
+      "preparation_s": 0.008375966250014244,
+      "probes_attempted": 3.25,
+      "scheduler_s": 4.0358335506122485e-06,
+      "sim_elapsed_s": 1.4425,
+      "sound": 12,
+      "waves": 2.25
+    },
+    "fixed_robust": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 4.083333333333333,
+      "native_work": 1.725,
+      "objective": 3.605,
+      "objective_incl_measured_compute": 3.61108084587509,
+      "preparation_s": 0.024310819083363338,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 1.2564416996004487e-05,
+      "sim_elapsed_s": 1.4533333333333334,
+      "sound": 12,
+      "waves": 2.1666666666666665
+    },
+    "full": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 4.666666666666667,
+      "native_work": 2.154166666666667,
+      "objective": 3.7670833333333333,
+      "objective_incl_measured_compute": 3.767090793624984,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 2.9841166603243135e-05,
+      "sim_elapsed_s": 1.3183333333333334,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "greedy": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.75,
+      "native_work": 2.1025,
+      "objective": 3.6531249999999997,
+      "objective_incl_measured_compute": 3.653233969624989,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 0.0004358784999567433,
+      "sim_elapsed_s": 1.3025,
+      "sound": 12,
+      "waves": 1.75
+    },
+    "initial": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 23
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 1.4802973661668753e-16,
+      "native_operations": 4.083333333333333,
+      "native_work": 1.725,
+      "objective": 3.605,
+      "objective_incl_measured_compute": 3.615902525687527,
+      "preparation_s": 0.024310819083363338,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 0.019299283666744788,
+      "sim_elapsed_s": 1.4533333333333334,
+      "sound": 12,
+      "waves": 2.1666666666666665
+    },
+    "revised_guarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 23
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 1.4802973661668753e-16,
+      "native_operations": 4.083333333333333,
+      "native_work": 1.725,
+      "objective": 3.605,
+      "objective_incl_measured_compute": 3.615548993708293,
+      "preparation_s": 0.024310819083363338,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 0.0178851557498092,
+      "sim_elapsed_s": 1.4533333333333334,
+      "sound": 12,
+      "waves": 2.1666666666666665
+    },
+    "revised_unguarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 23
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 1.4802973661668753e-16,
+      "native_operations": 4.083333333333333,
+      "native_work": 1.725,
+      "objective": 3.605,
+      "objective_incl_measured_compute": 3.6155689377292037,
+      "preparation_s": 0.024310819083363338,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 0.017964931833451676,
+      "sim_elapsed_s": 1.4533333333333334,
+      "sound": 12,
+      "waves": 2.1666666666666665
+    },
+    "robust_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 1,
+        "TRUE": 11
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.7925,
+      "objective": 5.391666666666667,
+      "objective_incl_measured_compute": 5.394271403187508,
+      "preparation_s": 0.01041516958343891,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 3.776499928183815e-06,
+      "sim_elapsed_s": 2.23,
+      "sound": 12,
+      "waves": 2.9166666666666665
+    }
+  },
+  "correlated": {
+    "cold": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "cold_or_model_mismatch": 19
+      },
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.299166666666667,
+      "objective": 3.7397916666666666,
+      "objective_incl_measured_compute": 3.7457863385416914,
+      "preparation_s": 0.023972822749859308,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 5.864750240410406e-06,
+      "sim_elapsed_s": 1.3291666666666666,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "exact_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.2775,
+      "objective": 4.565416666666667,
+      "objective_incl_measured_compute": 4.565749981333333,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 0.0013332586666668551,
+      "sim_elapsed_s": 1.9183333333333334,
+      "sound": 12,
+      "waves": 2.5833333333333335
+    },
+    "exact_wave": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.2891666666666666,
+      "objective": 3.7224999999999997,
+      "objective_incl_measured_compute": 3.722964555291671,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 0.0018582211666853254,
+      "sim_elapsed_s": 1.3,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "fixed2": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.1666666666666665,
+      "native_work": 3.0683333333333334,
+      "objective": 4.545625,
+      "objective_incl_measured_compute": 4.545626012583292,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 4.050333169895263e-06,
+      "sim_elapsed_s": 1.4758333333333333,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "fixed_nominal": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.2891666666666666,
+      "objective": 3.7224999999999997,
+      "objective_incl_measured_compute": 3.7245733336249347,
+      "preparation_s": 0.008290843749894824,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 2.490749845189081e-06,
+      "sim_elapsed_s": 1.3,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "fixed_robust": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.299166666666667,
+      "objective": 3.7397916666666666,
+      "objective_incl_measured_compute": 3.74578548164574,
+      "preparation_s": 0.023972822749859308,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 2.4371664342955532e-06,
+      "sim_elapsed_s": 1.3291666666666666,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "full": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.1666666666666665,
+      "native_work": 3.0683333333333334,
+      "objective": 4.545625,
+      "objective_incl_measured_compute": 4.545631922354146,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 2.768941658359836e-05,
+      "sim_elapsed_s": 1.4758333333333333,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "greedy": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.899166666666667,
+      "objective": 4.34625,
+      "objective_incl_measured_compute": 4.346351051083334,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.000404204333335656,
+      "sim_elapsed_s": 1.355,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "initial": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 15
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 0.4172916666666668,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.6975,
+      "objective": 4.1570833333333335,
+      "objective_incl_measured_compute": 4.16780263910412,
+      "preparation_s": 0.023972822749859308,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 0.018904400333288624,
+      "sim_elapsed_s": 1.405,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "revised_guarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 17
+      },
+      "initial_wave_differs_from_fixed_robust": 2,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 0.03791666666666663,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.3125,
+      "objective": 3.777708333333333,
+      "objective_incl_measured_compute": 3.788034040020763,
+      "preparation_s": 0.023972822749859308,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 0.0173300039998594,
+      "sim_elapsed_s": 1.4275,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "revised_unguarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 17
+      },
+      "initial_wave_differs_from_fixed_robust": 2,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": 0.03791666666666663,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.3125,
+      "objective": 3.777708333333333,
+      "objective_incl_measured_compute": 3.788079387395803,
+      "preparation_s": 0.023972822749859308,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 0.01751139350002025,
+      "sim_elapsed_s": 1.4275,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "robust_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 7,
+        "TRUE": 5
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.5833333333333335,
+      "native_work": 2.2775000000000003,
+      "objective": 4.565416666666667,
+      "objective_incl_measured_compute": 4.567943463187507,
+      "preparation_s": 0.010094577333272051,
+      "probes_attempted": 2.5833333333333335,
+      "scheduler_s": 1.2608750087868733e-05,
+      "sim_elapsed_s": 1.9183333333333334,
+      "sound": 12,
+      "waves": 2.5833333333333335
+    }
+  },
+  "misspecified": {
+    "cold": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "cold_or_model_mismatch": 24
+      },
+      "marginal_interval_coverage": 0,
+      "native_operations": 3.3333333333333335,
+      "native_work": 3.234166666666667,
+      "objective": 5.078125,
+      "objective_incl_measured_compute": 5.084192568937453,
+      "preparation_s": 0.024263636416511265,
+      "probes_attempted": 3.3333333333333335,
+      "scheduler_s": 6.639333302397669e-06,
+      "sim_elapsed_s": 1.7758333333333334,
+      "sound": 12,
+      "waves": 2
+    },
+    "exact_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 3.0833333333333335,
+      "native_work": 3.0283333333333333,
+      "objective": 5.792291666666666,
+      "objective_incl_measured_compute": 5.7926462132083865,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.0014181861668779068,
+      "sim_elapsed_s": 2.4225,
+      "sound": 12,
+      "waves": 3.0833333333333335
+    },
+    "exact_wave": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 3,
+      "native_work": 2.7875,
+      "objective": 4.612916666666666,
+      "objective_incl_measured_compute": 4.613406877520843,
+      "preparation_s": 0.0,
+      "probes_attempted": 3,
+      "scheduler_s": 0.001960843416706363,
+      "sim_elapsed_s": 1.7016666666666667,
+      "sound": 12,
+      "waves": 2
+    },
+    "fixed2": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 4,
+      "native_work": 3.9875000000000003,
+      "objective": 5.856041666666667,
+      "objective_incl_measured_compute": 5.856042898437538,
+      "preparation_s": 0.0,
+      "probes_attempted": 4,
+      "scheduler_s": 4.927083485502711e-06,
+      "sim_elapsed_s": 1.8741666666666668,
+      "sound": 12,
+      "waves": 2
+    },
+    "fixed_nominal": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 3.1666666666666665,
+      "native_work": 3.066666666666667,
+      "objective": 4.908541666666666,
+      "objective_incl_measured_compute": 4.91065034270831,
+      "preparation_s": 0.008431324083327732,
+      "probes_attempted": 3.1666666666666665,
+      "scheduler_s": 3.380083247369233e-06,
+      "sim_elapsed_s": 1.7675,
+      "sound": 12,
+      "waves": 2
+    },
+    "fixed_robust": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 3.3333333333333335,
+      "native_work": 3.234166666666667,
+      "objective": 5.078125,
+      "objective_incl_measured_compute": 5.084191729833265,
+      "preparation_s": 0.024263636416511265,
+      "probes_attempted": 3.3333333333333335,
+      "scheduler_s": 3.2829165472018453e-06,
+      "sim_elapsed_s": 1.7758333333333334,
+      "sound": 12,
+      "waves": 2
+    },
+    "full": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 4,
+      "native_work": 3.9875000000000003,
+      "objective": 5.856041666666667,
+      "objective_incl_measured_compute": 5.856048735937461,
+      "preparation_s": 0.0,
+      "probes_attempted": 4,
+      "scheduler_s": 2.8277083174543804e-05,
+      "sim_elapsed_s": 1.8741666666666668,
+      "sound": 12,
+      "waves": 2
+    },
+    "greedy": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 3.3333333333333335,
+      "native_work": 3.211666666666667,
+      "objective": 5.05375,
+      "objective_incl_measured_compute": 5.053868205583343,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.3333333333333335,
+      "scheduler_s": 0.0004728223333737939,
+      "sim_elapsed_s": 1.7683333333333333,
+      "sound": 12,
+      "waves": 2
+    },
+    "initial": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 13
+      },
+      "initial_wave_differs_from_fixed_robust": 1,
+      "marginal_interval_coverage": 0,
+      "mean_delta_vs_fixed_robust": -0.3579166666666669,
+      "native_operations": 3.0833333333333335,
+      "native_work": 2.881666666666667,
+      "objective": 4.720208333333333,
+      "objective_incl_measured_compute": 4.731091646104049,
+      "preparation_s": 0.024263636416511265,
+      "probes_attempted": 3.0833333333333335,
+      "scheduler_s": 0.019269614666351725,
+      "sim_elapsed_s": 1.7541666666666667,
+      "sound": 12,
+      "waves": 2
+    },
+    "revised_guarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 15
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 0,
+      "mean_delta_vs_fixed_robust": -0.4652083333333335,
+      "native_operations": 3,
+      "native_work": 2.7875,
+      "objective": 4.612916666666666,
+      "objective_incl_measured_compute": 4.623427032020779,
+      "preparation_s": 0.024263636416511265,
+      "probes_attempted": 3,
+      "scheduler_s": 0.017777824999939185,
+      "sim_elapsed_s": 1.7016666666666667,
+      "sound": 12,
+      "waves": 2
+    },
+    "revised_unguarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 15
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 0,
+      "mean_delta_vs_fixed_robust": -0.4652083333333335,
+      "native_operations": 3,
+      "native_work": 2.7875,
+      "objective": 4.612916666666666,
+      "objective_incl_measured_compute": 4.623344692812526,
+      "preparation_s": 0.024263636416511265,
+      "probes_attempted": 3,
+      "scheduler_s": 0.01744846816692795,
+      "sim_elapsed_s": 1.7016666666666667,
+      "sound": 12,
+      "waves": 2
+    },
+    "robust_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 12
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 0,
+      "native_operations": 3,
+      "native_work": 2.8708333333333336,
+      "objective": 5.556875,
+      "objective_incl_measured_compute": 5.559488492270787,
+      "preparation_s": 0.010442849666787879,
+      "probes_attempted": 3,
+      "scheduler_s": 1.1119416361301168e-05,
+      "sim_elapsed_s": 2.3441666666666667,
+      "sound": 12,
+      "waves": 3
+    }
+  },
+  "unknown": {
+    "cold": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "cold_or_model_mismatch": 19
+      },
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.8083333333333336,
+      "objective": 4.279791666666666,
+      "objective_incl_measured_compute": 4.31085387437504,
+      "preparation_s": 0.12424165025004186,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 7.180583452282008e-06,
+      "sim_elapsed_s": 1.4525000000000001,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "exact_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.75,
+      "native_work": 2.6808333333333336,
+      "objective": 5.150416666666667,
+      "objective_incl_measured_compute": 5.153303644979127,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.75,
+      "scheduler_s": 0.011547913249842168,
+      "sim_elapsed_s": 2.1783333333333332,
+      "sound": 12,
+      "waves": 2.75
+    },
+    "exact_wave": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7350000000000003,
+      "objective": 4.1241666666666665,
+      "objective_incl_measured_compute": 4.1278650402916615,
+      "preparation_s": 0.0,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 0.014793494499978502,
+      "sim_elapsed_s": 1.3566666666666667,
+      "sound": 12,
+      "waves": 1.5
+    },
+    "fixed2": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.6666666666666665,
+      "native_work": 3.6275,
+      "objective": 5.344791666666667,
+      "objective_incl_measured_compute": 5.344792827041692,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 4.641500102782932e-06,
+      "sim_elapsed_s": 1.7358333333333333,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "fixed_nominal": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7350000000000003,
+      "objective": 4.12875,
+      "objective_incl_measured_compute": 4.139693217479223,
+      "preparation_s": 0.043769805750268155,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 3.0641666247295993e-06,
+      "sim_elapsed_s": 1.375,
+      "sound": 12,
+      "waves": 1.5
+    },
+    "fixed_robust": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.9166666666666665,
+      "native_work": 2.8083333333333336,
+      "objective": 4.279791666666666,
+      "objective_incl_measured_compute": 4.3108527207291765,
+      "preparation_s": 0.12424165025004186,
+      "probes_attempted": 2.9166666666666665,
+      "scheduler_s": 2.5659999967804956e-06,
+      "sim_elapsed_s": 1.4525000000000001,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "full": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3.6666666666666665,
+      "native_work": 3.6275,
+      "objective": 5.344791666666667,
+      "objective_incl_measured_compute": 5.344798816749987,
+      "preparation_s": 0.0,
+      "probes_attempted": 3.6666666666666665,
+      "scheduler_s": 2.860033328033751e-05,
+      "sim_elapsed_s": 1.7358333333333333,
+      "sound": 12,
+      "waves": 1.8333333333333333
+    },
+    "greedy": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 3,
+      "native_work": 2.919166666666667,
+      "objective": 4.331875,
+      "objective_incl_measured_compute": 4.332248462270791,
+      "preparation_s": 0.0,
+      "probes_attempted": 3,
+      "scheduler_s": 0.0014938490831658176,
+      "sim_elapsed_s": 1.4508333333333334,
+      "sound": 12,
+      "waves": 1.5
+    },
+    "initial": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 15
+      },
+      "initial_wave_differs_from_fixed_robust": 1,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.1879166666666667,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7075,
+      "objective": 4.091875,
+      "objective_incl_measured_compute": 4.149956650666641,
+      "preparation_s": 0.12424165025004186,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 0.10808495241652356,
+      "sim_elapsed_s": 1.3375000000000001,
+      "sound": 12,
+      "waves": 1.5
+    },
+    "revised_guarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 18
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.07916666666666676,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7350000000000003,
+      "objective": 4.200625,
+      "objective_incl_measured_compute": 4.257311931374997,
+      "preparation_s": 0.12424165025004186,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 0.10250607524994848,
+      "sim_elapsed_s": 1.4291666666666667,
+      "sound": 12,
+      "waves": 1.5833333333333333
+    },
+    "revised_unguarded": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {
+        "margin": 16
+      },
+      "initial_wave_differs_from_fixed_robust": 0,
+      "marginal_interval_coverage": 12,
+      "mean_delta_vs_fixed_robust": -0.15104166666666666,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7350000000000003,
+      "objective": 4.12875,
+      "objective_incl_measured_compute": 4.185801007020864,
+      "preparation_s": 0.12424165025004186,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 0.10396237783341651,
+      "sim_elapsed_s": 1.375,
+      "sound": 12,
+      "waves": 1.5
+    },
+    "robust_singleton": {
+      "calibration_episodes_per_instance": 64,
+      "certificates": {
+        "FALSE": 2,
+        "TRUE": 8,
+        "UNRESOLVED": 2
+      },
+      "episodes": 12,
+      "fallbacks": {},
+      "marginal_interval_coverage": 12,
+      "native_operations": 2.8333333333333335,
+      "native_work": 2.7350000000000003,
+      "objective": 5.270625,
+      "objective_incl_measured_compute": 5.284415797145854,
+      "preparation_s": 0.05515935091671054,
+      "probes_attempted": 2.8333333333333335,
+      "scheduler_s": 3.837666705900726e-06,
+      "sim_elapsed_s": 2.2091666666666665,
+      "sound": 12,
+      "waves": 2.8333333333333335
+    }
+  }
+}

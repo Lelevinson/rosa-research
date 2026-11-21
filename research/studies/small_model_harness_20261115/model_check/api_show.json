@@ -1,0 +1,138 @@
+{
+ "lfm3:1.7b": {
+  "arch": "lfm3",
+  "family": "lfm3",
+  "params": "1.7B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "completion",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 262144,
+  "modified": "2026-11-14T16:49:55.8858344+08:00"
+ },
+ "bonsai-2:4b": {
+  "arch": "qwen35",
+  "family": "qwen35",
+  "params": "4.2B",
+  "quant": "Q2_0",
+  "capabilities": [
+   "completion",
+   "vision",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 262144,
+  "modified": "2026-11-14T16:43:35.8201828+08:00"
+ },
+ "nemotron-3-nano:4b": {
+  "arch": "nemotron_h",
+  "family": "nemotron_h",
+  "params": "4.0B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "completion",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 262144,
+  "modified": "2026-11-14T23:37:37.4735601+08:00"
+ },
+ "gemma4:e4b": {
+  "arch": "gemma4",
+  "family": "gemma4",
+  "params": "7.5B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "completion",
+   "vision",
+   "audio",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 131072,
+  "modified": "2026-11-14T23:14:15.9005023+08:00"
+ },
+ "ministral-3:8b": {
+  "arch": "mistral3",
+  "family": "mistral3",
+  "params": "8.9B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "completion",
+   "vision",
+   "tools"
+  ],
+  "context_length": 262144,
+  "modified": "2026-11-14T22:59:29.7455581+08:00"
+ },
+ "granite4.2:8b": {
+  "arch": "granite",
+  "family": "granite",
+  "params": "8.8B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "tools",
+   "thinking",
+   "completion"
+  ],
+  "context_length": 131072,
+  "modified": "2026-11-14T23:30:18.8834244+08:00"
+ },
+ "qwen3.5:9b": {
+  "arch": "qwen35",
+  "family": "qwen35",
+  "params": "9.0B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "completion",
+   "vision",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 262144,
+  "modified": "2026-10-18T23:48:02.2118924+08:00"
+ },
+ "ornith-1.5:9b": {
+  "arch": "qwen35",
+  "family": "qwen35",
+  "params": "9.0B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "tools",
+   "thinking",
+   "completion",
+   "vision"
+  ],
+  "context_length": 262144,
+  "modified": "2026-11-14T16:40:26.9013272+08:00"
+ },
+ "mimo-v2.6:9b": {
+  "arch": "qwen35",
+  "family": "qwen35",
+  "params": "9.0B",
+  "quant": "Q4_K_M",
+  "capabilities": [
+   "completion",
+   "vision",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 262144,
+  "modified": "2026-11-14T08:04:55.7663848+08:00"
+ },
+ "gpt-oss:20b": {
+  "arch": "gpt-oss",
+  "family": "gpt-oss",
+  "params": "20.9B",
+  "quant": "MXFP4",
+  "capabilities": [
+   "completion",
+   "tools",
+   "thinking"
+  ],
+  "context_length": 131072,
+  "modified": "2026-10-19T00:11:53.9034185+08:00"
+ }
+}

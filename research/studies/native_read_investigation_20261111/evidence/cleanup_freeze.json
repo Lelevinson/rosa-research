@@ -1,0 +1,4 @@
+{
+  "sha256": "335ea9d0fa97b5931c96f153d8bda2aec80959ac0bd61e98a12e4dcdc0e7c34a",
+  "reason": "Cleanup-only smoke after fixing signal-handler deadlock; no measured read trials repeated"
+}

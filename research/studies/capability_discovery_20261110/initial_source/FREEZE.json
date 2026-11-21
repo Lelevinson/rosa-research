@@ -1,0 +1,13 @@
+{
+  "event": "engine frozen before extension implementation and evaluation",
+  "utc": "2026-11-10T02:47:44.676596+00:00",
+  "branch": "research/capability-discovery-20261110",
+  "base_head": "94af17866cb82f3ea3f09422ef5cbb99b14cc89c",
+  "protected_remote_martin": "b13df0f03677754f42383dee95424cded862b117",
+  "files": {
+    "discovery.py": "d5c99df3f3a8112463c572c14834b6b273d226e51e8fb0e566ff5c01bd81ebc0",
+    "fixtures_development.py": "55411c22ca987b758f78a2ede65eff6e30477d7dbb97c694989d9476ec2176f4",
+    "PROTOCOL.md": "b5e55c88832c4ab0fb8eb6e9806aad718f46dd1bee573ad7920334b8ff3c4b4e",
+    "test_discovery.py": "bb4a4ce570697b6a4301089d6485940c62eebc7ab01308f649abf97db1e92003"
+  }
+}

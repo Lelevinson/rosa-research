@@ -1,0 +1,17 @@
+{
+ "PROTOCOL.md": "0baaec15ed774c3b73e247a45bde10d31f14fa6a16f21ff1793562904b684c15",
+ "answer_gate.py": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+ "list_args.py": "ef32f492fb14b9136e186b9f6dbfd22d094351ea4e2a5600ef7744097004b223",
+ "round1_harness.py": "ba3470238365cfe1fa04dbc82551688fdea95490115e172dc09592250773205a",
+ "score_round1.py": "bba918b637e36e045cbf564459e25a9730ad3ca7f160438093b1de66b9b73638",
+ "run_round1.py": "cfee6398ffa7bab4f9a230ac5e3a7d1c38f0d21c24d6f3506c8dc911562d08b1",
+ "precheck_gate.py": "a098faf57b3d88a4e5ba5f060c05f9fd565b71337e85db674e0f641f18d7cff2",
+ "precheck_all_arms.py": "2924f33f4a4b47f1770eeca547c0d6abe61e8169229b329ad8063978c62be37c",
+ "tests/test_round1.py": "3708de436840a1b4350413d607f22b2febfc0c5fe0628bcde9427008a4690b09",
+ "../residual_failures_20261115/scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+ "../small_model_harness_20261115/harness.py": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+ "../small_model_harness_20261115/run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+ "_frozen_at": "2026-11-15T19:44:48+0800",
+ "_git_head": "b12b1bd606229f8cbcb1b32681850bf164f84d77",
+ "_note": "research/ is untracked in this checkout; this file freezes the round-1 code and protocol by hash before any model run. Smoke may reveal bugs; any later code change is logged in BUILD_LOG.md and the hash is re-recorded as FREEZE_REV2.json."
+}

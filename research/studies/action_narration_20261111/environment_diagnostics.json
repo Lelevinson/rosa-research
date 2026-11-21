@@ -1,0 +1,13 @@
+{
+  "provenance": "Manual transcription of local setup tool outputs from this session; not raw experimental events",
+  "observations": [
+    "uv default cache failed read-only; use UV_CACHE_DIR=/tmp/rosa-uv-cache",
+    "Sandbox socket EPERM; authorized host execution used thereafter",
+    "172.30.80.1:11434 timed out and localhost refused before server start",
+    "PowerShell Get-NetTCPConnection reported no listener11434; no Ollama process",
+    "Get-Command located D:\\Ollama_App\\ollama.exe",
+    "Started owned serve PID7452, process-only OLLAMA_HOST=0.0.0.0:11434; no permanent config edit",
+    "api/version returned0.40.16; required Qwen digest verified in tags"
+  ],
+  "limits": "Service binding permitted local WSL access; service stopped at mission closure. These setup probes made no inference requests."
+}

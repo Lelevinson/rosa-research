@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-11",
+  "research_state": "New native-read report integration and original-model-turn retrospective analysis, not new local ROS/model experiments",
+  "native_review_source_zip_filename": "ROSA_NATIVE_READ_REVIEW_20261111(1).zip",
+  "source_original_baseline_sha256": "85b601b988288ad95cb46451909435c81407d29ae049a24e00e6146813b2b8d4",
+  "files": {
+    "CODEX_EXPERIMENT_PLAN.md": {
+      "size": 12469,
+      "sha256": "3465602291bf865b3a8c79fd3425947166e722d3a3f77c9d607dbbd52b4bb857"
+    },
+    "DECISION_LEDGER.md": {
+      "size": 3153,
+      "sha256": "a7627187f2c8f01257f2288dd99b30b98d458fd2d1e5cb4c370e827771e4d759"
+    },
+    "README.md": {
+      "size": 2649,
+      "sha256": "4ca39c3c0c93dc115ec06d6e9e03e149e318393aa5690f3adfdbc87f8871a262"
+    },
+    "ROSA_RESEARCH_CONTEXT_2026-11-11_UPDATED.md": {
+      "size": 69712,
+      "sha256": "2d06c75f4ccbd2a646f21ce99b5078690ebfa42fea6fd37357ffcba86d568254"
+    },
+    "TECHNICAL_RESEARCH_REPORT.md": {
+      "size": 34066,
+      "sha256": "6a602da7d0c54aede0e3c4666c74cab1ab716645e568a89d46378590de962a04"
+    },
+    "model_turn_costs_replay.json": {
+      "size": 7971,
+      "sha256": "112b62880a4cffb88fe08e1a92d963da2880496c9b09a26eec6bbccc08ab9bcc"
+    },
+    "replay_model_turn_costs.py": {
+      "size": 6558,
+      "sha256": "2f74152f8792d0e6b334032035f33f90d01ff659a2c2bbce62614f98be9224e1"
+    }
+  },
+  "limits": "Project sources/local ROSA not automatically synchronized; original native evidence not included in this small research ZIP"
+}

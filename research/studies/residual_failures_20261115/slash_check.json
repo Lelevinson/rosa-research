@@ -1,0 +1,62 @@
+[
+ {
+  "cmd": "ros2 node info /plant32/anvil",
+  "returncode": 0,
+  "stdout": "/plant32/anvil |   Subscribers: |     /plant32/courier_t: std_msgs/msg/String |     /plant32/fjord_t: std_msgs/msg/Int32 |     /plant32/prism_t: std_msgs/msg/Float32 |   ",
+  "stderr": ""
+ },
+ {
+  "cmd": "ros2 node info plant32/anvil",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Unable to find node 'plant32/anvil' | "
+ },
+ {
+  "cmd": "ros2 node info /plant32/nonexistent",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Unable to find node '/plant32/nonexistent' | "
+ },
+ {
+  "cmd": "ros2 node info plant32/nonexistent",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Unable to find node 'plant32/nonexistent' | "
+ },
+ {
+  "cmd": "ros2 param get /plant32/anvil gain",
+  "returncode": 0,
+  "stdout": "Integer value is: 41 | ",
+  "stderr": "[WARN] [1794732001.812705384] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS"
+ },
+ {
+  "cmd": "ros2 param get plant32/anvil gain",
+  "returncode": 0,
+  "stdout": "Integer value is: 41 | ",
+  "stderr": "[WARN] [1794732003.255863038] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS"
+ },
+ {
+  "cmd": "ros2 param list plant32/anvil",
+  "returncode": 0,
+  "stdout": "  gain |   start_type_description_service |   use_sim_time | ",
+  "stderr": "[WARN] [1794732006.588068134] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS"
+ },
+ {
+  "cmd": "ros2 param get plant32/nonexistent gain",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Node not found | "
+ },
+ {
+  "cmd": "ROSA ros2_node_info {\"nodes\": [\"plant32/anvil\"]}",
+  "result": "{'plant32/anvil': {'error': \"Command 'ros2 node info plant32/anvil' returned non-zero exit status 1.\"}}"
+ },
+ {
+  "cmd": "ROSA ros2_node_info {\"nodes\": [\"/plant32/anvil\"]}",
+  "result": "{'/plant32/anvil': '/plant32/anvil\\n  Subscribers:\\n    /plant32/courier_t: std_msgs/msg/String\\n    /plant32/fjord_t: std_msgs/msg/Int32\\n    /plant32/prism_t: std_msgs/msg/Float32\\n  Publishers:\\n  "
+ },
+ {
+  "cmd": "ROSA ros2_param_get {\"node_name\": \"plant32/anvil\", \"param_name\": \"gain\"}",
+  "result": "{'gain': 'Integer value is: 41\\n'}"
+ }
+]

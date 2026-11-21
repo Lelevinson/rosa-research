@@ -1,0 +1,14 @@
+{
+  "matched_score_replays": 80,
+  "model_attempt_starts": 80,
+  "unique_scored_cells": 80,
+  "requests": 643,
+  "requests_with_usage": 641,
+  "backend_errors_without_usage": 2,
+  "fixture_sessions_cleaned": 9,
+  "oracle_snapshots": 17,
+  "oracle_mismatches": 0,
+  "read_log_calls": 0,
+  "scorer": "scorer-v2.0",
+  "frozen_scores_changed": false
+}

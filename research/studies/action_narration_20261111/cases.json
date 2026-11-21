@@ -1,0 +1,43 @@
+{
+  "model": {
+    "model": "qwen3.5:9b",
+    "base_url": "http://172.30.80.1:11434",
+    "temperature": 0,
+    "seed": 42,
+    "reasoning": false,
+    "num_predict": 1600
+  },
+  "common_instruction": "For this read-only diagnostic, independent authorized reads with known arguments MAY be issued together in a single response. Use supported list arguments to group reads. Preserve dependencies: do not guess arguments from results not yet received. Writes must remain sequential and are not authorized in this diagnostic. Reuse still-valid observations within this request; preserve source identity and distinguish publishers/subscribers and observed/configured values. Acquire every requested field and give a complete supported final answer; report unavailable facts instead of guessing. You may retry a failed logical native command once; do not retry it indefinitely. An explicitly named stale identity may be inspected as requested, then use discovery to recover. Use only the advertised read tools.",
+  "arm_instructions": {
+    "B": "When you choose to call tools, issue the native tool calls without unnecessary natural-language preamble or narration. This instruction applies only to tool-call turns. When you answer the user, preserve all requested fields, source distinctions, uncertainty and correctness obligations; produce the complete final answer.",
+    "C": "When you choose to call tools, issue the native tool calls without unnecessary natural-language preamble or narration. If a prior tool failed, you may give a short explanation of the error and recovery when calling tools. This instruction applies only to tool-call turns. When you answer the user, preserve all requested fields, source distinctions, uncertainty and correctness obligations; produce the complete final answer."
+  },
+  "tasks": [
+    {
+      "id": "t1",
+      "application": "turtlesim",
+      "request": "I am checking the simulated drawing display in /diag_turtle. Discover its running node and report its full name, configured background red/green/blue values, and the pose topic's full name, message type and publisher count. Return a JSON object with keys node, rgb (three integers), pose (object with topic, type, publishers).",
+      "provenance": "Historical baseline_diagnostic/protocol.json; development reuse, not held out"
+    },
+    {
+      "id": "t3",
+      "application": "turtlesim",
+      "request": "I need to connect a controller to the running turtle in /diag_turtle. Discover its node and inspect its interfaces. Report every application topic it publishes and every application topic it subscribes to, with full topic names and message types. Exclude /rosout and /parameter_events. Return JSON with keys node, publishers and subscribers; the last two are objects mapping topic names to message types. A subscribed command topic must not be reported as published.",
+      "provenance": "Historical baseline_diagnostic/protocol.json; development reuse, not held out"
+    },
+    {
+      "id": "d1_recovery",
+      "application": "demo_nodes_cpp",
+      "request": "A stale operator note names /diag_demo/retired_source as the sender. First inspect that exact node once to test the note; if it is missing, recover using actual discovery. Check the message connection on /diag_demo/chatter. Report its message type, publisher and subscriber counts, the full publisher and subscriber node names, and the use_sim_time value for each of those nodes. Discover the actual endpoints. Return JSON with keys topic, type, publishers (integer), subscribers (integer), endpoints (list of objects with node, role equal to publisher or subscriber, and use_sim_time boolean).",
+      "provenance": "Historical baseline_diagnostic/protocol.json; development reuse, not held out; predeclared prefix requests one real absent-node check, not a simulated error or natural fault prevalence estimate"
+    },
+    {
+      "id": "x1",
+      "application": "both",
+      "request": "Check clock configuration before I combine /diag_turtle and /diag_demo. Discover every running node in those two namespaces and read use_sim_time for each. Also report the message types and publisher counts of the turtle pose topic and demo chatter topic, discovering their full names. Return JSON with keys clocks (object mapping full node names to boolean values) and topics (object mapping each of the two full topic names to an object with type and publishers).",
+      "provenance": "Historical baseline_diagnostic/protocol.json; development reuse, not held out"
+    }
+  ],
+  "order_seed": 20261111,
+  "model_digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+}

@@ -1,0 +1,14 @@
+{
+  "mission": {
+    "path": "/mnt/c/Users/user/Downloads/ROSA_Bottleneck_Evidence_Gate_Codex_Mission_2026-11-10.md",
+    "sha256": "2bc69cb47efe2de4a95524e5d8623f244fc5d738d4c412158080a793c06e9912"
+  },
+  "independent_audit": {
+    "path": "/mnt/c/Users/user/Downloads/ROSA_Independent_Bottleneck_First_Audit_2026-11-10.md",
+    "sha256": "3c30055abe0d1843effaee3cfe61b9e7e5f8687eed0f42a30f07d6743db3d32e"
+  },
+  "clean_audit": {
+    "path": "/home/levinsonchen/project/rosa-research-previous-20261108/research/architecture/clean-baseline-audit-2026-11-08.md",
+    "sha256": "c4350e8d7287d88a201f611257c5f49f93f1875c4ab16be19130af5b5b161fb6"
+  }
+}

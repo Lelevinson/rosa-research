@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "preexisting_files": 172,
+  "changed": [
+    "research/ROSA_RESEARCH_CONTEXT.md"
+  ],
+  "context_append_only": true,
+  "tracked_diff_empty": true,
+  "head_unchanged": true,
+  "git_status": "## research/capability-discovery-20261110\n?? AGENTS.md\n?? research/\n"
+}
