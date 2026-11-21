@@ -1,0 +1,188 @@
+[
+ {
+  "id": "e1h_amb_1",
+  "template": "ambiguous",
+  "floor": 3,
+  "request": "Two nodes named 'sorrel' are running, in different namespaces. Find the one whose string parameter mode is 'fast'. Return JSON with keys node (its full name) and limit (its integer parameter limit).",
+  "answer": {
+   "node": "/e1h/basalt/sorrel",
+   "limit": 891
+  },
+  "support": [
+   [
+    "text",
+    "/e1h/basalt/sorrel"
+   ],
+   [
+    "param",
+    "/e1h/basalt/sorrel",
+    "mode",
+    "fast"
+   ],
+   [
+    "param",
+    "/e1h/basalt/sorrel",
+    "limit",
+    891
+   ]
+  ],
+  "route_tools": [
+   "ros2_node_list",
+   "ros2_param_get"
+  ],
+  "stages": [
+   "node_list(pattern)",
+   "param_get(mode, limit) on both nodes [fan-out, one request]"
+  ]
+ },
+ {
+  "id": "e1h_amb_2",
+  "template": "ambiguous",
+  "floor": 3,
+  "request": "Two nodes named 'zircon' are running, in different namespaces. Topic /e1h/cinder_t is published by exactly one of them. Return JSON with keys node (the full name of the one that publishes that topic) and gain (its integer parameter gain).",
+  "answer": {
+   "node": "/e1h/basalt/zircon",
+   "gain": 56
+  },
+  "support": [
+   [
+    "text",
+    "/e1h/basalt/zircon"
+   ],
+   [
+    "param",
+    "/e1h/basalt/zircon",
+    "gain",
+    56
+   ]
+  ],
+  "route_tools": [
+   "ros2_topic_info",
+   "ros2_param_get"
+  ],
+  "stages": [
+   "topic_info(topic) -> publisher full name",
+   "param_get(publisher, gain)"
+  ]
+ },
+ {
+  "id": "e1h_abs_1",
+  "template": "absent",
+  "floor": 2,
+  "request": "Is the node /ember/mistral running? If it is, return JSON with keys node, running (true) and limit (its integer parameter limit). If it is not running, return JSON with keys node (the name you checked, exactly as given) and running (false).",
+  "answer": {
+   "node": "/ember/mistral",
+   "running": false
+  },
+  "support": [
+   [
+    "absent",
+    "/ember/mistral"
+   ]
+  ],
+  "route_tools": [
+   "ros2_node_list"
+  ],
+  "stages": [
+   "node_list -> name absent"
+  ]
+ },
+ {
+  "id": "e1h_abs_2",
+  "template": "absent",
+  "floor": 2,
+  "request": "Is the node /alder/pewter running? If it is, return JSON with keys node, running (true) and rate (its integer parameter rate). If it is not running, return JSON with keys node (the name you checked, exactly as given) and running (false).",
+  "answer": {
+   "node": "/alder/pewter",
+   "running": false
+  },
+  "support": [
+   [
+    "absent",
+    "/alder/pewter"
+   ]
+  ],
+  "route_tools": [
+   "ros2_node_list"
+  ],
+  "stages": [
+   "node_list -> name absent"
+  ]
+ },
+ {
+  "id": "e1h_chg_1",
+  "template": "changing",
+  "floor": 3,
+  "request": "Node /e1h/quasar has an integer parameter level that operators may change while you work. Do these steps in order: read level of /e1h/quasar; read setpoint of /e1h/umber; then, in a later step after both reads have returned, read level of /e1h/quasar again. Return JSON with keys first_level, pump_setpoint and final_level (all integers).",
+  "answer": {
+   "first_level": 30,
+   "pump_setpoint": 144,
+   "final_level": 45
+  },
+  "support": [
+   [
+    "param",
+    "/e1h/quasar",
+    "level",
+    45
+   ],
+   [
+    "param",
+    "/e1h/umber",
+    "setpoint",
+    144
+   ]
+  ],
+  "change": {
+   "node": "/e1h/quasar",
+   "param": "level",
+   "new_value": 45,
+   "initial_value": 30
+  },
+  "route_tools": [
+   "ros2_param_get"
+  ],
+  "stages": [
+   "param_get(level), param_get(setpoint) [one request]",
+   "param_get(level) again after the change"
+  ]
+ },
+ {
+  "id": "e1h_chg_2",
+  "template": "changing",
+  "floor": 3,
+  "request": "Node /e1h/willow has a string parameter mode that operators may change while you work. Do these steps in order: read mode of /e1h/willow; read flow of /e1h/thistle; then, in a later step after both reads have returned, read mode of /e1h/willow again. Return JSON with keys first_mode (string), meter_flow (integer) and final_mode (string).",
+  "answer": {
+   "first_mode": "idle",
+   "meter_flow": 725,
+   "final_mode": "run"
+  },
+  "support": [
+   [
+    "param",
+    "/e1h/willow",
+    "mode",
+    "run"
+   ],
+   [
+    "param",
+    "/e1h/thistle",
+    "flow",
+    725
+   ]
+  ],
+  "change": {
+   "node": "/e1h/willow",
+   "param": "mode",
+   "new_value": "run",
+   "initial_value": "idle"
+  },
+  "route_tools": [
+   "ros2_param_get"
+  ],
+  "stages": [
+   "param_get(mode), param_get(flow) [one request]",
+   "param_get(mode) again after the change"
+  ]
+ }
+]

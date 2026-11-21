@@ -1,0 +1,476 @@
+[
+ {
+  "id": "u2",
+  "template": "upstream",
+  "depth": 2,
+  "floor": 3,
+  "request": "Topic /plant32/quarry_t is published by one node. Find that node and read its gain parameter. Return JSON with keys node (the full node name) and gain (integer).",
+  "answer": {
+   "node": "/plant32/yarrow",
+   "gain": 50
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/yarrow"
+   ],
+   [
+    "param",
+    "/plant32/yarrow",
+    "gain",
+    50
+   ]
+  ],
+  "stages": [
+   "topic_info(c4) -> publisher node",
+   "param_get(node, gain)"
+  ]
+ },
+ {
+  "id": "u3",
+  "template": "upstream",
+  "depth": 3,
+  "floor": 4,
+  "request": "Topic /plant32/quarry_t is published by one node, and that node subscribes to exactly one application topic (ignore /parameter_events and /rosout). Find the node that publishes that input topic. Return JSON with keys publisher (full name of the node that publishes /plant32/quarry_t), input_topic (full name of the topic that node subscribes to) and upstream (full name of the node that publishes that input topic).",
+  "answer": {
+   "publisher": "/plant32/yarrow",
+   "input_topic": "/plant32/harbor_t",
+   "upstream": "/plant32/quill"
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/yarrow"
+   ],
+   [
+    "text",
+    "/plant32/harbor_t"
+   ],
+   [
+    "text",
+    "/plant32/quill"
+   ]
+  ],
+  "stages": [
+   "topic_info(c4) -> publisher",
+   "node_info(publisher) -> input topic",
+   "topic_info(input) -> upstream node"
+  ]
+ },
+ {
+  "id": "u4",
+  "template": "upstream",
+  "depth": 4,
+  "floor": 5,
+  "request": "Topic /plant32/quarry_t is published by one node, and that node subscribes to exactly one application topic (ignore /parameter_events and /rosout). Find the node that publishes that input topic. Return JSON with keys publisher (full name of the node that publishes /plant32/quarry_t), input_topic (full name of the topic that node subscribes to) and upstream (full name of the node that publishes that input topic) and upstream_gain (the integer gain parameter of that upstream node).",
+  "answer": {
+   "publisher": "/plant32/yarrow",
+   "input_topic": "/plant32/harbor_t",
+   "upstream": "/plant32/quill",
+   "upstream_gain": 59
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/yarrow"
+   ],
+   [
+    "text",
+    "/plant32/harbor_t"
+   ],
+   [
+    "text",
+    "/plant32/quill"
+   ],
+   [
+    "param",
+    "/plant32/quill",
+    "gain",
+    59
+   ]
+  ],
+  "stages": [
+   "topic_info(c4)",
+   "node_info(publisher)",
+   "topic_info(input)",
+   "param_get(upstream, gain)"
+  ]
+ },
+ {
+  "id": "p2",
+  "template": "pointer",
+  "depth": 2,
+  "floor": 3,
+  "request": "Node /plant32/beacon has a string parameter next_node that names the node it hands off to and an integer parameter setpoint. Read its next_node, then read the setpoint of the node it names. Return JSON with keys next_node (the full node name) and setpoint (integer).",
+  "answer": {
+   "next_node": "/plant32/juniper",
+   "setpoint": 873
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/juniper"
+   ],
+   [
+    "param",
+    "/plant32/juniper",
+    "setpoint",
+    873
+   ],
+   [
+    "param",
+    "/plant32/beacon",
+    "next_node",
+    "/plant32/juniper"
+   ]
+  ],
+  "stages": [
+   "param_get(q2, next_node)",
+   "param_get(q3, setpoint)"
+  ]
+ },
+ {
+  "id": "p3",
+  "template": "pointer",
+  "depth": 3,
+  "floor": 4,
+  "request": "Node /plant32/quartz has a string parameter next_node that names the node it hands off to and an integer parameter setpoint, and so does every node in the chain. Read next_node of /plant32/quartz, then read next_node of the node it names, then read the setpoint of the node named by that second read. Return JSON with keys first (the node named by /plant32/quartz), second (the node named by first) and setpoint (integer, the setpoint of second).",
+  "answer": {
+   "first": "/plant32/beacon",
+   "second": "/plant32/juniper",
+   "setpoint": 873
+  },
+  "support": [
+   [
+    "param",
+    "/plant32/quartz",
+    "next_node",
+    "/plant32/beacon"
+   ],
+   [
+    "param",
+    "/plant32/beacon",
+    "next_node",
+    "/plant32/juniper"
+   ],
+   [
+    "param",
+    "/plant32/juniper",
+    "setpoint",
+    873
+   ]
+  ],
+  "stages": [
+   "param_get(q1,next)",
+   "param_get(q2,next)",
+   "param_get(q3,setpoint)"
+  ]
+ },
+ {
+  "id": "p4",
+  "template": "pointer",
+  "depth": 4,
+  "floor": 5,
+  "request": "Node /plant32/lattice has a string parameter next_node that names the node it hands off to and an integer parameter setpoint, and so does every node in the chain. Follow next_node three times starting at /plant32/lattice, then read the setpoint of the last node. Return JSON with keys first, second and third (the full names of the nodes reached by the first, second and third next_node reads) and setpoint (integer, the setpoint of third).",
+  "answer": {
+   "first": "/plant32/quartz",
+   "second": "/plant32/beacon",
+   "third": "/plant32/juniper",
+   "setpoint": 873
+  },
+  "support": [
+   [
+    "param",
+    "/plant32/lattice",
+    "next_node",
+    "/plant32/quartz"
+   ],
+   [
+    "param",
+    "/plant32/quartz",
+    "next_node",
+    "/plant32/beacon"
+   ],
+   [
+    "param",
+    "/plant32/beacon",
+    "next_node",
+    "/plant32/juniper"
+   ],
+   [
+    "param",
+    "/plant32/juniper",
+    "setpoint",
+    873
+   ]
+  ],
+  "stages": [
+   "param_get(q0,next)",
+   "param_get(q1,next)",
+   "param_get(q2,next)",
+   "param_get(q3,setpoint)"
+  ]
+ },
+ {
+  "id": "h2",
+  "template": "hub",
+  "depth": 2,
+  "floor": 3,
+  "request": "Topic /plant32/reef_t is published by one node. Find that node and list the application topics it subscribes to (ignore /parameter_events and /rosout) with their message types. Return JSON with keys node (the full node name) and inputs (an object mapping each input topic's full name to its message type).",
+  "answer": {
+   "node": "/plant32/anvil",
+   "inputs": {
+    "/plant32/courier_t": "std_msgs/msg/String",
+    "/plant32/fjord_t": "std_msgs/msg/Int32",
+    "/plant32/prism_t": "std_msgs/msg/Float32"
+   }
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/anvil"
+   ],
+   [
+    "text",
+    "/plant32/courier_t"
+   ],
+   [
+    "text",
+    "/plant32/fjord_t"
+   ],
+   [
+    "text",
+    "/plant32/prism_t"
+   ],
+   [
+    "text",
+    "std_msgs/msg/Int32"
+   ],
+   [
+    "text",
+    "std_msgs/msg/String"
+   ],
+   [
+    "text",
+    "std_msgs/msg/Float32"
+   ]
+  ],
+  "stages": [
+   "topic_info(out) -> hub node",
+   "node_info(hub) -> inputs and types"
+  ]
+ },
+ {
+  "id": "h3",
+  "template": "hub",
+  "depth": 3,
+  "floor": 4,
+  "request": "Topic /plant32/reef_t is published by one node. Find that node and list the application topics it subscribes to (ignore /parameter_events and /rosout). Then find which node publishes each of those input topics. Return JSON with keys node (the full node name) and publishers (an object mapping each input topic's full name to the full name of the node that publishes it).",
+  "answer": {
+   "node": "/plant32/anvil",
+   "publishers": {
+    "/plant32/courier_t": "/plant32/zephyr",
+    "/plant32/fjord_t": "/plant32/dune",
+    "/plant32/prism_t": "/plant32/oasis"
+   }
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/anvil"
+   ],
+   [
+    "text",
+    "/plant32/courier_t"
+   ],
+   [
+    "text",
+    "/plant32/fjord_t"
+   ],
+   [
+    "text",
+    "/plant32/prism_t"
+   ],
+   [
+    "text",
+    "/plant32/zephyr"
+   ],
+   [
+    "text",
+    "/plant32/dune"
+   ],
+   [
+    "text",
+    "/plant32/oasis"
+   ]
+  ],
+  "stages": [
+   "topic_info(out)",
+   "node_info(hub)",
+   "topic_info(each input) [fan-out, one request]"
+  ]
+ },
+ {
+  "id": "h4",
+  "template": "hub",
+  "depth": 4,
+  "floor": 5,
+  "request": "Topic /plant32/reef_t is published by one node. Find that node and list the application topics it subscribes to (ignore /parameter_events and /rosout). Then find which node publishes each of those input topics and read each publisher's gain parameter. Return JSON with keys node (the full node name), publishers (an object mapping each input topic's full name to the full name of the node that publishes it) and gains (an object mapping each publisher's full name to its integer gain).",
+  "answer": {
+   "node": "/plant32/anvil",
+   "publishers": {
+    "/plant32/courier_t": "/plant32/zephyr",
+    "/plant32/fjord_t": "/plant32/dune",
+    "/plant32/prism_t": "/plant32/oasis"
+   },
+   "gains": {
+    "/plant32/zephyr": 74,
+    "/plant32/dune": 65,
+    "/plant32/oasis": 89
+   }
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/anvil"
+   ],
+   [
+    "text",
+    "/plant32/courier_t"
+   ],
+   [
+    "text",
+    "/plant32/fjord_t"
+   ],
+   [
+    "text",
+    "/plant32/prism_t"
+   ],
+   [
+    "text",
+    "/plant32/zephyr"
+   ],
+   [
+    "text",
+    "/plant32/dune"
+   ],
+   [
+    "text",
+    "/plant32/oasis"
+   ],
+   [
+    "param",
+    "/plant32/zephyr",
+    "gain",
+    74
+   ],
+   [
+    "param",
+    "/plant32/dune",
+    "gain",
+    65
+   ],
+   [
+    "param",
+    "/plant32/oasis",
+    "gain",
+    89
+   ]
+  ],
+  "stages": [
+   "topic_info(out)",
+   "node_info(hub)",
+   "topic_info(each input) [fan-out]",
+   "param_get(each publisher, gain) [fan-out]"
+  ]
+ },
+ {
+  "id": "v2",
+  "template": "service",
+  "depth": 2,
+  "floor": 3,
+  "request": "Service /plant32/cedar_reset is provided by exactly one running node. Find which node provides it and the service's message type. Return JSON with keys node (the full node name) and type.",
+  "answer": {
+   "node": "/plant32/wharf",
+   "type": "std_srvs/srv/Trigger"
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/wharf"
+   ],
+   [
+    "text",
+    "std_srvs/srv/Trigger"
+   ]
+  ],
+  "stages": [
+   "node_list",
+   "node_info(all nodes) [fan-out] (+ service_info optional)"
+  ]
+ },
+ {
+  "id": "v3",
+  "template": "service",
+  "depth": 3,
+  "floor": 4,
+  "request": "Service /plant32/cedar_reset is provided by exactly one running node. Find which node provides it and read that node's gain parameter. Return JSON with keys node (the full node name) and gain (integer).",
+  "answer": {
+   "node": "/plant32/wharf",
+   "gain": 27
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/wharf"
+   ],
+   [
+    "param",
+    "/plant32/wharf",
+    "gain",
+    27
+   ]
+  ],
+  "stages": [
+   "node_list",
+   "node_info(all nodes) [fan-out]",
+   "param_get(provider, gain)"
+  ]
+ },
+ {
+  "id": "v4",
+  "template": "service",
+  "depth": 4,
+  "floor": 5,
+  "request": "Service /plant32/cedar_reset is provided by exactly one running node. Find which node provides it. That node has a string parameter peer that names another node; read that parameter, then read the gain of the node it names. Return JSON with keys node (the provider's full name), peer (the full name read from its peer parameter) and peer_gain (integer).",
+  "answer": {
+   "node": "/plant32/wharf",
+   "peer": "/plant32/lumen",
+   "peer_gain": 18
+  },
+  "support": [
+   [
+    "text",
+    "/plant32/wharf"
+   ],
+   [
+    "param",
+    "/plant32/wharf",
+    "peer",
+    "/plant32/lumen"
+   ],
+   [
+    "param",
+    "/plant32/lumen",
+    "gain",
+    18
+   ]
+  ],
+  "stages": [
+   "node_list",
+   "node_info(all nodes) [fan-out]",
+   "param_get(provider, peer)",
+   "param_get(peer, gain)"
+  ]
+ }
+]

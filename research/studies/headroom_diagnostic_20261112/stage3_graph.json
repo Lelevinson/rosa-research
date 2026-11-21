@@ -1,0 +1,402 @@
+{
+ "seed": 20261113,
+ "namespace": "/plant32",
+ "nodes": [
+  {
+   "key": "s0",
+   "name": "gantry",
+   "fqn": "/plant32/gantry",
+   "params": {
+    "gain": 28
+   },
+   "pubs": [
+    {
+     "name": "/plant32/upland_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "s1",
+   "name": "sable",
+   "fqn": "/plant32/sable",
+   "params": {
+    "gain": 75
+   },
+   "pubs": [
+    {
+     "name": "/plant32/relay_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/upland_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "s2",
+   "name": "elm",
+   "fqn": "/plant32/elm",
+   "params": {
+    "gain": 37
+   },
+   "pubs": [
+    {
+     "name": "/plant32/nimbus_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/relay_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "s3",
+   "name": "quill",
+   "fqn": "/plant32/quill",
+   "params": {
+    "gain": 59
+   },
+   "pubs": [
+    {
+     "name": "/plant32/harbor_t",
+     "type": "std_msgs/msg/Int32",
+     "short": "Int32"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/nimbus_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "s4",
+   "name": "yarrow",
+   "fqn": "/plant32/yarrow",
+   "params": {
+    "gain": 50
+   },
+   "pubs": [
+    {
+     "name": "/plant32/quarry_t",
+     "type": "std_msgs/msg/Int32",
+     "short": "Int32"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/harbor_t",
+     "type": "std_msgs/msg/Int32",
+     "short": "Int32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "q0",
+   "name": "lattice",
+   "fqn": "/plant32/lattice",
+   "params": {
+    "setpoint": 195,
+    "next_node": "/plant32/quartz"
+   },
+   "pubs": [
+    {
+     "name": "/plant32/lagoon_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "q1",
+   "name": "quartz",
+   "fqn": "/plant32/quartz",
+   "params": {
+    "setpoint": 986,
+    "next_node": "/plant32/beacon"
+   },
+   "pubs": [
+    {
+     "name": "/plant32/thistle_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "q2",
+   "name": "beacon",
+   "fqn": "/plant32/beacon",
+   "params": {
+    "setpoint": 694,
+    "next_node": "/plant32/juniper"
+   },
+   "pubs": [
+    {
+     "name": "/plant32/ember_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "q3",
+   "name": "juniper",
+   "fqn": "/plant32/juniper",
+   "params": {
+    "setpoint": 873,
+    "next_node": "none"
+   },
+   "pubs": [
+    {
+     "name": "/plant32/willow_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "hub",
+   "name": "anvil",
+   "fqn": "/plant32/anvil",
+   "params": {
+    "gain": 41
+   },
+   "pubs": [
+    {
+     "name": "/plant32/reef_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/courier_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    },
+    {
+     "name": "/plant32/fjord_t",
+     "type": "std_msgs/msg/Int32",
+     "short": "Int32"
+    },
+    {
+     "name": "/plant32/prism_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "w0",
+   "name": "zephyr",
+   "fqn": "/plant32/zephyr",
+   "params": {
+    "gain": 74
+   },
+   "pubs": [
+    {
+     "name": "/plant32/courier_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "w1",
+   "name": "dune",
+   "fqn": "/plant32/dune",
+   "params": {
+    "gain": 65
+   },
+   "pubs": [
+    {
+     "name": "/plant32/fjord_t",
+     "type": "std_msgs/msg/Int32",
+     "short": "Int32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "w2",
+   "name": "oasis",
+   "fqn": "/plant32/oasis",
+   "params": {
+    "gain": 89
+   },
+   "pubs": [
+    {
+     "name": "/plant32/prism_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "peer",
+   "name": "lumen",
+   "fqn": "/plant32/lumen",
+   "params": {
+    "gain": 18
+   },
+   "pubs": [
+    {
+     "name": "/plant32/drift_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "prov",
+   "name": "wharf",
+   "fqn": "/plant32/wharf",
+   "params": {
+    "gain": 27,
+    "peer": "/plant32/lumen"
+   },
+   "pubs": [
+    {
+     "name": "/plant32/meridian_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": [
+    {
+     "name": "/plant32/cedar_reset",
+     "type": "std_srvs/srv/Trigger"
+    }
+   ]
+  },
+  {
+   "key": "decoy",
+   "name": "jetty",
+   "fqn": "/plant32/jetty",
+   "params": {
+    "gain": 12
+   },
+   "pubs": [
+    {
+     "name": "/plant32/nettle_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [],
+   "services": [
+    {
+     "name": "/plant32/knoll_reset",
+     "type": "std_srvs/srv/Trigger"
+    }
+   ]
+  },
+  {
+   "key": "d0",
+   "name": "mantle",
+   "fqn": "/plant32/mantle",
+   "params": {
+    "gain": 92
+   },
+   "pubs": [
+    {
+     "name": "/plant32/marrow_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/upland_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "d1",
+   "name": "xenon",
+   "fqn": "/plant32/xenon",
+   "params": {
+    "gain": 10
+   },
+   "pubs": [
+    {
+     "name": "/plant32/opal_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/relay_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "d2",
+   "name": "yonder",
+   "fqn": "/plant32/yonder",
+   "params": {
+    "gain": 62
+   },
+   "pubs": [
+    {
+     "name": "/plant32/pylon_t",
+     "type": "std_msgs/msg/Float32",
+     "short": "Float32"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/plant32/nimbus_t",
+     "type": "std_msgs/msg/String",
+     "short": "String"
+    }
+   ],
+   "services": []
+  }
+ ]
+}
