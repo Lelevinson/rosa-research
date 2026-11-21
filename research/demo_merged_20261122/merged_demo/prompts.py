@@ -11,7 +11,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
 
-MACRO_RULES = ('Use the registered skills only. Inspect/readiness requests are read-only. '
+# Take-3 mapping fix (Martin, 2026-11-22): the first sentence used to be 'Use the registered skills only.' - right for the standalone macro (skills were the only tools),
+# but it contradicts his method in the merged arm (questions are answered with the menu tools). His A1 prompt and files are untouched.
+MACRO_RULES = ('Use the menu tools to answer questions about nodes, topics and values; use run_skill only for registered inspection skills and movements. Inspect/readiness requests are read-only. '
                'Choose a movement only when the user specifies a permitted motion goal. '
                'If the request is ambiguous about inspection versus movement or its goal, '
                'ask a clarifying question before selecting any skill. Do not assume permission. '

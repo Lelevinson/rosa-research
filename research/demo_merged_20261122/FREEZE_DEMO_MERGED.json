@@ -10,7 +10,7 @@
    "merged_demo/loop.py": "609d2fc21ec395ff69c5f38a9cade78e55ea85909133a3e031954c6813f041b1",
    "merged_demo/menu.py": "9a1ec910a3a6464348094f4dcbfe8a76dd7fccaabbc804a2dd670a4f4788952c",
    "merged_demo/namefix.py": "daba24fc5c37cecc1dcc7244b31337e4c4f80ec10366d0260d30f3ff0754dbe4",
-   "merged_demo/prompts.py": "844bbfe3f95af31d27c1e021c99db9a8510dd9b3a6f9e1f19836d1581b2b5e94",
+   "merged_demo/prompts.py": "9169289def70bc9780c25034fe6b07caa435f894e21457d81d4d6282019677a8",
    "merged_demo/skill_tool.py": "0ea13a66b8fdfd723edc43a6982fdbcd3e552eb42f821b7b89c466c78a80da13",
    "merged_demo/soft_errors.py": "7a7b6a3d15ecf07e6c7576c3cbc4daac604b9cbca9f80e7fdc193a0e7e43f038"
   },
@@ -19,7 +19,7 @@
   "rosa_research_checkout": "8713f9b205033a25f8ed8d9549610e9ad0b8bfde"
  },
  "credit": "method M components (Levinson); bounded macro run_skill (Martin)",
- "frozen_at": "2026-11-22T07:08:23+08:00",
+ "frozen_at": "2026-11-22T07:43:27+08:00",
  "his_files": {
   "branch": "origin/member/levinson",
   "commit": "e233cf51389885d0aaffa5453687f57437551764",
@@ -90,7 +90,7 @@
   ],
   [
    "system",
-   "Use the registered skills only. Inspect/readiness requests are read-only. Choose a movement only when the user specifies a permitted motion goal. If the request is ambiguous about inspection versus movement or its goal, ask a clarifying question before selecting any skill. Do not assume permission. Never replay an uncertain or ineffective write."
+   "Use the menu tools to answer questions about nodes, topics and values; use run_skill only for registered inspection skills and movements. Inspect/readiness requests are read-only. Choose a movement only when the user specifies a permitted motion goal. If the request is ambiguous about inspection versus movement or its goal, ask a clarifying question before selecting any skill. Do not assume permission. Never replay an uncertain or ineffective write."
   ],
   [
    "system",
@@ -101,7 +101,7 @@
    "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
   ]
  ],
- "prompt_sha256_his_function": "917c7d99868fa0cb77559d73f97b3a7035bfeaab7291b978f3a2dfa15de268a9",
+ "prompt_sha256_his_function": "61b675293438f725275b50fc01ba044ad8a3c39651e1937e63982e11cf53bded",
  "purpose": "demo only; no scoring; not method M; never pooled with or compared against his M / Stage 1 results or any M4/G1/D/F1/parity result",
  "run_skill_description": "Run one user-authorized skill by exact ID. It runs the bounded routine: read the current state, at most one write when needed, then a fresh verification (read-only skills only read and verify), and returns the evidence. Use it at most twice per task; do not repeat a completed skill. Inspect the returned evidence before you answer. Registered skills (id: kind): ur5e.home: state_change; ur5e.inspect_readiness: read_only_inspection; ur5e.park_right: state_change; ur5e.stage_left: state_change.",
  "tasks": {

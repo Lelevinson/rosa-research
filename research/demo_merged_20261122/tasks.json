@@ -15,6 +15,7 @@
    "text": "Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object.",
    "shows": "movement skill, then a menu read after the action, his finish tool",
    "initial": "ur5e.home",
-   "expected_path": ["run_skill:ur5e.stage_left", "ros2_topic_echo", "final_answer"]}
+   "expected_path": ["run_skill:ur5e.stage_left", "final_answer"],
+   "expected_path_note": "2026-11-22 (Martin): the macro's own fresh verified read already confirms the pose, so a menu read afterwards is redundant. Earlier expected_path was [run_skill:ur5e.stage_left, ros2_topic_echo, final_answer]."}
  ]
 }

@@ -1,0 +1,26 @@
+{
+ "answer": "{\"readiness\": true, \"shoulder_pan_joint\": 0.15999999999999975}",
+ "error": null,
+ "final_independent_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.569999999999739,
+  "shoulder_pan_joint": 0.15999999999999975,
+  "wrist_1_joint": -1.5699999999970746,
+  "wrist_2_joint": -1.5699999999999998,
+  "wrist_3_joint": -0.11999999999999988
+ },
+ "reset_observation": {
+  "elbow_joint": 1.5700000000011773,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 2.78093794995203e-21,
+  "wrist_1_joint": -1.5699999999970748,
+  "wrist_2_joint": -1.570000000000004,
+  "wrist_3_joint": -6.675217643672585e-20
+ },
+ "reset_ok": true,
+ "run_skill_calls": 2,
+ "seconds": 13.2,
+ "status": "COMPLETE",
+ "task": "D2",
+ "writes": 1
+}
