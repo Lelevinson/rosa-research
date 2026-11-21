@@ -87,3 +87,29 @@ Total: about **8-9 h** scripted, **2 h** live. The live part waits for the chain
 - It shows the two parts working together on 3 hand-picked tasks in a healthy world. It does not show that the combination is better than either part alone.
 - His components are partly reimplemented from public docs (marked in section 3). If Levinson's strings and file arrive, those two parts are exact.
 - Sol is hosted and not one of his small models. The macro's evidence (M4/G1/D) is for the catalogue design on these UR5e poses, not for the combination.
+
+
+---
+
+## Dated note, 2026-11-22 (Session B): update after Levinson's M_FILES.md
+
+**Status line:** steps 1-6 are DONE with his real files (scripted, zero model calls). **Live steps 7-8: paused until Session A's chain finishes** (STATUS.md). Nothing else is being built.
+
+**Label for the demo (always):** "merged method (Levinson M + Martin bounded macro), demonstration only, not evaluated". Credit: "method M components (Levinson)". It is **not method M** and is **not scored as M**. Any merged numbers would be a separate study with that label, never pooled with or compared against his M / Stage 1 results. We do not touch his frozen Stage 1 package, held-out pools or custodian files.
+
+**Correction.** The finding in section 3 ("run_pilot, harness, scorer_v2, ablation_arms, fair_arms, answer_gate missing") was **wrong as a statement about his work**: those files were untracked on his side and are now public on `origin/member/levinson` at `e233cf5` (`M_FILES.md`, stored unchanged in this folder). The 26 rows were verified **byte for byte** against its SHA-256 table (`verify_his_files.py`, result `HIS_FILES_VERIFY.json`: 26 of 26 OK, blob and extracted file). Note: the branch has since moved to `8a2c153`; the demo is pinned to `e233cf5`.
+
+**What changed in the build:**
+- His files are used unedited. They are extracted by `extract_his_files.sh` (`git archive` with eol conversion disabled; the default conversion on this Windows machine changes the hashes) into `his-M-e233cf5/` next to the worktree, and `merged_demo/his_m.py` re-verifies all 26 hashes before importing anything.
+- **Used from his files:** `harness.py` (12-tool menu, strict pre-check, errors as text, `final_answer`), `exam_arms.py` (M = FULL + name fix), `run_pilot.py` (`prompt_for("A1")`, `PilotROSA`, `ArmTracedModel`), `namefix_rule.py` + `answer_gate.py` (name fix, his real ledger), `menu_run_study.py` (`Recorder`).
+- **Ours, in separate labelled files:** `merged_demo/his_m.py` (the mapping: `MergedM` = his `ExamArm` + ONE added tool `run_skill`, the same pattern as his own `ActionM`), `skill_tool.py` (`run_skill` = Martin's macro), `prompts.py` (two macro rule lines, verbatim M4 sentences without the `submit_report` ones), `fakes.py`, `tests/`.
+- **Superseded, kept only as fallback:** my earlier substitutes (`answer_gate_stub.py`, `soft_errors.py`, `menu.py`, `loop.py`, `FREEZE_DEMO.json`). The demo path no longer uses them. The request to Levinson for two prompt strings and `answer_gate.py` (`REQUEST_TO_LEVINSON.md`) is no longer needed.
+- **L4 logging:** every transport call inside `run_skill` is written into his own `trace.jsonl` as `macro_internal_read` / `macro_internal_write` rows with source, actor, skill, `seq`, `trace_row` (position in his trace), monotonic and wall times, values, parent call; `macro_operation_link` rows tie each to the macro's own operation id. Tested: reads sit between their `tool_start` and the next call. Skipped writes are logged with their reason.
+- **Tests:** 43 scripted tests pass in WSL (his real `PilotROSA`/`ArmTracedModel`/`ExamArm` with a fake model and canned ROS output; D1 name fix uses his real ledger and rewrites `joint_state_broadcaster` to `/joint_state_broadcaster`). Freeze record: `FREEZE_DEMO_MERGED.json` (tool set `3715fad0...`, prompt `917c7d99...`).
+- **Prompt:** his A1 prompt allows batching ("independent tool calls ... may be made together"). `run_skill` is limited to one call per response by the runner, so inspect-then-move stays in order.
+
+**Settings difference (any merged run must state which it uses):** his M runs with `NUM_CTX 65536`, `NUM_PREDICT 4096`, `MAX_ITERATIONS 40` (`run_pilot.py`, temperature 0.7 in his exam). Martin's G1/M4 runs used `num_ctx 8192`, temperature 0, seed 42. They are not the same configuration.
+
+**Levinson's decision (as relayed):** whether to merge is still an AI prediction. After Martin's weekend tests he wants the merge built as a **mapping of his method onto Martin's UR5e setup, for the DEMO ONLY.** The demo is Martin's main deliverable; there are no lab tests for Martin now.
+
+**Open items:** stop point 2 (Martin reads the frozen demo texts: `tasks.json`, `FREEZE_DEMO_MERGED.json`); steps 7-8 (live, Sol primary, qwen3.5:9b fallback; settings to be stated) after the chain. Known gap for the live run: `ArmTransport`/`ArmReadinessTransport` against real Gazebo are not exercised by any test here.

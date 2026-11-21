@@ -1,0 +1,138 @@
+{
+ "catalogue_sha256": "cb7da33988381631ae225ff609dd1525e9aad1c12f77764ccbce7111d48b9aab",
+ "code": {
+  "files": {
+   "merged_demo/__init__.py": "82263be325c8159f5a35d6b29d4650838a3dd87f44dd906a09cc3d6047a5162a",
+   "merged_demo/answer_gate_stub.py": "e6471eb9a77b25a85c0a3625a05b2856bc7d0eb0eebc53faaebdefed3638c437",
+   "merged_demo/events.py": "e3c92be492e5eae3edb55732dd7d2ea744b987b077bf8a2b088c963aa8e36b5e",
+   "merged_demo/fakes.py": "11ee4c9da4efa3503926bf8e213649cc8b6c6dc83c90f28f8bc6244aad0ce5b6",
+   "merged_demo/his_m.py": "ac0d51d5feab4423fc0d6c6c580f509385ecc286ee26e7f2dec58c8fcda77c33",
+   "merged_demo/loop.py": "609d2fc21ec395ff69c5f38a9cade78e55ea85909133a3e031954c6813f041b1",
+   "merged_demo/menu.py": "9a1ec910a3a6464348094f4dcbfe8a76dd7fccaabbc804a2dd670a4f4788952c",
+   "merged_demo/namefix.py": "daba24fc5c37cecc1dcc7244b31337e4c4f80ec10366d0260d30f3ff0754dbe4",
+   "merged_demo/prompts.py": "844bbfe3f95af31d27c1e021c99db9a8510dd9b3a6f9e1f19836d1581b2b5e94",
+   "merged_demo/skill_tool.py": "fa465cc7963dbb057dcd97401f41096705739ca50f778c376939864784ff6474",
+   "merged_demo/soft_errors.py": "7a7b6a3d15ecf07e6c7576c3cbc4daac604b9cbca9f80e7fdc193a0e7e43f038"
+  },
+  "merge_branch_head": "",
+  "rosa_research_branch": "member/martin",
+  "rosa_research_checkout": "8713f9b205033a25f8ed8d9549610e9ad0b8bfde"
+ },
+ "credit": "method M components (Levinson); bounded macro run_skill (Martin)",
+ "frozen_at": "2026-11-21T23:42:51+08:00",
+ "his_files": {
+  "branch": "origin/member/levinson",
+  "commit": "e233cf51389885d0aaffa5453687f57437551764",
+  "edited": false,
+  "extraction": "extract_his_files.sh (git archive, eol conversion disabled)",
+  "rows_verified_byte_for_byte": 26,
+  "table": "M_FILES.md"
+ },
+ "his_settings_not_applied_to_a_fake_run": {
+  "MAX_ITERATIONS": 40,
+  "NUM_CTX": 65536,
+  "NUM_PREDICT": 4096,
+  "note": "Martin G1/M4 used num_ctx 8192. A live demo run must state which settings it uses."
+ },
+ "label": "merged method (Levinson M + Martin bounded macro), demonstration only, not evaluated",
+ "limits": {
+  "his_executor_iterations": 40,
+  "macro": "MacroLimits() defaults (10 native operations, 16 tool attempts, 3 corrections, 180 s, tolerance 0.025)",
+  "run_skill_calls": 2,
+  "run_skill_per_response": 1,
+  "writes_per_task": 1
+ },
+ "offered_tools": [
+  "ros2_node_list",
+  "ros2_topic_list",
+  "ros2_topic_echo",
+  "ros2_service_list",
+  "ros2_node_info",
+  "ros2_topic_info",
+  "ros2_param_list",
+  "ros2_param_get",
+  "ros2_service_info",
+  "ros2_doctor",
+  "roslog_list",
+  "read_log",
+  "final_answer",
+  "run_skill"
+ ],
+ "prompt_composition": "his run_pilot.prompt_for(\"A1\") (7 messages, verbatim) + 2 macro lines (ours: M4 RULES sentences 1-4 and last, run_skill line) + his FINAL_ANSWER_LINE",
+ "prompt_messages": [
+  [
+   "system",
+   "Your are ROSA (Robot Operating System Agent), an AI agent that can use ROS tools to answer questions about robotics systems. You have a subset of the ROS tools available to you, and you can use them to interact with the robotic system you are integrated with. Your responses should be grounded in real-time information whenever possible using the tools available to you."
+  ],
+  [
+   "system",
+   "Use the task text and earlier tool results to decide which tool to call next; list entities only when you do not already know their names."
+  ],
+  [
+   "system",
+   "Independent tool calls whose arguments are already known may be made together in one response."
+  ],
+  [
+   "system",
+   "You may use rosparams to store information between interactions. However, if you are using rosparams to store your own memory, you must use the /rosa namespace to avoid conflicts with other ROS nodes. e.g. to store a value in the 'foo' parameter, use the key '/rosa/foo'."
+  ],
+  [
+   "system",
+   "When providing a directory/path to a tool, you must always look for the correct path using your tools. When reading files, you must make sure that the file size is not too large to read. This is especially important when reading multiple files. A file is too large to read completely if its size is greater than 32KB. Avoid specifying a line range unless the user has requested it or the file is too large to read."
+  ],
+  [
+   "system",
+   "You must use your math tools to perform calculations, especially for angles, distances, coordinates, and geometric computations. Failing to do this may result in incorrect commands or system failures. You must never perform calculations manually in your reasoning - always use the provided calculation tools to ensure accuracy. This is critical for robotics operations where precision matters."
+  ],
+  [
+   "system",
+   "When you see <ROSA_INSTRUCTIONS> tags, you must follow the instructions inside of them. These instructions are instructions for how to use ROS tools to complete a task. You must follow these instructions IN ALL CASES. "
+  ],
+  [
+   "system",
+   "Use the registered skills only. Inspect/readiness requests are read-only. Choose a movement only when the user specifies a permitted motion goal. If the request is ambiguous about inspection versus movement or its goal, ask a clarifying question before selecting any skill. Do not assume permission. Never replay an uncertain or ineffective write."
+  ],
+  [
+   "system",
+   "run_skill runs a bounded routine and returns evidence; do not repeat completed steps. Use it at most twice per task."
+  ],
+  [
+   "system",
+   "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
+  ]
+ ],
+ "prompt_sha256_his_function": "917c7d99868fa0cb77559d73f97b3a7035bfeaab7291b978f3a2dfa15de268a9",
+ "purpose": "demo only; no scoring; not method M; never pooled with or compared against his M / Stage 1 results or any M4/G1/D/F1/parity result",
+ "run_skill_description": "Run one user-authorized skill by exact ID. It runs the bounded routine: read the current state, at most one write when needed, then a fresh verification (read-only skills only read and verify), and returns the evidence. Use it at most twice per task; do not repeat a completed skill. Inspect the returned evidence before you answer.",
+ "tasks": {
+  "D1": {
+   "sha256": "a0265ed7b81ea51cbbb52a38aeb472dc61f0244b93aad2eb00eef41fe5c2c569",
+   "text": "Which node publishes /joint_states, and what are the current shoulder_pan_joint and wrist_3_joint positions? Answer as a JSON object."
+  },
+  "D2": {
+   "sha256": "6696adfac454678d9fc0d7a07e75dd28cb87084dbadf4b6aee2343790833cc0c",
+   "text": "Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object."
+  },
+  "D3": {
+   "sha256": "f57f9d98a018025ed87ef9c8c83480b33577e627fc03e49670f319be74f5ddcc",
+   "text": "Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object."
+  }
+ },
+ "tool_defs_sha256": {
+  "final_answer": "3928f0c7027f8eb44c745e10d9760612cced5d8adddccbe5bf99e67c3cd44d6e",
+  "read_log": "2b9f82fd59d30e11836684bbeb4d27586f6871b9ec9302f6b512239e7c118fd1",
+  "ros2_doctor": "ee195cc3194b1948bcb34b971c265bbc1d3c5cbf36b9a32762be8c2c85a2cd44",
+  "ros2_node_info": "92ff8c84b5c79526eac077e5742e730fe7f3b712423b95c90c2b09a5f1313072",
+  "ros2_node_list": "117e1d7f2925e0d0659c29e921bed25caca9af3f5bc68d6fadb963aab2b49897",
+  "ros2_param_get": "becd4ec6276de02f1291d151142465c583b6a2fade771359e013793c44a4dd91",
+  "ros2_param_list": "012cccdd99f65bd4e1334d7480074c1c8598ea1dd3d14d621978d575f3f98b30",
+  "ros2_service_info": "38ef9bfde79395f2ba60afd522ca5e9ed21e6569e1e2d844b25b21ae572a8198",
+  "ros2_service_list": "d34ce21b9bbf812e9639c842a4f7ce01c55ab8c5e7eb99fc6bcae6529b89b4cc",
+  "ros2_topic_echo": "52ba20f08c6bc51644fb01aa9f3e35418b010a3959e62ab5854a828df356ad0a",
+  "ros2_topic_info": "7905affc2443987259361440fcdb3d3f813c2118dfff373b758abf5090731cd4",
+  "ros2_topic_list": "ccc868ef0fe3c2f38b891c0100bef17d684a6fe4a0ef4842c39b47a017ab2e6d",
+  "roslog_list": "6bb0ec25d8990ac7b56c35e1eec70eb780bbb837e11c65913750a3e44156b591",
+  "run_skill": "3604d789f42f4bfc592b8dbbb811896ef9b5270f2ad079f6d0878eeac619b0a3"
+ },
+ "tool_set_sha256": "3715fad00d43839df5eb3521881f64e7ede2acd99f04ecfb3530c6352f99e667"
+}

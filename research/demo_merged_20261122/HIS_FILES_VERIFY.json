@@ -1,0 +1,266 @@
+{
+ "commit": "e233cf51389885d0aaffa5453687f57437551764",
+ "rows": [
+  {
+   "path": "research/studies/final_exam_draft_20261118/exam_queue/systems.py",
+   "expected": "fc1de9e165fd08b96ddea11de3441c6bb10b644cad07b4d667a1b107ad619b94",
+   "frozen_status": "OK",
+   "blob_sha256": "fc1de9e165fd08b96ddea11de3441c6bb10b644cad07b4d667a1b107ad619b94",
+   "disk_sha256": "fc1de9e165fd08b96ddea11de3441c6bb10b644cad07b4d667a1b107ad619b94",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/exam_arms_20261121/run_exam.py",
+   "expected": "39e659d8f1e4928f715d2c47e8e27c67824ff3a851f11e8bf3f95bc6bb3692af",
+   "frozen_status": "OK",
+   "blob_sha256": "39e659d8f1e4928f715d2c47e8e27c67824ff3a851f11e8bf3f95bc6bb3692af",
+   "disk_sha256": "39e659d8f1e4928f715d2c47e8e27c67824ff3a851f11e8bf3f95bc6bb3692af",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/exam_arms_20261121/exam_arms.py",
+   "expected": "d8ee1959cb27449dc54dc79c1e46a514ee5f9bb3fac938c9ccbeee973c5a4be0",
+   "frozen_status": "OK",
+   "blob_sha256": "d8ee1959cb27449dc54dc79c1e46a514ee5f9bb3fac938c9ccbeee973c5a4be0",
+   "disk_sha256": "d8ee1959cb27449dc54dc79c1e46a514ee5f9bb3fac938c9ccbeee973c5a4be0",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/steady_loop_ablation_20261117/ablation_arms.py",
+   "expected": "cb1633d1f1dd023bef8ed0ee1efbd28270caee26eb38e9f72603220a6c51bb2e",
+   "frozen_status": "OK",
+   "blob_sha256": "cb1633d1f1dd023bef8ed0ee1efbd28270caee26eb38e9f72603220a6c51bb2e",
+   "disk_sha256": "cb1633d1f1dd023bef8ed0ee1efbd28270caee26eb38e9f72603220a6c51bb2e",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/small_model_harness_20261115/harness.py",
+   "expected": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+   "frozen_status": "OK",
+   "blob_sha256": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+   "disk_sha256": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/small_model_harness_20261115/run_pilot.py",
+   "expected": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+   "frozen_status": "OK",
+   "blob_sha256": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+   "disk_sha256": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/run_stage3b.py",
+   "expected": "79002d21d120fae41093c9e492a2b40f601487e96f5ea0fbc87f7fc91aba77b5",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "79002d21d120fae41093c9e492a2b40f601487e96f5ea0fbc87f7fc91aba77b5",
+   "disk_sha256": "79002d21d120fae41093c9e492a2b40f601487e96f5ea0fbc87f7fc91aba77b5",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/run_stage1.py",
+   "expected": "6dc86b3a5fe22c5ca14f10b87d5e81601074d3ddc06ae8dbbeb835cf279a3804",
+   "frozen_status": "OK",
+   "blob_sha256": "6dc86b3a5fe22c5ca14f10b87d5e81601074d3ddc06ae8dbbeb835cf279a3804",
+   "disk_sha256": "6dc86b3a5fe22c5ca14f10b87d5e81601074d3ddc06ae8dbbeb835cf279a3804",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/run_stage3.py",
+   "expected": "ad2d18152b9fe7bea5e0d2d9203f0dffa55381ba5a550d7523da31f86a0e0211",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "ad2d18152b9fe7bea5e0d2d9203f0dffa55381ba5a550d7523da31f86a0e0211",
+   "disk_sha256": "ad2d18152b9fe7bea5e0d2d9203f0dffa55381ba5a550d7523da31f86a0e0211",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/stage3_fixture.py",
+   "expected": "17026be69505643705191788d17c16869a8d7a079f64f438cca1b12bc5e857ad",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "17026be69505643705191788d17c16869a8d7a079f64f438cca1b12bc5e857ad",
+   "disk_sha256": "17026be69505643705191788d17c16869a8d7a079f64f438cca1b12bc5e857ad",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/vendor/menu_run_study.py",
+   "expected": "9736756e64f74c7eaed62690b0552427cebf9118c71f891d3e2873a2ae0770b7",
+   "frozen_status": "OK",
+   "blob_sha256": "9736756e64f74c7eaed62690b0552427cebf9118c71f891d3e2873a2ae0770b7",
+   "disk_sha256": "9736756e64f74c7eaed62690b0552427cebf9118c71f891d3e2873a2ae0770b7",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/vendor/menu_policy.py",
+   "expected": "6265cb94c3fdf610a884c75c675a7b89dce7ad298e39dcdf2d2b6f6a8b69dd9f",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "6265cb94c3fdf610a884c75c675a7b89dce7ad298e39dcdf2d2b6f6a8b69dd9f",
+   "disk_sha256": "6265cb94c3fdf610a884c75c675a7b89dce7ad298e39dcdf2d2b6f6a8b69dd9f",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/vendor/baseline_protocol.json",
+   "expected": "3c62da11a8ad5f9b2d0df189ba02fdfcedc5158a185833742815632cefc74b6d",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "3c62da11a8ad5f9b2d0df189ba02fdfcedc5158a185833742815632cefc74b6d",
+   "disk_sha256": "3c62da11a8ad5f9b2d0df189ba02fdfcedc5158a185833742815632cefc74b6d",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/name_fix_applied_20261117/namefix_rule.py",
+   "expected": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+   "frozen_status": "OK",
+   "blob_sha256": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+   "disk_sha256": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/build_round1_20261115/answer_gate.py",
+   "expected": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+   "frozen_status": "OK",
+   "blob_sha256": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+   "disk_sha256": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/residual_failures_20261115/scorer_v2.py",
+   "expected": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+   "frozen_status": "OK",
+   "blob_sha256": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+   "disk_sha256": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/small_model_harness_20261115/pilot_score.py",
+   "expected": "5d9de512a74b9e3ef39ab01bdce0c4724012327125c52ed53a06b95f205107da",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "5d9de512a74b9e3ef39ab01bdce0c4724012327125c52ed53a06b95f205107da",
+   "disk_sha256": "5d9de512a74b9e3ef39ab01bdce0c4724012327125c52ed53a06b95f205107da",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/score_stage1.py",
+   "expected": "462b34cdfedcb842d668d9a43ecaccc7a23ca4746fb24aa2796ee60b636aeb5e",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "462b34cdfedcb842d668d9a43ecaccc7a23ca4746fb24aa2796ee60b636aeb5e",
+   "disk_sha256": "462b34cdfedcb842d668d9a43ecaccc7a23ca4746fb24aa2796ee60b636aeb5e",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/vendor/baseline_audit.py",
+   "expected": "7a0808afa816b85f56b0e2f8ab2d22c35e30c9c7f5926425c81ce0afef9513a9",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "7a0808afa816b85f56b0e2f8ab2d22c35e30c9c7f5926425c81ce0afef9513a9",
+   "disk_sha256": "7a0808afa816b85f56b0e2f8ab2d22c35e30c9c7f5926425c81ce0afef9513a9",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/thinking_escalation_20261119/run_think.py",
+   "expected": "9481a111815af291bea0d361d0285962881963f7fdbf0716d5446a0dcc22d7d5",
+   "frozen_status": "OK",
+   "blob_sha256": "9481a111815af291bea0d361d0285962881963f7fdbf0716d5446a0dcc22d7d5",
+   "disk_sha256": "9481a111815af291bea0d361d0285962881963f7fdbf0716d5446a0dcc22d7d5",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/build_round2_20261116/run_round2.py",
+   "expected": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+   "frozen_status": "OK",
+   "blob_sha256": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+   "disk_sha256": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "pyproject.toml",
+   "expected": "101d7701ca3bb93c3f60e6570e2bc6afce7aa68d2c526d3220bcacf9383537fa",
+   "frozen_status": "OK",
+   "blob_sha256": "101d7701ca3bb93c3f60e6570e2bc6afce7aa68d2c526d3220bcacf9383537fa",
+   "disk_sha256": "101d7701ca3bb93c3f60e6570e2bc6afce7aa68d2c526d3220bcacf9383537fa",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "uv.lock",
+   "expected": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d",
+   "frozen_status": "OK",
+   "blob_sha256": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d",
+   "disk_sha256": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/stage3_graph.json",
+   "expected": "0a2c345a60c56b96343e3bf0e6d05f3ebf5356d7c2da98a34c13ba9e57352678",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "0a2c345a60c56b96343e3bf0e6d05f3ebf5356d7c2da98a34c13ba9e57352678",
+   "disk_sha256": "0a2c345a60c56b96343e3bf0e6d05f3ebf5356d7c2da98a34c13ba9e57352678",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/headroom_diagnostic_20261112/stage3_tasks.json",
+   "expected": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+   "disk_sha256": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  },
+  {
+   "path": "research/studies/small_model_harness_20261115/e1h_tasks.json",
+   "expected": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+   "frozen_status": "NOT FROZEN",
+   "blob_sha256": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+   "disk_sha256": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+   "blob_ok": true,
+   "disk_ok": true,
+   "note": null
+  }
+ ],
+ "mismatches": 0
+}

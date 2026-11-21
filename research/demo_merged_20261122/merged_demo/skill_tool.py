@@ -59,21 +59,29 @@ class LoggedTransport:
 
 
 class SkillRunner:
-    def __init__(self, registry, transports, log, *, limits=None, max_calls=2, max_writes=1):
+    def __init__(self, registry, transports, log, *, limits=None, max_calls=2, max_writes=1, request_of=None):
         """transports: {'state': <movement transport>, 'inspection': <read_group transport>}, labels from the dict keys.
         Each call is a FRESH macro invocation, so the per-task write bound of the macro (one write) is enforced here ACROSS calls:
         at most `max_writes` movements per episode, and no further movement after a write whose outcome was not confirmed (no replay)."""
         self.registry, self.transports, self.log = registry, transports, log
         self.limits = limits or MacroLimits()
-        self.max_calls, self.calls = max_calls, 0
+        self.max_calls, self.calls, self.attempts = max_calls, 0, 0     # calls = accepted calls; attempts includes refused ones
+        self.request_of, self._last_request = request_of, None           # request_of(): model-request number, to allow one run_skill per response
         self.max_writes, self.writes_total, self.unconfirmed_write = max_writes, 0, False
 
     def tool(self):
         return StructuredTool(name='run_skill', description=DESCRIPTION, args_schema=RunSkillArgs, func=self.run)
 
     def run(self, skill_id):
+        self.attempts += 1
+        parent = self.log.add('skill_call_start', skill_id=skill_id, attempt_number=self.attempts)
+        if self.calls >= self.max_calls:
+            return self._refuse(parent, skill_id, 'run_skill_limit_reached', 'at most %d run_skill calls per task' % self.max_calls)
+        request = self.request_of() if self.request_of else None
+        if request is not None and request == self._last_request:
+            return self._refuse(parent, skill_id, 'one_run_skill_per_response', 'call run_skill once per response and wait for its result')
+        self._last_request = request
         self.calls += 1
-        parent = self.log.add('skill_call_start', skill_id=skill_id, call_number=self.calls)
         definition = self.registry._definitions.get(skill_id)
         if definition is None:
             return self._refuse(parent, skill_id, 'skill_not_authorized', 'unknown skill id')
@@ -120,6 +128,8 @@ class SkillRunner:
         for seq, op in zip(seqs, operations):
             event = self._event(seq)
             event.update(operation_id=op['operation_id'], operation_kind=op['kind'], macro_actor=op['actor'], operation_status=op['status'])
+            # the trace row of the event is already written: the link is its own row (linked_seq -> operation id)
+            self.log.add('operation_link', linked_seq=seq, operation_id=op['operation_id'], operation_kind=op['kind'], macro_actor=op['actor'], operation_status=op['status'])
         if len(seqs) != len(operations):
             self.log.add('operation_link_mismatch', transport_calls=len(seqs), macro_operations=len(operations))
 
