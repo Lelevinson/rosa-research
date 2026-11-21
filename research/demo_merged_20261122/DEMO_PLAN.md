@@ -113,3 +113,9 @@ Total: about **8-9 h** scripted, **2 h** live. The live part waits for the chain
 **Levinson's decision (as relayed):** whether to merge is still an AI prediction. After Martin's weekend tests he wants the merge built as a **mapping of his method onto Martin's UR5e setup, for the DEMO ONLY.** The demo is Martin's main deliverable; there are no lab tests for Martin now.
 
 **Open items:** stop point 2 (Martin reads the frozen demo texts: `tasks.json`, `FREEZE_DEMO_MERGED.json`); steps 7-8 (live, Sol primary, qwen3.5:9b fallback; settings to be stated) after the chain. Known gap for the live run: `ArmTransport`/`ArmReadinessTransport` against real Gazebo are not exercised by any test here.
+
+## Dated note, 2026-11-22 (Session B): stop point 2 approved; model decision
+- **Stop point 2 approved by Martin** (tasks.json and FREEZE_DEMO_MERGED.json OK, no changes).
+- **Primary demo model: Sol** (hosted; no local context limit applies). Settings to state on the demo: whatever the Sol session uses, recorded per run.
+- **Fallback qwen3.5:9b only if Sol is unavailable.** His NUM_CTX 65536 does not fit the 6 GB GPU. Run the fallback with num_ctx 8192 and label the deviation on the demo: "context 8192 instead of his 65536". The frozen prompt, tools and tasks stay unchanged.
+- **Live steps 7-8 remain paused** until STATUS.md shows Session A chain finished. B starts no model, GPU or Gazebo process.
