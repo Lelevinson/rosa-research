@@ -11,7 +11,7 @@
    "merged_demo/menu.py": "9a1ec910a3a6464348094f4dcbfe8a76dd7fccaabbc804a2dd670a4f4788952c",
    "merged_demo/namefix.py": "daba24fc5c37cecc1dcc7244b31337e4c4f80ec10366d0260d30f3ff0754dbe4",
    "merged_demo/prompts.py": "844bbfe3f95af31d27c1e021c99db9a8510dd9b3a6f9e1f19836d1581b2b5e94",
-   "merged_demo/skill_tool.py": "fa465cc7963dbb057dcd97401f41096705739ca50f778c376939864784ff6474",
+   "merged_demo/skill_tool.py": "0ea13a66b8fdfd723edc43a6982fdbcd3e552eb42f821b7b89c466c78a80da13",
    "merged_demo/soft_errors.py": "7a7b6a3d15ecf07e6c7576c3cbc4daac604b9cbca9f80e7fdc193a0e7e43f038"
   },
   "merge_branch_head": "",
@@ -19,7 +19,7 @@
   "rosa_research_checkout": "8713f9b205033a25f8ed8d9549610e9ad0b8bfde"
  },
  "credit": "method M components (Levinson); bounded macro run_skill (Martin)",
- "frozen_at": "2026-11-21T23:42:51+08:00",
+ "frozen_at": "2026-11-22T07:08:23+08:00",
  "his_files": {
   "branch": "origin/member/levinson",
   "commit": "e233cf51389885d0aaffa5453687f57437551764",
@@ -103,7 +103,7 @@
  ],
  "prompt_sha256_his_function": "917c7d99868fa0cb77559d73f97b3a7035bfeaab7291b978f3a2dfa15de268a9",
  "purpose": "demo only; no scoring; not method M; never pooled with or compared against his M / Stage 1 results or any M4/G1/D/F1/parity result",
- "run_skill_description": "Run one user-authorized skill by exact ID. It runs the bounded routine: read the current state, at most one write when needed, then a fresh verification (read-only skills only read and verify), and returns the evidence. Use it at most twice per task; do not repeat a completed skill. Inspect the returned evidence before you answer.",
+ "run_skill_description": "Run one user-authorized skill by exact ID. It runs the bounded routine: read the current state, at most one write when needed, then a fresh verification (read-only skills only read and verify), and returns the evidence. Use it at most twice per task; do not repeat a completed skill. Inspect the returned evidence before you answer. Registered skills (id: kind): ur5e.home: state_change; ur5e.inspect_readiness: read_only_inspection; ur5e.park_right: state_change; ur5e.stage_left: state_change.",
  "tasks": {
   "D1": {
    "sha256": "a0265ed7b81ea51cbbb52a38aeb472dc61f0244b93aad2eb00eef41fe5c2c569",
@@ -132,7 +132,7 @@
   "ros2_topic_info": "7905affc2443987259361440fcdb3d3f813c2118dfff373b758abf5090731cd4",
   "ros2_topic_list": "ccc868ef0fe3c2f38b891c0100bef17d684a6fe4a0ef4842c39b47a017ab2e6d",
   "roslog_list": "6bb0ec25d8990ac7b56c35e1eec70eb780bbb837e11c65913750a3e44156b591",
-  "run_skill": "3604d789f42f4bfc592b8dbbb811896ef9b5270f2ad079f6d0878eeac619b0a3"
+  "run_skill": "d27eb8c8469df38e438bb8895514d5b4a8aec4d49132ff844cfdb2bc4bd11c54"
  },
- "tool_set_sha256": "3715fad00d43839df5eb3521881f64e7ede2acd99f04ecfb3530c6352f99e667"
+ "tool_set_sha256": "2924ca6c704d0e08ac6f65959ff67018ff0d5c1193ba800a98ffc94e6c0dc19a"
 }

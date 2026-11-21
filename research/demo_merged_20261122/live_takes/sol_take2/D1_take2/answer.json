@@ -1,0 +1,26 @@
+{
+ "answer": "{\"publisher_node\": null, \"shoulder_pan_joint\": null, \"wrist_3_joint\": null, \"position_unit\": \"radians\", \"status\": \"unavailable\", \"explanation\": \"The permitted inspection confirmed an active joint-state broadcaster and a fresh joint-state sample, but did not return the /joint_states publisher node name or individual joint positions.\"}",
+ "error": null,
+ "final_independent_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 1.5198440956700325e-20,
+  "wrist_1_joint": -1.5699999999970748,
+  "wrist_2_joint": -1.57,
+  "wrist_3_joint": -8.780263924188905e-20
+ },
+ "reset_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 1.5618569298538396e-20,
+  "wrist_1_joint": -1.5699999999970748,
+  "wrist_2_joint": -1.57,
+  "wrist_3_joint": -8.820243879299272e-20
+ },
+ "reset_ok": true,
+ "run_skill_calls": 1,
+ "seconds": 9.3,
+ "status": "COMPLETE",
+ "task": "D1",
+ "writes": 0
+}

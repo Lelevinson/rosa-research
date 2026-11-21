@@ -1,0 +1,90 @@
+{
+  "pass": true,
+  "queries": [
+    {
+      "at": 51721.652389187,
+      "states": {
+        "joint_trajectory_controller": "unconfigured"
+      }
+    },
+    {
+      "at": 51722.020315682,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.071462016,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.122556382,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.173773771,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.224565583,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.275694506,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.326660217,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.377618453,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 51722.431871698,
+      "states": {
+        "joint_state_broadcaster": "active",
+        "joint_trajectory_controller": "active"
+      }
+    }
+  ],
+  "observed_values": {
+    "shoulder_pan_joint": 3.4484093234267753e-18,
+    "shoulder_lift_joint": -1.5699999999997418,
+    "elbow_joint": 1.5700000000011813,
+    "wrist_1_joint": -1.5699999999970837,
+    "wrist_2_joint": -1.570000000000004,
+    "wrist_3_joint": 4.785923295305685e-18
+  },
+  "sensor_record": {
+    "kind": "observation",
+    "values": {
+      "shoulder_pan_joint": 3.4484093234267753e-18,
+      "shoulder_lift_joint": -1.5699999999997418,
+      "elbow_joint": 1.5700000000011813,
+      "wrist_1_joint": -1.5699999999970837,
+      "wrist_2_joint": -1.570000000000004,
+      "wrist_3_joint": 4.785923295305685e-18
+    },
+    "sim_stamp": [
+      0,
+      423000000
+    ],
+    "received_monotonic": 51722.439596959
+  }
+}

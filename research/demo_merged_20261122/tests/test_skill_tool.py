@@ -117,6 +117,22 @@ class SkillToolTests(unittest.TestCase):
         self.assertEqual(text['code'], 'skill_not_authorized')
         self.assertEqual(log.of('internal_read', 'internal_write'), [])
 
+    def test_unknown_ids_do_not_use_up_the_two_call_limit(self):
+        r, log, arm, _ = runner()
+        for bad in ('park_right', 'inspect_joint_states'):
+            self.assertEqual(json.loads(r.run(bad))['code'], 'skill_not_authorized')
+        self.assertEqual(r.calls, 0)
+        self.assertEqual(json.loads(r.run('ur5e.inspect_readiness')).get('rejected'), None)
+        r.run('ur5e.park_right')
+        self.assertEqual((r.calls, arm.writes), (2, 1))
+        self.assertEqual(json.loads(r.run('ur5e.home'))['code'], 'run_skill_limit_reached')   # the limit itself is unchanged
+
+    def test_description_lists_registered_ids_with_kind(self):
+        from merged_demo.skill_tool import DESCRIPTION
+        for sid, kind in (('ur5e.home', 'state_change'), ('ur5e.park_right', 'state_change'), ('ur5e.stage_left', 'state_change'),
+                          ('ur5e.inspect_readiness', 'read_only_inspection')):
+            self.assertIn('%s: %s' % (sid, kind), DESCRIPTION)
+
     def test_inactive_controllers_are_failure_evidence_not_a_write(self):
         r, log, arm, _ = runner(readiness=FakeReadiness(fault='inactive'))
         text = json.loads(r.run('ur5e.inspect_readiness'))

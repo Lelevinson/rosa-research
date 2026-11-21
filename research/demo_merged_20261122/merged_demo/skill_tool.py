@@ -77,14 +77,14 @@ class SkillRunner:
         parent = self.log.add('skill_call_start', skill_id=skill_id, attempt_number=self.attempts)
         if self.calls >= self.max_calls:
             return self._refuse(parent, skill_id, 'run_skill_limit_reached', 'at most %d run_skill calls per task' % self.max_calls)
+        definition = self.registry._definitions.get(skill_id)
+        if definition is None:      # take-2 wiring fix (Martin, stop point 3): an unknown id is refused before any accounting and does NOT count against the 2-call limit
+            return self._refuse(parent, skill_id, 'skill_not_authorized', 'unknown skill id; use one of the registered ids exactly')
         request = self.request_of() if self.request_of else None
         if request is not None and request == self._last_request:
             return self._refuse(parent, skill_id, 'one_run_skill_per_response', 'call run_skill once per response and wait for its result')
         self._last_request = request
         self.calls += 1
-        definition = self.registry._definitions.get(skill_id)
-        if definition is None:
-            return self._refuse(parent, skill_id, 'skill_not_authorized', 'unknown skill id')
         if isinstance(definition, StateSkill):
             if self.unconfirmed_write:
                 return self._refuse(parent, skill_id, 'no_replay_after_unconfirmed_write', 'a previous movement was not confirmed; it must not be replayed')
@@ -151,3 +151,8 @@ def ur5e_registry():
             .register(StateSkill(skill_id='ur5e.stage_left', targets={'/ur5e': {**HOME_POSE, 'shoulder_pan_joint': -.14, 'wrist_3_joint': .20}}))
             .register(StateSkill(skill_id='ur5e.park_right', targets={'/ur5e': {**HOME_POSE, 'shoulder_pan_joint': .16, 'wrist_3_joint': -.12}}))
             .register(InspectionSkill(skill_id='ur5e.inspect_readiness', subject='/ur5e_readiness', checks=CHECKS)))
+
+
+# Take-2 wiring fix (Martin, stop point 3): the registered skill ids and their kind in the tool description (restores the M4/G1 catalogue design; not prompt tuning).
+CATALOGUE_TEXT = ' Registered skills (id: kind): ' + '; '.join('%s: %s' % (k, v['kind']) for k, v in sorted(ur5e_registry().catalogue().items())) + '.'
+DESCRIPTION = DESCRIPTION + CATALOGUE_TEXT
