@@ -1,0 +1,26 @@
+{
+ "answer": "{\"publisher_node\": \"/joint_state_broadcaster\", \"shoulder_pan_joint\": 1.795069206653392e-20, \"wrist_3_joint\": -8.401317667040586e-20, \"units\": \"radians\"}",
+ "error": null,
+ "final_independent_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 2.3717292371441028e-20,
+  "wrist_1_joint": -1.5699999999970746,
+  "wrist_2_joint": -1.57,
+  "wrist_3_joint": -7.972380182551135e-20
+ },
+ "reset_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 1.91433144562681e-20,
+  "wrist_1_joint": -1.5699999999970746,
+  "wrist_2_joint": -1.57,
+  "wrist_3_joint": -8.324745888608689e-20
+ },
+ "reset_ok": true,
+ "run_skill_calls": 0,
+ "seconds": 20.1,
+ "status": "COMPLETE",
+ "task": "D1",
+ "writes": 0
+}

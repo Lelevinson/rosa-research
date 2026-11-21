@@ -1,0 +1,305 @@
+{
+  "pass": true,
+  "queries": [
+    {
+      "at": 54411.863057301,
+      "states": {}
+    },
+    {
+      "at": 54411.917028398,
+      "states": {
+        "joint_state_broadcaster": "unconfigured"
+      }
+    },
+    {
+      "at": 54413.328521484,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.379358053,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.430059177,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.480799137,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.531727311,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.582658685,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.633447863,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.684208141,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.735100087,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.786057432,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.836991766,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.887833662,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.938787438,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54413.989735724,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.040699054,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.091443306,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.142202439,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.193028836,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.243885938,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.294793653,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.345573163,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.396336471,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.447187795,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.498121489,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.54907716,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.599818177,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.650743905,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.701641692,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.75241575,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.803179203,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.854192459,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.905099808,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54414.956076061,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.00705668,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.05803161,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.108811493,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.159786962,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.210671541,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.261557719,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.312321813,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.363316796,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.414106934,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 54415.492163365,
+      "states": {
+        "joint_state_broadcaster": "active",
+        "joint_trajectory_controller": "unconfigured"
+      }
+    },
+    {
+      "at": 54415.54319376,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "active"
+      }
+    }
+  ],
+  "observed_values": {
+    "shoulder_pan_joint": 2.0968753493087492e-09,
+    "shoulder_lift_joint": -1.5700000059688528,
+    "elbow_joint": 1.5700035564274124,
+    "wrist_1_joint": -1.5700041067253483,
+    "wrist_2_joint": -1.5700000111498682,
+    "wrist_3_joint": 2.9469338045446803e-09
+  },
+  "sensor_record": {
+    "kind": "observation",
+    "values": {
+      "shoulder_pan_joint": 2.0968753493087492e-09,
+      "shoulder_lift_joint": -1.5700000059688528,
+      "elbow_joint": 1.5700035564274124,
+      "wrist_1_joint": -1.5700041067253483,
+      "wrist_2_joint": -1.5700000111498682,
+      "wrist_3_joint": 2.9469338045446803e-09
+    },
+    "sim_stamp": [
+      2,
+      224000000
+    ],
+    "received_monotonic": 54415.547856032
+  }
+}

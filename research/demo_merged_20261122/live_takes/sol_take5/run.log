@@ -1,0 +1,79 @@
+A message was lost!!!
+	total count change:1
+	total count: 1---
+header:
+  stamp:
+    sec: 20
+    nanosec: 204000000
+  frame_id: base_link
+name:
+- elbow_joint
+- shoulder_lift_joint
+- shoulder_pan_joint
+- wrist_1_joint
+- wrist_2_joint
+- wrist_3_joint
+position:
+- 1.570000000001177
+- -1.5699999999997378
+- 1.5787975887989015e-20
+- -1.5699999999970748
+- -1.57
+- -8.792800011808328e-20
+velocity:
+- -6.989200884710556e-14
+- -9.452884303226203e-14
+- 2.0667603913004928e-19
+- -9.029929581849672e-14
+- -9.828348258942438e-14
+- -5.421010862427522e-20
+effort:
+- -20.243163344051393
+- -20.276031848496736
+- -2.354751593366955e-16
+- -1.8228069840513872
+- 0.00044617766330201604
+- 2.4385459841785506e-20
+---
+
+D1 COMPLETE writes 0 calls 0
+D2 COMPLETE writes 1 calls 2
+A message was lost!!!
+	total count change:1
+	total count: 1---
+header:
+  stamp:
+    sec: 63
+    nanosec: 988000000
+  frame_id: base_link
+name:
+- elbow_joint
+- shoulder_lift_joint
+- shoulder_pan_joint
+- wrist_1_joint
+- wrist_2_joint
+- wrist_3_joint
+position:
+- 1.5700000000011776
+- -1.5699999999997378
+- -0.13999999999999976
+- -1.5699999999970768
+- -1.570000000000004
+- 0.19999999999999976
+velocity:
+- -1.034346219785931e-13
+- -9.455273613763818e-14
+- -1.2488921436728737e-14
+- 9.135053824493866e-15
+- 1.0154991268458008e-13
+- 1.2490774744817329e-14
+effort:
+- -20.243163344051396
+- -20.27603184849674
+- 1.2027867851011065e-16
+- -1.8228069840513885
+- 0.0004461776632997882
+- 1.3181077160935247e-20
+---
+
+D3 COMPLETE writes 1 calls 1
