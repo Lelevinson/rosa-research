@@ -1,0 +1,10 @@
+test_concurrent_failed_attempts_cannot_bypass_retry_limit (test_contracts.Contracts.test_concurrent_failed_attempts_cannot_bypass_retry_limit) ... ok
+test_guard_cannot_dispatch_mutators_or_shell_injection (test_contracts.Contracts.test_guard_cannot_dispatch_mutators_or_shell_injection) ... ok
+test_measurement_preserves_action_ids_and_complete_final (test_contracts.Contracts.test_measurement_preserves_action_ids_and_complete_final) ... ok
+test_prompts_do_not_mutate_baseline_and_keep_final_answers (test_contracts.Contracts.test_prompts_do_not_mutate_baseline_and_keep_final_answers) ... ok
+test_scorer_keeps_sources_and_roles_distinct (test_contracts.Contracts.test_scorer_keeps_sources_and_roles_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.007s
+
+OK

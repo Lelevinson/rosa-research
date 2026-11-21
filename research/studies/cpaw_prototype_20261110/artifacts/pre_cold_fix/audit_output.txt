@@ -1,0 +1,16 @@
+independently replayed 720 episodes; errors 0
+binary
+  fixed_robust delta 0.0059 wins/losses 0 12 same-state changes 0 / 21 examples []
+  exact_wave delta 0.1654 wins/losses 0 12 same-state changes 2 / 20 examples [{'seed': 109, 'state': ('-', 'T', 'F', '-'), 'candidate': [3], 'control': [0, 3]}, {'seed': 111, 'state': ('T', '-', 'F', '-'), 'candidate': [1, 3], 'control': [3]}]
+bulk
+  fixed_robust delta 0.0047 wins/losses 0 12 same-state changes 3 / 23 examples [{'seed': 102, 'state': ('F', 'F', '-', '-'), 'candidate': [2], 'control': [3]}, {'seed': 106, 'state': ('F', 'F', '-', '-'), 'candidate': [2], 'control': [3]}]
+  exact_wave delta -0.0124 wins/losses 1 11 same-state changes 1 / 26 examples [{'seed': 101, 'state': ('-', '-', '-', '-'), 'candidate': [2, 3], 'control': [0, 1]}]
+correlated
+  fixed_robust delta 0.0424 wins/losses 0 12 same-state changes 2 / 18 examples [{'seed': 105, 'state': ('-', '-', '-', '-'), 'candidate': [0, 1], 'control': [0, 2]}, {'seed': 110, 'state': ('-', '-', '-', '-'), 'candidate': [2, 3], 'control': [0, 3]}]
+  exact_wave delta 0.0655 wins/losses 0 12 same-state changes 3 / 18 examples [{'seed': 101, 'state': ('-', '-', '-', '-'), 'candidate': [1, 3], 'control': [0, 1]}, {'seed': 105, 'state': ('-', '-', '-', '-'), 'candidate': [0, 1], 'control': [0, 2]}]
+misspecified
+  fixed_robust delta -0.4606 wins/losses 8 4 same-state changes 9 / 24 examples [{'seed': 101, 'state': ('F', '-', 'F', '-'), 'candidate': [1], 'control': [3]}, {'seed': 102, 'state': ('-', 'F', '-', 'F'), 'candidate': [0], 'control': [0, 2]}]
+  exact_wave delta 0.0102 wins/losses 0 12 same-state changes 0 / 24 examples []
+unknown
+  fixed_robust delta -0.0526 wins/losses 1 11 same-state changes 1 / 19 examples [{'seed': 101, 'state': ('T', '-', '-', 'U'), 'candidate': [2], 'control': [1, 2]}]
+  exact_wave delta 0.1324 wins/losses 0 12 same-state changes 2 / 17 examples [{'seed': 108, 'state': ('-', '-', '-', '-'), 'candidate': [1, 2], 'control': [2, 3]}, {'seed': 109, 'state': ('-', 'T', 'F', '-'), 'candidate': [3], 'control': [0, 3]}]

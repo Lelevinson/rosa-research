@@ -1,0 +1,26 @@
+test_01_no_equal_value_equivalence (test_cpaw.CPAWTests.test_01_no_equal_value_equivalence) ... ok
+test_02_binary_degeneracy_and_classical_branch (test_cpaw.CPAWTests.test_02_binary_degeneracy_and_classical_branch) ... ok
+test_03_opaque (test_cpaw.CPAWTests.test_03_opaque) ... ok
+test_04_wrong_plan_not_complete (test_cpaw.CPAWTests.test_04_wrong_plan_not_complete) ... ok
+test_05_unknown_not_false (test_cpaw.CPAWTests.test_05_unknown_not_false) ... ok
+test_06_snapshot (test_cpaw.CPAWTests.test_06_snapshot) ... ok
+test_07_conflict_and_permission (test_cpaw.CPAWTests.test_07_conflict_and_permission) ... ok
+test_08_cold_and_new_contract (test_cpaw.CPAWTests.test_08_cold_and_new_contract) ... ok
+test_09_inference_cost_not_claimed (test_cpaw.CPAWTests.test_09_inference_cost_not_claimed) ... ok
+test_10_misspecification_and_joint_dependence (test_cpaw.CPAWTests.test_10_misspecification_and_joint_dependence) ... ok
+test_11_native_aggregation_parity (test_cpaw.CPAWTests.test_11_native_aggregation_parity) ... ok
+test_12_setup_and_sequential_optimality (test_cpaw.CPAWTests.test_12_setup_and_sequential_optimality) ... ok
+test_13_certificate_not_intent (test_cpaw.CPAWTests.test_13_certificate_not_intent) ... ok
+test_all_worlds_certificate_sound (test_cpaw.CPAWTests.test_all_worlds_certificate_sound) ... ok
+test_argument_authorization_is_independent (test_cpaw.CPAWTests.test_argument_authorization_is_independent) ... ok
+test_corrupt_evidence_and_goal (test_cpaw.CPAWTests.test_corrupt_evidence_and_goal) ... ok
+test_execution_failure_and_deadline (test_cpaw.CPAWTests.test_execution_failure_and_deadline) ... ok
+test_invalid_costs_and_zero_cost (test_cpaw.CPAWTests.test_invalid_costs_and_zero_cost) ... ok
+test_registry_claim_does_not_authorize (test_cpaw.CPAWTests.test_registry_claim_does_not_authorize) ... ok
+test_scenario_specific_continuations_are_clairvoyant (test_cpaw.CPAWTests.test_scenario_specific_continuations_are_clairvoyant) ... ok
+test_zero_budget_falls_back (test_cpaw.CPAWTests.test_zero_budget_falls_back) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.005s
+
+OK

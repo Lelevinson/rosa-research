@@ -1,0 +1,9 @@
+PASS development_metadata_only: 45 pair decisions and confusion counts
+PASS development_observed: 45 pair decisions and confusion counts
+PASS extension_metadata_only: 45 pair decisions and confusion counts
+PASS extension_initial: 45 pair decisions and confusion counts
+PASS extension_after_counterexample: 45 pair decisions and confusion counts
+PASS new_registration: 190 pair decisions and confusion counts
+PASS real_calculation: 10 pair decisions and confusion counts
+PASS 120 raw validation observations; preservation; zero LLM/native ROS dispatches
+Replay executed zero fixture/calculation tool calls.

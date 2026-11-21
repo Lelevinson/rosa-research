@@ -1,0 +1,4 @@
+evidence/
+backup/
+__pycache__/
+*.zip

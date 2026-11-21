@@ -1,0 +1,6 @@
+episodes 660 sound 660 unresolved 22
+binary fixed_robust=4.562 (+compute 4.568) exact_wave=4.409 (+compute 4.410) initial=4.414 (+compute 4.424) revised_unguarded=4.490 (+compute 4.500) revised_guarded=4.562 (+compute 4.572)
+unknown fixed_robust=4.280 (+compute 4.311) exact_wave=4.124 (+compute 4.128) initial=4.092 (+compute 4.150) revised_unguarded=4.129 (+compute 4.185) revised_guarded=4.201 (+compute 4.257)
+correlated fixed_robust=3.740 (+compute 3.746) exact_wave=3.722 (+compute 3.723) initial=4.157 (+compute 4.168) revised_unguarded=3.778 (+compute 3.788) revised_guarded=3.778 (+compute 3.788)
+misspecified fixed_robust=5.078 (+compute 5.084) exact_wave=4.613 (+compute 4.613) initial=4.720 (+compute 4.731) revised_unguarded=4.613 (+compute 4.623) revised_guarded=4.613 (+compute 4.623)
+bulk fixed_robust=3.605 (+compute 3.611) exact_wave=3.628 (+compute 3.629) initial=3.605 (+compute 3.616) revised_unguarded=3.605 (+compute 3.616) revised_guarded=3.605 (+compute 3.616)

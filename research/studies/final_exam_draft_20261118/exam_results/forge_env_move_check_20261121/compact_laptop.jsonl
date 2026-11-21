@@ -1,0 +1,1 @@
+{"cell": "c569f348363f", "pair": "7ef3a00b99e1", "task": "e3232d55aca7", "pool": "dev", "tier": "smoke", "system": "F", "model": "qwen3.5:9b", "seed": 1, "machine": "laptop", "supported": false, "ending": "unsupported", "requests": 4, "input_tokens": 13667, "output_tokens": 249, "native_ops": 3, "wall_seconds": 48.39, "gpu_state": "ok", "gpu_samples": 2}

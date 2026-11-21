@@ -1,0 +1,33 @@
+test_01_no_equal_value_equivalence (test_cpaw.CPAWTests.test_01_no_equal_value_equivalence) ... ok
+test_02_binary_degeneracy_and_classical_branch (test_cpaw.CPAWTests.test_02_binary_degeneracy_and_classical_branch) ... ok
+test_03_opaque (test_cpaw.CPAWTests.test_03_opaque) ... ERROR
+test_04_wrong_plan_not_complete (test_cpaw.CPAWTests.test_04_wrong_plan_not_complete) ... ok
+test_05_unknown_not_false (test_cpaw.CPAWTests.test_05_unknown_not_false) ... ok
+test_06_snapshot (test_cpaw.CPAWTests.test_06_snapshot) ... ok
+test_07_conflict_and_permission (test_cpaw.CPAWTests.test_07_conflict_and_permission) ... ok
+test_08_cold_and_new_contract (test_cpaw.CPAWTests.test_08_cold_and_new_contract) ... ok
+test_09_inference_cost_not_claimed (test_cpaw.CPAWTests.test_09_inference_cost_not_claimed) ... ok
+test_10_misspecification_and_joint_dependence (test_cpaw.CPAWTests.test_10_misspecification_and_joint_dependence) ... ok
+test_11_native_aggregation_parity (test_cpaw.CPAWTests.test_11_native_aggregation_parity) ... ok
+test_12_setup_and_sequential_optimality (test_cpaw.CPAWTests.test_12_setup_and_sequential_optimality) ... ok
+test_13_certificate_not_intent (test_cpaw.CPAWTests.test_13_certificate_not_intent) ... ok
+test_all_worlds_certificate_sound (test_cpaw.CPAWTests.test_all_worlds_certificate_sound) ... ok
+test_corrupt_evidence_and_goal (test_cpaw.CPAWTests.test_corrupt_evidence_and_goal) ... ok
+test_zero_budget_falls_back (test_cpaw.CPAWTests.test_zero_budget_falls_back) ... ok
+
+======================================================================
+ERROR: test_03_opaque (test_cpaw.CPAWTests.test_03_opaque)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/levinsonchen/project/rosa-research/research/cpaw_prototype/test_cpaw.py", line 29, in test_03_opaque
+    with self.assertRaises(ValueError):ingest(p,(P,)*4,['Node X ready'],(0,))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/levinsonchen/project/rosa-research/research/cpaw_prototype/cpaw.py", line 95, in ingest
+    by_id={e.probe_id:e for e in evidence}
+           ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'probe_id'
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.007s
+
+FAILED (errors=1)

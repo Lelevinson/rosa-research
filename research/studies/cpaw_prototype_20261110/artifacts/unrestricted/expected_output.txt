@@ -1,0 +1,5 @@
+exact_fixed_nominal 3.943446318308512
+exact_fixed_robust 4.057936223347982
+exact_adaptive 3.92198174794515
+candidate_guarded 4.008656438191732
+distinct state decisions 60 different from optimal 7
