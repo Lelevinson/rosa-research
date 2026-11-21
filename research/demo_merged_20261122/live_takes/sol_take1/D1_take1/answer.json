@@ -1,0 +1,26 @@
+{
+ "answer": "{\"publisher_node\": null, \"shoulder_pan_joint\": null, \"wrist_3_joint\": null, \"error\": \"The available read-only skill confirms that the joint-state broadcaster is active and joint samples are fresh, but does not expose the /joint_states publisher node or joint positions. These values could not be determined using the permitted skills.\"}",
+ "error": null,
+ "final_independent_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 1.4663116134035308e-20,
+  "wrist_1_joint": -1.5699999999970748,
+  "wrist_2_joint": -1.57,
+  "wrist_3_joint": -8.697593508536892e-20
+ },
+ "reset_observation": {
+  "elbow_joint": 1.570000000001177,
+  "shoulder_lift_joint": -1.5699999999997378,
+  "shoulder_pan_joint": 1.742444354208431e-20,
+  "wrist_1_joint": -1.5699999999970748,
+  "wrist_2_joint": -1.57,
+  "wrist_3_joint": -8.832779966918795e-20
+ },
+ "reset_ok": true,
+ "run_skill_calls": 2,
+ "seconds": 12.0,
+ "status": "COMPLETE",
+ "task": "D1",
+ "writes": 0
+}
