@@ -222,3 +222,6 @@ Total scripted work (steps 0-7): about **13 h**; live (9-10): about **4-5 h** fo
 - My efficiency evidence (40-48%) is from my own harness and tool surface (R from my own records). It is not evidence for his setting.
 - The bounded numbers for his loop are from his dev rows (R: not rerun here). The offline sizing in step 1 will replace the estimate in section 0.5.
 - Nothing here is a result. No novelty claim is made.
+
+## Correction note, 2026-11-21 (Session B)
+Section 0 item 5 and preflight row 2 say "about 1.7 requests per episode". **That is wrong.** The dev study has 3.38 (arm OFF, 216 / 64) and 3.17 (arm ON, 203 / 64) requests per episode. I divided one arm's requests by both arms' episodes (216 / 128). The verification rates (0.84 and 0.66 reads per episode) are correct. The original text above is kept unchanged. See [STEP0_CALCULATION.md](STEP0_CALCULATION.md) for the recomputed sizing and the arm-ON reading (state line already returned): possible saving 20.7% pooled, below the 25% threshold. Per Levinson's reply, the merge stays at plan level and the merged arm is not built.
