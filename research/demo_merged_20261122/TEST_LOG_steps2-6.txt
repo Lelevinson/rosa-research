@@ -1,0 +1,39 @@
+test_D1_question_menu_finish_and_name_fix (test_dry_run.DryRunTests.test_D1_question_menu_finish_and_name_fix) ... ok
+test_D2_inspect_then_move_with_one_terminal (test_dry_run.DryRunTests.test_D2_inspect_then_move_with_one_terminal) ... ok
+test_D3_move_then_menu_read_then_finish (test_dry_run.DryRunTests.test_D3_move_then_menu_read_then_finish) ... ok
+test_bad_arguments_come_back_as_text (test_dry_run.DryRunTests.test_bad_arguments_come_back_as_text) ... ok
+test_logs_are_json_serialisable_and_carry_the_l4_fields (test_dry_run.DryRunTests.test_logs_are_json_serialisable_and_carry_the_l4_fields) ... ok
+test_request_cap (test_dry_run.DryRunTests.test_request_cap) ... ok
+test_submit_report_is_an_unknown_tool_and_the_episode_goes_on (test_dry_run.DryRunTests.test_submit_report_is_an_unknown_tool_and_the_episode_goes_on) ... ok
+test_tasks_file_matches_the_plan (test_dry_run.DryRunTests.test_tasks_file_matches_the_plan) ... ok
+test_text_without_final_answer_is_its_own_ending (test_dry_run.DryRunTests.test_text_without_final_answer_is_its_own_ending) ... ok
+test_third_skill_call_and_double_call_in_one_response_are_refused (test_dry_run.DryRunTests.test_third_skill_call_and_double_call_in_one_response_are_refused) ... ok
+test_tool_set_has_one_terminal_and_no_report_tool (test_dry_run.DryRunTests.test_tool_set_has_one_terminal_and_no_report_tool) ... ok
+test_array_item_type_and_nullable (test_menu_and_errors.ErrorTextTests.test_array_item_type_and_nullable) ... ok
+test_bool_is_not_an_integer_and_extra_field_is_rejected (test_menu_and_errors.ErrorTextTests.test_bool_is_not_an_integer_and_extra_field_is_rejected) ... ok
+test_missing_field_names_field_and_type (test_menu_and_errors.ErrorTextTests.test_missing_field_names_field_and_type) ... ok
+test_tool_exception_becomes_text_and_does_not_raise (test_menu_and_errors.ErrorTextTests.test_tool_exception_becomes_text_and_does_not_raise) ... ok
+test_valid_call_passes (test_menu_and_errors.ErrorTextTests.test_valid_call_passes) ... ok
+test_wrong_type_is_not_coerced_and_shows_received_value (test_menu_and_errors.ErrorTextTests.test_wrong_type_is_not_coerced_and_shows_received_value) ... ok
+test_menu_digest_is_stable_and_has_schemas (test_menu_and_errors.MenuTests.test_menu_digest_is_stable_and_has_schemas) ... ok
+test_menu_names_and_no_write_tools (test_menu_and_errors.MenuTests.test_menu_names_and_no_write_tools) ... ok
+test_failed_results_do_not_enter_the_ledger (test_namefix_demo.NameFixTests.test_failed_results_do_not_enter_the_ledger) ... ok
+test_full_name_and_numbers_are_untouched (test_namefix_demo.NameFixTests.test_full_name_and_numbers_are_untouched) ... ok
+test_provenance_says_reconstruction (test_namefix_demo.NameFixTests.test_provenance_says_reconstruction) ... ok
+test_short_name_becomes_the_one_full_name_seen (test_namefix_demo.NameFixTests.test_short_name_becomes_the_one_full_name_seen) ... ok
+test_two_candidates_is_left_alone_and_logged (test_namefix_demo.NameFixTests.test_two_candidates_is_left_alone_and_logged) ... ok
+test_already_at_goal_skips_write_and_logs_why (test_skill_tool.SkillToolTests.test_already_at_goal_skips_write_and_logs_why) ... ok
+test_catalogue_is_the_frozen_m4_one (test_skill_tool.SkillToolTests.test_catalogue_is_the_frozen_m4_one) ... ok
+test_episode_write_budget_blocks_a_second_movement (test_skill_tool.SkillToolTests.test_episode_write_budget_blocks_a_second_movement) ... ok
+test_inactive_controllers_are_failure_evidence_not_a_write (test_skill_tool.SkillToolTests.test_inactive_controllers_are_failure_evidence_not_a_write) ... ok
+test_ineffective_command_is_not_replayed_inside_or_across_calls (test_skill_tool.SkillToolTests.test_ineffective_command_is_not_replayed_inside_or_across_calls) ... ok
+test_inspection_reads_only_and_logs_sources_in_order (test_skill_tool.SkillToolTests.test_inspection_reads_only_and_logs_sources_in_order) ... ok
+test_missing_observation_blocks_the_write (test_skill_tool.SkillToolTests.test_missing_observation_blocks_the_write) ... ok
+test_movement_is_read_then_one_write_then_fresh_read_in_that_order (test_skill_tool.SkillToolTests.test_movement_is_read_then_one_write_then_fresh_read_in_that_order) ... ok
+test_tool_name_and_no_report_tool (test_skill_tool.SkillToolTests.test_tool_name_and_no_report_tool) ... ok
+test_unknown_skill_touches_no_transport (test_skill_tool.SkillToolTests.test_unknown_skill_touches_no_transport) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 1.069s
+
+OK

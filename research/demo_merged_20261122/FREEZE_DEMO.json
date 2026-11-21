@@ -1,0 +1,72 @@
+{
+ "catalogue_sha256": "cb7da33988381631ae225ff609dd1525e9aad1c12f77764ccbce7111d48b9aab",
+ "code": {
+  "files": {
+   "merged_demo/__init__.py": "82263be325c8159f5a35d6b29d4650838a3dd87f44dd906a09cc3d6047a5162a",
+   "merged_demo/answer_gate_stub.py": "e6471eb9a77b25a85c0a3625a05b2856bc7d0eb0eebc53faaebdefed3638c437",
+   "merged_demo/events.py": "78bea43659d5784e69b18f84a84d96b38d24452380d0f1ed6c078951b68c3b02",
+   "merged_demo/fakes.py": "11ee4c9da4efa3503926bf8e213649cc8b6c6dc83c90f28f8bc6244aad0ce5b6",
+   "merged_demo/loop.py": "609d2fc21ec395ff69c5f38a9cade78e55ea85909133a3e031954c6813f041b1",
+   "merged_demo/menu.py": "9a1ec910a3a6464348094f4dcbfe8a76dd7fccaabbc804a2dd670a4f4788952c",
+   "merged_demo/namefix.py": "daba24fc5c37cecc1dcc7244b31337e4c4f80ec10366d0260d30f3ff0754dbe4",
+   "merged_demo/prompts.py": "844bbfe3f95af31d27c1e021c99db9a8510dd9b3a6f9e1f19836d1581b2b5e94",
+   "merged_demo/skill_tool.py": "3a7aaf7f965e42196c3d4a94e55ed3b6e2a2dfdc020c97a218749b9d1cbccfa7",
+   "merged_demo/soft_errors.py": "7a7b6a3d15ecf07e6c7576c3cbc4daac604b9cbca9f80e7fdc193a0e7e43f038"
+  },
+  "merge_branch_head": "",
+  "rosa_research_branch": "member/martin",
+  "rosa_research_checkout": "8713f9b205033a25f8ed8d9549610e9ad0b8bfde"
+ },
+ "finish_tool_description": "Give the final answer as a JSON object and finish.",
+ "frozen_at": "2026-11-21T23:01:08+08:00",
+ "limits": {
+  "macro": "MacroLimits() defaults (10 native operations, 16 tool attempts, 3 corrections, 180 s, tolerance 0.025)",
+  "max_requests": 8,
+  "run_skill_calls": 2,
+  "writes_per_task": 1
+ },
+ "name_fix": {
+  "answer_gate_sha256": "e6471eb9a77b25a85c0a3625a05b2856bc7d0eb0eebc53faaebdefed3638c437",
+  "answer_gate_source": "RECONSTRUCTION from LEDGER_DEFINITION.md (not his file)",
+  "namefix_rule_sha256": "708e5f4befdaa3b6016ca5d065a4da801753e240fd31457908dbed9664539117"
+ },
+ "prompt": {
+  "prompt_sha256": "ec67ea33c6296d3555738e44596baf40a63bd7655a0160d5ff9a2bb6a91ac474",
+  "prompt_source": "FALLBACK written by us, NOT HIS WORDING",
+  "text": "You are ROSA, an assistant for a ROS 2 robot. Answer the request with the tools you are given. Read tools only look at the system; they never change it. Request one tool at a time and wait for its result. Use the registered skills only. Inspect/readiness requests are read-only. Choose a movement only when the user specifies a permitted motion goal. If the request is ambiguous about inspection versus movement or its goal, ask a clarifying question before selecting any skill. Do not assume permission. Never replay an uncertain or ineffective write. run_skill runs a bounded routine and returns evidence; do not repeat completed steps. Use it at most twice per task. When you have the answer, call final_answer with a JSON object that contains it. That ends the task."
+ },
+ "purpose": "demo only; no scoring, no claims; not pooled with any M4/G1/D/F1/parity or Levinson result",
+ "run_skill_description": "Run one user-authorized skill by exact ID. It runs the bounded routine: read the current state, at most one write when needed, then a fresh verification (read-only skills only read and verify), and returns the evidence. Use it at most twice per task; do not repeat a completed skill. Inspect the returned evidence before you answer.",
+ "status": "DRAFT FREEZE: prompt is the FALLBACK (not his wording) and answer_gate is a RECONSTRUCTION until Levinson sends his strings/file",
+ "tasks": {
+  "D1": {
+   "sha256": "a0265ed7b81ea51cbbb52a38aeb472dc61f0244b93aad2eb00eef41fe5c2c569",
+   "text": "Which node publishes /joint_states, and what are the current shoulder_pan_joint and wrist_3_joint positions? Answer as a JSON object."
+  },
+  "D2": {
+   "sha256": "6696adfac454678d9fc0d7a07e75dd28cb87084dbadf4b6aee2343790833cc0c",
+   "text": "Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object."
+  },
+  "D3": {
+   "sha256": "f57f9d98a018025ed87ef9c8c83480b33577e627fc03e49670f319be74f5ddcc",
+   "text": "Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object."
+  }
+ },
+ "tool_set_sha256": "e29cea56f211dda5ee9c1f5745d85a8991274236fe56415e3de25cb67b8cfc13",
+ "tools": {
+  "final_answer": "d6906599c1abc2dc1f8686bc4f92cc57b252a0535aa1a123ff09479571519c80",
+  "read_log": "fe42d31a244cf90de1e5c51df0de3d527b27ddd92fb64e78d90525b531771cc2",
+  "ros2_doctor": "e20c5423d5fd5836d3b7b7aa8e048b812ca0ad8d9ee64cf62156b65f86521ab3",
+  "ros2_node_info": "433cffc46cf5d32692008ae520d07a40322e644a0e498d4da97d68395594973d",
+  "ros2_node_list": "6c04d503d8adf1f8f6be585d1811e5882d90ca1b0017a763de441e7ca88383b8",
+  "ros2_param_get": "5fed982d73625453c41a6545f0bfb2a2f310206168efc9e8b03e6e5fa5612f8e",
+  "ros2_param_list": "7de6e887c05c2e8b850a36ff867c41f0b7e5024bcc5a6d31bc01c2d25a8c10e3",
+  "ros2_service_info": "d9e5dcc565c111a97680910af1bb6e0621cdb23d2d3d43115c6ee37478d254cf",
+  "ros2_service_list": "909d645c3ad455f2f0689aec55b123d57bd9e11ff59edddcdac57ea97ac9f72a",
+  "ros2_topic_echo": "42500884586d2eeafae190b6b952cccbb27ce128acdd228a3e1e19a6e6e38fea",
+  "ros2_topic_info": "1735fcc7033a30046b10579c83b2a69ae29a804a662a3f0daa0f78255752e22b",
+  "ros2_topic_list": "a4e3779f18ecd82831c22f7f1f909c6644dc9b74883637ad2d597fe01a8667e1",
+  "roslog_list": "a8c6523c4c01f9b99485a6c8819ad5bc264b8b7f454215b4333e2f5dedf1345c",
+  "run_skill": "9c6366d77485176fb184f56148c93a471ddb5d0f9c1cbc7861a2b2285d621dc4"
+ }
+}

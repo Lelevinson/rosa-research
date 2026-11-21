@@ -1,0 +1,20 @@
+{
+ "_note": "Demo tasks, fixed before any live run. Healthy world only, start pose ur5e.home. A demo is not evidence; nothing here is scored.",
+ "tasks": [
+  {"id": "D1",
+   "text": "Which node publishes /joint_states, and what are the current shoulder_pan_joint and wrist_3_joint positions? Answer as a JSON object.",
+   "shows": "his method: short menu, structured finish, name fix",
+   "initial": "ur5e.home",
+   "expected_path": ["ros2_topic_info", "ros2_topic_echo", "final_answer"]},
+  {"id": "D2",
+   "text": "Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object.",
+   "shows": "read-only inspection skill, then the movement skill (read, one write, fresh verify), his finish tool",
+   "initial": "ur5e.home",
+   "expected_path": ["run_skill:ur5e.inspect_readiness", "run_skill:ur5e.park_right", "final_answer"]},
+  {"id": "D3",
+   "text": "Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object.",
+   "shows": "movement skill, then a menu read after the action, his finish tool",
+   "initial": "ur5e.home",
+   "expected_path": ["run_skill:ur5e.stage_left", "ros2_topic_echo", "final_answer"]}
+ ]
+}
