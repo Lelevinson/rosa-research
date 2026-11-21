@@ -24,3 +24,4 @@ Commit hashes of later gates are appended below at each push.
 
 ## Gate log
 - 2026-11-21: branch created; D0 approved (rosa-evaluation `34492e1`), amendment 01 (rosa-evaluation `a5ea648`).
+- 2026-11-21: B3 done: wrapper, detached launcher, analysis, runbook (rosa-evaluation `08675f4`); report addenda drafts and master README entry (rosa-evaluation `24904de`).
