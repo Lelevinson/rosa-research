@@ -1,0 +1,9 @@
+{
+ "frozen_at": "2026-11-20T19:30:08",
+ "protocol_md_sha256": "3e2763fe87d8f22b2ac41d8a015fdbeec012c161d2024a05f0c9663501b0e21e",
+ "classify_py_sha256": "7c16035b80c7219709ba7e67e45be1f7573ed743dffff8fcd8debf7e649dcd93",
+ "labelled_lossmap_sha256": "7cb546989c02bc493f06255b5a0fd91c2a461c73bd9749bdaf42ccc29be4003e",
+ "listval_results_log_sha256": "c640fe7348d2b68befb3f8487dfa3a14dae943814f44c2255e3dc987841c017e",
+ "episodes_py_sha256": "f564b82e49be2480b66be5bf634ef2f0801a9a9792003a90ba7fa1262d6c9064",
+ "note": "frozen before derail.py exists; no P1/P3 derailment count has been computed"
+}

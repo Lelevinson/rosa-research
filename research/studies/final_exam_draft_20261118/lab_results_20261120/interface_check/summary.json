@@ -1,0 +1,258 @@
+{
+ "episodes": [
+  {
+   "dir": "000-u3-A1-ministral-3_8b-s1",
+   "seconds": 28.3,
+   "model": "ministral-3:8b",
+   "task": "u3",
+   "requests": 6,
+   "calls_per_request": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "tools": [
+    "ros2_topic_info",
+    "ros2_node_info",
+    "ros2_topic_info",
+    "ros2_node_info",
+    "ros2_topic_info"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 1,
+   "answer_chars": 304,
+   "answer_head": "The result is structured as follows:\n\n```json\n{\n  \"publisher\": \"/plant32/elm\",\n  \"input_topic\": \"/plant32/nimbus_t\",\n  \"",
+   "episode_error": null,
+   "input_tokens": 33968,
+   "output_tokens": 368
+  },
+  {
+   "dir": "001-u3-A1-gemma4_e4b-s1",
+   "seconds": 6.4,
+   "model": "gemma4:e4b",
+   "task": "u3",
+   "requests": 3,
+   "calls_per_request": [
+    1,
+    1,
+    0
+   ],
+   "tools": [
+    "ros2_topic_info",
+    "ros2_node_info"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 1,
+   "answer_chars": 0,
+   "answer_head": "",
+   "episode_error": null,
+   "input_tokens": 15393,
+   "output_tokens": 85
+  },
+  {
+   "dir": "002-p3-A1-llama3.1_8b-s1",
+   "seconds": 20.7,
+   "model": "llama3.1:8b",
+   "task": "p3",
+   "requests": 2,
+   "calls_per_request": [
+    3,
+    0
+   ],
+   "tools": [
+    "ros2_param_get",
+    "ros2_param_get",
+    "ros2_param_get"
+   ],
+   "rejected_or_error_calls": [
+    [
+     "ros2_param_get",
+     "{\"error\": \"Node not found\\n\"}"
+    ]
+   ],
+   "requests_without_tool_call": 1,
+   "answer_chars": 137,
+   "answer_head": "Unfortunately, the tool call to read the setpoint of the node named by the second read returned an error because the nod",
+   "episode_error": null,
+   "input_tokens": 5293,
+   "output_tokens": 120
+  },
+  {
+   "dir": "003-p3-A1-granite4.2_8b-s1",
+   "seconds": 18.8,
+   "model": "granite4.2:8b",
+   "task": "p3",
+   "requests": 4,
+   "calls_per_request": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "tools": [
+    "ros2_param_get",
+    "ros2_param_get",
+    "ros2_param_get"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 1,
+   "answer_chars": 74,
+   "answer_head": "{\"first\": \"/plant32/quartz\", \"second\": \"/plant32/beacon\", \"setpoint\": 873}",
+   "episode_error": null,
+   "input_tokens": 22172,
+   "output_tokens": 196
+  },
+  {
+   "dir": "004-u3-A1-granite4.2_8b-s1",
+   "seconds": 39.5,
+   "model": "granite4.2:8b",
+   "task": "u3",
+   "requests": 9,
+   "calls_per_request": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "tools": [
+    "ros2_topic_list",
+    "ros2_topic_info",
+    "ros2_node_list",
+    "ros2_node_info",
+    "ros2_topic_info",
+    "ros2_node_info",
+    "ros2_topic_info",
+    "ros2_node_info"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 1,
+   "answer_chars": 118,
+   "answer_head": "```json\n{\n  \"publisher\": \"/plant32/yarrow\",\n  \"input_topic\": \"/plant32/harbor_t\",\n  \"upstream\": \"/plant32/quill\"\n}\n```",
+   "episode_error": null,
+   "input_tokens": 61043,
+   "output_tokens": 895
+  },
+  {
+   "dir": "005-p3-A1-gemma4_e4b-s1",
+   "seconds": 11.9,
+   "model": "gemma4:e4b",
+   "task": "p3",
+   "requests": 3,
+   "calls_per_request": [
+    1,
+    1,
+    0
+   ],
+   "tools": [
+    "ros2_param_get",
+    "ros2_param_get"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 1,
+   "answer_chars": 0,
+   "answer_head": "",
+   "episode_error": null,
+   "input_tokens": 14690,
+   "output_tokens": 118
+  },
+  {
+   "dir": "006-u3-A1-llama3.1_8b-s1",
+   "seconds": 5.7,
+   "model": "llama3.1:8b",
+   "task": "u3",
+   "requests": 2,
+   "calls_per_request": [
+    1,
+    0
+   ],
+   "tools": [
+    "ros2_node_list"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 1,
+   "answer_chars": 206,
+   "answer_head": "Unfortunately, the rostopic list command doesn't return any nodes that publish /plant32/quarry_t. Let's try a different ",
+   "episode_error": null,
+   "input_tokens": 5158,
+   "output_tokens": 79
+  },
+  {
+   "dir": "007-p3-A1-ministral-3_8b-s1",
+   "seconds": 5.2,
+   "model": "ministral-3:8b",
+   "task": "p3",
+   "requests": 1,
+   "calls_per_request": [
+    1
+   ],
+   "tools": [
+    "ros2_node_list"
+   ],
+   "rejected_or_error_calls": [],
+   "requests_without_tool_call": 0,
+   "answer_chars": null,
+   "answer_head": "None",
+   "episode_error": "1 validation error for ros2_node_list\nblacklist\n  Input should be a valid list [type=list_type, input_value={}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/list_type",
+   "input_tokens": 4747,
+   "output_tokens": 22
+  }
+ ],
+ "residency": {
+  "ministral-3:8b": {
+   "samples": 2,
+   "size_mib": [
+    13610
+   ],
+   "size_vram_mib": [
+    13610
+   ],
+   "runner_mib_max": 14702,
+   "used_mib_max": 14982,
+   "others_mib_max": 249
+  },
+  "gemma4:e4b": {
+   "samples": 2,
+   "size_mib": [
+    393
+   ],
+   "size_vram_mib": [
+    393
+   ],
+   "runner_mib_max": 5918,
+   "used_mib_max": 6198,
+   "others_mib_max": 249
+  },
+  "llama3.1:8b": {
+   "samples": 2,
+   "size_mib": [
+    12775
+   ],
+   "size_vram_mib": [
+    12775
+   ],
+   "runner_mib_max": 13074,
+   "used_mib_max": 13354,
+   "others_mib_max": 249
+  },
+  "granite4.2:8b": {
+   "samples": 11,
+   "size_mib": [
+    15793
+   ],
+   "size_vram_mib": [
+    14346
+   ],
+   "runner_mib_max": 14666,
+   "used_mib_max": 14946,
+   "others_mib_max": 249
+  }
+ }
+}

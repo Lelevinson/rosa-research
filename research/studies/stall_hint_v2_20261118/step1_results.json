@@ -1,0 +1,243 @@
+{
+  "mode": "frozen protocol",
+  "protocol_sha256": "fe09b1877d6754f9d3a99f4298650b5708b563eafc1759c600008b2cd5e3c97e",
+  "B0": {
+    "episodes_replayed": 1248,
+    "recount_episodes": 1248,
+    "mismatched": 0,
+    "missing_from_replay": 0,
+    "errors": 0,
+    "pass_": true
+  },
+  "mismatches": [],
+  "errors": [],
+  "results": {
+    "PRIMARY: C1-type, bonsai+lfm3": {
+      "label": "PRIMARY: C1-type, bonsai+lfm3",
+      "episodes": 168,
+      "episodes_with_stall": 52,
+      "fires": 507,
+      "fire_types": {
+        "informative": 319,
+        "t1_only": 60,
+        "empty": 128
+      },
+      "kind_mismatch_fires": 85,
+      "episodes_with_informative_fire": 42,
+      "informative_fire_episode_rate": "42/168 = 25.0%",
+      "informative_share_of_fires": "319/507 = 62.9%",
+      "b2_denominator": 18,
+      "b2_classes": {
+        "indeterminate": 9,
+        "contradicted": 1,
+        "pointed_immediate": 6,
+        "pointed_delayed": 2
+      },
+      "b2_pointed": "8/18 = 44.4%",
+      "b3_delayed_share_of_pointed": "2/8 = 25.0%",
+      "b4_contradicted": "1/18 = 5.6%",
+      "hint_chars_mean": 167.1
+    },
+    "C1-type, all four models": {
+      "label": "C1-type, all four models",
+      "episodes": 336,
+      "episodes_with_stall": 66,
+      "fires": 527,
+      "fire_types": {
+        "informative": 332,
+        "t1_only": 66,
+        "empty": 129
+      },
+      "kind_mismatch_fires": 85,
+      "episodes_with_informative_fire": 50,
+      "informative_fire_episode_rate": "50/336 = 14.9%",
+      "informative_share_of_fires": "332/527 = 63.0%",
+      "b2_denominator": 21,
+      "b2_classes": {
+        "indeterminate": 9,
+        "contradicted": 1,
+        "pointed_immediate": 7,
+        "pointed_delayed": 4
+      },
+      "b2_pointed": "11/21 = 52.4%",
+      "b3_delayed_share_of_pointed": "4/11 = 36.4%",
+      "b4_contradicted": "1/21 = 4.8%",
+      "hint_chars_mean": 168.8
+    },
+    "all arms, all models": {
+      "label": "all arms, all models",
+      "episodes": 1248,
+      "episodes_with_stall": 228,
+      "fires": 1788,
+      "fire_types": {
+        "t1_only": 264,
+        "empty": 478,
+        "informative": 1046
+      },
+      "kind_mismatch_fires": 254,
+      "episodes_with_informative_fire": 152,
+      "informative_fire_episode_rate": "152/1248 = 12.2%",
+      "informative_share_of_fires": "1046/1788 = 58.5%",
+      "b2_denominator": 60,
+      "b2_classes": {
+        "pointed_delayed": 13,
+        "indeterminate": 22,
+        "contradicted": 5,
+        "pointed_immediate": 20
+      },
+      "b2_pointed": "33/60 = 55.0%",
+      "b3_delayed_share_of_pointed": "13/33 = 39.4%",
+      "b4_contradicted": "5/60 = 8.3%",
+      "hint_chars_mean": 173.1
+    },
+    "PRIMARY, round-2 CONTROL seeds 1-2 only": {
+      "label": "PRIMARY, round-2 CONTROL seeds 1-2 only",
+      "episodes": 40,
+      "episodes_with_stall": 11,
+      "fires": 75,
+      "fire_types": {
+        "informative": 37,
+        "empty": 30,
+        "t1_only": 8
+      },
+      "kind_mismatch_fires": 18,
+      "episodes_with_informative_fire": 8,
+      "informative_fire_episode_rate": "8/40 = 20.0%",
+      "informative_share_of_fires": "37/75 = 49.3%",
+      "b2_denominator": 4,
+      "b2_classes": {
+        "indeterminate": 3,
+        "pointed_immediate": 1
+      },
+      "b2_pointed": "1/4 = 25.0%",
+      "b3_delayed_share_of_pointed": "0/1 = 0.0%",
+      "b4_contradicted": "0/4 = 0.0%",
+      "hint_chars_mean": 164.6
+    },
+    "PRIMARY, round-2 CONTROL extra seeds only": {
+      "label": "PRIMARY, round-2 CONTROL extra seeds only",
+      "episodes": 48,
+      "episodes_with_stall": 27,
+      "fires": 292,
+      "fire_types": {
+        "informative": 204,
+        "empty": 59,
+        "t1_only": 29
+      },
+      "kind_mismatch_fires": 37,
+      "episodes_with_informative_fire": 21,
+      "informative_fire_episode_rate": "21/48 = 43.8%",
+      "informative_share_of_fires": "204/292 = 69.9%",
+      "b2_denominator": 7,
+      "b2_classes": {
+        "pointed_delayed": 2,
+        "indeterminate": 2,
+        "pointed_immediate": 3
+      },
+      "b2_pointed": "5/7 = 71.4%",
+      "b3_delayed_share_of_pointed": "2/5 = 40.0%",
+      "b4_contradicted": "0/7 = 0.0%",
+      "hint_chars_mean": 167.9
+    }
+  },
+  "bars": {
+    "B0 reproduction": true,
+    "B1 >=10% episodes with informative fire": true,
+    "B2 >=50% pointed (strict)": false,
+    "B3 >=30% of pointed are delayed": false,
+    "B4 <=25% contradicted": true,
+    "B5 >=50% of fires informative": true
+  },
+  "verdict": "FAIL",
+  "samples": [
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/000-p3-C1+H2-lfm3_1.7b-s1/trace.jsonl",
+      "request": 1,
+      "tool": "ros2_param_get",
+      "args": {
+        "node_name": "/plant32/quartz",
+        "param_name": "setpoint"
+      },
+      "type": "t1_only",
+      "kind_mismatch": false,
+      "text": "Hint from this session's own results: the same result came back again. Full names already seen that match what you typed: /plant32/quartz (kind unknown)."
+    },
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2/trace.jsonl",
+      "request": 8,
+      "tool": "ros2_node_list",
+      "args": {},
+      "type": "empty",
+      "kind_mismatch": false,
+      "text": "Hint from this session's own results: the same result came back again. No seen full name matches what you typed."
+    },
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2/trace.jsonl",
+      "request": 11,
+      "tool": "ros2_service_info",
+      "args": {
+        "services": [
+          "/plant32/cedar_reset"
+        ]
+      },
+      "type": "informative",
+      "kind_mismatch": false,
+      "text": "Hint from this session's own results: the same result came back again. Full names already seen that match what you typed: /plant32/cedar_reset (service); /plant32/cedar (kind unknown). Tools that take those kinds of names: ros2_service_info."
+    },
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/006-v2-C1+H1e-lfm3_1.7b-s1/trace.jsonl",
+      "request": 4,
+      "tool": "ros2_node_list",
+      "args": {
+        "pattern": "/plant32/cedar"
+      },
+      "type": "informative",
+      "kind_mismatch": true,
+      "text": "Hint from this session's own results: the same result came back again. Full names already seen that match what you typed: /plant32/cedar_reset (service). Tools that take those kinds of names: ros2_service_info."
+    },
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/006-v2-C1+H1e-lfm3_1.7b-s1/trace.jsonl",
+      "request": 7,
+      "tool": "ros2_service_info",
+      "args": {
+        "services": [
+          "/plant32/cedar_reset"
+        ]
+      },
+      "type": "t1_only",
+      "kind_mismatch": false,
+      "text": "Hint from this session's own results: the same result came back again. Full names already seen that match what you typed: /plant32/cedar_reset (service). Tools that take those kinds of names: ros2_service_info."
+    },
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/034-v2-C1-lfm3_1.7b-s1/trace.jsonl",
+      "request": 13,
+      "tool": "ros2_node_list",
+      "args": {
+        "pattern": "plant32_cedar"
+      },
+      "type": "informative",
+      "kind_mismatch": false,
+      "text": "Hint from this session's own results: the same result came back again. Full names already seen that match what you typed: /plant32/cedar (kind unknown)."
+    }
+  ],
+  "contradicted_primary": [
+    {
+      "trace_path": "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/034-v2-C1-lfm3_1.7b-s1/trace.jsonl",
+      "model": "lfm3:1.7b",
+      "task": "v2",
+      "seed": 1,
+      "fire_request": 5,
+      "hint_names": [
+        "/plant32/cedar_reset"
+      ],
+      "hint_tools": [
+        "ros2_service_info"
+      ],
+      "p_request": 9,
+      "p_tool": "ros2_node_info",
+      "p_entities": [
+        "/plant32/anvil"
+      ]
+    }
+  ]
+}

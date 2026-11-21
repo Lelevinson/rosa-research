@@ -1,0 +1,708 @@
+{
+ "log": "/home/levinsonchen/project/rosa-research/research/_artifacts/exam/listval/RESULTS_LOG_all.jsonl",
+ "episodes": 288,
+ "arms": {
+  "FULL": 144,
+  "LISTVAL": 144
+ },
+ "cells_with_both_arms": 144,
+ "primary": {
+  "lfm3:1.7b": {
+   "inline_lists": 13,
+   "shown": 49,
+   "fetched": 1,
+   "needed_shown": 12,
+   "needed_fetched": 1,
+   "lists_with_any_fetch": 1,
+   "excluded_change_instances": 1,
+   "unreadable": 0,
+   "share_fetched": 0.0204,
+   "share_needed_fetched": 0.0833,
+   "share_lists_with_fetch": 0.0769
+  },
+  "qwen3.5:9b": {
+   "inline_lists": 11,
+   "shown": 38,
+   "fetched": 8,
+   "needed_shown": 9,
+   "needed_fetched": 6,
+   "lists_with_any_fetch": 7,
+   "excluded_change_instances": 0,
+   "unreadable": 2,
+   "share_fetched": 0.2105,
+   "share_needed_fetched": 0.6667,
+   "share_lists_with_fetch": 0.6364
+  },
+  "gpt-oss:20b": {
+   "inline_lists": 1,
+   "shown": 4,
+   "fetched": 0,
+   "needed_shown": 2,
+   "needed_fetched": 0,
+   "lists_with_any_fetch": 0,
+   "excluded_change_instances": 0,
+   "unreadable": 0,
+   "share_fetched": 0.0,
+   "share_needed_fetched": 0.0,
+   "share_lists_with_fetch": 0.0
+  },
+  "bonsai-2:4b": {
+   "inline_lists": 33,
+   "shown": 107,
+   "fetched": 0,
+   "needed_shown": 16,
+   "needed_fetched": 0,
+   "lists_with_any_fetch": 0,
+   "excluded_change_instances": 0,
+   "unreadable": 0,
+   "share_fetched": 0.0,
+   "share_needed_fetched": 0.0,
+   "share_lists_with_fetch": 0.0
+  }
+ },
+ "adoption": {
+  "models_meeting": [
+   "lfm3:1.7b",
+   "qwen3.5:9b",
+   "bonsai-2:4b"
+  ],
+  "met": true,
+  "rule": "share <= 0.5 in >= 2 models with >= 5 inline lists"
+ },
+ "full_habit": {
+  "lfm3:1.7b": {
+   "lists": 10,
+   "followed": 10
+  },
+  "qwen3.5:9b": {
+   "lists": 11,
+   "followed": 10
+  },
+  "gpt-oss:20b": {
+   "lists": 2,
+   "followed": 1
+  },
+  "bonsai-2:4b": {
+   "lists": 27,
+   "followed": 25
+  }
+ },
+ "totals": {
+  "FULL": {
+   "episodes": 144,
+   "supported": 123,
+   "rewrite_supported": 126,
+   "by_model": {
+    "lfm3:1.7b": {
+     "episodes": 36,
+     "supported": 32,
+     "rewrite_supported": 32
+    },
+    "qwen3.5:9b": {
+     "episodes": 36,
+     "supported": 36,
+     "rewrite_supported": 36
+    },
+    "gpt-oss:20b": {
+     "episodes": 36,
+     "supported": 32,
+     "rewrite_supported": 32
+    },
+    "bonsai-2:4b": {
+     "episodes": 36,
+     "supported": 23,
+     "rewrite_supported": 26
+    }
+   }
+  },
+  "LISTVAL": {
+   "episodes": 144,
+   "supported": 108,
+   "rewrite_supported": 112,
+   "by_model": {
+    "lfm3:1.7b": {
+     "episodes": 36,
+     "supported": 27,
+     "rewrite_supported": 27
+    },
+    "qwen3.5:9b": {
+     "episodes": 36,
+     "supported": 34,
+     "rewrite_supported": 34
+    },
+    "gpt-oss:20b": {
+     "episodes": 36,
+     "supported": 30,
+     "rewrite_supported": 32
+    },
+    "bonsai-2:4b": {
+     "episodes": 36,
+     "supported": 17,
+     "rewrite_supported": 19
+    }
+   }
+  }
+ },
+ "paired": {
+  "lfm3:1.7b": {
+   "param_get_calls": {
+    "cells": 36,
+    "mean_full": 1.5,
+    "mean_listval": 1,
+    "mean_diff": -0.5,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 31,
+    "higher": 0
+   },
+   "requests": {
+    "cells": 36,
+    "mean_full": 5.472,
+    "mean_listval": 4.889,
+    "mean_diff": -0.583,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 30,
+    "higher": 1
+   },
+   "input_tokens": {
+    "cells": 36,
+    "mean_full": 24950.361,
+    "mean_listval": 19455.333,
+    "mean_diff": -5495.028,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 29,
+    "higher": 2
+   },
+   "output_tokens": {
+    "cells": 36,
+    "mean_full": 2345.528,
+    "mean_listval": 2305.583,
+    "mean_diff": -39.944,
+    "median_diff": 0.0,
+    "lower": 6,
+    "equal": 29,
+    "higher": 1
+   },
+   "native_ops": {
+    "cells": 36,
+    "mean_full": 5.611,
+    "mean_listval": 6.111,
+    "mean_diff": 0.5,
+    "median_diff": 0.0,
+    "lower": 1,
+    "equal": 29,
+    "higher": 6
+   },
+   "wall_seconds": {
+    "cells": 36,
+    "mean_full": 23.026,
+    "mean_listval": 25.697,
+    "mean_diff": 2.671,
+    "median_diff": 0.07499999999999973,
+    "lower": 16,
+    "equal": 1,
+    "higher": 19
+   },
+   "supported": {
+    "cells": 36,
+    "mean_full": 0.889,
+    "mean_listval": 0.75,
+    "mean_diff": -0.139,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 31,
+    "higher": 0
+   },
+   "exact": {
+    "cells": 36,
+    "mean_full": 0.889,
+    "mean_listval": 0.889,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 1,
+    "equal": 34,
+    "higher": 1
+   },
+   "rewrite_supported": {
+    "cells": 36,
+    "mean_full": 0.889,
+    "mean_listval": 0.75,
+    "mean_diff": -0.139,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 31,
+    "higher": 0
+   },
+   "no_answer": {
+    "cells": 36,
+    "mean_full": 0,
+    "mean_listval": 0,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 0,
+    "equal": 36,
+    "higher": 0
+   }
+  },
+  "qwen3.5:9b": {
+   "param_get_calls": {
+    "cells": 36,
+    "mean_full": 1.306,
+    "mean_listval": 1.194,
+    "mean_diff": -0.111,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 33,
+    "higher": 1
+   },
+   "requests": {
+    "cells": 36,
+    "mean_full": 4.028,
+    "mean_listval": 4.028,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 32,
+    "higher": 2
+   },
+   "input_tokens": {
+    "cells": 36,
+    "mean_full": 10673.917,
+    "mean_listval": 10741.194,
+    "mean_diff": 67.278,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 31,
+    "higher": 3
+   },
+   "output_tokens": {
+    "cells": 36,
+    "mean_full": 441.611,
+    "mean_listval": 446.139,
+    "mean_diff": 4.528,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 31,
+    "higher": 3
+   },
+   "native_ops": {
+    "cells": 36,
+    "mean_full": 4.694,
+    "mean_listval": 5.667,
+    "mean_diff": 0.972,
+    "median_diff": 0.0,
+    "lower": 0,
+    "equal": 31,
+    "higher": 5
+   },
+   "wall_seconds": {
+    "cells": 36,
+    "mean_full": 38.681,
+    "mean_listval": 41.031,
+    "mean_diff": 2.35,
+    "median_diff": -0.13000000000000078,
+    "lower": 18,
+    "equal": 1,
+    "higher": 17
+   },
+   "supported": {
+    "cells": 36,
+    "mean_full": 1,
+    "mean_listval": 0.944,
+    "mean_diff": -0.056,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 34,
+    "higher": 0
+   },
+   "exact": {
+    "cells": 36,
+    "mean_full": 1,
+    "mean_listval": 1,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 0,
+    "equal": 36,
+    "higher": 0
+   },
+   "rewrite_supported": {
+    "cells": 36,
+    "mean_full": 1,
+    "mean_listval": 0.944,
+    "mean_diff": -0.056,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 34,
+    "higher": 0
+   },
+   "no_answer": {
+    "cells": 36,
+    "mean_full": 0,
+    "mean_listval": 0,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 0,
+    "equal": 36,
+    "higher": 0
+   }
+  },
+  "gpt-oss:20b": {
+   "param_get_calls": {
+    "cells": 36,
+    "mean_full": 1.194,
+    "mean_listval": 1.389,
+    "mean_diff": 0.194,
+    "median_diff": 0.0,
+    "lower": 1,
+    "equal": 31,
+    "higher": 4
+   },
+   "requests": {
+    "cells": 36,
+    "mean_full": 4.167,
+    "mean_listval": 4.694,
+    "mean_diff": 0.528,
+    "median_diff": 0.0,
+    "lower": 4,
+    "equal": 20,
+    "higher": 12
+   },
+   "input_tokens": {
+    "cells": 36,
+    "mean_full": 7313.083,
+    "mean_listval": 8305.417,
+    "mean_diff": 992.333,
+    "median_diff": 0.0,
+    "lower": 11,
+    "equal": 11,
+    "higher": 14
+   },
+   "output_tokens": {
+    "cells": 36,
+    "mean_full": 689.056,
+    "mean_listval": 700.417,
+    "mean_diff": 11.361,
+    "median_diff": 5.0,
+    "lower": 17,
+    "equal": 1,
+    "higher": 18
+   },
+   "native_ops": {
+    "cells": 36,
+    "mean_full": 3.861,
+    "mean_listval": 3.417,
+    "mean_diff": -0.444,
+    "median_diff": 0.0,
+    "lower": 4,
+    "equal": 23,
+    "higher": 9
+   },
+   "wall_seconds": {
+    "cells": 36,
+    "mean_full": 37.15,
+    "mean_listval": 37.502,
+    "mean_diff": 0.352,
+    "median_diff": -2.0600000000000005,
+    "lower": 22,
+    "equal": 0,
+    "higher": 14
+   },
+   "supported": {
+    "cells": 36,
+    "mean_full": 0.889,
+    "mean_listval": 0.833,
+    "mean_diff": -0.056,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 28,
+    "higher": 3
+   },
+   "exact": {
+    "cells": 36,
+    "mean_full": 0.889,
+    "mean_listval": 0.861,
+    "mean_diff": -0.028,
+    "median_diff": 0.0,
+    "lower": 4,
+    "equal": 29,
+    "higher": 3
+   },
+   "rewrite_supported": {
+    "cells": 36,
+    "mean_full": 0.889,
+    "mean_listval": 0.889,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 3,
+    "equal": 30,
+    "higher": 3
+   },
+   "no_answer": {
+    "cells": 36,
+    "mean_full": 0.056,
+    "mean_listval": 0.083,
+    "mean_diff": 0.028,
+    "median_diff": 0.0,
+    "lower": 1,
+    "equal": 33,
+    "higher": 2
+   }
+  },
+  "bonsai-2:4b": {
+   "param_get_calls": {
+    "cells": 36,
+    "mean_full": 1.5,
+    "mean_listval": 0.944,
+    "mean_diff": -0.556,
+    "median_diff": 0.0,
+    "lower": 9,
+    "equal": 26,
+    "higher": 1
+   },
+   "requests": {
+    "cells": 36,
+    "mean_full": 12.472,
+    "mean_listval": 11.611,
+    "mean_diff": -0.861,
+    "median_diff": 0.0,
+    "lower": 9,
+    "equal": 27,
+    "higher": 0
+   },
+   "input_tokens": {
+    "cells": 36,
+    "mean_full": 72159.333,
+    "mean_listval": 66387.917,
+    "mean_diff": -5771.417,
+    "median_diff": 0.0,
+    "lower": 9,
+    "equal": 26,
+    "higher": 1
+   },
+   "output_tokens": {
+    "cells": 36,
+    "mean_full": 570.444,
+    "mean_listval": 543.528,
+    "mean_diff": -26.917,
+    "median_diff": 0.0,
+    "lower": 8,
+    "equal": 26,
+    "higher": 2
+   },
+   "native_ops": {
+    "cells": 36,
+    "mean_full": 11,
+    "mean_listval": 12.861,
+    "mean_diff": 1.861,
+    "median_diff": 0.0,
+    "lower": 0,
+    "equal": 27,
+    "higher": 9
+   },
+   "wall_seconds": {
+    "cells": 36,
+    "mean_full": 18.473,
+    "mean_listval": 24.415,
+    "mean_diff": 5.942,
+    "median_diff": 0.01999999999999824,
+    "lower": 18,
+    "equal": 0,
+    "higher": 18
+   },
+   "supported": {
+    "cells": 36,
+    "mean_full": 0.639,
+    "mean_listval": 0.472,
+    "mean_diff": -0.167,
+    "median_diff": 0.0,
+    "lower": 6,
+    "equal": 30,
+    "higher": 0
+   },
+   "exact": {
+    "cells": 36,
+    "mean_full": 0.639,
+    "mean_listval": 0.639,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 0,
+    "equal": 36,
+    "higher": 0
+   },
+   "rewrite_supported": {
+    "cells": 36,
+    "mean_full": 0.722,
+    "mean_listval": 0.528,
+    "mean_diff": -0.194,
+    "median_diff": 0.0,
+    "lower": 7,
+    "equal": 29,
+    "higher": 0
+   },
+   "no_answer": {
+    "cells": 36,
+    "mean_full": 0.222,
+    "mean_listval": 0.194,
+    "mean_diff": -0.028,
+    "median_diff": 0.0,
+    "lower": 1,
+    "equal": 35,
+    "higher": 0
+   }
+  },
+  "ALL": {
+   "param_get_calls": {
+    "cells": 144,
+    "mean_full": 1.375,
+    "mean_listval": 1.132,
+    "mean_diff": -0.243,
+    "median_diff": 0.0,
+    "lower": 17,
+    "equal": 121,
+    "higher": 6
+   },
+   "requests": {
+    "cells": 144,
+    "mean_full": 6.535,
+    "mean_listval": 6.306,
+    "mean_diff": -0.229,
+    "median_diff": 0.0,
+    "lower": 20,
+    "equal": 109,
+    "higher": 15
+   },
+   "input_tokens": {
+    "cells": 144,
+    "mean_full": 28774.174,
+    "mean_listval": 26222.465,
+    "mean_diff": -2551.708,
+    "median_diff": 0.0,
+    "lower": 27,
+    "equal": 97,
+    "higher": 20
+   },
+   "output_tokens": {
+    "cells": 144,
+    "mean_full": 1011.66,
+    "mean_listval": 998.917,
+    "mean_diff": -12.743,
+    "median_diff": 0.0,
+    "lower": 33,
+    "equal": 87,
+    "higher": 24
+   },
+   "native_ops": {
+    "cells": 144,
+    "mean_full": 6.292,
+    "mean_listval": 7.014,
+    "mean_diff": 0.722,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 110,
+    "higher": 29
+   },
+   "wall_seconds": {
+    "cells": 144,
+    "mean_full": 29.333,
+    "mean_listval": 32.161,
+    "mean_diff": 2.829,
+    "median_diff": -0.05000000000000049,
+    "lower": 74,
+    "equal": 2,
+    "higher": 68
+   },
+   "supported": {
+    "cells": 144,
+    "mean_full": 0.854,
+    "mean_listval": 0.75,
+    "mean_diff": -0.104,
+    "median_diff": 0.0,
+    "lower": 18,
+    "equal": 123,
+    "higher": 3
+   },
+   "exact": {
+    "cells": 144,
+    "mean_full": 0.854,
+    "mean_listval": 0.847,
+    "mean_diff": -0.007,
+    "median_diff": 0.0,
+    "lower": 5,
+    "equal": 135,
+    "higher": 4
+   },
+   "rewrite_supported": {
+    "cells": 144,
+    "mean_full": 0.875,
+    "mean_listval": 0.778,
+    "mean_diff": -0.097,
+    "median_diff": 0.0,
+    "lower": 17,
+    "equal": 124,
+    "higher": 3
+   },
+   "no_answer": {
+    "cells": 144,
+    "mean_full": 0.069,
+    "mean_listval": 0.069,
+    "mean_diff": 0,
+    "median_diff": 0.0,
+    "lower": 2,
+    "equal": 140,
+    "higher": 2
+   }
+  }
+ },
+ "harm": {
+  "h1_supported_drop_gt3": true,
+  "h1_rewrite_column": true,
+  "h2_pre_change_value_cases": []
+ },
+ "request_lower_models": [
+  "lfm3:1.7b",
+  "bonsai-2:4b"
+ ],
+ "noise_reference": {
+  "lfm3:1.7b": {
+   "lossmap_requests_per_episode": 6.514,
+   "lossmap_supported_rate": 0.806,
+   "replication_requests_per_episode": 4.778,
+   "replication_supported_rate": 0.833,
+   "this_run_full_requests_per_episode": 5.472
+  },
+  "qwen3.5:9b": {
+   "lossmap_requests_per_episode": 4,
+   "lossmap_supported_rate": 0.972,
+   "replication_requests_per_episode": 4,
+   "replication_supported_rate": 1,
+   "this_run_full_requests_per_episode": 4.028
+  },
+  "gpt-oss:20b": {
+   "lossmap_requests_per_episode": 4.486,
+   "lossmap_supported_rate": 0.931,
+   "replication_requests_per_episode": 4.444,
+   "replication_supported_rate": 1,
+   "this_run_full_requests_per_episode": 4.167
+  },
+  "bonsai-2:4b": {
+   "lossmap_requests_per_episode": 7.986,
+   "lossmap_supported_rate": 0.667,
+   "replication_requests_per_episode": 9.139,
+   "replication_supported_rate": 0.639,
+   "this_run_full_requests_per_episode": 12.472
+  }
+ },
+ "class": "C",
+ "listval_exposure": {
+  "inline_lists": 58,
+  "shown_params": 199,
+  "over_cap": 0,
+  "unreadable": 2,
+  "full_arm_inline": 0
+ },
+ "aborts": {
+  "ResponseError('error parsing tool call: raw=\\'We need to find node providing service. We have many nodes; we can call ros2_node_info for each. We should check each node\\'s service servers list for /plant32/cedar_reset. We\\'ll iterate over nodes list. Let\\'s list nodes again: from earlier list: \\n\"/plant32/anvil\", \"/plant32/beacon\", \"/plant32/dune\", \"/plant32/elm\", \"/plant32/gantry\", \"/plant32/jetty\", \"/plant32/juniper\", \"/plant32/lattice\", \"/plant32/lumen\", \"/plant32/mantle\", \"/plant32/oasis\", \"/plant32/quartz\", \"/plant32/quill\", \"/plant32/sable\", \"/plant32/wharf\", \"/plant32/xenon\", \"/plant32/yarrow\", \"/plant32/yonder\", \"/plant32/zephyr\".\\n\\nWe need to call ros2_node_info for each. Let\\'s do a loop.{\"nodes\":[\"/plant32/dune\"]}\\', err=invalid character \\'W\\' looking for beginning of value')": 1
+ }
+}

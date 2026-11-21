@@ -1,0 +1,321 @@
+{
+ "protocol_sha256": "309308b659bca27490425a97b068f5a1e4616ef218f252bcdf9f218202471166",
+ "phase": "full",
+ "episodes": 240,
+ "overall": {
+  "FULL": {
+   "episodes": 80,
+   "supported": 69,
+   "requests": 486,
+   "input_tokens": 1757121,
+   "output_tokens": 85563,
+   "endings": {
+    "final_answer": 74,
+    "none": 2,
+    "text": 4
+   },
+   "supported_by_ending": {
+    "final_answer": 67,
+    "text": 2,
+    "none": 0
+   },
+   "finish_invalid": 0,
+   "tool_not_offered": 0,
+   "capped_or_aborted": 0
+  },
+  "TOOL_ONLY": {
+   "episodes": 80,
+   "supported": 69,
+   "requests": 491,
+   "input_tokens": 1704947,
+   "output_tokens": 107811,
+   "endings": {
+    "final_answer": 60,
+    "text": 16,
+    "none": 4
+   },
+   "supported_by_ending": {
+    "final_answer": 54,
+    "text": 15,
+    "none": 0
+   },
+   "finish_invalid": 0,
+   "tool_not_offered": 0,
+   "capped_or_aborted": 1
+  },
+  "LINE_JSON": {
+   "episodes": 80,
+   "supported": 62,
+   "requests": 603,
+   "input_tokens": 2391949,
+   "output_tokens": 100155,
+   "endings": {
+    "text": 74,
+    "none": 6
+   },
+   "supported_by_ending": {
+    "final_answer": 0,
+    "text": 62,
+    "none": 0
+   },
+   "finish_invalid": 0,
+   "tool_not_offered": 0,
+   "capped_or_aborted": 0
+  }
+ },
+ "by_model": {
+  "FULL": {
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 15,
+    "requests": 182,
+    "input_tokens": 699193,
+    "output_tokens": 11296,
+    "endings": {
+     "final_answer": 19,
+     "none": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 15,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 16,
+    "requests": 122,
+    "input_tokens": 627787,
+    "output_tokens": 46798,
+    "endings": {
+     "final_answer": 18,
+     "none": 1,
+     "text": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 16,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 20,
+    "requests": 85,
+    "input_tokens": 242456,
+    "output_tokens": 9452,
+    "endings": {
+     "final_answer": 20
+    },
+    "supported_by_ending": {
+     "final_answer": 20,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 18,
+    "requests": 97,
+    "input_tokens": 187685,
+    "output_tokens": 18017,
+    "endings": {
+     "final_answer": 17,
+     "text": 3
+    },
+    "supported_by_ending": {
+     "final_answer": 16,
+     "text": 2,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   }
+  },
+  "TOOL_ONLY": {
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 15,
+    "requests": 177,
+    "input_tokens": 651373,
+    "output_tokens": 22275,
+    "endings": {
+     "final_answer": 15,
+     "none": 2,
+     "text": 3
+    },
+    "supported_by_ending": {
+     "final_answer": 13,
+     "text": 2,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 16,
+    "requests": 139,
+    "input_tokens": 673488,
+    "output_tokens": 60108,
+    "endings": {
+     "final_answer": 19,
+     "text": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 15,
+     "text": 1,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 20,
+    "requests": 85,
+    "input_tokens": 225904,
+    "output_tokens": 9351,
+    "endings": {
+     "final_answer": 20
+    },
+    "supported_by_ending": {
+     "final_answer": 20,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 18,
+    "requests": 90,
+    "input_tokens": 154182,
+    "output_tokens": 16077,
+    "endings": {
+     "final_answer": 6,
+     "text": 12,
+     "none": 2
+    },
+    "supported_by_ending": {
+     "final_answer": 6,
+     "text": 12,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 1
+   }
+  },
+  "LINE_JSON": {
+   "bonsai-2:4b": {
+    "episodes": 20,
+    "supported": 8,
+    "requests": 289,
+    "input_tokens": 1433867,
+    "output_tokens": 15167,
+    "endings": {
+     "text": 15,
+     "none": 5
+    },
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 8,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "lfm3:1.7b": {
+    "episodes": 20,
+    "supported": 16,
+    "requests": 122,
+    "input_tokens": 516755,
+    "output_tokens": 60766,
+    "endings": {
+     "text": 19,
+     "none": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 16,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 20,
+    "supported": 18,
+    "requests": 89,
+    "input_tokens": 245723,
+    "output_tokens": 6305,
+    "endings": {
+     "text": 20
+    },
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 18,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 20,
+    "supported": 20,
+    "requests": 103,
+    "input_tokens": 195604,
+    "output_tokens": 17917,
+    "endings": {
+     "text": 20
+    },
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 20,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   }
+  }
+ },
+ "paired": {
+  "TOOL_ONLY": {
+   "cells": 80,
+   "both": 63,
+   "FULL_only": 6,
+   "other_only": 6,
+   "neither": 5
+  },
+  "LINE_JSON": {
+   "cells": 80,
+   "both": 58,
+   "FULL_only": 11,
+   "other_only": 4,
+   "neither": 7
+  }
+ },
+ "d_tool": 0,
+ "d_line": 7,
+ "reading_rule_case": 1,
+ "reading_rule_text": "the tool is sufficient and the prompt-only route loses cells"
+}

@@ -1,0 +1,70 @@
+{
+ "frozen_at": "2026-11-19T02:01:25Z",
+ "protocol_sha256_stated": "0e9fbdf6dc499a61aa1ec1285a8824d240cfd54de26f8b514697cb7e8a9d49a5",
+ "git_head": "e0e5c3c8916e6f38768c3c32fe456b097ef1af92",
+ "note": "research/ is git-excluded in this checkout; provenance is by the file hashes below. scorer_v2.py must equal c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9.",
+ "files": {
+  "PROTOCOL.md": "0e9fbdf6dc499a61aa1ec1285a8824d240cfd54de26f8b514697cb7e8a9d49a5",
+  "PROTOCOL_R0.md": "4f8781316f688d49607d21518b5d96cd9292b08fcff94fd7900150cb3a0a017d",
+  "FEASIBILITY.md": "5e85ab48721237557cdd122cd8f32922e5405d4396483971005060fc1156a673",
+  "think_arm.py": "80faa2018995c60b943ee5dd8205220fb29f4c906aecf304fb30aa62a13720ea",
+  "run_think.py": "d86eb0455dfb94efc3f1fba1043ed3fb82062a59b51c29b8ff0fcac116e3a921",
+  "analyze_think.py": "03a9770f284ca15b98e4533768e96d54f297c58112104f1ed939e1f4443c9048",
+  "smoke_check.py": "029b8f12e1bd6f2d0fa2f0975587d01f4480b7e18ae97f19c9fba9c4a2e99f47",
+  "think_probe.py": "67ed5b5daa7da68c5a7691763e9c21d88302ee196c91faae9254c5c82decf34d",
+  "tests/test_think_arm.py": "c87410519186fcd10d0620aa6dca7d8b2936299d7549de2587b8394948a1fa24",
+  "tests/test_analyze_think.py": "a752a0ae1d1ad1673d1ca7071a97ebd6346fe02ada2106c34750ef7c8a5ad2d7",
+  "count_candidates.py": "e188474b6dea860bb0dacc96057aaf9581a3291882034217a3328e199cecea41",
+  "harness.py (base arm C1)": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "run_round2.py (OracleWithRetry, amendment 4)": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "stage3_fixture.py": "17026be69505643705191788d17c16869a8d7a079f64f438cca1b12bc5e857ad",
+  "stage3_graph.json": "0a2c345a60c56b96343e3bf0e6d05f3ebf5356d7c2da98a34c13ba9e57352678",
+  "stage3_node.py": "9656bc559f204330d36e3a7c61e27bc6300041075f973329e9e1f7b6d587dedd",
+  "stage3_tasks.json": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+  "e1h_fixture.py": "344da5db4081d7937bdb061328a9273760532614710ecabfd70809306ac1ef7d",
+  "e1h_graph.json": "425bd4938b3eba6acb9172d85cdf768d664901e86f06327cec86566597041ef1",
+  "e1h_node.py": "535ce650843c745575f13b2db5d1f14253d8bdc63f1099183f1de71ae5ab5fe1",
+  "e1h_tasks.json": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+  "menu_run_study.py (guarded_native)": "dabab0fdd450ee3a83b0f6dd2392c9103f2b9974273f110b408ef33b9b88f0c1",
+  "uv.lock": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d"
+ },
+ "manifest": {
+  "master_seed": 20261125,
+  "cells": 240,
+  "sha256": "e596640895d37801baa85c64249a94d701016527e31263729d71e5f5346c2f70",
+  "sessions": {
+   "lfm3_1.7b-stage3": 24,
+   "lfm3_1.7b-e1h": 36,
+   "qwen3.5_9b-stage3": 24,
+   "qwen3.5_9b-e1h": 36,
+   "gpt-oss_20b-stage3": 24,
+   "gpt-oss_20b-e1h": 36,
+   "bonsai-2_4b-stage3": 24,
+   "bonsai-2_4b-e1h": 36
+  }
+ },
+ "smoke_manifest": {
+  "cells": 12,
+  "sha256": "335322b0da14496f8b458968e27de97df2644510a466fb624aca03dd69ed972a"
+ },
+ "model_digests": {
+  "lfm3:1.7b": "b36a103fe2f8fbe9df2ceec88b9cfdf842dc04aaabe2b4677d1acf8e16570b5d",
+  "bonsai-2:4b": "93edd652c9326fb1e782c1f54e997ce6a46e2351c763777db0c63b8a51cf6bec",
+  "gpt-oss:20b": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+  "qwen3.5:9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+ },
+ "settings": {
+  "temperature": 0.7,
+  "think": false,
+  "num_ctx": 65536,
+  "num_predict": 4096,
+  "max_iterations": 40,
+  "http_timeout_s": 240,
+  "episode_timeout_s": 1800,
+  "session_wall_limit_h": 8,
+  "prompt": "pilot A1 prompt + C1 finish line (both arms)"
+ },
+ "tests": "27 focused tests pass (thinking_escalation_20261119/tests)"
+}

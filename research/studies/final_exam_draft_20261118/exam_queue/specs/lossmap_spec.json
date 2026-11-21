@@ -1,0 +1,48 @@
+{
+ "name": "lossmap",
+ "master_seed": 20261120,
+ "temperature": 0.7,
+ "_status": "Loss-map measurement of the current method (FULL arm only), 18 dev tasks x 4 models x new seeds 5-8 = 288 episodes. Label: measurement for the idea search, no mechanism under test. Cells are the frozen plan of loss_map_20261120/run_lossmap.py (plan_for lossmap); the planner refuses to run if its hash differs from the one below.",
+ "models": [
+  "lfm3:1.7b",
+  "qwen3.5:9b",
+  "gpt-oss:20b",
+  "bonsai-2:4b"
+ ],
+ "pools": {
+  "dev": {
+   "tasks": {}
+  }
+ },
+ "tiers": [
+  {
+   "name": "lossmap",
+   "systems": [
+    "LM-FULL"
+   ],
+   "pools": [
+    "dev"
+   ],
+   "seeds": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "frozen_plan": {
+    "phase": "lossmap",
+    "system_prefix": "LM-",
+    "arms_probe": "FULL",
+    "pool": "dev",
+    "manifest_sha256": "f477e3d7dfde5b4ac28cf0d8a98e303f8c1408f789cf407b7c2fa1d0c2f9800a"
+   }
+  }
+ ],
+ "queue": {
+  "block_size": 72,
+  "heartbeat_seconds": 30,
+  "min_free_gb": 20,
+  "quarantine_after": 3,
+  "episode_timeout_seconds": 1800
+ }
+}

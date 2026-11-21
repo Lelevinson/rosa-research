@@ -1,0 +1,50 @@
+{
+ "frozen_at": "2026-11-17T14:35:37Z",
+ "design_sha256_stated": "1e5d05213b3982a15ef65dfb8d1ac916dd8a403ed68ebeb5cbcf51230e8874a0",
+ "scorer_sha256_stated": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+ "git_head": "dc57e07290ab3a20cd89cf8f0638c201686ebc23",
+ "note": "research/ is git-excluded in this checkout; provenance is by file hashes.",
+ "files": {
+  "design": "1e5d05213b3982a15ef65dfb8d1ac916dd8a403ed68ebeb5cbcf51230e8874a0",
+  "PROTOCOL_NOTE.md": "cd440633d5ed76589cc46020512f9cf74bbb6ce63b2203d9ce4fa0796c4d1867",
+  "namefix_rule.py": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+  "namefix_scoring.py": "753ddf1dc3f0fe462c6aa189f81e7dc614fab1fbae8653e4acfc52ef9e340fd5",
+  "namefix_arm.py": "a5be156bd9352258ab12c8d879ea51934a1cff8213fd10c6d3a7a252692dddd4",
+  "run_namefix.py": "74305351dde21bfee121432f08f052f7db963b6a3146612c86674f28e6238f52",
+  "namefix_fixture.py": "e2898df6804355af673234f980a67449c16d0e6f00b57a88afcb16f694efed94",
+  "namefix_node.py": "921f91b364d8425e4941e9335dab7a72a1101fad23e5144cb4660c55ef2f4775",
+  "namefix_build.py": "78d4ee76b4f8ab844444950d0962b752c0335e42a8f2f0c4bbf4069b624e5c37",
+  "namefix_graph.json": "7c1fa8a4ba3db7c1e9d88d54a8939c3be93bbdf79253214699b69b9eae4ebf6a",
+  "namefix_tasks.json": "c77e7832140844e59680fc84cbb23efbb11f39a6c867a00f8eac9b25e346067a",
+  "tests/test_namefix.py": "70965f49f2f962265587b1db3333c733de6be9b2936e03509f6560bd4f03475b",
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "harness.py": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "round1_harness.py": "ba3470238365cfe1fa04dbc82551688fdea95490115e172dc09592250773205a",
+  "answer_gate.py": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+  "run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "run_round2.py (OracleWithRetry)": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+  "uv.lock": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d"
+ },
+ "manifest": {
+  "master_seed": 20261122,
+  "episodes": 64,
+  "sha256": "13053fa8cb3115b76d38c20a805cbb63676c6f69238a9642b3132d1093d7e5de",
+  "sessions": {
+   "lfm3_1.7b-namefix": 16,
+   "qwen3.5_9b-namefix": 16,
+   "gpt-oss_20b-namefix": 16,
+   "bonsai-2_4b-namefix": 16
+  }
+ },
+ "smoke_manifest": {
+  "episodes": 4,
+  "sha256": "e2cef470cc437a08924b906e525c63809ebb612b3f2d4802ddfec26f76c2f79a"
+ },
+ "model_digests": {
+  "lfm3:1.7b": "b36a103fe2f8fbe9df2ceec88b9cfdf842dc04aaabe2b4677d1acf8e16570b5d",
+  "bonsai-2:4b": "93edd652c9326fb1e782c1f54e997ce6a46e2351c763777db0c63b8a51cf6bec",
+  "gpt-oss:20b": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+  "qwen3.5:9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+ },
+ "tests": "11 frozen unit tests pass (tests/test_namefix.py)"
+}

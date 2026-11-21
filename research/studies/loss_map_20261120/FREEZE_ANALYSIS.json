@@ -1,0 +1,7 @@
+{
+ "frozen_at": "2026-11-20T00:24:28+0800",
+ "note": "classify.py frozen on development traces only, before any measurement trace was opened (queue status counts only) (notes file re-hashed after correcting the time stamp in its title; classify.py unchanged)",
+ "classify_py_sha256": "7c16035b80c7219709ba7e67e45be1f7573ed743dffff8fcd8debf7e649dcd93",
+ "classifier_notes_sha256": "18a6adb075fadb82a5f57e8ba67c768a553501a97b29ff24c943860b3dbd5353",
+ "protocol_sha256": "3581c414b692b8789c475d43012b3c9a9e5ca7936b0cd858417c883a1d201fb0"
+}

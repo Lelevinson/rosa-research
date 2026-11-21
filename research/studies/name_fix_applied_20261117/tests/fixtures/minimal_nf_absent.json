@@ -1,0 +1,45 @@
+{
+ "task": "Is the node /flint/umbra running? If it is, return JSON with keys node, running (true) and rate (its integer parameter rate). If it is not running, return JSON with keys node (the name you checked, exactly as given) and running (false).",
+ "log": [
+  {
+   "stage": 1,
+   "tool": "ros2_node_list",
+   "args": {},
+   "result": {
+    "nodes": [
+     "/nf/agate/easel",
+     "/nf/agate/xylem",
+     "/nf/agate/yeoman",
+     "/nf/cipher/anchor",
+     "/nf/cipher/mortar",
+     "/nf/cipher/obsidian",
+     "/nf/cipher/spindle",
+     "/nf/dynamo/eclipse",
+     "/nf/dynamo/nozzle",
+     "/nf/flint/umbra",
+     "/nf/ivory/eclipse",
+     "/nf/ivory/nozzle",
+     "/nf/lantern/bobbin",
+     "/nf/lantern/jasper",
+     "/nf/lantern/lathe",
+     "/nf/lantern/talon",
+     "/nf/lantern/zenith",
+     "/nf/misc/kiln",
+     "/nf/misc/mallet",
+     "/nf/misc/nectar"
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "node": "/flint/umbra",
+  "running": false
+ },
+ "scored": {
+  "exact": true,
+  "issues": [],
+  "support_missing": [],
+  "supported_complete": true,
+  "scorer": "scorer-v2.0"
+ }
+}

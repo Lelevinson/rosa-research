@@ -1,0 +1,73 @@
+{
+ "task": "Two nodes named 'eclipse' are running, in different namespaces. Find the one whose string parameter mode is 'fast'. Return JSON with keys node (its full name) and limit (its integer parameter limit).",
+ "log": [
+  {
+   "stage": 1,
+   "tool": "ros2_node_list",
+   "args": {
+    "pattern": "/eclipse$"
+   },
+   "result": {
+    "nodes": [
+     "/nf/dynamo/eclipse",
+     "/nf/ivory/eclipse"
+    ]
+   }
+  },
+  {
+   "stage": 2,
+   "tool": "ros2_param_get",
+   "args": {
+    "node_name": "/nf/dynamo/eclipse",
+    "param_name": "mode"
+   },
+   "result": {
+    "mode": "String value is: fast\n"
+   }
+  },
+  {
+   "stage": 2,
+   "tool": "ros2_param_get",
+   "args": {
+    "node_name": "/nf/dynamo/eclipse",
+    "param_name": "limit"
+   },
+   "result": {
+    "limit": "Integer value is: 901\n"
+   }
+  },
+  {
+   "stage": 2,
+   "tool": "ros2_param_get",
+   "args": {
+    "node_name": "/nf/ivory/eclipse",
+    "param_name": "mode"
+   },
+   "result": {
+    "mode": "String value is: slow\n"
+   }
+  },
+  {
+   "stage": 2,
+   "tool": "ros2_param_get",
+   "args": {
+    "node_name": "/nf/ivory/eclipse",
+    "param_name": "limit"
+   },
+   "result": {
+    "limit": "Integer value is: 578\n"
+   }
+  }
+ ],
+ "answer": {
+  "node": "/nf/dynamo/eclipse",
+  "limit": 901
+ },
+ "scored": {
+  "exact": true,
+  "issues": [],
+  "support_missing": [],
+  "supported_complete": true,
+  "scorer": "scorer-v2.0"
+ }
+}

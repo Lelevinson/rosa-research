@@ -1,0 +1,11 @@
+[WARN] [1795000799.919753788] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795000799.919808095] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+19:19:59 episode A2 ON
+{'task': 'A2', 'arm': 'ON', 'ending': 'final_answer', 'requests': 3, 'seconds': 30.2, 'true_heading': -0.992, 'reported': -0.992, 'success_judge': True, 'executor_final_state': 'TERMINAL', 'turtle_still': True}
+19:20:32 episode A1 OFF
+{'task': 'A1', 'arm': 'OFF', 'ending': 'final_answer', 'requests': 3, 'seconds': 12.7, 'true_heading': 1.488, 'reported': 1.488, 'success_judge': True, 'executor_final_state': 'TERMINAL', 'turtle_still': True}
+19:20:48 episode A2 OFF
+{'task': 'A2', 'arm': 'OFF', 'ending': 'final_answer', 'requests': 4, 'seconds': 20.6, 'true_heading': -0.992, 'reported': -0.992, 'success_judge': True, 'executor_final_state': 'TERMINAL', 'turtle_still': True}
+19:21:11 episode A1 ON
+{'task': 'A1', 'arm': 'ON', 'ending': 'final_answer', 'requests': 3, 'seconds': 10.3, 'true_heading': 1.488, 'reported': 1.488, 'success_judge': True, 'executor_final_state': 'TERMINAL', 'turtle_still': True}
+done

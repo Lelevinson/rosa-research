@@ -1,0 +1,280 @@
+{
+ "protocol_sha256": "1ca28d2bd007f460e8244f25a7f9f6c35eff2c165995550d93bc0dcb838604f2",
+ "phase": "full",
+ "episodes": 288,
+ "tables": {
+  "FULL": {
+   "overall": {
+    "episodes": 144,
+    "supported": 127,
+    "requests": 781,
+    "tokens": 3715499,
+    "capped_or_no_answer": 3,
+    "tool_calls": 817,
+    "failed_calls": 104,
+    "not_found_entity_calls": 64,
+    "fires_split_only": 23,
+    "fires_other": 5,
+    "infra_failed": 0
+   },
+   "S1": {
+    "episodes": 24,
+    "supported": 22,
+    "requests": 227,
+    "tokens": 949714,
+    "capped_or_no_answer": 0,
+    "tool_calls": 308,
+    "failed_calls": 42,
+    "not_found_entity_calls": 27,
+    "fires_split_only": 7,
+    "fires_other": 3,
+    "infra_failed": 0
+   },
+   "S2": {
+    "episodes": 64,
+    "supported": 56,
+    "requests": 290,
+    "tokens": 2076539,
+    "capped_or_no_answer": 2,
+    "tool_calls": 256,
+    "failed_calls": 32,
+    "not_found_entity_calls": 23,
+    "fires_split_only": 16,
+    "fires_other": 2,
+    "infra_failed": 0
+   },
+   "S3": {
+    "episodes": 56,
+    "supported": 49,
+    "requests": 264,
+    "tokens": 689246,
+    "capped_or_no_answer": 1,
+    "tool_calls": 253,
+    "failed_calls": 30,
+    "not_found_entity_calls": 14,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S1_S2": {
+    "episodes": 88,
+    "supported": 78,
+    "requests": 517,
+    "tokens": 3026253,
+    "capped_or_no_answer": 2,
+    "tool_calls": 564,
+    "failed_calls": 74,
+    "not_found_entity_calls": 50,
+    "fires_split_only": 23,
+    "fires_other": 5,
+    "infra_failed": 0
+   },
+   "by_model": {
+    "bonsai-2:4b": {
+     "episodes": 36,
+     "supported": 24,
+     "requests": 285,
+     "tokens": 2208706,
+     "capped_or_no_answer": 2,
+     "tool_calls": 271,
+     "failed_calls": 46,
+     "not_found_entity_calls": 29,
+     "fires_split_only": 8,
+     "fires_other": 5,
+     "infra_failed": 0
+    },
+    "gpt-oss:20b": {
+     "episodes": 36,
+     "supported": 35,
+     "requests": 179,
+     "tokens": 388208,
+     "capped_or_no_answer": 0,
+     "tool_calls": 166,
+     "failed_calls": 24,
+     "not_found_entity_calls": 6,
+     "fires_split_only": 4,
+     "fires_other": 0,
+     "infra_failed": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 36,
+     "supported": 33,
+     "requests": 178,
+     "tokens": 734865,
+     "capped_or_no_answer": 1,
+     "tool_calls": 214,
+     "failed_calls": 27,
+     "not_found_entity_calls": 22,
+     "fires_split_only": 9,
+     "fires_other": 0,
+     "infra_failed": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 36,
+     "supported": 35,
+     "requests": 139,
+     "tokens": 383720,
+     "capped_or_no_answer": 0,
+     "tool_calls": 166,
+     "failed_calls": 7,
+     "not_found_entity_calls": 7,
+     "fires_split_only": 2,
+     "fires_other": 0,
+     "infra_failed": 0
+    }
+   }
+  },
+  "RENDER": {
+   "overall": {
+    "episodes": 144,
+    "supported": 125,
+    "requests": 792,
+    "tokens": 3235116,
+    "capped_or_no_answer": 3,
+    "tool_calls": 838,
+    "failed_calls": 97,
+    "not_found_entity_calls": 40,
+    "fires_split_only": 0,
+    "fires_other": 1,
+    "infra_failed": 0
+   },
+   "S1": {
+    "episodes": 24,
+    "supported": 19,
+    "requests": 257,
+    "tokens": 1506692,
+    "capped_or_no_answer": 1,
+    "tool_calls": 363,
+    "failed_calls": 38,
+    "not_found_entity_calls": 9,
+    "fires_split_only": 0,
+    "fires_other": 1,
+    "infra_failed": 0
+   },
+   "S2": {
+    "episodes": 64,
+    "supported": 57,
+    "requests": 253,
+    "tokens": 806067,
+    "capped_or_no_answer": 1,
+    "tool_calls": 208,
+    "failed_calls": 13,
+    "not_found_entity_calls": 5,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S3": {
+    "episodes": 56,
+    "supported": 49,
+    "requests": 282,
+    "tokens": 922357,
+    "capped_or_no_answer": 1,
+    "tool_calls": 267,
+    "failed_calls": 46,
+    "not_found_entity_calls": 26,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S1_S2": {
+    "episodes": 88,
+    "supported": 76,
+    "requests": 510,
+    "tokens": 2312759,
+    "capped_or_no_answer": 2,
+    "tool_calls": 571,
+    "failed_calls": 51,
+    "not_found_entity_calls": 14,
+    "fires_split_only": 0,
+    "fires_other": 1,
+    "infra_failed": 0
+   },
+   "by_model": {
+    "bonsai-2:4b": {
+     "episodes": 36,
+     "supported": 24,
+     "requests": 323,
+     "tokens": 1642148,
+     "capped_or_no_answer": 3,
+     "tool_calls": 308,
+     "failed_calls": 45,
+     "not_found_entity_calls": 7,
+     "fires_split_only": 0,
+     "fires_other": 1,
+     "infra_failed": 0
+    },
+    "gpt-oss:20b": {
+     "episodes": 36,
+     "supported": 35,
+     "requests": 151,
+     "tokens": 297439,
+     "capped_or_no_answer": 0,
+     "tool_calls": 175,
+     "failed_calls": 17,
+     "not_found_entity_calls": 1,
+     "fires_split_only": 0,
+     "fires_other": 0,
+     "infra_failed": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 36,
+     "supported": 30,
+     "requests": 186,
+     "tokens": 943402,
+     "capped_or_no_answer": 0,
+     "tool_calls": 197,
+     "failed_calls": 30,
+     "not_found_entity_calls": 27,
+     "fires_split_only": 0,
+     "fires_other": 0,
+     "infra_failed": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 36,
+     "supported": 36,
+     "requests": 132,
+     "tokens": 352127,
+     "capped_or_no_answer": 0,
+     "tool_calls": 158,
+     "failed_calls": 5,
+     "not_found_entity_calls": 5,
+     "fires_split_only": 0,
+     "fires_other": 0,
+     "infra_failed": 0
+    }
+   }
+  }
+ },
+ "paired": {
+  "both": 121,
+  "FULL_only": 6,
+  "neither": 13,
+  "RENDER_only": 4
+ },
+ "fire_request_distance": {
+  "FULL": {
+   "n": 22,
+   "median": 2.0,
+   "mean": 2.55
+  },
+  "RENDER": {
+   "n": 1,
+   "median": 1,
+   "mean": 1
+  }
+ },
+ "supported_difference_by_model": {
+  "bonsai-2:4b": 0,
+  "gpt-oss:20b": 0,
+  "lfm3:1.7b": -3,
+  "qwen3.5:9b": 1
+ },
+ "decision": {
+  "split_only_drop": 1.0,
+  "other_drop": 0.8,
+  "mechanism_signal": false,
+  "harm_flags": [],
+  "klass": "B"
+ }
+}

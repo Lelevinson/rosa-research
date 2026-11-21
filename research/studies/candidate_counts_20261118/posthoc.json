@@ -1,0 +1,160 @@
+{
+ "D1_total": 159,
+ "D1_fact_located_in_a_result_text": 95,
+ "D1_fact_not_located_by_text_search": 64,
+ "D1_located_by_model": {
+  "lfm3:1.7b": 57,
+  "gpt-oss:20b": 2,
+  "bonsai-2:4b": 34,
+  "qwen3.5:9b": 2
+ },
+ "D1_located_long": 3,
+ "D1_located_chars_buckets_1000": {
+  "0": 25,
+  "1": 2,
+  "2": 3,
+  "5": 61,
+  "6": 1,
+  "13": 2,
+  "26": 1
+ },
+ "D1_issue_kinds": {
+  ": '' != ''": 137,
+  ": ": 14,
+  ":  != ": 6,
+  ":  ": 1,
+  ":  != ''": 1
+ },
+ "D1_first_issue_examples": [
+  [
+   "/first: '/plant32/quartz' != '/plant32/beacon'",
+   "/second: '/plant32/beacon' != '/plant32/juniper'"
+  ],
+  [
+   "/first: '/plant32/quartz' != '/plant32/beacon'",
+   "/second: '/plant32/beacon' != '/plant32/juniper'"
+  ],
+  [
+   "/node: missing",
+   "/type: missing"
+  ],
+  [
+   "/node: '/plant32/beacon' != '/plant32/wharf'"
+  ],
+  [
+   "/first: '/plant32/quartz' != '/plant32/beacon'",
+   "/second: '/plant32/beacon' != '/plant32/juniper'"
+  ],
+  [
+   "/node: '/e1h/ember/mistral' != '/ember/mistral'",
+   "/running: True != False"
+  ]
+ ],
+ "a_distinct_task_model_pairs": 17,
+ "a_distinct_task_model_pairs_by_model": {
+  "lfm3:1.7b": 6,
+  "bonsai-2:4b": 6,
+  "gpt-oss:20b": 2,
+  "qwen3.5:9b": 3
+ },
+ "a_agree_sum_request_distance": 666,
+ "a_agree_distance_distribution": {
+  "1": 123,
+  "2": 127,
+  "3": 37,
+  "4": 13,
+  "5": 3,
+  "6": 4,
+  "7": 2,
+  "8": 3,
+  "10": 1,
+  "12": 1,
+  "27": 1
+ },
+ "a_tasks_with_fires": {
+  "h4": 203,
+  "u3": 122,
+  "v2": 59,
+  "nf_multi_1": 11,
+  "e1h_amb_1": 8,
+  "p3": 1,
+  "nf_single_1": 1,
+  "nf_multi_2": 1
+ },
+ "a_typed_examples": [
+  [
+   "anvil",
+   "/plant32/anvil"
+  ],
+  [
+   "yarrow",
+   "/plant32/yarrow"
+  ],
+  [
+   "yarrow",
+   "/plant32/yarrow"
+  ],
+  [
+   "yarrow",
+   "/plant32/yarrow"
+  ],
+  [
+   "basalt/sorrel",
+   "/e1h/basalt/sorrel"
+  ],
+  [
+   "cobalt/sorrel",
+   "/e1h/cobalt/sorrel"
+  ]
+ ],
+ "requests_total_by_model": {
+  "lfm3:1.7b": 3122,
+  "ALL": 12614,
+  "qwen3.5:9b": 2314,
+  "gpt-oss:20b": 2375,
+  "bonsai-2:4b": 4803
+ },
+ "repeated_ok_call_by_model": {
+  "lfm3:1.7b": 225,
+  "ALL": 1779,
+  "qwen3.5:9b": 150,
+  "gpt-oss:20b": 102,
+  "bonsai-2:4b": 1302
+ },
+ "repeated_ok_call_same_result_text": {
+  "lfm3:1.7b": 131,
+  "ALL": 1407,
+  "qwen3.5:9b": 61,
+  "gpt-oss:20b": 31,
+  "bonsai-2:4b": 1184
+ },
+ "repeated_ok_call_in_consecutive_units": {
+  "lfm3:1.7b": 25,
+  "ALL": 342,
+  "qwen3.5:9b": 34,
+  "gpt-oss:20b": 19,
+  "bonsai-2:4b": 264
+ },
+ "repeated_ok_call_by_tool": {
+  "ros2_service_info": 363,
+  "ros2_topic_list": 353,
+  "ros2_param_get": 341,
+  "ros2_node_list": 323,
+  "ros2_node_info": 259,
+  "ros2_topic_info": 56,
+  "ros2_service_call": 37,
+  "ros2_param_list": 19,
+  "ros2_service_list": 14,
+  "ros2_param_set": 5,
+  "ros2_topic_echo": 4,
+  "submit_plan": 2,
+  "replan": 1,
+  "roslog_list": 1,
+  "invalid_tool": 1
+ },
+ "repeated_ok_call_examples": [
+  "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/000-p3-C1+H2-lfm3_1.7b-s1/trace.jsonl",
+  "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2/trace.jsonl",
+  "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2/trace.jsonl"
+ ]
+}

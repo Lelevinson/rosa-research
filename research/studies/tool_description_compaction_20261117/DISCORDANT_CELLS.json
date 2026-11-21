@@ -1,0 +1,42 @@
+[
+ {
+  "task": "e1h_abs_1",
+  "model": "bonsai-2:4b",
+  "full": true,
+  "compact": false,
+  "full_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/bonsai-2_4b-e1h/007-e1h_abs_1-FULL-bonsai-2_4b-s1/trace.jsonl",
+  "compact_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/bonsai-2_4b-e1h/004-e1h_abs_1-COMPACT-bonsai-2_4b-s1/trace.jsonl"
+ },
+ {
+  "task": "e1h_abs_1",
+  "model": "gpt-oss:20b",
+  "full": false,
+  "compact": true,
+  "full_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/gpt-oss_20b-e1h/009-e1h_abs_1-FULL-gpt-oss_20b-s1/trace.jsonl",
+  "compact_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/gpt-oss_20b-e1h/011-e1h_abs_1-COMPACT-gpt-oss_20b-s1/trace.jsonl"
+ },
+ {
+  "task": "e1h_chg_2",
+  "model": "bonsai-2:4b",
+  "full": true,
+  "compact": false,
+  "full_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/bonsai-2_4b-e1h/002-e1h_chg_2-FULL-bonsai-2_4b-s1/trace.jsonl",
+  "compact_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/bonsai-2_4b-e1h/010-e1h_chg_2-COMPACT-bonsai-2_4b-s1/trace.jsonl"
+ },
+ {
+  "task": "e1h_chg_2",
+  "model": "lfm3:1.7b",
+  "full": false,
+  "compact": true,
+  "full_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/lfm3_1.7b-e1h/002-e1h_chg_2-FULL-lfm3_1.7b-s1/trace.jsonl",
+  "compact_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/lfm3_1.7b-e1h/008-e1h_chg_2-COMPACT-lfm3_1.7b-s1/trace.jsonl"
+ },
+ {
+  "task": "h4",
+  "model": "gpt-oss:20b",
+  "full": false,
+  "compact": true,
+  "full_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/gpt-oss_20b-stage3/003-h4-FULL-gpt-oss_20b-s1/trace.jsonl",
+  "compact_trace": "research/_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z/gpt-oss_20b-stage3/002-h4-COMPACT-gpt-oss_20b-s1/trace.jsonl"
+ }
+]

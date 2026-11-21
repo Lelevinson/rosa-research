@@ -1,0 +1,37 @@
+{
+ "run": "mini_exam_lab",
+ "machines": [
+  "lab"
+ ],
+ "by_system_model": {
+  "E1|lfm3:1.7b": {
+   "n": 2,
+   "median_s": 21.3,
+   "mean_s": 21.3,
+   "max_s": 25.4,
+   "total_s": 42.6
+  },
+  "E1|qwen3.5:9b": {
+   "n": 2,
+   "median_s": 11.5,
+   "mean_s": 11.5,
+   "max_s": 19.1,
+   "total_s": 23.0
+  },
+  "M|lfm3:1.7b": {
+   "n": 2,
+   "median_s": 12.8,
+   "mean_s": 12.8,
+   "max_s": 22.5,
+   "total_s": 25.7
+  },
+  "M|qwen3.5:9b": {
+   "n": 2,
+   "median_s": 8.8,
+   "mean_s": 8.8,
+   "max_s": 12.2,
+   "total_s": 17.7
+  }
+ },
+ "total_minutes": 1.8
+}

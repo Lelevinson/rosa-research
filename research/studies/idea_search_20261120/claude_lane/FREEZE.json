@@ -1,0 +1,16 @@
+{
+ "frozen_at": "2026-11-20 Asia/Taipei, before size_candidates.py exists",
+ "protocol_sha256": "7c8adb8c045ec8ec1225e6e4b4ba1f86b73aa5339c7f375752cac1e2e5ba79f6",
+ "git_head": "c179fe66925015262b95859a6e4fcc46c940d138",
+ "input_files": {
+  "research/studies/residual_failures_20261115/scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "research/studies/build_round1_20261115/answer_gate.py": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+  "research/studies/name_fix_applied_20261117/namefix_rule.py": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+  "research/studies/candidate_counts_20261118/count_candidates.py": "e188474b6dea860bb0dacc96057aaf9581a3291882034217a3328e199cecea41",
+  "research/studies/offline_replay_20261116/episodes.py": "f564b82e49be2480b66be5bf634ef2f0801a9a9792003a90ba7fa1262d6c9064",
+  "research/studies/loss_map_20261120/labelled_lossmap.jsonl": "7cb546989c02bc493f06255b5a0fd91c2a461c73bd9749bdaf42ccc29be4003e",
+  "research/studies/loss_map_20261120/classify.py": "7c16035b80c7219709ba7e67e45be1f7573ed743dffff8fcd8debf7e649dcd93",
+  "research/studies/name_fix_applied_20261117/LEDGER_DEFINITION.md": "44d3f34547cb714a4d431eccbac915bb16730289f1b8235607e15987b1ca899c"
+ },
+ "note": "scorer v2.0 expected c6b02716...; script size_candidates.py does not exist at freeze time"
+}

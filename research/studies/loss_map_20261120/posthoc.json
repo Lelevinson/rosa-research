@@ -1,0 +1,155 @@
+{
+ "serial_batchable_total": {
+  "lfm3:1.7b": 104,
+  "qwen3.5:9b": 38,
+  "gpt-oss:20b": 93,
+  "bonsai-2:4b": 90
+ },
+ "of_which_retry_of_rejected_call": {
+  "lfm3:1.7b": 4,
+  "gpt-oss:20b": 29,
+  "bonsai-2:4b": 3
+ },
+ "examples": {
+  "lfm3:1.7b": [
+   "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl",
+   "research/_artifacts/exam/lossmap/runs_all/block_0001/014-v2-FULL-lfm3_1.7b-s5/trace.jsonl",
+   "research/_artifacts/exam/lossmap/runs_all/block_0003/021-nf_amb_2-FULL-lfm3_1.7b-s5/trace.jsonl"
+  ],
+  "gpt-oss:20b": [
+   "research/_artifacts/exam/lossmap/runs_all/block_0007/000-h4-FULL-gpt-oss_20b-s8/trace.jsonl",
+   "research/_artifacts/exam/lossmap/runs_all/block_0007/004-v2-FULL-gpt-oss_20b-s7/trace.jsonl",
+   "research/_artifacts/exam/lossmap/runs_all/block_0007/006-v2-FULL-gpt-oss_20b-s6/trace.jsonl"
+  ],
+  "bonsai-2:4b": [
+   "research/_artifacts/exam/lossmap/runs_all/block_0010/005-h4-FULL-bonsai-2_4b-s8/trace.jsonl",
+   "research/_artifacts/exam/lossmap/runs_all/block_0011/006-e1h_chg_2-FULL-bonsai-2_4b-s7/trace.jsonl",
+   "research/_artifacts/exam/lossmap/runs_all/block_0011/023-e1h_abs_1-FULL-bonsai-2_4b-s7/trace.jsonl"
+  ]
+ },
+ "extra": {
+  "excess_in_supported_episodes": 462,
+  "excess_in_unsupported_episodes": 366,
+  "episodes_with_excess_supported": 152,
+  "episodes_supported": 243,
+  "top_10_percent_episodes_share_of_excess": 0.545,
+  "episodes_with_30plus_requests": [
+   [
+    "lfm3:1.7b",
+    "nf_exact",
+    7,
+    40,
+    false
+   ],
+   [
+    "bonsai-2:4b",
+    "v2",
+    5,
+    40,
+    false
+   ],
+   [
+    "bonsai-2:4b",
+    "v2",
+    7,
+    40,
+    false
+   ],
+   [
+    "bonsai-2:4b",
+    "v2",
+    8,
+    40,
+    false
+   ],
+   [
+    "bonsai-2:4b",
+    "nf_single_2",
+    5,
+    40,
+    false
+   ]
+  ],
+  "excess_of_those_episodes": 187,
+  "excess_by_task_top5": [
+   [
+    "v2",
+    166
+   ],
+   [
+    "h4",
+    94
+   ],
+   [
+    "nf_single_2",
+    75
+   ],
+   [
+    "nf_multi_1",
+    72
+   ],
+   [
+    "e1h_chg_2",
+    62
+   ]
+  ],
+  "excess_by_model_task_top6": [
+   [
+    "bonsai-2:4b|v2",
+    112
+   ],
+   [
+    "bonsai-2:4b|e1h_chg_2",
+    53
+   ],
+   [
+    "lfm3:1.7b|nf_exact",
+    49
+   ],
+   [
+    "bonsai-2:4b|nf_single_2",
+    41
+   ],
+   [
+    "bonsai-2:4b|h4",
+    37
+   ],
+   [
+    "bonsai-2:4b|nf_multi_1",
+    37
+   ]
+  ],
+  "wall_seconds_by_model": {
+   "bonsai-2:4b": 1104,
+   "gpt-oss:20b": 2773,
+   "lfm3:1.7b": 1899,
+   "qwen3.5:9b": 2750
+  },
+  "input_tokens_by_model": {
+   "bonsai-2:4b": 1970096,
+   "gpt-oss:20b": 595839,
+   "lfm3:1.7b": 1940781,
+   "qwen3.5:9b": 780409
+  },
+  "input_tokens_in_episodes_with_30plus_requests": 864482,
+  "input_tokens_total": 5287125,
+  "param_list_calls_by_model": {
+   "lfm3:1.7b": 24,
+   "qwen3.5:9b": 37,
+   "gpt-oss:20b": 1,
+   "bonsai-2:4b": 49
+  },
+  "param_list_followed_later_by_param_get_same_node": {
+   "lfm3:1.7b": 21,
+   "qwen3.5:9b": 37,
+   "gpt-oss:20b": 1,
+   "bonsai-2:4b": 48
+  },
+  "requests_that_batch_two_or_more_calls_by_model": {
+   "bonsai-2:4b": 56,
+   "gpt-oss:20b": 9,
+   "lfm3:1.7b": 57,
+   "qwen3.5:9b": 47
+  }
+ }
+}

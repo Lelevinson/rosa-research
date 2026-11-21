@@ -1,0 +1,7 @@
+{"name": "thinking_replA2", "master_seed": 20261125, "temperature": 0.7,
+ "_status": "Thinking escalation study, amendment A2: replication, 18 tasks x 4 models x seeds 3-4 x 3 arms (FULL, ESCALATE, ESCALATE_CAPPED) = 432 episodes. The cells are the study's own frozen plan (run_think.py plan_for replA2); the planner refuses to run if the plan hash differs from FREEZE.json manifest_replA2 (filled in by make_freeze.py).",
+ "models": ["lfm3:1.7b", "qwen3.5:9b", "gpt-oss:20b", "bonsai-2:4b"],
+ "pools": {"dev": {"tasks": {}}},
+ "tiers": [{"name": "replA2", "systems": ["TH-FULL", "TH-ESCALATE", "TH-ESCALATE_CAPPED"], "pools": ["dev"], "seeds": [3, 4],
+            "frozen_plan": {"phase": "replA2", "system_prefix": "TH-", "arms_probe": "FULL", "pool": "dev", "manifest_sha256": "5c6fe2e646b5ab31294b3699e9d20a97edb0d2ebb154ee5e844ac140bbdb529a"}}],
+ "queue": {"block_size": 72, "heartbeat_seconds": 30, "min_free_gb": 20, "quarantine_after": 3, "episode_timeout_seconds": 1800}}

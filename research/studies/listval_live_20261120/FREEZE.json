@@ -1,0 +1,94 @@
+{
+ "frozen_at": "2026-11-20T00:25:35Z",
+ "label": "live development test of one candidate (list results carry values)",
+ "protocol_sha256_stated": "284b52ed027b22f8c83ee316f80bf81918d2fe6c1d533afd24641e932256b90d",
+ "git_head": "f2701bc2daebbd588b7c5f9d558c39c970db4439",
+ "git_dirty_tracked": [
+  "M research/studies/action_dev_switch_20261118/__pycache__/run_action_study.cpython-312.pyc",
+  " M research/studies/final_exam_draft_20261118/exam_queue/systems.py"
+ ],
+ "note": "research/ is git-excluded in this checkout (new files need git add -f); provenance is by the file hashes below. scorer_v2.py must equal c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9.",
+ "files": {
+  "PROTOCOL.md": "284b52ed027b22f8c83ee316f80bf81918d2fe6c1d533afd24641e932256b90d",
+  "listval_arm.py": "8b62a83ddb0501bca0f93833109feaa7c26cdadd926873a422ccdf6317fa8f62",
+  "tests/test_listval_arm.py": "ae5d7a12712cb6eafd1420965dc6de5fd878e9e8ee91f9bcacb15de70cbef120",
+  "run_listval.py": "34470393ad861f37ed81df1974f24695521debb0781879e6a87f2d7b748fce04",
+  "smoke_spec.json": "b7f92446d23f3eb80e3505bbea5c125747be0721d91bc2e372d05d79717b4f70",
+  "listval_spec.json": "4f88f4fe66cb8d10bef2f0bd18fb2a9cdacf2b9f343d735e8434fab86e3ccae8",
+  "systems.py": "182a379650cabc7ba71b7da697825747a1de98607e86fc538e72573fd1697ebd",
+  "queue_core.py": "4a66c6c53b591732c0541785b246ee66b9fe52bba0c3a9580e3e77524155240c",
+  "gpu_state.py": "aaec6e9229da45a2f14cd900840119d2687d9c71f936ac2f08e62e14f1910e95",
+  "health.py": "18cf34ac70c894f2b695f515d77f1b934122ca3d19a889465b0bdc1b29fe0e35",
+  "monitor.py": "81d205b6038dca0020b28dd5a84bba8701a11fbdb454f80c88bfb78f2ce94eb6",
+  "think_arm.py": "93056b133b4a9e0313653235684818c14cd11cea1d592a8fdff5135348b4d0b6",
+  "run_think.py": "9481a111815af291bea0d361d0285962881963f7fdbf0716d5446a0dcc22d7d5",
+  "run_lossmap.py": "7fd6adfa4571240e5766784267074193d852ce5c199c44b99189317c9b461dc5",
+  "harness.py (arm C1)": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "run_round2.py": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "run_stage1.py": "6dc86b3a5fe22c5ca14f10b87d5e81601074d3ddc06ae8dbbeb835cf279a3804",
+  "menu_run_study.py": "9736756e64f74c7eaed62690b0552427cebf9118c71f891d3e2873a2ae0770b7",
+  "ros2.py (rosa tools)": "7f3769bc9711274fae844993f9bee7c5024e41ec2c28790db86f422fd8146e22",
+  "namefix_rule.py": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+  "stage3_fixture.py": "17026be69505643705191788d17c16869a8d7a079f64f438cca1b12bc5e857ad",
+  "stage3_graph.json": "0a2c345a60c56b96343e3bf0e6d05f3ebf5356d7c2da98a34c13ba9e57352678",
+  "stage3_node.py": "9656bc559f204330d36e3a7c61e27bc6300041075f973329e9e1f7b6d587dedd",
+  "stage3_tasks.json": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+  "e1h_fixture.py": "344da5db4081d7937bdb061328a9273760532614710ecabfd70809306ac1ef7d",
+  "e1h_graph.json": "425bd4938b3eba6acb9172d85cdf768d664901e86f06327cec86566597041ef1",
+  "e1h_node.py": "535ce650843c745575f13b2db5d1f14253d8bdc63f1099183f1de71ae5ab5fe1",
+  "e1h_tasks.json": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+  "namefix_fixture.py": "e2898df6804355af673234f980a67449c16d0e6f00b57a88afcb16f694efed94",
+  "namefix_graph.json": "7c1fa8a4ba3db7c1e9d88d54a8939c3be93bbdf79253214699b69b9eae4ebf6a",
+  "namefix_node.py": "921f91b364d8425e4941e9335dab7a72a1101fad23e5144cb4660c55ef2f4775",
+  "namefix_tasks.json": "c77e7832140844e59680fc84cbb23efbb11f39a6c867a00f8eac9b25e346067a",
+  "uv.lock": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d"
+ },
+ "manifest": {
+  "master_seed": 20261120,
+  "seeds": [
+   9,
+   10
+  ],
+  "cells": 288,
+  "sha256": "6ba250450e2bd02a4b45e07d20145f47f5c6d88226d0424d0d508c574c717383",
+  "sessions": {
+   "lfm3_1.7b-stage3": 16,
+   "lfm3_1.7b-e1h": 24,
+   "lfm3_1.7b-namefix": 32,
+   "qwen3.5_9b-stage3": 16,
+   "qwen3.5_9b-e1h": 24,
+   "qwen3.5_9b-namefix": 32,
+   "gpt-oss_20b-stage3": 16,
+   "gpt-oss_20b-e1h": 24,
+   "gpt-oss_20b-namefix": 32,
+   "bonsai-2_4b-stage3": 16,
+   "bonsai-2_4b-e1h": 24,
+   "bonsai-2_4b-namefix": 32
+  }
+ },
+ "ollama_url_class": "laptop default",
+ "ollama_version": "0.40.16",
+ "model_digests": {
+  "lfm3:1.7b": "b36a103fe2f8fbe9df2ceec88b9cfdf842dc04aaabe2b4677d1acf8e16570b5d",
+  "bonsai-2:4b": "93edd652c9326fb1e782c1f54e997ce6a46e2351c763777db0c63b8a51cf6bec",
+  "gpt-oss:20b": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+  "qwen3.5:9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+ },
+ "settings": {
+  "temperature": 0.7,
+  "think": false,
+  "num_ctx": 65536,
+  "num_predict": 4096,
+  "max_iterations": 40,
+  "http_timeout_s": 240,
+  "episode_timeout_s": 1800,
+  "arms": "FULL (switch off) / LISTVAL (switch on), cap 2000 characters"
+ },
+ "commands": {
+  "smoke": "bash exam_queue/start_exam_tmux.sh listval_smoke $PWD/research/studies/listval_live_20261120/smoke_spec.json all all:1",
+  "measurement": "bash exam_queue/start_exam_tmux.sh listval $PWD/research/studies/final_exam_draft_20261118/exam_queue/specs/listval_spec.json all all:1"
+ },
+ "scorer_ok": true
+}

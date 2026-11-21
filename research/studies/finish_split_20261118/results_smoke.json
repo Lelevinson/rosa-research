@@ -1,0 +1,285 @@
+{
+ "protocol_sha256": "309308b659bca27490425a97b068f5a1e4616ef218f252bcdf9f218202471166",
+ "phase": "smoke",
+ "episodes": 3,
+ "overall": {
+  "FULL": {
+   "episodes": 1,
+   "supported": 1,
+   "requests": 5,
+   "input_tokens": 14273,
+   "output_tokens": 667,
+   "endings": {
+    "final_answer": 1
+   },
+   "supported_by_ending": {
+    "final_answer": 1,
+    "text": 0,
+    "none": 0
+   },
+   "finish_invalid": 0,
+   "tool_not_offered": 0,
+   "capped_or_aborted": 0
+  },
+  "TOOL_ONLY": {
+   "episodes": 1,
+   "supported": 1,
+   "requests": 4,
+   "input_tokens": 10370,
+   "output_tokens": 487,
+   "endings": {
+    "final_answer": 1
+   },
+   "supported_by_ending": {
+    "final_answer": 1,
+    "text": 0,
+    "none": 0
+   },
+   "finish_invalid": 0,
+   "tool_not_offered": 0,
+   "capped_or_aborted": 0
+  },
+  "LINE_JSON": {
+   "episodes": 1,
+   "supported": 1,
+   "requests": 6,
+   "input_tokens": 17779,
+   "output_tokens": 586,
+   "endings": {
+    "text": 1
+   },
+   "supported_by_ending": {
+    "final_answer": 0,
+    "text": 1,
+    "none": 0
+   },
+   "finish_invalid": 0,
+   "tool_not_offered": 0,
+   "capped_or_aborted": 0
+  }
+ },
+ "by_model": {
+  "FULL": {
+   "bonsai-2:4b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "lfm3:1.7b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 5,
+    "input_tokens": 14273,
+    "output_tokens": 667,
+    "endings": {
+     "final_answer": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 1,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   }
+  },
+  "TOOL_ONLY": {
+   "bonsai-2:4b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "lfm3:1.7b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 4,
+    "input_tokens": 10370,
+    "output_tokens": 487,
+    "endings": {
+     "final_answer": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 1,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   }
+  },
+  "LINE_JSON": {
+   "bonsai-2:4b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "lfm3:1.7b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "qwen3.5:9b": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 6,
+    "input_tokens": 17779,
+    "output_tokens": 586,
+    "endings": {
+     "text": 1
+    },
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 1,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   },
+   "gpt-oss:20b": {
+    "episodes": 0,
+    "supported": 0,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "endings": {},
+    "supported_by_ending": {
+     "final_answer": 0,
+     "text": 0,
+     "none": 0
+    },
+    "finish_invalid": 0,
+    "tool_not_offered": 0,
+    "capped_or_aborted": 0
+   }
+  }
+ },
+ "paired": {
+  "TOOL_ONLY": {
+   "cells": 1,
+   "both": 1,
+   "FULL_only": 0,
+   "other_only": 0,
+   "neither": 0
+  },
+  "LINE_JSON": {
+   "cells": 1,
+   "both": 1,
+   "FULL_only": 0,
+   "other_only": 0,
+   "neither": 0
+  }
+ },
+ "d_tool": 0,
+ "d_line": 0
+}

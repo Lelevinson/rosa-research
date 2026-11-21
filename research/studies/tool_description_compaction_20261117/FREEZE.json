@@ -1,0 +1,54 @@
+{
+ "frozen_at": "2026-11-17T14:49:30Z",
+ "scorer_sha256_stated": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+ "note": "research/ is git-excluded in this checkout; provenance is by file hashes.",
+ "git_head": "dc57e07290ab3a20cd89cf8f0638c201686ebc23",
+ "files": {
+  "PROTOCOL.md": "3d7e9d037be039f0760211ad56ba09ae72e94abec9188383d9bd586384539e00",
+  "compaction.py": "7200e2714435b643a1b5d3e6ea6dbefc315008a5d89b588f43ccf8e26a8eef95",
+  "compaction_arm.py": "3c9c6113ef479fe58d5ae149c40d31481e64c916e1ff042945133f1a211ed499",
+  "run_compaction.py": "de3af1831bcf54d84f9cf616ff4af08f53b4d5f6bcde2c9d3e5f1a6ecc46d842",
+  "analyze_compaction.py": "7ee5521b37fa95fa920fa59b38f8b425f45e0e9e957dac760f8b50b8944f9786",
+  "tests/test_compaction.py": "798f8ea520c4425d8d38892edbcca52e919c11dc36a2adf5ecbfe3617d99283c",
+  "measure_rule.py": "1b15faa3c121695376a6d301beece1a61c5658df2dcf331ee6cefca02cde245f",
+  "ablation_arms.py (base FULL arm)": "cb1633d1f1dd023bef8ed0ee1efbd28270caee26eb38e9f72603220a6c51bb2e",
+  "run_ablation.py (episode rows)": "cf3d61ec4e63b2e15743d1378b6ead1972a809ce07bee5c06e6099cd41a58475",
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "harness.py": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "run_round2.py (OracleWithRetry)": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+  "stage3_fixture.py": "17026be69505643705191788d17c16869a8d7a079f64f438cca1b12bc5e857ad",
+  "stage3_graph.json": "0a2c345a60c56b96343e3bf0e6d05f3ebf5356d7c2da98a34c13ba9e57352678",
+  "stage3_tasks.json": "b61f8be16f7211e34b821c758472d784fcfa7c4cbd9c8bc95fcc9891a7c6ec67",
+  "e1h_fixture.py": "344da5db4081d7937bdb061328a9273760532614710ecabfd70809306ac1ef7d",
+  "e1h_graph.json": "425bd4938b3eba6acb9172d85cdf768d664901e86f06327cec86566597041ef1",
+  "e1h_tasks.json": "5802e8987ce1805d5023fb58338e268eee60f92682854d2085a01a09eb230a85",
+  "uv.lock": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d"
+ },
+ "manifest": {
+  "master_seed": 20261125,
+  "episodes": 80,
+  "sha256": "2535496609161087e6dc4053212b77ad0ba3e73483248d9209a33f3b30c604a7",
+  "sessions": {
+   "lfm3_1.7b-stage3": 8,
+   "lfm3_1.7b-e1h": 12,
+   "qwen3.5_9b-stage3": 8,
+   "qwen3.5_9b-e1h": 12,
+   "gpt-oss_20b-stage3": 8,
+   "gpt-oss_20b-e1h": 12,
+   "bonsai-2_4b-stage3": 8,
+   "bonsai-2_4b-e1h": 12
+  }
+ },
+ "smoke_manifest": {
+  "episodes": 2,
+  "sha256": "c0dee6c98c79b5d8cfafe1699df86f8fa671450ed7862c18b1a0df2fba720873"
+ },
+ "model_digests": {
+  "lfm3:1.7b": "b36a103fe2f8fbe9df2ceec88b9cfdf842dc04aaabe2b4677d1acf8e16570b5d",
+  "bonsai-2:4b": "93edd652c9326fb1e782c1f54e997ce6a46e2351c763777db0c63b8a51cf6bec",
+  "gpt-oss:20b": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+  "qwen3.5:9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+ },
+ "tests": "7 frozen unit tests pass (tests/test_compaction.py)"
+}

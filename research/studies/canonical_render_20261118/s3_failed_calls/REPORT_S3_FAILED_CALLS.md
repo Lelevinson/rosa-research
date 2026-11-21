@@ -1,0 +1,24 @@
+# Why RENDER had more failed calls in S3 (46 vs 30) and not-found calls (26 vs 14)
+
+2026-11-18. Offline, CPU only, post-hoc (not a frozen protocol; nothing here changes the class-B result of REPORT_LIVE.md). Scripts: `dump_failed.py` (list of failed calls, `failed_calls.jsonl`), `classify_failed.py` (cause classes, `failed_causes.jsonl`). Trace root: `research/_artifacts/runs/canonical_render_20261118/full_20261118T031216Z/`. No new runs.
+
+## Measured
+Cell-by-cell comparison (same task, model, seed) of S3 failed calls: only 6 of the 56 cell pairs differ, and the net +16 comes from two of them.
+| cell (seed 2) | FULL | RENDER | cause |
+|---|---|---|---|
+| `e1h_amb_2`, lfm3 | 4 | 15 | typo spiral (below) |
+| `e1h_chg_2`, bonsai | 7 | 12 | the same invalid-glob loop in both arms, longer in RENDER |
+| `e1h_amb_2` gpt-oss s2 / `e1h_abs_2` gpt-oss s2 | 1 / 0 | 2 / 1 | different first-call argument mistakes (arg precheck), +1 each |
+| `e1h_amb_2` gpt-oss s1 / `e1h_chg_2` lfm3 s2 | 1 / 1 | 0 / 0 | -1 each |
+Without the two big cells, S3 failed calls are 19 vs 19.
+
+**1. lfm3 `e1h_amb_2` seed 2** (FULL `lfm3_1.7b-e1h/013-e1h_amb_2-FULL-lfm3_1.7b-s2`, RENDER `.../008-e1h_amb_2-RENDER-lfm3_1.7b-s2`). The correct nodes are `/e1h/basalt/zircon` and `/e1h/cobalt/zircon`. At request 2 **both arms** call `ros2_node_info` on `/e1h/cobalt/zirco` and `/e1h/basalt/zirco` (the final `n` is dropped): the same truncation in both arms, before any rendered text could matter (the first rendered result, node info for other nodes, does not contain these names). FULL then took a different path (a list call, a topic info call, then node info on the correct name) and answered correctly after 9 calls. In RENDER the model called topic info, whose rendered result contains `Node full name: /e1h/basalt/zircon`, then kept calling `ros2_param_get` / `ros2_param_list` / `ros2_node_info` with `zirco` in 14 further failed calls (absolute, slashless, namespace-dropped variants), and finally called `ros2_param_list` with no arguments, read `/e1h/basalt/zircon:` there, and answered `{"gain": 56, "node": "/e1h/basalt/zircon"}` (supported). Classes (all strata): not-found near-miss (edit distance <= 2 from a name seen earlier) 3 FULL vs 13 RENDER, 12 of the 13 in this one episode; the other 3 near-miss cases are the same two pairs of events in both arms (this episode r2 and gpt-oss `e1h_amb_1` s2 r4, `/e2h/cobalt/sorrel`, identical in both arms).
+**2. bonsai `e1h_chg_2` seed 2** (`bonsai-2_4b-e1h/018-...-FULL-...-s2` vs `015-...-RENDER-...-s2`). Both arms start with `ros2_topic_echo` on `/flow` (no publisher, no type) and then call `ros2_topic_list` with the pattern `*flow*` / `*thistle*`, an invalid regular expression ("multiple repeat"); FULL repeats it 6 times, RENDER 11 times; both end unsupported. `ros2_topic_list` results are bare name lines and are passed through unchanged by the renderer (offline report: under 1% of node/topic/service list leaves rendered), so the tool output the model saw for this error is byte-identical in the two arms.
+
+Cause classes over all 288 episodes (failed calls, FULL / RENDER): invalid-argument precheck 16 / 16; invalid regex pattern 10 / 14; topic without type 2 / 2; not-found near-miss 3 / 13; not-found unseen name 25 / 24; not-found a name seen earlier as exact string 48 / 28 (the name-fix tasks). No RENDER call contained the text `full name` in its arguments (0 of all RENDER calls), i.e. the model never copied a rendering label into an argument.
+
+## Interpretation (labelled)
+- Rendering-related: **not shown**. About 16 of the 16-call excess sits in two episodes. In both, the first failure is identical in both arms (the `zirco` truncation; the invalid `*flow*` pattern) and occurs in calls whose preceding results the renderer did not change, or before any rendered result appeared. What differs is how long the model persisted afterwards.
+- Possibly rendering-related, undecidable here: in the lfm3 episode the model saw a correct full name in a rendered line and still typed `zirco`. A single episode of a 1.7B model at temperature 0.7 cannot distinguish "the rendering did not help" from "the rendering distracted it" from sampling variation. I did not find a mechanism by which the rendered text caused the truncation.
+- The S3 excess is therefore best read as two long failure loops of weak models, not as a systematic cost of rendering; the 26 vs 14 not-found calls come from the same lfm3 episode (13 not-found calls vs 2). The harm flag rule in the frozen protocol did not trigger and is not re-read.
+- In the other direction: the name-fix tasks (S2) show "not-found on a name seen whole" 48 -> 28 in the same run, which is a rendering-associated difference only if you accept the split-only classification; I did not examine it further here.

@@ -1,0 +1,27 @@
+{
+ "task": "Topic /nf/kestrel_t is published by exactly one node. Find it. Return JSON with the key node (the full name of the node that publishes /nf/kestrel_t).",
+ "log": [
+  {
+   "stage": 1,
+   "tool": "ros2_topic_info",
+   "args": {
+    "topics": [
+     "/nf/kestrel_t"
+    ]
+   },
+   "result": {
+    "/nf/kestrel_t": "Type: std_msgs/msg/Float32\n\nPublisher count: 1\n\nNode name: bobbin\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Float32\nTopic type hash: RIHS01_7170d3d8f841f7be3172ce5f4f59f3a4d7f63b0447e8b33327601ad64d83d6e2\nEndpoint type: PUBLISHER\nGID: 01.0f.e1.df.87.9d.4f.12.00.00.00.00.00.00.13.03\nQoS profile:\n  Reliability: RELIABLE\n  History (Depth): UNKNOWN\n  Durability: VOLATILE\n  Lifespan: Infinite\n  Deadline: Infinite\n  Liveliness: AUTOMATIC\n  Liveliness lease duration: Infinite\n\nSubscription count: 1\n\nNode name: anchor\nNode namespace: /nf/cipher\nTopic type: std_msgs/msg/Float32\nTopic type hash: RIHS01_7170d3d8f841f7be3172ce5f4f59f3a4d7f63b0447e8b33327601ad64d83d6e2\nEndpoint type: SUBSCRIPTION\nGID: 01.0f.e1.df.89.9d.7f.56.00.00.00.00.00.00.13.04\nQoS profile:\n  Reliability: RELIABLE\n  History (Depth): UNKNOWN\n  Durability: VOLATILE\n  Lifespan: Infinite\n  Deadline: Infinite\n  Liveliness: AUTOMATIC\n  Liveliness lease duration: Infinite\n\n"
+   }
+  }
+ ],
+ "answer": {
+  "node": "/nf/lantern/bobbin"
+ },
+ "scored": {
+  "exact": true,
+  "issues": [],
+  "support_missing": [],
+  "supported_complete": true,
+  "scorer": "scorer-v2.0"
+ }
+}

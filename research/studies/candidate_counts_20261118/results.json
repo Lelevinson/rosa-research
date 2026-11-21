@@ -1,0 +1,2430 @@
+{
+ "protocol_sha256": "ddeb30a08e64f133ddcceacddebcfc7f15807f10e73d34ea6a6750dc1f8a24ac",
+ "script_file": "count_candidates.py",
+ "population": {
+  "episodes": 1832,
+  "parse_errors": [],
+  "per_study_model": {
+   "ablation|ALL": 200,
+   "ablation|bonsai-2:4b": 50,
+   "ablation|gpt-oss:20b": 50,
+   "ablation|lfm3:1.7b": 50,
+   "ablation|qwen3.5:9b": 50,
+   "compaction|ALL": 80,
+   "compaction|bonsai-2:4b": 20,
+   "compaction|gpt-oss:20b": 20,
+   "compaction|lfm3:1.7b": 20,
+   "compaction|qwen3.5:9b": 20,
+   "fairness|ALL": 160,
+   "fairness|bonsai-2:4b": 40,
+   "fairness|gpt-oss:20b": 40,
+   "fairness|lfm3:1.7b": 40,
+   "fairness|qwen3.5:9b": 40,
+   "namefix|ALL": 64,
+   "namefix|bonsai-2:4b": 16,
+   "namefix|gpt-oss:20b": 16,
+   "namefix|lfm3:1.7b": 16,
+   "namefix|qwen3.5:9b": 16,
+   "pilot|ALL": 576,
+   "pilot|bonsai-2:4b": 144,
+   "pilot|gpt-oss:20b": 144,
+   "pilot|lfm3:1.7b": 144,
+   "pilot|qwen3.5:9b": 144,
+   "round1|ALL": 320,
+   "round1|bonsai-2:4b": 80,
+   "round1|gpt-oss:20b": 80,
+   "round1|lfm3:1.7b": 80,
+   "round1|qwen3.5:9b": 80,
+   "round2|ALL": 352,
+   "round2|bonsai-2:4b": 88,
+   "round2|gpt-oss:20b": 88,
+   "round2|lfm3:1.7b": 88,
+   "round2|qwen3.5:9b": 88,
+   "s0|ALL": 80,
+   "s0|bonsai-2:4b": 20,
+   "s0|gpt-oss:20b": 20,
+   "s0|lfm3:1.7b": 20,
+   "s0|qwen3.5:9b": 20
+  },
+  "b0_disagreements": [
+   {
+    "run_id": "full_resume2_20261116T132848Z/qwen3.5_9b-stage3/003-h4-SWEEP-qwen3.5_9b-s6",
+    "study": "round2",
+    "model": "qwen3.5:9b",
+    "arm": "SWEEP",
+    "labels": [
+     "supported logged True vs re-scored False"
+    ]
+   },
+   {
+    "run_id": "full_resume2_20261116T132848Z/gpt-oss_20b-stage3/021-h4-SWEEP-gpt-oss_20b-s5",
+    "study": "round2",
+    "model": "gpt-oss:20b",
+    "arm": "SWEEP",
+    "labels": [
+     "supported logged True vs re-scored False"
+    ]
+   }
+  ],
+  "b0_excluded_from_c_d": 2
+ },
+ "a_name_binding": {
+  "fires": 406,
+  "episodes_with_fire": 222,
+  "models_with_fire": [
+   "bonsai-2:4b",
+   "gpt-oss:20b",
+   "lfm3:1.7b",
+   "qwen3.5:9b"
+  ],
+  "verdicts": {
+   "agree": 315,
+   "no_later_use": 91
+  },
+  "by_study_model": {
+   "pilot": {
+    "lfm3:1.7b": 26,
+    "ALL": 120,
+    "qwen3.5:9b": 8,
+    "gpt-oss:20b": 9,
+    "bonsai-2:4b": 77
+   },
+   "ALL STUDIES": {
+    "lfm3:1.7b": 132,
+    "ALL": 406,
+    "qwen3.5:9b": 45,
+    "gpt-oss:20b": 33,
+    "bonsai-2:4b": 196
+   },
+   "round1": {
+    "lfm3:1.7b": 24,
+    "ALL": 57,
+    "qwen3.5:9b": 8,
+    "gpt-oss:20b": 6,
+    "bonsai-2:4b": 19
+   },
+   "round2": {
+    "lfm3:1.7b": 56,
+    "ALL": 138,
+    "qwen3.5:9b": 22,
+    "gpt-oss:20b": 14,
+    "bonsai-2:4b": 46
+   },
+   "fairness": {
+    "lfm3:1.7b": 6,
+    "ALL": 19,
+    "qwen3.5:9b": 2,
+    "gpt-oss:20b": 3,
+    "bonsai-2:4b": 8
+   },
+   "ablation": {
+    "lfm3:1.7b": 7,
+    "ALL": 36,
+    "qwen3.5:9b": 5,
+    "gpt-oss:20b": 1,
+    "bonsai-2:4b": 23
+   },
+   "namefix": {
+    "lfm3:1.7b": 5,
+    "ALL": 13,
+    "bonsai-2:4b": 8
+   },
+   "compaction": {
+    "lfm3:1.7b": 7,
+    "ALL": 20,
+    "bonsai-2:4b": 13
+   },
+   "s0": {
+    "lfm3:1.7b": 1,
+    "ALL": 3,
+    "bonsai-2:4b": 2
+   }
+  },
+  "verdict_by_study_model": {
+   "ablation": {
+    "bonsai-2:4b": {
+     "agree": 13,
+     "no_later_use": 10
+    },
+    "gpt-oss:20b": {
+     "agree": 1
+    },
+    "lfm3:1.7b": {
+     "agree": 7
+    },
+    "qwen3.5:9b": {
+     "agree": 4,
+     "no_later_use": 1
+    }
+   },
+   "compaction": {
+    "bonsai-2:4b": {
+     "agree": 9,
+     "no_later_use": 4
+    },
+    "lfm3:1.7b": {
+     "agree": 7
+    }
+   },
+   "fairness": {
+    "bonsai-2:4b": {
+     "agree": 2,
+     "no_later_use": 6
+    },
+    "gpt-oss:20b": {
+     "agree": 2,
+     "no_later_use": 1
+    },
+    "lfm3:1.7b": {
+     "agree": 6
+    },
+    "qwen3.5:9b": {
+     "agree": 2
+    }
+   },
+   "namefix": {
+    "bonsai-2:4b": {
+     "no_later_use": 1,
+     "agree": 7
+    },
+    "lfm3:1.7b": {
+     "agree": 5
+    }
+   },
+   "pilot": {
+    "bonsai-2:4b": {
+     "agree": 25,
+     "no_later_use": 52
+    },
+    "gpt-oss:20b": {
+     "agree": 9
+    },
+    "lfm3:1.7b": {
+     "agree": 25,
+     "no_later_use": 1
+    },
+    "qwen3.5:9b": {
+     "agree": 8
+    }
+   },
+   "round1": {
+    "bonsai-2:4b": {
+     "agree": 18,
+     "no_later_use": 1
+    },
+    "gpt-oss:20b": {
+     "agree": 6
+    },
+    "lfm3:1.7b": {
+     "agree": 23,
+     "no_later_use": 1
+    },
+    "qwen3.5:9b": {
+     "agree": 8
+    }
+   },
+   "round2": {
+    "bonsai-2:4b": {
+     "agree": 44,
+     "no_later_use": 2
+    },
+    "gpt-oss:20b": {
+     "agree": 12,
+     "no_later_use": 2
+    },
+    "lfm3:1.7b": {
+     "agree": 47,
+     "no_later_use": 9
+    },
+    "qwen3.5:9b": {
+     "agree": 22
+    }
+   },
+   "s0": {
+    "bonsai-2:4b": {
+     "agree": 2
+    },
+    "lfm3:1.7b": {
+     "agree": 1
+    }
+   }
+  },
+  "verdict_by_model": {
+   "bonsai-2:4b": {
+    "agree": 120,
+    "no_later_use": 76
+   },
+   "gpt-oss:20b": {
+    "agree": 30,
+    "no_later_use": 3
+   },
+   "lfm3:1.7b": {
+    "agree": 121,
+    "no_later_use": 11
+   },
+   "qwen3.5:9b": {
+    "agree": 44,
+    "no_later_use": 1
+   }
+  },
+  "request_distance_median": 2,
+  "request_distance_mean": 2.11,
+  "differ_list": [],
+  "bar": {
+   "fires_ge_10": true,
+   "models_ge_2": true,
+   "differ_zero": true,
+   "passes": true
+  }
+ },
+ "b_partial_match": {
+  "events": 33,
+  "episodes": 32,
+  "by_study_model": {
+   "pilot": {
+    "lfm3:1.7b": 1,
+    "ALL": 7,
+    "gpt-oss:20b": 2,
+    "bonsai-2:4b": 4
+   },
+   "ALL STUDIES": {
+    "lfm3:1.7b": 18,
+    "ALL": 33,
+    "gpt-oss:20b": 10,
+    "bonsai-2:4b": 4,
+    "qwen3.5:9b": 1
+   },
+   "round1": {
+    "lfm3:1.7b": 2,
+    "ALL": 4,
+    "gpt-oss:20b": 2
+   },
+   "round2": {
+    "lfm3:1.7b": 8,
+    "ALL": 8
+   },
+   "fairness": {
+    "lfm3:1.7b": 2,
+    "ALL": 4,
+    "gpt-oss:20b": 2
+   },
+   "ablation": {
+    "lfm3:1.7b": 2,
+    "ALL": 3,
+    "gpt-oss:20b": 1
+   },
+   "namefix": {
+    "lfm3:1.7b": 1,
+    "ALL": 2,
+    "qwen3.5:9b": 1
+   },
+   "compaction": {
+    "lfm3:1.7b": 1,
+    "ALL": 4,
+    "gpt-oss:20b": 3
+   },
+   "s0": {
+    "lfm3:1.7b": 1,
+    "ALL": 1
+   }
+  },
+  "answer_names_partial": 9,
+  "answer_names_typed_nonexistent": 19,
+  "partial_is_truth": 7,
+  "supported_events": 19,
+  "episodes_answer_names_partial": 9
+ },
+ "c_finish_tool": {
+  "by_group": {
+   "FULL-type": {
+    "ablation/FULL": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 37,
+       "supported": 33,
+       "supported_rate": 0.8919
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 3,
+       "supported_rate": 1.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 8,
+       "supported_rate": 0.8
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 8,
+       "supported": 7,
+       "supported_rate": 0.875
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 8,
+       "supported_rate": 0.8889
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 10,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "compaction/FULL": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 37,
+       "supported": 31,
+       "supported_rate": 0.8378
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 1,
+       "supported_rate": 0.5
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 7,
+       "supported_rate": 0.7778
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 8,
+       "supported": 7,
+       "supported_rate": 0.875
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 1,
+       "supported_rate": 0.5
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 7,
+       "supported_rate": 0.7
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 10,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "pilot/C1": {
+     "ALL": {
+      "text": {
+       "episodes": 7,
+       "supported": 5,
+       "supported_rate": 0.7143
+      },
+      "final_answer": {
+       "episodes": 71,
+       "supported": 65,
+       "supported_rate": 0.9155
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 18,
+       "supported": 13,
+       "supported_rate": 0.7222
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 16,
+       "supported": 16,
+       "supported_rate": 1.0
+      },
+      "text": {
+       "episodes": 4,
+       "supported": 4,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "text": {
+       "episodes": 3,
+       "supported": 1,
+       "supported_rate": 0.3333
+      },
+      "final_answer": {
+       "episodes": 17,
+       "supported": 16,
+       "supported_rate": 0.9412
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "round1/C1": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 74,
+       "supported": 65,
+       "supported_rate": 0.8784
+      },
+      "none": {
+       "episodes": 3,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 2,
+       "supported_rate": 0.6667
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 15,
+       "supported_rate": 0.7895
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "final_answer": {
+       "episodes": 16,
+       "supported": 14,
+       "supported_rate": 0.875
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 2,
+       "supported_rate": 0.6667
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 16,
+       "supported_rate": 0.8421
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "round2/CONTROL": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 143,
+       "supported": 123,
+       "supported_rate": 0.8601
+      },
+      "none": {
+       "episodes": 13,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 20,
+       "supported": 18,
+       "supported_rate": 0.9
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 35,
+       "supported": 26,
+       "supported_rate": 0.7429
+      },
+      "none": {
+       "episodes": 8,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 22,
+       "supported": 21,
+       "supported_rate": 0.9545
+      },
+      "text": {
+       "episodes": 18,
+       "supported": 17,
+       "supported_rate": 0.9444
+      },
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 42,
+       "supported": 32,
+       "supported_rate": 0.7619
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 44,
+       "supported": 44,
+       "supported_rate": 1.0
+      }
+     }
+    }
+   },
+   "no finish tool": {
+    "ablation/NO_FINISH": {
+     "ALL": {
+      "text": {
+       "episodes": 39,
+       "supported": 29,
+       "supported_rate": 0.7436
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "text": {
+       "episodes": 9,
+       "supported": 6,
+       "supported_rate": 0.6667
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "text": {
+       "episodes": 10,
+       "supported": 8,
+       "supported_rate": 0.8
+      }
+     },
+     "lfm3:1.7b": {
+      "text": {
+       "episodes": 10,
+       "supported": 6,
+       "supported_rate": 0.6
+      }
+     },
+     "qwen3.5:9b": {
+      "text": {
+       "episodes": 10,
+       "supported": 9,
+       "supported_rate": 0.9
+      }
+     }
+    },
+    "fairness/E0": {
+     "ALL": {
+      "text": {
+       "episodes": 73,
+       "supported": 60,
+       "supported_rate": 0.8219
+      },
+      "none": {
+       "episodes": 7,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 18,
+       "supported": 11,
+       "supported_rate": 0.6111
+      }
+     },
+     "gpt-oss:20b": {
+      "text": {
+       "episodes": 18,
+       "supported": 18,
+       "supported_rate": 1.0
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "text": {
+       "episodes": 18,
+       "supported": 13,
+       "supported_rate": 0.7222
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "text": {
+       "episodes": 19,
+       "supported": 18,
+       "supported_rate": 0.9474
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     }
+    },
+    "fairness/E1": {
+     "ALL": {
+      "text": {
+       "episodes": 75,
+       "supported": 65,
+       "supported_rate": 0.8667
+      },
+      "none": {
+       "episodes": 5,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 16,
+       "supported": 12,
+       "supported_rate": 0.75
+      }
+     },
+     "gpt-oss:20b": {
+      "text": {
+       "episodes": 19,
+       "supported": 18,
+       "supported_rate": 0.9474
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "text": {
+       "episodes": 20,
+       "supported": 15,
+       "supported_rate": 0.75
+      }
+     },
+     "qwen3.5:9b": {
+      "text": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "s0/S0": {
+     "ALL": {
+      "text": {
+       "episodes": 52,
+       "supported": 40,
+       "supported_rate": 0.7692
+      },
+      "none": {
+       "episodes": 28,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "text": {
+       "episodes": 15,
+       "supported": 9,
+       "supported_rate": 0.6
+      },
+      "none": {
+       "episodes": 5,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "none": {
+       "episodes": 18,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "text": {
+       "episodes": 18,
+       "supported": 13,
+       "supported_rate": 0.7222
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "none": {
+       "episodes": 3,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 17,
+       "supported": 16,
+       "supported_rate": 0.9412
+      }
+     }
+    }
+   },
+   "other arms offering final_answer": {
+    "ablation/NO_MENU": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 35,
+       "supported": 27,
+       "supported_rate": 0.7714
+      },
+      "text": {
+       "episodes": 4,
+       "supported": 3,
+       "supported_rate": 0.75
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 4,
+       "supported_rate": 0.4
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 7,
+       "supported": 7,
+       "supported_rate": 1.0
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 1,
+       "supported_rate": 0.5
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 8,
+       "supported": 6,
+       "supported_rate": 0.75
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 10,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "ablation/NO_PRECHECK": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 38,
+       "supported": 35,
+       "supported_rate": 0.9211
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 8,
+       "supported_rate": 0.8
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 9,
+       "supported_rate": 1.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 8,
+       "supported_rate": 0.8889
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 10,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "ablation/NO_SOFT_ERRORS": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 33,
+       "supported": 32,
+       "supported_rate": 0.9697
+      },
+      "none": {
+       "episodes": 5,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 8,
+       "supported_rate": 0.8889
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "none": {
+       "episodes": 3,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      },
+      "final_answer": {
+       "episodes": 6,
+       "supported": 6,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 8,
+       "supported": 8,
+       "supported_rate": 1.0
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 10,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "compaction/COMPACT": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 36,
+       "supported": 31,
+       "supported_rate": 0.8611
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 2,
+       "supported_rate": 0.6667
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 5,
+       "supported_rate": 0.5556
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 8,
+       "supported": 8,
+       "supported_rate": 1.0
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 9,
+       "supported": 8,
+       "supported_rate": 0.8889
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 10,
+       "supported": 10,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "namefix/NAMEFIX": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 57,
+       "supported": 47,
+       "supported_rate": 0.8246
+      },
+      "text": {
+       "episodes": 7,
+       "supported": 7,
+       "supported_rate": 1.0
+      }
+     },
+     "bonsai-2:4b": {
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      },
+      "final_answer": {
+       "episodes": 14,
+       "supported": 8,
+       "supported_rate": 0.5714
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 11,
+       "supported": 10,
+       "supported_rate": 0.9091
+      },
+      "text": {
+       "episodes": 5,
+       "supported": 5,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 16,
+       "supported": 14,
+       "supported_rate": 0.875
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 16,
+       "supported": 15,
+       "supported_rate": 0.9375
+      }
+     }
+    },
+    "pilot/A1": {
+     "ALL": {
+      "none": {
+       "episodes": 23,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 57,
+       "supported": 47,
+       "supported_rate": 0.8246
+      }
+     },
+     "bonsai-2:4b": {
+      "text": {
+       "episodes": 11,
+       "supported": 6,
+       "supported_rate": 0.5455
+      },
+      "none": {
+       "episodes": 9,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "text": {
+       "episodes": 8,
+       "supported": 7,
+       "supported_rate": 0.875
+      },
+      "none": {
+       "episodes": 12,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 18,
+       "supported": 15,
+       "supported_rate": 0.8333
+      }
+     },
+     "qwen3.5:9b": {
+      "text": {
+       "episodes": 20,
+       "supported": 19,
+       "supported_rate": 0.95
+      }
+     }
+    },
+    "pilot/C1+FN": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 70,
+       "supported": 61,
+       "supported_rate": 0.8714
+      },
+      "text": {
+       "episodes": 8,
+       "supported": 6,
+       "supported_rate": 0.75
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 17,
+       "supported": 12,
+       "supported_rate": 0.7059
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 16,
+       "supported": 14,
+       "supported_rate": 0.875
+      },
+      "text": {
+       "episodes": 4,
+       "supported": 4,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 17,
+       "supported": 15,
+       "supported_rate": 0.8824
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 1,
+       "supported_rate": 0.3333
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "pilot/C1+H1e": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 64,
+       "supported": 59,
+       "supported_rate": 0.9219
+      },
+      "text": {
+       "episodes": 10,
+       "supported": 9,
+       "supported_rate": 0.9
+      },
+      "none": {
+       "episodes": 6,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 15,
+       "supported": 12,
+       "supported_rate": 0.8
+      },
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "gpt-oss:20b": {
+      "text": {
+       "episodes": 6,
+       "supported": 6,
+       "supported_rate": 1.0
+      },
+      "final_answer": {
+       "episodes": 12,
+       "supported": 11,
+       "supported_rate": 0.9167
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 17,
+       "supported": 16,
+       "supported_rate": 0.9412
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 2,
+       "supported_rate": 0.6667
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "pilot/C1+H1n": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 13,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "final_answer": {
+       "episodes": 3,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     }
+    },
+    "pilot/C1+H2": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 75,
+       "supported": 66,
+       "supported_rate": 0.88
+      },
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "final_answer": {
+       "episodes": 18,
+       "supported": 13,
+       "supported_rate": 0.7222
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 18,
+       "supported_rate": 0.9474
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 18,
+       "supported": 15,
+       "supported_rate": 0.8333
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "pilot/C1+H7": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 58,
+       "supported": 32,
+       "supported_rate": 0.5517
+      },
+      "none": {
+       "episodes": 16,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 6,
+       "supported": 3,
+       "supported_rate": 0.5
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 13,
+       "supported": 6,
+       "supported_rate": 0.4615
+      },
+      "none": {
+       "episodes": 7,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 11,
+       "supported": 10,
+       "supported_rate": 0.9091
+      },
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 5,
+       "supported": 3,
+       "supported_rate": 0.6
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 15,
+       "supported": 5,
+       "supported_rate": 0.3333
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 11,
+       "supported_rate": 0.5789
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     }
+    },
+    "pilot/M0": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 73,
+       "supported": 65,
+       "supported_rate": 0.8904
+      },
+      "text": {
+       "episodes": 4,
+       "supported": 4,
+       "supported_rate": 1.0
+      },
+      "none": {
+       "episodes": 3,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 13,
+       "supported_rate": 0.6842
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 17,
+       "supported": 17,
+       "supported_rate": 1.0
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 17,
+       "supported": 16,
+       "supported_rate": 0.9412
+      },
+      "text": {
+       "episodes": 2,
+       "supported": 2,
+       "supported_rate": 1.0
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 19,
+       "supported_rate": 0.95
+      }
+     }
+    },
+    "round1/C1+AG": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 78,
+       "supported": 70,
+       "supported_rate": 0.8974
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 18,
+       "supported": 14,
+       "supported_rate": 0.7778
+      },
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 19,
+       "supported_rate": 0.95
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 17,
+       "supported_rate": 0.85
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "round1/C1+AG+LA": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 76,
+       "supported": 69,
+       "supported_rate": 0.9079
+      },
+      "none": {
+       "episodes": 3,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 15,
+       "supported_rate": 0.7895
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "final_answer": {
+       "episodes": 18,
+       "supported": 18,
+       "supported_rate": 1.0
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 19,
+       "supported": 16,
+       "supported_rate": 0.8421
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "round1/C1+LA": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 71,
+       "supported": 64,
+       "supported_rate": 0.9014
+      },
+      "none": {
+       "episodes": 4,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 5,
+       "supported": 3,
+       "supported_rate": 0.6
+      }
+     },
+     "bonsai-2:4b": {
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "final_answer": {
+       "episodes": 18,
+       "supported": 14,
+       "supported_rate": 0.7778
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "gpt-oss:20b": {
+      "none": {
+       "episodes": 2,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "final_answer": {
+       "episodes": 15,
+       "supported": 15,
+       "supported_rate": 1.0
+      },
+      "text": {
+       "episodes": 3,
+       "supported": 2,
+       "supported_rate": 0.6667
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 18,
+       "supported": 15,
+       "supported_rate": 0.8333
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 20,
+       "supported": 20,
+       "supported_rate": 1.0
+      }
+     }
+    },
+    "round2/SWEEP": {
+     "ALL": {
+      "final_answer": {
+       "episodes": 151,
+       "supported": 131,
+       "supported_rate": 0.8675
+      },
+      "none": {
+       "episodes": 8,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 15,
+       "supported": 13,
+       "supported_rate": 0.8667
+      }
+     },
+     "bonsai-2:4b": {
+      "final_answer": {
+       "episodes": 36,
+       "supported": 27,
+       "supported_rate": 0.75
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "none": {
+       "episodes": 7,
+       "supported": 0,
+       "supported_rate": 0.0
+      }
+     },
+     "gpt-oss:20b": {
+      "text": {
+       "episodes": 13,
+       "supported": 12,
+       "supported_rate": 0.9231
+      },
+      "final_answer": {
+       "episodes": 30,
+       "supported": 30,
+       "supported_rate": 1.0
+      }
+     },
+     "lfm3:1.7b": {
+      "final_answer": {
+       "episodes": 42,
+       "supported": 31,
+       "supported_rate": 0.7381
+      },
+      "none": {
+       "episodes": 1,
+       "supported": 0,
+       "supported_rate": 0.0
+      },
+      "text": {
+       "episodes": 1,
+       "supported": 1,
+       "supported_rate": 1.0
+      }
+     },
+     "qwen3.5:9b": {
+      "final_answer": {
+       "episodes": 43,
+       "supported": 43,
+       "supported_rate": 1.0
+      }
+     }
+    }
+   }
+  },
+  "full_type_by_model": {
+   "lfm3:1.7b": {
+    "text": {
+     "episodes": 5,
+     "supported": 3,
+     "supported_rate": 0.6
+    },
+    "final_answer": {
+     "episodes": 97,
+     "supported": 79,
+     "supported_rate": 0.8144
+    },
+    "none": {
+     "episodes": 2,
+     "supported": 0,
+     "supported_rate": 0.0
+    }
+   },
+   "ALL": {
+    "text": {
+     "episodes": 35,
+     "supported": 29,
+     "supported_rate": 0.8286
+    },
+    "final_answer": {
+     "episodes": 362,
+     "supported": 317,
+     "supported_rate": 0.8757
+    },
+    "none": {
+     "episodes": 19,
+     "supported": 0,
+     "supported_rate": 0.0
+    }
+   },
+   "qwen3.5:9b": {
+    "final_answer": {
+     "episodes": 104,
+     "supported": 104,
+     "supported_rate": 1.0
+    }
+   },
+   "gpt-oss:20b": {
+    "final_answer": {
+     "episodes": 70,
+     "supported": 65,
+     "supported_rate": 0.9286
+    },
+    "text": {
+     "episodes": 29,
+     "supported": 26,
+     "supported_rate": 0.8966
+    },
+    "none": {
+     "episodes": 5,
+     "supported": 0,
+     "supported_rate": 0.0
+    }
+   },
+   "bonsai-2:4b": {
+    "final_answer": {
+     "episodes": 91,
+     "supported": 69,
+     "supported_rate": 0.7582
+    },
+    "none": {
+     "episodes": 12,
+     "supported": 0,
+     "supported_rate": 0.0
+    },
+    "text": {
+     "episodes": 1,
+     "supported": 0,
+     "supported_rate": 0.0
+    }
+   }
+  }
+ },
+ "d_needle_missed": {
+  "D1_episodes": 159,
+  "D1_models": [
+   "bonsai-2:4b",
+   "gpt-oss:20b",
+   "lfm3:1.7b",
+   "qwen3.5:9b"
+  ],
+  "D1_distinct_task_model": 28,
+  "D1_long": 3,
+  "D1_long_models": [
+   "bonsai-2:4b"
+  ],
+  "D0_episodes": 44,
+  "S_episodes": 19,
+  "D1_by_study_model": {
+   "pilot": {
+    "lfm3:1.7b": 18,
+    "ALL": 41,
+    "qwen3.5:9b": 3,
+    "gpt-oss:20b": 4,
+    "bonsai-2:4b": 16
+   },
+   "ALL STUDIES": {
+    "lfm3:1.7b": 76,
+    "ALL": 159,
+    "qwen3.5:9b": 7,
+    "gpt-oss:20b": 14,
+    "bonsai-2:4b": 62
+   },
+   "round1": {
+    "lfm3:1.7b": 11,
+    "ALL": 23,
+    "gpt-oss:20b": 3,
+    "bonsai-2:4b": 9
+   },
+   "round2": {
+    "lfm3:1.7b": 20,
+    "ALL": 32,
+    "gpt-oss:20b": 2,
+    "bonsai-2:4b": 10
+   },
+   "fairness": {
+    "lfm3:1.7b": 10,
+    "ALL": 20,
+    "qwen3.5:9b": 1,
+    "gpt-oss:20b": 1,
+    "bonsai-2:4b": 8
+   },
+   "ablation": {
+    "lfm3:1.7b": 7,
+    "ALL": 16,
+    "qwen3.5:9b": 1,
+    "gpt-oss:20b": 2,
+    "bonsai-2:4b": 6
+   },
+   "namefix": {
+    "lfm3:1.7b": 2,
+    "ALL": 10,
+    "qwen3.5:9b": 1,
+    "gpt-oss:20b": 1,
+    "bonsai-2:4b": 6
+   },
+   "compaction": {
+    "lfm3:1.7b": 4,
+    "ALL": 8,
+    "gpt-oss:20b": 1,
+    "bonsai-2:4b": 3
+   },
+   "s0": {
+    "lfm3:1.7b": 4,
+    "ALL": 9,
+    "qwen3.5:9b": 1,
+    "bonsai-2:4b": 4
+   }
+  },
+  "D1_by_model": {
+   "bonsai-2:4b": 62,
+   "gpt-oss:20b": 14,
+   "lfm3:1.7b": 76,
+   "qwen3.5:9b": 7
+  },
+  "bar": {
+   "episodes_ge_5": true,
+   "models_ge_2": true,
+   "passes": true
+  },
+  "long_alone_reaches_bar": false
+ },
+ "e_detectors": {
+  "backend_error_ResponseError": {
+   "ablation|ALL": 1,
+   "ablation|bonsai-2:4b": 1,
+   "fairness|ALL": 3,
+   "fairness|bonsai-2:4b": 1,
+   "fairness|gpt-oss:20b": 1,
+   "fairness|lfm3:1.7b": 1,
+   "pilot|ALL": 11,
+   "pilot|bonsai-2:4b": 2,
+   "pilot|gpt-oss:20b": 7,
+   "pilot|lfm3:1.7b": 2,
+   "round1|ALL": 6,
+   "round1|gpt-oss:20b": 4,
+   "round1|lfm3:1.7b": 2,
+   "round2|ALL": 2,
+   "round2|gpt-oss:20b": 2,
+   "s0|ALL": 3,
+   "s0|bonsai-2:4b": 1,
+   "s0|gpt-oss:20b": 1,
+   "s0|lfm3:1.7b": 1
+  },
+  "backend_error_XML_syntax": {
+   "ablation|ALL": 1,
+   "ablation|bonsai-2:4b": 1,
+   "fairness|ALL": 2,
+   "fairness|bonsai-2:4b": 1,
+   "fairness|lfm3:1.7b": 1,
+   "pilot|ALL": 4,
+   "pilot|bonsai-2:4b": 2,
+   "pilot|lfm3:1.7b": 2,
+   "round1|ALL": 2,
+   "round1|lfm3:1.7b": 2,
+   "s0|ALL": 2,
+   "s0|bonsai-2:4b": 1,
+   "s0|lfm3:1.7b": 1
+  },
+  "harness_rejected_call": {
+   "ablation|ALL": 39,
+   "ablation|bonsai-2:4b": 14,
+   "ablation|gpt-oss:20b": 22,
+   "ablation|lfm3:1.7b": 2,
+   "ablation|qwen3.5:9b": 1,
+   "compaction|ALL": 18,
+   "compaction|bonsai-2:4b": 8,
+   "compaction|gpt-oss:20b": 7,
+   "compaction|lfm3:1.7b": 3,
+   "namefix|ALL": 36,
+   "namefix|bonsai-2:4b": 28,
+   "namefix|gpt-oss:20b": 5,
+   "namefix|lfm3:1.7b": 1,
+   "namefix|qwen3.5:9b": 2,
+   "pilot|ALL": 348,
+   "pilot|bonsai-2:4b": 132,
+   "pilot|gpt-oss:20b": 65,
+   "pilot|lfm3:1.7b": 92,
+   "pilot|qwen3.5:9b": 59,
+   "round1|ALL": 68,
+   "round1|bonsai-2:4b": 23,
+   "round1|gpt-oss:20b": 29,
+   "round1|lfm3:1.7b": 15,
+   "round1|qwen3.5:9b": 1,
+   "round2|ALL": 150,
+   "round2|bonsai-2:4b": 85,
+   "round2|gpt-oss:20b": 38,
+   "round2|lfm3:1.7b": 27
+  },
+  "identical_repeated_failed_call": {
+   "compaction|ALL": 7,
+   "compaction|bonsai-2:4b": 7,
+   "fairness|ALL": 11,
+   "fairness|bonsai-2:4b": 11,
+   "pilot|ALL": 23,
+   "pilot|bonsai-2:4b": 23,
+   "round1|ALL": 4,
+   "round1|bonsai-2:4b": 3,
+   "round1|gpt-oss:20b": 1,
+   "round2|ALL": 3,
+   "round2|bonsai-2:4b": 3,
+   "s0|ALL": 5,
+   "s0|bonsai-2:4b": 5
+  },
+  "identical_repeated_ok_call": {
+   "ablation|ALL": 97,
+   "ablation|bonsai-2:4b": 53,
+   "ablation|gpt-oss:20b": 13,
+   "ablation|lfm3:1.7b": 21,
+   "ablation|qwen3.5:9b": 10,
+   "compaction|ALL": 49,
+   "compaction|bonsai-2:4b": 32,
+   "compaction|gpt-oss:20b": 5,
+   "compaction|lfm3:1.7b": 7,
+   "compaction|qwen3.5:9b": 5,
+   "fairness|ALL": 225,
+   "fairness|bonsai-2:4b": 155,
+   "fairness|gpt-oss:20b": 14,
+   "fairness|lfm3:1.7b": 19,
+   "fairness|qwen3.5:9b": 37,
+   "namefix|ALL": 1,
+   "namefix|bonsai-2:4b": 1,
+   "pilot|ALL": 588,
+   "pilot|bonsai-2:4b": 416,
+   "pilot|gpt-oss:20b": 34,
+   "pilot|lfm3:1.7b": 76,
+   "pilot|qwen3.5:9b": 62,
+   "round1|ALL": 260,
+   "round1|bonsai-2:4b": 182,
+   "round1|gpt-oss:20b": 21,
+   "round1|lfm3:1.7b": 39,
+   "round1|qwen3.5:9b": 18,
+   "round2|ALL": 528,
+   "round2|bonsai-2:4b": 448,
+   "round2|gpt-oss:20b": 14,
+   "round2|lfm3:1.7b": 55,
+   "round2|qwen3.5:9b": 11,
+   "s0|ALL": 31,
+   "s0|bonsai-2:4b": 15,
+   "s0|gpt-oss:20b": 1,
+   "s0|lfm3:1.7b": 8,
+   "s0|qwen3.5:9b": 7
+  },
+  "long_result": {
+   "ablation|ALL": 13,
+   "ablation|bonsai-2:4b": 4,
+   "ablation|gpt-oss:20b": 4,
+   "ablation|qwen3.5:9b": 5,
+   "compaction|ALL": 5,
+   "compaction|bonsai-2:4b": 1,
+   "compaction|gpt-oss:20b": 2,
+   "compaction|qwen3.5:9b": 2,
+   "fairness|ALL": 8,
+   "fairness|bonsai-2:4b": 1,
+   "fairness|gpt-oss:20b": 2,
+   "fairness|qwen3.5:9b": 5,
+   "namefix|ALL": 1,
+   "namefix|bonsai-2:4b": 1,
+   "pilot|ALL": 33,
+   "pilot|bonsai-2:4b": 9,
+   "pilot|gpt-oss:20b": 9,
+   "pilot|lfm3:1.7b": 3,
+   "pilot|qwen3.5:9b": 12,
+   "round1|ALL": 19,
+   "round1|bonsai-2:4b": 5,
+   "round1|gpt-oss:20b": 7,
+   "round1|lfm3:1.7b": 1,
+   "round1|qwen3.5:9b": 6,
+   "round2|ALL": 48,
+   "round2|bonsai-2:4b": 8,
+   "round2|gpt-oss:20b": 20,
+   "round2|lfm3:1.7b": 2,
+   "round2|qwen3.5:9b": 18,
+   "s0|ALL": 3,
+   "s0|qwen3.5:9b": 3
+  },
+  "max_iterations_ending": {
+   "compaction|ALL": 1,
+   "compaction|bonsai-2:4b": 1,
+   "fairness|ALL": 4,
+   "fairness|bonsai-2:4b": 4,
+   "pilot|ALL": 14,
+   "pilot|bonsai-2:4b": 13,
+   "pilot|qwen3.5:9b": 1,
+   "round1|ALL": 5,
+   "round1|bonsai-2:4b": 5,
+   "round2|ALL": 15,
+   "round2|bonsai-2:4b": 15
+  },
+  "mid_text_only_request": {
+   "round1|ALL": 13,
+   "round1|bonsai-2:4b": 1,
+   "round1|gpt-oss:20b": 9,
+   "round1|lfm3:1.7b": 3
+  },
+  "requests_after_long_result": {
+   "ablation|ALL": 37,
+   "ablation|bonsai-2:4b": 25,
+   "ablation|gpt-oss:20b": 4,
+   "ablation|qwen3.5:9b": 8,
+   "compaction|ALL": 23,
+   "compaction|bonsai-2:4b": 19,
+   "compaction|gpt-oss:20b": 2,
+   "compaction|qwen3.5:9b": 2,
+   "fairness|ALL": 39,
+   "fairness|bonsai-2:4b": 7,
+   "fairness|gpt-oss:20b": 6,
+   "fairness|qwen3.5:9b": 26,
+   "namefix|ALL": 5,
+   "namefix|bonsai-2:4b": 5,
+   "pilot|ALL": 121,
+   "pilot|bonsai-2:4b": 81,
+   "pilot|gpt-oss:20b": 9,
+   "pilot|lfm3:1.7b": 3,
+   "pilot|qwen3.5:9b": 28,
+   "round1|ALL": 86,
+   "round1|bonsai-2:4b": 67,
+   "round1|gpt-oss:20b": 9,
+   "round1|lfm3:1.7b": 1,
+   "round1|qwen3.5:9b": 9,
+   "round2|ALL": 143,
+   "round2|bonsai-2:4b": 93,
+   "round2|gpt-oss:20b": 21,
+   "round2|lfm3:1.7b": 2,
+   "round2|qwen3.5:9b": 27,
+   "s0|ALL": 4,
+   "s0|qwen3.5:9b": 4
+  },
+  "reread_slash_variant": {
+   "ablation|ALL": 2,
+   "ablation|bonsai-2:4b": 1,
+   "ablation|lfm3:1.7b": 1,
+   "compaction|ALL": 3,
+   "compaction|bonsai-2:4b": 3,
+   "fairness|ALL": 10,
+   "fairness|bonsai-2:4b": 8,
+   "fairness|lfm3:1.7b": 1,
+   "fairness|qwen3.5:9b": 1,
+   "pilot|ALL": 2,
+   "pilot|bonsai-2:4b": 2,
+   "round1|ALL": 2,
+   "round1|lfm3:1.7b": 2,
+   "round2|ALL": 16,
+   "round2|bonsai-2:4b": 8,
+   "round2|gpt-oss:20b": 1,
+   "round2|lfm3:1.7b": 7,
+   "s0|ALL": 3,
+   "s0|bonsai-2:4b": 3
+  },
+  "tool_not_offered": {
+   "pilot|ALL": 167,
+   "pilot|bonsai-2:4b": 73,
+   "pilot|gpt-oss:20b": 3,
+   "pilot|lfm3:1.7b": 56,
+   "pilot|qwen3.5:9b": 35
+  },
+  "write_tool_attempt": {
+   "ablation|ALL": 4,
+   "ablation|bonsai-2:4b": 4,
+   "fairness|ALL": 61,
+   "fairness|bonsai-2:4b": 58,
+   "fairness|qwen3.5:9b": 3,
+   "pilot|ALL": 4,
+   "pilot|bonsai-2:4b": 3,
+   "pilot|lfm3:1.7b": 1,
+   "s0|ALL": 7,
+   "s0|bonsai-2:4b": 5,
+   "s0|lfm3:1.7b": 1,
+   "s0|qwen3.5:9b": 1
+  }
+ },
+ "e_examples": {
+  "identical_repeated_ok_call": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/000-p3-C1+H2-lfm3_1.7b-s1/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/001-v2-A1-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/006-v2-C1+H1e-lfm3_1.7b-s1/trace.jsonl"
+  ],
+  "harness_rejected_call": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/009-v2-C1+H1e-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/017-e1h_chg_2-C1+FN-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/059-e1h_chg_2-C1+H2-lfm3_1.7b-s2/trace.jsonl"
+  ],
+  "backend_error_ResponseError": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/074-e1h_abs_1-C1+H2-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/039-p3-M0-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/gpt-oss_20b-e1h/035-e1h_chg_2-C1+H7-gpt-oss_20b-s2/trace.jsonl"
+  ],
+  "backend_error_XML_syntax": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-e1h/074-e1h_abs_1-C1+H2-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/039-p3-M0-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/074-e1h_amb_2-C1+H7-bonsai-2_4b-s1/trace.jsonl"
+  ],
+  "write_tool_attempt": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/020-v2-A1-lfm3_1.7b-s1/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/017-u3-A1-bonsai-2_4b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/021-u3-A1-bonsai-2_4b-s1/trace.jsonl"
+  ],
+  "long_result": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/034-v2-C1-lfm3_1.7b-s1/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/050-v2-M0-lfm3_1.7b-s1/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/lfm3_1.7b-stage3/054-v2-C1+H2-lfm3_1.7b-s2/trace.jsonl"
+  ],
+  "tool_not_offered": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-e1h/002-e1h_chg_1-C1+H7-qwen3.5_9b-s1/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/002-p3-C1+H7-qwen3.5_9b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/024-u3-C1+H7-qwen3.5_9b-s1/trace.jsonl"
+  ],
+  "max_iterations_ending": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot/qwen3.5_9b-stage3/024-u3-C1+H7-qwen3.5_9b-s1/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/003-e1h_chg_2-C1+H1n-bonsai-2_4b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/004-e1h_chg_2-C1+H2-bonsai-2_4b-s2/trace.jsonl"
+  ],
+  "identical_repeated_failed_call": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/001-e1h_abs_1-A1-bonsai-2_4b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/003-e1h_chg_2-C1+H1n-bonsai-2_4b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-e1h/004-e1h_chg_2-C1+H2-bonsai-2_4b-s2/trace.jsonl"
+  ],
+  "reread_slash_variant": [
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/009-h4-C1+H1e-bonsai-2_4b-s2/trace.jsonl",
+   "research/_artifacts/runs/small_model_harness_20261115/pilot_part2/bonsai-2_4b-stage3/012-v2-A1-bonsai-2_4b-s1/trace.jsonl",
+   "research/_artifacts/runs/build_round1_20261115/full_20261115T120449Z/lfm3_1.7b-stage3/001-v2-C1-lfm3_1.7b-s2/trace.jsonl"
+  ],
+  "mid_text_only_request": [
+   "research/_artifacts/runs/build_round1_20261115/full_20261115T120449Z/lfm3_1.7b-stage3/000-v2-C1+AG+LA-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/build_round1_20261115/full_20261115T120449Z/lfm3_1.7b-stage3/009-p3-C1+AG+LA-lfm3_1.7b-s2/trace.jsonl",
+   "research/_artifacts/runs/build_round1_20261115/full_20261115T120449Z/lfm3_1.7b-e1h/003-e1h_chg_1-C1+AG-lfm3_1.7b-s1/trace.jsonl"
+  ]
+ },
+ "e_harness_prefixes": {
+  "Tool": {
+   "ablation|bonsai-2:4b": 12,
+   "ablation|gpt-oss:20b": 1,
+   "ablation|lfm3:1.7b": 2,
+   "compaction|lfm3:1.7b": 2,
+   "pilot|bonsai-2:4b": 92,
+   "pilot|gpt-oss:20b": 3,
+   "pilot|lfm3:1.7b": 48,
+   "pilot|qwen3.5:9b": 28,
+   "round1|bonsai-2:4b": 20,
+   "round1|gpt-oss:20b": 1,
+   "round1|lfm3:1.7b": 10,
+   "round2|bonsai-2:4b": 81,
+   "round2|lfm3:1.7b": 23
+  },
+  "Invalid arguments": {
+   "ablation|bonsai-2:4b": 2,
+   "ablation|gpt-oss:20b": 21,
+   "ablation|qwen3.5:9b": 1,
+   "compaction|bonsai-2:4b": 8,
+   "compaction|gpt-oss:20b": 7,
+   "compaction|lfm3:1.7b": 1,
+   "namefix|bonsai-2:4b": 28,
+   "namefix|gpt-oss:20b": 5,
+   "namefix|lfm3:1.7b": 1,
+   "namefix|qwen3.5:9b": 2,
+   "pilot|bonsai-2:4b": 40,
+   "pilot|gpt-oss:20b": 62,
+   "pilot|lfm3:1.7b": 44,
+   "pilot|qwen3.5:9b": 30,
+   "round1|gpt-oss:20b": 28,
+   "round1|lfm3:1.7b": 1,
+   "round1|qwen3.5:9b": 1,
+   "round2|bonsai-2:4b": 4,
+   "round2|gpt-oss:20b": 38,
+   "round2|lfm3:1.7b": 4
+  },
+  "final_answer needs": {
+   "pilot|qwen3.5:9b": 1
+  },
+  "Answer not accepted": {
+   "round1|bonsai-2:4b": 3,
+   "round1|lfm3:1.7b": 4
+  }
+ }
+}

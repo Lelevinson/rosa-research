@@ -1,0 +1,322 @@
+{
+ "namespace": "/nf",
+ "seed": 20261124,
+ "nodes": [
+  {
+   "key": "n00",
+   "name": "bobbin",
+   "namespace": "/nf/lantern",
+   "fqn": "/nf/lantern/bobbin",
+   "params": {
+    "gain": 44
+   },
+   "pubs": [
+    {
+     "name": "/nf/kestrel_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n01",
+   "name": "yeoman",
+   "namespace": "/nf/agate",
+   "fqn": "/nf/agate/yeoman",
+   "params": {
+    "gain": 56
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/nf/chisel_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n02",
+   "name": "anchor",
+   "namespace": "/nf/cipher",
+   "fqn": "/nf/cipher/anchor",
+   "params": {
+    "gain": 83
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/nf/kestrel_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n03",
+   "name": "spindle",
+   "namespace": "/nf/cipher",
+   "fqn": "/nf/cipher/spindle",
+   "params": {
+    "gain": 27
+   },
+   "pubs": [
+    {
+     "name": "/nf/chisel_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n04",
+   "name": "lathe",
+   "namespace": "/nf/lantern",
+   "fqn": "/nf/lantern/lathe",
+   "params": {
+    "gain": 74
+   },
+   "pubs": [
+    {
+     "name": "/nf/harrow_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n05",
+   "name": "zenith",
+   "namespace": "/nf/lantern",
+   "fqn": "/nf/lantern/zenith",
+   "params": {
+    "gain": 52
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/nf/harrow_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n06",
+   "name": "xylem",
+   "namespace": "/nf/agate",
+   "fqn": "/nf/agate/xylem",
+   "params": {
+    "gain": 13
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/nf/harrow_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n07",
+   "name": "mortar",
+   "namespace": "/nf/cipher",
+   "fqn": "/nf/cipher/mortar",
+   "params": {
+    "gain": 48
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/nf/harrow_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n08",
+   "name": "easel",
+   "namespace": "/nf/agate",
+   "fqn": "/nf/agate/easel",
+   "params": {
+    "gain": 15
+   },
+   "pubs": [
+    {
+     "name": "/nf/ratchet_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n09",
+   "name": "obsidian",
+   "namespace": "/nf/cipher",
+   "fqn": "/nf/cipher/obsidian",
+   "params": {
+    "gain": 29
+   },
+   "pubs": [
+    {
+     "name": "/nf/bolt_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n10",
+   "name": "jasper",
+   "namespace": "/nf/lantern",
+   "fqn": "/nf/lantern/jasper",
+   "params": {
+    "gain": 13
+   },
+   "pubs": [
+    {
+     "name": "/nf/gimbal_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "subs": [
+    {
+     "name": "/nf/ratchet_t",
+     "type": "std_msgs/msg/Float32"
+    },
+    {
+     "name": "/nf/bolt_t",
+     "type": "std_msgs/msg/Int32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n11",
+   "name": "eclipse",
+   "namespace": "/nf/ivory",
+   "fqn": "/nf/ivory/eclipse",
+   "params": {
+    "mode": "slow",
+    "limit": 578
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n12",
+   "name": "eclipse",
+   "namespace": "/nf/dynamo",
+   "fqn": "/nf/dynamo/eclipse",
+   "params": {
+    "mode": "fast",
+    "limit": 901
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n13",
+   "name": "nozzle",
+   "namespace": "/nf/ivory",
+   "fqn": "/nf/ivory/nozzle",
+   "params": {
+    "gain": 61
+   },
+   "pubs": [],
+   "subs": [
+    {
+     "name": "/nf/vortex_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "services": []
+  },
+  {
+   "key": "n14",
+   "name": "nozzle",
+   "namespace": "/nf/dynamo",
+   "fqn": "/nf/dynamo/nozzle",
+   "params": {
+    "gain": 71
+   },
+   "pubs": [
+    {
+     "name": "/nf/vortex_t",
+     "type": "std_msgs/msg/Float32"
+    }
+   ],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n15",
+   "name": "talon",
+   "namespace": "/nf/lantern",
+   "fqn": "/nf/lantern/talon",
+   "params": {
+    "gain": 61
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n16",
+   "name": "umbra",
+   "namespace": "/nf/flint",
+   "fqn": "/nf/flint/umbra",
+   "params": {
+    "rate": 855
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n17",
+   "name": "mallet",
+   "namespace": "/nf/misc",
+   "fqn": "/nf/misc/mallet",
+   "params": {
+    "gain": 87
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n18",
+   "name": "kiln",
+   "namespace": "/nf/misc",
+   "fqn": "/nf/misc/kiln",
+   "params": {
+    "gain": 75
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  },
+  {
+   "key": "n19",
+   "name": "nectar",
+   "namespace": "/nf/misc",
+   "fqn": "/nf/misc/nectar",
+   "params": {
+    "gain": 93
+   },
+   "pubs": [],
+   "subs": [],
+   "services": []
+  }
+ ]
+}

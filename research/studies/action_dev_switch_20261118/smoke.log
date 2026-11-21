@@ -1,0 +1,15 @@
+[WARN] [1795001636.155495998] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795001636.155540029] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+19:33:56 smoke_20261118T113356Z/qwen3.5_9b/000-S3-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3606, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 33.9}
+19:34:32 smoke_20261118T113356Z/qwen3.5_9b/001-R2-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2297, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 16.8}
+19:34:49 smoke_20261118T113356Z/qwen3.5_9b/002-R2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2246, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 17.7}
+19:35:09 smoke_20261118T113356Z/qwen3.5_9b/003-R1-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2168, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 14.7}
+19:35:24 smoke_20261118T113356Z/qwen3.5_9b/004-R1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2140, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 13.9}
+19:35:40 smoke_20261118T113356Z/qwen3.5_9b/005-S3-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3484, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 25.5}
+done

@@ -1,0 +1,7 @@
+{
+ "frozen_at": "2026-11-20T19:50:49",
+ "protocol_md_sha256": "daf9e5d2995a6b33762a914a72c071ef78582aede039398284bdb9bcef50161a",
+ "derail_py_sha256": "fd425e29eaf84f9864cf0e4a72b84a590ff6aef0ba0357f731e618b7962b5640",
+ "count_candidates_py_sha256": "e188474b6dea860bb0dacc96057aaf9581a3291882034217a3328e199cecea41",
+ "note": "frozen before script; no empty-error count computed"
+}

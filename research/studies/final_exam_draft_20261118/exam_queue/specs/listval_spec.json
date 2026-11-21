@@ -1,0 +1,47 @@
+{
+ "name": "listval",
+ "master_seed": 20261120,
+ "temperature": 0.7,
+ "_status": "List-values live dev test: FULL (switch off) vs LISTVAL (switch on), 18 dev tasks x 4 models x new seeds 9-10 x 2 arms = 288 episodes, laptop only. Cells are the frozen plan of listval_live_20261120/run_listval.py (plan_for listval); the planner refuses to run if its hash differs from the one below.",
+ "models": [
+  "lfm3:1.7b",
+  "qwen3.5:9b",
+  "gpt-oss:20b",
+  "bonsai-2:4b"
+ ],
+ "pools": {
+  "dev": {
+   "tasks": {}
+  }
+ },
+ "tiers": [
+  {
+   "name": "listval",
+   "systems": [
+    "LV-FULL",
+    "LV-LISTVAL"
+   ],
+   "pools": [
+    "dev"
+   ],
+   "seeds": [
+    9,
+    10
+   ],
+   "frozen_plan": {
+    "phase": "listval",
+    "system_prefix": "LV-",
+    "arms_probe": "FULL",
+    "pool": "dev",
+    "manifest_sha256": "6ba250450e2bd02a4b45e07d20145f47f5c6d88226d0424d0d508c574c717383"
+   }
+  }
+ ],
+ "queue": {
+  "block_size": 72,
+  "heartbeat_seconds": 30,
+  "min_free_gb": 20,
+  "quarantine_after": 3,
+  "episode_timeout_seconds": 1800
+ }
+}

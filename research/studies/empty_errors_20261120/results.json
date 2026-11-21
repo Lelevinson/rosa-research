@@ -1,0 +1,1787 @@
+{
+ "requests": {
+  "P1": 1655,
+  "P3": 941,
+  "P2": 12614
+ },
+ "episodes": {
+  "P1": 288,
+  "P3": 144,
+  "P2": 1832
+ },
+ "empty_tools_p13": [
+  "ros2_node_info",
+  "ros2_param_get",
+  "ros2_param_list",
+  "ros2_service_info",
+  "ros2_topic_echo",
+  "ros2_topic_info"
+ ],
+ "P1": {
+  "empty": {
+   "events": 47,
+   "recovered": 8,
+   "rate_pct": 17.0,
+   "censored": 10,
+   "mean_dist": 1.62,
+   "supported_episodes": 11
+  },
+  "notfound": {
+   "events": 159,
+   "recovered": 78,
+   "rate_pct": 49.1,
+   "censored": 41,
+   "mean_dist": 2.18,
+   "supported_episodes": 89
+  },
+  "gap_pp": 32.1,
+  "first_event_per_episode": {
+   "empty": {
+    "events": 7,
+    "recovered": 2,
+    "rate_pct": 28.6,
+    "censored": 0,
+    "mean_dist": 3.5,
+    "supported_episodes": 3
+   },
+   "notfound": {
+    "events": 90,
+    "recovered": 51,
+    "rate_pct": 56.7,
+    "censored": 30,
+    "mean_dist": 2.08,
+    "supported_episodes": 72
+   }
+  },
+  "empty_by_model": {
+   "lfm3:1.7b": 26,
+   "bonsai-2:4b": 21
+  },
+  "empty_by_task": {
+   "nf_exact": 6,
+   "nf_single_1": 2,
+   "nf_amb_1": 9,
+   "nf_single_2": 8,
+   "nf_multi_2": 1,
+   "v2": 21
+  },
+  "empty_by_tool": {
+   "ros2_param_list": 7,
+   "ros2_node_info": 11,
+   "ros2_param_get": 5,
+   "ros2_topic_info": 2,
+   "ros2_topic_echo": 1,
+   "ros2_service_info": 21
+  },
+  "v2_share_pct": 44.7,
+  "max_task_share_pct": 44.7,
+  "by_model": {
+   "bonsai-2:4b": {
+    "empty": {
+     "events": 21,
+     "recovered": 1,
+     "rate_pct": 4.8,
+     "censored": 3,
+     "mean_dist": 2,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 77,
+     "recovered": 28,
+     "rate_pct": 36.4,
+     "censored": 14,
+     "mean_dist": 2.57,
+     "supported_episodes": 20
+    },
+    "gap_pp": 31.6,
+    "first_event_per_episode": {
+     "empty": {
+      "events": 2,
+      "recovered": 1,
+      "rate_pct": 50.0,
+      "censored": 0,
+      "mean_dist": 2,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 26,
+      "recovered": 14,
+      "rate_pct": 53.8,
+      "censored": 7,
+      "mean_dist": 2.43,
+      "supported_episodes": 14
+     }
+    }
+   },
+   "gpt-oss:20b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 9,
+     "recovered": 8,
+     "rate_pct": 88.9,
+     "censored": 1,
+     "mean_dist": 1,
+     "supported_episodes": 9
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 6,
+      "recovered": 5,
+      "rate_pct": 83.3,
+      "censored": 1,
+      "mean_dist": 1,
+      "supported_episodes": 6
+     }
+    }
+   },
+   "lfm3:1.7b": {
+    "empty": {
+     "events": 26,
+     "recovered": 7,
+     "rate_pct": 26.9,
+     "censored": 7,
+     "mean_dist": 1.57,
+     "supported_episodes": 11
+    },
+    "notfound": {
+     "events": 55,
+     "recovered": 35,
+     "rate_pct": 63.6,
+     "censored": 15,
+     "mean_dist": 2.23,
+     "supported_episodes": 42
+    },
+    "gap_pp": 36.7,
+    "first_event_per_episode": {
+     "empty": {
+      "events": 5,
+      "recovered": 1,
+      "rate_pct": 20.0,
+      "censored": 0,
+      "mean_dist": 5,
+      "supported_episodes": 3
+     },
+     "notfound": {
+      "events": 40,
+      "recovered": 25,
+      "rate_pct": 62.5,
+      "censored": 11,
+      "mean_dist": 2.2,
+      "supported_episodes": 34
+     }
+    }
+   },
+   "qwen3.5:9b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 18,
+     "recovered": 7,
+     "rate_pct": 38.9,
+     "censored": 11,
+     "mean_dist": 1.71,
+     "supported_episodes": 18
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 18,
+      "recovered": 7,
+      "rate_pct": 38.9,
+      "censored": 11,
+      "mean_dist": 1.71,
+      "supported_episodes": 18
+     }
+    }
+   }
+  },
+  "by_task_empty": {
+   "nf_amb_1": {
+    "events": 9,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 3,
+    "mean_dist": null,
+    "supported_episodes": 0
+   },
+   "nf_exact": {
+    "events": 6,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 3,
+    "mean_dist": null,
+    "supported_episodes": 0
+   },
+   "nf_multi_2": {
+    "events": 1,
+    "recovered": 1,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 5,
+    "supported_episodes": 1
+   },
+   "nf_single_1": {
+    "events": 2,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 1,
+    "mean_dist": null,
+    "supported_episodes": 2
+   },
+   "nf_single_2": {
+    "events": 8,
+    "recovered": 6,
+    "rate_pct": 75.0,
+    "censored": 0,
+    "mean_dist": 1,
+    "supported_episodes": 8
+   },
+   "v2": {
+    "events": 21,
+    "recovered": 1,
+    "rate_pct": 4.8,
+    "censored": 3,
+    "mean_dist": 2,
+    "supported_episodes": 0
+   }
+  },
+  "by_task_notfound": {
+   "e1h_abs_1": {
+    "events": 13,
+    "recovered": 1,
+    "rate_pct": 7.7,
+    "censored": 12,
+    "mean_dist": 2,
+    "supported_episodes": 10
+   },
+   "e1h_abs_2": {
+    "events": 10,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 10,
+    "mean_dist": null,
+    "supported_episodes": 10
+   },
+   "e1h_amb_1": {
+    "events": 10,
+    "recovered": 10,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 10
+   },
+   "e1h_amb_2": {
+    "events": 6,
+    "recovered": 6,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2.33,
+    "supported_episodes": 6
+   },
+   "e1h_chg_2": {
+    "events": 6,
+    "recovered": 2,
+    "rate_pct": 33.3,
+    "censored": 1,
+    "mean_dist": 3.5,
+    "supported_episodes": 3
+   },
+   "h4": {
+    "events": 14,
+    "recovered": 14,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 13
+   },
+   "nf_absent": {
+    "events": 10,
+    "recovered": 1,
+    "rate_pct": 10.0,
+    "censored": 9,
+    "mean_dist": 2,
+    "supported_episodes": 9
+   },
+   "nf_amb_1": {
+    "events": 3,
+    "recovered": 3,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 1.67,
+    "supported_episodes": 3
+   },
+   "nf_amb_2": {
+    "events": 1,
+    "recovered": 1,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 1
+   },
+   "nf_multi_1": {
+    "events": 26,
+    "recovered": 19,
+    "rate_pct": 73.1,
+    "censored": 0,
+    "mean_dist": 2.42,
+    "supported_episodes": 9
+   },
+   "nf_multi_2": {
+    "events": 1,
+    "recovered": 1,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 1
+   },
+   "nf_single_1": {
+    "events": 2,
+    "recovered": 2,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 2
+   },
+   "nf_single_2": {
+    "events": 2,
+    "recovered": 1,
+    "rate_pct": 50.0,
+    "censored": 1,
+    "mean_dist": 1,
+    "supported_episodes": 2
+   },
+   "u3": {
+    "events": 14,
+    "recovered": 14,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2.14,
+    "supported_episodes": 10
+   },
+   "v2": {
+    "events": 41,
+    "recovered": 3,
+    "rate_pct": 7.3,
+    "censored": 8,
+    "mean_dist": 2.33,
+    "supported_episodes": 0
+   }
+  },
+  "by_tool": {
+   "ros2_node_info": {
+    "empty": {
+     "events": 11,
+     "recovered": 7,
+     "rate_pct": 63.6,
+     "censored": 1,
+     "mean_dist": 1.57,
+     "supported_episodes": 8
+    },
+    "notfound": {
+     "events": 122,
+     "recovered": 50,
+     "rate_pct": 41.0,
+     "censored": 38,
+     "mean_dist": 2.28,
+     "supported_episodes": 66
+    }
+   },
+   "ros2_param_get": {
+    "empty": {
+     "events": 5,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 3,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 14,
+     "recovered": 13,
+     "rate_pct": 92.9,
+     "censored": 1,
+     "mean_dist": 1.38,
+     "supported_episodes": 13
+    }
+   },
+   "ros2_param_list": {
+    "empty": {
+     "events": 7,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 3,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 16,
+     "recovered": 12,
+     "rate_pct": 75.0,
+     "censored": 1,
+     "mean_dist": 2.42,
+     "supported_episodes": 6
+    }
+   },
+   "ros2_service_info": {
+    "empty": {
+     "events": 21,
+     "recovered": 1,
+     "rate_pct": 4.8,
+     "censored": 3,
+     "mean_dist": 2,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    }
+   },
+   "ros2_topic_echo": {
+    "empty": {
+     "events": 1,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 1
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    }
+   },
+   "ros2_topic_info": {
+    "empty": {
+     "events": 2,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 2
+    },
+    "notfound": {
+     "events": 7,
+     "recovered": 3,
+     "rate_pct": 42.9,
+     "censored": 1,
+     "mean_dist": 3,
+     "supported_episodes": 4
+    }
+   }
+  },
+  "size": {
+   "nonrecovered_episodes": 5,
+   "requests_after": 102,
+   "total_requests": 1655,
+   "share_pct": 6.16
+  },
+  "M2": {
+   "events": 25,
+   "episodes": 25,
+   "saved_max": 26,
+   "never_retried": 0,
+   "saved_share_pct": 1.57,
+   "by_tool": {
+    "ros2_node_list": 18,
+    "ros2_service_list": 2,
+    "ros2_topic_list": 5
+   },
+   "by_field": {
+    "blacklist": 25
+   },
+   "by_model": {
+    "gpt-oss:20b": 25
+   },
+   "by_task": {
+    "h4": 3,
+    "v2": 2,
+    "u3": 1,
+    "e1h_abs_2": 4,
+    "e1h_abs_1": 3,
+    "e1h_amb_1": 4,
+    "e1h_amb_2": 1,
+    "nf_amb_1": 1,
+    "nf_amb_2": 1,
+    "nf_single_2": 1,
+    "nf_absent": 4
+   },
+   "other_string_rejections_none_null": 1
+  }
+ },
+ "P3": {
+  "empty": {
+   "events": 32,
+   "recovered": 0,
+   "rate_pct": 0.0,
+   "censored": 5,
+   "mean_dist": null,
+   "supported_episodes": 0
+  },
+  "notfound": {
+   "events": 0,
+   "recovered": 0,
+   "rate_pct": null,
+   "censored": 0,
+   "mean_dist": null,
+   "supported_episodes": 0
+  },
+  "first_event_per_episode": {
+   "empty": {
+    "events": 2,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 0,
+    "mean_dist": null,
+    "supported_episodes": 0
+   },
+   "notfound": {
+    "events": 0,
+    "recovered": 0,
+    "rate_pct": null,
+    "censored": 0,
+    "mean_dist": null,
+    "supported_episodes": 0
+   }
+  },
+  "empty_by_model": {
+   "bonsai-2:4b": 32
+  },
+  "empty_by_task": {
+   "v2": 32
+  },
+  "empty_by_tool": {
+   "ros2_service_info": 32
+  },
+  "v2_share_pct": 100.0,
+  "max_task_share_pct": 100.0,
+  "by_model": {
+   "bonsai-2:4b": {
+    "empty": {
+     "events": 32,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 5,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 2,
+      "recovered": 0,
+      "rate_pct": 0.0,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   },
+   "gpt-oss:20b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   },
+   "lfm3:1.7b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   },
+   "qwen3.5:9b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   }
+  },
+  "by_task_empty": {
+   "v2": {
+    "events": 32,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 5,
+    "mean_dist": null,
+    "supported_episodes": 0
+   }
+  },
+  "by_task_notfound": {},
+  "by_tool": {
+   "ros2_service_info": {
+    "empty": {
+     "events": 32,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 5,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    }
+   }
+  },
+  "size": {
+   "nonrecovered_episodes": 2,
+   "requests_after": 78,
+   "total_requests": 941,
+   "share_pct": 8.29
+  },
+  "M2": {
+   "events": 13,
+   "episodes": 13,
+   "saved_max": 12,
+   "never_retried": 1,
+   "saved_share_pct": 1.28,
+   "by_tool": {
+    "ros2_topic_list": 4,
+    "ros2_service_list": 2,
+    "ros2_node_list": 7
+   },
+   "by_field": {
+    "blacklist": 13
+   },
+   "by_model": {
+    "gpt-oss:20b": 13
+   },
+   "by_task": {
+    "h4": 2,
+    "v2": 2,
+    "u3": 1,
+    "e1h_abs_2": 1,
+    "e1h_amb_1": 2,
+    "e1h_abs_1": 1,
+    "nf_absent": 2,
+    "nf_amb_1": 1,
+    "nf_multi_2": 1
+   },
+   "other_string_rejections_none_null": 0
+  }
+ },
+ "P1+P3": {
+  "empty": {
+   "events": 79,
+   "recovered": 8,
+   "rate_pct": 10.1,
+   "censored": 15,
+   "mean_dist": 1.62,
+   "supported_episodes": 11
+  },
+  "notfound": {
+   "events": 246,
+   "recovered": 109,
+   "rate_pct": 44.3,
+   "censored": 62,
+   "mean_dist": 2.11,
+   "supported_episodes": 125
+  },
+  "gap_pp": 34.2,
+  "first_event_per_episode": {
+   "empty": {
+    "events": 9,
+    "recovered": 2,
+    "rate_pct": 22.2,
+    "censored": 0,
+    "mean_dist": 3.5,
+    "supported_episodes": 3
+   },
+   "notfound": {
+    "events": 130,
+    "recovered": 74,
+    "rate_pct": 56.9,
+    "censored": 44,
+    "mean_dist": 2.03,
+    "supported_episodes": 104
+   }
+  },
+  "empty_by_model": {
+   "lfm3:1.7b": 26,
+   "bonsai-2:4b": 53
+  },
+  "empty_by_task": {
+   "nf_exact": 6,
+   "nf_single_1": 2,
+   "nf_amb_1": 9,
+   "nf_single_2": 8,
+   "nf_multi_2": 1,
+   "v2": 53
+  },
+  "empty_by_tool": {
+   "ros2_param_list": 7,
+   "ros2_node_info": 11,
+   "ros2_param_get": 5,
+   "ros2_topic_info": 2,
+   "ros2_topic_echo": 1,
+   "ros2_service_info": 53
+  },
+  "v2_share_pct": 67.1,
+  "max_task_share_pct": 67.1,
+  "by_model": {
+   "bonsai-2:4b": {
+    "empty": {
+     "events": 53,
+     "recovered": 1,
+     "rate_pct": 1.9,
+     "censored": 8,
+     "mean_dist": 2,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 118,
+     "recovered": 35,
+     "rate_pct": 29.7,
+     "censored": 21,
+     "mean_dist": 2.43,
+     "supported_episodes": 25
+    },
+    "gap_pp": 27.8,
+    "first_event_per_episode": {
+     "empty": {
+      "events": 4,
+      "recovered": 1,
+      "rate_pct": 25.0,
+      "censored": 0,
+      "mean_dist": 2,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 35,
+      "recovered": 18,
+      "rate_pct": 51.4,
+      "censored": 9,
+      "mean_dist": 2.39,
+      "supported_episodes": 18
+     }
+    }
+   },
+   "gpt-oss:20b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 13,
+     "recovered": 12,
+     "rate_pct": 92.3,
+     "censored": 1,
+     "mean_dist": 1.17,
+     "supported_episodes": 12
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 9,
+      "recovered": 8,
+      "rate_pct": 88.9,
+      "censored": 1,
+      "mean_dist": 1.25,
+      "supported_episodes": 8
+     }
+    }
+   },
+   "lfm3:1.7b": {
+    "empty": {
+     "events": 26,
+     "recovered": 7,
+     "rate_pct": 26.9,
+     "censored": 7,
+     "mean_dist": 1.57,
+     "supported_episodes": 11
+    },
+    "notfound": {
+     "events": 86,
+     "recovered": 50,
+     "rate_pct": 58.1,
+     "censored": 23,
+     "mean_dist": 2.2,
+     "supported_episodes": 59
+    },
+    "gap_pp": 31.2,
+    "first_event_per_episode": {
+     "empty": {
+      "events": 5,
+      "recovered": 1,
+      "rate_pct": 20.0,
+      "censored": 0,
+      "mean_dist": 5,
+      "supported_episodes": 3
+     },
+     "notfound": {
+      "events": 57,
+      "recovered": 36,
+      "rate_pct": 63.2,
+      "censored": 17,
+      "mean_dist": 2.11,
+      "supported_episodes": 49
+     }
+    }
+   },
+   "qwen3.5:9b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 29,
+     "recovered": 12,
+     "rate_pct": 41.4,
+     "censored": 17,
+     "mean_dist": 1.75,
+     "supported_episodes": 29
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 29,
+      "recovered": 12,
+      "rate_pct": 41.4,
+      "censored": 17,
+      "mean_dist": 1.75,
+      "supported_episodes": 29
+     }
+    }
+   }
+  },
+  "by_task_empty": {
+   "nf_amb_1": {
+    "events": 9,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 3,
+    "mean_dist": null,
+    "supported_episodes": 0
+   },
+   "nf_exact": {
+    "events": 6,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 3,
+    "mean_dist": null,
+    "supported_episodes": 0
+   },
+   "nf_multi_2": {
+    "events": 1,
+    "recovered": 1,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 5,
+    "supported_episodes": 1
+   },
+   "nf_single_1": {
+    "events": 2,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 1,
+    "mean_dist": null,
+    "supported_episodes": 2
+   },
+   "nf_single_2": {
+    "events": 8,
+    "recovered": 6,
+    "rate_pct": 75.0,
+    "censored": 0,
+    "mean_dist": 1,
+    "supported_episodes": 8
+   },
+   "v2": {
+    "events": 53,
+    "recovered": 1,
+    "rate_pct": 1.9,
+    "censored": 8,
+    "mean_dist": 2,
+    "supported_episodes": 0
+   }
+  },
+  "by_task_notfound": {
+   "e1h_abs_1": {
+    "events": 17,
+    "recovered": 1,
+    "rate_pct": 5.9,
+    "censored": 16,
+    "mean_dist": 2,
+    "supported_episodes": 14
+   },
+   "e1h_abs_2": {
+    "events": 15,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 15,
+    "mean_dist": null,
+    "supported_episodes": 15
+   },
+   "e1h_amb_1": {
+    "events": 11,
+    "recovered": 11,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 1.91,
+    "supported_episodes": 11
+   },
+   "e1h_amb_2": {
+    "events": 6,
+    "recovered": 6,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2.33,
+    "supported_episodes": 6
+   },
+   "e1h_chg_2": {
+    "events": 6,
+    "recovered": 2,
+    "rate_pct": 33.3,
+    "censored": 1,
+    "mean_dist": 3.5,
+    "supported_episodes": 3
+   },
+   "h4": {
+    "events": 20,
+    "recovered": 20,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 1.9,
+    "supported_episodes": 17
+   },
+   "nf_absent": {
+    "events": 15,
+    "recovered": 2,
+    "rate_pct": 13.3,
+    "censored": 13,
+    "mean_dist": 2,
+    "supported_episodes": 13
+   },
+   "nf_amb_1": {
+    "events": 4,
+    "recovered": 4,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 1.75,
+    "supported_episodes": 4
+   },
+   "nf_amb_2": {
+    "events": 2,
+    "recovered": 2,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 2
+   },
+   "nf_multi_1": {
+    "events": 62,
+    "recovered": 25,
+    "rate_pct": 40.3,
+    "censored": 5,
+    "mean_dist": 2.28,
+    "supported_episodes": 12
+   },
+   "nf_multi_2": {
+    "events": 2,
+    "recovered": 2,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 1.5,
+    "supported_episodes": 2
+   },
+   "nf_single_1": {
+    "events": 4,
+    "recovered": 4,
+    "rate_pct": 100.0,
+    "censored": 0,
+    "mean_dist": 2,
+    "supported_episodes": 4
+   },
+   "nf_single_2": {
+    "events": 5,
+    "recovered": 4,
+    "rate_pct": 80.0,
+    "censored": 1,
+    "mean_dist": 2,
+    "supported_episodes": 5
+   },
+   "u3": {
+    "events": 21,
+    "recovered": 19,
+    "rate_pct": 90.5,
+    "censored": 2,
+    "mean_dist": 2.11,
+    "supported_episodes": 17
+   },
+   "v2": {
+    "events": 56,
+    "recovered": 7,
+    "rate_pct": 12.5,
+    "censored": 9,
+    "mean_dist": 2.43,
+    "supported_episodes": 0
+   }
+  },
+  "by_tool": {
+   "ros2_node_info": {
+    "empty": {
+     "events": 11,
+     "recovered": 7,
+     "rate_pct": 63.6,
+     "censored": 1,
+     "mean_dist": 1.57,
+     "supported_episodes": 8
+    },
+    "notfound": {
+     "events": 199,
+     "recovered": 76,
+     "rate_pct": 38.2,
+     "censored": 59,
+     "mean_dist": 2.17,
+     "supported_episodes": 99
+    }
+   },
+   "ros2_param_get": {
+    "empty": {
+     "events": 5,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 3,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 18,
+     "recovered": 15,
+     "rate_pct": 83.3,
+     "censored": 1,
+     "mean_dist": 1.47,
+     "supported_episodes": 15
+    }
+   },
+   "ros2_param_list": {
+    "empty": {
+     "events": 7,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 3,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 19,
+     "recovered": 14,
+     "rate_pct": 73.7,
+     "censored": 1,
+     "mean_dist": 2.29,
+     "supported_episodes": 7
+    }
+   },
+   "ros2_service_info": {
+    "empty": {
+     "events": 53,
+     "recovered": 1,
+     "rate_pct": 1.9,
+     "censored": 8,
+     "mean_dist": 2,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    }
+   },
+   "ros2_topic_echo": {
+    "empty": {
+     "events": 1,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 1
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    }
+   },
+   "ros2_topic_info": {
+    "empty": {
+     "events": 2,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 2
+    },
+    "notfound": {
+     "events": 10,
+     "recovered": 4,
+     "rate_pct": 40.0,
+     "censored": 1,
+     "mean_dist": 2.75,
+     "supported_episodes": 4
+    }
+   }
+  },
+  "size": {
+   "nonrecovered_episodes": 7,
+   "requests_after": 180,
+   "total_requests": 2596,
+   "share_pct": 6.93
+  },
+  "M2": {
+   "events": 38,
+   "episodes": 38,
+   "saved_max": 38,
+   "never_retried": 1,
+   "saved_share_pct": 1.46,
+   "by_tool": {
+    "ros2_node_list": 25,
+    "ros2_service_list": 4,
+    "ros2_topic_list": 9
+   },
+   "by_field": {
+    "blacklist": 38
+   },
+   "by_model": {
+    "gpt-oss:20b": 38
+   },
+   "by_task": {
+    "h4": 5,
+    "v2": 4,
+    "u3": 2,
+    "e1h_abs_2": 5,
+    "e1h_abs_1": 4,
+    "e1h_amb_1": 6,
+    "e1h_amb_2": 1,
+    "nf_amb_1": 2,
+    "nf_amb_2": 1,
+    "nf_single_2": 1,
+    "nf_absent": 6,
+    "nf_multi_2": 1
+   },
+   "other_string_rejections_none_null": 1
+  }
+ },
+ "P2": {
+  "empty": {
+   "events": 322,
+   "recovered": 19,
+   "rate_pct": 5.9,
+   "censored": 49,
+   "mean_dist": 2.42,
+   "supported_episodes": 71
+  },
+  "notfound": {
+   "events": 0,
+   "recovered": 0,
+   "rate_pct": null,
+   "censored": 0,
+   "mean_dist": null,
+   "supported_episodes": 0
+  },
+  "first_event_per_episode": {
+   "empty": {
+    "events": 48,
+    "recovered": 8,
+    "rate_pct": 16.7,
+    "censored": 5,
+    "mean_dist": 2.62,
+    "supported_episodes": 17
+   },
+   "notfound": {
+    "events": 0,
+    "recovered": 0,
+    "rate_pct": null,
+    "censored": 0,
+    "mean_dist": null,
+    "supported_episodes": 0
+   }
+  },
+  "empty_by_model": {
+   "lfm3:1.7b": 11,
+   "bonsai-2:4b": 310,
+   "gpt-oss:20b": 1
+  },
+  "empty_by_task": {
+   "v2": 304,
+   "h4": 6,
+   "u3": 11,
+   "nf_amb_2": 1
+  },
+  "empty_by_tool": {
+   "ros2_service_info": 322
+  },
+  "v2_share_pct": 94.4,
+  "max_task_share_pct": 94.4,
+  "by_model": {
+   "bonsai-2:4b": {
+    "empty": {
+     "events": 310,
+     "recovered": 16,
+     "rate_pct": 5.2,
+     "censored": 44,
+     "mean_dist": 2.56,
+     "supported_episodes": 69
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 38,
+      "recovered": 5,
+      "rate_pct": 13.2,
+      "censored": 2,
+      "mean_dist": 3.2,
+      "supported_episodes": 15
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   },
+   "gpt-oss:20b": {
+    "empty": {
+     "events": 1,
+     "recovered": 0,
+     "rate_pct": 0.0,
+     "censored": 1,
+     "mean_dist": null,
+     "supported_episodes": 1
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 1,
+      "recovered": 0,
+      "rate_pct": 0.0,
+      "censored": 1,
+      "mean_dist": null,
+      "supported_episodes": 1
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   },
+   "lfm3:1.7b": {
+    "empty": {
+     "events": 11,
+     "recovered": 3,
+     "rate_pct": 27.3,
+     "censored": 4,
+     "mean_dist": 1.67,
+     "supported_episodes": 1
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 9,
+      "recovered": 3,
+      "rate_pct": 33.3,
+      "censored": 2,
+      "mean_dist": 1.67,
+      "supported_episodes": 1
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   },
+   "qwen3.5:9b": {
+    "empty": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    },
+    "first_event_per_episode": {
+     "empty": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     },
+     "notfound": {
+      "events": 0,
+      "recovered": 0,
+      "rate_pct": null,
+      "censored": 0,
+      "mean_dist": null,
+      "supported_episodes": 0
+     }
+    }
+   }
+  },
+  "by_task_empty": {
+   "h4": {
+    "events": 6,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 0,
+    "mean_dist": null,
+    "supported_episodes": 2
+   },
+   "nf_amb_2": {
+    "events": 1,
+    "recovered": 0,
+    "rate_pct": 0.0,
+    "censored": 1,
+    "mean_dist": null,
+    "supported_episodes": 1
+   },
+   "u3": {
+    "events": 11,
+    "recovered": 1,
+    "rate_pct": 9.1,
+    "censored": 0,
+    "mean_dist": 4,
+    "supported_episodes": 11
+   },
+   "v2": {
+    "events": 304,
+    "recovered": 18,
+    "rate_pct": 5.9,
+    "censored": 48,
+    "mean_dist": 2.33,
+    "supported_episodes": 57
+   }
+  },
+  "by_task_notfound": {},
+  "by_tool": {
+   "ros2_service_info": {
+    "empty": {
+     "events": 322,
+     "recovered": 19,
+     "rate_pct": 5.9,
+     "censored": 49,
+     "mean_dist": 2.42,
+     "supported_episodes": 71
+    },
+    "notfound": {
+     "events": 0,
+     "recovered": 0,
+     "rate_pct": null,
+     "censored": 0,
+     "mean_dist": null,
+     "supported_episodes": 0
+    }
+   }
+  },
+  "size": {
+   "nonrecovered_episodes": 41,
+   "requests_after": 957,
+   "total_requests": 12614,
+   "share_pct": 7.59
+  },
+  "M2": {
+   "events": 113,
+   "episodes": 112,
+   "saved_max": 111,
+   "never_retried": 4,
+   "saved_share_pct": 0.88,
+   "by_tool": {
+    "ros2_node_list": 77,
+    "ros2_topic_list": 18,
+    "ros2_service_list": 18
+   },
+   "by_field": {
+    "blacklist": 113
+   },
+   "by_model": {
+    "gpt-oss:20b": 113
+   },
+   "by_task": {
+    "e1h_abs_1": 18,
+    "e1h_amb_2": 10,
+    "e1h_amb_1": 19,
+    "e1h_abs_2": 21,
+    "u3": 9,
+    "v2": 24,
+    "h4": 9,
+    "nf_amb_1": 1,
+    "nf_amb_2": 1,
+    "nf_single_1": 1
+   },
+   "other_string_rejections_none_null": 3
+  }
+ },
+ "bars": {
+  "gap_pp": 34.2,
+  "gap_met": true,
+  "models_with_5": [
+   "lfm3:1.7b",
+   "bonsai-2:4b"
+  ],
+  "models_met": true,
+  "M1_case": true,
+  "tools": 6,
+  "tools_met": true,
+  "max_task_share_pct": 67.1,
+  "task_met": false,
+  "size_share_pct": 6.93,
+  "size_met": true
+ },
+ "handread": [
+  {
+   "pop": "P3",
+   "run_id": "block_0010/004-v2-FULL-bonsai-2_4b-s10",
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "cls": "empty",
+   "tool": "ros2_service_info",
+   "kind": "service",
+   "typed": "cedar_reset",
+   "index": 32,
+   "requests": 40,
+   "recovered": false,
+   "dist": null,
+   "censored": false,
+   "supported": false,
+   "after": 8,
+   "trace": null
+  },
+  {
+   "pop": "P1",
+   "run_id": "block_0010/007-v2-FULL-bonsai-2_4b-s7",
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "cls": "empty",
+   "tool": "ros2_service_info",
+   "kind": "service",
+   "typed": "cedar_reset",
+   "index": 10,
+   "requests": 40,
+   "recovered": false,
+   "dist": null,
+   "censored": false,
+   "supported": false,
+   "after": 30,
+   "trace": null
+  },
+  {
+   "pop": "P1",
+   "run_id": "block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8",
+   "model": "lfm3:1.7b",
+   "task": "nf_amb_1",
+   "cls": "empty",
+   "tool": "ros2_param_list",
+   "kind": "node",
+   "typed": "/nf/dynamo/eclipse",
+   "index": 16,
+   "requests": 17,
+   "recovered": false,
+   "dist": null,
+   "censored": true,
+   "supported": false,
+   "after": 1,
+   "trace": null
+  },
+  {
+   "pop": "P1",
+   "run_id": "block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8",
+   "model": "lfm3:1.7b",
+   "task": "nf_amb_1",
+   "cls": "empty",
+   "tool": "ros2_param_list",
+   "kind": "node",
+   "typed": "/nf/ivory/eclipse",
+   "index": 10,
+   "requests": 17,
+   "recovered": false,
+   "dist": null,
+   "censored": false,
+   "supported": false,
+   "after": 7,
+   "trace": null
+  },
+  {
+   "pop": "P3",
+   "run_id": "block_0010/004-v2-FULL-bonsai-2_4b-s10",
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "cls": "empty",
+   "tool": "ros2_service_info",
+   "kind": "service",
+   "typed": "cedar_reset",
+   "index": 1,
+   "requests": 40,
+   "recovered": false,
+   "dist": null,
+   "censored": false,
+   "supported": false,
+   "after": 39,
+   "trace": null
+  },
+  {
+   "pop": "P3",
+   "run_id": "block_0010/003-v2-FULL-bonsai-2_4b-s9",
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "cls": "empty",
+   "tool": "ros2_service_info",
+   "kind": "service",
+   "typed": "cedar_reset",
+   "index": 14,
+   "requests": 40,
+   "recovered": false,
+   "dist": null,
+   "censored": false,
+   "supported": false,
+   "after": 26,
+   "trace": null
+  },
+  {
+   "pop": "P1",
+   "run_id": "block_0003/027-nf_single_2-FULL-lfm3_1.7b-s7",
+   "model": "lfm3:1.7b",
+   "task": "nf_single_2",
+   "cls": "empty",
+   "tool": "ros2_node_info",
+   "kind": "node",
+   "typed": "/nf/lantern/bobbin",
+   "index": 14,
+   "requests": 28,
+   "recovered": true,
+   "dist": 1,
+   "censored": false,
+   "supported": true,
+   "after": 14,
+   "trace": null
+  },
+  {
+   "pop": "P3",
+   "run_id": "block_0010/004-v2-FULL-bonsai-2_4b-s10",
+   "model": "bonsai-2:4b",
+   "task": "v2",
+   "cls": "empty",
+   "tool": "ros2_service_info",
+   "kind": "service",
+   "typed": "cedar_reset",
+   "index": 36,
+   "requests": 40,
+   "recovered": false,
+   "dist": null,
+   "censored": true,
+   "supported": false,
+   "after": 4,
+   "trace": null
+  }
+ ]
+}

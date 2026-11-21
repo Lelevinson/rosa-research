@@ -1,0 +1,82 @@
+seed 1 done
+seed 2 done
+seed 3 done
+seed 4 done
+seed 5 done
+seed 6 done
+seed 7 done
+seed 8 done
+{
+ "False|plain": {
+  "n": 8,
+  "eval_median": 216.0,
+  "eval_min": 180,
+  "eval_max": 281,
+  "thinking_chars_median": 732.5,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "False|tool": {
+  "n": 8,
+  "eval_median": 53.0,
+  "eval_min": 41,
+  "eval_max": 165,
+  "thinking_chars_median": 105.5,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "low|plain": {
+  "n": 8,
+  "eval_median": 91.0,
+  "eval_min": 86,
+  "eval_max": 127,
+  "thinking_chars_median": 149.5,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "low|tool": {
+  "n": 8,
+  "eval_median": 33.5,
+  "eval_min": 32,
+  "eval_max": 39,
+  "thinking_chars_median": 25.0,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "medium|plain": {
+  "n": 8,
+  "eval_median": 214.5,
+  "eval_min": 151,
+  "eval_max": 328,
+  "thinking_chars_median": 718.5,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "medium|tool": {
+  "n": 8,
+  "eval_median": 49.0,
+  "eval_min": 41,
+  "eval_max": 167,
+  "thinking_chars_median": 88.0,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "high|plain": {
+  "n": 8,
+  "eval_median": 462.5,
+  "eval_min": 374,
+  "eval_max": 887,
+  "thinking_chars_median": 1850.0,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ },
+ "high|tool": {
+  "n": 8,
+  "eval_median": 187.0,
+  "eval_min": 107,
+  "eval_max": 482,
+  "thinking_chars_median": 691.0,
+  "share_with_thinking_text": 1.0,
+  "errors": 0
+ }
+}

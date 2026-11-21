@@ -1,0 +1,192 @@
+{
+ "protocol_sha256": "1ca28d2bd007f460e8244f25a7f9f6c35eff2c165995550d93bc0dcb838604f2",
+ "phase": "smoke",
+ "episodes": 6,
+ "tables": {
+  "FULL": {
+   "overall": {
+    "episodes": 3,
+    "supported": 3,
+    "requests": 13,
+    "tokens": 34169,
+    "capped_or_no_answer": 0,
+    "tool_calls": 12,
+    "failed_calls": 1,
+    "not_found_entity_calls": 1,
+    "fires_split_only": 1,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S1": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 4,
+    "tokens": 10843,
+    "capped_or_no_answer": 0,
+    "tool_calls": 3,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S2": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 4,
+    "tokens": 10665,
+    "capped_or_no_answer": 0,
+    "tool_calls": 3,
+    "failed_calls": 1,
+    "not_found_entity_calls": 1,
+    "fires_split_only": 1,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S3": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 5,
+    "tokens": 12661,
+    "capped_or_no_answer": 0,
+    "tool_calls": 6,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S1_S2": {
+    "episodes": 2,
+    "supported": 2,
+    "requests": 8,
+    "tokens": 21508,
+    "capped_or_no_answer": 0,
+    "tool_calls": 6,
+    "failed_calls": 1,
+    "not_found_entity_calls": 1,
+    "fires_split_only": 1,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "by_model": {
+    "qwen3.5:9b": {
+     "episodes": 3,
+     "supported": 3,
+     "requests": 13,
+     "tokens": 34169,
+     "capped_or_no_answer": 0,
+     "tool_calls": 12,
+     "failed_calls": 1,
+     "not_found_entity_calls": 1,
+     "fires_split_only": 1,
+     "fires_other": 0,
+     "infra_failed": 0
+    }
+   }
+  },
+  "RENDER": {
+   "overall": {
+    "episodes": 3,
+    "supported": 3,
+    "requests": 12,
+    "tokens": 31034,
+    "capped_or_no_answer": 0,
+    "tool_calls": 10,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S1": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 4,
+    "tokens": 10851,
+    "capped_or_no_answer": 0,
+    "tool_calls": 3,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S2": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 3,
+    "tokens": 7522,
+    "capped_or_no_answer": 0,
+    "tool_calls": 1,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S3": {
+    "episodes": 1,
+    "supported": 1,
+    "requests": 5,
+    "tokens": 12661,
+    "capped_or_no_answer": 0,
+    "tool_calls": 6,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "S1_S2": {
+    "episodes": 2,
+    "supported": 2,
+    "requests": 7,
+    "tokens": 18373,
+    "capped_or_no_answer": 0,
+    "tool_calls": 4,
+    "failed_calls": 0,
+    "not_found_entity_calls": 0,
+    "fires_split_only": 0,
+    "fires_other": 0,
+    "infra_failed": 0
+   },
+   "by_model": {
+    "qwen3.5:9b": {
+     "episodes": 3,
+     "supported": 3,
+     "requests": 12,
+     "tokens": 31034,
+     "capped_or_no_answer": 0,
+     "tool_calls": 10,
+     "failed_calls": 0,
+     "not_found_entity_calls": 0,
+     "fires_split_only": 0,
+     "fires_other": 0,
+     "infra_failed": 0
+    }
+   }
+  }
+ },
+ "paired": {
+  "both": 3
+ },
+ "fire_request_distance": {
+  "FULL": {
+   "n": 0
+  },
+  "RENDER": {
+   "n": 0
+  }
+ },
+ "supported_difference_by_model": {
+  "qwen3.5:9b": 0
+ },
+ "decision": {
+  "split_only_drop": 1.0,
+  "other_drop": null,
+  "mechanism_signal": true,
+  "harm_flags": [],
+  "klass": "A"
+ }
+}

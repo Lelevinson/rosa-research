@@ -1,0 +1,6 @@
+{"name": "baseline_smoke_MT", "master_seed": 20261121, "temperature": 0.7,
+ "_status": "Smoke gate of the MetaTool port (freeze-prep 2026-11-21): 3 public dev tasks x 2 models x seed 1 through the queue. Smoke label, no scores used.",
+ "models": ["lfm3:1.7b", "qwen3.5:9b"],
+ "pools": {"dev": {"tasks": {"u3": "stage3", "p3": "stage3", "e1h_amb_1": "e1h"}}},
+ "tiers": [{"name": "smoke", "systems": ["MT"], "pools": ["dev"], "seeds": [1]}],
+ "queue": {"block_size": 12, "heartbeat_seconds": 30}}

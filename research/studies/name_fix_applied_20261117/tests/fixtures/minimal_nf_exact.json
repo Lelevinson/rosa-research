@@ -1,0 +1,27 @@
+{
+ "task": "Node /nf/lantern/talon has an integer parameter gain. Read it. Return JSON with keys node (exactly as given here) and gain (the integer).",
+ "log": [
+  {
+   "stage": 1,
+   "tool": "ros2_param_get",
+   "args": {
+    "node_name": "/nf/lantern/talon",
+    "param_name": "gain"
+   },
+   "result": {
+    "gain": "Integer value is: 61\n"
+   }
+  }
+ ],
+ "answer": {
+  "node": "/nf/lantern/talon",
+  "gain": 61
+ },
+ "scored": {
+  "exact": true,
+  "issues": [],
+  "support_missing": [],
+  "supported_complete": true,
+  "scorer": "scorer-v2.0"
+ }
+}

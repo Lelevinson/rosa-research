@@ -1,0 +1,5 @@
+{"name": "mini_exam", "master_seed": 20261119, "temperature": 0.7,
+ "models": ["lfm3:1.7b", "qwen3.5:9b"],
+ "pools": {"dev": {"tasks": {"u3": "stage3", "e1h_abs_1": "e1h"}}},
+ "tiers": [{"name": "tier1", "systems": ["M", "E1"], "pools": ["dev"], "seeds": [1]}],
+ "queue": {"block_size": 12, "heartbeat_seconds": 30}}

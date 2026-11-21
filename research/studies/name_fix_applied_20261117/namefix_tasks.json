@@ -1,0 +1,219 @@
+[
+ {
+  "id": "nf_single_1",
+  "template": "single_name",
+  "floor": 2,
+  "request": "Topic /nf/kestrel_t is published by exactly one node. Find it. Return JSON with the key node (the full name of the node that publishes /nf/kestrel_t).",
+  "answer": {
+   "node": "/nf/lantern/bobbin"
+  },
+  "support": [
+   [
+    "text",
+    "/nf/lantern/bobbin"
+   ]
+  ],
+  "route_tools": [
+   "ros2_topic_info"
+  ]
+ },
+ {
+  "id": "nf_single_2",
+  "template": "single_name",
+  "floor": 2,
+  "request": "Topic /nf/chisel_t has exactly one subscriber. Find it. Return JSON with the key node (the full name of the node that subscribes to /nf/chisel_t).",
+  "answer": {
+   "node": "/nf/agate/yeoman"
+  },
+  "support": [
+   [
+    "text",
+    "/nf/agate/yeoman"
+   ]
+  ],
+  "route_tools": [
+   "ros2_topic_info"
+  ]
+ },
+ {
+  "id": "nf_multi_1",
+  "template": "multi_name",
+  "floor": 3,
+  "request": "Topic /nf/harrow_t has exactly three subscribers. Return JSON with the key gains: an object whose keys are the full names of those three nodes and whose values are their integer parameter gain.",
+  "answer": {
+   "gains": {
+    "/nf/lantern/zenith": 52,
+    "/nf/agate/xylem": 13,
+    "/nf/cipher/mortar": 48
+   }
+  },
+  "support": [
+   [
+    "text",
+    "/nf/lantern/zenith"
+   ],
+   [
+    "text",
+    "/nf/agate/xylem"
+   ],
+   [
+    "text",
+    "/nf/cipher/mortar"
+   ],
+   [
+    "param",
+    "/nf/lantern/zenith",
+    "gain",
+    52
+   ],
+   [
+    "param",
+    "/nf/agate/xylem",
+    "gain",
+    13
+   ],
+   [
+    "param",
+    "/nf/cipher/mortar",
+    "gain",
+    48
+   ]
+  ],
+  "route_tools": [
+   "ros2_topic_info",
+   "ros2_param_get"
+  ]
+ },
+ {
+  "id": "nf_multi_2",
+  "template": "multi_name",
+  "floor": 3,
+  "request": "Node /nf/lantern/jasper subscribes to exactly two topics. Return JSON with the key upstream: an object whose keys are the full names of those two topics and whose values are the full names of the nodes that publish them.",
+  "answer": {
+   "upstream": {
+    "/nf/ratchet_t": "/nf/agate/easel",
+    "/nf/bolt_t": "/nf/cipher/obsidian"
+   }
+  },
+  "support": [
+   [
+    "text",
+    "/nf/ratchet_t"
+   ],
+   [
+    "text",
+    "/nf/bolt_t"
+   ],
+   [
+    "text",
+    "/nf/agate/easel"
+   ],
+   [
+    "text",
+    "/nf/cipher/obsidian"
+   ]
+  ],
+  "route_tools": [
+   "ros2_node_info",
+   "ros2_topic_info"
+  ]
+ },
+ {
+  "id": "nf_amb_1",
+  "template": "ambiguous",
+  "floor": 3,
+  "request": "Two nodes named 'eclipse' are running, in different namespaces. Find the one whose string parameter mode is 'fast'. Return JSON with keys node (its full name) and limit (its integer parameter limit).",
+  "answer": {
+   "node": "/nf/dynamo/eclipse",
+   "limit": 901
+  },
+  "support": [
+   [
+    "text",
+    "/nf/dynamo/eclipse"
+   ],
+   [
+    "param",
+    "/nf/dynamo/eclipse",
+    "mode",
+    "fast"
+   ],
+   [
+    "param",
+    "/nf/dynamo/eclipse",
+    "limit",
+    901
+   ]
+  ],
+  "route_tools": [
+   "ros2_node_list",
+   "ros2_param_get"
+  ]
+ },
+ {
+  "id": "nf_amb_2",
+  "template": "ambiguous",
+  "floor": 3,
+  "request": "Two nodes named 'nozzle' are running, in different namespaces. Topic /nf/vortex_t is published by exactly one of them. Return JSON with keys node (the full name of the one that publishes that topic) and gain (its integer parameter gain).",
+  "answer": {
+   "node": "/nf/dynamo/nozzle",
+   "gain": 71
+  },
+  "support": [
+   [
+    "text",
+    "/nf/dynamo/nozzle"
+   ],
+   [
+    "param",
+    "/nf/dynamo/nozzle",
+    "gain",
+    71
+   ]
+  ],
+  "route_tools": [
+   "ros2_topic_info",
+   "ros2_param_get"
+  ]
+ },
+ {
+  "id": "nf_exact",
+  "template": "exact",
+  "floor": 2,
+  "request": "Node /nf/lantern/talon has an integer parameter gain. Read it. Return JSON with keys node (exactly as given here) and gain (the integer).",
+  "answer": {
+   "node": "/nf/lantern/talon",
+   "gain": 61
+  },
+  "support": [
+   [
+    "param",
+    "/nf/lantern/talon",
+    "gain",
+    61
+   ]
+  ],
+  "route_tools": [
+   "ros2_param_get"
+  ]
+ },
+ {
+  "id": "nf_absent",
+  "template": "absent",
+  "floor": 2,
+  "request": "Is the node /flint/umbra running? If it is, return JSON with keys node, running (true) and rate (its integer parameter rate). If it is not running, return JSON with keys node (the name you checked, exactly as given) and running (false).",
+  "answer": {
+   "node": "/flint/umbra",
+   "running": false
+  },
+  "support": [
+   [
+    "absent",
+    "/flint/umbra"
+   ]
+  ],
+  "route_tools": [
+   "ros2_node_list"
+  ]
+ }
+]

@@ -1,0 +1,259 @@
+[WARN] [1795001779.247121197] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795001779.247167540] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+19:36:19 full_20261118T113619Z/lfm3_1.7b/000-M2-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1775, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 8.4}
+19:36:28 full_20261118T113619Z/lfm3_1.7b/001-S2-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1292, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 4.8}
+19:36:34 full_20261118T113619Z/lfm3_1.7b/002-R2-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1308, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.7}
+19:36:42 full_20261118T113619Z/lfm3_1.7b/003-M1-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 1870, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.8}
+19:36:50 full_20261118T113619Z/lfm3_1.7b/004-M1-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1771, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 8.0}
+19:36:59 full_20261118T113619Z/lfm3_1.7b/005-S3-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1286, 'success': False, 'verification_calls': 0, 'executor_final_state': 'IDLE', 'seconds': 4.9}
+19:37:05 full_20261118T113619Z/lfm3_1.7b/006-M2-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 1871, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 9.1}
+19:37:16 full_20261118T113619Z/lfm3_1.7b/007-M1-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1881, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 5.3}
+19:37:22 full_20261118T113619Z/lfm3_1.7b/008-S1-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1285, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 4.3}
+19:37:27 full_20261118T113619Z/lfm3_1.7b/009-R1-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1872, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.6}
+19:37:35 full_20261118T113619Z/lfm3_1.7b/010-M3-ON-s1
+{'ending': 'text', 'requests': 4, 'tokens': 1904, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 4.0}
+19:37:40 full_20261118T113619Z/lfm3_1.7b/011-S3-ON-s2
+{'ending': 'backend_error: HTTP 500', 'requests': 1, 'tokens': 373, 'success': False, 'verification_calls': 0, 'executor_final_state': 'IDLE', 'seconds': 4.5}
+19:37:45 full_20261118T113619Z/lfm3_1.7b/012-S2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1248, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 7.1}
+19:37:54 full_20261118T113619Z/lfm3_1.7b/013-M2-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1775, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 9.2}
+19:38:04 full_20261118T113619Z/lfm3_1.7b/014-M3-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 1904, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 5.4}
+19:38:10 full_20261118T113619Z/lfm3_1.7b/015-M3-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1805, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 5.1}
+19:38:17 full_20261118T113619Z/lfm3_1.7b/016-R2-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1308, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.3}
+19:38:21 full_20261118T113619Z/lfm3_1.7b/017-M2-ON-s1
+{'ending': 'text', 'requests': 4, 'tokens': 1874, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 9.2}
+19:38:32 full_20261118T113619Z/lfm3_1.7b/018-M3-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1805, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.8}
+19:38:36 full_20261118T113619Z/lfm3_1.7b/019-S3-OFF-s2
+{'ending': 'backend_error: HTTP 500', 'requests': 1, 'tokens': 373, 'success': False, 'verification_calls': 0, 'executor_final_state': 'IDLE', 'seconds': 7.6}
+19:38:45 full_20261118T113619Z/lfm3_1.7b/020-S1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1285, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.4}
+19:38:49 full_20261118T113619Z/lfm3_1.7b/021-R1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1368, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 6.6}
+19:38:58 full_20261118T113619Z/lfm3_1.7b/022-M1-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1771, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 5.3}
+19:39:04 full_20261118T113619Z/lfm3_1.7b/023-S2-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1248, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 7.6}
+19:39:13 full_20261118T113619Z/lfm3_1.7b/024-R1-OFF-s1
+{'ending': 'final_answer', 'requests': 6, 'tokens': 3092, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.8}
+19:39:20 full_20261118T113619Z/lfm3_1.7b/025-R2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1264, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.4}
+19:39:25 full_20261118T113619Z/lfm3_1.7b/026-S1-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1241, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.1}
+19:39:32 full_20261118T113619Z/lfm3_1.7b/027-S2-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1292, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.8}
+19:39:40 full_20261118T113619Z/lfm3_1.7b/028-R2-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1264, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.5}
+19:39:48 full_20261118T113619Z/lfm3_1.7b/029-R1-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 1916, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.9}
+19:39:56 full_20261118T113619Z/lfm3_1.7b/030-S3-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1286, 'success': False, 'verification_calls': 0, 'executor_final_state': 'IDLE', 'seconds': 2.1}
+19:39:59 full_20261118T113619Z/lfm3_1.7b/031-S1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1241, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.0}
+19:40:03 full_20261118T113619Z/qwen3.5_9b/000-R1-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2140, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 16.8}
+19:40:21 full_20261118T113619Z/qwen3.5_9b/001-S1-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2167, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 14.9}
+19:40:38 full_20261118T113619Z/qwen3.5_9b/002-S2-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2228, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 15.6}
+19:40:54 full_20261118T113619Z/qwen3.5_9b/003-R1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2167, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 11.0}
+19:41:07 full_20261118T113619Z/qwen3.5_9b/004-M3-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3338, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 23.7}
+19:41:32 full_20261118T113619Z/qwen3.5_9b/005-M3-ON-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3667, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 26.6}
+19:42:00 full_20261118T113619Z/qwen3.5_9b/006-S1-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2242, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.4}
+19:42:15 full_20261118T113619Z/qwen3.5_9b/007-S3-ON-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3601, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 25.2}
+19:42:41 full_20261118T113619Z/qwen3.5_9b/008-M3-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3330, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 21.4}
+19:43:04 full_20261118T113619Z/qwen3.5_9b/009-M1-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3036, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 19.1}
+19:43:24 full_20261118T113619Z/qwen3.5_9b/010-S3-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3578, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 26.9}
+19:43:53 full_20261118T113619Z/qwen3.5_9b/011-R2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2197, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 14.7}
+19:44:08 full_20261118T113619Z/qwen3.5_9b/012-S2-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2305, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 19.8}
+19:44:30 full_20261118T113619Z/qwen3.5_9b/013-S2-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2259, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 15.9}
+19:44:47 full_20261118T113619Z/qwen3.5_9b/014-R2-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2209, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 15.4}
+19:45:04 full_20261118T113619Z/qwen3.5_9b/015-S2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2163, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 17.5}
+19:45:22 full_20261118T113619Z/qwen3.5_9b/016-M2-ON-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3228, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 19.6}
+19:45:43 full_20261118T113619Z/qwen3.5_9b/017-S1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2241, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 16.5}
+19:46:01 full_20261118T113619Z/qwen3.5_9b/018-M3-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3587, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 23.9}
+19:46:26 full_20261118T113619Z/qwen3.5_9b/019-R1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2140, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 13.6}
+19:46:41 full_20261118T113619Z/qwen3.5_9b/020-R1-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2168, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 11.4}
+19:46:54 full_20261118T113619Z/qwen3.5_9b/021-R2-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2344, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 18.4}
+19:47:14 full_20261118T113619Z/qwen3.5_9b/022-M1-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3077, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 19.3}
+19:47:34 full_20261118T113619Z/qwen3.5_9b/023-M2-ON-s1
+{'ending': 'text', 'requests': 4, 'tokens': 3211, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 19.8}
+19:47:55 full_20261118T113619Z/qwen3.5_9b/024-S1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2165, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 14.3}
+19:48:11 full_20261118T113619Z/qwen3.5_9b/025-S3-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3431, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 25.4}
+19:48:38 full_20261118T113619Z/qwen3.5_9b/026-M2-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3058, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 19.0}
+19:48:58 full_20261118T113619Z/qwen3.5_9b/027-R2-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2279, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 18.2}
+19:49:17 full_20261118T113619Z/qwen3.5_9b/028-M2-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3074, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 21.4}
+19:49:40 full_20261118T113619Z/qwen3.5_9b/029-S3-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3550, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 35.6}
+19:50:17 full_20261118T113619Z/qwen3.5_9b/030-M1-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3218, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 21.3}
+19:50:40 full_20261118T113619Z/qwen3.5_9b/031-M1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2305, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 17.1}
+19:50:58 full_20261118T113619Z/gpt-oss_20b/000-R1-ON-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1456, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 33.6}
+19:51:34 full_20261118T113619Z/gpt-oss_20b/001-R2-OFF-s1
+{'ending': 'text', 'requests': 3, 'tokens': 1300, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 11.2}
+19:51:46 full_20261118T113619Z/gpt-oss_20b/002-S1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1456, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.1}
+19:52:00 full_20261118T113619Z/gpt-oss_20b/003-M3-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1686, 'success': False, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 15.3}
+19:52:17 full_20261118T113619Z/gpt-oss_20b/004-M2-ON-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 2529, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 20.4}
+19:52:39 full_20261118T113619Z/gpt-oss_20b/005-M1-OFF-s2
+{'ending': 'text', 'requests': 4, 'tokens': 1842, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 12.8}
+19:52:53 full_20261118T113619Z/gpt-oss_20b/006-S2-ON-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1350, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.8}
+19:53:08 full_20261118T113619Z/gpt-oss_20b/007-M3-ON-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1819, 'success': False, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 20.2}
+19:53:29 full_20261118T113619Z/gpt-oss_20b/008-M1-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 1960, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 15.2}
+19:53:46 full_20261118T113619Z/gpt-oss_20b/009-R1-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1453, 'success': False, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 16.2}
+19:54:03 full_20261118T113619Z/gpt-oss_20b/010-R2-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1446, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 10.9}
+19:54:15 full_20261118T113619Z/gpt-oss_20b/011-S3-OFF-s1
+{'ending': 'text', 'requests': 4, 'tokens': 2681, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 27.8}
+19:54:45 full_20261118T113619Z/gpt-oss_20b/012-S2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2016, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 23.2}
+19:55:09 full_20261118T113619Z/gpt-oss_20b/013-R1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1773, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 17.5}
+19:55:28 full_20261118T113619Z/gpt-oss_20b/014-S1-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1359, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.1}
+19:55:42 full_20261118T113619Z/gpt-oss_20b/015-M3-OFF-s1
+{'ending': 'text', 'requests': 4, 'tokens': 2790, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 24.6}
+19:56:09 full_20261118T113619Z/gpt-oss_20b/016-S1-ON-s1
+{'ending': 'text', 'requests': 3, 'tokens': 1315, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 8.5}
+19:56:18 full_20261118T113619Z/gpt-oss_20b/017-S2-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1292, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 12.5}
+19:56:32 full_20261118T113619Z/gpt-oss_20b/018-R2-ON-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1526, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 12.0}
+19:56:45 full_20261118T113619Z/gpt-oss_20b/019-S1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1288, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 11.6}
+19:56:58 full_20261118T113619Z/gpt-oss_20b/020-S3-OFF-s2
+{'ending': 'text', 'requests': 4, 'tokens': 2153, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 18.3}
+19:57:18 full_20261118T113619Z/gpt-oss_20b/021-M2-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 2020, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.5}
+19:57:32 full_20261118T113619Z/gpt-oss_20b/022-M2-OFF-s1
+{'ending': 'text', 'requests': 4, 'tokens': 1945, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.8}
+19:57:47 full_20261118T113619Z/gpt-oss_20b/023-S2-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1709, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 17.8}
+19:58:06 full_20261118T113619Z/gpt-oss_20b/024-R1-ON-s1
+{'ending': 'text', 'requests': 3, 'tokens': 1799, 'success': False, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 16.4}
+19:58:24 full_20261118T113619Z/gpt-oss_20b/025-M1-OFF-s1
+{'ending': 'text', 'requests': 4, 'tokens': 2028, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.7}
+19:58:39 full_20261118T113619Z/gpt-oss_20b/026-M1-ON-s1
+{'ending': 'text', 'requests': 4, 'tokens': 2232, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 15.0}
+19:58:55 full_20261118T113619Z/gpt-oss_20b/027-M3-ON-s1
+{'ending': 'text', 'requests': 4, 'tokens': 2418, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 16.5}
+19:59:13 full_20261118T113619Z/gpt-oss_20b/028-S3-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 1755, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 20.5}
+19:59:35 full_20261118T113619Z/gpt-oss_20b/029-M2-OFF-s2
+{'ending': 'text', 'requests': 4, 'tokens': 1905, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 13.8}
+19:59:50 full_20261118T113619Z/gpt-oss_20b/030-R2-ON-s1
+{'ending': 'text', 'requests': 3, 'tokens': 1370, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 11.8}
+20:00:03 full_20261118T113619Z/gpt-oss_20b/031-S3-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 2289, 'success': False, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 16.3}
+20:00:21 full_20261118T113619Z/bonsai-2_4b/000-R1-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2167, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 10.1}
+20:00:32 full_20261118T113619Z/bonsai-2_4b/001-M1-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 2117, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 5.6}
+20:00:39 full_20261118T113619Z/bonsai-2_4b/002-M2-ON-s2
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1444, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 10.0}
+20:00:50 full_20261118T113619Z/bonsai-2_4b/003-R1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2140, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 6.8}
+20:00:58 full_20261118T113619Z/bonsai-2_4b/004-S2-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2019, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 5.3}
+20:01:05 full_20261118T113619Z/bonsai-2_4b/005-S1-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2067, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.6}
+20:01:09 full_20261118T113619Z/bonsai-2_4b/006-R1-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2140, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 7.1}
+20:01:17 full_20261118T113619Z/bonsai-2_4b/007-R2-OFF-s1
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1384, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.9}
+20:01:22 full_20261118T113619Z/bonsai-2_4b/008-S3-ON-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3457, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 9.6}
+20:01:33 full_20261118T113619Z/bonsai-2_4b/009-M3-ON-s2
+{'ending': 'text', 'requests': 4, 'tokens': 3098, 'success': False, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 5.9}
+20:01:40 full_20261118T113619Z/bonsai-2_4b/010-S3-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 3506, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 10.4}
+20:01:52 full_20261118T113619Z/bonsai-2_4b/011-M1-ON-s2
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1442, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 5.8}
+20:01:59 full_20261118T113619Z/bonsai-2_4b/012-S2-ON-s1
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1335, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 5.0}
+20:02:05 full_20261118T113619Z/bonsai-2_4b/013-S1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2013, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.6}
+20:02:10 full_20261118T113619Z/bonsai-2_4b/014-M2-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2159, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 8.3}
+20:02:19 full_20261118T113619Z/bonsai-2_4b/015-S3-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 3001, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 10.2}
+20:02:30 full_20261118T113619Z/bonsai-2_4b/016-S3-OFF-s1
+{'ending': 'final_answer', 'requests': 4, 'tokens': 4155, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 9.3}
+20:02:41 full_20261118T113619Z/bonsai-2_4b/017-M3-ON-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2299, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 9.7}
+20:02:52 full_20261118T113619Z/bonsai-2_4b/018-S2-ON-s2
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1335, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 6.9}
+20:03:00 full_20261118T113619Z/bonsai-2_4b/019-S2-OFF-s2
+{'ending': 'text', 'requests': 3, 'tokens': 1994, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 4.9}
+20:03:06 full_20261118T113619Z/bonsai-2_4b/020-M1-OFF-s1
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2142, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 9.1}
+20:03:16 full_20261118T113619Z/bonsai-2_4b/021-R2-ON-s1
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1411, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 4.1}
+20:03:21 full_20261118T113619Z/bonsai-2_4b/022-S1-ON-s2
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1332, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 3.4}
+20:03:26 full_20261118T113619Z/bonsai-2_4b/023-R2-OFF-s2
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1384, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 4.9}
+20:03:32 full_20261118T113619Z/bonsai-2_4b/024-M3-OFF-s2
+{'ending': 'final_answer', 'requests': 4, 'tokens': 2846, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.7}
+20:03:40 full_20261118T113619Z/bonsai-2_4b/025-M2-ON-s1
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1458, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 7.0}
+20:03:48 full_20261118T113619Z/bonsai-2_4b/026-S1-OFF-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2013, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.9}
+20:03:53 full_20261118T113619Z/bonsai-2_4b/027-R2-ON-s2
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1411, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 3.9}
+20:03:58 full_20261118T113619Z/bonsai-2_4b/028-M1-ON-s1
+{'ending': 'final_answer', 'requests': 2, 'tokens': 1442, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 8.4}
+20:04:07 full_20261118T113619Z/bonsai-2_4b/029-M2-OFF-s1
+{'ending': 'text', 'requests': 3, 'tokens': 2120, 'success': True, 'verification_calls': 1, 'executor_final_state': 'TERMINAL', 'seconds': 6.9}
+20:04:15 full_20261118T113619Z/bonsai-2_4b/030-R1-ON-s2
+{'ending': 'final_answer', 'requests': 3, 'tokens': 2167, 'success': True, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 7.0}
+20:04:23 full_20261118T113619Z/bonsai-2_4b/031-M3-OFF-s1
+{'ending': 'text', 'requests': 3, 'tokens': 2174, 'success': False, 'verification_calls': 0, 'executor_final_state': 'TERMINAL', 'seconds': 7.1}
+done

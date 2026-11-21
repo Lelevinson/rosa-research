@@ -1,0 +1,15 @@
+{
+ "frozen_at": "2026-11-18T00:47:39Z",
+ "git_head": "2ea3706af55c9b8c13b0f048cb17e5dfce060a4d",
+ "note": "Renderer code frozen after the offline step (owner instruction 2026-11-18). A later change is a reported revision, not a patch.",
+ "files": {
+  "PROTOCOL_OFFLINE.md": "60a48b797642cfc46fea2b02ef661a4cd21388b8cbc1d5f0a699f4ba7a97d205",
+  "render_core.py": "761fc4b86d00ac746c15ac74fd1f64ec21f68a7edf51eb9b95aaf13066077a04",
+  "offline_check.py": "a0fae4601d2fa9c30086fbe8910d5fba02de0102486b3220104749311be8efa6",
+  "tests/test_render.py": "8bbe19f1fd34bc6abcdcfde55fab99f0ccd4b8873d48edf05c03ee192d2b03b7",
+  "tests/test_checker.py": "a46a7939ced8532aca486d53a4bc31bd53959bec7002622a4a864df0dde5e8e6",
+  "results.json": "b7fd57d3f6c8aaeecea59ebe3cba8eb1e5de21a56de0e50ca8937472f994e950",
+  "TEMPTATIONS.md": "5fb6bbcb0316a97b38fd8bfcb6808819bef1d71ba31d36e62ef3f4d0418da941"
+ },
+ "scorer_v2_sha256": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9"
+}

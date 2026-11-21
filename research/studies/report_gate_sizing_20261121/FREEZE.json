@@ -1,0 +1,8 @@
+{
+ "frozen_at": "2026-11-21T09:16:43",
+ "protocol_md_sha256": "9b095d3e6ce5a344ad396498183140c10874714e92cbc5e42f1bde9fbd798068",
+ "results_log_sha256": "ddd4c50bed3b9f3fd9a21dbe5818cbf2655f6e21b037bfe9d9f4c04b1dc3328b",
+ "judge_py_sha256": "8e0634166f63efa16eb41e85278c1ba314edecf43a1d846c33834f00e6351e3f",
+ "judge_v1_1_py_sha256": "b86062901b4a7c2ebb9a717749625fc9cc7a9b81b53a8da63e183f1e0ded5e44",
+ "note": "frozen before the script; no contradiction counted"
+}

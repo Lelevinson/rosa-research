@@ -1,0 +1,455 @@
+{
+ "A": {
+  "not-found": {
+   "sum_": 69,
+   "bonsai-2:4b|first": 2,
+   "bonsai-2:4b|later": 16,
+   "gpt-oss:20b|later": 4,
+   "lfm3:1.7b|first": 8,
+   "lfm3:1.7b|later": 27,
+   "qwen3.5:9b|first": 2,
+   "qwen3.5:9b|later": 10
+  },
+  "no failed call (repeat)": {
+   "sum_": 44,
+   "bonsai-2:4b|later": 7,
+   "gpt-oss:20b|later": 12,
+   "lfm3:1.7b|later": 13,
+   "qwen3.5:9b|later": 12
+  },
+  "validation: ros2_node_list": {
+   "sum_": 26,
+   "gpt-oss:20b|first": 25,
+   "gpt-oss:20b|later": 1
+  },
+  "no failed call (format)": {
+   "sum_": 20,
+   "bonsai-2:4b|later": 8,
+   "gpt-oss:20b|later": 11,
+   "lfm3:1.7b|later": 1
+  },
+  "validation: final_answer": {
+   "sum_": 11,
+   "bonsai-2:4b|later": 2,
+   "gpt-oss:20b|later": 1,
+   "qwen3.5:9b|later": 8
+  },
+  "regex (list tool blacklist)": {
+   "sum_": 9,
+   "bonsai-2:4b|first": 2,
+   "bonsai-2:4b|later": 3,
+   "lfm3:1.7b|first": 2,
+   "lfm3:1.7b|later": 2
+  },
+  "validation: ros2_topic_list": {
+   "sum_": 9,
+   "gpt-oss:20b|first": 8,
+   "gpt-oss:20b|later": 1
+  },
+  "other": {
+   "sum_": 7,
+   "bonsai-2:4b|first": 5,
+   "lfm3:1.7b|later": 2
+  },
+  "empty error": {
+   "sum_": 5,
+   "bonsai-2:4b|first": 4,
+   "lfm3:1.7b|later": 1
+  },
+  "validation: ros2_service_list": {
+   "sum_": 5,
+   "gpt-oss:20b|first": 5
+  },
+  "validation: ros2_topic_info": {
+   "sum_": 1,
+   "gpt-oss:20b|first": 1
+  }
+ },
+ "A_first_request_by_model": {
+  "lfm3:1.7b": 10,
+  "qwen3.5:9b": 2,
+  "gpt-oss:20b": 39,
+  "bonsai-2:4b": 13
+ },
+ "A_first_request_waste_after": 459,
+ "A_first_request_never": 11,
+ "A_first_request_n": 64,
+ "B_split_context_by_model": {
+  "bonsai-2:4b": {
+   "contexts": 46,
+   "next_derails": 20,
+   "next_name_guess": 12,
+   "next_uses_field": 10,
+   "episodes": 44
+  },
+  "gpt-oss:20b": {
+   "contexts": 41,
+   "next_derails": 10,
+   "next_name_guess": 3,
+   "next_uses_field": 3,
+   "episodes": 36
+  },
+  "lfm3:1.7b": {
+   "contexts": 38,
+   "next_derails": 23,
+   "next_name_guess": 23,
+   "next_uses_field": 22,
+   "episodes": 36
+  },
+  "qwen3.5:9b": {
+   "contexts": 50,
+   "next_derails": 14,
+   "next_name_guess": 10,
+   "next_uses_field": 10,
+   "episodes": 45
+  }
+ },
+ "B_all": {
+  "contexts": 175,
+  "next_derails": 67,
+  "next_name_guess": 48,
+  "next_uses_field": 45
+ },
+ "B_episodes_with_split_context": 161,
+ "C6_by_task_model": {
+  "h4|bonsai-2:4b": {
+   "n": 3,
+   "waste": 37,
+   "never": 2
+  },
+  "h4|gpt-oss:20b": {
+   "n": 4,
+   "waste": 28,
+   "never": 1
+  },
+  "nf_exact|gpt-oss:20b": {
+   "n": 1,
+   "waste": 1,
+   "never": 0
+  },
+  "nf_exact|lfm3:1.7b": {
+   "n": 3,
+   "waste": 42,
+   "never": 1
+  },
+  "nf_exact|qwen3.5:9b": {
+   "n": 1,
+   "waste": 1,
+   "never": 0
+  },
+  "nf_multi_1|bonsai-2:4b": {
+   "n": 1,
+   "waste": 34,
+   "never": 1
+  },
+  "nf_multi_1|gpt-oss:20b": {
+   "n": 2,
+   "waste": 5,
+   "never": 0
+  },
+  "nf_multi_2|bonsai-2:4b": {
+   "n": 4,
+   "waste": 42,
+   "never": 1
+  },
+  "nf_multi_2|gpt-oss:20b": {
+   "n": 2,
+   "waste": 3,
+   "never": 0
+  },
+  "nf_multi_2|lfm3:1.7b": {
+   "n": 2,
+   "waste": 7,
+   "never": 0
+  },
+  "nf_single_1|bonsai-2:4b": {
+   "n": 1,
+   "waste": 1,
+   "never": 0
+  },
+  "nf_single_1|gpt-oss:20b": {
+   "n": 3,
+   "waste": 3,
+   "never": 0
+  },
+  "nf_single_1|lfm3:1.7b": {
+   "n": 1,
+   "waste": 6,
+   "never": 0
+  },
+  "nf_single_1|qwen3.5:9b": {
+   "n": 4,
+   "waste": 4,
+   "never": 0
+  },
+  "nf_single_2|bonsai-2:4b": {
+   "n": 4,
+   "waste": 37,
+   "never": 1
+  },
+  "nf_single_2|gpt-oss:20b": {
+   "n": 2,
+   "waste": 5,
+   "never": 0
+  },
+  "nf_single_2|lfm3:1.7b": {
+   "n": 1,
+   "waste": 4,
+   "never": 0
+  },
+  "nf_single_2|qwen3.5:9b": {
+   "n": 1,
+   "waste": 1,
+   "never": 0
+  },
+  "p3|lfm3:1.7b": {
+   "n": 1,
+   "waste": 3,
+   "never": 1
+  },
+  "p3|qwen3.5:9b": {
+   "n": 2,
+   "waste": 2,
+   "never": 0
+  },
+  "u3|bonsai-2:4b": {
+   "n": 3,
+   "waste": 15,
+   "never": 1
+  },
+  "u3|gpt-oss:20b": {
+   "n": 3,
+   "waste": 9,
+   "never": 1
+  },
+  "v2|bonsai-2:4b": {
+   "n": 6,
+   "waste": 196,
+   "never": 6
+  },
+  "v2|gpt-oss:20b": {
+   "n": 5,
+   "waste": 24,
+   "never": 1
+  },
+  "v2|lfm3:1.7b": {
+   "n": 4,
+   "waste": 38,
+   "never": 4
+  }
+ },
+ "C6_top_waste": [
+  {
+   "run": "block_0010/007-v2-FULL-bonsai-2_4b-s7",
+   "waste": 40,
+   "outcome": "never",
+   "type": "name_guess",
+   "idx": 1,
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0010/007-v2-FULL-bonsai-2_4b-s7/trace.jsonl"
+  },
+  {
+   "run": "block_0010/003-v2-FULL-bonsai-2_4b-s9",
+   "waste": 40,
+   "outcome": "never",
+   "type": "name_guess",
+   "idx": 1,
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0010/003-v2-FULL-bonsai-2_4b-s9/trace.jsonl"
+  },
+  {
+   "run": "block_0010/004-v2-FULL-bonsai-2_4b-s10",
+   "waste": 40,
+   "outcome": "never",
+   "type": "name_guess",
+   "idx": 1,
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0010/004-v2-FULL-bonsai-2_4b-s10/trace.jsonl"
+  },
+  {
+   "run": "block_0003/007-nf_exact-FULL-lfm3_1.7b-s7",
+   "waste": 39,
+   "outcome": "never",
+   "type": "repeat",
+   "idx": 2,
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0003/007-nf_exact-FULL-lfm3_1.7b-s7/trace.jsonl"
+  },
+  {
+   "run": "block_0010/006-v2-FULL-bonsai-2_4b-s5",
+   "waste": 38,
+   "outcome": "never",
+   "type": "name_guess",
+   "idx": 3,
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0010/006-v2-FULL-bonsai-2_4b-s5/trace.jsonl"
+  },
+  {
+   "run": "block_0012/004-nf_multi_2-FULL-bonsai-2_4b-s9",
+   "waste": 36,
+   "outcome": "never",
+   "type": "format",
+   "idx": 5,
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0012/004-nf_multi_2-FULL-bonsai-2_4b-s9/trace.jsonl"
+  },
+  {
+   "run": "block_0010/009-v2-FULL-bonsai-2_4b-s8",
+   "waste": 35,
+   "outcome": "never",
+   "type": "repeat",
+   "idx": 6,
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0010/009-v2-FULL-bonsai-2_4b-s8/trace.jsonl"
+  },
+  {
+   "run": "block_0012/011-nf_single_2-FULL-bonsai-2_4b-s5",
+   "waste": 34,
+   "outcome": "never",
+   "type": "format",
+   "idx": 2,
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0012/011-nf_single_2-FULL-bonsai-2_4b-s5/trace.jsonl"
+  }
+ ],
+ "C5_never": [
+  {
+   "run": "block_0008/006-e1h_chg_1-FULL-gpt-oss_20b-s5",
+   "waste": 1,
+   "type": "repeat",
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0008/006-e1h_chg_1-FULL-gpt-oss_20b-s5/trace.jsonl"
+  },
+  {
+   "run": "block_0008/009-e1h_chg_2-FULL-gpt-oss_20b-s6",
+   "waste": 2,
+   "type": "repeat",
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0008/009-e1h_chg_2-FULL-gpt-oss_20b-s6/trace.jsonl"
+  },
+  {
+   "run": "block_0011/006-e1h_chg_2-FULL-bonsai-2_4b-s7",
+   "waste": 17,
+   "type": "name_guess",
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0011/006-e1h_chg_2-FULL-bonsai-2_4b-s7/trace.jsonl"
+  },
+  {
+   "run": "block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s5",
+   "waste": 14,
+   "type": "name_guess",
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s5/trace.jsonl"
+  },
+  {
+   "run": "block_0008/004-e1h_chg_2-FULL-gpt-oss_20b-s9",
+   "waste": 1,
+   "type": "repeat",
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0008/004-e1h_chg_2-FULL-gpt-oss_20b-s9/trace.jsonl"
+  },
+  {
+   "run": "block_0008/016-e1h_chg_2-FULL-gpt-oss_20b-s10",
+   "waste": 2,
+   "type": "repeat",
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0008/016-e1h_chg_2-FULL-gpt-oss_20b-s10/trace.jsonl"
+  },
+  {
+   "run": "block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s10",
+   "waste": 40,
+   "type": "name_guess",
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s10/trace.jsonl"
+  },
+  {
+   "run": "block_0011/019-e1h_chg_2-FULL-bonsai-2_4b-s9",
+   "waste": 40,
+   "type": "name_guess",
+   "trace": "research/_artifacts/exam/listval/runs_all/block_0011/019-e1h_chg_2-FULL-bonsai-2_4b-s9/trace.jsonl"
+  }
+ ],
+ "share_of_waste_after_in_unsupported": 0.582,
+ "index_1-1": {
+  "n": 64,
+  "mean_waste": 7.17,
+  "unsupported": 11
+ },
+ "index_2-3": {
+  "n": 117,
+  "mean_waste": 3.73,
+  "unsupported": 17
+ },
+ "index_4-99": {
+  "n": 25,
+  "mean_waste": 8.08,
+  "unsupported": 12
+ },
+ "D_first_request_by_model": {
+  "bonsai-2:4b": {
+   "episodes": 108,
+   "first_request_derailments": 13,
+   "rate_pct": 12.0,
+   "waste_after": 263,
+   "mean_waste_after": 20.23,
+   "outcomes": {
+    "never": 9,
+    "slow": 2,
+    "quick": 2
+   },
+   "own": {
+    "empty error": 4,
+    "regex (list tool blacklist)": 2,
+    "not-found": 2,
+    "other": 5
+   }
+  },
+  "gpt-oss:20b": {
+   "episodes": 108,
+   "first_request_derailments": 39,
+   "rate_pct": 36.1,
+   "waste_after": 148,
+   "mean_waste_after": 3.79,
+   "outcomes": {
+    "slow": 16,
+    "quick": 21,
+    "never": 2
+   },
+   "own": {
+    "validation: ros2_service_list": 5,
+    "validation: ros2_topic_list": 8,
+    "validation: ros2_topic_info": 1,
+    "validation: ros2_node_list": 25
+   }
+  },
+  "lfm3:1.7b": {
+   "episodes": 108,
+   "first_request_derailments": 10,
+   "rate_pct": 9.3,
+   "waste_after": 44,
+   "mean_waste_after": 4.4,
+   "outcomes": {
+    "slow": 3,
+    "quick": 7
+   },
+   "own": {
+    "not-found": 8,
+    "regex (list tool blacklist)": 2
+   }
+  },
+  "qwen3.5:9b": {
+   "episodes": 108,
+   "first_request_derailments": 2,
+   "rate_pct": 1.9,
+   "waste_after": 4,
+   "mean_waste_after": 2.0,
+   "outcomes": {
+    "quick": 2
+   },
+   "own": {
+    "not-found": 2
+   }
+  }
+ },
+ "D_error_texts_cat1": [
+  {
+   "text": "ros2_node_info | {\"error\": \"Unable to find node '<N>'\\n\"}",
+   "run": "block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8",
+   "waste": 1,
+   "outcome": "slow",
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+  },
+  {
+   "text": "ros2_node_info | {\"error\": \"\"}",
+   "run": "block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8",
+   "waste": 1,
+   "outcome": "never",
+   "trace": "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+  }
+ ]
+}

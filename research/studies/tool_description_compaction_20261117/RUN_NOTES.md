@@ -1,0 +1,2 @@
+- 2026-11-17T15:48:37Z smoke (2 episodes) clean; FULL RUN started: ../../_artifacts/runs/tool_description_compaction_20261117/full_20261117T154837Z (80 episodes). Freeze: FREEZE.json, PROTOCOL.sha256.
+- 2026-11-17T17:06:43Z FULL RUN ENDED: 80 episodes; one oracle first-try failure (qwen3.5 e1h 'before': daemon listed 0/14 right after restart), rescued by the retry; no exclusion.

@@ -1,0 +1,1194 @@
+{
+ "protocol_sha256": "a60ded7c9da3ac4869d06cd0161c7194c0bdc59fb94c019869dd8481fcfb990f",
+ "episodes": 1832,
+ "item1": {
+  "total_attempts": 76,
+  "fairness_attempts": 61,
+  "status_total": {
+   "no_result_validation": 8,
+   "validation_text": 49,
+   "guard_rejected": 15,
+   "not_available": 4
+  },
+  "by_arm": {
+   "ablation/NO_MENU": {
+    "not_available": 4,
+    "episodes_in_arm": 40,
+    "episodes_with_attempt": 1
+   },
+   "fairness/E0": {
+    "validation_text": 49,
+    "guard_rejected": 5,
+    "episodes_in_arm": 80,
+    "episodes_with_attempt": 7
+   },
+   "fairness/E1": {
+    "guard_rejected": 7,
+    "episodes_in_arm": 80,
+    "episodes_with_attempt": 3
+   },
+   "pilot/A1": {
+    "no_result_validation": 4,
+    "episodes_in_arm": 80,
+    "episodes_with_attempt": 4
+   },
+   "s0/S0": {
+    "guard_rejected": 3,
+    "no_result_validation": 4,
+    "episodes_in_arm": 80,
+    "episodes_with_attempt": 7
+   }
+  },
+  "per_model_by_arm": {
+   "ablation/NO_MENU": {
+    "bonsai-2:4b": 4
+   },
+   "fairness/E0": {
+    "qwen3.5:9b": 3,
+    "bonsai-2:4b": 51
+   },
+   "fairness/E1": {
+    "bonsai-2:4b": 7
+   },
+   "pilot/A1": {
+    "lfm3:1.7b": 1,
+    "bonsai-2:4b": 3
+   },
+   "s0/S0": {
+    "lfm3:1.7b": 1,
+    "qwen3.5:9b": 1,
+    "bonsai-2:4b": 5
+   }
+  },
+  "would_change_by_arm": {
+   "ablation/NO_MENU": {
+    "existing other service": 3,
+    "no such service": 1
+   },
+   "fairness/E0": {
+    "existing other service": 5,
+    "no such service": 42,
+    "no such node": 6,
+    "existing node, existing parameter": 1
+   },
+   "fairness/E1": {
+    "no such node": 1,
+    "existing other service": 5,
+    "existing node, existing parameter": 1
+   },
+   "pilot/A1": {
+    "existing other service": 1,
+    "no such service": 2,
+    "no such node": 1
+   },
+   "s0/S0": {
+    "existing node, existing parameter": 2,
+    "existing other service": 1,
+    "no such service": 3,
+    "no such node": 1
+   }
+  },
+  "arms_with_no_attempt": {
+   "ablation/FULL": {
+    "episodes": 40,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "ablation/NO_FINISH": {
+    "episodes": 40,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "ablation/NO_PRECHECK": {
+    "episodes": 40,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "ablation/NO_SOFT_ERRORS": {
+    "episodes": 40,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "compaction/COMPACT": {
+    "episodes": 40,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "compaction/FULL": {
+    "episodes": 40,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "namefix/NAMEFIX": {
+    "episodes": 64,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/C1": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/C1+FN": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/C1+H1e": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/C1+H1n": {
+    "episodes": 16,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/C1+H2": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/C1+H7": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "pilot/M0": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "round1/C1": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "round1/C1+AG": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "round1/C1+AG+LA": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "round1/C1+LA": {
+    "episodes": 80,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "round2/CONTROL": {
+    "episodes": 176,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   },
+   "round2/SWEEP": {
+    "episodes": 176,
+    "attempts": 0,
+    "not_offered_events_naming_write": 0
+   }
+  },
+  "executed": []
+ },
+ "item2": {
+  "ORIG (s0 S0)": {
+   "episodes": 80,
+   "pooled": {
+    "requests": {
+     "n": 80,
+     "median": 5.0,
+     "p90": 9,
+     "max": 35,
+     "mean": 6,
+     "total": 480
+    },
+    "tokens": {
+     "n": 80,
+     "median": 31830.5,
+     "p90": 74110,
+     "max": 397494,
+     "mean": 46778.9,
+     "total": 3742310
+    },
+    "cap_endings": 0,
+    "requests_ge_40": 0
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.0,
+      "p90": 21,
+      "max": 35,
+      "mean": 9,
+      "total": 180
+     },
+     "tokens": {
+      "n": 20,
+      "median": 31984.0,
+      "p90": 171394,
+      "max": 397494,
+      "mean": 74789,
+      "total": 1495780
+     },
+     "cap_endings": 0
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 1.0,
+      "p90": 2,
+      "max": 4,
+      "mean": 1.4,
+      "total": 28
+     },
+     "tokens": {
+      "n": 20,
+      "median": 4761.0,
+      "p90": 8167,
+      "max": 15838,
+      "mean": 5725.6,
+      "total": 114512
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 6.0,
+      "p90": 10,
+      "max": 24,
+      "mean": 7.6,
+      "total": 152
+     },
+     "tokens": {
+      "n": 20,
+      "median": 39598.5,
+      "p90": 81259,
+      "max": 344790,
+      "mean": 64016,
+      "total": 1280320
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.5,
+      "p90": 7,
+      "max": 13,
+      "mean": 6,
+      "total": 120
+     },
+     "tokens": {
+      "n": 20,
+      "median": 39015.0,
+      "p90": 50637,
+      "max": 111945,
+      "mean": 42584.9,
+      "total": 851698
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.327,
+   "cap_models": 0
+  },
+  "E0": {
+   "episodes": 80,
+   "pooled": {
+    "requests": {
+     "n": 80,
+     "median": 6.0,
+     "p90": 15,
+     "max": 40,
+     "mean": 8.1,
+     "total": 649
+    },
+    "tokens": {
+     "n": 80,
+     "median": 33890.5,
+     "p90": 143373,
+     "max": 473268,
+     "mean": 61555.4,
+     "total": 4924429
+    },
+    "cap_endings": 1,
+    "requests_ge_40": 1
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 7.5,
+      "p90": 25,
+      "max": 40,
+      "mean": 12.3,
+      "total": 246
+     },
+     "tokens": {
+      "n": 20,
+      "median": 48246.5,
+      "p90": 234748,
+      "max": 473268,
+      "mean": 106329.2,
+      "total": 2126584
+     },
+     "cap_endings": 1
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 6.0,
+      "p90": 7,
+      "max": 29,
+      "mean": 7.5,
+      "total": 149
+     },
+     "tokens": {
+      "n": 20,
+      "median": 24930.5,
+      "p90": 54116,
+      "max": 229379,
+      "mean": 41988.5,
+      "total": 839770
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 6.0,
+      "p90": 11,
+      "max": 15,
+      "mean": 6.6,
+      "total": 132
+     },
+     "tokens": {
+      "n": 20,
+      "median": 36121.0,
+      "p90": 95934,
+      "max": 212146,
+      "mean": 53478.4,
+      "total": 1069568
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 6.0,
+      "p90": 8,
+      "max": 12,
+      "mean": 6.1,
+      "total": 122
+     },
+     "tokens": {
+      "n": 20,
+      "median": 42605.0,
+      "p90": 56751,
+      "max": 119190,
+      "mean": 44425.3,
+      "total": 888507
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.317,
+   "cap_models": 1
+  },
+  "E1": {
+   "episodes": 80,
+   "pooled": {
+    "requests": {
+     "n": 80,
+     "median": 5.0,
+     "p90": 12,
+     "max": 40,
+     "mean": 7.4,
+     "total": 591
+    },
+    "tokens": {
+     "n": 80,
+     "median": 29874.0,
+     "p90": 92265,
+     "max": 413463,
+     "mean": 52877.5,
+     "total": 4230199
+    },
+    "cap_endings": 3,
+    "requests_ge_40": 3
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 7.0,
+      "p90": 40,
+      "max": 40,
+      "mean": 11.7,
+      "total": 233
+     },
+     "tokens": {
+      "n": 20,
+      "median": 43893.5,
+      "p90": 269686,
+      "max": 398265,
+      "mean": 89940.4,
+      "total": 1798808
+     },
+     "cap_endings": 3
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.5,
+      "p90": 8,
+      "max": 29,
+      "mean": 6.2,
+      "total": 124
+     },
+     "tokens": {
+      "n": 20,
+      "median": 16611.0,
+      "p90": 33974,
+      "max": 181631,
+      "mean": 27943.8,
+      "total": 558877
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.5,
+      "p90": 7,
+      "max": 23,
+      "mean": 6.2,
+      "total": 125
+     },
+     "tokens": {
+      "n": 20,
+      "median": 35842.0,
+      "p90": 51433,
+      "max": 413463,
+      "mean": 54123.1,
+      "total": 1082462
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.0,
+      "p90": 8,
+      "max": 17,
+      "mean": 5.5,
+      "total": 109
+     },
+     "tokens": {
+      "n": 20,
+      "median": 29887.5,
+      "p90": 60130,
+      "max": 192339,
+      "mean": 39502.6,
+      "total": 790052
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.364,
+   "cap_models": 1
+  },
+  "A1 (extra)": {
+   "episodes": 80,
+   "pooled": {
+    "requests": {
+     "n": 80,
+     "median": 4.0,
+     "p90": 11,
+     "max": 40,
+     "mean": 5.9,
+     "total": 472
+    },
+    "tokens": {
+     "n": 80,
+     "median": 26787.5,
+     "p90": 73062,
+     "max": 318057,
+     "mean": 41017.8,
+     "total": 3281423
+    },
+    "cap_endings": 2,
+    "requests_ge_40": 2
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.0,
+      "p90": 27,
+      "max": 40,
+      "mean": 9.8,
+      "total": 197
+     },
+     "tokens": {
+      "n": 20,
+      "median": 30402.5,
+      "p90": 269686,
+      "max": 318057,
+      "mean": 70472.4,
+      "total": 1409447
+     },
+     "cap_endings": 2
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 1.0,
+      "p90": 4,
+      "max": 14,
+      "mean": 2.7,
+      "total": 54
+     },
+     "tokens": {
+      "n": 20,
+      "median": 3819.5,
+      "p90": 14553,
+      "max": 73062,
+      "mean": 10890.6,
+      "total": 217813
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.5,
+      "p90": 12,
+      "max": 14,
+      "mean": 6.8,
+      "total": 135
+     },
+     "tokens": {
+      "n": 20,
+      "median": 34697.5,
+      "p90": 105350,
+      "max": 228883,
+      "mean": 54521.3,
+      "total": 1090427
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.0,
+      "p90": 7,
+      "max": 9,
+      "mean": 4.3,
+      "total": 86
+     },
+     "tokens": {
+      "n": 20,
+      "median": 26185.0,
+      "p90": 52396,
+      "max": 65767,
+      "mean": 28186.8,
+      "total": 563736
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.367,
+   "cap_models": 1
+  },
+  "FULL (pilot C1)": {
+   "episodes": 80,
+   "pooled": {
+    "requests": {
+     "n": 80,
+     "median": 4.0,
+     "p90": 10,
+     "max": 40,
+     "mean": 6.1,
+     "total": 486
+    },
+    "tokens": {
+     "n": 80,
+     "median": 10647.0,
+     "p90": 39438,
+     "max": 157012,
+     "mean": 20956.3,
+     "total": 1676502
+    },
+    "cap_endings": 1,
+    "requests_ge_40": 1
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.0,
+      "p90": 17,
+      "max": 40,
+      "mean": 9.4,
+      "total": 189
+     },
+     "tokens": {
+      "n": 20,
+      "median": 12080.0,
+      "p90": 125702,
+      "max": 146302,
+      "mean": 37324.4,
+      "total": 746489
+     },
+     "cap_endings": 1
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.0,
+      "p90": 9,
+      "max": 14,
+      "mean": 5.2,
+      "total": 105
+     },
+     "tokens": {
+      "n": 20,
+      "median": 6856.5,
+      "p90": 25133,
+      "max": 39438,
+      "mean": 11178.7,
+      "total": 223574
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.5,
+      "p90": 8,
+      "max": 17,
+      "mean": 5.2,
+      "total": 105
+     },
+     "tokens": {
+      "n": 20,
+      "median": 12229.5,
+      "p90": 35182,
+      "max": 157012,
+      "mean": 22734.8,
+      "total": 454696
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.0,
+      "p90": 8,
+      "max": 8,
+      "mean": 4.3,
+      "total": 87
+     },
+     "tokens": {
+      "n": 20,
+      "median": 9855.5,
+      "p90": 23323,
+      "max": 28812,
+      "mean": 12587.1,
+      "total": 251743
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.321,
+   "cap_models": 1
+  },
+  "FULL (round1 C1)": {
+   "episodes": 80,
+   "pooled": {
+    "requests": {
+     "n": 80,
+     "median": 4.0,
+     "p90": 12,
+     "max": 40,
+     "mean": 6.3,
+     "total": 506
+    },
+    "tokens": {
+     "n": 80,
+     "median": 10437.0,
+     "p90": 50127,
+     "max": 341122,
+     "mean": 24947.7,
+     "total": 1995814
+    },
+    "cap_endings": 1,
+    "requests_ge_40": 1
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.0,
+      "p90": 17,
+      "max": 40,
+      "mean": 9.2,
+      "total": 184
+     },
+     "tokens": {
+      "n": 20,
+      "median": 12069.0,
+      "p90": 124983,
+      "max": 160465,
+      "mean": 39835.4,
+      "total": 796709
+     },
+     "cap_endings": 1
+    },
+    "gpt-oss:20b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.0,
+      "p90": 9,
+      "max": 24,
+      "mean": 5.8,
+      "total": 116
+     },
+     "tokens": {
+      "n": 20,
+      "median": 6543.0,
+      "p90": 23518,
+      "max": 103857,
+      "mean": 14668.1,
+      "total": 293363
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 5.0,
+      "p90": 8,
+      "max": 31,
+      "mean": 5.8,
+      "total": 117
+     },
+     "tokens": {
+      "n": 20,
+      "median": 13979.0,
+      "p90": 35328,
+      "max": 341122,
+      "mean": 31994.5,
+      "total": 639889
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 20,
+     "requests": {
+      "n": 20,
+      "median": 4.0,
+      "p90": 6,
+      "max": 12,
+      "mean": 4.5,
+      "total": 89
+     },
+     "tokens": {
+      "n": 20,
+      "median": 9842.5,
+      "p90": 22381,
+      "max": 50127,
+      "mean": 13292.6,
+      "total": 265853
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.364,
+   "cap_models": 1
+  },
+  "FULL (ablation)": {
+   "episodes": 40,
+   "pooled": {
+    "requests": {
+     "n": 40,
+     "median": 4.0,
+     "p90": 8,
+     "max": 17,
+     "mean": 5.3,
+     "total": 211
+    },
+    "tokens": {
+     "n": 40,
+     "median": 9945.5,
+     "p90": 30075,
+     "max": 144942,
+     "mean": 19415.3,
+     "total": 776614
+    },
+    "cap_endings": 0,
+    "requests_ge_40": 0
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 4.5,
+      "p90": 14,
+      "max": 17,
+      "mean": 6.4,
+      "total": 64
+     },
+     "tokens": {
+      "n": 10,
+      "median": 11425.5,
+      "p90": 62800,
+      "max": 125981,
+      "mean": 27037.2,
+      "total": 270372
+     },
+     "cap_endings": 0
+    },
+    "gpt-oss:20b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 4.0,
+      "p90": 8,
+      "max": 10,
+      "mean": 4.7,
+      "total": 47
+     },
+     "tokens": {
+      "n": 10,
+      "median": 6712.0,
+      "p90": 19446,
+      "max": 28782,
+      "mean": 9945.3,
+      "total": 99453
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 6.0,
+      "p90": 8,
+      "max": 16,
+      "mean": 6.2,
+      "total": 62
+     },
+     "tokens": {
+      "n": 10,
+      "median": 17900.5,
+      "p90": 34488,
+      "max": 144942,
+      "mean": 30115.9,
+      "total": 301159
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 4.0,
+      "p90": 5,
+      "max": 5,
+      "mean": 3.8,
+      "total": 38
+     },
+     "tokens": {
+      "n": 10,
+      "median": 9896.5,
+      "p90": 17263,
+      "max": 20868,
+      "mean": 10563,
+      "total": 105630
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.27,
+   "cap_models": 0
+  },
+  "FULL (compaction)": {
+   "episodes": 40,
+   "pooled": {
+    "requests": {
+     "n": 40,
+     "median": 4.0,
+     "p90": 8,
+     "max": 23,
+     "mean": 5.5,
+     "total": 218
+    },
+    "tokens": {
+     "n": 40,
+     "median": 10724.5,
+     "p90": 33018,
+     "max": 252364,
+     "mean": 21366.5,
+     "total": 854659
+    },
+    "cap_endings": 0,
+    "requests_ge_40": 0
+   },
+   "per_model": {
+    "bonsai-2:4b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 5.0,
+      "p90": 12,
+      "max": 12,
+      "mean": 6.2,
+      "total": 62
+     },
+     "tokens": {
+      "n": 10,
+      "median": 13184.5,
+      "p90": 62643,
+      "max": 73158,
+      "mean": 24613.6,
+      "total": 246136
+     },
+     "cap_endings": 0
+    },
+    "gpt-oss:20b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 4.0,
+      "p90": 7,
+      "max": 7,
+      "mean": 4.5,
+      "total": 45
+     },
+     "tokens": {
+      "n": 10,
+      "median": 6779.0,
+      "p90": 15189,
+      "max": 16416,
+      "mean": 8742.2,
+      "total": 87422
+     },
+     "cap_endings": 0
+    },
+    "lfm3:1.7b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 5.5,
+      "p90": 8,
+      "max": 23,
+      "mean": 7,
+      "total": 70
+     },
+     "tokens": {
+      "n": 10,
+      "median": 18653.0,
+      "p90": 36075,
+      "max": 252364,
+      "mean": 41029.9,
+      "total": 410299
+     },
+     "cap_endings": 0
+    },
+    "qwen3.5:9b": {
+     "episodes": 10,
+     "requests": {
+      "n": 10,
+      "median": 4.0,
+      "p90": 6,
+      "max": 6,
+      "mean": 4.1,
+      "total": 41
+     },
+     "tokens": {
+      "n": 10,
+      "median": 9881.0,
+      "p90": 18621,
+      "max": 22106,
+      "mean": 11080.2,
+      "total": 110802
+     },
+     "cap_endings": 0
+    }
+   },
+   "top_decile_share_of_requests": 0.266,
+   "cap_models": 0
+  }
+ },
+ "item3": {
+  "b3a_rebuild_agreement": {
+   "agree": 1816,
+   "total": 1832,
+   "share": 0.9913
+  },
+  "episodes_of_interest": 159,
+  "pooled": {
+   "facts_present": {
+    "episodes": 82,
+    "unsupported": 51,
+    "no_answer": 12,
+    "unsupported_or_no_answer": 51,
+    "requests_after_first_repeat_sum": 965,
+    "requests_after_first_repeat_median": 8.0
+   },
+   "facts_not_yet": {
+    "episodes": 77,
+    "unsupported": 45,
+    "no_answer": 31,
+    "unsupported_or_no_answer": 45,
+    "requests_after_first_repeat_sum": 1601,
+    "requests_after_first_repeat_median": 21
+   }
+  },
+  "per_model": {
+   "bonsai-2:4b": {
+    "facts_present": {
+     "episodes": 47,
+     "unsupported": 25,
+     "no_answer": 10,
+     "unsupported_or_no_answer": 25,
+     "requests_after_first_repeat_sum": 572,
+     "requests_after_first_repeat_median": 7
+    },
+    "facts_not_yet": {
+     "episodes": 58,
+     "unsupported": 36,
+     "no_answer": 29,
+     "unsupported_or_no_answer": 36,
+     "requests_after_first_repeat_sum": 1432,
+     "requests_after_first_repeat_median": 30.0
+    }
+   },
+   "gpt-oss:20b": {
+    "facts_present": {
+     "episodes": 1,
+     "unsupported": 0,
+     "no_answer": 0,
+     "unsupported_or_no_answer": 0,
+     "requests_after_first_repeat_sum": 25,
+     "requests_after_first_repeat_median": 25
+    },
+    "facts_not_yet": {
+     "episodes": 4,
+     "unsupported": 0,
+     "no_answer": 0,
+     "unsupported_or_no_answer": 0,
+     "requests_after_first_repeat_sum": 26,
+     "requests_after_first_repeat_median": 5.5
+    }
+   },
+   "lfm3:1.7b": {
+    "facts_present": {
+     "episodes": 25,
+     "unsupported": 24,
+     "no_answer": 2,
+     "unsupported_or_no_answer": 24,
+     "requests_after_first_repeat_sum": 329,
+     "requests_after_first_repeat_median": 12
+    },
+    "facts_not_yet": {
+     "episodes": 9,
+     "unsupported": 6,
+     "no_answer": 1,
+     "unsupported_or_no_answer": 6,
+     "requests_after_first_repeat_sum": 110,
+     "requests_after_first_repeat_median": 8
+    }
+   },
+   "qwen3.5:9b": {
+    "facts_present": {
+     "episodes": 9,
+     "unsupported": 2,
+     "no_answer": 0,
+     "unsupported_or_no_answer": 2,
+     "requests_after_first_repeat_sum": 39,
+     "requests_after_first_repeat_median": 3
+    },
+    "facts_not_yet": {
+     "episodes": 6,
+     "unsupported": 3,
+     "no_answer": 1,
+     "unsupported_or_no_answer": 3,
+     "requests_after_first_repeat_sum": 33,
+     "requests_after_first_repeat_median": 6.0
+    }
+   }
+  },
+  "stock_arms": {
+   "facts_present": {
+    "episodes": 25,
+    "unsupported": 13,
+    "no_answer": 6,
+    "unsupported_or_no_answer": 13,
+    "requests_after_first_repeat_sum": 261,
+    "requests_after_first_repeat_median": 5
+   },
+   "facts_not_yet": {
+    "episodes": 9,
+    "unsupported": 5,
+    "no_answer": 5,
+    "unsupported_or_no_answer": 5,
+    "requests_after_first_repeat_sum": 152,
+    "requests_after_first_repeat_median": 8
+   }
+  },
+  "menu_arms": {
+   "facts_present": {
+    "episodes": 57,
+    "unsupported": 38,
+    "no_answer": 6,
+    "unsupported_or_no_answer": 38,
+    "requests_after_first_repeat_sum": 704,
+    "requests_after_first_repeat_median": 8
+   },
+   "facts_not_yet": {
+    "episodes": 68,
+    "unsupported": 40,
+    "no_answer": 26,
+    "unsupported_or_no_answer": 40,
+    "requests_after_first_repeat_sum": 1449,
+    "requests_after_first_repeat_median": 21.5
+   }
+  },
+  "bar_B3": {
+   "facts_present_episodes": 82,
+   "models": 4,
+   "unsupported_or_no_answer": 51
+  }
+ }
+}

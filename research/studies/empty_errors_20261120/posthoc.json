@@ -1,0 +1,62 @@
+{
+ "A_typed_entity_known": {
+  "bonsai-2:4b | ros2_service_info | not in ledger": 53,
+  "lfm3:1.7b | ros2_node_info | ledger-known": 10,
+  "lfm3:1.7b | ros2_node_info | not in ledger": 1,
+  "lfm3:1.7b | ros2_param_get | ledger-known": 5,
+  "lfm3:1.7b | ros2_param_list | ledger-known": 4,
+  "lfm3:1.7b | ros2_param_list | not in ledger": 3,
+  "lfm3:1.7b | ros2_topic_echo | ledger-known": 1,
+  "lfm3:1.7b | ros2_topic_info | ledger-known": 2
+ },
+ "A_known_total": 22,
+ "A_total": 79,
+ "D_service_info": {
+  "cedar_reset | short | empty error": 53,
+  "(absolute) | absolute | ok": 26
+ },
+ "B_matched_empty_events": 73,
+ "B_unmatched_empty_events": 6,
+ "B_expected_recovered_if_like_notfound": 20.06,
+ "B_observed_recovered": 8,
+ "B_adjusted_gap_pp": 16.5,
+ "B_v2": {
+  "empty": [
+   53,
+   1
+  ],
+  "notfound": [
+   56,
+   7
+  ],
+  "empty_pct": 1.9,
+  "notfound_pct": 12.5
+ },
+ "B_not_v2": {
+  "empty": [
+   26,
+   7
+  ],
+  "notfound": [
+   190,
+   102
+  ],
+  "empty_pct": 26.9,
+  "notfound_pct": 53.7
+ },
+ "C_empty_episodes": 9,
+ "C_events_per_episode": {
+  "P1 block_0010/007-v2-FULL-bonsai-2_4b-s7": 20,
+  "P3 block_0010/004-v2-FULL-bonsai-2_4b-s10": 20,
+  "P3 block_0010/003-v2-FULL-bonsai-2_4b-s9": 12,
+  "P1 block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8": 9,
+  "P1 block_0003/027-nf_single_2-FULL-lfm3_1.7b-s7": 8,
+  "P1 block_0003/024-nf_exact-FULL-lfm3_1.7b-s8": 6,
+  "P1 block_0003/025-nf_single_1-FULL-lfm3_1.7b-s8": 2,
+  "P1 block_0003/029-nf_multi_2-FULL-lfm3_1.7b-s8": 1,
+  "P1 block_0010/003-v2-FULL-bonsai-2_4b-s6": 1
+ },
+ "C_events_same_typed_repeat": null,
+ "C_empty_events_repeating_an_earlier_empty_call": 54,
+ "C_empty_episodes_supported": 3
+}

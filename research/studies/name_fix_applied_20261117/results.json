@@ -1,0 +1,521 @@
+{
+ "total": {
+  "episodes": 64,
+  "answers_emitted": 64,
+  "no_answer": 0,
+  "aborts": 0,
+  "rewritten_episodes": 8,
+  "rewrite_events": 15,
+  "ambiguous": 0,
+  "never_seen": 0,
+  "collisions": 0,
+  "strict": {
+   "U->S": 8,
+   "S->S": 54,
+   "U->U": 2
+  },
+  "lenient": {
+   "S->S": 62,
+   "U->U": 2
+  },
+  "strict_original": 54,
+  "strict_applied": 62,
+  "lenient_original": 62,
+  "lenient_applied": 62,
+  "requests": 272,
+  "tokens": 861400,
+  "rewrite_cpu_seconds": 0.01097
+ },
+ "per_model": {
+  "lfm3:1.7b": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 2,
+   "rewrite_events": 2,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "U->S": 2,
+    "S->S": 14
+   },
+   "lenient": {
+    "S->S": 16
+   },
+   "strict_original": 14,
+   "strict_applied": 16,
+   "lenient_original": 16,
+   "lenient_applied": 16,
+   "requests": 61,
+   "tokens": 200763,
+   "rewrite_cpu_seconds": 0.00261
+  },
+  "qwen3.5:9b": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 1,
+   "rewrite_events": 3,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 15,
+    "U->S": 1
+   },
+   "lenient": {
+    "S->S": 16
+   },
+   "strict_original": 15,
+   "strict_applied": 16,
+   "lenient_original": 16,
+   "lenient_applied": 16,
+   "requests": 56,
+   "tokens": 142709,
+   "rewrite_cpu_seconds": 0.00277
+  },
+  "gpt-oss:20b": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 1,
+   "rewrite_events": 3,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 15,
+    "U->S": 1
+   },
+   "lenient": {
+    "S->S": 16
+   },
+   "strict_original": 15,
+   "strict_applied": 16,
+   "lenient_original": 16,
+   "lenient_applied": 16,
+   "requests": 57,
+   "tokens": 105069,
+   "rewrite_cpu_seconds": 0.00213
+  },
+  "bonsai-2:4b": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 4,
+   "rewrite_events": 7,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 10,
+    "U->S": 4,
+    "U->U": 2
+   },
+   "lenient": {
+    "S->S": 14,
+    "U->U": 2
+   },
+   "strict_original": 10,
+   "strict_applied": 14,
+   "lenient_original": 14,
+   "lenient_applied": 14,
+   "requests": 98,
+   "tokens": 412859,
+   "rewrite_cpu_seconds": 0.00346
+  }
+ },
+ "per_task": {
+  "nf_single_1": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 3,
+   "rewrite_events": 3,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 5,
+    "U->S": 3
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 5,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 26,
+   "tokens": 61842,
+   "rewrite_cpu_seconds": 0.00119
+  },
+  "nf_single_2": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 1,
+   "rewrite_events": 1,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "U->S": 1,
+    "S->S": 7
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 7,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 20,
+   "tokens": 46133,
+   "rewrite_cpu_seconds": 0.00073
+  },
+  "nf_multi_1": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 3,
+   "rewrite_events": 9,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 5,
+    "U->S": 3
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 5,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 46,
+   "tokens": 155847,
+   "rewrite_cpu_seconds": 0.00184
+  },
+  "nf_multi_2": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 1,
+   "rewrite_events": 2,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 6,
+    "U->S": 1,
+    "U->U": 1
+   },
+   "lenient": {
+    "S->S": 7,
+    "U->U": 1
+   },
+   "strict_original": 6,
+   "strict_applied": 7,
+   "lenient_original": 7,
+   "lenient_applied": 7,
+   "requests": 64,
+   "tokens": 336750,
+   "rewrite_cpu_seconds": 0.00283
+  },
+  "nf_amb_1": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 8
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 8,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 39,
+   "tokens": 91342,
+   "rewrite_cpu_seconds": 0.00135
+  },
+  "nf_amb_2": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 8
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 8,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 38,
+   "tokens": 92704,
+   "rewrite_cpu_seconds": 0.00145
+  },
+  "nf_exact": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 8
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 8,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 17,
+   "tokens": 31588,
+   "rewrite_cpu_seconds": 0.0008
+  },
+  "nf_absent": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 7,
+    "U->U": 1
+   },
+   "lenient": {
+    "S->S": 7,
+    "U->U": 1
+   },
+   "strict_original": 7,
+   "strict_applied": 7,
+   "lenient_original": 7,
+   "lenient_applied": 7,
+   "requests": 22,
+   "tokens": 45194,
+   "rewrite_cpu_seconds": 0.00078
+  }
+ },
+ "per_template": {
+  "absent": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 7,
+    "U->U": 1
+   },
+   "lenient": {
+    "S->S": 7,
+    "U->U": 1
+   },
+   "strict_original": 7,
+   "strict_applied": 7,
+   "lenient_original": 7,
+   "lenient_applied": 7,
+   "requests": 22,
+   "tokens": 45194,
+   "rewrite_cpu_seconds": 0.00078
+  },
+  "ambiguous": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 16
+   },
+   "lenient": {
+    "S->S": 16
+   },
+   "strict_original": 16,
+   "strict_applied": 16,
+   "lenient_original": 16,
+   "lenient_applied": 16,
+   "requests": 77,
+   "tokens": 184046,
+   "rewrite_cpu_seconds": 0.0028
+  },
+  "exact": {
+   "episodes": 8,
+   "answers_emitted": 8,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 0,
+   "rewrite_events": 0,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 8
+   },
+   "lenient": {
+    "S->S": 8
+   },
+   "strict_original": 8,
+   "strict_applied": 8,
+   "lenient_original": 8,
+   "lenient_applied": 8,
+   "requests": 17,
+   "tokens": 31588,
+   "rewrite_cpu_seconds": 0.0008
+  },
+  "multi_name": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 4,
+   "rewrite_events": 11,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "S->S": 11,
+    "U->S": 4,
+    "U->U": 1
+   },
+   "lenient": {
+    "S->S": 15,
+    "U->U": 1
+   },
+   "strict_original": 11,
+   "strict_applied": 15,
+   "lenient_original": 15,
+   "lenient_applied": 15,
+   "requests": 110,
+   "tokens": 492597,
+   "rewrite_cpu_seconds": 0.0046700000000000005
+  },
+  "single_name": {
+   "episodes": 16,
+   "answers_emitted": 16,
+   "no_answer": 0,
+   "aborts": 0,
+   "rewritten_episodes": 4,
+   "rewrite_events": 4,
+   "ambiguous": 0,
+   "never_seen": 0,
+   "collisions": 0,
+   "strict": {
+    "U->S": 4,
+    "S->S": 12
+   },
+   "lenient": {
+    "S->S": 16
+   },
+   "strict_original": 12,
+   "strict_applied": 16,
+   "lenient_original": 16,
+   "lenient_applied": 16,
+   "requests": 46,
+   "tokens": 107975,
+   "rewrite_cpu_seconds": 0.00192
+  }
+ },
+ "audit": {
+  "changed_answers": 8,
+  "rewritten_originally_supported": 0,
+  "harmful_rewrites": 0,
+  "strict_improvements": 8,
+  "improvements_verified": 8,
+  "unchanged_supported_answers": 54,
+  "unsupported_after": [
+   {
+    "run_id": "full_20261117T144620Z/bonsai-2_4b-namefix/004-nf_absent-NAMEFIX-bonsai-2_4b-s2",
+    "task": "nf_absent",
+    "model": "bonsai-2:4b",
+    "issues": [
+     "/node: '/nf/flint/umbra' != '/flint/umbra'",
+     "/running: True != False",
+     "/rate: extra field"
+    ],
+    "missing": [],
+    "answer": {
+     "node": "/nf/flint/umbra",
+     "rate": 855,
+     "running": true
+    }
+   },
+   {
+    "run_id": "full_20261117T144620Z/bonsai-2_4b-namefix/011-nf_multi_2-NAMEFIX-bonsai-2_4b-s1",
+    "task": "nf_multi_2",
+    "model": "bonsai-2:4b",
+    "issues": [
+     "/upstream: missing",
+     "/test: extra field"
+    ],
+    "missing": [],
+    "answer": {
+     "test": "value"
+    }
+   }
+  ],
+  "collisions": 0,
+  "episodes_with_names_only_joined": 7,
+  "episodes_with_all_names_contiguous": 1,
+  "models_with_rewrite": [
+   "bonsai-2:4b",
+   "gpt-oss:20b",
+   "lfm3:1.7b",
+   "qwen3.5:9b"
+  ],
+  "templates_with_rewrite": [
+   "multi_name",
+   "single_name"
+  ]
+ },
+ "bars": {
+  "safety_fail": false,
+  "eligible": true,
+  "harm_rate": "unavailable (0 originally supported answers were rewritten)",
+  "wrong_identity_rewrites": 0
+ }
+}

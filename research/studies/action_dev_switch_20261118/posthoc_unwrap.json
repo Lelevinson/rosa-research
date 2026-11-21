@@ -1,0 +1,13 @@
+{
+ "ALL/OFF": 58,
+ "ALL/ON": 58,
+ "bonsai-2:4b/OFF": 15,
+ "bonsai-2:4b/ON": 15,
+ "gpt-oss:20b/OFF": 16,
+ "gpt-oss:20b/ON": 16,
+ "lfm3:1.7b/OFF": 12,
+ "lfm3:1.7b/ON": 12,
+ "qwen3.5:9b/OFF": 15,
+ "qwen3.5:9b/ON": 15,
+ "rows_changed_by_unwrapping": 24
+}

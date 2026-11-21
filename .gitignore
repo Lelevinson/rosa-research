@@ -1,0 +1,15 @@
+.idea
+.vscode
+src/jpl_rosa.egg-info
+build/
+dist/
+__pycache__/
+docs/*
+!docs/START_HERE.md
+.DS_Store
+.venv/
+.env
+.env.*
+!.env.example
+*.py[cod]
+*.pyc

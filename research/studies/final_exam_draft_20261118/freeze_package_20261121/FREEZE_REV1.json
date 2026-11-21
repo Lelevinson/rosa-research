@@ -1,0 +1,30 @@
+{
+ "added_files": {
+  "research/studies/custodian_stage1_20261121/REVISION_1_20261121.md": "fbf63752ada9723508277e796e8d6a519fd4fcba41c38d55acea7177154e3a2a",
+  "research/studies/custodian_stage1_20261121/test_bridge.py": "d3ea49a0d746758a2921e8af8db05582aa803460878d0886a666d5c57de0cdfb",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/make_freeze_rev1.py": "339af2db62183a0374c66d7c4ad0c75b15477d46163150fa2570b3a189f7de03",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/verify_freeze.py": "e3db8d3e6adfe0be01a47dd6f97586b90162fc410687e0921cc71b791c2abff3",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/version_guard.py": "2cb01c75d8abe85b554f6a9570835268ac3b610a2763a32d0674d641e37cb220"
+ },
+ "changed_files": {
+  "research/studies/custodian_stage1_20261121/queue_bridge.py": {
+   "new_sha256": "5cdd5463ff298287fa23f3d731fdfba251192e53275e2776189954dbd477d4dd",
+   "old_sha256": "13e2a21e75e90787a80e68890818a4f14f7f5fa70ee6aaa081f5a6a62713c6b3"
+  },
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/start_stage1_laptop.sh": {
+   "new_sha256": "889f4ecc40a3ef9119925ff58aef67b21e384a17799d8b1d0c2fa34bf1020f75",
+   "old_sha256": "6eb0a7465e62980f4b76b7bb97344678a7addc8c192f88bc46391b2effc1f1eb"
+  }
+ },
+ "changed_files_note": "queue_bridge.py: Codex (row fields). start_stage1_laptop.sh: Claude Code (calls the revision-aware verify_freeze.py and starts the Ollama version guard). Codex also edited FREEZE.json in place in commit 236f372; that edit was reverted and replaced by this file so that the original record stays unchanged.",
+ "date": "2026-11-21",
+ "every_other_hash_verifies": "see verify_freeze.py",
+ "git_head": "7a125190b49ea3f06f3cb86967457853152b0e5a",
+ "ollama_auto_update": "NOT DISABLED: Ollama for Windows has no documented switch; its updater (updater.go, hourly check) downloads to %LOCALAPPDATA%\\Ollama\\updates_v2 and installs silently. A Windows ACL deny on that folder was refused by the permission system and not applied. Detection only: version_guard.py. An update during the run restarts the server and fails the episode in flight.",
+ "ollama_version": "0.40.17",
+ "ollama_version_note": "recorded at the revision; the laptop's Ollama (Windows) updated itself from 0.40.16 to 0.40.17 on 2026-11-21 17:27 (dev studies and the lab: 0.40.16). verify_freeze.py and version_guard.py stop the run on any change.",
+ "original_freeze_git_commit": "a608d0a",
+ "original_freeze_sha256": "40b26b0fc0ca391294541553c912225e612f94a4a22b2c567321375a0e8b974b",
+ "reason": "Row-plumbing defect found by the first start of the laptop queue (2026-11-21 17:52): the custodian bridge row had no `model` and `seed`, so queue_core.compact() raised KeyError after the first episode. Revision 1 copies model and seed from the attempt's queue cell into the bridge row (queue_bridge.py), adds a regression test through the real compact serializer, and rebuilds the missing compact rows in custody (Codex, REVISION_1_20261121.md; two completed cells kept, never re-run). Scoring, prompts, tasks, arms, specs and success criteria are unchanged: every other file hash of FREEZE.json verifies.",
+ "revision": 1
+}

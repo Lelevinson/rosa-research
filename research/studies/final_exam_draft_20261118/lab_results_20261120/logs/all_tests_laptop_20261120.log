@@ -1,0 +1,17 @@
+tests :: Message 1  Message 1  
+SKIPPED (real turtlesim) research/studies/action_dev_switch_20261118/tests
+research/studies/action_tool_s1_20261118/tests :: ---------------------------------------------------------------------- Ran 19 tests in 0.002s  OK 
+SKIPPED (real turtlesim) research/studies/action_tool_s2_20261118/tests
+research/studies/arg_type_retry_offline_20261119/tests :: ---------------------------------------------------------------------- Ran 11 tests in 0.001s  OK 
+research/studies/build_round1_20261115/tests :: ---------------------------------------------------------------------- Ran 26 tests in 0.121s  OK 
+research/studies/build_round2_20261116/tests ::  protocol rule (names called in request k excluded): 22 firings in 19 of 400 recorded episodes (replay: 31 in 22)  replay mode: tracker firings 31, replay triggers 31, episodes differing in group sizes 0, episodes with different sweep sizes 0 
+research/studies/canonical_render_20261118/tests :: ---------------------------------------------------------------------- Ran 27 tests in 1.272s  OK 
+research/studies/dead_end_lookup_offline_20261118/tests :: ---------------------------------------------------------------------- Ran 8 tests in 0.001s  OK 
+research/studies/fairness_errors_as_text_20261117/tests :: ---------------------------------------------------------------------- Ran 4 tests in 0.002s  OK 
+research/studies/finish_split_20261118/tests :: ---------------------------------------------------------------------- Ran 5 tests in 0.747s  OK 
+research/studies/name_fix_applied_20261117/tests :: ---------------------------------------------------------------------- Ran 11 tests in 0.058s  OK 
+research/studies/repeat_finish_nudge_20261118/tests :: ---------------------------------------------------------------------- Ran 15 tests in 1.113s  OK 
+research/studies/small_model_harness_20261115/tests :: ---------------------------------------------------------------------- Ran 30 tests in 1.015s  OK 
+research/studies/steady_loop_ablation_20261117/tests ::  OK ok ok 
+research/studies/thinking_escalation_20261119/tests :: ---------------------------------------------------------------------- Ran 28 tests in 2.663s  OK 
+research/studies/tool_description_compaction_20261117/tests :: ---------------------------------------------------------------------- Ran 7 tests in 0.632s  OK 

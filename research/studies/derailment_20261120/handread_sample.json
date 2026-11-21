@@ -1,0 +1,476 @@
+[
+ {
+  "run_id": "block_0011/021-e1h_chg_1-FULL-bonsai-2_4b-s8",
+  "pop": "P1",
+  "model": "bonsai-2:4b",
+  "task": "e1h_chg_1",
+  "seed": 8,
+  "supported": true,
+  "requests": 3,
+  "floor": 3,
+  "excess": 0,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0011/021-e1h_chg_1-FULL-bonsai-2_4b-s8/trace.jsonl",
+  "derailed": true,
+  "derail_index": 2,
+  "exposures": null,
+  "derail_type": "repeat",
+  "category": 5,
+  "underlying": 6,
+  "error_class": null,
+  "error_text": null,
+  "split": false,
+  "first_request": false,
+  "reuse": false,
+  "waste_after": 1,
+  "return_distance": 1,
+  "outcome": "quick",
+  "previous": [
+   {
+    "tool": "ros2_param_get",
+    "entity": "/e1h/quasar",
+    "args": {
+     "param_name": "level"
+    },
+    "chars": 35,
+    "failed": false,
+    "text": "{\"level\": \"Integer value is: 30\n\"}"
+   },
+   {
+    "tool": "ros2_param_get",
+    "entity": "/e1h/umber",
+    "args": {
+     "param_name": "setpoint"
+    },
+    "chars": 39,
+    "failed": false,
+    "text": "{\"setpoint\": \"Integer value is: 144\n\"}"
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "ros2_param_get",
+    "entity": "/e1h/quasar",
+    "args": {
+     "param_name": "level"
+    },
+    "failed": false,
+    "text": "{\"level\": \"Integer value is: 45\n\"}"
+   }
+  ]
+ },
+ {
+  "run_id": "block_0012/012-nf_multi_1-FULL-bonsai-2_4b-s6",
+  "pop": "P1",
+  "model": "bonsai-2:4b",
+  "task": "nf_multi_1",
+  "seed": 6,
+  "supported": false,
+  "requests": 16,
+  "floor": 3,
+  "excess": 13,
+  "failure": "wrong_conclusion_facts_present",
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0012/012-nf_multi_1-FULL-bonsai-2_4b-s6/trace.jsonl",
+  "derailed": true,
+  "derail_index": 3,
+  "exposures": null,
+  "derail_type": "name_guess",
+  "category": 2,
+  "underlying": 2,
+  "error_class": null,
+  "error_text": null,
+  "split": true,
+  "first_request": false,
+  "reuse": true,
+  "waste_after": 9,
+  "return_distance": 7,
+  "outcome": "never",
+  "previous": [
+   {
+    "tool": "ros2_topic_info",
+    "entity": "/nf/harrow_t",
+    "args": {},
+    "chars": 1817,
+    "failed": false,
+    "text": "Type: std_msgs/msg/Int32\n\nPublisher count: 1\n\nNode name: lathe\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Int32\nTopic type hash: RIHS01_b6578ded3c58c6"
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "ros2_param_list",
+    "entity": "lathe",
+    "args": {},
+    "failed": true,
+    "text": "{\"error\": \"Node not found\n\"}"
+   }
+  ]
+ },
+ {
+  "run_id": "block_0012/005-nf_multi_1-FULL-bonsai-2_4b-s8",
+  "pop": "P1",
+  "model": "bonsai-2:4b",
+  "task": "nf_multi_1",
+  "seed": 8,
+  "supported": false,
+  "requests": 6,
+  "floor": 3,
+  "excess": 3,
+  "failure": "wrong_conclusion_facts_present",
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0012/005-nf_multi_1-FULL-bonsai-2_4b-s8/trace.jsonl",
+  "derailed": true,
+  "derail_index": 2,
+  "exposures": null,
+  "derail_type": "name_guess",
+  "category": 2,
+  "underlying": 2,
+  "error_class": null,
+  "error_text": null,
+  "split": true,
+  "first_request": false,
+  "reuse": true,
+  "waste_after": 2,
+  "return_distance": 2,
+  "outcome": "never",
+  "previous": [
+   {
+    "tool": "ros2_topic_info",
+    "entity": "/nf/harrow_t",
+    "args": {},
+    "chars": 1817,
+    "failed": false,
+    "text": "Type: std_msgs/msg/Int32\n\nPublisher count: 1\n\nNode name: lathe\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Int32\nTopic type hash: RIHS01_b6578ded3c58c6"
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "ros2_param_list",
+    "entity": "zenith",
+    "args": {},
+    "failed": true,
+    "text": "{\"error\": \"Node not found\n\"}"
+   },
+   {
+    "tool": "ros2_param_list",
+    "entity": "xylem",
+    "args": {},
+    "failed": true,
+    "text": "{\"error\": \"Node not found\n\"}"
+   },
+   {
+    "tool": "ros2_param_list",
+    "entity": "mortar",
+    "args": {},
+    "failed": true,
+    "text": "{\"error\": \"Node not found\n\"}"
+   }
+  ]
+ },
+ {
+  "run_id": "block_0009/004-nf_absent-FULL-gpt-oss_20b-s10",
+  "pop": "P3",
+  "model": "gpt-oss:20b",
+  "task": "nf_absent",
+  "seed": 10,
+  "supported": true,
+  "requests": 3,
+  "floor": 2,
+  "excess": 1,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/listval/runs_all/block_0009/004-nf_absent-FULL-gpt-oss_20b-s10/trace.jsonl",
+  "derailed": true,
+  "derail_index": 1,
+  "exposures": null,
+  "derail_type": "format",
+  "category": 4,
+  "underlying": 6,
+  "error_class": null,
+  "error_text": null,
+  "split": false,
+  "first_request": true,
+  "reuse": null,
+  "waste_after": 2,
+  "return_distance": 2,
+  "outcome": "quick",
+  "previous": null,
+  "derailing": [
+   {
+    "tool": "ros2_node_list",
+    "entity": null,
+    "args": {
+     "pattern": "^/flint/umbra$",
+     "blacklist": ""
+    },
+    "failed": true,
+    "text": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again."
+   }
+  ]
+ },
+ {
+  "run_id": "block_0008/016-e1h_abs_2-FULL-gpt-oss_20b-s6",
+  "pop": "P1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_abs_2",
+  "seed": 6,
+  "supported": true,
+  "requests": 3,
+  "floor": 2,
+  "excess": 1,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0008/016-e1h_abs_2-FULL-gpt-oss_20b-s6/trace.jsonl",
+  "derailed": true,
+  "derail_index": 1,
+  "exposures": null,
+  "derail_type": "format",
+  "category": 4,
+  "underlying": 6,
+  "error_class": null,
+  "error_text": null,
+  "split": false,
+  "first_request": true,
+  "reuse": null,
+  "waste_after": 2,
+  "return_distance": 2,
+  "outcome": "quick",
+  "previous": null,
+  "derailing": [
+   {
+    "tool": "ros2_node_list",
+    "entity": null,
+    "args": {
+     "blacklist": "",
+     "pattern": "^/alder/pewter$"
+    },
+    "failed": true,
+    "text": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again."
+   }
+  ]
+ },
+ {
+  "run_id": "block_0008/008-e1h_amb_1-FULL-gpt-oss_20b-s6",
+  "pop": "P1",
+  "model": "gpt-oss:20b",
+  "task": "e1h_amb_1",
+  "seed": 6,
+  "supported": true,
+  "requests": 7,
+  "floor": 3,
+  "excess": 4,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0008/008-e1h_amb_1-FULL-gpt-oss_20b-s6/trace.jsonl",
+  "derailed": true,
+  "derail_index": 1,
+  "exposures": null,
+  "derail_type": "format",
+  "category": 4,
+  "underlying": 6,
+  "error_class": null,
+  "error_text": null,
+  "split": false,
+  "first_request": true,
+  "reuse": null,
+  "waste_after": 5,
+  "return_distance": 2,
+  "outcome": "quick",
+  "previous": null,
+  "derailing": [
+   {
+    "tool": "ros2_node_list",
+    "entity": null,
+    "args": {
+     "pattern": "sorrel",
+     "blacklist": ""
+    },
+    "failed": true,
+    "text": "Invalid arguments for ros2_node_list: field 'blacklist': expected array or null, received string \"\". Fix the arguments and call the tool again."
+   }
+  ]
+ },
+ {
+  "run_id": "block_0003/016-nf_single_1-FULL-lfm3_1.7b-s9",
+  "pop": "P3",
+  "model": "lfm3:1.7b",
+  "task": "nf_single_1",
+  "seed": 9,
+  "supported": true,
+  "requests": 6,
+  "floor": 2,
+  "excess": 4,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/listval/runs_all/block_0003/016-nf_single_1-FULL-lfm3_1.7b-s9/trace.jsonl",
+  "derailed": true,
+  "derail_index": 3,
+  "exposures": null,
+  "derail_type": "name_guess",
+  "category": 2,
+  "underlying": 2,
+  "error_class": null,
+  "error_text": null,
+  "split": true,
+  "first_request": false,
+  "reuse": true,
+  "waste_after": 2,
+  "return_distance": 2,
+  "outcome": "quick",
+  "previous": [
+   {
+    "tool": "ros2_topic_info",
+    "entity": "/nf/kestrel_t",
+    "args": {},
+    "chars": 949,
+    "failed": false,
+    "text": "Type: std_msgs/msg/Float32\n\nPublisher count: 1\n\nNode name: bobbin\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Float32\nTopic type hash: RIHS01_7170d3d8f"
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "ros2_node_info",
+    "entity": "bobbin",
+    "args": {},
+    "failed": true,
+    "text": "{\"error\": \"Unable to find node 'bobbin'\n\"}"
+   }
+  ]
+ },
+ {
+  "run_id": "block_0001/009-v2-FULL-lfm3_1.7b-s6",
+  "pop": "P1",
+  "model": "lfm3:1.7b",
+  "task": "v2",
+  "seed": 6,
+  "supported": false,
+  "requests": 15,
+  "floor": 3,
+  "excess": 12,
+  "failure": "wrong_conclusion_facts_present",
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl",
+  "derailed": true,
+  "derail_index": 4,
+  "exposures": null,
+  "derail_type": "format",
+  "category": 3,
+  "underlying": 3,
+  "error_class": null,
+  "error_text": null,
+  "split": false,
+  "first_request": false,
+  "reuse": false,
+  "waste_after": 11,
+  "return_distance": 11,
+  "outcome": "never",
+  "previous": [
+   {
+    "tool": "ros2_service_list",
+    "entity": null,
+    "args": {},
+    "chars": 5039,
+    "failed": false,
+    "text": "{\"services\": [\"/plant32/anvil/describe_parameters\", \"/plant32/anvil/get_parameter_types\", \"/plant32/anvil/get_parameters\", \"/plant32/anvil/get_type_description\""
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "ros2_node_list",
+    "entity": null,
+    "args": {
+     "pattern": "*cedar*"
+    },
+    "failed": true,
+    "text": "Tool ros2_node_list failed: error: multiple repeat at position 2"
+   }
+  ]
+ },
+ {
+  "run_id": "block_0006/011-nf_single_1-FULL-qwen3.5_9b-s6",
+  "pop": "P1",
+  "model": "qwen3.5:9b",
+  "task": "nf_single_1",
+  "seed": 6,
+  "supported": true,
+  "requests": 3,
+  "floor": 2,
+  "excess": 1,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/lossmap/runs_all/block_0006/011-nf_single_1-FULL-qwen3.5_9b-s6/trace.jsonl",
+  "derailed": true,
+  "derail_index": 2,
+  "exposures": null,
+  "derail_type": "format",
+  "category": 6,
+  "underlying": 6,
+  "error_class": null,
+  "error_text": null,
+  "split": false,
+  "first_request": false,
+  "reuse": false,
+  "waste_after": 1,
+  "return_distance": 1,
+  "outcome": "quick",
+  "previous": [
+   {
+    "tool": "ros2_topic_info",
+    "entity": "/nf/kestrel_t",
+    "args": {},
+    "chars": 949,
+    "failed": false,
+    "text": "Type: std_msgs/msg/Float32\n\nPublisher count: 1\n\nNode name: bobbin\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Float32\nTopic type hash: RIHS01_7170d3d8f"
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "final_answer",
+    "entity": null,
+    "args": {
+     "node": "/nf/lantern/bobbin"
+    },
+    "failed": true,
+    "text": "Invalid arguments for final_answer: field 'answer': expected required field, received missing. Fix the arguments and call the tool again."
+   }
+  ]
+ },
+ {
+  "run_id": "block_0004/007-u3-FULL-qwen3.5_9b-s10",
+  "pop": "P3",
+  "model": "qwen3.5:9b",
+  "task": "u3",
+  "seed": 10,
+  "supported": true,
+  "requests": 7,
+  "floor": 4,
+  "excess": 3,
+  "failure": null,
+  "trace_path": "research/_artifacts/exam/listval/runs_all/block_0004/007-u3-FULL-qwen3.5_9b-s10/trace.jsonl",
+  "derailed": true,
+  "derail_index": 2,
+  "exposures": null,
+  "derail_type": "name_guess",
+  "category": 2,
+  "underlying": 2,
+  "error_class": null,
+  "error_text": null,
+  "split": true,
+  "first_request": false,
+  "reuse": true,
+  "waste_after": 3,
+  "return_distance": 2,
+  "outcome": "quick",
+  "previous": [
+   {
+    "tool": "ros2_topic_info",
+    "entity": "/plant32/quarry_t",
+    "args": {},
+    "chars": 502,
+    "failed": false,
+    "text": "Type: std_msgs/msg/Int32\n\nPublisher count: 1\n\nNode name: yarrow\nNode namespace: /plant32\nTopic type: std_msgs/msg/Int32\nTopic type hash: RIHS01_b6578ded3c58c626"
+   }
+  ],
+  "derailing": [
+   {
+    "tool": "ros2_node_info",
+    "entity": "yarrow",
+    "args": {},
+    "failed": true,
+    "text": "{\"error\": \"Unable to find node 'yarrow'\n\"}"
+   }
+  ]
+ }
+]

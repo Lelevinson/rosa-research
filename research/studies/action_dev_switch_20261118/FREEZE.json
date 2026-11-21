@@ -1,0 +1,21 @@
+{
+ "frozen_at": "2026-11-18 19:33:50 CST",
+ "files": {
+  "research/studies/action_dev_switch_20261118/PROTOCOL.md": "5f899cbe3ce3e549ba23767ee146b24b2831bbe3e9440fc2598f253dd6ff050b",
+  "research/studies/action_dev_switch_20261118/run_action_study.py": "bc09f023656b644490ea9f7647a9185bdd424695dd2cfcbcfc162df695ab2d98",
+  "research/studies/action_dev_switch_20261118/judge.py": "8e0634166f63efa16eb41e85278c1ba314edecf43a1d846c33834f00e6351e3f",
+  "research/studies/action_dev_switch_20261118/tests/test_judge.py": "ddd7927fe185333830987f6cb305cfb19a11f1e5d11b6d14bf13786b93b26b81",
+  "research/studies/action_dev_switch_20261118/smoke_check.py": "574f2815ee1efa4a926059d2e5adbd94304fc267ca7ea88406cdad585ceed40f",
+  "research/studies/action_dev_switch_20261118/analyze_action.py": "bc2a06c1d2dea166972510299d2e357af882f6877e18805b19f9ecd68a81ab6d",
+  "research/studies/action_tool_s1_20261118/action_interface.py": "466d5ee7bb94d2335b49fee17f6e24a205c9eeacc8172c5cd8c7452f8e642fe8",
+  "research/studies/action_tool_s1_20261118/action_executor.py": "9567dee98e32ea6b0d6b47dc475ca2ac7809fa2c4bb98d82b6e76f18f2e190f8",
+  "research/studies/action_tool_s2_20261118/turtlesim_backend.py": "af27e45e7b851f43060afeab7c9ab7e33965ce1de5f520b6cd62400bda49b291",
+  "research/studies/action_tool_s2_20261118/tests/test_turtlesim_backend.py": "eaf82579a5df143c3d0a042d5a7d593074658ad407646478c9aad59c2c15df10"
+ },
+ "model_digests": {
+  "lfm3:1.7b": "b36a103fe2f8fbe9df2ceec88b9cfdf842dc04aaabe2b4677d1acf8e16570b5d",
+  "qwen3.5:9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+  "gpt-oss:20b": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+  "bonsai-2:4b": "93edd652c9326fb1e782c1f54e997ce6a46e2351c763777db0c63b8a51cf6bec"
+ }
+}

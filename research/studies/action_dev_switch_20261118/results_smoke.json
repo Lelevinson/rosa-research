@@ -1,0 +1,346 @@
+{
+ "protocol_sha256": "5f899cbe3ce3e549ba23767ee146b24b2831bbe3e9440fc2598f253dd6ff050b",
+ "phase": "smoke",
+ "episodes": 6,
+ "by_arm": {
+  "OFF": {
+   "episodes": 3,
+   "success": 3,
+   "requests": 10,
+   "tokens": 7870,
+   "verification_calls": 2,
+   "verification_per_episode": 0.667,
+   "pose_reads": 2,
+   "rotate_calls": 4,
+   "goals_sent": 3,
+   "requests_per_episode": 3.33,
+   "tokens_per_episode": 2623,
+   "capped_or_error": 0,
+   "locked": 0,
+   "not_still": 0,
+   "infrastructure": 0,
+   "endings": {
+    "final_answer": 3
+   }
+  },
+  "ON": {
+   "episodes": 3,
+   "success": 3,
+   "requests": 10,
+   "tokens": 8071,
+   "verification_calls": 2,
+   "verification_per_episode": 0.667,
+   "pose_reads": 2,
+   "rotate_calls": 4,
+   "goals_sent": 3,
+   "requests_per_episode": 3.33,
+   "tokens_per_episode": 2690,
+   "capped_or_error": 0,
+   "locked": 0,
+   "not_still": 0,
+   "infrastructure": 0,
+   "endings": {
+    "final_answer": 3
+   }
+  }
+ },
+ "by_model_arm": {
+  "lfm3:1.7b": {
+   "OFF": {
+    "episodes": 0
+   },
+   "ON": {
+    "episodes": 0
+   }
+  },
+  "qwen3.5:9b": {
+   "OFF": {
+    "episodes": 3,
+    "success": 3,
+    "requests": 10,
+    "tokens": 7870,
+    "verification_calls": 2,
+    "verification_per_episode": 0.667,
+    "pose_reads": 2,
+    "rotate_calls": 4,
+    "goals_sent": 3,
+    "requests_per_episode": 3.33,
+    "tokens_per_episode": 2623,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 3
+    }
+   },
+   "ON": {
+    "episodes": 3,
+    "success": 3,
+    "requests": 10,
+    "tokens": 8071,
+    "verification_calls": 2,
+    "verification_per_episode": 0.667,
+    "pose_reads": 2,
+    "rotate_calls": 4,
+    "goals_sent": 3,
+    "requests_per_episode": 3.33,
+    "tokens_per_episode": 2690,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 3
+    }
+   }
+  },
+  "gpt-oss:20b": {
+   "OFF": {
+    "episodes": 0
+   },
+   "ON": {
+    "episodes": 0
+   }
+  },
+  "bonsai-2:4b": {
+   "OFF": {
+    "episodes": 0
+   },
+   "ON": {
+    "episodes": 0
+   }
+  }
+ },
+ "by_kind_arm": {
+  "act_read": {
+   "OFF": {
+    "episodes": 2,
+    "success": 2,
+    "requests": 6,
+    "tokens": 4386,
+    "verification_calls": 1,
+    "verification_per_episode": 0.5,
+    "pose_reads": 1,
+    "rotate_calls": 2,
+    "goals_sent": 2,
+    "requests_per_episode": 3.0,
+    "tokens_per_episode": 2193,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 2
+    }
+   },
+   "ON": {
+    "episodes": 2,
+    "success": 2,
+    "requests": 6,
+    "tokens": 4465,
+    "verification_calls": 1,
+    "verification_per_episode": 0.5,
+    "pose_reads": 1,
+    "rotate_calls": 2,
+    "goals_sent": 2,
+    "requests_per_episode": 3.0,
+    "tokens_per_episode": 2232,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 2
+    }
+   }
+  },
+  "single": {
+   "OFF": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 4,
+    "tokens": 3484,
+    "verification_calls": 1,
+    "verification_per_episode": 1.0,
+    "pose_reads": 1,
+    "rotate_calls": 2,
+    "goals_sent": 1,
+    "requests_per_episode": 4.0,
+    "tokens_per_episode": 3484,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   },
+   "ON": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 4,
+    "tokens": 3606,
+    "verification_calls": 1,
+    "verification_per_episode": 1.0,
+    "pose_reads": 1,
+    "rotate_calls": 2,
+    "goals_sent": 1,
+    "requests_per_episode": 4.0,
+    "tokens_per_episode": 3606,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   }
+  }
+ },
+ "by_task_arm": {
+  "R1": {
+   "OFF": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 3,
+    "tokens": 2140,
+    "verification_calls": 0,
+    "verification_per_episode": 0.0,
+    "pose_reads": 0,
+    "rotate_calls": 1,
+    "goals_sent": 1,
+    "requests_per_episode": 3.0,
+    "tokens_per_episode": 2140,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   },
+   "ON": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 3,
+    "tokens": 2168,
+    "verification_calls": 0,
+    "verification_per_episode": 0.0,
+    "pose_reads": 0,
+    "rotate_calls": 1,
+    "goals_sent": 1,
+    "requests_per_episode": 3.0,
+    "tokens_per_episode": 2168,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   }
+  },
+  "R2": {
+   "OFF": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 3,
+    "tokens": 2246,
+    "verification_calls": 1,
+    "verification_per_episode": 1.0,
+    "pose_reads": 1,
+    "rotate_calls": 1,
+    "goals_sent": 1,
+    "requests_per_episode": 3.0,
+    "tokens_per_episode": 2246,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   },
+   "ON": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 3,
+    "tokens": 2297,
+    "verification_calls": 1,
+    "verification_per_episode": 1.0,
+    "pose_reads": 1,
+    "rotate_calls": 1,
+    "goals_sent": 1,
+    "requests_per_episode": 3.0,
+    "tokens_per_episode": 2297,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   }
+  },
+  "S3": {
+   "OFF": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 4,
+    "tokens": 3484,
+    "verification_calls": 1,
+    "verification_per_episode": 1.0,
+    "pose_reads": 1,
+    "rotate_calls": 2,
+    "goals_sent": 1,
+    "requests_per_episode": 4.0,
+    "tokens_per_episode": 3484,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   },
+   "ON": {
+    "episodes": 1,
+    "success": 1,
+    "requests": 4,
+    "tokens": 3606,
+    "verification_calls": 1,
+    "verification_per_episode": 1.0,
+    "pose_reads": 1,
+    "rotate_calls": 2,
+    "goals_sent": 1,
+    "requests_per_episode": 4.0,
+    "tokens_per_episode": 3606,
+    "capped_or_error": 0,
+    "locked": 0,
+    "not_still": 0,
+    "infrastructure": 0,
+    "endings": {
+     "final_answer": 1
+    }
+   }
+  }
+ },
+ "verification_on_heading_only_tasks": {
+  "OFF": 1.0,
+  "ON": 1.0
+ },
+ "paired": {
+  "both": 3
+ },
+ "rotate_results": {
+  "OFF": {
+   "REJECTED field theta: 4 is outside -3.141592653589793 to 3.141592653589793 radians": 1,
+   "SUCCEEDED": 3
+  },
+  "ON": {
+   "REJECTED field theta: 4 is outside -3.141592653589793 to 3.141592653589793 radians": 1,
+   "SUCCEEDED": 3
+  }
+ }
+}

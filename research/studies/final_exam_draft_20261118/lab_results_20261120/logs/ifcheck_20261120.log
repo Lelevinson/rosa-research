@@ -1,0 +1,9 @@
+{"directory": "000-u3-A1-ministral-3_8b-s1", "returncode": 0, "error": null, "seconds": 28.31430219952017, "cell": {"env": "stage3", "task": "u3", "arm": "A1", "model": "ministral-3:8b", "seed": 1, "temperature": 0.7}}
+{"directory": "001-u3-A1-gemma4_e4b-s1", "returncode": 0, "error": null, "seconds": 6.4270883882418275, "cell": {"env": "stage3", "task": "u3", "arm": "A1", "model": "gemma4:e4b", "seed": 1, "temperature": 0.7}}
+{"directory": "002-p3-A1-llama3.1_8b-s1", "returncode": 0, "error": null, "seconds": 20.702915532514453, "cell": {"env": "stage3", "task": "p3", "arm": "A1", "model": "llama3.1:8b", "seed": 1, "temperature": 0.7}}
+{"directory": "003-p3-A1-granite4.2_8b-s1", "returncode": 0, "error": null, "seconds": 18.800468136556447, "cell": {"env": "stage3", "task": "p3", "arm": "A1", "model": "granite4.2:8b", "seed": 1, "temperature": 0.7}}
+{"directory": "004-u3-A1-granite4.2_8b-s1", "returncode": 0, "error": null, "seconds": 39.541830389760435, "cell": {"env": "stage3", "task": "u3", "arm": "A1", "model": "granite4.2:8b", "seed": 1, "temperature": 0.7}}
+{"directory": "005-p3-A1-gemma4_e4b-s1", "returncode": 0, "error": null, "seconds": 11.93632180057466, "cell": {"env": "stage3", "task": "p3", "arm": "A1", "model": "gemma4:e4b", "seed": 1, "temperature": 0.7}}
+{"directory": "006-u3-A1-llama3.1_8b-s1", "returncode": 0, "error": null, "seconds": 5.675048929639161, "cell": {"env": "stage3", "task": "u3", "arm": "A1", "model": "llama3.1:8b", "seed": 1, "temperature": 0.7}}
+{"directory": "007-p3-A1-ministral-3_8b-s1", "returncode": 0, "error": null, "seconds": 5.174343844875693, "cell": {"env": "stage3", "task": "p3", "arm": "A1", "model": "ministral-3:8b", "seed": 1, "temperature": 0.7}}
+EXIT 0

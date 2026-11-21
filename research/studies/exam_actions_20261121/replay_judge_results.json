@@ -1,0 +1,70 @@
+{
+ "episodes": 128,
+ "as_recorded": {
+  "v1.0 as scored in the study": 92,
+  "v1.2 on the recorded answer": 116
+ },
+ "v12_direct_by_form": {
+  "object": {
+   "success": 116,
+   "episodes": 126
+  },
+  "wrapped_object": {
+   "success": 0,
+   "episodes": 126
+  },
+  "json_string": {
+   "success": 116,
+   "episodes": 126
+  },
+  "wrapped_json_string": {
+   "success": 116,
+   "episodes": 126
+  },
+  "prose_around_json": {
+   "success": 116,
+   "episodes": 126
+  },
+  "prose_around_wrapped_json": {
+   "success": 116,
+   "episodes": 126
+  },
+  "no_object": {
+   "success": 0,
+   "episodes": 2
+  }
+ },
+ "v12_direct_episodes_with_form_disagreement": 116,
+ "exam_wrapper_by_form": {
+  "object": {
+   "success": 116,
+   "episodes": 126
+  },
+  "wrapped_object": {
+   "success": 116,
+   "episodes": 126
+  },
+  "json_string": {
+   "success": 116,
+   "episodes": 126
+  },
+  "wrapped_json_string": {
+   "success": 116,
+   "episodes": 126
+  },
+  "prose_around_json": {
+   "success": 116,
+   "episodes": 126
+  },
+  "prose_around_wrapped_json": {
+   "success": 116,
+   "episodes": 126
+  },
+  "no_object": {
+   "success": 0,
+   "episodes": 2
+  }
+ },
+ "exam_wrapper_episodes_with_form_disagreement": 0,
+ "exam_wrapper_disagreements": []
+}

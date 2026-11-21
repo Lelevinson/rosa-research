@@ -1,0 +1,54 @@
+{
+ "task": "Node /nf/lantern/jasper subscribes to exactly two topics. Return JSON with the key upstream: an object whose keys are the full names of those two topics and whose values are the full names of the nodes that publish them.",
+ "log": [
+  {
+   "stage": 1,
+   "tool": "ros2_node_info",
+   "args": {
+    "nodes": [
+     "/nf/lantern/jasper"
+    ]
+   },
+   "result": {
+    "/nf/lantern/jasper": "/nf/lantern/jasper\n  Subscribers:\n    /nf/bolt_t: std_msgs/msg/Int32\n    /nf/ratchet_t: std_msgs/msg/Float32\n  Publishers:\n    /nf/gimbal_t: std_msgs/msg/Float32\n    /parameter_events: rcl_interfaces/msg/ParameterEvent\n    /rosout: rcl_interfaces/msg/Log\n  Service Servers:\n    /nf/lantern/jasper/describe_parameters: rcl_interfaces/srv/DescribeParameters\n    /nf/lantern/jasper/get_parameter_types: rcl_interfaces/srv/GetParameterTypes\n    /nf/lantern/jasper/get_parameters: rcl_interfaces/srv/GetParameters\n    /nf/lantern/jasper/get_type_description: type_description_interfaces/srv/GetTypeDescription\n    /nf/lantern/jasper/list_parameters: rcl_interfaces/srv/ListParameters\n    /nf/lantern/jasper/set_parameters: rcl_interfaces/srv/SetParameters\n    /nf/lantern/jasper/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically\n  Service Clients:\n\n  Action Servers:\n\n  Action Clients:\n\n"
+   }
+  },
+  {
+   "stage": 2,
+   "tool": "ros2_topic_info",
+   "args": {
+    "topics": [
+     "/nf/bolt_t"
+    ]
+   },
+   "result": {
+    "/nf/bolt_t": "Type: std_msgs/msg/Int32\n\nPublisher count: 1\n\nNode name: obsidian\nNode namespace: /nf/cipher\nTopic type: std_msgs/msg/Int32\nTopic type hash: RIHS01_b6578ded3c58c626cfe8d1a6fb6e04f706f97e9f03d2727c9ff4e74b1cef0deb\nEndpoint type: PUBLISHER\nGID: 01.0f.e1.df.90.9d.15.74.00.00.00.00.00.00.13.03\nQoS profile:\n  Reliability: RELIABLE\n  History (Depth): UNKNOWN\n  Durability: VOLATILE\n  Lifespan: Infinite\n  Deadline: Infinite\n  Liveliness: AUTOMATIC\n  Liveliness lease duration: Infinite\n\nSubscription count: 1\n\nNode name: jasper\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Int32\nTopic type hash: RIHS01_b6578ded3c58c626cfe8d1a6fb6e04f706f97e9f03d2727c9ff4e74b1cef0deb\nEndpoint type: SUBSCRIPTION\nGID: 01.0f.e1.df.91.9d.39.d8.00.00.00.00.00.00.15.04\nQoS profile:\n  Reliability: RELIABLE\n  History (Depth): UNKNOWN\n  Durability: VOLATILE\n  Lifespan: Infinite\n  Deadline: Infinite\n  Liveliness: AUTOMATIC\n  Liveliness lease duration: Infinite\n\n"
+   }
+  },
+  {
+   "stage": 2,
+   "tool": "ros2_topic_info",
+   "args": {
+    "topics": [
+     "/nf/ratchet_t"
+    ]
+   },
+   "result": {
+    "/nf/ratchet_t": "Type: std_msgs/msg/Float32\n\nPublisher count: 1\n\nNode name: easel\nNode namespace: /nf/agate\nTopic type: std_msgs/msg/Float32\nTopic type hash: RIHS01_7170d3d8f841f7be3172ce5f4f59f3a4d7f63b0447e8b33327601ad64d83d6e2\nEndpoint type: PUBLISHER\nGID: 01.0f.e1.df.8f.9d.87.19.00.00.00.00.00.00.13.03\nQoS profile:\n  Reliability: RELIABLE\n  History (Depth): UNKNOWN\n  Durability: VOLATILE\n  Lifespan: Infinite\n  Deadline: Infinite\n  Liveliness: AUTOMATIC\n  Liveliness lease duration: Infinite\n\nSubscription count: 1\n\nNode name: jasper\nNode namespace: /nf/lantern\nTopic type: std_msgs/msg/Float32\nTopic type hash: RIHS01_7170d3d8f841f7be3172ce5f4f59f3a4d7f63b0447e8b33327601ad64d83d6e2\nEndpoint type: SUBSCRIPTION\nGID: 01.0f.e1.df.91.9d.39.d8.00.00.00.00.00.00.14.04\nQoS profile:\n  Reliability: RELIABLE\n  History (Depth): UNKNOWN\n  Durability: VOLATILE\n  Lifespan: Infinite\n  Deadline: Infinite\n  Liveliness: AUTOMATIC\n  Liveliness lease duration: Infinite\n\n"
+   }
+  }
+ ],
+ "answer": {
+  "upstream": {
+   "/nf/bolt_t": "/nf/cipher/obsidian",
+   "/nf/ratchet_t": "/nf/agate/easel"
+  }
+ },
+ "scored": {
+  "exact": true,
+  "issues": [],
+  "support_missing": [],
+  "supported_complete": true,
+  "scorer": "scorer-v2.0"
+ }
+}

@@ -1,0 +1,182 @@
+{
+ "cohort_seed_rows": [
+  {
+   "cohort": "ablation FULL",
+   "seed": 1,
+   "cells": 40,
+   "supported": 36,
+   "requests": 211,
+   "tokens": 776614,
+   "supported_by_model": {
+    "bonsai-2:4b": 8,
+    "gpt-oss:20b": 9,
+    "lfm3:1.7b": 9,
+    "qwen3.5:9b": 10
+   }
+  },
+  {
+   "cohort": "compaction FULL",
+   "seed": 1,
+   "cells": 40,
+   "supported": 32,
+   "requests": 218,
+   "tokens": 854659,
+   "supported_by_model": {
+    "bonsai-2:4b": 7,
+    "gpt-oss:20b": 8,
+    "lfm3:1.7b": 7,
+    "qwen3.5:9b": 10
+   }
+  },
+  {
+   "cohort": "pilot C1",
+   "seed": 1,
+   "cells": 40,
+   "supported": 35,
+   "requests": 222,
+   "tokens": 866564,
+   "supported_by_model": {
+    "bonsai-2:4b": 6,
+    "gpt-oss:20b": 10,
+    "lfm3:1.7b": 9,
+    "qwen3.5:9b": 10
+   }
+  },
+  {
+   "cohort": "pilot C1",
+   "seed": 2,
+   "cells": 40,
+   "supported": 35,
+   "requests": 264,
+   "tokens": 809938,
+   "supported_by_model": {
+    "bonsai-2:4b": 7,
+    "gpt-oss:20b": 10,
+    "lfm3:1.7b": 8,
+    "qwen3.5:9b": 10
+   }
+  },
+  {
+   "cohort": "round1 C1",
+   "seed": 1,
+   "cells": 40,
+   "supported": 32,
+   "requests": 195,
+   "tokens": 722695,
+   "supported_by_model": {
+    "bonsai-2:4b": 7,
+    "gpt-oss:20b": 7,
+    "lfm3:1.7b": 8,
+    "qwen3.5:9b": 10
+   }
+  },
+  {
+   "cohort": "round1 C1",
+   "seed": 2,
+   "cells": 40,
+   "supported": 35,
+   "requests": 311,
+   "tokens": 1273119,
+   "supported_by_model": {
+    "bonsai-2:4b": 8,
+    "gpt-oss:20b": 9,
+    "lfm3:1.7b": 8,
+    "qwen3.5:9b": 10
+   }
+  }
+ ],
+ "n_runs_of_40": 6,
+ "supported_values": [
+  36,
+  32,
+  35,
+  35,
+  32,
+  35
+ ],
+ "supported_min": 32,
+ "supported_max": 36,
+ "supported_mean": 34.17,
+ "supported_sd_cells": 1.72,
+ "requests_values": [
+  211,
+  218,
+  222,
+  264,
+  195,
+  311
+ ],
+ "requests_cv_percent": 18.1,
+ "tokens_values": [
+  776614,
+  854659,
+  866564,
+  809938,
+  722695,
+  1273119
+ ],
+ "tokens_cv_percent": 22.4,
+ "power": {
+  "per_cell_log_ratio_sd_between_two_runs": 0.544,
+  "mean_flip_rate_between_two_runs": 0.158,
+  "v_dev_per_cell": 0.079,
+  "table": [
+   {
+    "design": "dev 40 cells",
+    "cells_per_arm": 40,
+    "mde_supported_pp_at_dev_noise": 17.6,
+    "mde_supported_pp_at_worst_noise_v025": 31.3,
+    "mde_requests_percent": 27.2
+   },
+   {
+    "design": "dev 80 cells (this finish split)",
+    "cells_per_arm": 80,
+    "mde_supported_pp_at_dev_noise": 12.5,
+    "mde_supported_pp_at_worst_noise_v025": 22.1,
+    "mde_requests_percent": 18.6
+   },
+   {
+    "design": "one model x 110 tasks x 3 seeds",
+    "cells_per_arm": 330,
+    "mde_supported_pp_at_dev_noise": 6.1,
+    "mde_supported_pp_at_worst_noise_v025": 10.9,
+    "mde_requests_percent": 8.7
+   },
+   {
+    "design": "4 models x 110 tasks x 1 seed",
+    "cells_per_arm": 440,
+    "mde_supported_pp_at_dev_noise": 5.3,
+    "mde_supported_pp_at_worst_noise_v025": 9.4,
+    "mde_requests_percent": 7.5
+   },
+   {
+    "design": "4 models x 110 tasks x 3 seeds",
+    "cells_per_arm": 1320,
+    "mde_supported_pp_at_dev_noise": 3.1,
+    "mde_supported_pp_at_worst_noise_v025": 5.4,
+    "mde_requests_percent": 4.3
+   },
+   {
+    "design": "held-out v2 only: 4 models x 76 tasks x 3 seeds",
+    "cells_per_arm": 912,
+    "mde_supported_pp_at_dev_noise": 3.7,
+    "mde_supported_pp_at_worst_noise_v025": 6.6,
+    "mde_requests_percent": 5.2
+   },
+   {
+    "design": "Nav2 inspection: 4 models x 24 tasks x 3 seeds",
+    "cells_per_arm": 288,
+    "mde_supported_pp_at_dev_noise": 6.6,
+    "mde_supported_pp_at_worst_noise_v025": 11.7,
+    "mde_requests_percent": 9.4
+   },
+   {
+    "design": "Nav2 read-then-act: 4 models x 10 tasks x 3 seeds",
+    "cells_per_arm": 120,
+    "mde_supported_pp_at_dev_noise": 10.2,
+    "mde_supported_pp_at_worst_noise_v025": 18.1,
+    "mde_requests_percent": 14.9
+   }
+  ]
+ }
+}

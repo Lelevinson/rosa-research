@@ -1,0 +1,153 @@
+{
+ "meta": {
+  "bootstrap_seed": 20261122,
+  "draws": 10000,
+  "inputs": {
+   "research/studies/final_exam_draft_20261118/freeze_package_20261121/dev_check/dev_rows_full_vs_e1_seed1.jsonl": "a99469ee2131e61d8431abd2cf4db1d97c4b5fcf29414c2b3f79398aa1cafa84"
+  },
+  "machine": "any (single stratum in the rows)",
+  "margin_points": -5.0,
+  "script_sha256": "8b18afc2e3a57196b3c0340636503f5d26646a31ea3520ea646f08cd31b21bf3",
+  "token_ratio_bar": 0.8
+ },
+ "result": {
+  "baseline": "E1",
+  "invalidation": {
+   "compromised": false,
+   "overall_share": 0.0,
+   "per_system": {
+    "E1": {
+     "flagged": false,
+     "infrastructure": 0,
+     "rows": 40,
+     "share": 0.0
+    },
+    "FULL": {
+     "flagged": false,
+     "infrastructure": 0,
+     "rows": 40,
+     "share": 0.0
+    }
+   }
+  },
+  "models": [
+   "lfm3:1.7b",
+   "qwen3.5:9b",
+   "gpt-oss:20b",
+   "bonsai-2:4b"
+  ],
+  "name_fix_both_ways": "not available: the primary rows carry no `supported_raw` field (the raw-answer score)",
+  "per_model_secondary": {
+   "bonsai-2:4b": {
+    "difference_interval": [
+     0.0,
+     60.0
+    ],
+    "difference_points": 30.0,
+    "draws": 10000,
+    "pairs": 10,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.17298741461924314,
+     0.30872770524960924
+    ],
+    "supported_baseline": 5,
+    "supported_primary": 8,
+    "tasks": 10,
+    "token_ratio": 0.2454843097127064,
+    "tokens_baseline": 1101382,
+    "tokens_primary": 270372
+   },
+   "gpt-oss:20b": {
+    "difference_interval": [
+     -30.0,
+     30.0
+    ],
+    "difference_points": 0.0,
+    "draws": 10000,
+    "pairs": 10,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.1583077569118092,
+     0.5131528199218405
+    ],
+    "supported_baseline": 9,
+    "supported_primary": 9,
+    "tasks": 10,
+    "token_ratio": 0.27661255107234545,
+    "tokens_baseline": 359539,
+    "tokens_primary": 99453
+   },
+   "lfm3:1.7b": {
+    "difference_interval": [
+     0.0,
+     50.0
+    ],
+    "difference_points": 20.0,
+    "draws": 10000,
+    "pairs": 10,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.35953076459405575,
+     0.6320717740340531
+    ],
+    "supported_baseline": 7,
+    "supported_primary": 9,
+    "tasks": 10,
+    "token_ratio": 0.42916587695284947,
+    "tokens_baseline": 701731,
+    "tokens_primary": 301159
+   },
+   "qwen3.5:9b": {
+    "difference_interval": [
+     0.0,
+     0.0
+    ],
+    "difference_points": 0.0,
+    "draws": 10000,
+    "pairs": 10,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.15619715928305716,
+     0.3507338516684983
+    ],
+    "supported_baseline": 10,
+    "supported_primary": 10,
+    "tasks": 10,
+    "token_ratio": 0.22455261669805826,
+    "tokens_baseline": 470402,
+    "tokens_primary": 105630
+   }
+  },
+  "planned_pairs": 40,
+  "primary": "FULL",
+  "primary_comparison": {
+   "criterion_a_holds": true,
+   "criterion_b_holds": true,
+   "difference_interval": [
+    0.0,
+    25.0
+   ],
+   "difference_points": 12.5,
+   "draws": 10000,
+   "margin_points": -5.0,
+   "pairs": 40,
+   "ratio_draws_skipped": 0,
+   "ratio_interval": [
+    0.2678633444784169,
+    0.37134057312462176
+   ],
+   "supported_baseline": 31,
+   "supported_primary": 36,
+   "tasks": 10,
+   "token_ratio": 0.29494799574942254,
+   "token_ratio_bar": 0.8,
+   "tokens_baseline": 2633054,
+   "tokens_primary": 776614,
+   "verdict": "PASS: claim supported (both criteria hold)"
+  },
+  "status": "FINAL",
+  "unpaired_cells": 0,
+  "without_capped_secondary": null
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "cells_per_tier": {
+  "exam_spec_stage1.json": {
+   "tier1_M_vs_E1": 1824,
+   "tier2_S0_MT": 1824,
+   "tier3_ablations": 2736,
+   "tier4_extra_models": 1368
+  },
+  "exam_spec_stage1_F.json": {
+   "tier2b_F": 912
+  }
+ },
+ "cells_total_F": 912,
+ "cells_total_main": 7752,
+ "forge_environment": {
+  "forge_guardrails": true,
+  "pip_freeze_sha256": "819c456f7861f63837156b526cd995e38d1d0ff6ff28cb52aa59a24380d2a039",
+  "python": "/home/levinsonchen/.local/share/rosa-exam/forge-env/bin/python"
+ },
+ "frozen_at": "2026-11-21T09:52:46+00:00",
+ "git_branch": "research/capability-discovery-20261110",
+ "git_head": "43e8787fb689861fa4aa2e3f679581a555d50d56",
+ "lab_rule": "lab stratum: pre-run gate on Monday (container restart with --init and integrity check, transient-failure check, Forge env copy); no protocol change",
+ "laptop_rule": "the laptop runs the full Stage 1 queue to completion regardless of the lab (owner, 2026-11-21 15:41); the laptop is its own stratum and is never pooled with the lab",
+ "master_seed": 20261122,
+ "model_digests": {
+  "bonsai-2:4b": "93edd652c9326fb1e782c1f54e997ce6a46e2351c763777db0c63b8a51cf6bec",
+  "gpt-oss:20b": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+  "granite4.2:8b": "f586c02fdecdf151b656207c339aa003997345774a41768bac1fd6d2fb85913b",
+  "lfm3:1.7b": "b36a103fe2f8fbe9df2ceec88b9cfdf842dc04aaabe2b4677d1acf8e16570b5d",
+  "llama3.1:8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+  "ministral-3:8b": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+  "qwen3.5:9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+ },
+ "ollama_version": "0.40.17",
+ "plan_derivation": "cell list = queue_core.build_cells(spec) over the custodian queue index named in MANIFEST.json (queue_index_sha256); written by the queue to the custodian run folder; not stored here",
+ "primary_criteria": "supported(M) - supported(E1): lower 95% bound above -5 points AND token ratio M/E1: upper 95% bound below 0.80 (task-clustered bootstrap, held-out v2, 4 core models, 3 seeds); text in SUCCESS_AND_INVALIDATION_DRAFT.md",
+ "scorer_v2_sha256": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+ "seeds_per_cell": [
+  1,
+  2,
+  3
+ ],
+ "sha256": {
+  "pyproject.toml": "101d7701ca3bb93c3f60e6570e2bc6afce7aa68d2c526d3220bcacf9383537fa",
+  "research/studies/build_round1_20261115/answer_gate.py": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+  "research/studies/build_round2_20261116/run_round2.py": "707b7f6f8465157cc086a592e57a4ec0e1fc03c7e3e029e9dfcab54dbe704e25",
+  "research/studies/custodian_stage1_20261121/MANIFEST.json": "266f46f1246f255251740131412ba1703e3029424d35779c6609d0a9bebf2f41",
+  "research/studies/custodian_stage1_20261121/bridge.py": "2b8dd6f445329f0312a495405dc4a9bf5d09a5a73efe2cd9471376414b6259bd",
+  "research/studies/custodian_stage1_20261121/change_hook.py": "16bfc3f30ee2c8c57e74aa2e7767c5f3151fd17ca0ee180de0d1d11b9c4cd69d",
+  "research/studies/custodian_stage1_20261121/external_runner.py": "6d650236321817ff1f08367727af5d9bb96bc78e74f1883658e695263df96be6",
+  "research/studies/custodian_stage1_20261121/queue_bridge.py": "13e2a21e75e90787a80e68890818a4f14f7f5fa70ee6aaa081f5a6a62713c6b3",
+  "research/studies/exam_arms_20261121/exam_arms.py": "d8ee1959cb27449dc54dc79c1e46a514ee5f9bb3fac938c9ccbeee973c5a4be0",
+  "research/studies/exam_arms_20261121/forge_episode.py": "6eb20e5496847781f10b95b95beba7ab176f593134fa557a54604680365fc559",
+  "research/studies/exam_arms_20261121/run_exam.py": "39e659d8f1e4928f715d2c47e8e27c67824ff3a851f11e8bf3f95bc6bb3692af",
+  "research/studies/exam_arms_20261121/run_forge.py": "be5735ffa8565049604f26a5cad65ef137fe938da33c4ceed18f27322e613d46",
+  "research/studies/fairness_errors_as_text_20261117/fair_arms.py": "af604ca5aabc0038cde54319e22b525567499a5c3a3981e44a88a2c71e2794d4",
+  "research/studies/fairness_errors_as_text_20261117/run_fair.py": "1e8b287da978de559b465f096336ad7e19d54ca77e74a457bee8b2f6f7878970",
+  "research/studies/final_exam_draft_20261118/PROTOCOL_DRAFT.md": "ae805043d7ddfd624b484e03e3b4df5b33b3671f01ca584a1e1ceb801e5ca605",
+  "research/studies/final_exam_draft_20261118/exam_queue/commit_results.py": "449e98cfe08c58dd8cf898cd605037d08c822b3dc407d49aa368724ded35e5c2",
+  "research/studies/final_exam_draft_20261118/exam_queue/exam_tables.py": "239f80aa6690db1e76dd19ec62e5a782d46d3f01719ff6e0138da552d2702ed3",
+  "research/studies/final_exam_draft_20261118/exam_queue/gpu_state.py": "aaec6e9229da45a2f14cd900840119d2687d9c71f936ac2f08e62e14f1910e95",
+  "research/studies/final_exam_draft_20261118/exam_queue/health.py": "18cf34ac70c894f2b695f515d77f1b934122ca3d19a889465b0bdc1b29fe0e35",
+  "research/studies/final_exam_draft_20261118/exam_queue/monitor.py": "81d205b6038dca0020b28dd5a84bba8701a11fbdb454f80c88bfb78f2ce94eb6",
+  "research/studies/final_exam_draft_20261118/exam_queue/monitor_stage1.py": "7b82597b560baf3b1e2ede883aa6325e18338b054753572662094f4d5cb5e254",
+  "research/studies/final_exam_draft_20261118/exam_queue/notify.py": "e2a77707c9c4753347a127c77b98499cc1dfdc87a721954076e6540300412b99",
+  "research/studies/final_exam_draft_20261118/exam_queue/queue_core.py": "bd8fd3c6318144e36207f64d249745b7c41299380c6332467a43652e036850a0",
+  "research/studies/final_exam_draft_20261118/exam_queue/systems.py": "fc1de9e165fd08b96ddea11de3441c6bb10b644cad07b4d667a1b107ad619b94",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/MODEL_DIGESTS_DRAFT.json": "f393d1342e64f30589d8e8b5f925efd90bddd574355107c2079c4bd5eed7323c",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/SUCCESS_AND_INVALIDATION_DRAFT.md": "2be3c27c1e77635ff3261423a3c14cb5366e2392f74605385234c63d3de65ccc",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/analyze_primary.py": "8b18afc2e3a57196b3c0340636503f5d26646a31ea3520ea646f08cd31b21bf3",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/analyze_primary.sha256": "9a26bbcd4ec6efac8aed7d28935720fffbe1013f76de211f20b14ff014ffca3d",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/exam_spec_stage1.json": "f31770471f775004d23693f13b0a55f1ac1be6dc05fab2bd58c6a557efc27670",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/exam_spec_stage1_F.json": "5ec033da0dc2898701f0ba5311a17498d89ea96276f5e94bac717aa106baffe6",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/make_exam_spec.py": "ed6705ab14728d03b9994328837298de863918718c119c58136a6fe67fb9216f",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/make_freeze.py": "890aadd88b9c0a32fd4815617933bcf63b50f1eb773baeb36fe9312a683b4fde",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/start_stage1_laptop.sh": "6eb0a7465e62980f4b76b7bb97344678a7addc8c192f88bc46391b2effc1f1eb",
+  "research/studies/forge_baseline_20261115/run_full.py": "0b32b755495dda5a2202a9d41ccebd5e087bb5096b6956b3eff6a4df69570820",
+  "research/studies/headroom_diagnostic_20261112/run_stage1.py": "6dc86b3a5fe22c5ca14f10b87d5e81601074d3ddc06ae8dbbeb835cf279a3804",
+  "research/studies/headroom_diagnostic_20261112/vendor/menu_run_study.py": "9736756e64f74c7eaed62690b0552427cebf9118c71f891d3e2873a2ae0770b7",
+  "research/studies/name_fix_applied_20261117/namefix_rule.py": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+  "research/studies/residual_failures_20261115/scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "research/studies/small_model_harness_20261115/harness.py": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "research/studies/small_model_harness_20261115/run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "research/studies/steady_loop_ablation_20261117/ablation_arms.py": "cb1633d1f1dd023bef8ed0ee1efbd28270caee26eb38e9f72603220a6c51bb2e",
+  "research/studies/thinking_escalation_20261119/run_think.py": "9481a111815af291bea0d361d0285962881963f7fdbf0716d5446a0dcc22d7d5",
+  "uv.lock": "dbd8cb6db95ab8f7865c008f0a878e02f8f993f3da5145935ea801ea31009e9d"
+ },
+ "stage": "Stage 1 (held-out v2 question tasks)",
+ "status": "FROZEN: laptop queue started under this record",
+ "temperature": 0.7,
+ "tier_order": [
+  "tier1_M_vs_E1",
+  "tier2_S0_MT",
+  "tier3_ablations",
+  "tier4_extra_models",
+  "(F: exam_spec_stage1_F.json, refused until a held-out F adapter exists)"
+ ]
+}

@@ -1,0 +1,6 @@
+{"name": "stage2_smoke", "master_seed": 20261121, "temperature": 0.7,
+ "_status": "Smoke of the Stage 2 wiring (2026-11-21): 2 public DEV action tasks x 1 model x 3 systems, seed 1, laptop. Not a held-out run, no scores used.",
+ "models": ["qwen3.5:9b"],
+ "pools": {"dev_actions": {"tasks": {"S3": "turtlesim", "R1": "turtlesim"}}},
+ "tiers": [{"name": "smoke", "systems": ["XM", "XS0", "XE1"], "pools": ["dev_actions"], "seeds": [1]}],
+ "queue": {"block_size": 12, "heartbeat_seconds": 30}}

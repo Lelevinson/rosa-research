@@ -1,0 +1,18 @@
+{"name": "final_exam_TEMPLATE", "master_seed": 0, "temperature": 0.7,
+ "_status": "TEMPLATE, NOT FROZEN, NOT RUNNABLE: master_seed, the pools' task lists (custodian, by environment variable), the final arm order and the runner adapters for F and the turtlesim / Nav2 episodes are decided at the Saturday 21 November freeze. Tier contents below are the OWNER'S DECISION of 2026-11-19.",
+ "_tiers_decided": {"tier1": "M vs E1 on held-out v2 AND the turtlesim held-out pool", "tier2": "S0 and F on those pools, plus M, E1, S0, F on the Nav2 pools", "tier3": "ablation arms on held-out v2 (option C complete)", "tier4": "ablation arms on the Nav2 and turtlesim pools plus a third seed everywhere (option B complete)"},
+ "_notes": ["MT is not listed: feasibility unchecked (draft section 2b)", "a cell id may appear only once: tiers list only combinations not covered by an earlier tier (build_cells rejects duplicates)", "the turtlesim held-out pool (about 12-16 tasks, Codex designs it blind) has no runner yet: the action runner and judge must exist before tier 1 can include it"],
+ "models": ["lfm3:1.7b", "qwen3.5:9b", "gpt-oss:20b", "bonsai-2:4b"],
+ "pools": {"held_out_v2": {"tasks_file_env": "ROSA_HELDOUT_V2_TASKS"},
+           "turtlesim_heldout": {"tasks_file_env": "ROSA_TURTLESIM_HELDOUT_TASKS"},
+           "nav2_inspection": {"tasks_file_env": "ROSA_NAV2_INSPECTION_TASKS"},
+           "nav2_read_then_act": {"tasks_file_env": "ROSA_NAV2_ACTION_TASKS"}},
+ "tiers": [
+   {"name": "tier1_M_vs_E1", "systems": ["M", "E1"], "pools": ["held_out_v2", "turtlesim_heldout"], "seeds": [1, 2]},
+   {"name": "tier2a_S0_F_on_v2_turtlesim", "systems": ["S0", "F"], "pools": ["held_out_v2", "turtlesim_heldout"], "seeds": [1, 2]},
+   {"name": "tier2b_four_systems_on_nav2", "systems": ["M", "E1", "S0", "F"], "pools": ["nav2_inspection", "nav2_read_then_act"], "seeds": [1, 2]},
+   {"name": "tier3_ablations_v2", "systems": ["M-NO_SOFT_ERRORS", "M-NO_PRECHECK", "M-NO_MENU", "M-NO_FINISH"], "pools": ["held_out_v2"], "seeds": [1, 2]},
+   {"name": "tier4a_ablations_nav2_turtlesim", "systems": ["M-NO_SOFT_ERRORS", "M-NO_PRECHECK", "M-NO_MENU", "M-NO_FINISH"], "pools": ["nav2_inspection", "nav2_read_then_act", "turtlesim_heldout"], "seeds": [1, 2]},
+   {"name": "tier4b_third_seed_everywhere", "systems": ["M", "E1", "S0", "F", "M-NO_SOFT_ERRORS", "M-NO_PRECHECK", "M-NO_MENU", "M-NO_FINISH"], "pools": ["held_out_v2", "turtlesim_heldout", "nav2_inspection", "nav2_read_then_act"], "seeds": [3]}
+ ],
+ "queue": {"block_size": 48, "heartbeat_seconds": 30, "min_free_gb": 20, "quarantine_after": 3}}

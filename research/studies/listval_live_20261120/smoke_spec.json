@@ -1,0 +1,38 @@
+{
+ "name": "listval_smoke",
+ "master_seed": 20261120,
+ "temperature": 0.7,
+ "_status": "Smoke of the LISTVAL runner adapter and the queue (not part of the measurement): qwen3.5:9b, task h4, seed 99, both arms (LISTVAL under test, FULL as the switch-off check). 2 episodes.",
+ "models": [
+  "qwen3.5:9b"
+ ],
+ "pools": {
+  "dev": {
+   "tasks": {
+    "h4": "stage3"
+   }
+  }
+ },
+ "tiers": [
+  {
+   "name": "smoke",
+   "systems": [
+    "LV-LISTVAL",
+    "LV-FULL"
+   ],
+   "pools": [
+    "dev"
+   ],
+   "seeds": [
+    99
+   ]
+  }
+ ],
+ "queue": {
+  "block_size": 12,
+  "heartbeat_seconds": 30,
+  "min_free_gb": 20,
+  "quarantine_after": 3,
+  "episode_timeout_seconds": 1800
+ }
+}

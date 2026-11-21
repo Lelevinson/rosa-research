@@ -1,0 +1,4274 @@
+{
+ "dropped_p3": [],
+ "P1": {
+  "episodes": 288,
+  "derailed": 141,
+  "clean": 147,
+  "supported_derailed": 116,
+  "supported_clean": 127,
+  "derail_type": {
+   "name_guess": 55,
+   "format": 55,
+   "repeat": 31
+  },
+  "first_request_derailments": 46,
+  "derail_index": {
+   "median": 2,
+   "min": 1,
+   "max": 22
+  },
+  "waste_after_total": 646,
+  "excess_total_all_episodes": 828,
+  "by_model": {
+   "bonsai-2:4b": {
+    "episodes": 72,
+    "derailed": 34,
+    "clean": 38,
+    "unsupported": 24,
+    "waste_after": 300,
+    "median_index": 2.0,
+    "categories": {
+     "2": 8,
+     "6": 14,
+     "4": 4,
+     "5": 8
+    },
+    "outcomes": {
+     "quick": 9,
+     "never": 15,
+     "slow": 10
+    }
+   },
+   "gpt-oss:20b": {
+    "episodes": 72,
+    "derailed": 47,
+    "clean": 25,
+    "unsupported": 5,
+    "waste_after": 141,
+    "median_index": 1,
+    "categories": {
+     "6": 15,
+     "2": 1,
+     "4": 23,
+     "5": 8
+    },
+    "outcomes": {
+     "slow": 20,
+     "never": 4,
+     "quick": 23
+    }
+   },
+   "lfm3:1.7b": {
+    "episodes": 72,
+    "derailed": 41,
+    "clean": 31,
+    "unsupported": 14,
+    "waste_after": 175,
+    "median_index": 2,
+    "categories": {
+     "2": 15,
+     "3": 1,
+     "6": 8,
+     "5": 6,
+     "4": 9,
+     "1": 2
+    },
+    "outcomes": {
+     "quick": 27,
+     "never": 6,
+     "slow": 8
+    }
+   },
+   "qwen3.5:9b": {
+    "episodes": 72,
+    "derailed": 19,
+    "clean": 53,
+    "unsupported": 2,
+    "waste_after": 30,
+    "median_index": 2,
+    "categories": {
+     "6": 4,
+     "2": 6,
+     "5": 8,
+     "4": 1
+    },
+    "outcomes": {
+     "quick": 19
+    }
+   }
+  },
+  "by_task": {
+   "e1h_abs_1": {
+    "episodes": 16,
+    "derailed": 6,
+    "clean": 10,
+    "unsupported": 5,
+    "waste_after": 11,
+    "median_index": 1.0,
+    "categories": {
+     "1": 1,
+     "4": 5
+    },
+    "outcomes": {
+     "slow": 3,
+     "quick": 2,
+     "never": 1
+    }
+   },
+   "e1h_abs_2": {
+    "episodes": 16,
+    "derailed": 4,
+    "clean": 12,
+    "unsupported": 2,
+    "waste_after": 9,
+    "median_index": 1.0,
+    "categories": {
+     "4": 4
+    },
+    "outcomes": {
+     "slow": 1,
+     "quick": 3
+    }
+   },
+   "e1h_amb_1": {
+    "episodes": 16,
+    "derailed": 8,
+    "clean": 8,
+    "unsupported": 0,
+    "waste_after": 40,
+    "median_index": 1.0,
+    "categories": {
+     "4": 8
+    },
+    "outcomes": {
+     "slow": 1,
+     "quick": 7
+    }
+   },
+   "e1h_amb_2": {
+    "episodes": 16,
+    "derailed": 8,
+    "clean": 8,
+    "unsupported": 2,
+    "waste_after": 23,
+    "median_index": 1.0,
+    "categories": {
+     "4": 8
+    },
+    "outcomes": {
+     "quick": 4,
+     "slow": 4
+    }
+   },
+   "e1h_chg_1": {
+    "episodes": 16,
+    "derailed": 15,
+    "clean": 1,
+    "unsupported": 1,
+    "waste_after": 15,
+    "median_index": 3,
+    "categories": {
+     "5": 15
+    },
+    "outcomes": {
+     "quick": 14,
+     "never": 1
+    }
+   },
+   "e1h_chg_2": {
+    "episodes": 16,
+    "derailed": 15,
+    "clean": 1,
+    "unsupported": 3,
+    "waste_after": 66,
+    "median_index": 3,
+    "categories": {
+     "5": 15
+    },
+    "outcomes": {
+     "quick": 10,
+     "never": 3,
+     "slow": 2
+    }
+   },
+   "h4": {
+    "episodes": 16,
+    "derailed": 14,
+    "clean": 2,
+    "unsupported": 1,
+    "waste_after": 74,
+    "median_index": 2.0,
+    "categories": {
+     "2": 9,
+     "6": 5
+    },
+    "outcomes": {
+     "quick": 8,
+     "slow": 5,
+     "never": 1
+    }
+   },
+   "nf_absent": {
+    "episodes": 16,
+    "derailed": 4,
+    "clean": 12,
+    "unsupported": 2,
+    "waste_after": 10,
+    "median_index": 1.0,
+    "categories": {
+     "4": 4
+    },
+    "outcomes": {
+     "quick": 2,
+     "slow": 2
+    }
+   },
+   "nf_amb_1": {
+    "episodes": 16,
+    "derailed": 5,
+    "clean": 11,
+    "unsupported": 1,
+    "waste_after": 20,
+    "median_index": 1,
+    "categories": {
+     "4": 4,
+     "1": 1
+    },
+    "outcomes": {
+     "slow": 1,
+     "never": 1,
+     "quick": 3
+    }
+   },
+   "nf_amb_2": {
+    "episodes": 16,
+    "derailed": 4,
+    "clean": 12,
+    "unsupported": 0,
+    "waste_after": 14,
+    "median_index": 1.0,
+    "categories": {
+     "4": 4
+    },
+    "outcomes": {
+     "quick": 3,
+     "slow": 1
+    }
+   },
+   "nf_exact": {
+    "episodes": 16,
+    "derailed": 2,
+    "clean": 14,
+    "unsupported": 2,
+    "waste_after": 41,
+    "median_index": 2.0,
+    "categories": {
+     "6": 2
+    },
+    "outcomes": {
+     "never": 1,
+     "slow": 1
+    }
+   },
+   "nf_multi_1": {
+    "episodes": 16,
+    "derailed": 12,
+    "clean": 4,
+    "unsupported": 4,
+    "waste_after": 53,
+    "median_index": 2.0,
+    "categories": {
+     "2": 10,
+     "6": 2
+    },
+    "outcomes": {
+     "slow": 3,
+     "quick": 5,
+     "never": 4
+    }
+   },
+   "nf_multi_2": {
+    "episodes": 16,
+    "derailed": 5,
+    "clean": 11,
+    "unsupported": 3,
+    "waste_after": 12,
+    "median_index": 3,
+    "categories": {
+     "6": 5
+    },
+    "outcomes": {
+     "slow": 4,
+     "quick": 1
+    }
+   },
+   "nf_single_1": {
+    "episodes": 16,
+    "derailed": 8,
+    "clean": 8,
+    "unsupported": 4,
+    "waste_after": 15,
+    "median_index": 2.0,
+    "categories": {
+     "2": 2,
+     "6": 6
+    },
+    "outcomes": {
+     "quick": 5,
+     "slow": 3
+    }
+   },
+   "nf_single_2": {
+    "episodes": 16,
+    "derailed": 8,
+    "clean": 8,
+    "unsupported": 1,
+    "waste_after": 50,
+    "median_index": 2.0,
+    "categories": {
+     "2": 2,
+     "6": 6
+    },
+    "outcomes": {
+     "quick": 4,
+     "slow": 3,
+     "never": 1
+    }
+   },
+   "p3": {
+    "episodes": 16,
+    "derailed": 1,
+    "clean": 15,
+    "unsupported": 2,
+    "waste_after": 1,
+    "median_index": 4,
+    "categories": {
+     "6": 1
+    },
+    "outcomes": {
+     "quick": 1
+    }
+   },
+   "u3": {
+    "episodes": 16,
+    "derailed": 11,
+    "clean": 5,
+    "unsupported": 3,
+    "waste_after": 35,
+    "median_index": 3,
+    "categories": {
+     "2": 7,
+     "6": 4
+    },
+    "outcomes": {
+     "quick": 6,
+     "never": 3,
+     "slow": 2
+    }
+   },
+   "v2": {
+    "episodes": 16,
+    "derailed": 11,
+    "clean": 5,
+    "unsupported": 9,
+    "waste_after": 157,
+    "median_index": 3,
+    "categories": {
+     "3": 1,
+     "6": 10
+    },
+    "outcomes": {
+     "never": 9,
+     "slow": 2
+    }
+   }
+  },
+  "key_category": {
+   "1": {
+    "episodes": 2,
+    "waste_after": 2,
+    "mean_waste_after": 1,
+    "unsupported": 1,
+    "outcomes": {
+     "slow": 1,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 2
+    },
+    "tasks": {
+     "e1h_abs_1": 1,
+     "nf_amb_1": 1
+    },
+    "median_index": 5.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 1
+    },
+    "derail_types": {
+     "format": 1,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "2": {
+    "episodes": 30,
+    "waste_after": 121,
+    "mean_waste_after": 4.03,
+    "unsupported": 5,
+    "outcomes": {
+     "quick": 21,
+     "slow": 4,
+     "never": 5
+    },
+    "models": {
+     "lfm3:1.7b": 15,
+     "qwen3.5:9b": 6,
+     "gpt-oss:20b": 1,
+     "bonsai-2:4b": 8
+    },
+    "tasks": {
+     "h4": 9,
+     "u3": 7,
+     "nf_single_2": 2,
+     "nf_multi_1": 10,
+     "nf_single_1": 2
+    },
+    "median_index": 2.0,
+    "first_request": 0,
+    "reuse": {
+     "True": 30
+    },
+    "supported_by_outcome": {
+     "quick": 21,
+     "slow": 4,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 54,
+     "slow": 35,
+     "never": 32
+    },
+    "derail_types": {
+     "name_guess": 30
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/004-h4-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/013-nf_multi_1-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/005-nf_multi_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 1,
+    "waste_after": 11,
+    "mean_waste_after": 11,
+    "unsupported": 1,
+    "outcomes": {
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "tasks": {
+     "v2": 1
+    },
+    "median_index": 4,
+    "first_request": 0,
+    "reuse": {
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 11
+    },
+    "derail_types": {
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 37,
+    "waste_after": 125,
+    "mean_waste_after": 3.38,
+    "unsupported": 1,
+    "outcomes": {
+     "quick": 24,
+     "slow": 12,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 9,
+     "qwen3.5:9b": 1,
+     "gpt-oss:20b": 23,
+     "bonsai-2:4b": 4
+    },
+    "tasks": {
+     "e1h_amb_2": 8,
+     "e1h_amb_1": 8,
+     "nf_amb_1": 4,
+     "nf_amb_2": 4,
+     "e1h_abs_2": 4,
+     "e1h_abs_1": 5,
+     "nf_absent": 4
+    },
+    "median_index": 1,
+    "first_request": 33,
+    "reuse": {
+     "False": 4,
+     "None": 33
+    },
+    "supported_by_outcome": {
+     "quick": 24,
+     "slow": 12,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 73,
+     "slow": 50,
+     "never": 2
+    },
+    "derail_types": {
+     "name_guess": 10,
+     "format": 27
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/011-e1h_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/020-e1h_amb_2-FULL-lfm3_1.7b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/014-e1h_amb_1-FULL-lfm3_1.7b-s5/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 30,
+    "waste_after": 81,
+    "mean_waste_after": 2.7,
+    "unsupported": 4,
+    "outcomes": {
+     "quick": 24,
+     "never": 4,
+     "slow": 2
+    },
+    "models": {
+     "lfm3:1.7b": 6,
+     "qwen3.5:9b": 8,
+     "gpt-oss:20b": 8,
+     "bonsai-2:4b": 8
+    },
+    "tasks": {
+     "e1h_chg_2": 15,
+     "e1h_chg_1": 15
+    },
+    "median_index": 3.0,
+    "first_request": 3,
+    "reuse": {
+     "False": 27,
+     "None": 3
+    },
+    "supported_by_outcome": {
+     "quick": 24,
+     "slow": 2,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 31,
+     "slow": 16,
+     "never": 34
+    },
+    "derail_types": {
+     "repeat": 26,
+     "name_guess": 3,
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/006-e1h_chg_2-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/003-e1h_chg_2-FULL-bonsai-2_4b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s5/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 41,
+    "waste_after": 306,
+    "mean_waste_after": 7.46,
+    "unsupported": 13,
+    "outcomes": {
+     "never": 13,
+     "slow": 19,
+     "quick": 9
+    },
+    "models": {
+     "lfm3:1.7b": 8,
+     "qwen3.5:9b": 4,
+     "gpt-oss:20b": 15,
+     "bonsai-2:4b": 14
+    },
+    "tasks": {
+     "v2": 10,
+     "nf_exact": 2,
+     "nf_single_1": 6,
+     "nf_single_2": 6,
+     "nf_multi_2": 5,
+     "p3": 1,
+     "h4": 5,
+     "u3": 4,
+     "nf_multi_1": 2
+    },
+    "median_index": 3,
+    "first_request": 10,
+    "reuse": {
+     "False": 25,
+     "True": 6,
+     "None": 10
+    },
+    "supported_by_outcome": {
+     "quick": 9,
+     "slow": 19,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 21,
+     "slow": 67,
+     "never": 218
+    },
+    "derail_types": {
+     "name_guess": 12,
+     "repeat": 4,
+     "format": 25
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/007-v2-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/007-nf_exact-FULL-lfm3_1.7b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/006-v2-FULL-bonsai-2_4b-s5/trace.jsonl"
+    ]
+   }
+  },
+  "key_underlying": {
+   "1": {
+    "episodes": 2,
+    "waste_after": 2,
+    "mean_waste_after": 1,
+    "unsupported": 1,
+    "outcomes": {
+     "slow": 1,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 2
+    },
+    "tasks": {
+     "e1h_abs_1": 1,
+     "nf_amb_1": 1
+    },
+    "median_index": 5.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 1
+    },
+    "derail_types": {
+     "format": 1,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "2": {
+    "episodes": 30,
+    "waste_after": 121,
+    "mean_waste_after": 4.03,
+    "unsupported": 5,
+    "outcomes": {
+     "quick": 21,
+     "slow": 4,
+     "never": 5
+    },
+    "models": {
+     "lfm3:1.7b": 15,
+     "qwen3.5:9b": 6,
+     "gpt-oss:20b": 1,
+     "bonsai-2:4b": 8
+    },
+    "tasks": {
+     "h4": 9,
+     "u3": 7,
+     "nf_single_2": 2,
+     "nf_multi_1": 10,
+     "nf_single_1": 2
+    },
+    "median_index": 2.0,
+    "first_request": 0,
+    "reuse": {
+     "True": 30
+    },
+    "supported_by_outcome": {
+     "quick": 21,
+     "slow": 4,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 54,
+     "slow": 35,
+     "never": 32
+    },
+    "derail_types": {
+     "name_guess": 30
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/004-h4-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/013-nf_multi_1-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/005-nf_multi_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 1,
+    "waste_after": 11,
+    "mean_waste_after": 11,
+    "unsupported": 1,
+    "outcomes": {
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "tasks": {
+     "v2": 1
+    },
+    "median_index": 4,
+    "first_request": 0,
+    "reuse": {
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 11
+    },
+    "derail_types": {
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "5": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "6": {
+    "episodes": 108,
+    "waste_after": 512,
+    "mean_waste_after": 4.74,
+    "unsupported": 18,
+    "outcomes": {
+     "never": 18,
+     "quick": 57,
+     "slow": 33
+    },
+    "models": {
+     "lfm3:1.7b": 23,
+     "qwen3.5:9b": 13,
+     "gpt-oss:20b": 46,
+     "bonsai-2:4b": 26
+    },
+    "tasks": {
+     "v2": 10,
+     "e1h_chg_2": 15,
+     "e1h_chg_1": 15,
+     "e1h_amb_2": 8,
+     "e1h_amb_1": 8,
+     "nf_exact": 2,
+     "nf_amb_1": 4,
+     "nf_amb_2": 4,
+     "nf_single_1": 6,
+     "nf_single_2": 6,
+     "nf_multi_2": 5,
+     "p3": 1,
+     "h4": 5,
+     "u3": 4,
+     "e1h_abs_2": 4,
+     "e1h_abs_1": 5,
+     "nf_multi_1": 2,
+     "nf_absent": 4
+    },
+    "median_index": 2.0,
+    "first_request": 46,
+    "reuse": {
+     "False": 56,
+     "True": 6,
+     "None": 46
+    },
+    "supported_by_outcome": {
+     "quick": 57,
+     "slow": 33,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 125,
+     "slow": 133,
+     "never": 254
+    },
+    "derail_types": {
+     "name_guess": 25,
+     "repeat": 30,
+     "format": 53
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/007-v2-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/007-nf_exact-FULL-lfm3_1.7b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/006-v2-FULL-bonsai-2_4b-s5/trace.jsonl"
+    ]
+   }
+  },
+  "error_texts_top10": [
+   {
+    "text": "ros2_node_info | {\"error\": \"Unable to find node '<N>'\\n\"}",
+    "episodes": 1,
+    "waste_after": 1,
+    "mean": 1,
+    "never": 0,
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   {
+    "text": "ros2_node_info | {\"error\": \"\"}",
+    "episodes": 1,
+    "waste_after": 1,
+    "mean": 1,
+    "never": 1,
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   }
+  ],
+  "error_texts_all_count": 2,
+  "error_classes": {
+   "not-found": {
+    "episodes": 1,
+    "waste_after": 1,
+    "never": 0
+   },
+   "empty": {
+    "episodes": 1,
+    "waste_after": 1,
+    "never": 1
+   }
+  },
+  "rates_primary": {
+   "1": {
+    "exposures": 66,
+    "derails": 2,
+    "in_clean": 45,
+    "in_derailed": 21,
+    "rate_pct": 3.0
+   },
+   "2": {
+    "exposures": 30,
+    "derails": 30,
+    "in_clean": 0,
+    "in_derailed": 30,
+    "rate_pct": 100.0
+   },
+   "3": {
+    "exposures": 9,
+    "derails": 1,
+    "in_clean": 5,
+    "in_derailed": 4,
+    "rate_pct": 11.1
+   },
+   "4": {
+    "exposures": 292,
+    "derails": 37,
+    "in_clean": 244,
+    "in_derailed": 48,
+    "rate_pct": 12.7
+   },
+   "5": {
+    "exposures": 80,
+    "derails": 30,
+    "in_clean": 5,
+    "in_derailed": 75,
+    "rate_pct": 37.5
+   },
+   "6": {
+    "exposures": 410,
+    "derails": 41,
+    "in_clean": 246,
+    "in_derailed": 164,
+    "rate_pct": 10.0
+   }
+  },
+  "rates_underlying": {
+   "1": {
+    "exposures": 66,
+    "derails": 2,
+    "rate_pct": 3.0
+   },
+   "2": {
+    "exposures": 30,
+    "derails": 30,
+    "rate_pct": 100.0
+   },
+   "3": {
+    "exposures": 9,
+    "derails": 1,
+    "rate_pct": 11.1
+   },
+   "6": {
+    "exposures": 782,
+    "derails": 108,
+    "rate_pct": 13.8
+   }
+  },
+  "rates_error_class": {
+   "empty": {
+    "exposures": 17,
+    "derails": 1,
+    "rate_pct": 5.9
+   },
+   "not-found": {
+    "exposures": 35,
+    "derails": 1,
+    "rate_pct": 2.9
+   },
+   "other": {
+    "exposures": 14,
+    "derails": 0,
+    "rate_pct": 0.0
+   }
+  },
+  "rates_primary_by_model": {
+   "1|bonsai-2:4b": {
+    "exposures": 12,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "1|gpt-oss:20b": {
+    "exposures": 3,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "1|lfm3:1.7b": {
+    "exposures": 40,
+    "derails": 2,
+    "rate_pct": 5.0
+   },
+   "1|qwen3.5:9b": {
+    "exposures": 11,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "2|bonsai-2:4b": {
+    "exposures": 8,
+    "derails": 8,
+    "rate_pct": 100.0
+   },
+   "2|gpt-oss:20b": {
+    "exposures": 1,
+    "derails": 1,
+    "rate_pct": 100.0
+   },
+   "2|lfm3:1.7b": {
+    "exposures": 15,
+    "derails": 15,
+    "rate_pct": 100.0
+   },
+   "2|qwen3.5:9b": {
+    "exposures": 6,
+    "derails": 6,
+    "rate_pct": 100.0
+   },
+   "3|bonsai-2:4b": {
+    "exposures": 1,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "3|lfm3:1.7b": {
+    "exposures": 6,
+    "derails": 1,
+    "rate_pct": 16.7
+   },
+   "3|qwen3.5:9b": {
+    "exposures": 2,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "4|bonsai-2:4b": {
+    "exposures": 96,
+    "derails": 4,
+    "rate_pct": 4.2
+   },
+   "4|gpt-oss:20b": {
+    "exposures": 43,
+    "derails": 23,
+    "rate_pct": 53.5
+   },
+   "4|lfm3:1.7b": {
+    "exposures": 65,
+    "derails": 9,
+    "rate_pct": 13.8
+   },
+   "4|qwen3.5:9b": {
+    "exposures": 88,
+    "derails": 1,
+    "rate_pct": 1.1
+   },
+   "5|bonsai-2:4b": {
+    "exposures": 15,
+    "derails": 8,
+    "rate_pct": 53.3
+   },
+   "5|gpt-oss:20b": {
+    "exposures": 24,
+    "derails": 8,
+    "rate_pct": 33.3
+   },
+   "5|lfm3:1.7b": {
+    "exposures": 19,
+    "derails": 6,
+    "rate_pct": 31.6
+   },
+   "5|qwen3.5:9b": {
+    "exposures": 22,
+    "derails": 8,
+    "rate_pct": 36.4
+   },
+   "6|bonsai-2:4b": {
+    "exposures": 98,
+    "derails": 14,
+    "rate_pct": 14.3
+   },
+   "6|gpt-oss:20b": {
+    "exposures": 99,
+    "derails": 15,
+    "rate_pct": 15.2
+   },
+   "6|lfm3:1.7b": {
+    "exposures": 104,
+    "derails": 8,
+    "rate_pct": 7.7
+   },
+   "6|qwen3.5:9b": {
+    "exposures": 109,
+    "derails": 4,
+    "rate_pct": 3.7
+   }
+  }
+ },
+ "P3": {
+  "episodes": 144,
+  "derailed": 65,
+  "clean": 79,
+  "supported_derailed": 50,
+  "supported_clean": 73,
+  "derail_type": {
+   "name_guess": 24,
+   "format": 27,
+   "repeat": 14
+  },
+  "first_request_derailments": 18,
+  "derail_index": {
+   "median": 2,
+   "min": 1,
+   "max": 6
+  },
+  "waste_after_total": 451,
+  "excess_total_all_episodes": 526,
+  "by_model": {
+   "bonsai-2:4b": {
+    "episodes": 36,
+    "derailed": 15,
+    "clean": 21,
+    "unsupported": 13,
+    "waste_after": 313,
+    "median_index": 3,
+    "categories": {
+     "6": 8,
+     "2": 2,
+     "5": 4,
+     "3": 1
+    },
+    "outcomes": {
+     "never": 9,
+     "slow": 3,
+     "quick": 3
+    }
+   },
+   "gpt-oss:20b": {
+    "episodes": 36,
+    "derailed": 22,
+    "clean": 14,
+    "unsupported": 4,
+    "waste_after": 67,
+    "median_index": 1.5,
+    "categories": {
+     "6": 7,
+     "2": 2,
+     "4": 9,
+     "5": 4
+    },
+    "outcomes": {
+     "never": 4,
+     "slow": 11,
+     "quick": 7
+    }
+   },
+   "lfm3:1.7b": {
+    "episodes": 36,
+    "derailed": 15,
+    "clean": 21,
+    "unsupported": 4,
+    "waste_after": 50,
+    "median_index": 2,
+    "categories": {
+     "2": 7,
+     "6": 4,
+     "5": 3,
+     "4": 1
+    },
+    "outcomes": {
+     "quick": 11,
+     "never": 2,
+     "slow": 2
+    }
+   },
+   "qwen3.5:9b": {
+    "episodes": 36,
+    "derailed": 13,
+    "clean": 23,
+    "unsupported": 0,
+    "waste_after": 21,
+    "median_index": 2,
+    "categories": {
+     "2": 4,
+     "6": 4,
+     "5": 4,
+     "4": 1
+    },
+    "outcomes": {
+     "quick": 13
+    }
+   }
+  },
+  "by_task": {
+   "e1h_abs_1": {
+    "episodes": 8,
+    "derailed": 1,
+    "clean": 7,
+    "unsupported": 1,
+    "waste_after": 3,
+    "median_index": 1,
+    "categories": {
+     "4": 1
+    },
+    "outcomes": {
+     "slow": 1
+    }
+   },
+   "e1h_abs_2": {
+    "episodes": 8,
+    "derailed": 1,
+    "clean": 7,
+    "unsupported": 1,
+    "waste_after": 3,
+    "median_index": 1,
+    "categories": {
+     "4": 1
+    },
+    "outcomes": {
+     "slow": 1
+    }
+   },
+   "e1h_amb_1": {
+    "episodes": 8,
+    "derailed": 2,
+    "clean": 6,
+    "unsupported": 0,
+    "waste_after": 9,
+    "median_index": 1.0,
+    "categories": {
+     "4": 2
+    },
+    "outcomes": {
+     "quick": 2
+    }
+   },
+   "e1h_amb_2": {
+    "episodes": 8,
+    "derailed": 1,
+    "clean": 7,
+    "unsupported": 0,
+    "waste_after": 1,
+    "median_index": 3,
+    "categories": {
+     "4": 1
+    },
+    "outcomes": {
+     "slow": 1
+    }
+   },
+   "e1h_chg_1": {
+    "episodes": 8,
+    "derailed": 8,
+    "clean": 0,
+    "unsupported": 0,
+    "waste_after": 10,
+    "median_index": 2.5,
+    "categories": {
+     "5": 8
+    },
+    "outcomes": {
+     "slow": 2,
+     "quick": 6
+    }
+   },
+   "e1h_chg_2": {
+    "episodes": 8,
+    "derailed": 7,
+    "clean": 1,
+    "unsupported": 4,
+    "waste_after": 86,
+    "median_index": 3,
+    "categories": {
+     "5": 7
+    },
+    "outcomes": {
+     "quick": 3,
+     "never": 4
+    }
+   },
+   "h4": {
+    "episodes": 8,
+    "derailed": 7,
+    "clean": 1,
+    "unsupported": 3,
+    "waste_after": 50,
+    "median_index": 2,
+    "categories": {
+     "2": 5,
+     "6": 2
+    },
+    "outcomes": {
+     "quick": 4,
+     "never": 3
+    }
+   },
+   "nf_absent": {
+    "episodes": 8,
+    "derailed": 2,
+    "clean": 6,
+    "unsupported": 1,
+    "waste_after": 5,
+    "median_index": 1.0,
+    "categories": {
+     "4": 2
+    },
+    "outcomes": {
+     "quick": 1,
+     "slow": 1
+    }
+   },
+   "nf_amb_1": {
+    "episodes": 8,
+    "derailed": 3,
+    "clean": 5,
+    "unsupported": 0,
+    "waste_after": 7,
+    "median_index": 1,
+    "categories": {
+     "4": 3
+    },
+    "outcomes": {
+     "quick": 2,
+     "slow": 1
+    }
+   },
+   "nf_amb_2": {
+    "episodes": 8,
+    "derailed": 1,
+    "clean": 7,
+    "unsupported": 0,
+    "waste_after": 2,
+    "median_index": 1,
+    "categories": {
+     "4": 1
+    },
+    "outcomes": {
+     "quick": 1
+    }
+   },
+   "nf_exact": {
+    "episodes": 8,
+    "derailed": 3,
+    "clean": 5,
+    "unsupported": 0,
+    "waste_after": 3,
+    "median_index": 2,
+    "categories": {
+     "6": 3
+    },
+    "outcomes": {
+     "quick": 2,
+     "slow": 1
+    }
+   },
+   "nf_multi_1": {
+    "episodes": 8,
+    "derailed": 4,
+    "clean": 4,
+    "unsupported": 2,
+    "waste_after": 47,
+    "median_index": 2.5,
+    "categories": {
+     "2": 3,
+     "6": 1
+    },
+    "outcomes": {
+     "quick": 1,
+     "slow": 1,
+     "never": 2
+    }
+   },
+   "nf_multi_2": {
+    "episodes": 8,
+    "derailed": 4,
+    "clean": 4,
+    "unsupported": 2,
+    "waste_after": 78,
+    "median_index": 2.5,
+    "categories": {
+     "6": 3,
+     "3": 1
+    },
+    "outcomes": {
+     "quick": 2,
+     "never": 2
+    }
+   },
+   "nf_single_1": {
+    "episodes": 8,
+    "derailed": 5,
+    "clean": 3,
+    "unsupported": 2,
+    "waste_after": 7,
+    "median_index": 2,
+    "categories": {
+     "2": 2,
+     "6": 3
+    },
+    "outcomes": {
+     "quick": 4,
+     "slow": 1
+    }
+   },
+   "nf_single_2": {
+    "episodes": 8,
+    "derailed": 4,
+    "clean": 4,
+    "unsupported": 0,
+    "waste_after": 7,
+    "median_index": 2.5,
+    "categories": {
+     "2": 2,
+     "6": 2
+    },
+    "outcomes": {
+     "quick": 2,
+     "slow": 2
+    }
+   },
+   "p3": {
+    "episodes": 8,
+    "derailed": 2,
+    "clean": 6,
+    "unsupported": 2,
+    "waste_after": 4,
+    "median_index": 3.0,
+    "categories": {
+     "6": 2
+    },
+    "outcomes": {
+     "never": 1,
+     "quick": 1
+    }
+   },
+   "u3": {
+    "episodes": 8,
+    "derailed": 5,
+    "clean": 3,
+    "unsupported": 0,
+    "waste_after": 17,
+    "median_index": 2,
+    "categories": {
+     "2": 3,
+     "6": 2
+    },
+    "outcomes": {
+     "quick": 3,
+     "slow": 2
+    }
+   },
+   "v2": {
+    "episodes": 8,
+    "derailed": 5,
+    "clean": 3,
+    "unsupported": 3,
+    "waste_after": 112,
+    "median_index": 1,
+    "categories": {
+     "6": 5
+    },
+    "outcomes": {
+     "never": 3,
+     "slow": 2
+    }
+   }
+  },
+  "key_category": {
+   "1": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "2": {
+    "episodes": 15,
+    "waste_after": 45,
+    "mean_waste_after": 3,
+    "unsupported": 2,
+    "outcomes": {
+     "quick": 12,
+     "never": 2,
+     "slow": 1
+    },
+    "models": {
+     "lfm3:1.7b": 7,
+     "qwen3.5:9b": 4,
+     "gpt-oss:20b": 2,
+     "bonsai-2:4b": 2
+    },
+    "tasks": {
+     "h4": 5,
+     "u3": 3,
+     "nf_single_2": 2,
+     "nf_single_1": 2,
+     "nf_multi_1": 3
+    },
+    "median_index": 2,
+    "first_request": 0,
+    "reuse": {
+     "True": 15
+    },
+    "supported_by_outcome": {
+     "quick": 12,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 28,
+     "slow": 6,
+     "never": 11
+    },
+    "derail_types": {
+     "name_guess": 15
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0007/007-h4-FULL-gpt-oss_20b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0009/027-nf_multi_1-FULL-gpt-oss_20b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0012/027-nf_multi_1-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 1,
+    "waste_after": 38,
+    "mean_waste_after": 38,
+    "unsupported": 1,
+    "outcomes": {
+     "never": 1
+    },
+    "models": {
+     "bonsai-2:4b": 1
+    },
+    "tasks": {
+     "nf_multi_2": 1
+    },
+    "median_index": 3,
+    "first_request": 0,
+    "reuse": {
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 38
+    },
+    "derail_types": {
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0012/024-nf_multi_2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 11,
+    "waste_after": 30,
+    "mean_waste_after": 2.73,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 6,
+     "slow": 5
+    },
+    "models": {
+     "lfm3:1.7b": 1,
+     "qwen3.5:9b": 1,
+     "gpt-oss:20b": 9
+    },
+    "tasks": {
+     "nf_amb_1": 3,
+     "nf_amb_2": 1,
+     "e1h_abs_2": 1,
+     "e1h_amb_1": 2,
+     "e1h_abs_1": 1,
+     "e1h_amb_2": 1,
+     "nf_absent": 2
+    },
+    "median_index": 1,
+    "first_request": 9,
+    "reuse": {
+     "None": 9,
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 6,
+     "slow": 5,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 19,
+     "slow": 11,
+     "never": 0
+    },
+    "derail_types": {
+     "name_guess": 2,
+     "format": 9
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0008/007-e1h_amb_1-FULL-gpt-oss_20b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0008/003-e1h_amb_1-FULL-gpt-oss_20b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0009/012-nf_amb_1-FULL-gpt-oss_20b-s10/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 15,
+    "waste_after": 96,
+    "mean_waste_after": 6.4,
+    "unsupported": 4,
+    "outcomes": {
+     "quick": 9,
+     "slow": 2,
+     "never": 4
+    },
+    "models": {
+     "lfm3:1.7b": 3,
+     "qwen3.5:9b": 4,
+     "gpt-oss:20b": 4,
+     "bonsai-2:4b": 4
+    },
+    "tasks": {
+     "e1h_chg_2": 7,
+     "e1h_chg_1": 8
+    },
+    "median_index": 3,
+    "first_request": 2,
+    "reuse": {
+     "False": 13,
+     "None": 2
+    },
+    "supported_by_outcome": {
+     "quick": 9,
+     "slow": 2,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 9,
+     "slow": 4,
+     "never": 83
+    },
+    "derail_types": {
+     "repeat": 13,
+     "name_guess": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0011/019-e1h_chg_2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0002/019-e1h_chg_1-FULL-lfm3_1.7b-s9/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 23,
+    "waste_after": 242,
+    "mean_waste_after": 10.52,
+    "unsupported": 8,
+    "outcomes": {
+     "never": 8,
+     "quick": 7,
+     "slow": 8
+    },
+    "models": {
+     "lfm3:1.7b": 4,
+     "qwen3.5:9b": 4,
+     "gpt-oss:20b": 7,
+     "bonsai-2:4b": 8
+    },
+    "tasks": {
+     "p3": 2,
+     "v2": 5,
+     "nf_multi_2": 3,
+     "nf_exact": 3,
+     "nf_single_1": 3,
+     "h4": 2,
+     "u3": 2,
+     "nf_multi_1": 1,
+     "nf_single_2": 2
+    },
+    "median_index": 2,
+    "first_request": 7,
+    "reuse": {
+     "False": 14,
+     "True": 2,
+     "None": 7
+    },
+    "supported_by_outcome": {
+     "quick": 7,
+     "slow": 8,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 9,
+     "slow": 24,
+     "never": 209
+    },
+    "derail_types": {
+     "format": 17,
+     "name_guess": 5,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0010/003-v2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/004-v2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0012/004-nf_multi_2-FULL-bonsai-2_4b-s9/trace.jsonl"
+    ]
+   }
+  },
+  "key_underlying": {
+   "1": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "2": {
+    "episodes": 15,
+    "waste_after": 45,
+    "mean_waste_after": 3,
+    "unsupported": 2,
+    "outcomes": {
+     "quick": 12,
+     "never": 2,
+     "slow": 1
+    },
+    "models": {
+     "lfm3:1.7b": 7,
+     "qwen3.5:9b": 4,
+     "gpt-oss:20b": 2,
+     "bonsai-2:4b": 2
+    },
+    "tasks": {
+     "h4": 5,
+     "u3": 3,
+     "nf_single_2": 2,
+     "nf_single_1": 2,
+     "nf_multi_1": 3
+    },
+    "median_index": 2,
+    "first_request": 0,
+    "reuse": {
+     "True": 15
+    },
+    "supported_by_outcome": {
+     "quick": 12,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 28,
+     "slow": 6,
+     "never": 11
+    },
+    "derail_types": {
+     "name_guess": 15
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0007/007-h4-FULL-gpt-oss_20b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0009/027-nf_multi_1-FULL-gpt-oss_20b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0012/027-nf_multi_1-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 1,
+    "waste_after": 38,
+    "mean_waste_after": 38,
+    "unsupported": 1,
+    "outcomes": {
+     "never": 1
+    },
+    "models": {
+     "bonsai-2:4b": 1
+    },
+    "tasks": {
+     "nf_multi_2": 1
+    },
+    "median_index": 3,
+    "first_request": 0,
+    "reuse": {
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 38
+    },
+    "derail_types": {
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0012/024-nf_multi_2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "5": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "6": {
+    "episodes": 49,
+    "waste_after": 368,
+    "mean_waste_after": 7.51,
+    "unsupported": 12,
+    "outcomes": {
+     "never": 12,
+     "quick": 22,
+     "slow": 15
+    },
+    "models": {
+     "lfm3:1.7b": 8,
+     "qwen3.5:9b": 9,
+     "gpt-oss:20b": 20,
+     "bonsai-2:4b": 12
+    },
+    "tasks": {
+     "p3": 2,
+     "v2": 5,
+     "e1h_chg_2": 7,
+     "e1h_chg_1": 8,
+     "nf_multi_2": 3,
+     "nf_amb_1": 3,
+     "nf_exact": 3,
+     "nf_amb_2": 1,
+     "nf_single_1": 3,
+     "h4": 2,
+     "u3": 2,
+     "e1h_abs_2": 1,
+     "e1h_amb_1": 2,
+     "e1h_abs_1": 1,
+     "e1h_amb_2": 1,
+     "nf_absent": 2,
+     "nf_multi_1": 1,
+     "nf_single_2": 2
+    },
+    "median_index": 2,
+    "first_request": 18,
+    "reuse": {
+     "False": 29,
+     "True": 2,
+     "None": 18
+    },
+    "supported_by_outcome": {
+     "quick": 22,
+     "slow": 15,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 37,
+     "slow": 39,
+     "never": 292
+    },
+    "derail_types": {
+     "format": 26,
+     "name_guess": 9,
+     "repeat": 14
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0010/003-v2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/004-v2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   }
+  },
+  "error_texts_top10": [],
+  "error_texts_all_count": 0,
+  "error_classes": {},
+  "rates_primary": {
+   "1": {
+    "exposures": 17,
+    "derails": 0,
+    "in_clean": 16,
+    "in_derailed": 1,
+    "rate_pct": 0.0
+   },
+   "2": {
+    "exposures": 15,
+    "derails": 15,
+    "in_clean": 0,
+    "in_derailed": 15,
+    "rate_pct": 100.0
+   },
+   "3": {
+    "exposures": 4,
+    "derails": 1,
+    "in_clean": 1,
+    "in_derailed": 3,
+    "rate_pct": 25.0
+   },
+   "4": {
+    "exposures": 170,
+    "derails": 11,
+    "in_clean": 153,
+    "in_derailed": 17,
+    "rate_pct": 6.5
+   },
+   "5": {
+    "exposures": 40,
+    "derails": 15,
+    "in_clean": 2,
+    "in_derailed": 38,
+    "rate_pct": 37.5
+   },
+   "6": {
+    "exposures": 204,
+    "derails": 23,
+    "in_clean": 131,
+    "in_derailed": 73,
+    "rate_pct": 11.3
+   }
+  },
+  "rates_underlying": {
+   "1": {
+    "exposures": 17,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "2": {
+    "exposures": 15,
+    "derails": 15,
+    "rate_pct": 100.0
+   },
+   "3": {
+    "exposures": 4,
+    "derails": 1,
+    "rate_pct": 25.0
+   },
+   "6": {
+    "exposures": 414,
+    "derails": 49,
+    "rate_pct": 11.8
+   }
+  },
+  "rates_error_class": {
+   "not-found": {
+    "exposures": 17,
+    "derails": 0,
+    "rate_pct": 0.0
+   }
+  },
+  "rates_primary_by_model": {
+   "1|bonsai-2:4b": {
+    "exposures": 3,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "1|lfm3:1.7b": {
+    "exposures": 8,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "1|qwen3.5:9b": {
+    "exposures": 6,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "2|bonsai-2:4b": {
+    "exposures": 2,
+    "derails": 2,
+    "rate_pct": 100.0
+   },
+   "2|gpt-oss:20b": {
+    "exposures": 2,
+    "derails": 2,
+    "rate_pct": 100.0
+   },
+   "2|lfm3:1.7b": {
+    "exposures": 7,
+    "derails": 7,
+    "rate_pct": 100.0
+   },
+   "2|qwen3.5:9b": {
+    "exposures": 4,
+    "derails": 4,
+    "rate_pct": 100.0
+   },
+   "3|bonsai-2:4b": {
+    "exposures": 2,
+    "derails": 1,
+    "rate_pct": 50.0
+   },
+   "3|lfm3:1.7b": {
+    "exposures": 2,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "4|bonsai-2:4b": {
+    "exposures": 58,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "4|gpt-oss:20b": {
+    "exposures": 29,
+    "derails": 9,
+    "rate_pct": 31.0
+   },
+   "4|lfm3:1.7b": {
+    "exposures": 42,
+    "derails": 1,
+    "rate_pct": 2.4
+   },
+   "4|qwen3.5:9b": {
+    "exposures": 41,
+    "derails": 1,
+    "rate_pct": 2.4
+   },
+   "5|bonsai-2:4b": {
+    "exposures": 6,
+    "derails": 4,
+    "rate_pct": 66.7
+   },
+   "5|gpt-oss:20b": {
+    "exposures": 12,
+    "derails": 4,
+    "rate_pct": 33.3
+   },
+   "5|lfm3:1.7b": {
+    "exposures": 11,
+    "derails": 3,
+    "rate_pct": 27.3
+   },
+   "5|qwen3.5:9b": {
+    "exposures": 11,
+    "derails": 4,
+    "rate_pct": 36.4
+   },
+   "6|bonsai-2:4b": {
+    "exposures": 54,
+    "derails": 8,
+    "rate_pct": 14.8
+   },
+   "6|gpt-oss:20b": {
+    "exposures": 41,
+    "derails": 7,
+    "rate_pct": 17.1
+   },
+   "6|lfm3:1.7b": {
+    "exposures": 58,
+    "derails": 4,
+    "rate_pct": 6.9
+   },
+   "6|qwen3.5:9b": {
+    "exposures": 51,
+    "derails": 4,
+    "rate_pct": 7.8
+   }
+  }
+ },
+ "POOLED": {
+  "episodes": 432,
+  "derailed": 206,
+  "clean": 226,
+  "supported_derailed": 166,
+  "supported_clean": 200,
+  "derail_type": {
+   "name_guess": 79,
+   "format": 82,
+   "repeat": 45
+  },
+  "first_request_derailments": 64,
+  "derail_index": {
+   "median": 2.0,
+   "min": 1,
+   "max": 22
+  },
+  "waste_after_total": 1097,
+  "excess_total_all_episodes": 1354,
+  "by_model": {
+   "bonsai-2:4b": {
+    "episodes": 108,
+    "derailed": 49,
+    "clean": 59,
+    "unsupported": 37,
+    "waste_after": 613,
+    "median_index": 3,
+    "categories": {
+     "2": 10,
+     "6": 22,
+     "4": 4,
+     "5": 12,
+     "3": 1
+    },
+    "outcomes": {
+     "quick": 12,
+     "never": 24,
+     "slow": 13
+    }
+   },
+   "gpt-oss:20b": {
+    "episodes": 108,
+    "derailed": 69,
+    "clean": 39,
+    "unsupported": 9,
+    "waste_after": 208,
+    "median_index": 1,
+    "categories": {
+     "6": 22,
+     "2": 3,
+     "4": 32,
+     "5": 12
+    },
+    "outcomes": {
+     "slow": 31,
+     "never": 8,
+     "quick": 30
+    }
+   },
+   "lfm3:1.7b": {
+    "episodes": 108,
+    "derailed": 56,
+    "clean": 52,
+    "unsupported": 18,
+    "waste_after": 225,
+    "median_index": 2.0,
+    "categories": {
+     "2": 22,
+     "3": 1,
+     "6": 12,
+     "5": 9,
+     "4": 10,
+     "1": 2
+    },
+    "outcomes": {
+     "quick": 38,
+     "never": 8,
+     "slow": 10
+    }
+   },
+   "qwen3.5:9b": {
+    "episodes": 108,
+    "derailed": 32,
+    "clean": 76,
+    "unsupported": 2,
+    "waste_after": 51,
+    "median_index": 2.0,
+    "categories": {
+     "6": 8,
+     "2": 10,
+     "5": 12,
+     "4": 2
+    },
+    "outcomes": {
+     "quick": 32
+    }
+   }
+  },
+  "by_task": {
+   "e1h_abs_1": {
+    "episodes": 24,
+    "derailed": 7,
+    "clean": 17,
+    "unsupported": 6,
+    "waste_after": 14,
+    "median_index": 1,
+    "categories": {
+     "1": 1,
+     "4": 6
+    },
+    "outcomes": {
+     "slow": 4,
+     "quick": 2,
+     "never": 1
+    }
+   },
+   "e1h_abs_2": {
+    "episodes": 24,
+    "derailed": 5,
+    "clean": 19,
+    "unsupported": 3,
+    "waste_after": 12,
+    "median_index": 1,
+    "categories": {
+     "4": 5
+    },
+    "outcomes": {
+     "slow": 2,
+     "quick": 3
+    }
+   },
+   "e1h_amb_1": {
+    "episodes": 24,
+    "derailed": 10,
+    "clean": 14,
+    "unsupported": 0,
+    "waste_after": 49,
+    "median_index": 1.0,
+    "categories": {
+     "4": 10
+    },
+    "outcomes": {
+     "slow": 1,
+     "quick": 9
+    }
+   },
+   "e1h_amb_2": {
+    "episodes": 24,
+    "derailed": 9,
+    "clean": 15,
+    "unsupported": 2,
+    "waste_after": 24,
+    "median_index": 1,
+    "categories": {
+     "4": 9
+    },
+    "outcomes": {
+     "quick": 4,
+     "slow": 5
+    }
+   },
+   "e1h_chg_1": {
+    "episodes": 24,
+    "derailed": 23,
+    "clean": 1,
+    "unsupported": 1,
+    "waste_after": 25,
+    "median_index": 3,
+    "categories": {
+     "5": 23
+    },
+    "outcomes": {
+     "quick": 20,
+     "never": 1,
+     "slow": 2
+    }
+   },
+   "e1h_chg_2": {
+    "episodes": 24,
+    "derailed": 22,
+    "clean": 2,
+    "unsupported": 7,
+    "waste_after": 152,
+    "median_index": 3.0,
+    "categories": {
+     "5": 22
+    },
+    "outcomes": {
+     "quick": 13,
+     "never": 7,
+     "slow": 2
+    }
+   },
+   "h4": {
+    "episodes": 24,
+    "derailed": 21,
+    "clean": 3,
+    "unsupported": 4,
+    "waste_after": 124,
+    "median_index": 2,
+    "categories": {
+     "2": 14,
+     "6": 7
+    },
+    "outcomes": {
+     "quick": 12,
+     "slow": 5,
+     "never": 4
+    }
+   },
+   "nf_absent": {
+    "episodes": 24,
+    "derailed": 6,
+    "clean": 18,
+    "unsupported": 3,
+    "waste_after": 15,
+    "median_index": 1.0,
+    "categories": {
+     "4": 6
+    },
+    "outcomes": {
+     "quick": 3,
+     "slow": 3
+    }
+   },
+   "nf_amb_1": {
+    "episodes": 24,
+    "derailed": 8,
+    "clean": 16,
+    "unsupported": 1,
+    "waste_after": 27,
+    "median_index": 1.0,
+    "categories": {
+     "4": 7,
+     "1": 1
+    },
+    "outcomes": {
+     "slow": 2,
+     "never": 1,
+     "quick": 5
+    }
+   },
+   "nf_amb_2": {
+    "episodes": 24,
+    "derailed": 5,
+    "clean": 19,
+    "unsupported": 0,
+    "waste_after": 16,
+    "median_index": 1,
+    "categories": {
+     "4": 5
+    },
+    "outcomes": {
+     "quick": 4,
+     "slow": 1
+    }
+   },
+   "nf_exact": {
+    "episodes": 24,
+    "derailed": 5,
+    "clean": 19,
+    "unsupported": 2,
+    "waste_after": 44,
+    "median_index": 2,
+    "categories": {
+     "6": 5
+    },
+    "outcomes": {
+     "never": 1,
+     "slow": 2,
+     "quick": 2
+    }
+   },
+   "nf_multi_1": {
+    "episodes": 24,
+    "derailed": 16,
+    "clean": 8,
+    "unsupported": 6,
+    "waste_after": 100,
+    "median_index": 2.0,
+    "categories": {
+     "2": 13,
+     "6": 3
+    },
+    "outcomes": {
+     "slow": 4,
+     "quick": 6,
+     "never": 6
+    }
+   },
+   "nf_multi_2": {
+    "episodes": 24,
+    "derailed": 9,
+    "clean": 15,
+    "unsupported": 5,
+    "waste_after": 90,
+    "median_index": 3,
+    "categories": {
+     "6": 8,
+     "3": 1
+    },
+    "outcomes": {
+     "slow": 4,
+     "quick": 3,
+     "never": 2
+    }
+   },
+   "nf_single_1": {
+    "episodes": 24,
+    "derailed": 13,
+    "clean": 11,
+    "unsupported": 6,
+    "waste_after": 22,
+    "median_index": 2,
+    "categories": {
+     "2": 4,
+     "6": 9
+    },
+    "outcomes": {
+     "quick": 9,
+     "slow": 4
+    }
+   },
+   "nf_single_2": {
+    "episodes": 24,
+    "derailed": 12,
+    "clean": 12,
+    "unsupported": 1,
+    "waste_after": 57,
+    "median_index": 2.0,
+    "categories": {
+     "2": 4,
+     "6": 8
+    },
+    "outcomes": {
+     "quick": 6,
+     "slow": 5,
+     "never": 1
+    }
+   },
+   "p3": {
+    "episodes": 24,
+    "derailed": 3,
+    "clean": 21,
+    "unsupported": 4,
+    "waste_after": 5,
+    "median_index": 4,
+    "categories": {
+     "6": 3
+    },
+    "outcomes": {
+     "quick": 2,
+     "never": 1
+    }
+   },
+   "u3": {
+    "episodes": 24,
+    "derailed": 16,
+    "clean": 8,
+    "unsupported": 3,
+    "waste_after": 52,
+    "median_index": 2.5,
+    "categories": {
+     "2": 10,
+     "6": 6
+    },
+    "outcomes": {
+     "quick": 9,
+     "never": 3,
+     "slow": 4
+    }
+   },
+   "v2": {
+    "episodes": 24,
+    "derailed": 16,
+    "clean": 8,
+    "unsupported": 12,
+    "waste_after": 269,
+    "median_index": 1.0,
+    "categories": {
+     "3": 1,
+     "6": 15
+    },
+    "outcomes": {
+     "never": 12,
+     "slow": 4
+    }
+   }
+  },
+  "key_category": {
+   "1": {
+    "episodes": 2,
+    "waste_after": 2,
+    "mean_waste_after": 1,
+    "unsupported": 1,
+    "outcomes": {
+     "slow": 1,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 2
+    },
+    "tasks": {
+     "e1h_abs_1": 1,
+     "nf_amb_1": 1
+    },
+    "median_index": 5.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 1
+    },
+    "derail_types": {
+     "format": 1,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "2": {
+    "episodes": 45,
+    "waste_after": 166,
+    "mean_waste_after": 3.69,
+    "unsupported": 7,
+    "outcomes": {
+     "quick": 33,
+     "slow": 5,
+     "never": 7
+    },
+    "models": {
+     "lfm3:1.7b": 22,
+     "qwen3.5:9b": 10,
+     "gpt-oss:20b": 3,
+     "bonsai-2:4b": 10
+    },
+    "tasks": {
+     "h4": 14,
+     "u3": 10,
+     "nf_single_2": 4,
+     "nf_multi_1": 13,
+     "nf_single_1": 4
+    },
+    "median_index": 2,
+    "first_request": 0,
+    "reuse": {
+     "True": 45
+    },
+    "supported_by_outcome": {
+     "quick": 33,
+     "slow": 5,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 82,
+     "slow": 41,
+     "never": 43
+    },
+    "derail_types": {
+     "name_guess": 45
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/004-h4-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/013-nf_multi_1-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/005-nf_multi_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 2,
+    "waste_after": 49,
+    "mean_waste_after": 24.5,
+    "unsupported": 2,
+    "outcomes": {
+     "never": 2
+    },
+    "models": {
+     "lfm3:1.7b": 1,
+     "bonsai-2:4b": 1
+    },
+    "tasks": {
+     "v2": 1,
+     "nf_multi_2": 1
+    },
+    "median_index": 3.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 49
+    },
+    "derail_types": {
+     "format": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0012/024-nf_multi_2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 48,
+    "waste_after": 155,
+    "mean_waste_after": 3.23,
+    "unsupported": 1,
+    "outcomes": {
+     "quick": 30,
+     "slow": 17,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 10,
+     "qwen3.5:9b": 2,
+     "gpt-oss:20b": 32,
+     "bonsai-2:4b": 4
+    },
+    "tasks": {
+     "e1h_amb_2": 9,
+     "e1h_amb_1": 10,
+     "nf_amb_1": 7,
+     "nf_amb_2": 5,
+     "e1h_abs_2": 5,
+     "e1h_abs_1": 6,
+     "nf_absent": 6
+    },
+    "median_index": 1.0,
+    "first_request": 42,
+    "reuse": {
+     "False": 6,
+     "None": 42
+    },
+    "supported_by_outcome": {
+     "quick": 30,
+     "slow": 17,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 92,
+     "slow": 61,
+     "never": 2
+    },
+    "derail_types": {
+     "name_guess": 12,
+     "format": 36
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/011-e1h_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/020-e1h_amb_2-FULL-lfm3_1.7b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/014-e1h_amb_1-FULL-lfm3_1.7b-s5/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 45,
+    "waste_after": 177,
+    "mean_waste_after": 3.93,
+    "unsupported": 8,
+    "outcomes": {
+     "quick": 33,
+     "never": 8,
+     "slow": 4
+    },
+    "models": {
+     "lfm3:1.7b": 9,
+     "qwen3.5:9b": 12,
+     "gpt-oss:20b": 12,
+     "bonsai-2:4b": 12
+    },
+    "tasks": {
+     "e1h_chg_2": 22,
+     "e1h_chg_1": 23
+    },
+    "median_index": 3,
+    "first_request": 5,
+    "reuse": {
+     "False": 40,
+     "None": 5
+    },
+    "supported_by_outcome": {
+     "quick": 33,
+     "slow": 4,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 40,
+     "slow": 20,
+     "never": 117
+    },
+    "derail_types": {
+     "repeat": 39,
+     "name_guess": 5,
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0011/019-e1h_chg_2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/006-e1h_chg_2-FULL-bonsai-2_4b-s7/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 64,
+    "waste_after": 548,
+    "mean_waste_after": 8.56,
+    "unsupported": 21,
+    "outcomes": {
+     "never": 21,
+     "slow": 27,
+     "quick": 16
+    },
+    "models": {
+     "lfm3:1.7b": 12,
+     "qwen3.5:9b": 8,
+     "gpt-oss:20b": 22,
+     "bonsai-2:4b": 22
+    },
+    "tasks": {
+     "v2": 15,
+     "nf_exact": 5,
+     "nf_single_1": 9,
+     "nf_single_2": 8,
+     "nf_multi_2": 8,
+     "p3": 3,
+     "h4": 7,
+     "u3": 6,
+     "nf_multi_1": 3
+    },
+    "median_index": 2.0,
+    "first_request": 17,
+    "reuse": {
+     "False": 39,
+     "True": 8,
+     "None": 17
+    },
+    "supported_by_outcome": {
+     "quick": 16,
+     "slow": 27,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 30,
+     "slow": 91,
+     "never": 427
+    },
+    "derail_types": {
+     "name_guess": 17,
+     "repeat": 5,
+     "format": 42
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/007-v2-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/003-v2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/004-v2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   }
+  },
+  "key_underlying": {
+   "1": {
+    "episodes": 2,
+    "waste_after": 2,
+    "mean_waste_after": 1,
+    "unsupported": 1,
+    "outcomes": {
+     "slow": 1,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 2
+    },
+    "tasks": {
+     "e1h_abs_1": 1,
+     "nf_amb_1": 1
+    },
+    "median_index": 5.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 1
+    },
+    "derail_types": {
+     "format": 1,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "2": {
+    "episodes": 45,
+    "waste_after": 166,
+    "mean_waste_after": 3.69,
+    "unsupported": 7,
+    "outcomes": {
+     "quick": 33,
+     "slow": 5,
+     "never": 7
+    },
+    "models": {
+     "lfm3:1.7b": 22,
+     "qwen3.5:9b": 10,
+     "gpt-oss:20b": 3,
+     "bonsai-2:4b": 10
+    },
+    "tasks": {
+     "h4": 14,
+     "u3": 10,
+     "nf_single_2": 4,
+     "nf_multi_1": 13,
+     "nf_single_1": 4
+    },
+    "median_index": 2,
+    "first_request": 0,
+    "reuse": {
+     "True": 45
+    },
+    "supported_by_outcome": {
+     "quick": 33,
+     "slow": 5,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 82,
+     "slow": 41,
+     "never": 43
+    },
+    "derail_types": {
+     "name_guess": 45
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/004-h4-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/013-nf_multi_1-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/005-nf_multi_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 2,
+    "waste_after": 49,
+    "mean_waste_after": 24.5,
+    "unsupported": 2,
+    "outcomes": {
+     "never": 2
+    },
+    "models": {
+     "lfm3:1.7b": 1,
+     "bonsai-2:4b": 1
+    },
+    "tasks": {
+     "v2": 1,
+     "nf_multi_2": 1
+    },
+    "median_index": 3.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 49
+    },
+    "derail_types": {
+     "format": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0012/024-nf_multi_2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "5": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "6": {
+    "episodes": 157,
+    "waste_after": 880,
+    "mean_waste_after": 5.61,
+    "unsupported": 30,
+    "outcomes": {
+     "never": 30,
+     "quick": 79,
+     "slow": 48
+    },
+    "models": {
+     "lfm3:1.7b": 31,
+     "qwen3.5:9b": 22,
+     "gpt-oss:20b": 66,
+     "bonsai-2:4b": 38
+    },
+    "tasks": {
+     "v2": 15,
+     "e1h_chg_2": 22,
+     "e1h_chg_1": 23,
+     "e1h_amb_2": 9,
+     "e1h_amb_1": 10,
+     "nf_exact": 5,
+     "nf_amb_1": 7,
+     "nf_amb_2": 5,
+     "nf_single_1": 9,
+     "nf_single_2": 8,
+     "nf_multi_2": 8,
+     "p3": 3,
+     "h4": 7,
+     "u3": 6,
+     "e1h_abs_2": 5,
+     "e1h_abs_1": 6,
+     "nf_multi_1": 3,
+     "nf_absent": 6
+    },
+    "median_index": 2,
+    "first_request": 64,
+    "reuse": {
+     "False": 85,
+     "True": 8,
+     "None": 64
+    },
+    "supported_by_outcome": {
+     "quick": 79,
+     "slow": 48,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 162,
+     "slow": 172,
+     "never": 546
+    },
+    "derail_types": {
+     "name_guess": 34,
+     "repeat": 44,
+     "format": 79
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/007-v2-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/003-v2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/004-v2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   }
+  },
+  "error_texts_top10": [
+   {
+    "text": "ros2_node_info | {\"error\": \"Unable to find node '<N>'\\n\"}",
+    "episodes": 1,
+    "waste_after": 1,
+    "mean": 1,
+    "never": 0,
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   {
+    "text": "ros2_node_info | {\"error\": \"\"}",
+    "episodes": 1,
+    "waste_after": 1,
+    "mean": 1,
+    "never": 1,
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   }
+  ],
+  "error_texts_all_count": 2,
+  "error_classes": {
+   "not-found": {
+    "episodes": 1,
+    "waste_after": 1,
+    "never": 0
+   },
+   "empty": {
+    "episodes": 1,
+    "waste_after": 1,
+    "never": 1
+   }
+  },
+  "rates_primary": {
+   "1": {
+    "exposures": 83,
+    "derails": 2,
+    "in_clean": 61,
+    "in_derailed": 22,
+    "rate_pct": 2.4
+   },
+   "2": {
+    "exposures": 45,
+    "derails": 45,
+    "in_clean": 0,
+    "in_derailed": 45,
+    "rate_pct": 100.0
+   },
+   "3": {
+    "exposures": 13,
+    "derails": 2,
+    "in_clean": 6,
+    "in_derailed": 7,
+    "rate_pct": 15.4
+   },
+   "4": {
+    "exposures": 462,
+    "derails": 48,
+    "in_clean": 397,
+    "in_derailed": 65,
+    "rate_pct": 10.4
+   },
+   "5": {
+    "exposures": 120,
+    "derails": 45,
+    "in_clean": 7,
+    "in_derailed": 113,
+    "rate_pct": 37.5
+   },
+   "6": {
+    "exposures": 614,
+    "derails": 64,
+    "in_clean": 377,
+    "in_derailed": 237,
+    "rate_pct": 10.4
+   }
+  },
+  "rates_underlying": {
+   "1": {
+    "exposures": 83,
+    "derails": 2,
+    "rate_pct": 2.4
+   },
+   "2": {
+    "exposures": 45,
+    "derails": 45,
+    "rate_pct": 100.0
+   },
+   "3": {
+    "exposures": 13,
+    "derails": 2,
+    "rate_pct": 15.4
+   },
+   "6": {
+    "exposures": 1196,
+    "derails": 157,
+    "rate_pct": 13.1
+   }
+  },
+  "rates_error_class": {
+   "empty": {
+    "exposures": 17,
+    "derails": 1,
+    "rate_pct": 5.9
+   },
+   "not-found": {
+    "exposures": 52,
+    "derails": 1,
+    "rate_pct": 1.9
+   },
+   "other": {
+    "exposures": 14,
+    "derails": 0,
+    "rate_pct": 0.0
+   }
+  },
+  "rates_primary_by_model": {
+   "1|bonsai-2:4b": {
+    "exposures": 15,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "1|gpt-oss:20b": {
+    "exposures": 3,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "1|lfm3:1.7b": {
+    "exposures": 48,
+    "derails": 2,
+    "rate_pct": 4.2
+   },
+   "1|qwen3.5:9b": {
+    "exposures": 17,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "2|bonsai-2:4b": {
+    "exposures": 10,
+    "derails": 10,
+    "rate_pct": 100.0
+   },
+   "2|gpt-oss:20b": {
+    "exposures": 3,
+    "derails": 3,
+    "rate_pct": 100.0
+   },
+   "2|lfm3:1.7b": {
+    "exposures": 22,
+    "derails": 22,
+    "rate_pct": 100.0
+   },
+   "2|qwen3.5:9b": {
+    "exposures": 10,
+    "derails": 10,
+    "rate_pct": 100.0
+   },
+   "3|bonsai-2:4b": {
+    "exposures": 3,
+    "derails": 1,
+    "rate_pct": 33.3
+   },
+   "3|lfm3:1.7b": {
+    "exposures": 8,
+    "derails": 1,
+    "rate_pct": 12.5
+   },
+   "3|qwen3.5:9b": {
+    "exposures": 2,
+    "derails": 0,
+    "rate_pct": 0.0
+   },
+   "4|bonsai-2:4b": {
+    "exposures": 154,
+    "derails": 4,
+    "rate_pct": 2.6
+   },
+   "4|gpt-oss:20b": {
+    "exposures": 72,
+    "derails": 32,
+    "rate_pct": 44.4
+   },
+   "4|lfm3:1.7b": {
+    "exposures": 107,
+    "derails": 10,
+    "rate_pct": 9.3
+   },
+   "4|qwen3.5:9b": {
+    "exposures": 129,
+    "derails": 2,
+    "rate_pct": 1.6
+   },
+   "5|bonsai-2:4b": {
+    "exposures": 21,
+    "derails": 12,
+    "rate_pct": 57.1
+   },
+   "5|gpt-oss:20b": {
+    "exposures": 36,
+    "derails": 12,
+    "rate_pct": 33.3
+   },
+   "5|lfm3:1.7b": {
+    "exposures": 30,
+    "derails": 9,
+    "rate_pct": 30.0
+   },
+   "5|qwen3.5:9b": {
+    "exposures": 33,
+    "derails": 12,
+    "rate_pct": 36.4
+   },
+   "6|bonsai-2:4b": {
+    "exposures": 152,
+    "derails": 22,
+    "rate_pct": 14.5
+   },
+   "6|gpt-oss:20b": {
+    "exposures": 140,
+    "derails": 22,
+    "rate_pct": 15.7
+   },
+   "6|lfm3:1.7b": {
+    "exposures": 162,
+    "derails": 12,
+    "rate_pct": 7.4
+   },
+   "6|qwen3.5:9b": {
+    "exposures": 160,
+    "derails": 8,
+    "rate_pct": 5.0
+   }
+  }
+ },
+ "pooled_key_by_model": {
+  "bonsai-2:4b": {
+   "1": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "2": {
+    "episodes": 10,
+    "waste_after": 64,
+    "mean_waste_after": 6.4,
+    "unsupported": 6,
+    "outcomes": {
+     "quick": 2,
+     "slow": 2,
+     "never": 6
+    },
+    "models": {
+     "bonsai-2:4b": 10
+    },
+    "tasks": {
+     "h4": 2,
+     "u3": 3,
+     "nf_multi_1": 5
+    },
+    "median_index": 2.5,
+    "first_request": 0,
+    "reuse": {
+     "True": 10
+    },
+    "supported_by_outcome": {
+     "quick": 2,
+     "slow": 2,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 7,
+     "slow": 20,
+     "never": 37
+    },
+    "derail_types": {
+     "name_guess": 10
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/004-h4-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/013-nf_multi_1-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/012-nf_multi_1-FULL-bonsai-2_4b-s6/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 1,
+    "waste_after": 38,
+    "mean_waste_after": 38,
+    "unsupported": 1,
+    "outcomes": {
+     "never": 1
+    },
+    "models": {
+     "bonsai-2:4b": 1
+    },
+    "tasks": {
+     "nf_multi_2": 1
+    },
+    "median_index": 3,
+    "first_request": 0,
+    "reuse": {
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 38
+    },
+    "derail_types": {
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0012/024-nf_multi_2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 4,
+    "waste_after": 10,
+    "mean_waste_after": 2.5,
+    "unsupported": 1,
+    "outcomes": {
+     "quick": 2,
+     "slow": 1,
+     "never": 1
+    },
+    "models": {
+     "bonsai-2:4b": 4
+    },
+    "tasks": {
+     "e1h_amb_1": 1,
+     "e1h_amb_2": 1,
+     "e1h_abs_1": 1,
+     "nf_amb_1": 1
+    },
+    "median_index": 1.0,
+    "first_request": 3,
+    "reuse": {
+     "None": 3,
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 2,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 7,
+     "slow": 1,
+     "never": 2
+    },
+    "derail_types": {
+     "name_guess": 2,
+     "format": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0012/019-nf_amb_1-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/001-e1h_amb_1-FULL-bonsai-2_4b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/023-e1h_abs_1-FULL-bonsai-2_4b-s7/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 12,
+    "waste_after": 139,
+    "mean_waste_after": 11.58,
+    "unsupported": 4,
+    "outcomes": {
+     "slow": 1,
+     "quick": 7,
+     "never": 4
+    },
+    "models": {
+     "bonsai-2:4b": 12
+    },
+    "tasks": {
+     "e1h_chg_2": 6,
+     "e1h_chg_1": 6
+    },
+    "median_index": 2.0,
+    "first_request": 5,
+    "reuse": {
+     "None": 5,
+     "False": 7
+    },
+    "supported_by_outcome": {
+     "quick": 7,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 14,
+     "slow": 14,
+     "never": 111
+    },
+    "derail_types": {
+     "name_guess": 5,
+     "repeat": 6,
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0011/016-e1h_chg_2-FULL-bonsai-2_4b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0011/019-e1h_chg_2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0011/006-e1h_chg_2-FULL-bonsai-2_4b-s7/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 22,
+    "waste_after": 362,
+    "mean_waste_after": 16.45,
+    "unsupported": 12,
+    "outcomes": {
+     "never": 12,
+     "slow": 9,
+     "quick": 1
+    },
+    "models": {
+     "bonsai-2:4b": 22
+    },
+    "tasks": {
+     "h4": 3,
+     "v2": 6,
+     "u3": 3,
+     "nf_multi_2": 4,
+     "nf_single_2": 4,
+     "nf_single_1": 1,
+     "nf_multi_1": 1
+    },
+    "median_index": 3.0,
+    "first_request": 5,
+    "reuse": {
+     "False": 13,
+     "None": 5,
+     "True": 4
+    },
+    "supported_by_outcome": {
+     "quick": 1,
+     "slow": 9,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 4,
+     "slow": 22,
+     "never": 336
+    },
+    "derail_types": {
+     "name_guess": 10,
+     "format": 11,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0010/007-v2-FULL-bonsai-2_4b-s7/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/003-v2-FULL-bonsai-2_4b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0010/004-v2-FULL-bonsai-2_4b-s10/trace.jsonl"
+    ]
+   }
+  },
+  "gpt-oss:20b": {
+   "1": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "2": {
+    "episodes": 3,
+    "waste_after": 18,
+    "mean_waste_after": 6,
+    "unsupported": 1,
+    "outcomes": {
+     "slow": 2,
+     "never": 1
+    },
+    "models": {
+     "gpt-oss:20b": 3
+    },
+    "tasks": {
+     "h4": 2,
+     "nf_multi_1": 1
+    },
+    "median_index": 2,
+    "first_request": 0,
+    "reuse": {
+     "True": 3
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 2,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 12,
+     "never": 6
+    },
+    "derail_types": {
+     "name_guess": 3
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0007/012-h4-FULL-gpt-oss_20b-s5/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0007/007-h4-FULL-gpt-oss_20b-s10/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0009/027-nf_multi_1-FULL-gpt-oss_20b-s9/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "4": {
+    "episodes": 32,
+    "waste_after": 97,
+    "mean_waste_after": 3.03,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 19,
+     "slow": 13
+    },
+    "models": {
+     "gpt-oss:20b": 32
+    },
+    "tasks": {
+     "e1h_amb_2": 4,
+     "e1h_abs_2": 5,
+     "e1h_abs_1": 5,
+     "e1h_amb_1": 6,
+     "nf_amb_1": 4,
+     "nf_amb_2": 2,
+     "nf_absent": 6
+    },
+    "median_index": 1.0,
+    "first_request": 28,
+    "reuse": {
+     "None": 28,
+     "False": 4
+    },
+    "supported_by_outcome": {
+     "quick": 19,
+     "slow": 13,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 61,
+     "slow": 36,
+     "never": 0
+    },
+    "derail_types": {
+     "format": 32
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0009/003-nf_amb_2-FULL-gpt-oss_20b-s6/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0008/004-e1h_amb_1-FULL-gpt-oss_20b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0008/008-e1h_amb_1-FULL-gpt-oss_20b-s6/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 12,
+    "waste_after": 15,
+    "mean_waste_after": 1.25,
+    "unsupported": 4,
+    "outcomes": {
+     "quick": 7,
+     "never": 4,
+     "slow": 1
+    },
+    "models": {
+     "gpt-oss:20b": 12
+    },
+    "tasks": {
+     "e1h_chg_1": 6,
+     "e1h_chg_2": 6
+    },
+    "median_index": 3.0,
+    "first_request": 0,
+    "reuse": {
+     "False": 12
+    },
+    "supported_by_outcome": {
+     "quick": 7,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 7,
+     "slow": 2,
+     "never": 6
+    },
+    "derail_types": {
+     "repeat": 12
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0008/009-e1h_chg_2-FULL-gpt-oss_20b-s6/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0008/021-e1h_chg_2-FULL-gpt-oss_20b-s8/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0008/016-e1h_chg_2-FULL-gpt-oss_20b-s10/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 22,
+    "waste_after": 78,
+    "mean_waste_after": 3.55,
+    "unsupported": 3,
+    "outcomes": {
+     "slow": 15,
+     "never": 3,
+     "quick": 4
+    },
+    "models": {
+     "gpt-oss:20b": 22
+    },
+    "tasks": {
+     "h4": 4,
+     "u3": 3,
+     "v2": 5,
+     "nf_single_1": 3,
+     "nf_single_2": 2,
+     "nf_multi_2": 2,
+     "nf_multi_1": 2,
+     "nf_exact": 1
+    },
+    "median_index": 1.5,
+    "first_request": 11,
+    "reuse": {
+     "True": 1,
+     "False": 10,
+     "None": 11
+    },
+    "supported_by_outcome": {
+     "quick": 4,
+     "slow": 15,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 11,
+     "slow": 56,
+     "never": 11
+    },
+    "derail_types": {
+     "format": 21,
+     "name_guess": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0007/000-h4-FULL-gpt-oss_20b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0007/008-h4-FULL-gpt-oss_20b-s7/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0007/004-v2-FULL-gpt-oss_20b-s7/trace.jsonl"
+    ]
+   }
+  },
+  "lfm3:1.7b": {
+   "1": {
+    "episodes": 2,
+    "waste_after": 2,
+    "mean_waste_after": 1,
+    "unsupported": 1,
+    "outcomes": {
+     "slow": 1,
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 2
+    },
+    "tasks": {
+     "e1h_abs_1": 1,
+     "nf_amb_1": 1
+    },
+    "median_index": 5.5,
+    "first_request": 0,
+    "reuse": {
+     "False": 2
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 1,
+     "never": 1
+    },
+    "derail_types": {
+     "format": 1,
+     "repeat": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/017-e1h_abs_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/026-nf_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "2": {
+    "episodes": 22,
+    "waste_after": 57,
+    "mean_waste_after": 2.59,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 21,
+     "slow": 1
+    },
+    "models": {
+     "lfm3:1.7b": 22
+    },
+    "tasks": {
+     "h4": 6,
+     "u3": 4,
+     "nf_single_2": 4,
+     "nf_multi_1": 4,
+     "nf_single_1": 4
+    },
+    "median_index": 2.0,
+    "first_request": 0,
+    "reuse": {
+     "True": 22
+    },
+    "supported_by_outcome": {
+     "quick": 21,
+     "slow": 1,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 48,
+     "slow": 9,
+     "never": 0
+    },
+    "derail_types": {
+     "name_guess": 22
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/005-nf_multi_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/012-h4-FULL-lfm3_1.7b-s6/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/017-nf_single_2-FULL-lfm3_1.7b-s6/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 1,
+    "waste_after": 11,
+    "mean_waste_after": 11,
+    "unsupported": 1,
+    "outcomes": {
+     "never": 1
+    },
+    "models": {
+     "lfm3:1.7b": 1
+    },
+    "tasks": {
+     "v2": 1
+    },
+    "median_index": 4,
+    "first_request": 0,
+    "reuse": {
+     "False": 1
+    },
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 11
+    },
+    "derail_types": {
+     "format": 1
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/009-v2-FULL-lfm3_1.7b-s6/trace.jsonl"
+    ]
+   },
+   "4": {
+    "episodes": 10,
+    "waste_after": 44,
+    "mean_waste_after": 4.4,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 7,
+     "slow": 3
+    },
+    "models": {
+     "lfm3:1.7b": 10
+    },
+    "tasks": {
+     "e1h_amb_2": 3,
+     "e1h_amb_1": 3,
+     "nf_amb_1": 2,
+     "nf_amb_2": 2
+    },
+    "median_index": 1.0,
+    "first_request": 9,
+    "reuse": {
+     "False": 1,
+     "None": 9
+    },
+    "supported_by_outcome": {
+     "quick": 7,
+     "slow": 3,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 20,
+     "slow": 24,
+     "never": 0
+    },
+    "derail_types": {
+     "name_guess": 8,
+     "format": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/011-e1h_amb_1-FULL-lfm3_1.7b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/020-e1h_amb_2-FULL-lfm3_1.7b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/014-e1h_amb_1-FULL-lfm3_1.7b-s5/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 9,
+    "waste_after": 11,
+    "mean_waste_after": 1.22,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 7,
+     "slow": 2
+    },
+    "models": {
+     "lfm3:1.7b": 9
+    },
+    "tasks": {
+     "e1h_chg_2": 4,
+     "e1h_chg_1": 5
+    },
+    "median_index": 2,
+    "first_request": 0,
+    "reuse": {
+     "False": 9
+    },
+    "supported_by_outcome": {
+     "quick": 7,
+     "slow": 2,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 7,
+     "slow": 4,
+     "never": 0
+    },
+    "derail_types": {
+     "repeat": 9
+    },
+    "examples": [
+     "research/_artifacts/exam/listval/runs_all/block_0002/019-e1h_chg_1-FULL-lfm3_1.7b-s9/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0002/023-e1h_chg_1-FULL-lfm3_1.7b-s10/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0002/002-e1h_chg_2-FULL-lfm3_1.7b-s8/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 12,
+    "waste_after": 100,
+    "mean_waste_after": 8.33,
+    "unsupported": 6,
+    "outcomes": {
+     "never": 6,
+     "slow": 3,
+     "quick": 3
+    },
+    "models": {
+     "lfm3:1.7b": 12
+    },
+    "tasks": {
+     "v2": 4,
+     "nf_exact": 3,
+     "nf_single_1": 1,
+     "nf_single_2": 1,
+     "nf_multi_2": 2,
+     "p3": 1
+    },
+    "median_index": 3.5,
+    "first_request": 1,
+    "reuse": {
+     "False": 8,
+     "True": 3,
+     "None": 1
+    },
+    "supported_by_outcome": {
+     "quick": 3,
+     "slow": 3,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 7,
+     "slow": 13,
+     "never": 80
+    },
+    "derail_types": {
+     "name_guess": 6,
+     "repeat": 4,
+     "format": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0003/007-nf_exact-FULL-lfm3_1.7b-s7/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0001/012-v2-FULL-lfm3_1.7b-s9/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0001/014-v2-FULL-lfm3_1.7b-s5/trace.jsonl"
+    ]
+   }
+  },
+  "qwen3.5:9b": {
+   "1": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "2": {
+    "episodes": 10,
+    "waste_after": 27,
+    "mean_waste_after": 2.7,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 10
+    },
+    "models": {
+     "qwen3.5:9b": 10
+    },
+    "tasks": {
+     "h4": 4,
+     "u3": 3,
+     "nf_multi_1": 3
+    },
+    "median_index": 2.0,
+    "first_request": 0,
+    "reuse": {
+     "True": 10
+    },
+    "supported_by_outcome": {
+     "quick": 10,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 27,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {
+     "name_guess": 10
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0004/002-h4-FULL-qwen3.5_9b-s5/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0006/009-nf_multi_1-FULL-qwen3.5_9b-s5/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0004/003-h4-FULL-qwen3.5_9b-s9/trace.jsonl"
+    ]
+   },
+   "3": {
+    "episodes": 0,
+    "waste_after": 0,
+    "mean_waste_after": null,
+    "unsupported": 0,
+    "outcomes": {},
+    "models": {},
+    "tasks": {},
+    "median_index": null,
+    "first_request": 0,
+    "reuse": {},
+    "supported_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 0,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {},
+    "examples": []
+   },
+   "4": {
+    "episodes": 2,
+    "waste_after": 4,
+    "mean_waste_after": 2,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 2
+    },
+    "models": {
+     "qwen3.5:9b": 2
+    },
+    "tasks": {
+     "e1h_amb_2": 1,
+     "nf_amb_2": 1
+    },
+    "median_index": 1.0,
+    "first_request": 2,
+    "reuse": {
+     "None": 2
+    },
+    "supported_by_outcome": {
+     "quick": 2,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 4,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {
+     "name_guess": 2
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0005/016-e1h_amb_2-FULL-qwen3.5_9b-s8/trace.jsonl",
+     "research/_artifacts/exam/listval/runs_all/block_0006/003-nf_amb_2-FULL-qwen3.5_9b-s9/trace.jsonl"
+    ]
+   },
+   "5": {
+    "episodes": 12,
+    "waste_after": 12,
+    "mean_waste_after": 1,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 12
+    },
+    "models": {
+     "qwen3.5:9b": 12
+    },
+    "tasks": {
+     "e1h_chg_2": 6,
+     "e1h_chg_1": 6
+    },
+    "median_index": 3.0,
+    "first_request": 0,
+    "reuse": {
+     "False": 12
+    },
+    "supported_by_outcome": {
+     "quick": 12,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 12,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {
+     "repeat": 12
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0005/002-e1h_chg_2-FULL-qwen3.5_9b-s6/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0005/005-e1h_chg_1-FULL-qwen3.5_9b-s8/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0005/006-e1h_chg_2-FULL-qwen3.5_9b-s8/trace.jsonl"
+    ]
+   },
+   "6": {
+    "episodes": 8,
+    "waste_after": 8,
+    "mean_waste_after": 1,
+    "unsupported": 0,
+    "outcomes": {
+     "quick": 8
+    },
+    "models": {
+     "qwen3.5:9b": 8
+    },
+    "tasks": {
+     "p3": 2,
+     "nf_single_1": 4,
+     "nf_single_2": 1,
+     "nf_exact": 1
+    },
+    "median_index": 2.0,
+    "first_request": 0,
+    "reuse": {
+     "False": 8
+    },
+    "supported_by_outcome": {
+     "quick": 8,
+     "slow": 0,
+     "never": 0
+    },
+    "waste_by_outcome": {
+     "quick": 8,
+     "slow": 0,
+     "never": 0
+    },
+    "derail_types": {
+     "format": 8
+    },
+    "examples": [
+     "research/_artifacts/exam/lossmap/runs_all/block_0004/000-p3-FULL-qwen3.5_9b-s6/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0006/011-nf_single_1-FULL-qwen3.5_9b-s6/trace.jsonl",
+     "research/_artifacts/exam/lossmap/runs_all/block_0006/018-nf_single_2-FULL-qwen3.5_9b-s5/trace.jsonl"
+    ]
+   }
+  }
+ },
+ "handread_sample": [
+  "block_0011/021-e1h_chg_1-FULL-bonsai-2_4b-s8",
+  "block_0012/012-nf_multi_1-FULL-bonsai-2_4b-s6",
+  "block_0012/005-nf_multi_1-FULL-bonsai-2_4b-s8",
+  "block_0009/004-nf_absent-FULL-gpt-oss_20b-s10",
+  "block_0008/016-e1h_abs_2-FULL-gpt-oss_20b-s6",
+  "block_0008/008-e1h_amb_1-FULL-gpt-oss_20b-s6",
+  "block_0003/016-nf_single_1-FULL-lfm3_1.7b-s9",
+  "block_0001/009-v2-FULL-lfm3_1.7b-s6",
+  "block_0006/011-nf_single_1-FULL-qwen3.5_9b-s6",
+  "block_0004/007-u3-FULL-qwen3.5_9b-s10"
+ ]
+}
