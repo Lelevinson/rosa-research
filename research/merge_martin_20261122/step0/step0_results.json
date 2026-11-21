@@ -1,0 +1,163 @@
+{
+ "threshold": 0.25,
+ "source_rows": 134,
+ "control_OFF": {
+  "qwen3.5:9b": {
+   "n": 16,
+   "excluded": 0,
+   "requests": 56,
+   "removable": 14,
+   "U": 0.25,
+   "with_removable": 14
+  },
+  "pooled": {
+   "n": 64,
+   "excluded": 0,
+   "requests": 216,
+   "removable": 54,
+   "U": 0.25,
+   "with_removable": 54
+  },
+  "per_model": {
+   "bonsai-2:4b": {
+    "n": 16,
+    "excluded": 0,
+    "requests": 49,
+    "removable": 13,
+    "U": 0.2653,
+    "with_removable": 13
+   },
+   "gpt-oss:20b": {
+    "n": 16,
+    "excluded": 0,
+    "requests": 55,
+    "removable": 13,
+    "U": 0.2364,
+    "with_removable": 13
+   },
+   "lfm3:1.7b": {
+    "n": 16,
+    "excluded": 0,
+    "requests": 56,
+    "removable": 14,
+    "U": 0.25,
+    "with_removable": 14
+   },
+   "qwen3.5:9b": {
+    "n": 16,
+    "excluded": 0,
+    "requests": 56,
+    "removable": 14,
+    "U": 0.25,
+    "with_removable": 14
+   }
+  },
+  "conservative_R": {
+   "qwen3.5:9b": {
+    "n": 16,
+    "excluded": 0,
+    "requests": 56,
+    "removable": 12,
+    "U": 0.2143,
+    "with_removable": 14
+   },
+   "pooled": {
+    "n": 64,
+    "excluded": 0,
+    "requests": 216,
+    "removable": 46,
+    "U": 0.213,
+    "with_removable": 54
+   }
+  },
+  "per_task_pooled": {
+   "M1": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 30,
+    "removable": 8,
+    "U": 0.2667,
+    "with_removable": 8
+   },
+   "M2": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 30,
+    "removable": 8,
+    "U": 0.2667,
+    "with_removable": 8
+   },
+   "M3": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 30,
+    "removable": 6,
+    "U": 0.2,
+    "with_removable": 6
+   },
+   "R1": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 28,
+    "removable": 2,
+    "U": 0.0714,
+    "with_removable": 2
+   },
+   "R2": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 22,
+    "removable": 8,
+    "U": 0.3636,
+    "with_removable": 8
+   },
+   "S1": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 24,
+    "removable": 8,
+    "U": 0.3333,
+    "with_removable": 8
+   },
+   "S2": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 24,
+    "removable": 8,
+    "U": 0.3333,
+    "with_removable": 8
+   },
+   "S3": {
+    "n": 8,
+    "excluded": 0,
+    "requests": 28,
+    "removable": 6,
+    "U": 0.2143,
+    "with_removable": 6
+   }
+  }
+ },
+ "sensitivity_ON": {
+  "qwen3.5:9b": {
+   "n": 16,
+   "excluded": 0,
+   "requests": 55,
+   "removable": 13,
+   "U": 0.2364,
+   "with_removable": 13
+  },
+  "pooled": {
+   "n": 64,
+   "excluded": 0,
+   "requests": 203,
+   "removable": 42,
+   "U": 0.2069,
+   "with_removable": 42
+  }
+ },
+ "gate": {
+  "U_qwen": 0.25,
+  "U_pooled": 0.25,
+  "decision": "GO"
+ }
+}
