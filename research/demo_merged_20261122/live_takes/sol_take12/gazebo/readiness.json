@@ -1,0 +1,109 @@
+{
+  "pass": true,
+  "queries": [
+    {
+      "at": 101911.214042275,
+      "states": {}
+    },
+    {
+      "at": 101911.265934818,
+      "states": {}
+    },
+    {
+      "at": 101911.360491823,
+      "states": {
+        "joint_trajectory_controller": "unconfigured"
+      }
+    },
+    {
+      "at": 101913.044139017,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 101913.095890008,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 101913.146980639,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 101913.198529013,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 101913.253313913,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "unconfigured"
+      }
+    },
+    {
+      "at": 101913.306544694,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "unconfigured"
+      }
+    },
+    {
+      "at": 101913.357478352,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "unconfigured"
+      }
+    },
+    {
+      "at": 101913.408564167,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "unconfigured"
+      }
+    },
+    {
+      "at": 101913.460016261,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "unconfigured"
+      }
+    },
+    {
+      "at": 101913.513142619,
+      "states": {
+        "joint_state_broadcaster": "active",
+        "joint_trajectory_controller": "active"
+      }
+    }
+  ],
+  "observed_values": {
+    "shoulder_pan_joint": 7.071261030415821e-19,
+    "shoulder_lift_joint": -1.5699999999997418,
+    "elbow_joint": 1.5700000000011773,
+    "wrist_1_joint": -1.5699999999970788,
+    "wrist_2_joint": -1.570000000000004,
+    "wrist_3_joint": 9.273832887013352e-19
+  },
+  "sensor_record": {
+    "kind": "observation",
+    "values": {
+      "shoulder_pan_joint": 7.071261030415821e-19,
+      "shoulder_lift_joint": -1.5699999999997418,
+      "elbow_joint": 1.5700000000011773,
+      "wrist_1_joint": -1.5699999999970788,
+      "wrist_2_joint": -1.570000000000004,
+      "wrist_3_joint": 9.273832887013352e-19
+    },
+    "sim_stamp": [
+      0,
+      453000000
+    ],
+    "received_monotonic": 101913.521123668
+  }
+}

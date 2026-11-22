@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_demo.py", line 138, in <module>
+    main()
+  File "/mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_demo.py", line 40, in main
+    out.mkdir(parents=True, exist_ok=False)
+  File "/usr/lib/python3.12/pathlib.py", line 1313, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/mnt/c/Proj/robotics/introtorobotics/weekend-run-20261121/demo-live/sol_take12'

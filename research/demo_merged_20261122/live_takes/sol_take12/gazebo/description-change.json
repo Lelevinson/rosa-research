@@ -1,0 +1,6 @@
+{
+  "installed_path": "/opt/ros/jazzy/share/ur_simulation_gz/urdf/ur_gz.urdf.xacro",
+  "original_sha256": "88e7c42e744b1363f2a9671f4fb0870a7c4ad68de3cdfaab0f0922d255d1d3a0",
+  "generated_sha256": "0f27dbb66db13b875a32fdd0934657e62009a534c04375a08243fc95e57ea3e4",
+  "only_change": "explicit_initial_positions_attribute"
+}
