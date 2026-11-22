@@ -23,3 +23,10 @@ Sol's remembered sign-in now fails (`invalid_grant`): the refresh token is no lo
 ## To finish (needs Martin)
 1. Sign in to Sol again yourself, the way you did before (Session A's route).
 2. Tell me. I run take 12 with: `hide_stale.ps1`, desktop recording, `watch_gui_zoom.sh`, `live_demo.py` (unchanged), then make `DEMO_BACKUP_take8_visual.mp4`-style split screen and update the runbook (camera step + preferred backup). The raw desktop recordings are not committed (they show the whole screen).
+
+---
+## Update 2026-11-22 21:1x: takes 12 and 13 (Sol signed in again)
+**Correction to the numbering (facts from the records).** Take 8 was NOT interrupted: it ran 19:31-19:32 and completed (3 of 3, clean close). VS Code was closed at about 21:05; the run active then was take 12 (21:05-21:06), which also completed (3 of 3). The closing only caused a duplicate start of the take 12 command, which stopped at once (folder existed). Nothing was logged as "interrupted" because nothing was. Numbers 9-12 were already used (9: black window; 10, 11: Sol sign-in failed; 12: check run), so the redo is **take 13**.
+**Cleanup:** no Gazebo server, no ffmpeg, no viewer left (4 stale `gz sim -g` viewers from takes 8-11 were stopped with `kill -9`; `hide_stale.ps1` found 0 dead windows).
+**Take 13** (same frozen configuration, Sol): D1, D2, D3 all reached the expected path (D2: inspect then park_right, 1 write; D3: stage_left, 1 write); 3 of 3 resets, clean close. Gazebo viewer window with the camera moved to the arm (`/gui/move_to`, reply true) and `hide_stale.ps1` run before: the window rendered normally and the arm fills the view.
+**Video:** `DEMO_BACKUP_take8_visual.mp4` (72 s), split screen made by `render_split.py` (crop of the Gazebo window only, scaled; log panel from the recorded trace, aligned by wall clock). The raw desktop recording shows the whole screen and is not committed. Clearer than take 7 (arm much larger), so it is now the preferred backup in `DEMO_RUNBOOK.md`.
