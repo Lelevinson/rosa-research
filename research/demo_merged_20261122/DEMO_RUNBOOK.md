@@ -24,6 +24,18 @@ MSYS_NO_PATHCONV=1 wsl.exe -d Ubuntu-24.04 -- bash -c 'cd /mnt/c/Proj/robotics/i
 - Single tasks: add `--tasks D2` (or `D1,D3`).
 - Gazebo is headless (no 3D window). The audience sees the terminal printing and the tool-call log (section 4).
 
+## 2b. Optional: show the arm in a Gazebo window (viewer only; tested in take 7)
+The launch code stays headless and unchanged. A second Gazebo window can attach to the running server through WSLg (needs `DISPLAY=:0`, which works on this laptop).
+1. Start the demo (section 2) in one terminal.
+2. Start the viewer in a second Windows terminal, right after (it waits for the simulator to be ready, finds its partition name, then opens the window): 
+```
+MSYS_NO_PATHCONV=1 wsl.exe -d Ubuntu-24.04 -- bash /mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_takes/sol_take7/watch_gui_viewer.sh
+```
+   Edit the `READY=` line in that script first to the new output folder (`.../show_01/gazebo/readiness.json`). It uses only `GZ_PARTITION` of the running server plus `gz sim -g`.
+3. The window opens after about 25 s with the arm as a small figure in the centre. Zoom with the mouse wheel on the figure. Close the window when the demo ends (the simulator closes itself).
+4. Record (optional): Win+Alt+R (Game Bar) or OBS. Put the terminal log next to the window.
+Known limits: the arm is small at the default camera; the window is a viewer, not the way to control anything; if the window does not appear, continue without it.
+
 ## 3. Reset between runs
 - Between tasks: automatic (home pose, independently confirmed; if the confirmation fails the task is NOT run and `RESET_FAILED_NOT_RUN` is written).
 - Between whole runs: the script closes its own Gazebo. Check `pgrep -af "gz sim|ros2_control_node"` is empty before the next run (section 1, step 3).
@@ -32,6 +44,7 @@ MSYS_NO_PATHCONV=1 wsl.exe -d Ubuntu-24.04 -- bash -c 'cd /mnt/c/Proj/robotics/i
 While or after a task: in the output folder, `show_01\D2_take1\trace.jsonl` is the full record. Readable view: render the video of that run (section 5) or open the file and search for `tool_start` (model calls) and `macro_internal_read` / `macro_internal_write` (the macro's own reads and its one write).
 
 ## 5. Backup video (play it if a live run stalls)
+**Preferred: `DEMO_BACKUP_take7_visual.mp4`** (split screen: Gazebo window with the arm on the left, the recorded tool-call log on the right, take 7). `DEMO_BACKUP_take3.mp4` is the log-only version.
 Made from a recorded take with `render_video.py` (Windows Python with Pillow, ffmpeg): `python render_video.py live_takes/sol_take3 DEMO_BACKUP_take3.mp4`. It shows the real recorded tool-call log of D1, D2, D3 with the label. **It has no Gazebo picture** because the simulator runs headless; say so.
 
 ## 6. What to say per task
