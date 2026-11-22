@@ -1,0 +1,20 @@
+{
+ "ended": "2026-11-22T19:41:23+0800",
+ "freeze_prompt_sha256": "61b675293438f725275b50fc01ba044ad8a3c39651e1937e63982e11cf53bded",
+ "freeze_tool_set_sha256": "2924ca6c704d0e08ac6f65959ff67018ff0d5c1193ba800a98ffc94e6c0dc19a",
+ "gazebo_close": {
+  "pid": 35279,
+  "returncode": 0
+ },
+ "his_commit": "e233cf51389885d0aaffa5453687f57437551764",
+ "label": "merged method (Levinson M + Martin bounded macro), demonstration only, not evaluated",
+ "model": "sol",
+ "ros_domain_id": 232,
+ "settings": {
+  "model": "gpt-6.1-sol",
+  "note": "hosted session settings; no local context limit"
+ },
+ "started": "2026-11-22T19:41:12+0800",
+ "take": 10,
+ "tasks": []
+}

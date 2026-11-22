@@ -1,0 +1,94 @@
+{
+  "pass": true,
+  "queries": [
+    {
+      "at": 97045.185433463,
+      "states": {}
+    },
+    {
+      "at": 97045.24365399,
+      "states": {
+        "joint_trajectory_controller": "unconfigured"
+      }
+    },
+    {
+      "at": 97045.854976692,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97045.905894926,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97045.956657093,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97046.009676125,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97046.060698074,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97046.11159364,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97046.162411409,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97046.213185522,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 97046.266081591,
+      "states": {
+        "joint_state_broadcaster": "active",
+        "joint_trajectory_controller": "active"
+      }
+    }
+  ],
+  "observed_values": {
+    "shoulder_pan_joint": 1.0963570234537205e-17,
+    "shoulder_lift_joint": -1.5699999999997418,
+    "elbow_joint": 1.5700000000011938,
+    "wrist_1_joint": -1.5699999999970988,
+    "wrist_2_joint": -1.570000000000004,
+    "wrist_3_joint": 1.5346757186726618e-17
+  },
+  "sensor_record": {
+    "kind": "observation",
+    "values": {
+      "shoulder_pan_joint": 1.0963570234537205e-17,
+      "shoulder_lift_joint": -1.5699999999997418,
+      "elbow_joint": 1.5700000000011938,
+      "wrist_1_joint": -1.5699999999970988,
+      "wrist_2_joint": -1.570000000000004,
+      "wrist_3_joint": 1.5346757186726618e-17
+    },
+    "sim_stamp": [
+      0,
+      402000000
+    ],
+    "received_monotonic": 97046.273536821
+  }
+}

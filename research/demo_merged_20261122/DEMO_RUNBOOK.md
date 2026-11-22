@@ -34,6 +34,7 @@ MSYS_NO_PATHCONV=1 wsl.exe -d Ubuntu-24.04 -- bash /mnt/c/Proj/robotics/introtor
    Edit the `READY=` line in that script first to the new output folder (`.../show_01/gazebo/readiness.json`). It uses only `GZ_PARTITION` of the running server plus `gz sim -g`.
 3. The window opens after about 25 s with the arm as a small figure in the centre. Zoom with the mouse wheel on the figure. Close the window when the demo ends (the simulator closes itself).
 4. Record (optional): Win+Alt+R (Game Bar) or OBS. Put the terminal log next to the window.
+5. Camera on the arm (not yet recorded successfully, see `LIVE_TAKE_REPORT_takes8-11.md`): after the window opens, run in WSL with the same `GZ_PARTITION`: `gz service -s /gui/move_to --reqtype gz.msgs.StringMsg --reptype gz.msgs.Boolean --timeout 3000 --req 'data: "ur"'`. `viewer_scripts_take8-11/watch_gui_zoom.sh` does attach and camera together. Before opening a new window, hide old dead Gazebo windows with `hide_stale.ps1` (they can cover the new window).
 Known limits: the arm is small at the default camera; the window is a viewer, not the way to control anything; if the window does not appear, continue without it.
 
 ## 3. Reset between runs

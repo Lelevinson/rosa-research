@@ -1,0 +1,315 @@
+{
+  "pass": true,
+  "queries": [
+    {
+      "at": 96303.358840564,
+      "states": {}
+    },
+    {
+      "at": 96303.411460454,
+      "states": {}
+    },
+    {
+      "at": 96303.467799092,
+      "states": {
+        "joint_state_broadcaster": "inactive"
+      }
+    },
+    {
+      "at": 96303.519087076,
+      "states": {
+        "joint_state_broadcaster": "inactive"
+      }
+    },
+    {
+      "at": 96305.125959783,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.177263126,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.228324146,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.279930747,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.330800699,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.3817468,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.432593334,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.485868726,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.536818869,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.587854425,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.638946836,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.689804385,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.740757841,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.791760358,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.842737351,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.893655288,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.944485966,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96305.995474797,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.047989791,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.098969838,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.149766663,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.20069815,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.251669017,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.302597882,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.35494137,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.405887459,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.456789518,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.507758389,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.558733512,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.609670135,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.661973099,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.713106535,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.764145241,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.815221183,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.866041513,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.917038448,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96306.968720971,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96307.020069804,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96307.071005576,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96307.12199676,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96307.173056538,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96307.224876514,
+      "states": {
+        "joint_state_broadcaster": "active"
+      }
+    },
+    {
+      "at": 96307.316614642,
+      "states": {
+        "joint_state_broadcaster": "active",
+        "joint_trajectory_controller": "unconfigured"
+      }
+    },
+    {
+      "at": 96307.368606348,
+      "states": {
+        "joint_trajectory_controller": "active",
+        "joint_state_broadcaster": "active"
+      }
+    }
+  ],
+  "observed_values": {
+    "shoulder_pan_joint": 6.013779770023378e-09,
+    "shoulder_lift_joint": -1.5700000171192932,
+    "elbow_joint": 1.570010199730644,
+    "wrist_1_joint": -1.5700117779821252,
+    "wrist_2_joint": -1.5700000319775065,
+    "wrist_3_joint": 8.451723610197363e-09
+  },
+  "sensor_record": {
+    "kind": "observation",
+    "values": {
+      "shoulder_pan_joint": 6.013779770023378e-09,
+      "shoulder_lift_joint": -1.5700000171192932,
+      "elbow_joint": 1.570010199730644,
+      "wrist_1_joint": -1.5700117779821252,
+      "wrist_2_joint": -1.5700000319775065,
+      "wrist_3_joint": 8.451723610197363e-09
+    },
+    "sim_stamp": [
+      2,
+      144000000
+    ],
+    "received_monotonic": 96307.376678364
+  }
+}

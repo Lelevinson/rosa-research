@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_demo.py", line 138, in <module>
+    main()
+  File "/mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_demo.py", line 67, in main
+    auth = session.__enter__()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/remembered.py", line 125, in remembered_session
+    active.access_token()  # No browser and no inference request.
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/remembered.py", line 78, in access_token
+    token = super().access_token()
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/oauth.py", line 335, in access_token
+    renewed = request_json(self.discovery['token_endpoint'], form={
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/oauth.py", line 84, in request_json
+    with open_request(Request(url, data=data, headers=headers)) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/oauth.py", line 71, in open_request
+    raise SafeError(error_code(code, 'http_error'), error.code) from None
+rosa_auth.oauth.SafeError: invalid_grant (HTTP 400)

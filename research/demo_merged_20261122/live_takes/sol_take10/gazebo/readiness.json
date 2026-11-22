@@ -1,0 +1,252 @@
+{
+  "pass": true,
+  "queries": [
+    {
+      "at": 96873.115558706,
+      "states": {
+        "joint_trajectory_controller": "inactive"
+      }
+    },
+    {
+      "at": 96873.16680245,
+      "states": {
+        "joint_trajectory_controller": "inactive"
+      }
+    },
+    {
+      "at": 96874.752152301,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96874.803095065,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96874.853791203,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96874.90460882,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96874.957928967,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.009054469,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.059727496,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.110522444,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.161264255,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.212625157,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.263355681,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.314143498,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.364854127,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.417014109,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.468112613,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.51880507,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.569490453,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.620235216,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.671009021,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.722622092,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.773297968,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.824143867,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.875062057,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.925869366,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96875.976630936,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.027690142,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.07840019,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.129206169,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.181726281,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.232819602,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.283569277,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.334968302,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.387919646,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.438710245,
+      "states": {
+        "joint_trajectory_controller": "active"
+      }
+    },
+    {
+      "at": 96876.490111626,
+      "states": {
+        "joint_state_broadcaster": "active",
+        "joint_trajectory_controller": "active"
+      }
+    }
+  ],
+  "observed_values": {
+    "shoulder_pan_joint": -8.864071008900086e-21,
+    "shoulder_lift_joint": -1.5699999999997418,
+    "elbow_joint": 1.5700000000011773,
+    "wrist_1_joint": -1.5699999999970788,
+    "wrist_2_joint": -1.570000000000004,
+    "wrist_3_joint": -7.720795113763223e-20
+  },
+  "sensor_record": {
+    "kind": "observation",
+    "values": {
+      "shoulder_pan_joint": -8.864071008900086e-21,
+      "shoulder_lift_joint": -1.5699999999997418,
+      "elbow_joint": 1.5700000000011773,
+      "wrist_1_joint": -1.5699999999970788,
+      "wrist_2_joint": -1.570000000000004,
+      "wrist_3_joint": -7.720795113763223e-20
+    },
+    "sim_stamp": [
+      1,
+      658000000
+    ],
+    "received_monotonic": 96876.49586726
+  }
+}

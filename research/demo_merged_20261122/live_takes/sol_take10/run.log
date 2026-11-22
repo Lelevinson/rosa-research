@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_demo.py", line 138, in <module>
+    main()
+  File "/mnt/c/Proj/robotics/introtorobotics/wt-b-merge/research/demo_merged_20261122/live_demo.py", line 67, in main
+    auth = session.__enter__()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/remembered.py", line 160, in remembered_session
+    retained = store.load() is not None
+               ^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/protected_store.py", line 151, in load
+    return self._request({'op': 'load'}).get('record')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Proj/robotics/introtorobotics/rosa-research/src/rosa_auth/protected_store.py", line 143, in _request
+    raise SafeError('protected_storage_unavailable') from None
+rosa_auth.oauth.SafeError: protected_storage_unavailable

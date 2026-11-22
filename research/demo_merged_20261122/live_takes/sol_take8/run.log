@@ -1,0 +1,41 @@
+A message was lost!!!
+	total count change:1
+	total count: 1---
+header:
+  stamp:
+    sec: 22
+    nanosec: 92000000
+  frame_id: base_link
+name:
+- elbow_joint
+- shoulder_lift_joint
+- shoulder_pan_joint
+- wrist_1_joint
+- wrist_2_joint
+- wrist_3_joint
+position:
+- 1.570000000001177
+- -1.5699999999997378
+- 1.4850941176805372e-20
+- -1.5699999999970748
+- -1.57
+- -8.662701896661861e-20
+velocity:
+- -6.98816005062497e-14
+- -9.453120117198718e-14
+- -8.571973426213519e-19
+- -9.034439862887211e-14
+- -9.828474297444989e-14
+- 2.879912020664621e-19
+effort:
+- -20.243163344051393
+- -20.27603184849674
+- -4.62479989200848e-16
+- -1.8228069840513874
+- 0.0004461776633019724
+- 2.6002853684282535e-19
+---
+
+D1 COMPLETE writes 0 calls 0
+D2 COMPLETE writes 1 calls 2
+D3 COMPLETE writes 1 calls 1
