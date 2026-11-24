@@ -1,0 +1,39 @@
+{
+ "_status": "Stage 2 held-out action pool (14 tasks from custody). Seeds are fixed before the first held-out request.",
+ "master_seed": 20261124,
+ "models": [
+  "lfm3:1.7b",
+  "qwen3.5:9b",
+  "gpt-oss:20b",
+  "bonsai-2:4b"
+ ],
+ "name": "stage2_exam",
+ "pools": {
+  "stage2_turtlesim": {
+   "tasks_file_env": "ROSA_STAGE2_TASKS_FILE"
+  }
+ },
+ "queue": {
+  "block_size": 24,
+  "heartbeat_seconds": 30,
+  "quarantine_after": 3
+ },
+ "temperature": 0.7,
+ "tiers": [
+  {
+   "name": "stage2",
+   "pools": [
+    "stage2_turtlesim"
+   ],
+   "seeds": [
+    1,
+    2
+   ],
+   "systems": [
+    "XM",
+    "XE1",
+    "XS0"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "_status": "Public custody live check: successful rotation and cancelled rotation across 3 systems and 1 seed.",
+ "master_seed": 20261124,
+ "models": [
+  "qwen3.5:9b"
+ ],
+ "name": "stage2_live_check",
+ "pools": {
+  "stage2_public_check": {
+   "tasks_file_env": "ROSA_STAGE2_TASKS_FILE"
+  }
+ },
+ "queue": {
+  "block_size": 24,
+  "heartbeat_seconds": 30,
+  "quarantine_after": 3
+ },
+ "temperature": 0.7,
+ "tiers": [
+  {
+   "name": "live_check",
+   "pools": [
+    "stage2_public_check"
+   ],
+   "seeds": [
+    1
+   ],
+   "systems": [
+    "XM",
+    "XE1",
+    "XS0"
+   ]
+  }
+ ]
+}

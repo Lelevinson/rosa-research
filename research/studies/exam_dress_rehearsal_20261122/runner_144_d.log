@@ -1,0 +1,7 @@
+{"event": "start", "machine": "laptop", "cells": 144, "done": 0, "killed_orphans": {"workers": [], "fixture_processes": 14}, "recovered": 0}
+{"event": "block_start", "block": 3, "cells": 12, "tier": "tier1_M_vs_E1", "model": "lfm3:1.7b", "env": "e1h"}
+{"event": "block_start", "block": 4, "cells": 12, "tier": "tier1_M_vs_E1", "model": "qwen3.5:9b", "env": "e1h"}
+{"event": "block_start", "block": 5, "cells": 12, "tier": "tier1_M_vs_E1", "model": "gpt-oss:20b", "env": "e1h"}
+{"event": "block_start", "block": 6, "cells": 12, "tier": "tier1_M_vs_E1", "model": "bonsai-2:4b", "env": "e1h"}
+{"event": "end", "state": "stopped", "done": 48, "total": 144, "skipped": 0}
+EXIT 0

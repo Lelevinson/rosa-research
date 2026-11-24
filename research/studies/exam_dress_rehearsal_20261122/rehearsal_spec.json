@@ -1,0 +1,37 @@
+{
+ "temperature": 0.7,
+ "models": [
+  "lfm3:1.7b",
+  "qwen3.5:9b",
+  "gpt-oss:20b",
+  "bonsai-2:4b"
+ ],
+ "master_seed": 20261122,
+ "pools": {
+  "held_out_v2": {
+   "tasks_file_env": "ROSA_HELDOUT_V2_TASKS"
+  }
+ },
+ "queue": {
+  "block_size": 48,
+  "heartbeat_seconds": 30,
+  "min_free_gb": 20,
+  "quarantine_after": 3
+ },
+ "name": "dress_rehearsal_stage1",
+ "tiers": [
+  {
+   "name": "tier1_M_vs_E1",
+   "systems": [
+    "EX-M",
+    "E1"
+   ],
+   "pools": [
+    "held_out_v2"
+   ],
+   "seeds": [
+    1
+   ]
+  }
+ ]
+}

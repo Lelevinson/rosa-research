@@ -1,0 +1,42 @@
+{
+ "_status": "Timing episodes on PUBLIC dev action tasks (dev bridge). Seconds per cell per model and system; no scores are used.",
+ "master_seed": 20261124,
+ "models": [
+  "lfm3:1.7b",
+  "qwen3.5:9b",
+  "gpt-oss:20b",
+  "bonsai-2:4b"
+ ],
+ "name": "stage2_timing",
+ "pools": {
+  "dev_actions": {
+   "tasks": {
+    "M1": "turtlesim",
+    "R1": "turtlesim",
+    "S3": "turtlesim"
+   }
+  }
+ },
+ "queue": {
+  "block_size": 24,
+  "heartbeat_seconds": 30,
+  "quarantine_after": 3
+ },
+ "temperature": 0.7,
+ "tiers": [
+  {
+   "name": "timing",
+   "pools": [
+    "dev_actions"
+   ],
+   "seeds": [
+    1
+   ],
+   "systems": [
+    "XM",
+    "XE1",
+    "XS0"
+   ]
+  }
+ ]
+}

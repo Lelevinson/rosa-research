@@ -10,7 +10,7 @@ REPO="$(cd "$HERE/../../../.." && pwd)"
 SPEC="$HERE/exam_spec_stage1.json"
 QDIR="$REPO/research/studies/final_exam_draft_20261118/exam_queue"
 SESSION="exam-$RUN"
-python3 "$HERE/verify_freeze.py" || { echo "FREEZE.json + FREEZE_REV1.json do not verify: refusing to start"; exit 1; }
+python3 "$HERE/verify_freeze_rev2.py" || { echo "FREEZE.json + FREEZE_REV1.json + FREEZE_REV2.json do not verify (or revision 2 is not applied): refusing to start"; exit 1; }
 tmux has-session -t "$SESSION" 2>/dev/null && { echo "tmux session $SESSION already exists"; exit 1; }
 RUNNER="cd '$REPO' && export ROS_DOMAIN_ID=219 ROS_LOCALHOST_ONLY=1 ROSA_EXAM_MACHINE=laptop && uv run --no-sync python research/studies/custodian_stage1_20261121/queue_bridge.py run --spec '$SPEC' --run-name '$RUN' --machine laptop --machines laptop:1; CODE=\$?; python3 '$QDIR/monitor_stage1.py' exit '$RUN' laptop \$CODE"
 MONITOR="cd '$REPO' && export ROSA_EXAM_MACHINE=laptop && python3 '$QDIR/monitor_stage1.py' --run-name '$RUN' --machine laptop"

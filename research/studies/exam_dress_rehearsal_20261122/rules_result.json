@@ -1,0 +1,98 @@
+{
+ "rule1": {
+  "planned_cells_in_subset": 48,
+  "full_rows": 48,
+  "compact_rows": 48,
+  "unique_full_cell_ids": 48,
+  "full_duplicates": 0,
+  "full_ids_equal_plan": true,
+  "unique_compact_keys": 48,
+  "compact_keys_equal_full_keys": true,
+  "bad_rows": [],
+  "bad_count": 0,
+  "PASS": true
+ },
+ "rule2": {
+  "traces_checked": 48,
+  "disagreements": 0,
+  "detail": [],
+  "PASS": true
+ },
+ "rule6": {
+  "traces_scanned": 48,
+  "write_commands_in_ros_start": 0,
+  "detail": [],
+  "scripted_fixture_changes_outside_agent": 16,
+  "PASS": true
+ },
+ "rule5": {
+  "per_model": {
+   "lfm3:1.7b": {
+    "exm_cells": 6,
+    "e1_cells": 6,
+    "exm_supported": 6,
+    "dev_full_reference": 6.0,
+    "drop_cells": 0.0,
+    "e1_supported": 5,
+    "paired_pairs": 6,
+    "token_ratio_exm_over_e1_on_pairs": 0.36,
+    "dev_ratio_reference": 0.42,
+    "FLAG_drop": false,
+    "FLAG_ratio": false
+   },
+   "qwen3.5:9b": {
+    "exm_cells": 6,
+    "e1_cells": 6,
+    "exm_supported": 6,
+    "dev_full_reference": 6.0,
+    "drop_cells": 0.0,
+    "e1_supported": 6,
+    "paired_pairs": 6,
+    "token_ratio_exm_over_e1_on_pairs": 0.358,
+    "dev_ratio_reference": 0.33,
+    "FLAG_drop": false,
+    "FLAG_ratio": false
+   },
+   "gpt-oss:20b": {
+    "exm_cells": 6,
+    "e1_cells": 6,
+    "exm_supported": 5,
+    "dev_full_reference": 6.0,
+    "drop_cells": 1.0,
+    "e1_supported": 5,
+    "paired_pairs": 6,
+    "token_ratio_exm_over_e1_on_pairs": 0.496,
+    "dev_ratio_reference": 0.38,
+    "FLAG_drop": true,
+    "FLAG_ratio": false
+   },
+   "bonsai-2:4b": {
+    "exm_cells": 6,
+    "e1_cells": 6,
+    "exm_supported": 5,
+    "dev_full_reference": 5.0,
+    "drop_cells": 0.0,
+    "e1_supported": 1,
+    "paired_pairs": 6,
+    "token_ratio_exm_over_e1_on_pairs": 0.381,
+    "dev_ratio_reference": 0.25,
+    "FLAG_drop": false,
+    "FLAG_ratio": false
+   }
+  },
+  "FLAGS": [
+   "gpt-oss:20b"
+  ]
+ },
+ "rule3": {
+  "returncode": 0,
+  "stderr_tail": "",
+  "pairs_reported_by_analyzer": 24,
+  "interim": false,
+  "json_keys": [
+   "meta",
+   "result"
+  ],
+  "PASS": true
+ }
+}

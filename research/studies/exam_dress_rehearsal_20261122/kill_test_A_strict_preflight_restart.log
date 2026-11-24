@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/home/levinsonchen/project/rosa-research/research/studies/custodian_stage1_20261121/queue_bridge.py", line 269, in <module>
+    main()
+  File "/home/levinsonchen/project/rosa-research/research/studies/custodian_stage1_20261121/queue_bridge.py", line 265, in main
+    queue.main()
+  File "/home/levinsonchen/project/rosa-research/research/studies/final_exam_draft_20261118/exam_queue/queue_core.py", line 627, in main
+    sys.exit(run(args))
+             ^^^^^^^^^
+  File "/home/levinsonchen/project/rosa-research/research/studies/final_exam_draft_20261118/exam_queue/queue_core.py", line 483, in run
+    spec = load_spec(args.spec)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/levinsonchen/project/rosa-research/research/studies/custodian_stage1_20261121/queue_bridge.py", line 207, in load_spec
+    backend().preflight()
+  File "/home/levinsonchen/project/rosa-research/research/_artifacts/runs/exam_dress_rehearsal_20261122/custody/stage1_rehearsal/fixtures.py", line 36, in preflight
+    raise RuntimeError(f"fixture nodes already in the domain: {leftovers[:3]}")
+RuntimeError: fixture nodes already in the domain: ['/e1h/alder/pewter', '/e1h/basalt/sorrel', '/e1h/basalt/zircon']
+EXIT 1

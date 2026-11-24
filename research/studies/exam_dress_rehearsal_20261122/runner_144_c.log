@@ -1,0 +1,3 @@
+{"event": "start", "machine": "laptop", "cells": 144, "done": 0, "killed_orphans": {"workers": [22562], "fixture_processes": 0}, "recovered": 0}
+{"event": "block_start", "block": 2, "cells": 12, "tier": "tier1_M_vs_E1", "model": "lfm3:1.7b", "env": "e1h"}
+EXIT 137

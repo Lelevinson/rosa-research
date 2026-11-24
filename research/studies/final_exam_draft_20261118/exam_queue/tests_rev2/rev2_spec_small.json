@@ -1,0 +1,4 @@
+{"name": "rev2_small", "master_seed": 424242, "temperature": 0.7, "models": ["m1"],
+ "pools": {"p": {"tasks": {"t1": "stage3", "t2": "stage3"}}},
+ "tiers": [{"name": "tier1", "systems": ["M"], "pools": ["p"], "seeds": [1]}],
+ "queue": {"block_size": 4, "heartbeat_seconds": 1, "retry_wait_seconds": 0, "min_free_gb": 1, "gpu_wait_seconds": 0, "quarantine_after": 2}}

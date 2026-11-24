@@ -1,0 +1,219 @@
+{
+ "meta": {
+  "bootstrap_seed": 20261122,
+  "draws": 10000,
+  "inputs": {
+   "/home/levinsonchen/project/rosa-research/research/studies/exam_dress_rehearsal_20261122/compact_rows.jsonl": "6b974982c42aebaa5024e387b3ee2c14177cf1a8acfc78263a1494b62081d85d"
+  },
+  "machine": "laptop",
+  "margin_points": -5.0,
+  "script_sha256": "8b18afc2e3a57196b3c0340636503f5d26646a31ea3520ea646f08cd31b21bf3",
+  "token_ratio_bar": 0.8
+ },
+ "result": {
+  "baseline": "E1",
+  "invalidation": {
+   "compromised": false,
+   "overall_share": 0.0,
+   "per_system": {
+    "E1": {
+     "flagged": false,
+     "infrastructure": 0,
+     "rows": 24,
+     "share": 0.0
+    },
+    "EX-M": {
+     "flagged": false,
+     "infrastructure": 0,
+     "rows": 24,
+     "share": 0.0
+    }
+   }
+  },
+  "models": [
+   "lfm3:1.7b",
+   "qwen3.5:9b",
+   "gpt-oss:20b",
+   "bonsai-2:4b"
+  ],
+  "name_fix_both_ways": {
+   "flips_supported_to_unsupported": 0,
+   "flips_unsupported_to_supported": 0,
+   "raw": {
+    "difference_interval": [
+     8.333333333333334,
+     33.333333333333336
+    ],
+    "difference_points": 20.833333333333332,
+    "draws": 10000,
+    "label": "the same episodes scored on the raw answer (name fix off)",
+    "pairs": 24,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.2771036267567665,
+     0.4776575388447861
+    ],
+    "supported_baseline": 17,
+    "supported_primary": 22,
+    "tasks": 6,
+    "token_ratio": 0.38616251968611653,
+    "tokens_baseline": 584803,
+    "tokens_primary": 225829
+   },
+   "rewritten": {
+    "difference_interval": [
+     8.333333333333334,
+     33.333333333333336
+    ],
+    "difference_points": 20.833333333333332,
+    "draws": 10000,
+    "label": "primary: the answer M submitted (name fix applied)",
+    "pairs": 24,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.2771036267567665,
+     0.4776575388447861
+    ],
+    "supported_baseline": 17,
+    "supported_primary": 22,
+    "tasks": 6,
+    "token_ratio": 0.38616251968611653,
+    "tokens_baseline": 584803,
+    "tokens_primary": 225829
+   },
+   "rewritten_answers": 0
+  },
+  "per_model_secondary": {
+   "bonsai-2:4b": {
+    "difference_interval": [
+     33.333333333333336,
+     100.0
+    ],
+    "difference_points": 66.66666666666667,
+    "draws": 10000,
+    "pairs": 6,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.22026542195744855,
+     0.48278338707421536
+    ],
+    "supported_baseline": 1,
+    "supported_primary": 5,
+    "tasks": 6,
+    "token_ratio": 0.38085056438937764,
+    "tokens_baseline": 195964,
+    "tokens_primary": 74633
+   },
+   "gpt-oss:20b": {
+    "difference_interval": [
+     0.0,
+     0.0
+    ],
+    "difference_points": 0.0,
+    "draws": 10000,
+    "pairs": 6,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.3608882863204409,
+     0.6635796635796636
+    ],
+    "supported_baseline": 5,
+    "supported_primary": 5,
+    "tasks": 6,
+    "token_ratio": 0.49624051275392767,
+    "tokens_baseline": 84719,
+    "tokens_primary": 42041
+   },
+   "lfm3:1.7b": {
+    "difference_interval": [
+     0.0,
+     50.0
+    ],
+    "difference_points": 16.666666666666668,
+    "draws": 10000,
+    "pairs": 6,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.15732987081492603,
+     0.647850713842334
+    ],
+    "supported_baseline": 5,
+    "supported_primary": 6,
+    "tasks": 6,
+    "token_ratio": 0.3596531907274894,
+    "tokens_baseline": 170353,
+    "tokens_primary": 61268
+   },
+   "qwen3.5:9b": {
+    "difference_interval": [
+     0.0,
+     0.0
+    ],
+    "difference_points": 0.0,
+    "draws": 10000,
+    "pairs": 6,
+    "ratio_draws_skipped": 0,
+    "ratio_interval": [
+     0.27286057571685834,
+     0.47266229898749257
+    ],
+    "supported_baseline": 6,
+    "supported_primary": 6,
+    "tasks": 6,
+    "token_ratio": 0.35798814356306113,
+    "tokens_baseline": 133767,
+    "tokens_primary": 47887
+   }
+  },
+  "planned_pairs": 24,
+  "primary": "EX-M",
+  "primary_comparison": {
+   "criterion_a_holds": true,
+   "criterion_b_holds": true,
+   "difference_interval": [
+    8.333333333333334,
+    33.333333333333336
+   ],
+   "difference_points": 20.833333333333332,
+   "draws": 10000,
+   "margin_points": -5.0,
+   "pairs": 24,
+   "ratio_draws_skipped": 0,
+   "ratio_interval": [
+    0.2771036267567665,
+    0.4776575388447861
+   ],
+   "supported_baseline": 17,
+   "supported_primary": 22,
+   "tasks": 6,
+   "token_ratio": 0.38616251968611653,
+   "token_ratio_bar": 0.8,
+   "tokens_baseline": 584803,
+   "tokens_primary": 225829,
+   "verdict": "PASS: claim supported (both criteria hold)"
+  },
+  "status": "FINAL",
+  "unpaired_cells": 0,
+  "without_capped_secondary": {
+   "difference_interval": [
+    0.0,
+    30.434782608695652
+   ],
+   "difference_points": 13.636363636363637,
+   "draws": 10000,
+   "pairs": 22,
+   "ratio_draws_skipped": 0,
+   "ratio_interval": [
+    0.24511979333712972,
+    0.47774208110619476
+   ],
+   "removed_pairs": 2,
+   "supported_baseline": 17,
+   "supported_primary": 20,
+   "tasks": 6,
+   "token_ratio": 0.37166681993930406,
+   "tokens_baseline": 500198,
+   "tokens_primary": 185907
+  }
+ }
+}

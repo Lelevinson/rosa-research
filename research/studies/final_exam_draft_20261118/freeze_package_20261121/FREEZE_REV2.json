@@ -1,0 +1,50 @@
+{
+ "added_files": {
+  "research/studies/exam_dress_rehearsal_20261122/OLLAMA_AUTOUPDATE.md": "b7d922138c1528ba2237259e8341048d77defcee44c3ce029aba81cc4123b738",
+  "research/studies/exam_dress_rehearsal_20261122/PARITY.md": "9352f47e5334879c0e6e35da8da042cfe56337d8560c2be59c4e848fc48dbb6e",
+  "research/studies/exam_dress_rehearsal_20261122/REPORT.md": "5c34959ce45105e69ce5746772ae69515ab092712450e5c2b781c255e5f82833",
+  "research/studies/exam_dress_rehearsal_20261122/REV2_FREEZE_DRAFT.md": "072e76a7dd9886e38d2c785583f2698afc9d8905d51f7c3e623cbb215b13d094",
+  "research/studies/exam_dress_rehearsal_20261122/RULES.md": "2d66fe39c8266c0a98e7d57945041deb0daba6a9ca73ec617a8effde13532e08",
+  "research/studies/final_exam_draft_20261118/RUNBOOK.md": "8f91056582897312b7f402c6154d702d3540a33ad5bdd2ecfe38f6454421eb05",
+  "research/studies/final_exam_draft_20261118/exam_queue/analyze_when_complete.py": "3201aa1d0a23546f4d581339f300ce95dc673dcab6448fc87489b25243d06fa8",
+  "research/studies/final_exam_draft_20261118/exam_queue/integrity_look.py": "78e0292eb0a7a18e9b3ccd726cf13ddc3277f80b50cf2974d1b0f5bab641ee89",
+  "research/studies/final_exam_draft_20261118/exam_queue/multi_attempt_count.py": "9a1a0b9f73b782a679e2eef3f18a756da53431ff02f068d9709b949430d29bca",
+  "research/studies/final_exam_draft_20261118/exam_queue/queue_core_rev2.py": "d455a84eeb4e1c675892ca2242b632ee1d7777cf8357fa717f77de8468e95e1c",
+  "research/studies/final_exam_draft_20261118/exam_queue/tests_rev2/dummy_system_rev2.py": "2c1c10b9a9074ebf33f55ac0d9ab4ea79bd735d7d4950905cb06949ef6e06394",
+  "research/studies/final_exam_draft_20261118/exam_queue/tests_rev2/negative_control.py": "717bad87c0020a88ee96379751bbde6030141f92eb7ddec00dda426a7e0c9d8f",
+  "research/studies/final_exam_draft_20261118/exam_queue/tests_rev2/rev2_spec.json": "574c9dd24e6a980e64c0e827c6a8892da800d071b5bd4a6adb5b6b4f7b0e589f",
+  "research/studies/final_exam_draft_20261118/exam_queue/tests_rev2/rev2_spec_small.json": "22235a69f6e3c577d962916c748f0565f82039ec50f7e272bebf67233d83ede8",
+  "research/studies/final_exam_draft_20261118/exam_queue/tests_rev2/run_rev2.py": "c26f572af64dda012c537750d1672ad213612077db657a24d5bba72243d5b917",
+  "research/studies/final_exam_draft_20261118/exam_queue/tests_rev2/test_rev2_crash.py": "cb0760f999dffb9c4f9c2adb12d9ee56fbfb6a2b2266c69b5568fbab51121006",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/make_freeze_rev2.py": "5cd1c64950349c4e15e8ac8b396bcc37814633dbcecbe9f41657282a1faad8d2",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/start_stage1_laptop_rev2.sh": "d70605dc12b1b6ae0cf904a7b5bb03b21520f1243c86e84dc04cc50055f28772",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/verify_freeze_rev2.py": "072b689e2670830c85776ffc0a5696c71fd0f91b029b2490840b45fde899fa75"
+ },
+ "apply": {
+  "research/studies/final_exam_draft_20261118/exam_queue/queue_core.py": "research/studies/final_exam_draft_20261118/exam_queue/queue_core_rev2.py",
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/start_stage1_laptop.sh": "research/studies/final_exam_draft_20261118/freeze_package_20261121/start_stage1_laptop_rev2.sh"
+ },
+ "changed_files": {
+  "research/studies/final_exam_draft_20261118/exam_queue/queue_core.py": {
+   "new_sha256": "d455a84eeb4e1c675892ca2242b632ee1d7777cf8357fa717f77de8468e95e1c",
+   "old_sha256": "bd8fd3c6318144e36207f64d249745b7c41299380c6332467a43652e036850a0"
+  },
+  "research/studies/final_exam_draft_20261118/freeze_package_20261121/start_stage1_laptop.sh": {
+   "new_sha256": "d70605dc12b1b6ae0cf904a7b5bb03b21520f1243c86e84dc04cc50055f28772",
+   "old_sha256": "889f4ecc40a3ef9119925ff58aef67b21e384a17799d8b1d0c2fa34bf1020f75"
+  }
+ },
+ "date": "2026-11-22",
+ "git_head": "9fa2c67f3b67413838c4d3004734774dad8646d7",
+ "known_limitations": [
+  "D2 receipt-write failure after inference is not caught by the ledger (post-hoc count: multi_attempt_count.py)",
+  "analysis wrapper issues (orphan compact row in another tier, planned pair count from observed rows, D4 sensitivity skipped without cohort file) are to be fixed after the start and before the first tier-1 look"
+ ],
+ "ollama_auto_update": "off: auto_update_enabled = 0 in the app database (read-only check 2026-11-22), context_length = 65536; verify_freeze_rev2.py and version_guard.py stop the run on any version or digest change",
+ "ollama_version": "0.40.17",
+ "original_freeze_sha256": "40b26b0fc0ca391294541553c912225e612f94a4a22b2c567321375a0e8b974b",
+ "reason": "Revision 2 repairs the queue after the dress rehearsal and the independent review (REV2_FREEZE_DRAFT.md): compact-row crash window and log integrity (encode before append, reconcile before every dispatch and exit, torn-line evidence, conflicting duplicates stop the run, legacy rows without model/seed carried forward from the cell id); durable interrupted-attempt ledger and the revised crash re-run rule (owner decisions D2, D3); run-owned ROS discovery daemon stopped by PID with positive ownership and a survivor gate; the integrity look and the only comparison entry point analyze_when_complete.py (D1, D4); post-hoc count of cells with more than one model-request attempt. Arms, prompts, tool menus, tasks, scorer v2.0, success criteria, seeds, models, master seed, specs, analyze_primary.py, queue_bridge.py and bridge.py are unchanged.",
+ "rev1_sha256": "8f4b7ee3d6dabd7e614e6d835ccd47a75988b0bc860d8b36bf9db5a62ea97075",
+ "revision": 2,
+ "status_note": "PREPARED: candidates are hashed but not copied over their targets; `make_freeze_rev2.py apply` does that; verify_freeze_rev2.py exit 2 = prepared, not applied"
+}

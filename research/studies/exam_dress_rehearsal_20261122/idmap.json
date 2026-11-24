@@ -1,0 +1,20 @@
+{
+ "hfc1b9fb98120f40a58324f7c384124f7": "u3",
+ "h57f2615313d9adc5d82e57fd2c9cb339": "p3",
+ "hd86baa432741bf1d99fbdc18ead81a67": "h4",
+ "h1f8d6fe365210d521955c95aa2222c1e": "v2",
+ "hafb5be8438769c8266f3ff51a056ec07": "e1h_amb_1",
+ "he443fa0bd21856eab87949187c3a8084": "e1h_amb_2",
+ "h5f637112e9f57fb2f39bb51cfc566851": "e1h_abs_1",
+ "he088f31c2d772827964cb42c646a84f7": "e1h_abs_2",
+ "h9093af7f4e613832d3c7a04f174a1b26": "e1h_chg_1",
+ "h85168b6fb88ccbebccec9dd91f3d1e34": "e1h_chg_2",
+ "h1e93d149b87c3a5b3f5ccaee74cdcf30": "nf_single_1",
+ "h3e1cd620cec38ad5527a42484637449b": "nf_single_2",
+ "h7ebd98dba6a8b1d7d906a46e8bff3b13": "nf_multi_1",
+ "h2394522a7e20c1e206ce27cc52450213": "nf_multi_2",
+ "h21bfcf6f737bf36648488adfabdb4ae0": "nf_amb_1",
+ "h977603d7e5b54cb1ca110742a74f58c6": "nf_amb_2",
+ "hf2035a2ebae26f29bdfd881ac6885db5": "nf_exact",
+ "h994f65c3670f5df2d5e762ba639994f9": "nf_absent"
+}

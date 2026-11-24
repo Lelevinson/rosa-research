@@ -1,0 +1,229 @@
+{
+ "rows": [
+  [
+   "EX-M vs dev FULL",
+   "prompt_messages",
+   "4a1c25793e5bff2e",
+   "4a1c25793e5bff2e",
+   true
+  ],
+  [
+   "EX-M vs dev FULL",
+   "rendered",
+   "ae30f549e40e6289",
+   "ae30f549e40e6289",
+   true
+  ],
+  [
+   "EX-M vs dev FULL",
+   "tools",
+   "813ba1ef68997af9",
+   "813ba1ef68997af9",
+   true
+  ],
+  [
+   "EX-M vs dev FULL",
+   "bound_visible",
+   "ca70c744a9e32274",
+   "ca70c744a9e32274",
+   true
+  ],
+  [
+   "EX-M vs dev FULL",
+   "executor",
+   "f936003e722316c6",
+   "f936003e722316c6",
+   true
+  ],
+  [
+   "EX-M vs dev FULL",
+   "malformed-argument probes, raw",
+   "4110240516685b22",
+   "90cb5e8db75a77bf",
+   false
+  ],
+  [
+   "EX-M vs dev FULL",
+   "malformed-argument probes, arm label normalised",
+   "2f152f0dec8fa74b",
+   "99bb45c25d599d26",
+   false
+  ],
+  [
+   "EX-M vs dev FULL",
+   "malformed-argument probes, label normalised, without final_answer",
+   "c8b5ff86d5f56c5d",
+   "c8b5ff86d5f56c5d",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "prompt_messages",
+   "4a1c25793e5bff2e",
+   "4a1c25793e5bff2e",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "rendered",
+   "ae30f549e40e6289",
+   "ae30f549e40e6289",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "tools",
+   "813ba1ef68997af9",
+   "813ba1ef68997af9",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "bound_visible",
+   "ca70c744a9e32274",
+   "ca70c744a9e32274",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "executor",
+   "f936003e722316c6",
+   "f936003e722316c6",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "malformed-argument probes, raw",
+   "6ce5bca3081fbded",
+   "90cb5e8db75a77bf",
+   false
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "malformed-argument probes, arm label normalised",
+   "ed6ea6ac1c02f744",
+   "99bb45c25d599d26",
+   false
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "malformed-argument probes, label normalised, without final_answer",
+   "c8b5ff86d5f56c5d",
+   "c8b5ff86d5f56c5d",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "prompt_messages",
+   "7acbb0555cba9f40",
+   "7acbb0555cba9f40",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "rendered",
+   "f0f0a9cecc64fb06",
+   "f0f0a9cecc64fb06",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "tools",
+   "b4a9669471c93159",
+   "b4a9669471c93159",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "bound_visible",
+   "a095e67c4a29df79",
+   "a095e67c4a29df79",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "executor",
+   "2b9a28a607ac8adf",
+   "2b9a28a607ac8adf",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "malformed-argument probes, raw",
+   "7a94139abdb84420",
+   "7a94139abdb84420",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "malformed-argument probes, arm label normalised",
+   "7a94139abdb84420",
+   "7a94139abdb84420",
+   true
+  ],
+  [
+   "E1 dev vs exam",
+   "malformed-argument probes, label normalised, without final_answer",
+   "7a94139abdb84420",
+   "7a94139abdb84420",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "final_answer_tool samples, label normalised",
+   "1b80861bf49651ef",
+   "a7ed987f80384926",
+   false
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "final_answer_tool samples, label normalised, shadow-gate event dropped",
+   "a7ed987f80384926",
+   "a7ed987f80384926",
+   true
+  ],
+  [
+   "EX-M vs dev NAMEFIX arm",
+   "final_answer_tool samples: returned text + accepted answer only",
+   "f8e2a27bf5368b44",
+   "f8e2a27bf5368b44",
+   true
+  ],
+  [
+   "EX-M vs dev FULL (no name fix)",
+   "final_answer_tool samples, label normalised",
+   "f9a9b6d849426580",
+   "a7ed987f80384926",
+   false
+  ],
+  [
+   "EX-M vs dev FULL (no name fix)",
+   "final_answer_tool samples, label normalised, shadow-gate event dropped",
+   "f9a9b6d849426580",
+   "a7ed987f80384926",
+   false
+  ],
+  [
+   "EX-M vs dev FULL (no name fix)",
+   "final_answer_tool samples: returned text + accepted answer only",
+   "f8e2a27bf5368b44",
+   "f8e2a27bf5368b44",
+   true
+  ]
+ ],
+ "sources": {
+  "ablation_arms.py": "cb1633d1f1dd023bef8ed0ee1efbd28270caee26eb38e9f72603220a6c51bb2e",
+  "harness.py": "62364091a5190708aca62cd963524d3686ce0d819b95e78e1390246350ecdc1c",
+  "run_pilot.py": "d08fd6a6c981eab60f95eaf9422ff36b9e23191477ca236719e846585cbf741a",
+  "fair_arms.py": "af604ca5aabc0038cde54319e22b525567499a5c3a3981e44a88a2c71e2794d4",
+  "exam_arms.py": "d8ee1959cb27449dc54dc79c1e46a514ee5f9bb3fac938c9ccbeee973c5a4be0",
+  "namefix_arm.py": "a5be156bd9352258ab12c8d879ea51934a1cff8213fd10c6d3a7a252692dddd4",
+  "round1_harness.py": "ba3470238365cfe1fa04dbc82551688fdea95490115e172dc09592250773205a",
+  "namefix_rule.py": "4f9312f366b4de6d0bf1460ada099dfca1669421c3a678841d2263002faadc1a",
+  "answer_gate.py": "795e882b88c2a96354e5d786e0f235d547219297a9ce1490638147f92afac456",
+  "scorer_v2.py": "c6b02716152da0258b1296e7e6e0178d966c1c7c425f96e8c3f725bfd62b4ed9",
+  "queue_bridge.py": "5cdd5463ff298287fa23f3d731fdfba251192e53275e2776189954dbd477d4dd",
+  "namefix_rule module path (both paths)": "/home/levinsonchen/project/rosa-research/research/studies/name_fix_applied_20261117/namefix_rule.py",
+  "answer_gate module path (both paths)": "/home/levinsonchen/project/rosa-research/research/studies/build_round1_20261115/answer_gate.py"
+ }
+}

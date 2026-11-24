@@ -1,4 +1,22 @@
-"""Exam queue: plan, shard, run one GPU job at a time, resume, heartbeat. Read RUNBOOK.md (section "Queue") first.
+"""Exam queue, REVISION 2 (draft, not applied): plan, shard, run one GPU job at a time, resume, heartbeat. Read RUNBOOK.md (section "Queue") first.
+At apply time this file replaces queue_core.py (rev 2 of the Stage 1 freeze, see exam_dress_rehearsal_20261122/REV2_FREEZE_DRAFT.md). Differences from the frozen queue_core.py:
+ 1. Result writes (Results.add / add_contended): both JSON lines are ENCODED before either is appended; the cell is marked done right after the full row is durable; a failed or
+    interrupted compact append is repaired by reconcile() from the durable full row (no rescoring, no re-run) before any dispatch. In-process recovery can no longer append a
+    second full row for the same cell.
+ 2. Torn last line of an own JSONL log (crash in the middle of a write): the torn bytes are preserved in a `.torn_*` evidence file next to the log and the log is cut back to
+    the last complete line; a torn line that is not the last one stops the run. Conflicting duplicate full rows (same cell, different outcome or cost) stop the run;
+    agreeing duplicates (old incident) are counted and reported, never silently dropped.
+ 3. Durable per-cell accounting of interrupted attempts: a start receipt before every worker, a close receipt after it returns or raises (STARTS_<machine>.jsonl). At start-up an
+    attempt with a start receipt and no close receipt, no attempt line and no result row is INTERRUPTED: it is written once to INTERRUPTED_<machine>.jsonl (with the number of model
+    requests seen in its trace and whether it had an episode_end) and the cell is run again ONCE; a second interrupted attempt that made model requests quarantines the cell.
+    The decision uses only these durable markers, never the content of a trace.
+ 5. Candidate 3: discovery daemon stopped by PID only (no domain-wide RPC), positive ownership (domain + run marker ROSA_EXAM_RUN + ROS_HOME), survivor gate (DaemonSurvivorError blocks dispatch and
+    the run never ends as "finished").
+ 4. Candidate 2 (after Codex's review): the run-owned ROS discovery daemon is stopped between episodes, at resume and at the end; legacy full rows without model/seed are completed in memory
+    from the cell id; a failed compact append can no longer end in "finished" (reconcile before every exit, integrity errors are fatal, never a block retry); torn attempt receipts are repaired
+    before recovery; a worker attempt that has an attempt line but no result after model requests is under the same once-only ledger as an interrupted attempt (second one quarantines);
+    the failure count of zero-request interruptions is derived from the ledger (idempotent).
+Rules in words: REV2_FREEZE_DRAFT.md.
 
   python queue_core.py plan   --spec SPEC [--machines laptop:0.4,lab:0.6]
   python queue_core.py run    --spec SPEC --run-name NAME [--machine laptop] [--machines laptop:0.4,lab:0.6] [--dummy]
@@ -128,8 +146,117 @@ def my_cells(cells, machine, machines):
 
 
 # ------------------------------------------------------------------ results log
+class QueueIntegrityError(RuntimeError):
+    """A log is inconsistent in a way the queue must not repair silently (conflicting duplicates, corrupt middle line, compact row without full row ...). The run stops."""
+
+
+OUTCOME_FIELDS = ("supported_complete", "supported_raw", "name_fix_changed", "exact", "llm_requests", "input_tokens", "output_tokens", "native_ops", "ending", "run_id")
+
+
+def repair_torn_tail(path):
+    """Own JSONL log only. A crash in the middle of an append can leave a last line without its newline or with broken JSON.
+    - last line is complete JSON but lacks the newline: the record is kept, the newline is added;
+    - last line is broken: its bytes are copied to `<name>.torn_<UTC time>` (evidence, never deleted) and the log is cut back to the last complete line;
+    - a broken line that is not the last line: QueueIntegrityError (nothing is changed).
+    Returns a short description of what was done, or None."""
+    path = Path(path)
+    if not path.exists() or path.stat().st_size == 0:
+        return None
+    data = path.read_bytes()
+    lines = data.split(b"\n")
+    complete, tail = lines[:-1], lines[-1]           # tail is b"" when the file ends with a newline
+    for number, line in enumerate(complete, 1):
+        if not line.strip():
+            continue
+        try:
+            json.loads(line)
+        except ValueError:
+            if number == len(complete) and tail == b"":      # a broken last line that does end with a newline: treat as torn as well
+                tail, complete = line, complete[:-1]
+                break
+            raise QueueIntegrityError(f"{path.name}: line {number} is not valid JSON and is not the last line; refusing to continue")
+    if tail.strip() == b"":
+        if len(complete) != len(lines) - 1 or data.endswith(b"\n"):
+            keep = b"".join(line + b"\n" for line in complete)
+            if keep != data:
+                _replace_durably(path, keep)
+        return None
+    try:
+        json.loads(tail)
+        _replace_durably(path, data if data.endswith(b"\n") else data + b"\n")
+        return f"{path.name}: last record complete, newline added"
+    except ValueError:
+        stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
+        evidence, number = path.with_name(path.name + ".torn_" + stamp), 0
+        while evidence.exists():                     # never overwrite another copy of torn evidence
+            number += 1
+            evidence = path.with_name(f"{path.name}.torn_{stamp}_{number}")
+        with evidence.open("xb") as handle:          # the evidence is on disk before the source is cut back
+            handle.write(tail)
+            handle.flush()
+            os.fsync(handle.fileno())
+        _fsync_directory(path.parent)
+        _replace_durably(path, b"".join(line + b"\n" for line in complete))
+        return f"{path.name}: torn last line ({len(tail)} bytes) kept in {evidence.name}, log cut back to the last complete line"
+
+
+def _fsync_directory(directory):
+    descriptor = os.open(str(directory), os.O_RDONLY)
+    try:
+        os.fsync(descriptor)
+    finally:
+        os.close(descriptor)
+
+
+def repair_attempt_ledgers(runs_dir):
+    """The runner's own attempt lines (`attempts.jsonl` in every block folder of this run) get the same torn-tail repair as the queue's ledgers, before recover() or the interruption accounting read them.
+    A torn attempt line means the worker's completion receipt is not durable: the attempt is then treated as having no attempt line (see account_interrupted)."""
+    notes = []
+    for path in sorted(Path(runs_dir).glob("*/attempts.jsonl")):
+        note = repair_torn_tail(path)
+        if note:
+            notes.append(note)
+            notify.log("torn attempt receipt repaired: " + note)
+    return notes
+
+
+LEGACY_NOTE = "model/seed completed in memory from the cell id (archived full row of the revision-1 incident); the stored row is not changed"
+
+
+def fill_legacy_fields(row):
+    """The archived full rows of the two cells run before revision 1 have no `model` and `seed` (the bridge row did not carry them). They are recovered IN MEMORY from the cell id
+    `pool|task|system|model|seed`; the stored record is never rewritten. Every row (old or new) is checked against its cell id: a disagreement stops the run."""
+    parts = row["cell_id"].split("|")
+    if len(parts) != 5 or not parts[4].lstrip("-").isdigit():
+        raise QueueIntegrityError("a full row has a cell id that is not pool|task|system|model|seed")
+    pool, task, system, model, seed = parts
+    for key, value in (("pool", pool), ("task", task), ("system", system), ("model", model)):
+        if key in row and row[key] != value:
+            raise QueueIntegrityError(f"a full row disagrees with its cell id in `{key}`")
+    if "seed" in row and str(row["seed"]) != seed:
+        raise QueueIntegrityError("a full row disagrees with its cell id in `seed`")
+    if "model" in row and "seed" in row:
+        return row
+    return dict(row, model=row.get("model", model), seed=row.get("seed", int(seed)))
+
+
+def _replace_durably(path, content):
+    tmp = path.with_name(path.name + ".tmp")
+    with tmp.open("wb") as handle:
+        handle.write(content)
+        handle.flush()
+        os.fsync(handle.fileno())
+    os.replace(tmp, path)
+
+
+def read_jsonl(path):
+    path = Path(path)
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()] if path.exists() else []
+
+
 class Results:
-    """Append-only per-machine log of full rows (private) plus a redacted compact table (committed). Deduplicates by cell id."""
+    """Append-only per-machine log of full rows (private) plus a redacted compact table (committed). Deduplicates by cell id.
+    Revision 2: encode both lines first, mark the cell done when the FULL row is durable, repair the compact table from the full log (reconcile), stop on inconsistent logs."""
 
     def __init__(self, run_name, machine, salt, spec_sha256="", git_head=""):
         self.spec_sha256, self.git_head = spec_sha256, git_head
@@ -142,29 +269,58 @@ class Results:
         self.compact_path = self.compact_dir / f"compact_{machine}.jsonl"
         self.contended_path = self.dir / f"CONTENDED_LOG_{machine}.jsonl"  # episodes that ran under GPU contention: kept, never deleted, never counted as results
         self.compact_contended_path = self.compact_dir / f"compact_{machine}_contended.jsonl"
+        self.starts_path = self.dir / f"STARTS_{machine}.jsonl"            # start / close receipts of every worker
+        self.interrupted_path = self.dir / f"INTERRUPTED_{machine}.jsonl"  # durable accounting of discarded interrupted attempts
         self.lock = threading.Lock()
+        self.repairs = [r for r in (repair_torn_tail(p) for p in (self.path, self.compact_path, self.contended_path, self.compact_contended_path, self.starts_path, self.interrupted_path)) if r]
+        for note in self.repairs:
+            notify.log("torn log repaired: " + note)
         self.done = self.read_done()
         self.contended_run_ids = self.read_contended_run_ids()
+        self.duplicate_agreeing = self.check_duplicates()
 
     def read_contended_run_ids(self):
         """run_id (block folder / episode folder) of every episode kept as GPU-contended. recover() must not turn such an attempt into a result later: it has no GPU data of its own."""
-        ids = set()
-        if self.contended_path.exists():
-            ids = {json.loads(line)["run_id"] for line in self.contended_path.read_text().splitlines() if line.strip()}
-        return ids
+        return {row["run_id"] for row in read_jsonl(self.contended_path)}
 
     def read_done(self):
         done = set()
         for path in self.dir.glob("RESULTS_LOG_*.jsonl"):  # all machines' logs that are present locally
-            for line in path.read_text().splitlines():
-                if line.strip():
-                    done.add(json.loads(line)["cell_id"])
+            for row in self.read_other_or_own(path):
+                done.add(row["cell_id"])
         return done
+
+    def read_other_or_own(self, path):
+        """Own log: already repaired. Another machine's log is read only: an incomplete last line there is ignored (never edited)."""
+        rows = []
+        for line in Path(path).read_text().splitlines():
+            if not line.strip():
+                continue
+            try:
+                rows.append(json.loads(line))
+            except ValueError:
+                if Path(path) == self.path:
+                    raise QueueIntegrityError(f"{Path(path).name}: unreadable line after repair")
+        return rows
+
+    def check_duplicates(self):
+        """Same cell twice in the own full log: agreeing records (outcome and cost fields equal) are an old incident and are only counted; a disagreement stops the run."""
+        first, agreeing = {}, 0
+        for row in read_jsonl(self.path):
+            cell = row["cell_id"]
+            if cell not in first:
+                first[cell] = row
+            elif {k: first[cell].get(k) for k in OUTCOME_FIELDS} == {k: row.get(k) for k in OUTCOME_FIELDS}:
+                agreeing += 1
+            else:
+                raise QueueIntegrityError(f"conflicting duplicate full rows for one cell ({cell.split('|')[0]}|...): outcome or cost fields differ")
+        return agreeing
 
     @staticmethod
     def append_line(path, record):
+        line = record if isinstance(record, str) else json.dumps(record, default=str)
         with path.open("a") as handle:
-            handle.write(json.dumps(record, default=str) + "\n")
+            handle.write(line + "\n")
             handle.flush()
             os.fsync(handle.fileno())
 
@@ -173,9 +329,14 @@ class Results:
         with self.lock:
             full = dict(row, cell_id=cell["id"], system=cell["system"], pool=cell["pool"], tier=cell["tier"], pair=cell["pair"], machine=self.machine, logged_at=time.strftime("%FT%T%z"),
                         spec_sha256=self.spec_sha256, git_head=self.git_head)
-            self.append_line(self.contended_path, full)
+            full_line = json.dumps(full, default=str)                                                   # encode both before appending either
+            compact_line = json.dumps(self.contended_compact(full), default=str)
+            self.append_line(self.contended_path, full_line)
             self.contended_run_ids.add(full["run_id"])
-            self.append_line(self.compact_contended_path, dict(compact(full, self.salt), ending="infrastructure_gpu_contended", gpu_reasons=full["gpu_state"]["reasons"]))
+            self.append_line(self.compact_contended_path, compact_line)
+
+    def contended_compact(self, full):
+        return dict(compact(full, self.salt), ending="infrastructure_gpu_contended", gpu_reasons=full["gpu_state"]["reasons"])
 
     def add(self, cell, row):
         with self.lock:
@@ -183,10 +344,66 @@ class Results:
                 return False
             full = dict(row, cell_id=cell["id"], system=cell["system"], pool=cell["pool"], tier=cell["tier"], pair=cell["pair"], machine=self.machine, logged_at=time.strftime("%FT%T%z"),
                         spec_sha256=self.spec_sha256, git_head=self.git_head)
-            self.append_line(self.path, full)
-            self.append_line(self.compact_path, compact(full, self.salt))
+            full_line = json.dumps(full, default=str)                 # 1. encode both lines: a serialization error leaves nothing half written
+            compact_line = json.dumps(compact(full, self.salt), default=str)
+            self.append_line(self.path, full_line)                    # 2. the FULL row is the durable result; the cell is done from here on, so an in-process recovery cannot add it twice
             self.done.add(cell["id"])
+            try:
+                self.append_line(self.compact_path, compact_line)     # 3. the compact row; if this fails or the process dies here, reconcile() writes it from the full row
+            except OSError as error:
+                notify.log(f"compact row not written ({type(error).__name__}); it will be rebuilt from the full row before the next dispatch")
             return True
+
+    def reconcile(self):
+        """Make the compact tables equal to the full logs of THIS machine, before any dispatch. A full row without compact row gets its compact row (same function, same salt, no rescoring,
+        no re-run). The join is verified afterwards; a compact row without a full row, or a compact row that differs from its full row, stops the run. Returns the number of rows written."""
+        with self.lock:
+            written = self._reconcile_pair(self.path, self.compact_path, lambda full: compact(full, self.salt))
+            written += self._reconcile_ordered(self.contended_path, self.compact_contended_path, self.contended_compact)
+            return written
+
+    def _reconcile_ordered(self, full_path, compact_path, make_compact):
+        """Contended episodes: one full row and one compact row per ATTEMPT (a cell can have several, and their compact rows carry no run id), appended in the same order.
+        The compact table must equal the first rows of the rebuilt compact rows; missing rows at the end are written; anything else stops the run."""
+        wanted = [make_compact(row) for row in read_jsonl(full_path)]
+        have = read_jsonl(compact_path)
+        comparable = lambda rec: {k: v for k, v in rec.items() if k not in ("gpu_state", "gpu_samples")}
+        if len(have) > len(wanted) or any(comparable(h) != comparable(w) for h, w in zip(have, wanted)):
+            raise QueueIntegrityError(f"{compact_path.name}: does not match the compact rows rebuilt from {full_path.name}")
+        for want in wanted[len(have):]:
+            self.append_line(compact_path, json.dumps(want, default=str))
+        return len(wanted) - len(have)
+
+    def _reconcile_pair(self, full_path, compact_path, make_compact, key="cell_id"):  # results: one compact row per CELL
+        fulls, seen = [], set()
+        for row in read_jsonl(full_path):
+            if row[key] not in seen:                     # the first full record of a cell is the result (as in add())
+                seen.add(row[key])
+                fulls.append(fill_legacy_fields(row) if key == "cell_id" else row)
+        existing = read_jsonl(compact_path)
+        comparable = lambda rec: {k: v for k, v in rec.items() if k not in ("gpu_state", "gpu_samples")}
+        by_cell = {}
+        for rec in existing:
+            by_cell.setdefault(rec["cell"] if key == "cell_id" else json.dumps(comparable(rec), sort_keys=True), []).append(rec)
+        written = 0
+        expected_keys = set()
+        for row in fulls:
+            want = make_compact(row)
+            ident = want["cell"] if key == "cell_id" else json.dumps(comparable(want), sort_keys=True)
+            expected_keys.add(ident)
+            have = by_cell.get(ident)
+            if not have:
+                self.append_line(compact_path, json.dumps(want, default=str))
+                written += 1
+            else:
+                if any(comparable(rec) != comparable(want) for rec in have):
+                    raise QueueIntegrityError(f"{compact_path.name}: a compact row differs from the compact row rebuilt from its full row")
+                if len(have) > 1:
+                    raise QueueIntegrityError(f"{compact_path.name}: the same cell has {len(have)} compact rows")
+        extra = set(by_cell) - expected_keys
+        if extra:
+            raise QueueIntegrityError(f"{compact_path.name}: {len(extra)} compact row(s) without a full row")
+        return written
 
 
 def ending_class(row):
@@ -244,11 +461,13 @@ class Context:
         self.current_trace = None
         self.ollama_ok, self.notified = True, set()
         self.contended_count = 0
+        self.interrupted_total = 0
+        self.current_run_id = None
         self.lock = threading.Lock()
 
     # failures: a block group that keeps failing is skipped (and reported); so is a cell that never produces a result
     def save_failures(self):
-        self.failures_path.write_text(json.dumps(self.failures, indent=1))
+        _replace_durably(self.failures_path, json.dumps(self.failures, indent=1).encode())   # rev 2: atomic, never half written
 
     def group_key(self, cell):
         return f"{cell['model']}|{cell['env']}|{cell['tier']}"
@@ -261,12 +480,60 @@ class Context:
             notify.send("study_failing", machine=self.machine, tries=n, **self.counts())
         self.save_failures()
 
-    def note_cell_failure(self, cell):
+    def ledger_entries(self):
+        return [e for e in read_jsonl(self.results.interrupted_path) if e.get("event") in ("interrupted", "failed_after_requests")]
+
+    def note_cell_failure(self, cell, reason=None):
+        """A failed attempt of a cell. Rev 2 (owner decision D2): an attempt that made model requests and has no result (nonzero worker exit, missing ending marker, no trace row ...) is
+        written to the once-only ledger (event `failed_after_requests`, once per run folder): the cell may run once more, a second such attempt quarantines it. Attempts without a model request,
+        and GPU-contended attempts (their own frozen rule), keep the generic count (quarantine after `quarantine_after`)."""
+        run_id = getattr(self, "current_run_id", None)
+        if reason not in ("contended", "zero_requests") and run_id:
+            trace = self.runs_dir / run_id / "trace.jsonl"
+            requests = trace.read_text(errors="replace").count('"kind": "model_start"') if trace.exists() else 0
+            if requests > 0:
+                known = {e["run_id"] for e in self.ledger_entries()}
+                if run_id not in known:
+                    self.results.append_line(self.results.interrupted_path, dict(event="failed_after_requests", cell_id=cell["id"], run_id=run_id, requests_seen=requests, trace_exists=True,
+                                                                                trace_had_episode_end='"kind": "episode_end"' in trace.read_text(errors="replace"),
+                                                                                reason="attempt line without result after model requests", detected_at=time.strftime("%FT%T%z")))
+                self.apply_ledger_quarantine()
+                return
+        counted = self.failures.setdefault("counted_runs", [])
+        if run_id and run_id in counted:   # rev 2: one failed attempt is one failure. The frozen code counted it again every time recover() re-logged the same attempt (end of each block, every restart)
+            return
+        if run_id:
+            counted.append(run_id)
         n = self.failures["cells"].get(cell["id"], 0) + 1
         self.failures["cells"][cell["id"]] = n
         if n >= self.cfg["quarantine_after"] and cell["id"] not in self.failures["quarantined_cells"]:
             self.failures["quarantined_cells"].append(cell["id"])
         self.save_failures()
+
+    def apply_ledger_quarantine(self):
+        """Quarantine decisions that follow from the durable ledger (idempotent, recomputed from the file, so a crash between a ledger write and this call loses nothing):
+        two ledger entries with model requests (interrupted or failed after requests) for one cell; or the generic failure count plus the cell's zero-request interruptions reaching `quarantine_after`."""
+        entries, by_cell, quarantined = self.ledger_entries(), {}, []
+        for e in entries:
+            by_cell.setdefault(e["cell_id"], []).append(e)
+        already = {e["cell_id"] for e in read_jsonl(self.results.interrupted_path) if e.get("event") == "quarantined"}
+        for cell_id, mine in by_cell.items():
+            if cell_id in self.results.done:
+                continue
+            with_requests = [e for e in mine if e["requests_seen"] > 0]
+            zero = [e for e in mine if e["requests_seen"] == 0]
+            why = None
+            if len(with_requests) >= 2:
+                why = "second interrupted or failed attempt with model requests"
+            elif self.failures["cells"].get(cell_id, 0) + len(zero) >= self.cfg["quarantine_after"]:
+                why = "failure count reached the quarantine limit"
+            if why and cell_id not in self.failures["quarantined_cells"]:
+                self.failures["quarantined_cells"].append(cell_id)
+                self.save_failures()
+                quarantined.append(cell_id)
+            if why and cell_id not in already:
+                self.results.append_line(self.results.interrupted_path, dict(event="quarantined", cell_id=cell_id, reason=why, at=time.strftime("%FT%T%z")))
+        return quarantined
 
     def pending(self):
         bad_groups, bad_cells = set(self.failures["quarantined_groups"]), set(self.failures["quarantined_cells"])
@@ -289,7 +556,7 @@ class Context:
         gpu = health.gpu_memory_mib()
         status = dict(machine=self.machine, pid=os.getpid(), state=self.state, started_at=self.started, heartbeat_at=time.time(), last_progress_at=progress, current_cell=self.current, block=self.block,
                       ollama_ok=self.ollama_ok, disk_free_gb=health.disk_free_gb(self.dir), gpu_used_mib=gpu[0] if gpu else None, gpu_total_mib=gpu[1] if gpu else None, tiers=by_tier,
-                      active_tier=next((t for t, v in by_tier.items() if v["done"] < v["total"]), None), quarantined_groups=self.failures["quarantined_groups"], contended_episodes=self.contended_count, **self.counts())
+                      active_tier=next((t for t, v in by_tier.items() if v["done"] < v["total"]), None), quarantined_groups=self.failures["quarantined_groups"], contended_episodes=self.contended_count, interrupted_attempts=self.interrupted_total, **self.counts())
         tmp = self.status_path.with_suffix(".tmp")
         tmp.write_text(json.dumps(status, indent=1))
         os.replace(tmp, self.status_path)
@@ -331,12 +598,80 @@ def kill_orphan_workers(runs_dir):
     return killed
 
 
+class DaemonSurvivorError(QueueIntegrityError):
+    """A run-owned ROS discovery daemon is still alive after TERM and KILL. Dispatch is blocked and the run can never end as "finished"."""
+
+
+def run_daemon_pids(domain, home, marker):
+    """PIDs of the ROS 2 discovery daemons that POSITIVELY belong to this run. All of these must hold: the command line is the daemon's (`python3 -c from ros2cli.daemon.daemonize import main; main()
+    --name ros2-daemon ...`, checked on Jazzy; a shell that merely mentions it is not matched); the process environment has ROS_DOMAIN_ID=domain; it has ROSA_EXAM_RUN=marker (the queue sets
+    this variable to `<run name>/<machine>` at start, every worker and every ros2 command line inherits it, so a daemon started by this run's agent tools carries it; a daemon started by anyone else,
+    by another run name or by a person does not); and, when the runner has ROS_HOME (the custodian launcher sets one bundle-wide home), the same ROS_HOME. Domain-only or home-only matching is
+    never enough: without a marker nothing is matched."""
+    if not domain or not marker:
+        return []
+    found = []
+    for entry in Path("/proc").iterdir():
+        if not entry.name.isdigit() or int(entry.name) == os.getpid():
+            continue
+        try:
+            cmdline = (entry / "cmdline").read_bytes().replace(b"\0", b" ").decode(errors="replace")
+            environ = (entry / "environ").read_bytes().split(b"\0")
+        except (OSError, PermissionError):
+            continue
+        if not cmdline.startswith(("/usr/bin/python", "python")) or "ros2cli.daemon.daemonize" not in cmdline:
+            continue
+        if f"ROS_DOMAIN_ID={domain}".encode() not in environ or f"ROSA_EXAM_RUN={marker}".encode() not in environ:
+            continue
+        if home and f"ROS_HOME={home}".encode() not in environ:
+            continue
+        found.append(int(entry.name))
+    return sorted(found)
+
+
+def stop_run_daemon(grace=6.0):
+    """Stop the discovery daemon(s) this run started (every `ros2 node list` without --no-daemon starts one; it shows up as a hidden node, which the real static fixtures reject at start).
+    PID-scoped: SIGTERM to each run-owned PID, a wait, then SIGKILL to those still alive. The domain-wide `ros2 daemon stop` RPC is NOT used (it would stop whichever daemon answers in the domain).
+    Ownership is re-checked immediately before every signal (a recycled PID is not signalled). Returns (pids found, pids still alive after TERM and KILL)."""
+    domain, marker, home = os.environ.get("ROS_DOMAIN_ID"), os.environ.get("ROSA_EXAM_RUN"), os.environ.get("ROS_HOME")
+    pids = run_daemon_pids(domain, home, marker)
+    if not pids:
+        return [], []
+    for sig, wait in ((signal.SIGTERM, grace), (signal.SIGKILL, 2.0)):
+        for pid in run_daemon_pids(domain, home, marker):
+            try:
+                os.kill(pid, sig)
+            except ProcessLookupError:
+                pass
+        deadline = time.time() + wait
+        while time.time() < deadline and run_daemon_pids(domain, home, marker):
+            time.sleep(0.2)
+        if not run_daemon_pids(domain, home, marker):
+            break
+    return pids, run_daemon_pids(domain, home, marker)
+
+
+def stop_run_daemon_or_block(where):
+    """The survivor gate: stop the run-owned daemon(s); if one is still alive raise DaemonSurvivorError (dispatch blocked, run ends as integrity_error, never "finished")."""
+    pids, survivors = stop_run_daemon()
+    if survivors:
+        raise DaemonSurvivorError(f"{len(survivors)} run-owned ROS discovery daemon(s) still alive after TERM and KILL ({where}); no further episode is dispatched")
+    return pids
+
+
+def daemon_cleanup_enabled(dummy):
+    """Real runs always; dummy (queue test) runs only when a test asks for it, with an explicit unused domain."""
+    return dummy is None or os.environ.get("ROSA_QUEUE_DAEMON_CLEANUP") == "1"
+
+
 def episode_cleanup(ctx, cell):
     """Between episodes: kill ros2 command-line children that outlived their episode (a hung `ros2 param get` would block the next episode's oracle) and, for a Gazebo environment,
     call the configured reset hook. Fixture nodes of the running block are NOT touched (they carry other command lines)."""
     leftovers = health.ros_leftovers(os.environ.get("ROS_DOMAIN_ID", "220"), patterns=("ros2 param", "ros2 node", "ros2 topic", "ros2 service", "ros2 action"))
     if leftovers:
         health.kill_leftovers(os.environ.get("ROS_DOMAIN_ID", "220"), patterns=("ros2 param", "ros2 node", "ros2 topic", "ros2 service", "ros2 action"))
+    if daemon_cleanup_enabled(getattr(ctx, "dummy_run", None)):
+        stop_run_daemon_or_block("after an episode")   # rev 2: the run's own discovery daemon is not a leftover pattern of the frozen cleanup; a survivor blocks the next dispatch
     hook = ctx.cfg.get("gazebo_reset_command", {}).get(cell["env"])
     if hook:
         subprocess.run(hook, shell=True, timeout=120, check=False)  # the Nav2 / TurtleBot3 reset hook (stack.py stop + start) is configured per environment
@@ -379,7 +714,20 @@ def make_dispatcher(ctx, dummy_module=None):
         ctx.current = f"{cell['tier']}:{cell['system']}:{cell['model']}"
         ctx.current_trace, ctx.last_progress = directory / "trace.jsonl", time.time()
         before = gpu_state.snapshot()
-        attempt = (module.run_worker if dummy_module else systems.worker_of(module))(out, directory, dict(cell), timeout, recorder)
+        try:
+            ctx.results.reconcile()  # rev 2: compact tables equal the full logs before any new episode starts
+        except OSError as error:
+            raise QueueIntegrityError(f"compact table could not be brought up to date: {error!r}") from error
+        run_id = f"{out.name}/{directory.name}"
+        ctx.current_run_id = run_id
+        ctx.results.append_line(ctx.results.starts_path, dict(event="start", cell_id=cell["id"], run_id=run_id, at=time.strftime("%FT%T%z")))  # durable start receipt
+        try:
+            attempt = (module.run_worker if dummy_module else systems.worker_of(module))(out, directory, dict(cell), timeout, recorder)
+        except BaseException as error:
+            if not isinstance(error, (KeyboardInterrupt, SystemExit)):  # an exception the runner survives is not an interruption; a hard kill never reaches this line
+                ctx.results.append_line(ctx.results.starts_path, dict(event="close", run_id=run_id, how="raised", error=type(error).__name__))
+            raise
+        ctx.results.append_line(ctx.results.starts_path, dict(event="close", run_id=run_id, how="returned"))
         after = gpu_state.snapshot()
         # samples of the episode window: the runner's own two snapshots plus whatever the host-side sampler logged in between
         gpu = gpu_state.summarize([before] + gpu_state.read_window(before["t"], after["t"]) + [after], cell["model"])
@@ -399,13 +747,13 @@ def log_episode(ctx, module, out, directory, attempt, cell, gpu=None):
         notify.log(f"episode without trace ({type(error).__name__}) for a {cell['tier']} cell")
         return False
     if row.get("llm_requests", 0) == 0:  # infrastructure failure (no model request): not a result, the cell is tried again
-        ctx.note_cell_failure(cell)
+        ctx.note_cell_failure(cell, reason="zero_requests")
         return False
     if gpu is not None:
         row["gpu_state"] = gpu
     if gpu is not None and gpu["contended"]:  # infrastructure failure by the frozen contention rule: row kept apart, cell tried again, decided without looking at the answer
         ctx.results.add_contended(cell, row)
-        ctx.note_cell_failure(cell)
+        ctx.note_cell_failure(cell, reason="contended")
         ctx.contended_count += 1
         notify.log(f"episode under GPU contention ({'; '.join(gpu['reasons'])}) for a {cell['tier']} cell; it will be run again")
         return False
@@ -414,8 +762,44 @@ def log_episode(ctx, module, out, directory, attempt, cell, gpu=None):
     return True
 
 
+def account_interrupted(ctx):
+    """Revision 2, crash re-run rule. An attempt is INTERRUPTED when its start receipt has no attempt line in any attempts.jsonl (the durable completion boundary; a torn attempt line counts as
+    missing) and no result or contended row, and the worker function did not merely raise. (An attempt with an attempt line but no row is not interrupted: recover() and the failed-attempt
+    path of note_cell_failure handle it, with the same once-only ledger when it made model requests.) Each interrupted attempt is written once to
+    INTERRUPTED_<machine>.jsonl with the number of model requests in its trace and whether the trace had an episode_end; the content of the trace is never used for the decision.
+      * first interrupted attempt of a cell: the cell is simply run again (once); the discarded attempt stays on disk;
+      * an interrupted attempt that made no model request: the generic failure count (quarantine after `quarantine_after`);
+      * a second interrupted attempt that made model requests: the cell is quarantined and reported (the tier is then 'finished with skips').
+    Returns (new ledger entries, cells quarantined now)."""
+    results = ctx.results
+    repair_attempt_ledgers(ctx.runs_dir)
+    starts = read_jsonl(results.starts_path)
+    closed = {r["run_id"] for r in starts if r["event"] == "close" and r.get("how") == "raised"}   # a worker function that RAISED is an ordinary block failure; one that RETURNED must have left an attempt line
+    receipts = {f"{a.parent.name}/{json.loads(line)['directory']}" for a in ctx.runs_dir.glob("*/attempts.jsonl") for line in a.read_text().splitlines() if line.strip()}
+    result_runs = {r.get("run_id") for r in read_jsonl(results.path)} | results.contended_run_ids
+    ledger = read_jsonl(results.interrupted_path)
+    known = {e["run_id"] for e in ledger if e.get("event") in ("interrupted", "failed_after_requests")}
+    by_id = {c["id"]: c for c in ctx.mine}
+    new_entries = []
+    for start in (r for r in starts if r["event"] == "start"):
+        run_id = start["run_id"]
+        if run_id in closed or run_id in receipts or run_id in result_runs or run_id in known:
+            continue
+        trace = ctx.runs_dir / run_id / "trace.jsonl"
+        text = trace.read_text(errors="replace") if trace.exists() else ""
+        entry = dict(event="interrupted", cell_id=start["cell_id"], run_id=run_id, requests_seen=text.count('"kind": "model_start"'), trace_exists=trace.exists(),
+                     trace_had_episode_end='"kind": "episode_end"' in text, reason="start receipt without close receipt, attempt line or result", detected_at=time.strftime("%FT%T%z"))
+        results.append_line(results.interrupted_path, entry)
+        ledger.append(entry)
+        new_entries.append(entry)
+        known.add(run_id)
+    quarantined = ctx.apply_ledger_quarantine()   # derived from the durable ledger: zero-request interruptions are charged here, idempotently
+    return len(new_entries), quarantined
+
+
 def recover(ctx, dummy_module=None):
     """Log episodes that finished (attempt record + trace) but whose row was not written because the runner died in between. Idempotent."""
+    repair_attempt_ledgers(ctx.runs_dir)   # a torn attempt line must not block recovery
     added = 0
     for attempts in sorted(ctx.runs_dir.glob("*/attempts.jsonl")):
         for line in attempts.read_text().splitlines():
@@ -426,6 +810,7 @@ def recover(ctx, dummy_module=None):
             directory = attempts.parent / attempt["directory"]
             if not (directory / "trace.jsonl").exists() or f"{attempts.parent.name}/{directory.name}" in ctx.results.contended_run_ids:
                 continue
+            ctx.current_run_id = f"{attempts.parent.name}/{directory.name}"
             module = dummy_module or systems.runner_module(cell["system"])
             added += log_episode(ctx, module, attempts.parent, directory, attempt, cell)
     return added
@@ -484,6 +869,7 @@ def run(args):
     cells = build_cells(spec)
     machines = parse_machines(args.machines)
     check_machine_selection(args.machine, machines, cells)
+    os.environ["ROSA_EXAM_RUN"] = f"{args.run_name}/{args.machine}"   # ownership marker inherited by every worker, ros2 command line and discovery daemon of this run
     ctx = Context(args, spec, cells, machines)
     dummy = None
     if args.dummy:
@@ -493,15 +879,33 @@ def run(args):
     if dummy is None:  # fixture nodes of a session whose runner was hard-killed still hold the ROS domain; the next session would refuse to start (found in the mini exam)
         fixtures_killed, _alive = health.kill_leftovers(os.environ.get("ROS_DOMAIN_ID", "220"))
         killed = dict(workers=killed, fixture_processes=len(fixtures_killed))
+    ctx.dummy_run = dummy
+    if daemon_cleanup_enabled(dummy):
+        try:
+            stopped = stop_run_daemon_or_block("at start-up")
+        except DaemonSurvivorError as error:   # nothing has been dispatched: end here, loudly
+            ctx.state = "integrity_error"
+            print(json.dumps(dict(event="integrity_error", error=repr(error)[:300])), flush=True)
+            ctx.write_status()
+            return 5
+        if not isinstance(killed, dict):
+            killed = dict(workers=killed, fixture_processes=0)
+        killed = dict(killed, discovery_daemons_stopped=len(stopped), discovery_daemons_surviving=0)
     recovered = recover(ctx, dummy)
+    reconciled = ctx.results.reconcile()                      # rev 2: compact tables equal the full logs before anything is dispatched
+    interrupted, quarantined = account_interrupted(ctx)        # rev 2: durable accounting of interrupted attempts
+    ctx.interrupted_total = len([e for e in read_jsonl(ctx.results.interrupted_path) if e.get("event") == "interrupted"])
+    integrity = dict(torn_repairs=ctx.results.repairs, compact_rows_rebuilt=reconciled, interrupted_attempts_recorded=interrupted, quarantined_after_second_interruption=len(quarantined),
+                     duplicate_full_rows_agreeing=ctx.results.duplicate_agreeing)
     if args.cleanup_only:  # test hook: run only the start-up cleanup (orphan workers, fixture leftovers, recovery) and exit
-        print(json.dumps(dict(event="cleanup_only", killed=killed, recovered=recovered)), flush=True)
+        print(json.dumps(dict(event="cleanup_only", killed=killed, recovered=recovered, **integrity)), flush=True)
         return 0
     ctx.start_heartbeat()
-    print(json.dumps(dict(event="start", machine=ctx.machine, cells=len(ctx.mine), done=len(ctx.results.done), killed_orphans=killed, recovered=recovered)), flush=True)
+    print(json.dumps(dict(event="start", machine=ctx.machine, cells=len(ctx.mine), done=len(ctx.results.done), killed_orphans=killed, recovered=recovered, **integrity)), flush=True)
     block_number = len([p for p in ctx.runs_dir.iterdir() if p.is_dir()]) + 1  # block folders from earlier starts are kept; numbering continues
     exit_code = 0
     try:
+      try:
         while True:
             pending = ctx.pending()
             if not pending:
@@ -526,6 +930,8 @@ def run(args):
             except StopRequested:
                 ctx.state = "stopped"
                 break
+            except QueueIntegrityError:
+                raise                                   # rev 2: an inconsistent log is never a block retry that could quarantine the wrong cells
             except Exception as error:  # noqa: BLE001  a failed block: count it, recover finished episodes, wait, go on
                 print(json.dumps(dict(event="block_failed", block=block_number, error=repr(error)[:200])), flush=True)
                 ctx.note_group_failure(ctx.group_key(block[0]))
@@ -535,8 +941,22 @@ def run(args):
                 if dummy is None:
                     health.kill_leftovers(os.environ.get("ROS_DOMAIN_ID", "220"))  # fixture or stack processes that a failed session did not stop
                 block_number += 1
-    except KeyboardInterrupt:
+      except KeyboardInterrupt:
         ctx.state = "stopped"
+      except QueueIntegrityError as error:
+        ctx.state, exit_code = "integrity_error", 5
+        print(json.dumps(dict(event="integrity_error", error=repr(error)[:300])), flush=True)
+      try:   # rev 2: no exit (finished, stopped, failed) while a full row lacks its compact row
+        ctx.results.reconcile()
+      except (QueueIntegrityError, OSError) as error:
+        ctx.state, exit_code = "integrity_error", 5
+        print(json.dumps(dict(event="integrity_error", error=repr(error)[:300])), flush=True)
+      if daemon_cleanup_enabled(dummy):
+        try:
+            stop_run_daemon_or_block("at the end of the run")
+        except DaemonSurvivorError as error:   # never "finished" with a run-owned daemon alive
+            ctx.state, exit_code = "integrity_error", 5
+            print(json.dumps(dict(event="integrity_error", error=repr(error)[:300])), flush=True)
     finally:
         with ctx.lock:
             if dummy is None:
@@ -585,6 +1005,9 @@ def merge_check(args):
     expected = {c["id"]: c for c in build_cells(spec)}
     run_dir = ARTIFACTS / args.run_name
     seen, duplicates, outside, wrong_spec = {}, [], [], []
+    first_row, conflicting = {}, []
+    accepted_path = run_dir / "ACCEPTED_DUPLICATES.json"  # evidence-backed list of cell ids whose agreeing duplicate full rows are an old incident (written by the owner or Codex, never by the queue)
+    accepted = set(json.loads(accepted_path.read_text())) if accepted_path.exists() else set()
     this_spec = hashlib.sha256(Path(args.spec).read_bytes()).hexdigest()
     for path in sorted(run_dir.glob("RESULTS_LOG_*.jsonl")):
         for line in path.read_text().splitlines():
@@ -593,9 +1016,12 @@ def merge_check(args):
                 wrong_spec.append(row["cell_id"])
             if row["cell_id"] in seen:
                 duplicates.append(row["cell_id"])
+                if {k: first_row[row["cell_id"]].get(k) for k in OUTCOME_FIELDS} != {k: row.get(k) for k in OUTCOME_FIELDS}:
+                    conflicting.append(row["cell_id"])
             elif row["cell_id"] not in expected:
                 outside.append(row["cell_id"])
             seen.setdefault(row["cell_id"], row["machine"])
+            first_row.setdefault(row["cell_id"], row)
     missing = [i for i in expected if i not in seen]
     incomplete_pairs = {c["pair"] for i, c in expected.items() if i not in seen} & {c["pair"] for i, c in expected.items() if i in seen}
     machines = parse_machines(args.machines)
@@ -605,10 +1031,16 @@ def merge_check(args):
     ownership_checked = names != ["all"]
     wrong_machine = [i for i, m in seen.items() if i in expected and ownership_checked and owner_of(expected[i]["pair"], machines) != m]
     unknown_machines = sorted({m for m in seen.values()} - set(names)) if ownership_checked else []
-    print(json.dumps(dict(expected=len(expected), logged=len(seen), duplicates=len(duplicates), outside_spec=len(outside), missing=len(missing), pairs_with_some_systems_missing=len(incomplete_pairs),
+    unaccepted = [c for c in duplicates if c not in accepted]
+    compact_dir = COMPACT_ROOT / args.run_name
+    salt = json.loads(LOCAL_CONFIG.read_text()).get("salt", "unsalted") if LOCAL_CONFIG.exists() else "unsalted"
+    opaque = lambda text: hashlib.sha256((salt + text).encode()).hexdigest()[:12]
+    compact_keys = {json.loads(l)["cell"] for path in compact_dir.glob("compact_*.jsonl") if "contended" not in path.name for l in path.read_text().splitlines() if l.strip()}
+    full_without_compact = sum(opaque(i) not in compact_keys for i in seen)
+    print(json.dumps(dict(expected=len(expected), logged=len(seen), duplicates=len(duplicates), duplicates_conflicting=len(conflicting), duplicates_not_in_accepted_list=len(unaccepted), full_rows_without_compact_row=full_without_compact, outside_spec=len(outside), missing=len(missing), pairs_with_some_systems_missing=len(incomplete_pairs),
                           logged_on_the_wrong_machine=len(wrong_machine) if ownership_checked else "not checked (--machines all:1 has no owners)",
                           machines_in_logs_not_in_machines_arg=unknown_machines, rows_from_a_different_spec=len(wrong_spec)), indent=1))
-    return 0 if not duplicates and not outside and not wrong_spec else 1
+    return 0 if not unaccepted and not conflicting and not outside and not wrong_spec and not full_without_compact else 1
 
 
 def main():
@@ -632,7 +1064,10 @@ def main():
     elif args.command == "recover":
         spec = load_spec(args.spec)
         ctx = Context(args, spec, build_cells(spec), parse_machines(args.machines))
-        print("recovered", recover(ctx, __import__("dummy_system") if args.dummy else None))
+        recovered = recover(ctx, __import__("dummy_system") if args.dummy else None)
+        rebuilt = ctx.results.reconcile()
+        interrupted, quarantined = account_interrupted(ctx)
+        print("recovered", recovered, "compact_rows_rebuilt", rebuilt, "interrupted_recorded", interrupted, "quarantined", len(quarantined), "torn_repairs", ctx.results.repairs)
 
 
 if __name__ == "__main__":
