@@ -1,0 +1,20 @@
+where 3/3
+    1 PASS {"object": "red_block", "location": "Resting on the table", "position": {"x": 0.45, "y": 0.1, "z": 0.0225, "units": "metres", "frame": "robo
+    6 PASS {"object": "red_block", "location": "Resting on the table.", "position_m": {"x": 0.45, "y": 0.1, "z": 0.0225}, "reference_frame": "robot bas
+    11 PASS {"object": "red_block", "location": "Resting on the table", "position_m": {"x": 0.45, "y": 0.1, "z": 0.0225}, "reference_frame": "robot base
+pick 3/3
+    2 PASS {"status": "success", "message": "Picked up the red block and verified it was lifted with the gripper."}
+    7 PASS {"success": true, "message": "Picked up the red block and verified it was lifted with the gripper."}
+    12 PASS {"success": true, "message": "Picked up the red block. It is held by the gripper, and the lift was verified."}
+put 3/3
+    3 PASS {"success": true, "message": "The red block has been placed on the tray. Verified that it rests on the tray."}
+    8 PASS {"success": true, "message": "The red block is now resting on the tray."}
+    13 PASS {"success": true, "message": "The red block is now resting on the tray."}
+put_again 3/3
+    4 PASS {"status": "already_satisfied", "message": "The red block is already resting on the tray. No arm movement was needed."}
+    9 PASS {"status": "already_satisfied", "message": "The red block is already resting on the tray. No arm movement was needed."}
+    14 PASS {"status": "already_satisfied", "message": "The red block is already resting on the tray. No arm movement was performed."}
+out_of_scope 3/3
+    5 PASS {"status": "unsupported_request", "message": "I can\u2019t make coffee with the available robot skills. I can only move the red block and pl
+    10 PASS {"status": "unsupported_request", "message": "I can\u2019t make coffee with the available robot skills. I can only move the red block onto t
+    15 PASS {"status": "unsupported", "message": "I can\u2019t make coffee with the available robot skills. I can only move the red block to the tray or

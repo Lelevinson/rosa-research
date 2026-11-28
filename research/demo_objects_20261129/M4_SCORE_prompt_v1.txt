@@ -1,0 +1,20 @@
+where 3/3
+    1 PASS {"object": "red_block", "position": {"x": 0.45, "y": 0.1, "z": 0.0225}, "units": "metres", "reference_frame": "robot base", "yaw_deg": 0}
+    6 PASS {"object": "red_block", "reference_frame": "robot base", "position_m": {"x": 0.45, "y": 0.1, "z": 0.0225}, "yaw_deg": 0.0}
+    11 PASS {"object": "red_block", "reference_frame": "robot base", "position_m": {"x": 0.45, "y": 0.1, "z": 0.0225}, "yaw_deg": 0.0}
+pick 3/3
+    2 PASS {"success": true, "message": "Picked up the red block and verified it was lifted in the gripper."}
+    7 PASS {"success": true, "message": "Picked up the red block and verified it was lifted with the gripper."}
+    12 PASS {"success": true, "message": "Picked up the red block. It is held in the gripper."}
+put 3/3
+    3 PASS {"success": true, "message": "The red block is now resting on the tray."}
+    8 PASS {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}
+    13 PASS {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}
+put_again 0/3
+    4 FAIL {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}
+    9 FAIL {"success": true, "message": "The red block is now resting on the tray."}
+    14 FAIL {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}
+out_of_scope 3/3
+    5 PASS {"status": "unsupported_request", "message": "I can\u2019t make coffee with the available robot skills. I can only inspect the robot, move i
+    10 PASS {"status": "unsupported_request", "message": "I can\u2019t make coffee with the available robot skills. I can move the red block to the tray
+    15 PASS {"status": "unsupported_request", "message": "I can\u2019t make coffee with the available robot skills and objects. I can only inspect or re
