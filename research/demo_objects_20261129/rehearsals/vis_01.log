@@ -1,0 +1,49 @@
+================================================================
+  ROSA interactive demo with objects
+  merged method (Levinson M + Martin bounded macro) + object tools, Sol; ground-truth poses; simulated gripper with grasp assist; demonstration only, not evaluated
+================================================================
+World reset: ok {'set_pose': True, 'home_ok': True, 'block': [0.45, 0.1, 0.0225]}
+Type a request, or: reset | quit
+
+request> reset
+World reset: ok {'set_pose': True, 'home_ok': True, 'block': [0.45, 0.1, 0.0225]}
+
+request> Put the red block on the tray.
+================================================================
+REQUEST 1: Put the red block on the tray.
+================================================================
+
+-- model call 1 ...
+   model asks: get_object_pose {"name": "red_block"}
+   (tokens in 1934 / out 21, 3.1 s)
+   >> tool: get_object_pose {'name': 'red_block'}
+   [object] get_object_pose -> OK: red_block pose in the robot base frame (ground truth from the simulator)
+   << result: {"detail": "red_block pose in the robot base frame (ground truth from the simulator)", "evidence": {"held_by_gripper": false, "position": [0.45, 0.1, 0.0225], "resting_on": "table", "yaw_deg": -0.0}, "ok": true, "step...
+
+-- model call 2 ...
+   model asks: pick {"object": "red_block"}
+   (tokens in 2046 / out 19, 1.8 s)
+   >> tool: pick {'object': 'red_block'}
+   [object] pick -> OK: picked up the red block (lifted 0.158 m with the gripper)
+   << result: {"detail": "picked up the red block (lifted 0.158 m with the gripper)", "evidence": {"block_after_lift": [0.45, 0.1, 0.18], "block_before": [0.45, 0.1, 0.0225], "fingers_after_close": [0.02, 0.02]}, "ok": true, "step"...
+
+-- model call 3 ...
+   model asks: place {"object": "red_block", "target": "tray"}
+   (tokens in 2170 / out 23, 2.1 s)
+   >> tool: place {'object': 'red_block', 'target': 'tray'}
+   [object] place -> OK: the red block rests on the tray
+   << result: {"detail": "the red block rests on the tray", "evidence": {"block_after": [0.45, -0.28, 0.0325], "block_before": [0.45, 0.1, 0.18], "tray": [0.45, -0.28, 0.0]}, "ok": true, "step": "done"}
+
+-- model call 4 ...
+   model asks: final_answer {"answer": {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}}
+   (tokens in 2288 / out 40, 2.8 s)
+   >> tool: final_answer {'answer': {'success': True, 'message': 'The red block has been placed on the tray and verified to be resting there.'}}
+   ** final answer accepted: {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}
+   << result: Answer recorded.
+
+================================================================
+ANSWER: {"success": true, "message": "The red block has been placed on the tray and verified to be resting there."}
+Independent final state: block at x 0.450 y -0.280 z 0.032, held by gripper: False, on the tray: True
+Model calls 4, object calls 3, skill calls 0, 35.7 s
+================================================================
+Session closed (the simulation keeps running; stop it with stop_sim.sh).

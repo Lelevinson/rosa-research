@@ -1,0 +1,3 @@
+# visual backup take
+reset
+Put the red block on the tray.

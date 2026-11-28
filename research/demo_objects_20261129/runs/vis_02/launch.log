@@ -1,0 +1,298 @@
+[INFO] [launch]: All log files can be found below /home/martin/.ros/log/2026-11-29-00-41-35-792449-LAPTOP-COO4RPDB-18776
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [18840]
+[INFO] [spawner-2]: process started with pid [18841]
+[INFO] [spawner-3]: process started with pid [18842]
+[INFO] [create-4]: process started with pid [18843]
+[INFO] [gazebo-5]: process started with pid [18844]
+[INFO] [parameter_bridge-6]: process started with pid [18845]
+[robot_state_publisher-1] [INFO] [1795884096.454035355] [robot_state_publisher]: Robot initialized
+[create-4] [INFO] [1795884096.458998720] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-6] [INFO] [1795884096.480853316] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[gazebo-5] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/runs/vis_02/world.sdf[0m[1;32m].[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:1004] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/objects_world/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/objects_world/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/objects_world/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/objects_world/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/objects_world/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/objects_world/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/objects_world/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/objects_world/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/objects_world/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/objects_world/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/objects_world/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/objects_world/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/objects_world/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/objects_world/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/objects_world/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/objects_world/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/objects_world/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/objects_world/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/objects_world/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/objects_world/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/objects_world/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/objects_world/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[spawner-3] [INFO] [1795884096.824905421] [spawner_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[create-4] [INFO] [1795884096.970985074] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-4]: process has finished cleanly [pid 18843]
+[gazebo-5] [INFO] [1795884098.758106880] [gz_ros_control]: [gz_ros2_control] Fixed joint ['base_joint'] (Entity='60') is skipped.
+[gazebo-5] [INFO] [1795884098.758979431] [gz_ros_control]: Loading controller_manager
+[gazebo-5] [INFO] [1795884098.777625490] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-5] [WARN] [1795884098.777691024] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gazebo-5] [INFO] [1795884098.784800566] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-5] [WARN] [1795884098.784877024] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-5] [WARN] [1795884099.785086628] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gazebo-5] [INFO] [1795884100.197670759] [controller_manager]: Received robot description from topic.
+[gazebo-5] [INFO] [1795884100.198052070] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-5] [INFO] [1795884100.207321671] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-5] [INFO] [1795884100.207588805] [gz_ros_control]: Loading joint: shoulder_pan_joint
+[gazebo-5] [INFO] [1795884100.207666271] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.207686998] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.207755590] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.207782141] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.207836787] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.207851951] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.207862305] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.207869238] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.207874818] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.207894027] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.207902854] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.207920818] [gz_ros_control]: Loading joint: shoulder_lift_joint
+[gazebo-5] [INFO] [1795884100.207927601] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.207933276] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.207938338] [gz_ros_control]: 			 found initial value: -1.570000
+[gazebo-5] [INFO] [1795884100.207945057] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.207951831] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.207957315] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.207962366] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.207967766] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.207972641] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.207982230] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.207989824] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208001267] [gz_ros_control]: Loading joint: elbow_joint
+[gazebo-5] [INFO] [1795884100.208007978] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.208013109] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208018187] [gz_ros_control]: 			 found initial value: 1.570000
+[gazebo-5] [INFO] [1795884100.208024038] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208028862] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208103595] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208117545] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208127068] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.208134008] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208144146] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208150586] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208164687] [gz_ros_control]: Loading joint: wrist_1_joint
+[gazebo-5] [INFO] [1795884100.208171667] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.208177438] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208182461] [gz_ros_control]: 			 found initial value: -1.570000
+[gazebo-5] [INFO] [1795884100.208189326] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208194080] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208199895] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208204810] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208210194] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.208259927] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208269174] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208275425] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208286859] [gz_ros_control]: Loading joint: wrist_2_joint
+[gazebo-5] [INFO] [1795884100.208292644] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.208297526] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208302211] [gz_ros_control]: 			 found initial value: -1.570000
+[gazebo-5] [INFO] [1795884100.208307989] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208313055] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208318490] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208323397] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208328706] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.208333449] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208341898] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208348494] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208358828] [gz_ros_control]: Loading joint: wrist_3_joint
+[gazebo-5] [INFO] [1795884100.208364480] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.208371235] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208379222] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208384840] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208393031] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208398772] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208403521] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208408835] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.208413624] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208421213] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208430537] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1795884100.208442014] [gz_ros_control]: Loading joint: left_finger_joint
+[gazebo-5] [INFO] [1795884100.208447624] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.208452623] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208457242] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208462652] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208467230] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208472727] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.208477378] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208490121] [gz_ros_control]: Loading joint: right_finger_joint
+[gazebo-5] [INFO] [1795884100.208495479] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1795884100.208500384] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208505035] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208510428] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1795884100.208514977] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1795884100.208520423] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1795884100.208525050] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1795884100.208888057] [controller_manager]: Initialize hardware 'ur' 
+[gazebo-5] [WARN] [1795884100.208954829] [controller_manager.hardware_component.system.ur]: Executor is not available during hardware component initialization for 'ur'. Skipping node creation!
+[gazebo-5] [INFO] [1795884100.209241565] [controller_manager]: Successful initialization of hardware 'ur'
+[gazebo-5] [INFO] [1795884100.210267747] [controller_manager]: Activating component 'ur'.
+[gazebo-5] [INFO] [1795884100.210314626] [resource_manager]: 'configure' hardware 'ur' 
+[gazebo-5] [INFO] [1795884100.210324135] [gz_ros_control]: System Successfully configured!
+[gazebo-5] [INFO] [1795884100.210334136] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gazebo-5] [INFO] [1795884100.210352116] [resource_manager]: 'activate' hardware 'ur' 
+[gazebo-5] [INFO] [1795884100.210378402] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gazebo-5] [WARN] [1795884100.210520962] [controller_manager]: Component 'ur' does not have read or write statistics initialized, skipping registration.
+[gazebo-5] [INFO] [1795884100.210566644] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-5] [INFO] [1795884100.582563801] [controller_manager]: Loading controller : 'joint_trajectory_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[gazebo-5] [INFO] [1795884100.582824599] [controller_manager]: Loading controller 'joint_trajectory_controller'
+[gazebo-5] [INFO] [1795884100.594464585] [controller_manager]: Controller 'joint_trajectory_controller' node arguments: --ros-args --params-file /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/sim/controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-3] [INFO] [1795884100.626225314] [spawner_joint_trajectory_controller]: Loaded joint_trajectory_controller
+[gazebo-5] [INFO] [1795884100.627659981] [controller_manager]: Configuring controller: 'joint_trajectory_controller'
+[gazebo-5] [INFO] [1795884100.628302946] [joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-5] [INFO] [1795884100.629122698] [joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-5] [INFO] [1795884100.629183844] [joint_trajectory_controller]: Using 'splines' interpolation method.
+[gazebo-5] [INFO] [1795884100.638693980] [joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-5] [INFO] [1795884100.646931249] [joint_trajectory_controller]: Setting initial scaling factor to 1.000000
+[gazebo-5] [INFO] [1795884100.646973006] [joint_trajectory_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-5] [INFO] [1795884100.648713272] [controller_manager]: Activating controllers: [ joint_trajectory_controller ]
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/objects_world[0m[1;32m/control], [[0m[1;32m/world/objects_world[0m[1;32m/control/state] and [[0m[1;32m/world/objects_world[0m[1;32m/playback/control][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mobjects_world[0m[1;32m] initialized with [[0m[1;32m1ms[0m[1;32m] physics profile.[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m2[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz_ros2_control::GazeboSimROS2ControlPlugin[0m[1;36m] for entity [[0m[1;36m30[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:137] [0m[1;36mDetach topic is: [0m[1;36m/objects/red_block/detach[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:143] [0m[1;36mDetachableJoint subscribing to messages on [0m[1;36m[[0m[1;36m/objects/red_block/detach[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:160] [0m[1;36mAttach topic is: [0m[1;36m/objects/red_block/attach[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:195] [0m[1;36mOutput topic is: [0m[1;36m/objects/red_block/attached[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::DetachableJoint[0m[1;36m] for entity [[0m[1;36m30[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m30[0m[1;36m] named [[0m[1;36mur[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_link_inertia_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mshoulder_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [INFO] [1795884100.815130177] [controller_manager]: Successfully switched controllers!
+[spawner-3] [INFO] [1795884100.817192072] [spawner_joint_trajectory_controller]: Configured and activated joint_trajectory_controller
+[spawner-2] [INFO] [1795884100.960815524] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-3]: process has finished cleanly [pid 18842]
+[gazebo-5] [INFO] [1795884101.215186328] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-5] [INFO] [1795884101.215316695] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-5] [INFO] [1795884101.220733675] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/sim/controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-2] [INFO] [1795884101.263325902] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[gazebo-5] [INFO] [1795884101.264890013] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-5] [INFO] [1795884101.265021597] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-5] [INFO] [1795884101.273626977] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[gazebo-5] [INFO] [1795884101.275787851] [controller_manager]: Successfully switched controllers!
+[spawner-2] [INFO] [1795884101.278710227] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-2]: process has finished cleanly [pid 18841]
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mupper_arm_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mforearm_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mwrist_1_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mwrist_2_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mwrist_3_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SimulationFeatures.cc:90] [0m[1;36mSimulation timestep set to: [0m[1;36m0.002[0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/objects_world/scene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/objects_world/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/objects_world/state[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/objects_world[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m3[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m69[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m69[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m69[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m69[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [EntityComponentManager.cc:1710] [0m[1;36mUpdated state thread iterators: [0m[1;36m20[0m[1;36m threads processing around [0m[1;36m4[0m[1;36m entities each.[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795884120.500672260] [controller_manager]: Loading controller : 'gripper_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[gazebo-5] [INFO] [1795884120.500773524] [controller_manager]: Loading controller 'gripper_controller'
+[gazebo-5] [INFO] [1795884120.501134777] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/sim/controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[gazebo-5] [INFO] [1795884120.545939512] [controller_manager]: Configuring controller: 'gripper_controller'
+[gazebo-5] [INFO] [1795884120.546176379] [gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-5] [INFO] [1795884120.546211955] [gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-5] [INFO] [1795884120.546222786] [gripper_controller]: Using 'splines' interpolation method.
+[gazebo-5] [INFO] [1795884120.548311076] [gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-5] [INFO] [1795884120.558389844] [gripper_controller]: Setting initial scaling factor to 1.000000
+[gazebo-5] [INFO] [1795884120.558481538] [gripper_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-5] [INFO] [1795884120.562311388] [controller_manager]: Activating controllers: [ gripper_controller ]
+[gazebo-5] [INFO] [1795884120.563921257] [controller_manager]: Successfully switched controllers!
+[gazebo-5] [INFO] [1795884140.543643833] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884140.543761901] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884142.057802053] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884142.398120463] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884142.398211443] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795884148.510564248] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884150.433470352] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884150.433537422] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884151.960759104] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884152.286049233] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884152.286122507] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795884158.390134658] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884172.230268210] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884172.230407511] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795884173.759241427] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884174.282421668] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884174.282500100] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884176.526329444] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884176.550134538] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884176.550188624] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884179.422103498] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884179.454407417] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884179.454469276] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884181.486890649] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884182.216730776] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884182.216787128] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m70[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795884185.266581523] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884188.540377762] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884188.540429168] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884189.962646799] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884190.007442081] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884190.007491160] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884192.546572107] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884192.559175949] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884192.559242979] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m70[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795884194.073691926] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795884194.417852137] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795884194.417900098] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795884197.109910789] [joint_trajectory_controller]: Goal reached, success!
+[ERROR] [gazebo-5]: process has died [pid 18844, exit code -15, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -s -r -v 4 /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/runs/vis_02/world.sdf --force-version 8'].
+[parameter_bridge-6] [INFO] [1795884207.218344175] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-6]: process has finished cleanly [pid 18845]
