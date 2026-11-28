@@ -29,8 +29,8 @@ def tray(x, y):
     w, wh = TRAY['wall'], TRAY['wall_h']
     def box(name, px, py, pz, sx, sy, sz, color):
         return f"""
-        <collision name="{name}_c"><pose>{px} {py} {pz}</pose><geometry><box><size>{sx} {sy} {sz}</size></box></geometry></collision>
-        <visual name="{name}_v"><pose>{px} {py} {pz}</pose><geometry><box><size>{sx} {sy} {sz}</size></box></geometry>
+        <collision name="{name}_c"><pose>{px} {py} {pz} 0 0 0</pose><geometry><box><size>{sx} {sy} {sz}</size></box></geometry></collision>
+        <visual name="{name}_v"><pose>{px} {py} {pz} 0 0 0</pose><geometry><box><size>{sx} {sy} {sz}</size></box></geometry>
           <material><ambient>{color}</ambient><diffuse>{color}</diffuse></material></visual>"""
     color = '0.15 0.35 0.75 1'
     parts = box('floor', 0, 0, fh / 2, fw, fd, fh, color)

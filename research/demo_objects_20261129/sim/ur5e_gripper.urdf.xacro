@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- STUDY-LOCAL (objects demo, 2026-11-29). UR5e + a SIMPLE simulated parallel gripper on tool0, controlled through ros2_control (gz_ros2_control).
-     LABEL: object poses read from the simulator (ground truth); simulated gripper with grasp assist; demonstration only. NOT the Robotiq 2F-85 (chosen for reliability:
+     LABEL - object poses read from the simulator (ground truth); simulated gripper with grasp assist; demonstration only. NOT the Robotiq 2F-85 (chosen for reliability -
      two prismatic fingers, no mimic joints). Based on the installed ur_simulation_gz/urdf/ur_gz.urdf.xacro (copied pattern; the installed file is not modified). -->
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
   <xacro:arg name="name" default="ur"/>
@@ -37,7 +37,7 @@
   </link>
   <joint name="gripper_mount" type="fixed"><parent link="tool0"/><child link="gripper_base"/><origin xyz="0 0 0" rpy="0 0 0"/></joint>
 
-  <!-- fingers: open at y = +-0.050 (center), closing moves each toward the middle; finger half thickness 0.0075; travel 0..0.035 -->
+  <!-- fingers - open at y = +-0.050 (center), closing moves each toward the middle; finger half thickness 0.0075; travel 0..0.035 -->
   <link name="left_finger">
     <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><box size="0.03 0.015 0.07"/></geometry><material name="finger_dark"><color rgba="0.1 0.1 0.1 1"/></material></visual>
     <collision><origin xyz="0 0 0" rpy="0 0 0"/><geometry><box size="0.03 0.015 0.07"/></geometry>
@@ -52,11 +52,11 @@
   </link>
   <joint name="left_finger_joint" type="prismatic">
     <parent link="gripper_base"/><child link="left_finger"/><origin xyz="0 0.05 0.095" rpy="0 0 0"/><axis xyz="0 -1 0"/>
-    <limit lower="0.0" upper="0.035" effort="60" velocity="0.2"/><dynamics damping="1.0" friction="0.2"/>
+    <limit lower="-0.01" upper="0.035" effort="60" velocity="0.2"/><dynamics damping="1.0" friction="0.2"/>
   </joint>
   <joint name="right_finger_joint" type="prismatic">
     <parent link="gripper_base"/><child link="right_finger"/><origin xyz="0 -0.05 0.095" rpy="0 0 0"/><axis xyz="0 1 0"/>
-    <limit lower="0.0" upper="0.035" effort="60" velocity="0.2"/><dynamics damping="1.0" friction="0.2"/>
+    <limit lower="-0.01" upper="0.035" effort="60" velocity="0.2"/><dynamics damping="1.0" friction="0.2"/>
   </joint>
   <!-- tool centre point between the finger tips area (used for pose goals) -->
   <link name="gripper_tcp"/>
@@ -67,9 +67,9 @@
       <parameters>$(arg simulation_controllers)</parameters>
       <ros><namespace>$(arg ros_namespace)</namespace></ros>
     </plugin>
-    <!-- GRASP ASSIST (disclosed): attaches the red block to gripper_base while commanded, via Gazebo DetachableJoint. -->
+    <!-- GRASP ASSIST (disclosed) - attaches the red block to the wrist_3_link (the gripper is lumped into it by the fixed-joint reduction) while commanded, via Gazebo DetachableJoint. -->
     <plugin filename="gz-sim-detachable-joint-system" name="gz::sim::systems::DetachableJoint">
-      <parent_link>gripper_base</parent_link>
+      <parent_link>wrist_3_link</parent_link>
       <child_model>red_block</child_model>
       <child_link>block_link</child_link>
       <attach_topic>/objects/red_block/attach</attach_topic>
@@ -78,7 +78,7 @@
     </plugin>
   </gazebo>
 
-  <!-- ros2_control: the UR joints (same as ur_simulation_gz) + the two finger joints in the same system -->
+  <!-- ros2_control - the UR joints (same as ur_simulation_gz) + the two finger joints in the same system -->
   <xacro:include filename="$(find ur_description)/urdf/inc/ur_joint_control.xacro" />
   <ros2_control name="$(arg name)" type="system">
     <hardware><plugin>gz_ros2_control/GazeboSimSystem</plugin></hardware>

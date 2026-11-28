@@ -1,0 +1,4 @@
+[INFO] [1795880431.037671202] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/objects_world/pose/info (gz.msgs.Pose_V) -> /world/objects_world/pose/info (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[INFO] [1795880431.042074378] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/objects/red_block/attach (std_msgs/msg/Empty) -> /objects/red_block/attach (gz.msgs.Empty)] (Lazy 0)
+[INFO] [1795880431.043779700] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/objects/red_block/detach (std_msgs/msg/Empty) -> /objects/red_block/detach (gz.msgs.Empty)] (Lazy 0)
+[INFO] [1795880532.858582709] [rclcpp]: signal_handler(SIGINT/SIGTERM)
