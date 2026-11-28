@@ -1,0 +1,33 @@
+{
+ "n": 14,
+ "request": "Put the red block on the tray.",
+ "status": "COMPLETE",
+ "answer": "{\"status\": \"already_satisfied\", \"message\": \"The red block is already resting on the tray. No arm movement was performed.\"}",
+ "error": null,
+ "model_calls": 2,
+ "object_calls": [
+  [
+   "get_object_pose",
+   true
+  ]
+ ],
+ "run_skill_calls": 0,
+ "seconds": 15.0,
+ "final_state": {
+  "block_xyz": [
+   0.45,
+   -0.28,
+   0.032
+  ],
+  "block_held": false,
+  "block_on_tray": true,
+  "joints": {
+   "shoulder_pan_joint": -0.811,
+   "shoulder_lift_joint": -1.42,
+   "elbow_joint": 1.891,
+   "wrist_1_joint": -2.042,
+   "wrist_2_joint": -1.571,
+   "wrist_3_joint": 0.76
+  }
+ }
+}

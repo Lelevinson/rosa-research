@@ -1,0 +1,5 @@
+[INFO] [1795883373.346098311] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/objects_world/pose/info (gz.msgs.Pose_V) -> /world/objects_world/pose/info (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[INFO] [1795883373.350235050] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/objects/red_block/attach (std_msgs/msg/Empty) -> /objects/red_block/attach (gz.msgs.Empty)] (Lazy 0)
+[INFO] [1795883373.351970443] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/objects/red_block/detach (std_msgs/msg/Empty) -> /objects/red_block/detach (gz.msgs.Empty)] (Lazy 0)
+[INFO] [1795883394.476929827] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Empty to Gazebo gz.msgs.Empty (showing msg only once per type)
+[INFO] [1795883772.439383921] [rclcpp]: signal_handler(SIGINT/SIGTERM)

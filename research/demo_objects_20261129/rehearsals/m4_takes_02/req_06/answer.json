@@ -1,0 +1,33 @@
+{
+ "n": 6,
+ "request": "Where is the red block?",
+ "status": "COMPLETE",
+ "answer": "{\"object\": \"red_block\", \"location\": \"Resting on the table.\", \"position_m\": {\"x\": 0.45, \"y\": 0.1, \"z\": 0.0225}, \"reference_frame\": \"robot base\"}",
+ "error": null,
+ "model_calls": 2,
+ "object_calls": [
+  [
+   "get_object_pose",
+   true
+  ]
+ ],
+ "run_skill_calls": 0,
+ "seconds": 5.8,
+ "final_state": {
+  "block_xyz": [
+   0.45,
+   0.1,
+   0.022
+  ],
+  "block_held": false,
+  "block_on_tray": false,
+  "joints": {
+   "shoulder_pan_joint": 0.0,
+   "shoulder_lift_joint": -1.57,
+   "elbow_joint": 1.57,
+   "wrist_1_joint": -1.57,
+   "wrist_2_joint": -1.57,
+   "wrist_3_joint": -0.0
+  }
+ }
+}
