@@ -295,3 +295,20 @@
 [gazebo-5] [INFO] [1795881856.095423092] [gripper_controller]: Received new action goal
 [gazebo-5] [INFO] [1795881856.095493545] [gripper_controller]: Accepted new action goal
 [gazebo-5] [INFO] [1795881858.095497615] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795881882.537551187] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795881882.537614978] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795881884.536151813] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795881885.200545915] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795881885.200626232] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795881887.200190073] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795881887.865075794] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795881887.865123438] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795881889.864032770] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795881890.509938641] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795881890.509994455] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795881892.512032834] [gripper_controller]: Goal reached, success!
+[ERROR] [gazebo-5]: process has died [pid 9249, exit code -15, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -s -r -v 4 /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/runs/m1t/world.sdf --force-version 8'].
+[parameter_bridge-6] [INFO] [1795881917.451445151] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-6]: process has finished cleanly [pid 9250]
+[robot_state_publisher-1] [WARN] [1795881925.638612886] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795882012.642009097] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!

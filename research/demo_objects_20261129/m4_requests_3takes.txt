@@ -1,0 +1,28 @@
+# Milestone 4 live takes (Sol): 5 prompts x 3 takes. reset lines are commands, not requests.
+reset
+Where is the red block?
+reset
+Pick up the red block.
+reset
+Put the red block on the tray.
+Put the red block on the tray.
+reset
+Make me a cup of coffee.
+reset
+Where is the red block?
+reset
+Pick up the red block.
+reset
+Put the red block on the tray.
+Put the red block on the tray.
+reset
+Make me a cup of coffee.
+reset
+Where is the red block?
+reset
+Pick up the red block.
+reset
+Put the red block on the tray.
+Put the red block on the tray.
+reset
+Make me a cup of coffee.

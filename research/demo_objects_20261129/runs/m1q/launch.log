@@ -254,3 +254,14 @@
 [gazebo-5] [INFO] [1795880783.950577284] [gripper_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
 [gazebo-5] [INFO] [1795880783.955855545] [controller_manager]: Activating controllers: [ gripper_controller ]
 [gazebo-5] [INFO] [1795880783.956977599] [controller_manager]: Successfully switched controllers!
+[gazebo-5] [INFO] [1795880829.274419237] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795880829.274544066] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795880835.273367236] [joint_trajectory_controller]: Goal reached, success!
+[ERROR] [gazebo-5]: process has died [pid 7886, exit code -15, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -s -r -v 4 /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/runs/m1q/world.sdf --force-version 8'].
+[parameter_bridge-6] [INFO] [1795880854.949339940] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-6]: process has finished cleanly [pid 7887]
+[robot_state_publisher-1] [WARN] [1795880862.206891471] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795881647.788299951] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795881736.302489288] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795881925.638562029] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795882012.643120426] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!

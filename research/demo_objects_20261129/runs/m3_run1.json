@@ -1,0 +1,569 @@
+[
+ {
+  "block_start": [
+   0.45,
+   0.1,
+   0.0
+  ],
+  "rep": 0,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.45,
+    0.1,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.45,
+     0.1,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 24.1
+ },
+ {
+  "block_start": [
+   0.45,
+   0.1,
+   0.0
+  ],
+  "rep": 1,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.45,
+    0.1,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.45,
+     0.1,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 24.1
+ },
+ {
+  "block_start": [
+   0.45,
+   0.1,
+   0.0
+  ],
+  "rep": 2,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.45,
+    0.1,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.45,
+     0.1,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 24.4
+ },
+ {
+  "block_start": [
+   0.55,
+   -0.05,
+   0.4
+  ],
+  "rep": 0,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.55,
+    -0.05,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.55,
+     -0.05,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.55,
+     -0.05,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.55,
+     -0.05,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 22.4
+ },
+ {
+  "block_start": [
+   0.55,
+   -0.05,
+   0.4
+  ],
+  "rep": 1,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.55,
+    -0.05,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.55,
+     -0.05,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.55,
+     -0.05,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.55,
+     -0.05,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 22.9
+ },
+ {
+  "block_start": [
+   0.55,
+   -0.05,
+   0.4
+  ],
+  "rep": 2,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.55,
+    -0.05,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.55,
+     -0.05,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.55,
+     -0.05,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.55,
+     -0.05,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 22.7
+ },
+ {
+  "block_start": [
+   0.4,
+   0.2,
+   -0.3
+  ],
+  "rep": 0,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.4,
+    0.2,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.4,
+     0.2,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.4,
+     0.2,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.4,
+     0.2,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 25.4
+ },
+ {
+  "block_start": [
+   0.4,
+   0.2,
+   -0.3
+  ],
+  "rep": 1,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.4,
+    0.2,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.4,
+     0.2,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.4,
+     0.2,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.4,
+     0.2,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 24.7
+ },
+ {
+  "block_start": [
+   0.4,
+   0.2,
+   -0.3
+  ],
+  "rep": 2,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.4,
+    0.2,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.4,
+     0.2,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.4,
+     0.2,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.4,
+     0.2,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 25.0
+ }
+]

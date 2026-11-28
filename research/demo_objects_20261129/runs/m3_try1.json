@@ -1,0 +1,65 @@
+[
+ {
+  "block_start": [
+   0.45,
+   0.1,
+   0.0
+  ],
+  "rep": 0,
+  "reset_ok": true,
+  "reset": {
+   "set_pose": true,
+   "home_ok": true,
+   "block": [
+    0.45,
+    0.1,
+    0.0225
+   ]
+  },
+  "pick": {
+   "ok": true,
+   "step": "done",
+   "detail": "picked up the red block (lifted 0.158 m with the gripper)",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.0225
+    ],
+    "fingers_after_close": [
+     0.02,
+     0.02
+    ],
+    "block_after_lift": [
+     0.45,
+     0.1,
+     0.18
+    ]
+   }
+  },
+  "place": {
+   "ok": true,
+   "step": "done",
+   "detail": "the red block rests on the tray",
+   "evidence": {
+    "block_before": [
+     0.45,
+     0.1,
+     0.18
+    ],
+    "tray": [
+     0.45,
+     -0.28,
+     0.0
+    ],
+    "block_after": [
+     0.45,
+     -0.28,
+     0.0325
+    ]
+   }
+  },
+  "success": true,
+  "seconds": 24.1
+ }
+]

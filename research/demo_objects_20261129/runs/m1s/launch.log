@@ -270,3 +270,9 @@
 [gazebo-5] [INFO] [1795881700.479540118] [joint_trajectory_controller]: Received new action goal
 [gazebo-5] [INFO] [1795881700.479683555] [joint_trajectory_controller]: Accepted new action goal
 [gazebo-5] [INFO] [1795881706.479014263] [joint_trajectory_controller]: Goal reached, success!
+[ERROR] [gazebo-5]: process has died [pid 8889, exit code -15, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -s -r -v 4 /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/runs/m1s/world.sdf --force-version 8'].
+[parameter_bridge-6] [INFO] [1795881728.120812067] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-6]: process has finished cleanly [pid 8890]
+[robot_state_publisher-1] [WARN] [1795881736.911162700] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795881925.638513333] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1795882012.641972511] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
