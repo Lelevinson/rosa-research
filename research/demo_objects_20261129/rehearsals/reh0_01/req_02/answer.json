@@ -1,0 +1,20 @@
+{
+ "n": 2,
+ "request": "Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object.",
+ "reset_ok": true,
+ "status": "COMPLETE",
+ "answer": "{\"readiness\": true, \"shoulder_pan_joint\": 0.15999999999999975}",
+ "error": null,
+ "final_independent_observation": {
+  "shoulder_pan_joint": 0.15999999999999975,
+  "shoulder_lift_joint": -1.5699999999997392,
+  "elbow_joint": 1.5700000000011776,
+  "wrist_1_joint": -1.5699999999970746,
+  "wrist_2_joint": -1.5699999999999998,
+  "wrist_3_joint": -0.11999999999999987
+ },
+ "model_calls": 3,
+ "run_skill_calls": 2,
+ "writes": 1,
+ "seconds": 12.7
+}

@@ -1,0 +1,10 @@
+# 3 existing-style prompts x 3 (Milestone 0 rehearsal)
+Which node publishes /joint_states, and what are the current shoulder_pan_joint and wrist_3_joint positions? Answer as a JSON object.
+Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object.
+Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object.
+Which node publishes /joint_states, and what are the current shoulder_pan_joint and wrist_3_joint positions? Answer as a JSON object.
+Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object.
+Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object.
+Which node publishes /joint_states, and what are the current shoulder_pan_joint and wrist_3_joint positions? Answer as a JSON object.
+Check that the arm is ready to move. If it is ready, move it to park_right. Report readiness and the final shoulder_pan_joint position as a JSON object.
+Move the arm to stage_left, then confirm with a fresh joint sample. Report the final wrist_3_joint position as a JSON object.
