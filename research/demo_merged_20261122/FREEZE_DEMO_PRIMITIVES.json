@@ -1,0 +1,121 @@
+{
+ "arm_a_files_unchanged_sha256": {
+  "live_demo.py": "c3787ae0d068824acab54ca82218a90dc0b5f9d99a0c699bee5469255ee2a269",
+  "merged_demo/his_m.py": "ac0d51d5feab4423fc0d6c6c580f509385ecc286ee26e7f2dec58c8fcda77c33",
+  "merged_demo/prompts.py": "9169289def70bc9780c25034fe6b07caa435f894e21457d81d4d6282019677a8",
+  "merged_demo/skill_tool.py": "0ea13a66b8fdfd723edc43a6982fdbcd3e552eb42f821b7b89c466c78a80da13"
+ },
+ "arm_a_reference": {
+  "freeze_file": "FREEZE_DEMO_MERGED.json",
+  "prompt_sha256": "61b675293438f725275b50fc01ba044ad8a3c39651e1937e63982e11cf53bded",
+  "tool_set_sha256": "2924ca6c704d0e08ac6f65959ff67018ff0d5c1193ba800a98ffc94e6c0dc19a"
+ },
+ "files_sha256": {
+  "merged_demo/his_m_primitives.py": "3c2514779d0d1d7c18846fda9b33ef1783a73b2203656297ce4b061b7a268663",
+  "merged_demo/primitive_prompts.py": "7acbff3384ff9753199eff3d4f8f51cdf00d8db062d67ea0001391e8bddbd745",
+  "merged_demo/primitives_tool.py": "96b7e253450fac698809f29fb1a270992d79d8b9bed99351c2154ec0c88adab0",
+  "tests/test_primitives_arm.py": "b7f659dc39bdcf88431935bc5c7e87e893175549111c96ab15f87c05676f1658"
+ },
+ "frozen_at": "2026-11-28T22:42:33+08:00",
+ "guards_same_as_arm_a": {
+  "native_operations": 10,
+  "no_replay_after_unconfirmed_write": true,
+  "one_primitive_per_response": true,
+  "read_before_write": true,
+  "seconds": 180,
+  "targets": "registered skill targets only (ur5e_registry)",
+  "tolerance": 0.025,
+  "tool_attempts": 16,
+  "writes_per_task": 1
+ },
+ "his_files": {
+  "commit": "e233cf51389885d0aaffa5453687f57437551764",
+  "edited": false,
+  "rows_verified_byte_for_byte": 26
+ },
+ "label": "merged method (Levinson M + Martin bounded macro), arm (b) M + primitives, demonstration only, not evaluated, not for the paper",
+ "no_per_model_tuning": true,
+ "offered_tools": [
+  "ros2_node_list",
+  "ros2_topic_list",
+  "ros2_topic_echo",
+  "ros2_service_list",
+  "ros2_node_info",
+  "ros2_topic_info",
+  "ros2_param_list",
+  "ros2_param_get",
+  "ros2_service_info",
+  "ros2_doctor",
+  "roslog_list",
+  "read_log",
+  "final_answer",
+  "read_pose",
+  "read_readiness",
+  "write_pose",
+  "verify_pose"
+ ],
+ "prompt_difference_from_arm_a": "only the words naming run_skill in the first rule sentence (replaced by the four primitive tool names) and the skill line (describes the four tools); all other sentences and his A1 messages identical (see tests/test_primitives_arm.py)",
+ "prompt_messages": [
+  [
+   "system",
+   "Your are ROSA (Robot Operating System Agent), an AI agent that can use ROS tools to answer questions about robotics systems. You have a subset of the ROS tools available to you, and you can use them to interact with the robotic system you are integrated with. Your responses should be grounded in real-time information whenever possible using the tools available to you."
+  ],
+  [
+   "system",
+   "Use the task text and earlier tool results to decide which tool to call next; list entities only when you do not already know their names."
+  ],
+  [
+   "system",
+   "Independent tool calls whose arguments are already known may be made together in one response."
+  ],
+  [
+   "system",
+   "You may use rosparams to store information between interactions. However, if you are using rosparams to store your own memory, you must use the /rosa namespace to avoid conflicts with other ROS nodes. e.g. to store a value in the 'foo' parameter, use the key '/rosa/foo'."
+  ],
+  [
+   "system",
+   "When providing a directory/path to a tool, you must always look for the correct path using your tools. When reading files, you must make sure that the file size is not too large to read. This is especially important when reading multiple files. A file is too large to read completely if its size is greater than 32KB. Avoid specifying a line range unless the user has requested it or the file is too large to read."
+  ],
+  [
+   "system",
+   "You must use your math tools to perform calculations, especially for angles, distances, coordinates, and geometric computations. Failing to do this may result in incorrect commands or system failures. You must never perform calculations manually in your reasoning - always use the provided calculation tools to ensure accuracy. This is critical for robotics operations where precision matters."
+  ],
+  [
+   "system",
+   "When you see <ROSA_INSTRUCTIONS> tags, you must follow the instructions inside of them. These instructions are instructions for how to use ROS tools to complete a task. You must follow these instructions IN ALL CASES. "
+  ],
+  [
+   "system",
+   "Use the menu tools to answer questions about nodes, topics and values; use read_readiness, read_pose, write_pose and verify_pose only for the arm: readiness checks and registered movements. Inspect/readiness requests are read-only. Choose a movement only when the user specifies a permitted motion goal. If the request is ambiguous about inspection versus movement or its goal, ask a clarifying question before selecting any skill. Do not assume permission. Never replay an uncertain or ineffective write."
+  ],
+  [
+   "system",
+   "The arm tools are single steps: read_pose and read_readiness only read; write_pose moves to a registered skill target (once per task, only after read_pose) and does not verify; verify_pose checks the result. Call one arm tool per response; do not repeat completed steps."
+  ],
+  [
+   "system",
+   "When you have the answer, call the final_answer tool with the answer as a JSON object, using exactly the keys the task asks for. Do not write the answer as plain text."
+  ]
+ ],
+ "prompt_sha256_his_function": "a61ac761fbf8639c4a6359defe72ce316354f8e6f84fbb2be6f1c0522f137a72",
+ "tool_defs_sha256": {
+  "final_answer": "3928f0c7027f8eb44c745e10d9760612cced5d8adddccbe5bf99e67c3cd44d6e",
+  "read_log": "2b9f82fd59d30e11836684bbeb4d27586f6871b9ec9302f6b512239e7c118fd1",
+  "read_pose": "451df1188362b46704b85b128827fe684f95e6594ba9e938fcaaf3b8df118133",
+  "read_readiness": "1bb60a0a015229338403ec413aa365b9f5bd128e98cb7161df9a944d1b0b685b",
+  "ros2_doctor": "ee195cc3194b1948bcb34b971c265bbc1d3c5cbf36b9a32762be8c2c85a2cd44",
+  "ros2_node_info": "92ff8c84b5c79526eac077e5742e730fe7f3b712423b95c90c2b09a5f1313072",
+  "ros2_node_list": "117e1d7f2925e0d0659c29e921bed25caca9af3f5bc68d6fadb963aab2b49897",
+  "ros2_param_get": "becd4ec6276de02f1291d151142465c583b6a2fade771359e013793c44a4dd91",
+  "ros2_param_list": "012cccdd99f65bd4e1334d7480074c1c8598ea1dd3d14d621978d575f3f98b30",
+  "ros2_service_info": "38ef9bfde79395f2ba60afd522ca5e9ed21e6569e1e2d844b25b21ae572a8198",
+  "ros2_service_list": "d34ce21b9bbf812e9639c842a4f7ce01c55ab8c5e7eb99fc6bcae6529b89b4cc",
+  "ros2_topic_echo": "52ba20f08c6bc51644fb01aa9f3e35418b010a3959e62ab5854a828df356ad0a",
+  "ros2_topic_info": "7905affc2443987259361440fcdb3d3f813c2118dfff373b758abf5090731cd4",
+  "ros2_topic_list": "ccc868ef0fe3c2f38b891c0100bef17d684a6fe4a0ef4842c39b47a017ab2e6d",
+  "roslog_list": "6bb0ec25d8990ac7b56c35e1eec70eb780bbb837e11c65913750a3e44156b591",
+  "verify_pose": "3d0123e6d6eae277194e6a45d9dfeee34447f9956254407d2b25e1c013bcbc63",
+  "write_pose": "7f51b4cf07341ce7fc40ff385354c51c293463a3c0cbb87a15c3c05681502cf4"
+ },
+ "tool_set_sha256": "afc62169c2ba07ea1aecb9631737cdd7391e9fa0c7a3ee32b6586be8de18b270"
+}
