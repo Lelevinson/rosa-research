@@ -1,0 +1,33 @@
+{
+ "n": 12,
+ "request": "Pick up the red block.",
+ "status": "COMPLETE",
+ "answer": "{\"success\": true, \"message\": \"Picked up the red block. It is held in the gripper.\"}",
+ "error": null,
+ "model_calls": 2,
+ "object_calls": [
+  [
+   "pick",
+   true
+  ]
+ ],
+ "run_skill_calls": 0,
+ "seconds": 19.3,
+ "final_state": {
+  "block_xyz": [
+   0.45,
+   0.1,
+   0.18
+  ],
+  "block_held": true,
+  "block_on_tray": false,
+  "joints": {
+   "shoulder_pan_joint": -0.075,
+   "shoulder_lift_joint": -1.583,
+   "elbow_joint": 2.069,
+   "wrist_1_joint": -2.056,
+   "wrist_2_joint": -1.571,
+   "wrist_3_joint": 1.496
+  }
+ }
+}

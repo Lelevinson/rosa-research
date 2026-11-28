@@ -289,3 +289,434 @@
 [gazebo-5] [INFO] [1795882083.979503171] [joint_trajectory_controller]: Received new action goal
 [gazebo-5] [INFO] [1795882083.979612283] [joint_trajectory_controller]: Accepted new action goal
 [gazebo-5] [INFO] [1795882085.903618916] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882161.539094059] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882161.539203050] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882163.038063948] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882163.341052367] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882163.341131996] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882169.340253919] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882171.334000179] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882171.334087442] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882172.412175482] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882172.913670023] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882172.913713739] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882175.166418158] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882175.232799304] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882175.232877110] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882178.066223435] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882178.084848933] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882178.084901497] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882180.084585982] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882180.799206740] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882180.799254781] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882183.798270657] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m70[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882185.041573305] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882185.041618119] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882186.454253743] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882186.510794244] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882186.510844265] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882189.344319122] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882189.363239107] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882189.363387455] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m70[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882190.864348187] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882191.224780918] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882191.224834051] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882193.892382336] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882204.917458554] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882204.917506623] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882206.417293514] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882206.720615424] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882206.720680264] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882212.741508022] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882214.699987089] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882214.700074845] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882216.198484279] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882216.682335812] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882216.682418238] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882218.940354261] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882218.999622601] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882218.999668421] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882221.668595808] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882221.701372866] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882221.701423867] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882223.700837121] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882224.420968388] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882224.421034280] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m71[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m71[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882227.420397351] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882228.693506950] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882228.693554322] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882230.106467848] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882230.161114112] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882230.161209741] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882232.832662870] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882232.862975300] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882232.863030986] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882234.364771402] [gripper_controller]: Goal reached, success!
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m71[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m71[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882234.721856548] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882234.721907639] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882237.390665809] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882302.628308190] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882302.628405067] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882304.128118160] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882304.431090167] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882304.431143643] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882310.430033505] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882312.399569287] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882312.399619374] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882313.898722190] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882314.380027376] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882314.380072718] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882316.618877805] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882316.647901944] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882316.647953116] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882319.316904492] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882319.349467522] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882319.349522678] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882321.348945917] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882322.063116994] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882322.063187509] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m72[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m72[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882325.062729975] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882326.308012033] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882326.308057679] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882327.716786940] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882327.775509938] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882327.775560305] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882330.444695335] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882330.477648717] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882330.477783984] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882331.978759696] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882332.337125639] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882332.337196740] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m72[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m72[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882335.005172392] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882336.451980187] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882336.452030696] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882337.950754669] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882338.254309439] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882338.254437800] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882344.252903388] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882346.203474357] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882346.203523461] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882347.701832037] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882348.183780104] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882348.183828291] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882350.407919188] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882350.454338695] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882350.454380460] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882352.952051554] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882352.955993062] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882352.956060870] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882354.954020016] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882355.670234666] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882355.670290822] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882358.672010903] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m73[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m73[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882359.951167085] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882359.951211268] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882361.378033789] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882361.418042052] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882361.418087742] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882364.251956237] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882364.270336046] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882364.270390091] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m73[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m73[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882365.774760167] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882366.129611951] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882366.129671265] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882368.798099841] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882370.223371850] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882370.223421887] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882371.722181487] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882372.025148044] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882372.025199663] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882378.024203810] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882380.093727172] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882380.093802595] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882381.592879709] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882382.070748580] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882382.070806883] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882384.244899300] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882384.286797860] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882384.286866681] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882386.955039061] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882386.988847343] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882386.988913963] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882388.989083553] [gripper_controller]: Goal reached, success!
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m74[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m74[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882389.704656317] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882389.704733227] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882392.719969596] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882394.145171035] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882394.145218705] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882395.589642403] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882395.614335269] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882395.614372297] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882398.446011833] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882398.466383416] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882398.466434073] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m74[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m74[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882399.967570791] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882400.328604180] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882400.328648688] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882402.995872237] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882404.452081951] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882404.452151979] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882405.951570581] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882406.254599626] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882406.254650562] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882412.251656830] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882414.242341830] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882414.242425145] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882415.741366494] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882416.266956736] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882416.267002369] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882417.779493730] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882417.834467344] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882417.834571505] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882420.167611278] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882420.186512779] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882420.186566770] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882422.187921961] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882422.950020834] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882422.950123570] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m75[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m75[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882425.617591529] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882426.878934120] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882426.878993025] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882428.021465928] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882428.046430816] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882428.046583348] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882430.547628803] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882430.598330426] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882430.598380391] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882432.099613698] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882432.460954033] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882432.461147795] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m75[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m75[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882435.127928670] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882436.606570468] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882436.606648105] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882438.105571139] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882438.408606835] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882438.408656392] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882444.407649029] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882446.408554092] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882446.408607132] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882447.907293508] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882448.393016008] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882448.393102221] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882449.895445390] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882449.958236130] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882449.958282691] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882452.627226077] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882452.659786788] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882452.659916831] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882454.659412210] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882455.372428674] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882455.372486099] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882458.041235184] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882459.382403890] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882459.382448982] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m76[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m76[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882460.537257845] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882460.600878860] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882460.601004795] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882463.269308482] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882463.302529860] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882463.302577198] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m76[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m76[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882464.801418647] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882465.112960713] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882465.113024914] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882467.779418585] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882469.234908164] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882469.234968688] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882470.733373361] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882471.037842953] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882471.037892817] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882477.035371164] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882479.010466080] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882479.010503133] [gripper_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882480.510318499] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882481.002642944] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882481.002720831] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882482.540385688] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882482.569512202] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882482.569701761] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882485.068307320] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882485.071422644] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882485.071467255] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882487.070487341] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882487.785763136] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882487.785838361] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m77[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m77[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882490.452250593] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882491.729550072] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882491.729599489] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882492.858402730] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882492.897574149] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882492.897647912] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882495.564366805] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882495.599922898] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882495.599971867] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882497.098522082] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882497.413346490] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882497.413424656] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m77[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m77[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882500.080533951] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882501.620392928] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882501.620492135] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882503.120321515] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882503.422484726] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882503.422529133] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882509.422388143] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882511.423514050] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882511.423580596] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882512.923699144] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882513.418712475] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882513.418759057] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882516.213709240] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882516.235817394] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882516.235898028] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882519.235775610] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882519.237570197] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882519.237622494] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882521.238147782] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882522.008990968] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882522.009090356] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m78[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m78[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882525.007638490] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882526.278686000] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882526.278731676] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882527.929614086] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882527.996461023] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882527.996510657] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882530.663799196] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882530.698199140] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882530.698251782] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882532.199686565] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882532.560331601] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882532.560422635] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m78[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m78[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882535.227632452] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882536.686277391] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882536.686397182] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882538.185698016] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882538.488505879] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882538.488562822] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882544.487686756] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882546.407834790] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882546.407890620] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882547.906379993] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882548.387764309] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882548.387810372] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882551.160471233] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882551.204617107] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882551.204661792] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882554.038447215] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882554.056447176] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882554.056507568] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882556.056509383] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882556.772607004] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882556.772698316] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m79[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m79[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882559.772266748] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882560.981633992] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882560.981679934] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882562.668264975] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882562.700643783] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882562.700759729] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882565.200342098] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882565.202068080] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882565.202112600] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882566.700271143] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882567.012700825] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882567.012765926] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m79[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m79[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882569.680412469] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882571.110091499] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882571.110159062] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882572.610793637] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882572.967111620] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882572.967182872] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882579.079753167] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882581.182864968] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882581.182918927] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882582.684244997] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882583.217882209] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882583.217963689] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:389] [0m[1;36mAlready detached[0m[1;36m[0m
+[gazebo-5] [INFO] [1795882585.968056381] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882585.985625736] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882585.985672471] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882588.818213250] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882588.838066571] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882588.838127297] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882590.838660679] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882591.601052763] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882591.601102594] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m80[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m80[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882594.600114442] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882595.813692697] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882595.813745383] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882597.476138776] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882597.529708531] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882597.529753918] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882600.028099840] [joint_trajectory_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882600.031527997] [gripper_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882600.031582055] [gripper_controller]: Accepted new action goal
+[gazebo-5] [INFO] [1795882601.532095048] [gripper_controller]: Goal reached, success!
+[gazebo-5] [INFO] [1795882601.890320522] [joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1795882601.890407408] [joint_trajectory_controller]: Accepted new action goal
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m80[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m80[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [INFO] [1795882604.558339648] [joint_trajectory_controller]: Goal reached, success!
+[ERROR] [gazebo-5]: process has died [pid 10449, exit code -15, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -s -r -v 4 /mnt/c/Proj/robotics/introtorobotics/wt-objects/research/demo_objects_20261129/runs/m1v/world.sdf --force-version 8'].
+[parameter_bridge-6] [INFO] [1795882635.452939509] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-6]: process has finished cleanly [pid 10450]

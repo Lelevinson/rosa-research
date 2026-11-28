@@ -1,0 +1,37 @@
+{
+ "n": 2,
+ "request": "Put the red block on the tray.",
+ "status": "COMPLETE",
+ "answer": "{\"success\": true, \"message\": \"The red block was placed on the tray and verified to be resting there.\"}",
+ "error": null,
+ "model_calls": 3,
+ "object_calls": [
+  [
+   "pick",
+   true
+  ],
+  [
+   "place",
+   true
+  ]
+ ],
+ "run_skill_calls": 0,
+ "seconds": 39.9,
+ "final_state": {
+  "block_xyz": [
+   0.45,
+   -0.28,
+   0.032
+  ],
+  "block_held": false,
+  "block_on_tray": true,
+  "joints": {
+   "shoulder_pan_joint": -0.811,
+   "shoulder_lift_joint": -1.42,
+   "elbow_joint": 1.891,
+   "wrist_1_joint": -2.042,
+   "wrist_2_joint": -1.571,
+   "wrist_3_joint": 0.76
+  }
+ }
+}

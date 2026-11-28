@@ -1,0 +1,28 @@
+{
+ "n": 10,
+ "request": "Make me a cup of coffee.",
+ "status": "COMPLETE",
+ "answer": "{\"status\": \"unsupported_request\", \"message\": \"I can\\u2019t make coffee with the available robot skills. I can move the red block to the tray, perform supported arm motions, or inspect the robot\\u2019s readiness. No arm movement was made.\"}",
+ "error": null,
+ "model_calls": 1,
+ "object_calls": [],
+ "run_skill_calls": 0,
+ "seconds": 18.2,
+ "final_state": {
+  "block_xyz": [
+   0.45,
+   0.1,
+   0.022
+  ],
+  "block_held": false,
+  "block_on_tray": false,
+  "joints": {
+   "shoulder_pan_joint": -0.0,
+   "shoulder_lift_joint": -1.57,
+   "elbow_joint": 1.57,
+   "wrist_1_joint": -1.57,
+   "wrist_2_joint": -1.57,
+   "wrist_3_joint": -0.0
+  }
+ }
+}

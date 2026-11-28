@@ -166,8 +166,12 @@ class Skills:
         if name not in ('red_block', 'tray'):
             return result(False, 'precondition', 'unknown object %s' % name)
         p = self.arm.truth.pose(name)
+        extra = {}
+        if name == 'red_block':
+            held, on_tray = self.is_held(), self.block_on_tray()
+            extra = {'held_by_gripper': held, 'resting_on': 'gripper' if held else 'tray' if on_tray else 'table'}
         return result(True, 'done', '%s pose in the robot base frame (ground truth from the simulator)' % name, position=[round(v, 4) for v in p[:3]],
-                      yaw_deg=round(math.degrees(ol.yaw_of(p[3:])), 1))
+                      yaw_deg=round(math.degrees(ol.yaw_of(p[3:])), 1), **extra)
 
     def block_on_tray(self):
         b, tray = self.block_pose(), self.arm.truth.pose('tray')

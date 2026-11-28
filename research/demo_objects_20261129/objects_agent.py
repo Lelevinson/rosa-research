@@ -16,6 +16,7 @@ import objects_skills as sk
 OBJECT_RULES = ('For objects on the table use get_object_pose to read where an object is (position in the robot base frame, ground truth from the simulator), '
                 'pick to pick one up and place to put the held object on a target. The only object is red_block and the only target is the tray. '
                 'If a request is outside these skills or names an object or target that does not exist, say so with final_answer and do not move the arm. '
+                'Before moving an object, read its pose with get_object_pose; if the request is already satisfied (for example the red block already rests on the tray), say so with final_answer and do not move the arm. '
                 'If pick or place refuses or fails, report that; do not repeat it.')
 GET_DESC = ('Read where an object is: returns its position (metres) and yaw in the robot base frame. Ground truth from the simulator, read-only. Names: red_block, tray.')
 PICK_DESC = ('Pick up one object with the gripper (bounded routine: read pose, move above, descend, close, lift, verify). Refuses without moving if it cannot start. '
